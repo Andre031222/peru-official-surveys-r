@@ -3,7 +3,7 @@
 **Las encuestas y censos oficiales del Perú en R, con una sola forma de pedirlos.**
 *Peru's official surveys and censuses in R, asked for one way.*
 
-Diez funciones, cinco dependencias externas (`curl`, `digest`, `haven`, `survey`, `yaml`) y un catálogo en
+Once funciones, cinco dependencias externas (`curl`, `digest`, `haven`, `survey`, `yaml`) y un catálogo en
 texto. Cada archivo se guarda en caché y se comprueba con sha256. Los años nuevos se detectan solos.
 
 > [!NOTE]
@@ -40,6 +40,7 @@ Weighting by persons gives INEI's official 27.6 %; see the vignette.*
 | `fa_design(datos, "enaho")` | Diseño muestral para `survey` | Survey design for `survey` |
 | `fa_ubigeo(datos, year = 2024, base = 2017)` | Ubigeo, provincia, departamento y código en el año base | Ubigeo, province, department and the base-year code |
 | `fa_districts(2017)` | Distritos vigentes ese año | Districts valid that year |
+| `fa_redatam("freq PERSONA.C5P2")` | Consulta el Censo 2017 en REDATAM | Queries the 2017 Census in REDATAM |
 | `fa_check_updates()` | Años nuevos en la fuente | New years at the source |
 | `fa_cache()` | Carpeta de caché | Cache folder |
 
@@ -56,7 +57,7 @@ Weighting by persons gives INEI's official 27.6 %; see the vignette.*
 | ENARES | INEI | 2013, 2015, 2019, 2024 | sí, sin estratos |
 | Encuesta Económica Anual | INEI | 2001-2025 | aproximado |
 | Censo Educativo (ESCALE) | MINEDU | 2004-2025 | censo |
-| Censos Nacionales 2017 | INEI | 2017 | censo |
+| Censos Nacionales 2017 | INEI (base REDATAM de CELADE) | 2017 | censo |
 
 Los diseños se verificaron en las fichas técnicas y en las cabeceras de los archivos de 2024 y 2025.
 ENUT y ENARES no publican estratos; la EEA tampoco, y sus errores estándar son aproximados. Con
@@ -92,6 +93,22 @@ también quedan `NA`. Fuentes y método en [`inst/ubigeo/README.md`](inst/ubigeo
 *INEI codes only, always six-digit text. Base 2017 is the census frame used by every INEI survey
 since 2018. No parent district is guessed.*
 
+## Censo 2017 / 2017 Census
+
+El INEI no publica los microdatos del Censo 2017 para descargar. CELADE (CEPAL) distribuye la base
+completa en formato REDATAM en redatam.org; `fa_redatam()` la baja una vez a la caché (678 MB, con
+sha256) y la consulta con [redatamx](https://cran.r-project.org/package=redatamx), que está en
+Suggests porque descarga el motor de REDATAM al instalarse.
+
+```r
+install.packages("redatamx")
+fa_redatam("freq DEPARTAM.CCDD by PERSONA.C5P2")   # personas por departamento y sexo
+```
+
+`freq PERSONA.C5P2` suma 29 381 884 personas, la población censada oficial.
+*INEI does not publish the 2017 Census microdata; faperu queries CELADE's REDATAM copy with the
+suggested redatamx package.*
+
 ## Errores / Errors
 
 Cada error tiene clase `faperu_error` y una subclase (`faperu_error_download`,
@@ -108,8 +125,8 @@ Cada error tiene clase `faperu_error` y una subclase (`faperu_error_download`,
 ## Estado / Status
 
 0.2.0, en desarrollo. Hecho: ubigeo armonizado entre 2004 y 2025 y diseño muestral de las ocho encuestas.
-Falta: estratos de la EEA, módulos 2025 de ENAPRES y EEA, ENDES 1996-2009 y el adaptador REDATAM del
-censo. Cambios en [NEWS.md](NEWS.md); guía completa en [vignettes/faperu.Rmd](vignettes/faperu.Rmd).
+Hecho también: Censo 2017 vía REDATAM. Falta: estratos de la EEA, módulos 2025 de ENAPRES y EEA y
+ENDES 1996-2009. Cambios en [NEWS.md](NEWS.md); guía completa en [vignettes/faperu.Rmd](vignettes/faperu.Rmd).
 
 ## Estructura / Layout
 

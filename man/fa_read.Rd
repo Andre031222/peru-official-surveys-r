@@ -42,7 +42,12 @@ A data frame (a tibble for SPSS and Stata files).
 Downloads the module if needed (see \code{\link[=fa_download]{fa_download()}}), unzips it next to
 the zip file and reads one data file. SPSS and Stata files keep their
 variable and value labels (through haven). CSV files from INEI come in
-Latin-1 and are converted to UTF-8.
+Latin-1 and are converted to UTF-8; the separator (\verb{,}, or \verb{;} with decimal
+commas as in the ENAHO 2025) is detected, and code columns (\code{UBIGEO}, \code{CCDD}, \code{CCPP},
+\code{CCDI}, \code{IRUC}, \code{NSEGM}) are kept as text so no leading zero is lost.
+}
+\details{
+For the 2017 Census use \code{\link[=fa_redatam]{fa_redatam()}}.
 }
 \examples{
 \dontrun{

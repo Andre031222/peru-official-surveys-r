@@ -14,6 +14,11 @@ In development.
   are dropped, surveys without published strata or clusters warn instead of failing, and certainty
   firms in the EEA get their own stratum. It warns when a stratum has a single cluster and
   `survey.lonely.psu` is not set.
+- New `fa_redatam()` queries the 2017 Census. INEI does not publish its microdata; CELADE's full
+  REDATAM database (redatam.org) is downloaded once into the cache with a SHA-256 check and
+  queried with redatamx, which is only suggested. `fa_read()` points to it for the census.
+- `fa_read()` detects `;` separators with decimal commas (ENAHO 2025) and keeps `UBIGEO`, `CCDD`,
+  `CCPP`, `CCDI`, `IRUC` and `NSEGM` as text in CSV files.
 - Tests reproduce four official 2024 figures from the local microdata: poverty 27.6 % (ENAHO),
   unemployment 5.6 % and informality 70.9 % (EPEN), women producers 31.5 % (ENA).
 

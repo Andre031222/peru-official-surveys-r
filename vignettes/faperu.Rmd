@@ -109,7 +109,19 @@ parents (Lambras, Santa Lucia) and districts created between 2005 and 2017 get `
 not guess. The sources and the method are in `system.file("ubigeo", "README.md", package =
 "faperu")`.
 
-## 6. New years
+## 6. The 2017 Census
+
+INEI does not publish the census microdata as a file. CELADE distributes the full database in
+REDATAM format, and `fa_redatam()` queries it through the redatamx package (install it first; it is
+only suggested). The first call downloads 678 MB into the cache.
+
+```{r}
+fa_redatam("freq PERSONA.C5P2")                     # 29 381 884 people, the official count
+fa_redatam("freq DEPARTAM.CCDD by PERSONA.C5P2")
+v <- fa_redatam()                                    # variables of every entity
+```
+
+## 7. New years
 
 ```{r}
 fa_check_updates()
