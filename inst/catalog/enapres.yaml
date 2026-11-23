@@ -1,0 +1,1706 @@
+id: enapres
+siglas: ENAPRES
+nombre: Encuesta Nacional de Programas Presupuestales
+organismo: INEI
+tipo: encuesta
+fuente: inei_portal
+portal:
+  encuesta: [Encuesta Nacional de Programas Presupuestales - ENAPRES]
+url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/{formato}/{archivo}
+formatos: [CSV, SPSS]
+anios: [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
+unidad: hogar y persona
+ubigeo: UBIGEO
+diseno:
+  peso: []
+  escala: 1
+  estrato: []
+  conglomerado: []
+  verificado: false
+  nota: Por verificar en la ficha técnica.
+estado: Catálogo de mayo de 2026; el año 2025 se detectó en vivo y falta rastrear sus módulos. Sin descargar todavía.
+modulos:
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '266'
+  codigo: '101'
+  nombre: Características de la Vivienda y del Hogar Urbano y Rural
+  archivos:
+    SPSS: 266-Modulo101
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '266'
+  codigo: '102'
+  nombre: Características de los Residentes Habituales del Hogar Urbano y Rural
+  archivos:
+    SPSS: 266-Modulo102
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '266'
+  codigo: '103'
+  nombre: Acceso a Servicios Básicos Rural
+  archivos:
+    SPSS: 266-Modulo103
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '266'
+  codigo: '104'
+  nombre: Telecomunicación Rural
+  archivos:
+    SPSS: 266-Modulo104
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '266'
+  codigo: '105'
+  nombre: Seguridad Ciudadana
+  archivos:
+    SPSS: 266-Modulo105
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '266'
+  codigo: '106'
+  nombre: Empleo Urbano y Rural versión1  (Mayo - Julio)
+  archivos:
+    SPSS: 266-Modulo106
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '266'
+  codigo: '107'
+  nombre: Empleo Urbano y Rural versión2  (Agosto - Diciembre)
+  archivos:
+    SPSS: 266-Modulo107
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '266'
+  codigo: '108'
+  nombre: Características de la Actividad y Explotación Agropecuaria 1
+  archivos:
+    SPSS: 266-Modulo108
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '266'
+  codigo: '109'
+  nombre: Características de la Actividad y Explotación Agropecuaria 2
+  archivos:
+    SPSS: 266-Modulo109
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '266'
+  codigo: '110'
+  nombre: Superficie Sembrada y Producida de los Cultivos
+  archivos:
+    SPSS: 266-Modulo110
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '266'
+  codigo: '111'
+  nombre: Característica de los Cultivos Producidos
+  archivos:
+    SPSS: 266-Modulo111
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '266'
+  codigo: '112'
+  nombre: Producción y Destino de los Productos Producidos
+  archivos:
+    SPSS: 266-Modulo112
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '266'
+  codigo: '113'
+  nombre: Sub Productos Agrícolas
+  archivos:
+    SPSS: 266-Modulo113
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '266'
+  codigo: '114'
+  nombre: Buenas Prácticas Agrícolas
+  archivos:
+    SPSS: 266-Modulo114
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '266'
+  codigo: '115'
+  nombre: Tecnología agrícola
+  archivos:
+    SPSS: 266-Modulo115
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '266'
+  codigo: '116'
+  nombre: Producción de la Actividad Pecuaria 1
+  archivos:
+    SPSS: 266-Modulo116
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '266'
+  codigo: '117'
+  nombre: Producción de la Actividad Pecuaria 2
+  archivos:
+    SPSS: 266-Modulo117
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '266'
+  codigo: '118'
+  nombre: Sub Productos Pecuarios
+  archivos:
+    SPSS: 266-Modulo118
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '266'
+  codigo: '119'
+  nombre: Buenas Practicas Pecuarias
+  archivos:
+    SPSS: 266-Modulo119
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '266'
+  codigo: '120'
+  nombre: Tecnologia Pecuaria - Inocuedad
+  archivos:
+    SPSS: 266-Modulo120
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '266'
+  codigo: '121'
+  nombre: Servicios de Extensión Agraria
+  archivos:
+    SPSS: 266-Modulo121
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '266'
+  codigo: '122'
+  nombre: Financiamiento
+  archivos:
+    SPSS: 266-Modulo122
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '266'
+  codigo: '123'
+  nombre: Costos de Producción
+  archivos:
+    SPSS: 266-Modulo123
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '293'
+  codigo: '133'
+  nombre: Características de la Vivienda y del Hogar - Urbano y Rural
+  archivos:
+    SPSS: 293-Modulo133
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '293'
+  codigo: '134'
+  nombre: Características de los Residentes Habituales del Hogar - Urbano y Rural
+  archivos:
+    SPSS: 293-Modulo134
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '293'
+  codigo: '135'
+  nombre: Servicios Educativos Básicos - Urbano y Rural
+  archivos:
+    SPSS: 293-Modulo135
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '293'
+  codigo: '136'
+  nombre: Telecomunicación Rural - Rural
+  archivos:
+    SPSS: 293-Modulo136
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '293'
+  codigo: '137'
+  nombre: Seguridad Ciudadana - Urbano
+  archivos:
+    SPSS: 293-Modulo137
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '293'
+  codigo: '138'
+  nombre: Empleo - Urbano y Rural
+  archivos:
+    SPSS: 293-Modulo138
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '293'
+  codigo: '139'
+  nombre: Características de la Actividad y explotacion agropecuaria 1
+  archivos:
+    SPSS: 293-Modulo139
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '293'
+  codigo: '140'
+  nombre: Características de la Actividad y explotacion agropecuaria 2
+  archivos:
+    SPSS: 293-Modulo140
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '293'
+  codigo: '141'
+  nombre: Superficie Sembrada y Cosechada de los Cultivos
+  archivos:
+    SPSS: 293-Modulo141
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '293'
+  codigo: '142'
+  nombre: Características de los Cultivos Cosechados
+  archivos:
+    SPSS: 293-Modulo142
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '293'
+  codigo: '143'
+  nombre: Producción y Destino de los Cultivos Cosechados
+  archivos:
+    SPSS: 293-Modulo143
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '293'
+  codigo: '144'
+  nombre: SubProductos Agrícolas
+  archivos:
+    SPSS: 293-Modulo144
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '293'
+  codigo: '145'
+  nombre: Buenas Prácticas Agrícolas
+  archivos:
+    SPSS: 293-Modulo145
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '293'
+  codigo: '146'
+  nombre: Tecnología Agrícola
+  archivos:
+    SPSS: 293-Modulo146
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '293'
+  codigo: '147'
+  nombre: Producción de la Actividad Pecuaria 1
+  archivos:
+    SPSS: 293-Modulo147
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '293'
+  codigo: '148'
+  nombre: Producción de la Actividad Pecuaria 2
+  archivos:
+    SPSS: 293-Modulo148
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '293'
+  codigo: '149'
+  nombre: SubProductos Pecuarios
+  archivos:
+    SPSS: 293-Modulo149
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '293'
+  codigo: '150'
+  nombre: Buenas Prácticas Pecuarias
+  archivos:
+    SPSS: 293-Modulo150
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '293'
+  codigo: '151'
+  nombre: Tecnología Pecuaria
+  archivos:
+    SPSS: 293-Modulo151
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '293'
+  codigo: '152'
+  nombre: Inocuidad
+  archivos:
+    SPSS: 293-Modulo152
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '293'
+  codigo: '153'
+  nombre: Servicios de Extensión Agraria
+  archivos:
+    SPSS: 293-Modulo153
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '293'
+  codigo: '154'
+  nombre: Financiamiento
+  archivos:
+    SPSS: 293-Modulo154
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '293'
+  codigo: '155'
+  nombre: Costos de Producción de la Actividad Agropecuaria
+  archivos:
+    SPSS: 293-Modulo155
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '325'
+  codigo: '169'
+  nombre: Características de la Vivienda y del Hogar - Urbano y Rural
+  archivos:
+    SPSS: 325-Modulo169
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '325'
+  codigo: '170'
+  nombre: Características de los Residentes habituales del Hogar - Urbano y Rural
+  archivos:
+    SPSS: 325-Modulo170
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '325'
+  codigo: '171'
+  nombre: Servicios Educativos Básicos - Urbano y Rural
+  archivos:
+    SPSS: 325-Modulo171
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '325'
+  codigo: '172'
+  nombre: Telecomunicación Rural
+  archivos:
+    SPSS: 325-Modulo172
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '325'
+  codigo: '173'
+  nombre: Seguridad Ciudadana - Urbano
+  archivos:
+    SPSS: 325-Modulo173
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '325'
+  codigo: '174'
+  nombre: Empleo - Urbano y Rural
+  archivos:
+    SPSS: 325-Modulo174
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '325'
+  codigo: '175'
+  nombre: Características de la Actividad y explotación agropecuaria 1
+  archivos:
+    SPSS: 325-Modulo175
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '325'
+  codigo: '176'
+  nombre: Características de la Actividad y explotación agropecuaria 2
+  archivos:
+    SPSS: 325-Modulo176
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '325'
+  codigo: '177'
+  nombre: Superficie Sembrada y Cosechada de los Cultivos
+  archivos:
+    SPSS: 325-Modulo177
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '325'
+  codigo: '178'
+  nombre: Características de los Cultivos Cosechados
+  archivos:
+    SPSS: 325-Modulo178
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '325'
+  codigo: '179'
+  nombre: Producción y Destino de los Cultivos Cosechados
+  archivos:
+    SPSS: 325-Modulo179
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '325'
+  codigo: '180'
+  nombre: SubProductos Agricolas
+  archivos:
+    SPSS: 325-Modulo180
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '325'
+  codigo: '181'
+  nombre: Buenas Prácticas Agricolas
+  archivos:
+    SPSS: 325-Modulo181
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '325'
+  codigo: '182'
+  nombre: Producción de la Actividad Pecuaria 1
+  archivos:
+    SPSS: 325-Modulo182
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '325'
+  codigo: '183'
+  nombre: Producción de la Actividad Pecuaria 2
+  archivos:
+    SPSS: 325-Modulo183
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '325'
+  codigo: '184'
+  nombre: SubProductos Pecuarios
+  archivos:
+    SPSS: 325-Modulo184
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '325'
+  codigo: '185'
+  nombre: Buenas Prácticas Pecuarias
+  archivos:
+    SPSS: 325-Modulo185
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '325'
+  codigo: '186'
+  nombre: Inocuidad
+  archivos:
+    SPSS: 325-Modulo186
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '325'
+  codigo: '187'
+  nombre: Servicios de Extensión Agraria
+  archivos:
+    SPSS: 325-Modulo187
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '325'
+  codigo: '188'
+  nombre: Financiamiento
+  archivos:
+    SPSS: 325-Modulo188
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '325'
+  codigo: '189'
+  nombre: Costos de Producción de la Actividad Agropecuaria
+  archivos:
+    SPSS: 325-Modulo189
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '406'
+  codigo: '415'
+  nombre: CARACTERÍSTICAS DE LA VIVIENDA Y DEL HOGAR-URBANO Y RURAL
+  archivos:
+    SPSS: 406-Modulo415
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '406'
+  codigo: '416'
+  nombre: CARACTERÍSTICAS DE LOS RESIDENTES HABITUALES DEL HOGAR-URBANO Y RURAL
+  archivos:
+    SPSS: 406-Modulo416
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '406'
+  codigo: '417'
+  nombre: SERVICIOS EDUCATIVOS BÁSICOS-URBANO Y RURAL
+  archivos:
+    SPSS: 406-Modulo417
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '406'
+  codigo: '418'
+  nombre: TELECOMUNICACIÓN-RURAL
+  archivos:
+    SPSS: 406-Modulo418
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '406'
+  codigo: '419'
+  nombre: SEGURIDAD CIUDADANA-URBANO
+  archivos:
+    SPSS: 406-Modulo419
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '406'
+  codigo: '420'
+  nombre: EMPLEO-URBANO Y RURAL
+  archivos:
+    SPSS: 406-Modulo420
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '406'
+  codigo: '421'
+  nombre: CARACTERÍSTICAS DE LA ACTIVIDAD Y LA EXPLOTACIÓN AGROPECUARIA  1
+  archivos:
+    SPSS: 406-Modulo421
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '406'
+  codigo: '422'
+  nombre: CARACTERÍSTICAS DE LA ACTIVIDAD Y LA EXPLOTACIÓN AGROPECUARIA 2
+  archivos:
+    SPSS: 406-Modulo422
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '406'
+  codigo: '423'
+  nombre: CULTIVOS COSECHADOS DE LA EXPLOTACIÓN AGROPECUARIA
+  archivos:
+    SPSS: 406-Modulo423
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '406'
+  codigo: '424'
+  nombre: CARACTERÍSTICAS DE LOS CULTIVOS COSECHADOS
+  archivos:
+    SPSS: 406-Modulo424
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '406'
+  codigo: '425'
+  nombre: BUENAS PRÁCTICAS AGRÍCOLAS
+  archivos:
+    SPSS: 406-Modulo425
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '406'
+  codigo: '426'
+  nombre: PRODUCCIÓN DE LA ACTIVIDAD PECUARIA 1
+  archivos:
+    SPSS: 406-Modulo426
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '406'
+  codigo: '427'
+  nombre: PRODUCCIÓN DE LA ACTIVIDAD PECUARIA 2
+  archivos:
+    SPSS: 406-Modulo427
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '406'
+  codigo: '428'
+  nombre: BUENAS PRÁCTICAS PECUARIAS
+  archivos:
+    SPSS: 406-Modulo428
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '406'
+  codigo: '429'
+  nombre: INOCUIDAD
+  archivos:
+    SPSS: 406-Modulo429
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '406'
+  codigo: '430'
+  nombre: SERVICIOS DE EXTENSIÓN  AGRARIA
+  archivos:
+    SPSS: 406-Modulo430
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '406'
+  codigo: '431'
+  nombre: FINANCIAMIENTO
+  archivos:
+    SPSS: 406-Modulo431
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '438'
+  codigo: '560'
+  nombre: 'CAP 100: CARACTERISTICAS DEL HOGAR Y LA VIVIENDA (URBANO Y RURAL)'
+  archivos:
+    SPSS: 438-Modulo560
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '438'
+  codigo: '561'
+  nombre: 'CAP 100AB: TV PERÚ - RADIO NACIONAL (URBANO Y RURAL)'
+  archivos:
+    SPSS: 438-Modulo561
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '438'
+  codigo: '562'
+  nombre: 'CAP 200: CARACTERISTICAS DE LOS RESIDENTES HABITUALES DEL HOGAR (URBANO Y RURAL)'
+  archivos:
+    SPSS: 438-Modulo562
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '438'
+  codigo: '563'
+  nombre: 'CAP 200A: CARACTERISTICAS MIGRATORIAS Y REMESAS DEL HOGAR (URBANO Y RURAL)'
+  archivos:
+    SPSS: 438-Modulo563
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '438'
+  codigo: '564'
+  nombre: 'CAP 300: DISCAPACIDAD, PROGRAMAS SOCIALES, EDUCACIÓN Y AUTOIDENTIFICACIÓN ÉTNICA (URBANO Y RURAL)'
+  archivos:
+    SPSS: 438-Modulo564
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '438'
+  codigo: '565'
+  nombre: 'CAP 500: TELECOMUNICACIÓN RURAL (RURAL)'
+  archivos:
+    SPSS: 438-Modulo565
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '438'
+  codigo: '566'
+  nombre: 'CAP 600: SEGURIDAD CIUDADANA (URBANO)'
+  archivos:
+    SPSS: 438-Modulo566
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '438'
+  codigo: '567'
+  nombre: 'CAP 700: SALUD (URBANO Y RURAL)'
+  archivos:
+    SPSS: 438-Modulo567
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '438'
+  codigo: '568'
+  nombre: 'CAP 900: MEDIO AMBIENTE, EMERGENCIAS MÉDICAS Y EXPOSICIÓN A DESASTRES (URBANO)'
+  archivos:
+    SPSS: 438-Modulo568
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '495'
+  codigo: '699'
+  nombre: 'CAPÍTULO 100 : CARACTERÍSTICAS DE LA VIVIENDA Y DEL HOGAR'
+  archivos:
+    SPSS: 495-Modulo699
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '495'
+  codigo: '700'
+  nombre: 'CAPÍTULO 200 : CARACTERÍSTICAS DE LOS RESIDENTES HABITUALES DEL HOGAR'
+  archivos:
+    SPSS: 495-Modulo700
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '495'
+  codigo: '701'
+  nombre: 'CAPÍTULO 300 : DISCAPACIDAD, PROGRAMAS SOCIALES, EDUCACIÓN Y AUTOIDENTIFICACIÓN ÉTNICA'
+  archivos:
+    SPSS: 495-Modulo701
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '495'
+  codigo: '702'
+  nombre: 'CAPÍTULO 500 : TELECOMUNICACIÓN'
+  archivos:
+    SPSS: 495-Modulo702
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '495'
+  codigo: '703'
+  nombre: 'CAPÍTULO 600 : SEGURIDAD CIUDADANA'
+  archivos:
+    SPSS: 495-Modulo703
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '495'
+  codigo: '704'
+  nombre: 'CAPÍTULO 700 : SALUD'
+  archivos:
+    SPSS: 495-Modulo704
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '495'
+  codigo: '705'
+  nombre: 'CAPÍTULO 800 : SEGURIDAD VIAL'
+  archivos:
+    SPSS: 495-Modulo705
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '495'
+  codigo: '706'
+  nombre: 'CAPÍTULO 900 : ATENCIÓN DE INCENDIOS, MORTALIDAD, INFRAESTRUCTURA Y EXPOSICIÓN A DESASTRES'
+  archivos:
+    SPSS: 495-Modulo706
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '495'
+  codigo: '707'
+  nombre: 'CAPÍTULO 1000 : MEDIO AMBIENTE Y PROTECCIÓN AL CONSUMIDOR'
+  archivos:
+    SPSS: 495-Modulo707
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '495'
+  codigo: '708'
+  nombre: 'CAPÍTULO 100AB : TV PERU Y RADIO NACIONAL'
+  archivos:
+    SPSS: 495-Modulo708
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '495'
+  codigo: '709'
+  nombre: 'CAPÍTULO 200A : CARACTERÍSTICAS MIGRATORIAS Y REMESAS DEL HOGAR'
+  archivos:
+    SPSS: 495-Modulo709
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '544'
+  codigo: '1073'
+  nombre: 'CAPÍTULO 100 : CARACTERÍSTICAS DE LA VIVIENDA Y DEL HOGAR'
+  archivos:
+    SPSS: 544-Modulo1073
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '544'
+  codigo: '1074'
+  nombre: 'CAPÍTULO 200 : CARACTERÍSTICAS DE LOS RESIDENTES HABITUALES DEL HOGAR'
+  archivos:
+    SPSS: 544-Modulo1074
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '544'
+  codigo: '1075'
+  nombre: 'CAPÍTULO 300 : DISCAPACIDAD, PROGRAMAS SOCIALES, EDUCACIÓN Y AUTOIDENTIFICACIÓN ÉTNICA'
+  archivos:
+    SPSS: 544-Modulo1075
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '544'
+  codigo: '1076'
+  nombre: 'CAPÍTULO 500 : TELECOMUNICACIÓN'
+  archivos:
+    SPSS: 544-Modulo1076
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '544'
+  codigo: '1077'
+  nombre: 'CAPÍTULO 600 : SEGURIDAD CIUDADANA'
+  archivos:
+    SPSS: 544-Modulo1077
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '544'
+  codigo: '1078'
+  nombre: 'CAPÍTULO 700 : SALUD'
+  archivos:
+    SPSS: 544-Modulo1078
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '544'
+  codigo: '1079'
+  nombre: 'CAPÍTULO 800 : SEGURIDAD VIAL'
+  archivos:
+    SPSS: 544-Modulo1079
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '544'
+  codigo: '1080'
+  nombre: 'CAPÍTULO 800A : PATRIMONIO, SERVICIOS Y BIENES CULTURALES'
+  archivos:
+    SPSS: 544-Modulo1080
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '544'
+  codigo: '1081'
+  nombre: 'CAPÍTULO 900 : ATENCIÓN DE INCENDIOS, MORTALIDAD, INFRAESTRUCTURA Y EXPOSICIÓN A DESASTRES'
+  archivos:
+    SPSS: 544-Modulo1081
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '544'
+  codigo: '1082'
+  nombre: 'CAPÍTULO 1000 : MEDIO AMBIENTE Y PROTECCIÓN AL CONSUMIDOR'
+  archivos:
+    SPSS: 544-Modulo1082
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '544'
+  codigo: '1083'
+  nombre: CAPÍTULO 100AB. TV PERU Y RADIO NACIONAL
+  archivos:
+    SPSS: 544-Modulo1083
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '544'
+  codigo: '1084'
+  nombre: 'CAPÍTULO 200A : CARACTERÍSTICAS MIGRATORIAS Y REMESAS DEL HOGAR'
+  archivos:
+    SPSS: 544-Modulo1084
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '596'
+  codigo: '1235'
+  nombre: 'CAPÍTULO 100 : CARACTERÍSTICAS DE LA VIVIENDA Y DEL HOGAR'
+  archivos:
+    SPSS: 596-Modulo1235
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '596'
+  codigo: '1236'
+  nombre: 'CAPÍTULO 200 : CARACTERÍSTICAS DE LOS RESIDENTES HABITUALES DEL HOGAR'
+  archivos:
+    SPSS: 596-Modulo1236
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '596'
+  codigo: '1237'
+  nombre: 'CAPÍTULO 300 : DISCAPACIDAD, PROGRAMAS SOCIALES, EDUCACIÓN Y AUTOIDENTIFICACIÓN ÉTNICA'
+  archivos:
+    SPSS: 596-Modulo1237
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '596'
+  codigo: '1238'
+  nombre: 'CAPÍTULO 500 : TELECOMUNICACIÓN'
+  archivos:
+    SPSS: 596-Modulo1238
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '596'
+  codigo: '1239'
+  nombre: 'CAPÍTULO 600 : SEGURIDAD CIUDADANA'
+  archivos:
+    SPSS: 596-Modulo1239
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '596'
+  codigo: '1240'
+  nombre: 'CAPÍTULO 700 : SALUD'
+  archivos:
+    SPSS: 596-Modulo1240
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '596'
+  codigo: '1241'
+  nombre: 'CAPÍTULO 800 : SEGURIDAD VIAL'
+  archivos:
+    SPSS: 596-Modulo1241
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '596'
+  codigo: '1242'
+  nombre: 'CAPÍTULO 800A : PATRIMONIO, SERVICIOS Y BIENES CULTURALES'
+  archivos:
+    SPSS: 596-Modulo1242
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '596'
+  codigo: '1243'
+  nombre: 'CAPÍTULO 900 : ATENCIÓN DE INCENDIOS, MORTALIDAD, INFRAESTRUCTURA Y EXPOSICIÓN A DESASTRES'
+  archivos:
+    SPSS: 596-Modulo1243
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '596'
+  codigo: '1244'
+  nombre: 'CAPÍTULO 1000 : MEDIO AMBIENTE Y PROTECCIÓN AL CONSUMIDOR'
+  archivos:
+    SPSS: 596-Modulo1244
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '596'
+  codigo: '1245'
+  nombre: CAPÍTULO 100AB. TV PERU Y RADIO NACIONAL
+  archivos:
+    SPSS: 596-Modulo1245
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '596'
+  codigo: '1246'
+  nombre: 'CAPÍTULO 200A : CARACTERÍSTICAS MIGRATORIAS Y REMESAS DEL HOGAR'
+  archivos:
+    SPSS: 596-Modulo1246
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '626'
+  codigo: '1370'
+  nombre: 'CAPÍTULO 100 : CARACTERÍSTICAS DE LA VIVIENDA Y DEL HOGAR'
+  archivos:
+    SPSS: 626-Modulo1370
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '626'
+  codigo: '1371'
+  nombre: 'CAPÍTULO 200 : CARACTERÍSTICAS DE LOS RESIDENTES HABITUALES DEL HOGAR'
+  archivos:
+    SPSS: 626-Modulo1371
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '626'
+  codigo: '1372'
+  nombre: 'CAPÍTULO 300 : IDENTIDAD, DISCAPACIDAD, EMERGENCIAS, PROGRAMAS SOCIALES, EDUCACIÓN, AUTOIDENTIFICACIÓN ÉTNICA Y PERCEPCIÓN DE INSEGURIDAD'
+  archivos:
+    SPSS: 626-Modulo1372
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '626'
+  codigo: '1373'
+  nombre: 'CAPÍTULO 500 : TELECOMUNICACIÓN'
+  archivos:
+    SPSS: 626-Modulo1373
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '626'
+  codigo: '1374'
+  nombre: 'CAPÍTULO 600 : SEGURIDAD CIUDADANA'
+  archivos:
+    SPSS: 626-Modulo1374
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '626'
+  codigo: '1375'
+  nombre: 'CAPÍTULO 700 : SALUD'
+  archivos:
+    SPSS: 626-Modulo1375
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '626'
+  codigo: '1376'
+  nombre: 'CAPÍTULO 800 : SEGURIDAD VIAL'
+  archivos:
+    SPSS: 626-Modulo1376
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '626'
+  codigo: '1377'
+  nombre: 'CAPÍTULO 800A : PATRIMONIO, SERVICIOS Y BIENES CULTURALES'
+  archivos:
+    SPSS: 626-Modulo1377
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '626'
+  codigo: '1378'
+  nombre: 'CAPÍTULO 900 : ATENCIÓN DE INCENDIOS, MORTALIDAD, INFRAESTRUCTURA Y EXPOSICIÓN A DESASTRES'
+  archivos:
+    SPSS: 626-Modulo1378
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '626'
+  codigo: '1379'
+  nombre: 'CAPÍTULO 1000 : MEDIO AMBIENTE Y PROTECCIÓN AL CONSUMIDOR'
+  archivos:
+    SPSS: 626-Modulo1379
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '626'
+  codigo: '1381'
+  nombre: 'CAPÍTULO 200A : CARACTERÍSTICAS MIGRATORIAS Y REMESAS DEL HOGAR'
+  archivos:
+    SPSS: 626-Modulo1381
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '626'
+  codigo: '1528'
+  nombre: CAPÍTULO 100AB. TV PERU Y RADIO NACIONAL
+  archivos:
+    SPSS: 626-Modulo1528
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '684'
+  codigo: '1490'
+  nombre: 'CAPÍTULO 100 : CARACTERÍSTICAS DE LA VIVIENDA Y DEL HOGAR'
+  archivos:
+    SPSS: 684-Modulo1490
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '684'
+  codigo: '1491'
+  nombre: 'CAPÍTULO 200 : CARACTERÍSTICAS DE LOS RESIDENTES HABITUALES DEL HOGAR'
+  archivos:
+    SPSS: 684-Modulo1491
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '684'
+  codigo: '1492'
+  nombre: 'CAPÍTULO 300 : IDENTIDAD, DISCAPACIDAD, EMERGENCIAS, PROGRAMAS SOCIALES, EDUCACIÓN, AUTOIDENTIFICACIÓN ÉTNICA Y PERCEPCIÓN DE INSEGURIDAD'
+  archivos:
+    SPSS: 684-Modulo1492
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '684'
+  codigo: '1493'
+  nombre: 'CAPÍTULO 500 : TELECOMUNICACIÓN'
+  archivos:
+    SPSS: 684-Modulo1493
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '684'
+  codigo: '1494'
+  nombre: 'CAPÍTULO 600 : SEGURIDAD CIUDADANA'
+  archivos:
+    SPSS: 684-Modulo1494
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '684'
+  codigo: '1495'
+  nombre: 'CAPÍTULO 700 : SALUD'
+  archivos:
+    SPSS: 684-Modulo1495
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '684'
+  codigo: '1496'
+  nombre: 'CAPÍTULO 800 : SEGURIDAD VIAL'
+  archivos:
+    SPSS: 684-Modulo1496
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '684'
+  codigo: '1497'
+  nombre: 'CAPÍTULO 800A : PATRIMONIO, SERVICIOS Y BIENES CULTURALES'
+  archivos:
+    SPSS: 684-Modulo1497
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '684'
+  codigo: '1498'
+  nombre: 'CAPÍTULO 900 : ATENCIÓN DE INCENDIOS, MORTALIDAD, INFRAESTRUCTURA Y EXPOSICIÓN A DESASTRES'
+  archivos:
+    SPSS: 684-Modulo1498
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '684'
+  codigo: '1499'
+  nombre: 'CAPÍTULO 1000 : MEDIO AMBIENTE Y PROTECCIÓN AL CONSUMIDOR'
+  archivos:
+    SPSS: 684-Modulo1499
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '684'
+  codigo: '1504'
+  nombre: 'CAPÍTULO 100D : MEDIOS DE COMUNICACIÓN'
+  archivos:
+    SPSS: 684-Modulo1504
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '684'
+  codigo: '1527'
+  nombre: 'CAPÍTULO 200A : CARACTERÍSTICAS MIGRATORIAS Y REMESAS DEL HOGAR'
+  archivos:
+    SPSS: 684-Modulo1527
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '736'
+  codigo: '1618'
+  nombre: 'CAPÍTULO 100 : CARACTERÍSTICAS DE LA VIVIENDA Y DEL HOGAR'
+  archivos:
+    CSV: 736-Modulo1618
+    SPSS: 736-Modulo1618
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '736'
+  codigo: '1619'
+  nombre: 'CAPÍTULO 200 : CARACTERÍSTICAS DE LOS RESIDENTES HABITUALES DEL HOGAR'
+  archivos:
+    CSV: 736-Modulo1619
+    SPSS: 736-Modulo1619
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '736'
+  codigo: '1620'
+  nombre: 'CAPÍTULO 300 : IDENTIDAD, DISCAPACIDAD, EMERGENCIAS MÉDICAS, PROGRAMAS SOCIALES, EDUCACIÓN, AUTOIDENTIFICACIÓN ÉTNICA, PERCEPCIÓN DE INSEGURIDAD Y ORIENTACIÓN SEXUAL E IDENTIDAD DE GÉNERO'
+  archivos:
+    CSV: 736-Modulo1620
+    SPSS: 736-Modulo1620
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '736'
+  codigo: '1621'
+  nombre: 'CAPÍTULO 500 : TELECOMUNICACIÓN'
+  archivos:
+    CSV: 736-Modulo1621
+    SPSS: 736-Modulo1621
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '736'
+  codigo: '1622'
+  nombre: 'CAPÍTULO 600 : SEGURIDAD CIUDADANA'
+  archivos:
+    CSV: 736-Modulo1622
+    SPSS: 736-Modulo1622
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '736'
+  codigo: '1623'
+  nombre: 'CAPÍTULO 700 : SALUD'
+  archivos:
+    CSV: 736-Modulo1623
+    SPSS: 736-Modulo1623
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '736'
+  codigo: '1624'
+  nombre: 'CAPÍTULO 800 : SEGURIDAD VIAL'
+  archivos:
+    CSV: 736-Modulo1624
+    SPSS: 736-Modulo1624
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '736'
+  codigo: '1625'
+  nombre: 'CAPÍTULO 800A : PATRIMONIO, SERVICIOS Y BIENES CULTURALES'
+  archivos:
+    CSV: 736-Modulo1625
+    SPSS: 736-Modulo1625
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '736'
+  codigo: '1626'
+  nombre: 'CAPÍTULO 900 : ATENCIÓN DE INCENDIOS, MORTALIDAD, INFRAESTRUCTURA Y EXPOSICIÓN A DESASTRES'
+  archivos:
+    CSV: 736-Modulo1626
+    SPSS: 736-Modulo1626
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '736'
+  codigo: '1627'
+  nombre: 'CAPÍTULO 1000 : PROTECCIÓN AL CONSUMIDOR'
+  archivos:
+    CSV: 736-Modulo1627
+    SPSS: 736-Modulo1627
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '736'
+  codigo: '1628'
+  nombre: 'CAPÍTULO 200A : CARACTERÍSTICAS MIGRATORIAS Y REMESAS DEL HOGAR'
+  archivos:
+    CSV: 736-Modulo1628
+    SPSS: 736-Modulo1628
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '761'
+  codigo: '1675'
+  nombre: 'CAPÍTULO 100 : CARACTERÍSTICAS DE LA VIVIENDA Y DEL HOGAR'
+  archivos:
+    CSV: 761-Modulo1675
+    SPSS: 761-Modulo1675
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '761'
+  codigo: '1676'
+  nombre: 'CAPÍTULO 200 : CARACTERÍSTICAS DE LOS RESIDENTES HABITUALES DEL HOGAR'
+  archivos:
+    CSV: 761-Modulo1676
+    SPSS: 761-Modulo1676
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '761'
+  codigo: '1677'
+  nombre: 'CAPÍTULO 300 : IDENTIDAD, DISCAPACIDAD, EMERGENCIAS MÉDICAS, PROGRAMAS SOCIALES, EDUCACIÓN, AUTOIDENTIFICACIÓN ÉTNICA, PERCEPCIÓN DE INSEGURIDAD Y ORIENTACIÓN SEXUAL E IDENTIDAD DE GÉNERO'
+  archivos:
+    CSV: 761-Modulo1677
+    SPSS: 761-Modulo1677
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '761'
+  codigo: '1678'
+  nombre: 'CAPÍTULO 500 : TELECOMUNICACIÓN'
+  archivos:
+    CSV: 761-Modulo1678
+    SPSS: 761-Modulo1678
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '761'
+  codigo: '1679'
+  nombre: 'CAPÍTULO 600 : SEGURIDAD CIUDADANA'
+  archivos:
+    CSV: 761-Modulo1679
+    SPSS: 761-Modulo1679
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '761'
+  codigo: '1680'
+  nombre: 'CAPÍTULO 700 : SALUD'
+  archivos:
+    CSV: 761-Modulo1680
+    SPSS: 761-Modulo1680
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '761'
+  codigo: '1681'
+  nombre: 'CAPÍTULO 800 : SEGURIDAD VIAL'
+  archivos:
+    CSV: 761-Modulo1681
+    SPSS: 761-Modulo1681
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '761'
+  codigo: '1682'
+  nombre: 'CAPÍTULO 800A : PATRIMONIO, SERVICIOS Y BIENES CULTURALES'
+  archivos:
+    CSV: 761-Modulo1682
+    SPSS: 761-Modulo1682
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '761'
+  codigo: '1683'
+  nombre: 'CAPÍTULO 900 : ATENCIÓN DE INCENDIOS, MORTALIDAD, INFRAESTRUCTURA Y EXPOSICIÓN A DESASTRES'
+  archivos:
+    CSV: 761-Modulo1683
+    SPSS: 761-Modulo1683
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '761'
+  codigo: '1684'
+  nombre: 'CAPÍTULO 1000 :  PROTECCIÓN AL CONSUMIDOR'
+  archivos:
+    CSV: 761-Modulo1684
+    SPSS: 761-Modulo1684
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '761'
+  codigo: '1685'
+  nombre: 'CAPÍTULO 100AB :  TV PERÚ - RADIO NACIONAL'
+  archivos:
+    CSV: 761-Modulo1685
+    SPSS: 761-Modulo1685
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '785'
+  codigo: '1727'
+  nombre: 'CAPÍTULO 100 : CARACTERÍSTICAS DE LA VIVIENDA Y DEL HOGAR'
+  archivos:
+    CSV: 785-Modulo1727
+    SPSS: 785-Modulo1727
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '785'
+  codigo: '1728'
+  nombre: 'CAPÍTULO 200 : CARACTERÍSTICAS DE LOS RESIDENTES HABITUALES DEL HOGAR'
+  archivos:
+    CSV: 785-Modulo1728
+    SPSS: 785-Modulo1728
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '785'
+  codigo: '1729'
+  nombre: 'CAPÍTULO 300 : IDENTIDAD, DISCAPACIDAD, EMERGENCIAS MÉDICAS, PROGRAMAS SOCIALES, EDUCACIÓN, AUTOIDENTIFICACIÓN ÉTNICA, PERCEPCIÓN DE INSEGURIDAD Y ORIENTACIÓN SEXUAL E IDENTIDAD DE GÉNERO'
+  archivos:
+    CSV: 785-Modulo1729
+    SPSS: 785-Modulo1729
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '785'
+  codigo: '1730'
+  nombre: 'CAPÍTULO 500 : TELECOMUNICACIÓN'
+  archivos:
+    CSV: 785-Modulo1730
+    SPSS: 785-Modulo1730
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '785'
+  codigo: '1731'
+  nombre: 'CAPÍTULO 600 : SEGURIDAD CIUDADANA'
+  archivos:
+    CSV: 785-Modulo1731
+    SPSS: 785-Modulo1731
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '785'
+  codigo: '1732'
+  nombre: 'CAPÍTULO 700 : SALUD'
+  archivos:
+    CSV: 785-Modulo1732
+    SPSS: 785-Modulo1732
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '785'
+  codigo: '1733'
+  nombre: 'CAPÍTULO 800 : SEGURIDAD VIAL'
+  archivos:
+    CSV: 785-Modulo1733
+    SPSS: 785-Modulo1733
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '785'
+  codigo: '1734'
+  nombre: 'CAPÍTULO 800A : PATRIMONIO, SERVICIOS Y BIENES CULTURALES'
+  archivos:
+    CSV: 785-Modulo1734
+    SPSS: 785-Modulo1734
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '785'
+  codigo: '1735'
+  nombre: 'CAPÍTULO 900 : ATENCIÓN DE INCENDIOS, MORTALIDAD, INFRAESTRUCTURA Y EXPOSICIÓN A DESASTRES'
+  archivos:
+    CSV: 785-Modulo1735
+    SPSS: 785-Modulo1735
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '785'
+  codigo: '1736'
+  nombre: 'CAPÍTULO 1000 :  PROTECCIÓN AL CONSUMIDOR'
+  archivos:
+    CSV: 785-Modulo1736
+    SPSS: 785-Modulo1736
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '903'
+  codigo: '1815'
+  nombre: 'CAPÍTULO 100 : CARACTERÍSTICAS DE LA VIVIENDA Y DEL HOGAR'
+  archivos:
+    CSV: 903-Modulo1815
+    SPSS: 903-Modulo1815
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '903'
+  codigo: '1816'
+  nombre: 'CAPÍTULO 200 : CARACTERÍSTICAS DE LOS RESIDENTES HABITUALES DEL HOGAR'
+  archivos:
+    CSV: 903-Modulo1816
+    SPSS: 903-Modulo1816
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '903'
+  codigo: '1817'
+  nombre: 'CAPÍTULO 300 : IDENTIDAD, DISCAPACIDAD, EMERGENCIAS MÉDICAS, PROGRAMAS SOCIALES, EDUCACIÓN, AUTOIDENTIFICACIÓN ÉTNICA, PERCEPCIÓN DE INSEGURIDAD Y ORIENTACIÓN SEXUAL E IDENTIDAD DE GÉNERO'
+  archivos:
+    CSV: 903-Modulo1817
+    SPSS: 903-Modulo1817
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '903'
+  codigo: '1818'
+  nombre: 'CAPÍTULO 500 : TELECOMUNICACIÓN'
+  archivos:
+    CSV: 903-Modulo1818
+    SPSS: 903-Modulo1818
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '903'
+  codigo: '1819'
+  nombre: 'CAPÍTULO 600 : SEGURIDAD CIUDADANA'
+  archivos:
+    CSV: 903-Modulo1819
+    SPSS: 903-Modulo1819
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '903'
+  codigo: '1820'
+  nombre: 'CAPÍTULO 700 : SALUD'
+  archivos:
+    CSV: 903-Modulo1820
+    SPSS: 903-Modulo1820
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '903'
+  codigo: '1821'
+  nombre: 'CAPÍTULO 800 : SEGURIDAD VIAL'
+  archivos:
+    CSV: 903-Modulo1821
+    SPSS: 903-Modulo1821
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '903'
+  codigo: '1822'
+  nombre: 'CAPÍTULO 800A : PATRIMONIO, SERVICIOS Y BIENES CULTURALES'
+  archivos:
+    CSV: 903-Modulo1822
+    SPSS: 903-Modulo1822
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '903'
+  codigo: '1823'
+  nombre: 'CAPÍTULO 900 : ATENCIÓN DE INCENDIOS, MORTALIDAD, INFRAESTRUCTURA Y EXPOSICIÓN A DESASTRES'
+  archivos:
+    CSV: 903-Modulo1823
+    SPSS: 903-Modulo1823
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '903'
+  codigo: '1824'
+  nombre: 'CAPÍTULO 1000 :  PROTECCIÓN AL CONSUMIDOR'
+  archivos:
+    CSV: 903-Modulo1824
+    SPSS: 903-Modulo1824
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '965'
+  codigo: '1856'
+  nombre: 'CAPÍTULO 100E : CARACTERÍSTICAS DE LA VIVIENDA Y DEL HOGAR'
+  archivos:
+    CSV: 965-Modulo1856
+    SPSS: 965-Modulo1856
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '965'
+  codigo: '1857'
+  nombre: 'CAPÍTULO 200 : CARACTERÍSTICAS DE LOS RESIDENTES HABITUALES DEL HOGAR'
+  archivos:
+    CSV: 965-Modulo1857
+    SPSS: 965-Modulo1857
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '965'
+  codigo: '1858'
+  nombre: 'CAPÍTULO 300C : DISCAPACIDAD, PROGRAMAS SOCIALES, EDUCACIÓN, AUTOIDENTIFICACIÓN ÉTNICA Y ORIENTACIÓN SEXUAL E IDENTIDAD DE GÉNERO'
+  archivos:
+    CSV: 965-Modulo1858
+    SPSS: 965-Modulo1858
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '965'
+  codigo: '1859'
+  nombre: 'CAPÍTULO 500 : TELECOMUNICACIÓN'
+  archivos:
+    CSV: 965-Modulo1859
+    SPSS: 965-Modulo1859
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '965'
+  codigo: '1860'
+  nombre: 'CAPÍTULO 600 : SEGURIDAD CIUDADANA'
+  archivos:
+    CSV: 965-Modulo1860
+    SPSS: 965-Modulo1860
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '965'
+  codigo: '1861'
+  nombre: 'CAPÍTULO 700 : SALUD'
+  archivos:
+    CSV: 965-Modulo1861
+    SPSS: 965-Modulo1861
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '965'
+  codigo: '1862'
+  nombre: 'CAPÍTULO 800 : SEGURIDAD VIAL'
+  archivos:
+    CSV: 965-Modulo1862
+    SPSS: 965-Modulo1862
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '965'
+  codigo: '1863'
+  nombre: 'CAPÍTULO 800A : PATRIMONIO, SERVICIOS Y BIENES CULTURALES'
+  archivos:
+    CSV: 965-Modulo1863
+    SPSS: 965-Modulo1863
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '965'
+  codigo: '1864'
+  nombre: 'CAPÍTULO 900 : ATENCIÓN DE INCENDIOS, INFRAESTRUCTURA Y EXPOSICIÓN A DESASTRES'
+  archivos:
+    CSV: 965-Modulo1864
+    SPSS: 965-Modulo1864
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '965'
+  codigo: '1865'
+  nombre: 'CAPÍTULO 1000 :  PROTECCIÓN AL CONSUMIDOR'
+  archivos:
+    CSV: 965-Modulo1865
+    SPSS: 965-Modulo1865

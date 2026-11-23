@@ -1,0 +1,140 @@
+id: enut
+siglas: ENUT
+nombre: Encuesta Nacional de Uso del Tiempo
+organismo: INEI
+tipo: encuesta
+fuente: inei_portal
+portal:
+  encuesta: [Encuesta Nacional de Uso del Tiempo - ENUT]
+url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/{formato}/{archivo}
+formatos: [CSV, STATA, SPSS]
+anios: [2010, 2022, 2024]
+unidad: persona de 12 años a más
+ubigeo: UBIGEO
+diseno:
+  peso: []
+  escala: 1
+  estrato: []
+  conglomerado: []
+  verificado: false
+  nota: Por verificar en la ficha técnica.
+estado: Catálogo de mayo de 2026; el año 2022 se detectó en vivo y falta rastrear sus módulos. No es anual. Sin descargar todavía.
+modulos:
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '286'
+  codigo: '125'
+  nombre: Características de la vivienda y del hogar
+  archivos:
+    SPSS: 286-Modulo125
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '286'
+  codigo: '126'
+  nombre: Características de los miembros del hogar
+  archivos:
+    SPSS: 286-Modulo126
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '286'
+  codigo: '127'
+  nombre: Ayudas recibidas por personas de otro hogar
+  archivos:
+    SPSS: 286-Modulo127
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '286'
+  codigo: '128'
+  nombre: Tareas de apoyo al hogar
+  archivos:
+    SPSS: 286-Modulo128
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '286'
+  codigo: '129'
+  nombre: Tareas realizadas para el hogar
+  archivos:
+    SPSS: 286-Modulo129
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '286'
+  codigo: '130'
+  nombre: Empleo e ingreso
+  archivos:
+    SPSS: 286-Modulo130
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '963'
+  codigo: '1849'
+  nombre: CARACTERÍSTICAS DE LA VIVIENDA Y DEL HOGAR
+  archivos:
+    CSV: 963-Modulo1849
+    STATA: 963-Modulo1849
+    SPSS: 963-Modulo1849
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '963'
+  codigo: '1850'
+  nombre: CARACTERÍSTICAS DE LOS RESIDENTES HABITUALES DEL HOGAR
+  archivos:
+    CSV: 963-Modulo1850
+    STATA: 963-Modulo1850
+    SPSS: 963-Modulo1850
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '963'
+  codigo: '1851'
+  nombre: ENTORNO DE LA VIVIENDA Y DEL HOGAR
+  archivos:
+    CSV: 963-Modulo1851
+    STATA: 963-Modulo1851
+    SPSS: 963-Modulo1851
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '963'
+  codigo: '1852'
+  nombre: AYUDAS RECIBIDAS SIN REMUNERACION POR PERSONAS DE OTRO HOGAR
+  archivos:
+    CSV: 963-Modulo1852
+    STATA: 963-Modulo1852
+    SPSS: 963-Modulo1852
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '963'
+  codigo: '1853'
+  nombre: PARTICIPACION CIUDADANA
+  archivos:
+    CSV: 963-Modulo1853
+    STATA: 963-Modulo1853
+    SPSS: 963-Modulo1853
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '963'
+  codigo: '1854'
+  nombre: TAREAS REALIZADAS PARA EL HOGAR
+  archivos:
+    CSV: 963-Modulo1854
+    STATA: 963-Modulo1854
+    SPSS: 963-Modulo1854
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '963'
+  codigo: '1855'
+  nombre: EMPLEO- SATISFACCIÓN CON EL USO DEL TIEMPO- ORIENTACIÓN SEXUAL E IDENTIDAD DE GÉNERO
+  archivos:
+    CSV: 963-Modulo1855
+    STATA: 963-Modulo1855
+    SPSS: 963-Modulo1855

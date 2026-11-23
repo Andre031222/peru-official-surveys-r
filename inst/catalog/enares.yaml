@@ -1,0 +1,704 @@
+id: enares
+siglas: ENARES
+nombre: Encuesta Nacional sobre Relaciones Sociales
+organismo: INEI
+tipo: encuesta
+fuente: inei_portal
+portal:
+  encuesta: [Encuesta Nacional Sobre Relaciones Sociales - ENARES]
+url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/{formato}/{archivo}
+formatos: [CSV, STATA, SPSS]
+anios: [2013, 2015, 2019, 2024]
+unidad: hogar, mujer, niña, niño y adolescente
+ubigeo: UBIGEO
+diseno:
+  peso: []
+  escala: 1
+  estrato: []
+  conglomerado: []
+  verificado: false
+  nota: Por verificar en la ficha técnica.
+estado: Catálogo de mayo de 2026. No es anual (2013, 2015, 2019, 2024). Sin descargar todavía.
+modulos:
+- anio: 2013
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '502'
+  codigo: '739'
+  nombre: 'CRS01: CAPÍTULO 100'
+  archivos:
+    SPSS: 502-Modulo739
+- anio: 2013
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '502'
+  codigo: '740'
+  nombre: 'CRS01: CAPÍTULO 200'
+  archivos:
+    SPSS: 502-Modulo740
+- anio: 2013
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '502'
+  codigo: '741'
+  nombre: 'CRS01: CAPÍTULO 300'
+  archivos:
+    SPSS: 502-Modulo741
+- anio: 2013
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '502'
+  codigo: '742'
+  nombre: 'CRS01: CAPÍTULO 400'
+  archivos:
+    SPSS: 502-Modulo742
+- anio: 2013
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '502'
+  codigo: '743'
+  nombre: 'CRS01: CAPÍTULO 400_2'
+  archivos:
+    SPSS: 502-Modulo743
+- anio: 2013
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '502'
+  codigo: '744'
+  nombre: 'CRS01: CAPÍTULO 400_3'
+  archivos:
+    SPSS: 502-Modulo744
+- anio: 2013
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '502'
+  codigo: '745'
+  nombre: 'CRS01: CAPÍTULO 500'
+  archivos:
+    SPSS: 502-Modulo745
+- anio: 2013
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '502'
+  codigo: '746'
+  nombre: 'CRS02: CAPÍTULO 100'
+  archivos:
+    SPSS: 502-Modulo746
+- anio: 2013
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '502'
+  codigo: '747'
+  nombre: 'CRS02: CAPÍTULO 200'
+  archivos:
+    SPSS: 502-Modulo747
+- anio: 2013
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '502'
+  codigo: '748'
+  nombre: 'CRS02: CAPÍTULO 300'
+  archivos:
+    SPSS: 502-Modulo748
+- anio: 2013
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '502'
+  codigo: '749'
+  nombre: 'CRS02: CAPÍTULO 400'
+  archivos:
+    SPSS: 502-Modulo749
+- anio: 2013
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '502'
+  codigo: '750'
+  nombre: 'CRS02: CAPÍTULO 500'
+  archivos:
+    SPSS: 502-Modulo750
+- anio: 2013
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '502'
+  codigo: '751'
+  nombre: 'CRS03: CAPÍTULO 100'
+  archivos:
+    SPSS: 502-Modulo751
+- anio: 2013
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '502'
+  codigo: '752'
+  nombre: 'CRS03: CAPÍTULO 200'
+  archivos:
+    SPSS: 502-Modulo752
+- anio: 2013
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '502'
+  codigo: '753'
+  nombre: 'CRS03: CAPÍTULO 300'
+  archivos:
+    SPSS: 502-Modulo753
+- anio: 2013
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '502'
+  codigo: '754'
+  nombre: 'CRS04: CAPÍTULO 100'
+  archivos:
+    SPSS: 502-Modulo754
+- anio: 2013
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '502'
+  codigo: '755'
+  nombre: 'CRS04: CAPÍTULO 200'
+  archivos:
+    SPSS: 502-Modulo755
+- anio: 2013
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '502'
+  codigo: '756'
+  nombre: 'CRS04: CAPÍTULO 300'
+  archivos:
+    SPSS: 502-Modulo756
+- anio: 2015
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '503'
+  codigo: '757'
+  nombre: 'CRS01: CAPÍTULO 100'
+  archivos:
+    SPSS: 503-Modulo757
+- anio: 2015
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '503'
+  codigo: '758'
+  nombre: 'CRS01: CAPÍTULO 200'
+  archivos:
+    SPSS: 503-Modulo758
+- anio: 2015
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '503'
+  codigo: '759'
+  nombre: 'CRS01: CAPÍTULO 300_400_500'
+  archivos:
+    SPSS: 503-Modulo759
+- anio: 2015
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '503'
+  codigo: '760'
+  nombre: 'CRS01: CAPÍTULO 600'
+  archivos:
+    SPSS: 503-Modulo760
+- anio: 2015
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '503'
+  codigo: '761'
+  nombre: 'CRS02: CAPÍTULO 100'
+  archivos:
+    SPSS: 503-Modulo761
+- anio: 2015
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '503'
+  codigo: '762'
+  nombre: 'CRS02: CAPÍTULO 200'
+  archivos:
+    SPSS: 503-Modulo762
+- anio: 2015
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '503'
+  codigo: '763'
+  nombre: 'CRS02: CAPÍTULO 300'
+  archivos:
+    SPSS: 503-Modulo763
+- anio: 2015
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '503'
+  codigo: '764'
+  nombre: 'CRS02: CAPÍTULO 400'
+  archivos:
+    SPSS: 503-Modulo764
+- anio: 2015
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '503'
+  codigo: '765'
+  nombre: 'CRS02: CAPÍTULO 500'
+  archivos:
+    SPSS: 503-Modulo765
+- anio: 2015
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '503'
+  codigo: '766'
+  nombre: 'CRS03: CAPÍTULO 100'
+  archivos:
+    SPSS: 503-Modulo766
+- anio: 2015
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '503'
+  codigo: '767'
+  nombre: 'CRS03: CAPÍTULO 200'
+  archivos:
+    SPSS: 503-Modulo767
+- anio: 2015
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '503'
+  codigo: '768'
+  nombre: 'CRS03: CAPÍTULO 300'
+  archivos:
+    SPSS: 503-Modulo768
+- anio: 2015
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '503'
+  codigo: '769'
+  nombre: 'CRS04: CAPÍTULO 100'
+  archivos:
+    SPSS: 503-Modulo769
+- anio: 2015
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '503'
+  codigo: '770'
+  nombre: 'CRS04: CAPÍTULO 200'
+  archivos:
+    SPSS: 503-Modulo770
+- anio: 2015
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '503'
+  codigo: '771'
+  nombre: 'CRS04: CAPÍTULO 300'
+  archivos:
+    SPSS: 503-Modulo771
+- anio: 2019
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '694'
+  codigo: '1505'
+  nombre: CRS01_CARATULA_CAP100
+  archivos:
+    STATA: 694-Modulo1505
+    SPSS: 694-Modulo1505
+- anio: 2019
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '694'
+  codigo: '1506'
+  nombre: CRS01_CAP200
+  archivos:
+    STATA: 694-Modulo1506
+    SPSS: 694-Modulo1506
+- anio: 2019
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '694'
+  codigo: '1507'
+  nombre: CRS01_CAP300
+  archivos:
+    STATA: 694-Modulo1507
+    SPSS: 694-Modulo1507
+- anio: 2019
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '694'
+  codigo: '1508'
+  nombre: CRS01_CAP400
+  archivos:
+    STATA: 694-Modulo1508
+    SPSS: 694-Modulo1508
+- anio: 2019
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '694'
+  codigo: '1509'
+  nombre: CRS01_CAP402
+  archivos:
+    STATA: 694-Modulo1509
+    SPSS: 694-Modulo1509
+- anio: 2019
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '694'
+  codigo: '1510'
+  nombre: CRS01_CAP405
+  archivos:
+    STATA: 694-Modulo1510
+    SPSS: 694-Modulo1510
+- anio: 2019
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '694'
+  codigo: '1511'
+  nombre: CRS01_CAP411
+  archivos:
+    STATA: 694-Modulo1511
+    SPSS: 694-Modulo1511
+- anio: 2019
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '694'
+  codigo: '1512'
+  nombre: CRS01_CAP500
+  archivos:
+    STATA: 694-Modulo1512
+    SPSS: 694-Modulo1512
+- anio: 2019
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '694'
+  codigo: '1513'
+  nombre: CRS01_CAP600
+  archivos:
+    STATA: 694-Modulo1513
+    SPSS: 694-Modulo1513
+- anio: 2019
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '694'
+  codigo: '1514'
+  nombre: CRS01_APREC_INF.SAV
+  archivos:
+    STATA: 694-Modulo1514
+    SPSS: 694-Modulo1514
+- anio: 2019
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '694'
+  codigo: '1515'
+  nombre: CRS02_CARATULA_CAP100
+  archivos:
+    STATA: 694-Modulo1515
+    SPSS: 694-Modulo1515
+- anio: 2019
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '694'
+  codigo: '1516'
+  nombre: CRS02_CAP200
+  archivos:
+    STATA: 694-Modulo1516
+    SPSS: 694-Modulo1516
+- anio: 2019
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '694'
+  codigo: '1517'
+  nombre: CRS02_CAP300
+  archivos:
+    STATA: 694-Modulo1517
+    SPSS: 694-Modulo1517
+- anio: 2019
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '694'
+  codigo: '1518'
+  nombre: CRS02_CAP400
+  archivos:
+    STATA: 694-Modulo1518
+    SPSS: 694-Modulo1518
+- anio: 2019
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '694'
+  codigo: '1519'
+  nombre: CRS02_APREC_INF
+  archivos:
+    STATA: 694-Modulo1519
+    SPSS: 694-Modulo1519
+- anio: 2019
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '694'
+  codigo: '1520'
+  nombre: CRS03_CAP100
+  archivos:
+    STATA: 694-Modulo1520
+    SPSS: 694-Modulo1520
+- anio: 2019
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '694'
+  codigo: '1521'
+  nombre: CRS03_CAP200
+  archivos:
+    STATA: 694-Modulo1521
+    SPSS: 694-Modulo1521
+- anio: 2019
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '694'
+  codigo: '1522'
+  nombre: CRS03_CAP300
+  archivos:
+    STATA: 694-Modulo1522
+    SPSS: 694-Modulo1522
+- anio: 2019
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '694'
+  codigo: '1523'
+  nombre: CRS04_CAP100
+  archivos:
+    STATA: 694-Modulo1523
+    SPSS: 694-Modulo1523
+- anio: 2019
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '694'
+  codigo: '1524'
+  nombre: CRS04_CAP200
+  archivos:
+    STATA: 694-Modulo1524
+    SPSS: 694-Modulo1524
+- anio: 2019
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '694'
+  codigo: '1525'
+  nombre: CRS04_CAP248
+  archivos:
+    STATA: 694-Modulo1525
+    SPSS: 694-Modulo1525
+- anio: 2019
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '694'
+  codigo: '1526'
+  nombre: CRS04_CAP300
+  archivos:
+    STATA: 694-Modulo1526
+    SPSS: 694-Modulo1526
+- anio: 2024
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '976'
+  codigo: '1941'
+  nombre: CRS01_CAP100
+  archivos:
+    CSV: 976-Modulo1941
+    STATA: 976-Modulo1941
+    SPSS: 976-Modulo1941
+- anio: 2024
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '976'
+  codigo: '1942'
+  nombre: CRS01_CAP200
+  archivos:
+    CSV: 976-Modulo1942
+    STATA: 976-Modulo1942
+    SPSS: 976-Modulo1942
+- anio: 2024
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '976'
+  codigo: '1943'
+  nombre: CRS01_CAP300
+  archivos:
+    CSV: 976-Modulo1943
+    STATA: 976-Modulo1943
+    SPSS: 976-Modulo1943
+- anio: 2024
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '976'
+  codigo: '1944'
+  nombre: CRS01_CAP400
+  archivos:
+    CSV: 976-Modulo1944
+    STATA: 976-Modulo1944
+    SPSS: 976-Modulo1944
+- anio: 2024
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '976'
+  codigo: '1945'
+  nombre: CRS01_CAP402
+  archivos:
+    CSV: 976-Modulo1945
+    STATA: 976-Modulo1945
+    SPSS: 976-Modulo1945
+- anio: 2024
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '976'
+  codigo: '1946'
+  nombre: CRS01_CAP405
+  archivos:
+    CSV: 976-Modulo1946
+    STATA: 976-Modulo1946
+    SPSS: 976-Modulo1946
+- anio: 2024
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '976'
+  codigo: '1947'
+  nombre: CRS01_CAP411
+  archivos:
+    CSV: 976-Modulo1947
+    STATA: 976-Modulo1947
+    SPSS: 976-Modulo1947
+- anio: 2024
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '976'
+  codigo: '1948'
+  nombre: CRS01_CAP500
+  archivos:
+    CSV: 976-Modulo1948
+    STATA: 976-Modulo1948
+    SPSS: 976-Modulo1948
+- anio: 2024
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '976'
+  codigo: '1949'
+  nombre: CRS01_CAP600
+  archivos:
+    CSV: 976-Modulo1949
+    STATA: 976-Modulo1949
+    SPSS: 976-Modulo1949
+- anio: 2024
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '976'
+  codigo: '1950'
+  nombre: CRS01_CAP700
+  archivos:
+    CSV: 976-Modulo1950
+    STATA: 976-Modulo1950
+    SPSS: 976-Modulo1950
+- anio: 2024
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '976'
+  codigo: '1951'
+  nombre: CRS02_CAP100
+  archivos:
+    CSV: 976-Modulo1951
+    STATA: 976-Modulo1951
+    SPSS: 976-Modulo1951
+- anio: 2024
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '976'
+  codigo: '1952'
+  nombre: CRS02_CAP200
+  archivos:
+    CSV: 976-Modulo1952
+    STATA: 976-Modulo1952
+    SPSS: 976-Modulo1952
+- anio: 2024
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '976'
+  codigo: '1953'
+  nombre: CRS02_CAP300
+  archivos:
+    CSV: 976-Modulo1953
+    STATA: 976-Modulo1953
+    SPSS: 976-Modulo1953
+- anio: 2024
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '976'
+  codigo: '1954'
+  nombre: CRS02_CAP400
+  archivos:
+    CSV: 976-Modulo1954
+    STATA: 976-Modulo1954
+    SPSS: 976-Modulo1954
+- anio: 2024
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '976'
+  codigo: '1955'
+  nombre: CRS02_CAP500
+  archivos:
+    CSV: 976-Modulo1955
+    STATA: 976-Modulo1955
+    SPSS: 976-Modulo1955
+- anio: 2024
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '976'
+  codigo: '1956'
+  nombre: CRS03_CAP100
+  archivos:
+    CSV: 976-Modulo1956
+    STATA: 976-Modulo1956
+    SPSS: 976-Modulo1956
+- anio: 2024
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '976'
+  codigo: '1957'
+  nombre: CRS03_CAP200
+  archivos:
+    CSV: 976-Modulo1957
+    STATA: 976-Modulo1957
+    SPSS: 976-Modulo1957
+- anio: 2024
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '976'
+  codigo: '1958'
+  nombre: CRS03_CAP300
+  archivos:
+    CSV: 976-Modulo1958
+    STATA: 976-Modulo1958
+    SPSS: 976-Modulo1958
+- anio: 2024
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '976'
+  codigo: '1959'
+  nombre: CRS04_CAP100
+  archivos:
+    CSV: 976-Modulo1959
+    STATA: 976-Modulo1959
+    SPSS: 976-Modulo1959
+- anio: 2024
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '976'
+  codigo: '1960'
+  nombre: CRS04_CAP200
+  archivos:
+    CSV: 976-Modulo1960
+    STATA: 976-Modulo1960
+    SPSS: 976-Modulo1960
+- anio: 2024
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '976'
+  codigo: '1961'
+  nombre: CRS04_CAP248
+  archivos:
+    CSV: 976-Modulo1961
+    STATA: 976-Modulo1961
+    SPSS: 976-Modulo1961
+- anio: 2024
+  periodo: Anual - (Ene-Dic)
+  serie: principal
+  encuesta_inei: '976'
+  codigo: '1962'
+  nombre: CRS04_CAP300
+  archivos:
+    CSV: 976-Modulo1962
+    STATA: 976-Modulo1962
+    SPSS: 976-Modulo1962

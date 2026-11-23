@@ -1,0 +1,4614 @@
+id: ena
+siglas: ENA
+nombre: Encuesta Nacional Agropecuaria
+organismo: INEI (con MIDAGRI)
+tipo: encuesta
+fuente: inei_portal
+portal:
+  encuesta: [ENCUESTA NACIONAL AGROPECUARIA]
+url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/{formato}/{archivo}
+formatos: [CSV, STATA, SPSS, DBF]
+anios: [2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025]
+unidad: productor agropecuario
+ubigeo: CCDD + CCPP + CCDI
+diseno:
+  peso: [FACTOR_PRODUCTOR]
+  escala: 1
+  estrato: [ESTRATO]
+  conglomerado: [NSEGM]
+  verificado: true
+  nota: Verificado en la cabecera de 03_CAP200A de 2024. Que NSEGM sea la unidad primaria hay que confirmarlo en la ficha técnica. No hubo ronda 2020.
+estado: Descargada y verificada en la Arch.
+modulos:
+- anio: 2014
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '505'
+  codigo: '772'
+  nombre: CARATERÍSTICAS DE LA UNIDAD AGROPECUARIA
+  archivos:
+    SPSS: 505-Modulo772
+    DBF: 505-Modulo772
+    CSV: 505-Modulo772
+    STATA: 505-Modulo772
+  local:
+    formato: SPSS
+    ruta: ENA/2014/505-Modulo772.zip
+    bytes: 2528395
+    sha256: cce7a0ef5392d0ac166df8496be1b5c21ba4ac194e79c45c12030e726f35b3fd
+- anio: 2014
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '505'
+  codigo: '773'
+  nombre: SUPERFICIE COSECHADA, SEMBRADA, PRODUCCION Y DESTINO DE LOS CULTIVOS COSECHADOS
+  archivos:
+    SPSS: 505-Modulo773
+    DBF: 505-Modulo773
+    CSV: 505-Modulo773
+    STATA: 505-Modulo773
+  local:
+    formato: SPSS
+    ruta: ENA/2014/505-Modulo773.zip
+    bytes: 3271591
+    sha256: ad8ce13c8e4bffe6edefa1b3023cdb470c81f72d5b9e51f420d7287482a486a5
+- anio: 2014
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '505'
+  codigo: '774'
+  nombre: PRODUCCION Y DESTINO DE LOS CULTIVOS COSECHADOS
+  archivos:
+    SPSS: 505-Modulo774
+    DBF: 505-Modulo774
+    CSV: 505-Modulo774
+    STATA: 505-Modulo774
+  local:
+    formato: SPSS
+    ruta: ENA/2014/505-Modulo774.zip
+    bytes: 1220040
+    sha256: feec17df31278cf0f4235d513cbb6bd61065dd36236bd9961513026915e72938
+- anio: 2014
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '505'
+  codigo: '775'
+  nombre: DERIVADOS Y/O SUBPRODUCTOS AGRÍCOLAS DE LOS CULTIVOS COSECHADOS
+  archivos:
+    SPSS: 505-Modulo775
+    DBF: 505-Modulo775
+    CSV: 505-Modulo775
+    STATA: 505-Modulo775
+  local:
+    formato: SPSS
+    ruta: ENA/2014/505-Modulo775.zip
+    bytes: 1389303
+    sha256: 2c91a26f2d35ed3455447fbe38ac5c73e3e82d2400a8a20e0f414e783dd2a140
+- anio: 2014
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '505'
+  codigo: '776'
+  nombre: COSTOS DE PRODUCCIÓN DE LOS CULTIVOS COSECHADOS
+  archivos:
+    SPSS: 505-Modulo776
+    DBF: 505-Modulo776
+    CSV: 505-Modulo776
+    STATA: 505-Modulo776
+  local:
+    formato: SPSS
+    ruta: ENA/2014/505-Modulo776.zip
+    bytes: 2214494
+    sha256: 3e5213322ec8e03851902cfec1c4128edd77d898fb39a5f0a8ae2f9b1643fdcb
+- anio: 2014
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '505'
+  codigo: '777'
+  nombre: BUENAS PRÁCTICAS AGRÍCOLAS
+  archivos:
+    SPSS: 505-Modulo777
+    DBF: 505-Modulo777
+    CSV: 505-Modulo777
+    STATA: 505-Modulo777
+  local:
+    formato: SPSS
+    ruta: ENA/2014/505-Modulo777.zip
+    bytes: 1834783
+    sha256: 6f6feba43befd4ce24a2ea73e4e4f096a323d55abb3d536aed430c65832aa837
+- anio: 2014
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '505'
+  codigo: '778'
+  nombre: PRODUCCIÓN PECUARIA
+  archivos:
+    SPSS: 505-Modulo778
+    DBF: 505-Modulo778
+    CSV: 505-Modulo778
+    STATA: 505-Modulo778
+  local:
+    formato: SPSS
+    ruta: ENA/2014/505-Modulo778.zip
+    bytes: 2359862
+    sha256: 8fc24c6ba4ae35c51bb255b9f0ba2e65832c439ca032fa2487f25fb86114ce6a
+- anio: 2014
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '505'
+  codigo: '779'
+  nombre: SUBPRODUCTOS PECUARIOS
+  archivos:
+    SPSS: 505-Modulo779
+    DBF: 505-Modulo779
+    CSV: 505-Modulo779
+    STATA: 505-Modulo779
+  local:
+    formato: SPSS
+    ruta: ENA/2014/505-Modulo779.zip
+    bytes: 1438061
+    sha256: 37b29d1301a90fc02a06386f30b835b70d0cdd83cddf0f7064e11fac0645b332
+- anio: 2014
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '505'
+  codigo: '780'
+  nombre: DERIVADOS PECUARIOS
+  archivos:
+    SPSS: 505-Modulo780
+    DBF: 505-Modulo780
+    CSV: 505-Modulo780
+    STATA: 505-Modulo780
+  local:
+    formato: SPSS
+    ruta: ENA/2014/505-Modulo780.zip
+    bytes: 1338605
+    sha256: c9122a27fc830c4ee49a9d6098ce39fd97a23b861470649716efe2d445d77c76
+- anio: 2014
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '505'
+  codigo: '781'
+  nombre: BUENAS PRÁCTICAS PECUARIAS
+  archivos:
+    SPSS: 505-Modulo781
+    DBF: 505-Modulo781
+    CSV: 505-Modulo781
+    STATA: 505-Modulo781
+  local:
+    formato: SPSS
+    ruta: ENA/2014/505-Modulo781.zip
+    bytes: 1594559
+    sha256: ad97d124f25e9981aaeb6e68ee92ed0f10cc180acac52a2eab3f7a691c5766b3
+- anio: 2014
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '505'
+  codigo: '782'
+  nombre: INOCUIDAD AGROALIMENTARIA
+  archivos:
+    SPSS: 505-Modulo782
+    DBF: 505-Modulo782
+    CSV: 505-Modulo782
+    STATA: 505-Modulo782
+  local:
+    formato: SPSS
+    ruta: ENA/2014/505-Modulo782.zip
+    bytes: 1690811
+    sha256: 45020bc46b71950f23ee4f1ef47ed8f8ed19b3b9c22964bad3ba0dfa5348fae5
+- anio: 2014
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '505'
+  codigo: '783'
+  nombre: SERVICIOS DE EXTENSIÓN AGRARÍA
+  archivos:
+    SPSS: 505-Modulo783
+    DBF: 505-Modulo783
+    CSV: 505-Modulo783
+    STATA: 505-Modulo783
+  local:
+    formato: SPSS
+    ruta: ENA/2014/505-Modulo783.zip
+    bytes: 1756225
+    sha256: ec65f819644ead9f820ff4e0e7f0c92cc8a01b8128c33440c19a2d08640b192a
+- anio: 2014
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '505'
+  codigo: '784'
+  nombre: ASOCIATIVIDAD
+  archivos:
+    SPSS: 505-Modulo784
+    DBF: 505-Modulo784
+    CSV: 505-Modulo784
+    STATA: 505-Modulo784
+  local:
+    formato: SPSS
+    ruta: ENA/2014/505-Modulo784.zip
+    bytes: 1599416
+    sha256: 4f26f77da5d8ebeda53abd3c22d3ead474d3fb7b044e850bb5e128d87332c320
+- anio: 2014
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '505'
+  codigo: '785'
+  nombre: SERVICIOS FINANCIEROS
+  archivos:
+    SPSS: 505-Modulo785
+    DBF: 505-Modulo785
+    CSV: 505-Modulo785
+    STATA: 505-Modulo785
+  local:
+    formato: SPSS
+    ruta: ENA/2014/505-Modulo785.zip
+    bytes: 1520704
+    sha256: 3894c447e61a4595b093babde7ed48fb53cd1b7fd15f51ea41bbe1fef9b7f9ca
+- anio: 2014
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '505'
+  codigo: '786'
+  nombre: COSTOS DE PRODUCCIÓN DE LA ACTIVIDAD AGROPECUARIA
+  archivos:
+    SPSS: 505-Modulo786
+    DBF: 505-Modulo786
+    CSV: 505-Modulo786
+    STATA: 505-Modulo786
+  local:
+    formato: SPSS
+    ruta: ENA/2014/505-Modulo786.zip
+    bytes: 1685680
+    sha256: 8d6339ffab363eea4a7287c84c716cc74fdc836c6ee0f33222bc90482a3c24f6
+- anio: 2014
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '505'
+  codigo: '787'
+  nombre: CARACTERÍSTICAS DEL PRODUCTOR/A AGROPECUARIO/A Y SU FAMILIA
+  archivos:
+    SPSS: 505-Modulo787
+    DBF: 505-Modulo787
+    CSV: 505-Modulo787
+    STATA: 505-Modulo787
+  local:
+    formato: SPSS
+    ruta: ENA/2014/505-Modulo787.zip
+    bytes: 2537942
+    sha256: 1316f8c770882bcc8aee7f4abbc8f99cd0067961f32bbd64b6287b4ac1f203c6
+- anio: 2014
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '505'
+  codigo: '947'
+  nombre: BASE DE DATOS ESPECIAL
+  archivos:
+    SPSS: 505-Modulo947
+    DBF: 505-Modulo947
+    CSV: 505-Modulo947
+    STATA: 505-Modulo947
+  local:
+    formato: SPSS
+    ruta: ENA/2014/505-Modulo947.zip
+    bytes: 335034
+    sha256: 0dcb0c5c399fbbaf8a0b52ac2dbe8d94837ea90e3c9ac213af2e78ae7c501115
+- anio: 2015
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '506'
+  codigo: '788'
+  nombre: CARATERÍSTICAS DE LA UNIDAD AGROPECUARIA
+  archivos:
+    SPSS: 506-Modulo788
+    DBF: 506-Modulo788
+    CSV: 506-Modulo788
+    STATA: 506-Modulo788
+  local:
+    formato: SPSS
+    ruta: ENA/2015/506-Modulo788.zip
+    bytes: 3671313
+    sha256: 798f15340c6e5928e7affb2e8b6039dcd0220fbc7887b4e739e1ae424749db0a
+- anio: 2015
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '506'
+  codigo: '789'
+  nombre: SUPERFICIE COSECHADA, SEMBRADA, PRODUCCION Y DESTINO DE LOS CULTIVOS COSECHADOS
+  archivos:
+    SPSS: 506-Modulo789
+    DBF: 506-Modulo789
+    CSV: 506-Modulo789
+    STATA: 506-Modulo789
+  local:
+    formato: SPSS
+    ruta: ENA/2015/506-Modulo789.zip
+    bytes: 5111334
+    sha256: 856c291b350acb70e736bf838117d51f076bcd5ebe2cc07f5d76af4089943cac
+- anio: 2015
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '506'
+  codigo: '790'
+  nombre: PERDIDA TOTAL DE PRODUCCIÓN O SUPERFICIE SEMBRADA
+  archivos:
+    SPSS: 506-Modulo790
+    DBF: 506-Modulo790
+    CSV: 506-Modulo790
+    STATA: 506-Modulo790
+  local:
+    formato: SPSS
+    ruta: ENA/2015/506-Modulo790.zip
+    bytes: 1842664
+    sha256: befdec252734c836407ec692932ab2a14967f10fffc16cb2439441d8363eebcd
+- anio: 2015
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '506'
+  codigo: '791'
+  nombre: PRODUCCION Y DESTINO DE LOS CULTIVOS COSECHADOS
+  archivos:
+    SPSS: 506-Modulo791
+    DBF: 506-Modulo791
+    CSV: 506-Modulo791
+    STATA: 506-Modulo791
+  local:
+    formato: SPSS
+    ruta: ENA/2015/506-Modulo791.zip
+    bytes: 1503555
+    sha256: fd4e99a6306e77ad19cbd5af1dc2d11e2fce6889fc7fb2df431e0e0c3dc7c5c4
+- anio: 2015
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '506'
+  codigo: '792'
+  nombre: DERIVADOS AGRÍCOLAS DE LOS CULTIVOS COSECHADOS
+  archivos:
+    SPSS: 506-Modulo792
+    DBF: 506-Modulo792
+    CSV: 506-Modulo792
+    STATA: 506-Modulo792
+  local:
+    formato: SPSS
+    ruta: ENA/2015/506-Modulo792.zip
+    bytes: 1918298
+    sha256: bda659e2768c2a8a4b65e33e40927909aa3a3e96fca74cdd3b6aa05228362d13
+- anio: 2015
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '506'
+  codigo: '793'
+  nombre: SUBPRODUCTOS AGRÍCOLAS DE LOS CULTIVOS COSECHADOS
+  archivos:
+    SPSS: 506-Modulo793
+    DBF: 506-Modulo793
+    CSV: 506-Modulo793
+    STATA: 506-Modulo793
+  local:
+    formato: SPSS
+    ruta: ENA/2015/506-Modulo793.zip
+    bytes: 1925456
+    sha256: 4ecefc8439e45ac8a6a07154d6502fc1882d60e68d92ecb1b4cdcfbe7cb91396
+- anio: 2015
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '506'
+  codigo: '794'
+  nombre: COSTOS DE PRODUCCIÓN DE LOS CULTIVOS COSECHADOS
+  archivos:
+    SPSS: 506-Modulo794
+    DBF: 506-Modulo794
+    CSV: 506-Modulo794
+    STATA: 506-Modulo794
+  local:
+    formato: SPSS
+    ruta: ENA/2015/506-Modulo794.zip
+    bytes: 3610580
+    sha256: 989b585f22443ca9003d485f313b4d9aa1e61d42e688044a2452c5ab372bf334
+- anio: 2015
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '506'
+  codigo: '795'
+  nombre: BUENAS PRÁCTICAS AGRÍCOLAS
+  archivos:
+    SPSS: 506-Modulo795
+    DBF: 506-Modulo795
+    CSV: 506-Modulo795
+    STATA: 506-Modulo795
+  local:
+    formato: SPSS
+    ruta: ENA/2015/506-Modulo795.zip
+    bytes: 2227779
+    sha256: d284d0be5abec65009f89c4bb7cc107cb25e09ef7edf23303da6739db40554d1
+- anio: 2015
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '506'
+  codigo: '796'
+  nombre: PRODUCCIÓN PECUARIA
+  archivos:
+    SPSS: 506-Modulo796
+    DBF: 506-Modulo796
+    CSV: 506-Modulo796
+    STATA: 506-Modulo796
+  local:
+    formato: SPSS
+    ruta: ENA/2015/506-Modulo796.zip
+    bytes: 4409273
+    sha256: 981c05ab19ecf44374c5d45b8a0f41e3a8c86ade2dbe9729094b9bc9d9d5b244
+- anio: 2015
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '506'
+  codigo: '797'
+  nombre: SUBPRODUCTOS PECUARIOS
+  archivos:
+    SPSS: 506-Modulo797
+    DBF: 506-Modulo797
+    CSV: 506-Modulo797
+    STATA: 506-Modulo797
+  local:
+    formato: SPSS
+    ruta: ENA/2015/506-Modulo797.zip
+    bytes: 2279092
+    sha256: 32819987aa1be4f155019ff0b15da95f7f855725bf52b6e093c9b922c08fb9fa
+- anio: 2015
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '506'
+  codigo: '798'
+  nombre: DERIVADOS PECUARIOS
+  archivos:
+    SPSS: 506-Modulo798
+    DBF: 506-Modulo798
+    CSV: 506-Modulo798
+    STATA: 506-Modulo798
+  local:
+    formato: SPSS
+    ruta: ENA/2015/506-Modulo798.zip
+    bytes: 1858734
+    sha256: 758dfc4f47b18d3d0d615e6a272e71a0da71a821e22ed07bee4182439358ba36
+- anio: 2015
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '506'
+  codigo: '799'
+  nombre: BUENAS PRÁCTICAS PECUARIAS
+  archivos:
+    SPSS: 506-Modulo799
+    DBF: 506-Modulo799
+    CSV: 506-Modulo799
+    STATA: 506-Modulo799
+  local:
+    formato: SPSS
+    ruta: ENA/2015/506-Modulo799.zip
+    bytes: 2113154
+    sha256: 08220b395c92c38fb2cfbbb7c2bcff83c5934da3968ecc0a06762543b5450323
+- anio: 2015
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '506'
+  codigo: '800'
+  nombre: INOCUIDAD AGROALIMENTARIA
+  archivos:
+    SPSS: 506-Modulo800
+    DBF: 506-Modulo800
+    CSV: 506-Modulo800
+    STATA: 506-Modulo800
+  local:
+    formato: SPSS
+    ruta: ENA/2015/506-Modulo800.zip
+    bytes: 2096239
+    sha256: 8705703b75f34b6079b6d150b53054fc0ede2046e11da56691897dfc40961d1e
+- anio: 2015
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '506'
+  codigo: '801'
+  nombre: SERVICIOS DE EXTENSIÓN AGRARÍA
+  archivos:
+    SPSS: 506-Modulo801
+    DBF: 506-Modulo801
+    CSV: 506-Modulo801
+    STATA: 506-Modulo801
+  local:
+    formato: SPSS
+    ruta: ENA/2015/506-Modulo801.zip
+    bytes: 2434054
+    sha256: 976c0192e9854f0cb69b3e4641bf7d495dc23c886e69298085932f38a1cbab1d
+- anio: 2015
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '506'
+  codigo: '802'
+  nombre: ASOCIATIVIDAD
+  archivos:
+    SPSS: 506-Modulo802
+    DBF: 506-Modulo802
+    CSV: 506-Modulo802
+    STATA: 506-Modulo802
+  local:
+    formato: SPSS
+    ruta: ENA/2015/506-Modulo802.zip
+    bytes: 2169836
+    sha256: b7982067f27f2a0a0707b96c4985058c92477066256ed0f830fe1d02f53f3e11
+- anio: 2015
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '506'
+  codigo: '803'
+  nombre: SERVICIOS FINANCIEROS
+  archivos:
+    SPSS: 506-Modulo803
+    DBF: 506-Modulo803
+    CSV: 506-Modulo803
+    STATA: 506-Modulo803
+  local:
+    formato: SPSS
+    ruta: ENA/2015/506-Modulo803.zip
+    bytes: 2077782
+    sha256: 35b25bd6f24eecb860e6fc699c789481f98dde92f07a1776097f9f5434b6e7e4
+- anio: 2015
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '506'
+  codigo: '804'
+  nombre: COSTOS DE PRODUCCIÓN DE LA ACTIVIDAD AGROPECUARIA
+  archivos:
+    SPSS: 506-Modulo804
+    DBF: 506-Modulo804
+    CSV: 506-Modulo804
+    STATA: 506-Modulo804
+  local:
+    formato: SPSS
+    ruta: ENA/2015/506-Modulo804.zip
+    bytes: 2835594
+    sha256: e00321f11413f723a3c889a7ccf378f297ecfa62fa3104e32dac0fc27868d95a
+- anio: 2015
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '506'
+  codigo: '805'
+  nombre: CARACTERÍSTICAS DEL PRODUCTOR/A AGROPECUARIO/A Y SU FAMILIA
+  archivos:
+    SPSS: 506-Modulo805
+    DBF: 506-Modulo805
+    CSV: 506-Modulo805
+    STATA: 506-Modulo805
+  local:
+    formato: SPSS
+    ruta: ENA/2015/506-Modulo805.zip
+    bytes: 3085086
+    sha256: 2c9b5da8a9ce08aacba2847433b9306c092cbc51a677fda35cc9254bd812e59c
+- anio: 2015
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '506'
+  codigo: '806'
+  nombre: CARACTERÍSTICAS DE LA UNIDAD AGROPECUARIA AL DÍA DE LA ENTREVISTA
+  archivos:
+    SPSS: 506-Modulo806
+    DBF: 506-Modulo806
+    CSV: 506-Modulo806
+    STATA: 506-Modulo806
+  local:
+    formato: SPSS
+    ruta: ENA/2015/506-Modulo806.zip
+    bytes: 2254426
+    sha256: 27d23d603139ac6d1d91cb7f45eb2c91ea9387863508771b0715e7567825ab4a
+- anio: 2015
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '506'
+  codigo: '807'
+  nombre: CULTIVOS INSTALADOS O SEMBRADOS
+  archivos:
+    SPSS: 506-Modulo807
+    DBF: 506-Modulo807
+    CSV: 506-Modulo807
+    STATA: 506-Modulo807
+  local:
+    formato: SPSS
+    ruta: ENA/2015/506-Modulo807.zip
+    bytes: 3264105
+    sha256: bbf1d026b1f3338b71f3e0293bed61aa0dcfb55bfa4f47b33e49c1a0910d6d7c
+- anio: 2015
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '506'
+  codigo: '808'
+  nombre: USOS DE LA TIERRA
+  archivos:
+    SPSS: 506-Modulo808
+    DBF: 506-Modulo808
+    CSV: 506-Modulo808
+    STATA: 506-Modulo808
+  local:
+    formato: SPSS
+    ruta: ENA/2015/506-Modulo808.zip
+    bytes: 3155153
+    sha256: d08e3ae24066dc75aad51a4e11996e3a3d82e71cc083ffd7b3423e2d5af0f0bb
+- anio: 2015
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '506'
+  codigo: '809'
+  nombre: EXISTENCIA DE GANADO, AVES Y OTROS ANIMALES
+  archivos:
+    SPSS: 506-Modulo809
+    DBF: 506-Modulo809
+    CSV: 506-Modulo809
+    STATA: 506-Modulo809
+  local:
+    formato: SPSS
+    ruta: ENA/2015/506-Modulo809.zip
+    bytes: 2720285
+    sha256: d14cb4ad007b8e0dd46bd828263736e8aa359de4e3784b4c3492f000711eb7db
+- anio: 2015
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '506'
+  codigo: '1007'
+  nombre: BASE DE DATOS ESPACIAL
+  archivos:
+    SPSS: 506-Modulo1007
+    DBF: 506-Modulo1007
+    CSV: 506-Modulo1007
+    STATA: 506-Modulo1007
+  local:
+    formato: SPSS
+    ruta: ENA/2015/506-Modulo1007.zip
+    bytes: 349937
+    sha256: c129fdca4d18422fdbe1e1eb8aa2b9280c9af383c780c13997d8408b99bdc4cb
+- anio: 2016
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '579'
+  codigo: '1122'
+  nombre: CARATERÍSTICAS DE LA UNIDAD AGROPECUARIA
+  archivos:
+    SPSS: 579-Modulo1122
+    DBF: 579-Modulo1122
+    CSV: 579-Modulo1122
+    STATA: 579-Modulo1122
+  local:
+    formato: SPSS
+    ruta: ENA/2016/579-Modulo1122.zip
+    bytes: 4117814
+    sha256: 5896e5666f60304e807ea780eea773cc9a173a33699d9313ed91491436fe3646
+- anio: 2016
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '579'
+  codigo: '1123'
+  nombre: SUPERFICIE COSECHADA, SEMBRADA, PRODUCCION Y DESTINO DE LOS CULTIVOS COSECHADOS
+  archivos:
+    SPSS: 579-Modulo1123
+    DBF: 579-Modulo1123
+    CSV: 579-Modulo1123
+    STATA: 579-Modulo1123
+  local:
+    formato: SPSS
+    ruta: ENA/2016/579-Modulo1123.zip
+    bytes: 8514411
+    sha256: 93cb8e734fca173812179886db418ea289b55929b61ac41b1f2e52515fd3a56e
+- anio: 2016
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '579'
+  codigo: '1124'
+  nombre: PERDIDA TOTAL DE PRODUCCIÓN O SUPERFICIE SEMBRADA
+  archivos:
+    SPSS: 579-Modulo1124
+    DBF: 579-Modulo1124
+    CSV: 579-Modulo1124
+    STATA: 579-Modulo1124
+  local:
+    formato: SPSS
+    ruta: ENA/2016/579-Modulo1124.zip
+    bytes: 2080424
+    sha256: c588979d37440597388a5ceb94d23841db571f49ecdab1d3e7118914a2485cf6
+- anio: 2016
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '579'
+  codigo: '1125'
+  nombre: PRODUCCION Y DESTINO DE LOS CULTIVOS COSECHADOS
+  archivos:
+    SPSS: 579-Modulo1125
+    DBF: 579-Modulo1125
+    CSV: 579-Modulo1125
+    STATA: 579-Modulo1125
+  local:
+    formato: SPSS
+    ruta: ENA/2016/579-Modulo1125.zip
+    bytes: 2325402
+    sha256: e8506c7c94dfcafe570f2d8dfd5b6ffd2fff800915689888b40b2e7eacc00338
+- anio: 2016
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '579'
+  codigo: '1126'
+  nombre: DERIVADOS AGRÍCOLAS DE LOS CULTIVOS COSECHADOS
+  archivos:
+    SPSS: 579-Modulo1126
+    DBF: 579-Modulo1126
+    CSV: 579-Modulo1126
+    STATA: 579-Modulo1126
+  local:
+    formato: SPSS
+    ruta: ENA/2016/579-Modulo1126.zip
+    bytes: 2154697
+    sha256: 7b0f1ca6cfa78041c2fe0ec10266379c204b225fe8cef1cb67dead8a50cc91df
+- anio: 2016
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '579'
+  codigo: '1127'
+  nombre: SUBPRODUCTOS AGRÍCOLAS DE LOS CULTIVOS COSECHADOS
+  archivos:
+    SPSS: 579-Modulo1127
+    DBF: 579-Modulo1127
+    CSV: 579-Modulo1127
+    STATA: 579-Modulo1127
+  local:
+    formato: SPSS
+    ruta: ENA/2016/579-Modulo1127.zip
+    bytes: 2081296
+    sha256: c8f71a695d67b7da2b4b4045874a8bd6be88054ecd5fad257348edfbb07baf84
+- anio: 2016
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '579'
+  codigo: '1128'
+  nombre: COSTOS DE PRODUCCIÓN DE LOS CULTIVOS COSECHADOS
+  archivos:
+    SPSS: 579-Modulo1128
+    DBF: 579-Modulo1128
+    CSV: 579-Modulo1128
+    STATA: 579-Modulo1128
+  local:
+    formato: SPSS
+    ruta: ENA/2016/579-Modulo1128.zip
+    bytes: 3950566
+    sha256: 180df62dd1e956a0f17631c76e21256f98ca0b31a9e588468adf97c39ca60e79
+- anio: 2016
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '579'
+  codigo: '1129'
+  nombre: BUENAS PRÁCTICAS AGRÍCOLAS
+  archivos:
+    SPSS: 579-Modulo1129
+    DBF: 579-Modulo1129
+    CSV: 579-Modulo1129
+    STATA: 579-Modulo1129
+  local:
+    formato: SPSS
+    ruta: ENA/2016/579-Modulo1129.zip
+    bytes: 2369128
+    sha256: 932e2bd7f5947ec8c0d1450d6938774e7d710b7d320ed481d0ad997d3abc591a
+- anio: 2016
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '579'
+  codigo: '1130'
+  nombre: PRODUCCIÓN PECUARIA
+  archivos:
+    SPSS: 579-Modulo1130
+    DBF: 579-Modulo1130
+    CSV: 579-Modulo1130
+    STATA: 579-Modulo1130
+  local:
+    formato: SPSS
+    ruta: ENA/2016/579-Modulo1130.zip
+    bytes: 4646503
+    sha256: d3a563615e016863c2c15e27335f3b9b60376564fa1fe892f953527fadaf2c82
+- anio: 2016
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '579'
+  codigo: '1131'
+  nombre: SUBPRODUCTOS PECUARIOS
+  archivos:
+    SPSS: 579-Modulo1131
+    DBF: 579-Modulo1131
+    CSV: 579-Modulo1131
+    STATA: 579-Modulo1131
+  local:
+    formato: SPSS
+    ruta: ENA/2016/579-Modulo1131.zip
+    bytes: 2564102
+    sha256: 57f5aa3547426793cde130f629b1b75e3b8e80f9fbbad8bea57427d18f59f01d
+- anio: 2016
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '579'
+  codigo: '1132'
+  nombre: DERIVADOS PECUARIOS
+  archivos:
+    SPSS: 579-Modulo1132
+    DBF: 579-Modulo1132
+    CSV: 579-Modulo1132
+    STATA: 579-Modulo1132
+  local:
+    formato: SPSS
+    ruta: ENA/2016/579-Modulo1132.zip
+    bytes: 1972240
+    sha256: 40a6b07836dd234bc24d4298e4725af3fd54e7c2e75ee6c97ec9d29559778188
+- anio: 2016
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '579'
+  codigo: '1133'
+  nombre: BUENAS PRÁCTICAS PECUARIAS
+  archivos:
+    SPSS: 579-Modulo1133
+    DBF: 579-Modulo1133
+    CSV: 579-Modulo1133
+    STATA: 579-Modulo1133
+  local:
+    formato: SPSS
+    ruta: ENA/2016/579-Modulo1133.zip
+    bytes: 2242279
+    sha256: 72bb9a7fdf6dc64a0386ceb3d656281bc45e442320febdc3ffab98d66be9802c
+- anio: 2016
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '579'
+  codigo: '1134'
+  nombre: INOCUIDAD AGROALIMENTARIA
+  archivos:
+    SPSS: 579-Modulo1134
+    DBF: 579-Modulo1134
+    CSV: 579-Modulo1134
+    STATA: 579-Modulo1134
+  local:
+    formato: SPSS
+    ruta: ENA/2016/579-Modulo1134.zip
+    bytes: 2296990
+    sha256: 723cb29543bc3f223b0152aa0e98f6c671ba1bf16b077af1aae1d08cbede4e36
+- anio: 2016
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '579'
+  codigo: '1135'
+  nombre: SERVICIOS DE EXTENSIÓN AGRARÍA
+  archivos:
+    SPSS: 579-Modulo1135
+    DBF: 579-Modulo1135
+    CSV: 579-Modulo1135
+    STATA: 579-Modulo1135
+  local:
+    formato: SPSS
+    ruta: ENA/2016/579-Modulo1135.zip
+    bytes: 2525922
+    sha256: cd36ae112dd782726f33b75cb67440bfa372ff51ead051e497724a7f696a563e
+- anio: 2016
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '579'
+  codigo: '1136'
+  nombre: ASOCIATIVIDAD
+  archivos:
+    SPSS: 579-Modulo1136
+    DBF: 579-Modulo1136
+    CSV: 579-Modulo1136
+    STATA: 579-Modulo1136
+  local:
+    formato: SPSS
+    ruta: ENA/2016/579-Modulo1136.zip
+    bytes: 2251241
+    sha256: b9693890432cee259436ac376e354eee52b3aa5c1a651f73b031ea0ac097214f
+- anio: 2016
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '579'
+  codigo: '1137'
+  nombre: SERVICIOS FINANCIEROS
+  archivos:
+    SPSS: 579-Modulo1137
+    DBF: 579-Modulo1137
+    CSV: 579-Modulo1137
+    STATA: 579-Modulo1137
+  local:
+    formato: SPSS
+    ruta: ENA/2016/579-Modulo1137.zip
+    bytes: 2127144
+    sha256: 712c6d07ba9d92d621b778deb9d4c2d59a952e4ed06ce0a98d40ffa250dc594e
+- anio: 2016
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '579'
+  codigo: '1138'
+  nombre: COSTOS DE PRODUCCIÓN DE LA ACTIVIDAD AGROPECUARIA
+  archivos:
+    SPSS: 579-Modulo1138
+    DBF: 579-Modulo1138
+    CSV: 579-Modulo1138
+    STATA: 579-Modulo1138
+  local:
+    formato: SPSS
+    ruta: ENA/2016/579-Modulo1138.zip
+    bytes: 2958315
+    sha256: d34d85010b9cb366ee3820a83393ac92a7376cac42aeb144101cccfea05f811b
+- anio: 2016
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '579'
+  codigo: '1139'
+  nombre: CARACTERÍSTICAS DEL PRODUCTOR/A AGROPECUARIO/A Y SU FAMILIA
+  archivos:
+    SPSS: 579-Modulo1139
+    DBF: 579-Modulo1139
+    CSV: 579-Modulo1139
+    STATA: 579-Modulo1139
+  local:
+    formato: SPSS
+    ruta: ENA/2016/579-Modulo1139.zip
+    bytes: 3221526
+    sha256: b7fb2aee8ab8a393e24cd1de7755e72bf4314632e5436939f47220d38e979003
+- anio: 2016
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '579'
+  codigo: '1140'
+  nombre: CARACTERÍSTICAS DE LA UNIDAD AGROPECUARIA AL DÍA DE LA ENTREVISTA
+  archivos:
+    SPSS: 579-Modulo1140
+    DBF: 579-Modulo1140
+    CSV: 579-Modulo1140
+    STATA: 579-Modulo1140
+  local:
+    formato: SPSS
+    ruta: ENA/2016/579-Modulo1140.zip
+    bytes: 2328728
+    sha256: 9548f4066c5becce95cbdc4b9844f812ec9ffdf859f21d422a1e654193c10ed2
+- anio: 2016
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '579'
+  codigo: '1141'
+  nombre: CULTIVOS INSTALADOS O SEMBRADOS
+  archivos:
+    SPSS: 579-Modulo1141
+    DBF: 579-Modulo1141
+    CSV: 579-Modulo1141
+    STATA: 579-Modulo1141
+  local:
+    formato: SPSS
+    ruta: ENA/2016/579-Modulo1141.zip
+    bytes: 3879864
+    sha256: 55fd5c457f165a4e5522a9195f40230cb4844b82317d663b70db5b8695b6e89e
+- anio: 2016
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '579'
+  codigo: '1142'
+  nombre: USOS DE LA TIERRA
+  archivos:
+    SPSS: 579-Modulo1142
+    DBF: 579-Modulo1142
+    CSV: 579-Modulo1142
+    STATA: 579-Modulo1142
+  local:
+    formato: SPSS
+    ruta: ENA/2016/579-Modulo1142.zip
+    bytes: 3008979
+    sha256: a501f02b892bead8bd76433f9823b42611fee51f9756d4aa6cf8b5905e0bf830
+- anio: 2016
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '579'
+  codigo: '1143'
+  nombre: EXISTENCIA DE GANADO, AVES Y OTROS ANIMALES
+  archivos:
+    SPSS: 579-Modulo1143
+    DBF: 579-Modulo1143
+    CSV: 579-Modulo1143
+    STATA: 579-Modulo1143
+  local:
+    formato: SPSS
+    ruta: ENA/2016/579-Modulo1143.zip
+    bytes: 2805864
+    sha256: 0099aeca3d0b3104c203440aa92f292871f3a1d156b372261cef582257a9e197
+- anio: 2016
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '579'
+  codigo: '1144'
+  nombre: BD_ESPACIAL
+  archivos:
+    SPSS: 579-Modulo1144
+    DBF: 579-Modulo1144
+    CSV: 579-Modulo1144
+    STATA: 579-Modulo1144
+  local:
+    formato: SPSS
+    ruta: ENA/2016/579-Modulo1144.zip
+    bytes: 89580
+    sha256: 240dbda57f999c693f1c76c2384a34642f3c213ddd30a138bd4217639a4a89ff
+- anio: 2017
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '615'
+  codigo: '1315'
+  nombre: CARATERÍSTICAS DE LA UNIDAD AGROPECUARIA
+  archivos:
+    STATA: 615-Modulo1315
+    SPSS: 615-Modulo1315
+    DBF: 615-Modulo1315
+    CSV: 615-Modulo1315
+  local:
+    formato: STATA
+    ruta: ENA/2017/615-Modulo1315.zip
+    bytes: 8123216
+    sha256: 42fc08cce2ce656ca1185290d07bda79c1de106a9fe77beac0914f96a604f4fd
+- anio: 2017
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '615'
+  codigo: '1316'
+  nombre: SUPERFICIE COSECHADA, SEMBRADA, PRODUCCION Y DESTINO DE LOS CULTIVOS COSECHADOS
+  archivos:
+    STATA: 615-Modulo1316
+    SPSS: 615-Modulo1316
+    DBF: 615-Modulo1316
+    CSV: 615-Modulo1316
+  local:
+    formato: STATA
+    ruta: ENA/2017/615-Modulo1316.zip
+    bytes: 12142132
+    sha256: 26fbd0141d6bfade216597be22042fca03e25ffdc4603d1b3ef91d909f24a8b2
+- anio: 2017
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '615'
+  codigo: '1317'
+  nombre: PERDIDA TOTAL DE PRODUCCIÓN O SUPERFICIE SEMBRADA
+  archivos:
+    STATA: 615-Modulo1317
+    SPSS: 615-Modulo1317
+    DBF: 615-Modulo1317
+    CSV: 615-Modulo1317
+  local:
+    formato: STATA
+    ruta: ENA/2017/615-Modulo1317.zip
+    bytes: 6504850
+    sha256: 943dea2f85371a7a6641cb033f715a7c3a69fbadfc9365dd5b22f7cadcfabe89
+- anio: 2017
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '615'
+  codigo: '1318'
+  nombre: PRODUCCION Y DESTINO DE LOS CULTIVOS COSECHADOS
+  archivos:
+    STATA: 615-Modulo1318
+    SPSS: 615-Modulo1318
+    DBF: 615-Modulo1318
+    CSV: 615-Modulo1318
+  local:
+    formato: STATA
+    ruta: ENA/2017/615-Modulo1318.zip
+    bytes: 6716827
+    sha256: ad5c12f29c54a59d4396f00d224ab8df8e74c13ac541544c2e3cdd22a5e404fa
+- anio: 2017
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '615'
+  codigo: '1319'
+  nombre: DERIVADOS AGRÍCOLAS DE LOS CULTIVOS COSECHADOS
+  archivos:
+    STATA: 615-Modulo1319
+    SPSS: 615-Modulo1319
+    DBF: 615-Modulo1319
+    CSV: 615-Modulo1319
+  local:
+    formato: STATA
+    ruta: ENA/2017/615-Modulo1319.zip
+    bytes: 6571084
+    sha256: b41e5acf6ae4f0167c496c5de02f8ec38931f8f8c28e3174b399fbdf8e55ff89
+- anio: 2017
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '615'
+  codigo: '1320'
+  nombre: SUBPRODUCTOS AGRÍCOLAS DE LOS CULTIVOS COSECHADOS
+  archivos:
+    STATA: 615-Modulo1320
+    SPSS: 615-Modulo1320
+    DBF: 615-Modulo1320
+    CSV: 615-Modulo1320
+  local:
+    formato: STATA
+    ruta: ENA/2017/615-Modulo1320.zip
+    bytes: 6523952
+    sha256: da8e657c1c21145e80ae276241e2b047c90bc70de33d58fab4c6adef4a90b4b1
+- anio: 2017
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '615'
+  codigo: '1321'
+  nombre: COSTOS DE PRODUCCIÓN DE LOS CULTIVOS COSECHADOS
+  archivos:
+    STATA: 615-Modulo1321
+    SPSS: 615-Modulo1321
+    DBF: 615-Modulo1321
+    CSV: 615-Modulo1321
+  local:
+    formato: STATA
+    ruta: ENA/2017/615-Modulo1321.zip
+    bytes: 8162576
+    sha256: b3d4be053ba54c736829715dd09f29b516b5ecc38b4c96786f4505feec6fb7b3
+- anio: 2017
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '615'
+  codigo: '1322'
+  nombre: BUENAS PRÁCTICAS AGRÍCOLAS
+  archivos:
+    STATA: 615-Modulo1322
+    SPSS: 615-Modulo1322
+    DBF: 615-Modulo1322
+    CSV: 615-Modulo1322
+  local:
+    formato: STATA
+    ruta: ENA/2017/615-Modulo1322.zip
+    bytes: 7074869
+    sha256: 2ada5d6522dfbfbd72888e3a1387a23354168f9e200ee3c10dac59f3a379e1d0
+- anio: 2017
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '615'
+  codigo: '1323'
+  nombre: PRODUCCIÓN PECUARIA
+  archivos:
+    STATA: 615-Modulo1323
+    SPSS: 615-Modulo1323
+    DBF: 615-Modulo1323
+    CSV: 615-Modulo1323
+  local:
+    formato: STATA
+    ruta: ENA/2017/615-Modulo1323.zip
+    bytes: 8704348
+    sha256: d31188e9bdaab1a6ba7b364940676e662ea09cbe15d005495af4563da29ece29
+- anio: 2017
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '615'
+  codigo: '1324'
+  nombre: SUBPRODUCTOS PECUARIOS
+  archivos:
+    STATA: 615-Modulo1324
+    SPSS: 615-Modulo1324
+    DBF: 615-Modulo1324
+    CSV: 615-Modulo1324
+  local:
+    formato: STATA
+    ruta: ENA/2017/615-Modulo1324.zip
+    bytes: 6868268
+    sha256: f6b27593964ab0996a6f78d9b6209a87b3bb2cca5b7af5740cf9d6c5074c53f5
+- anio: 2017
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '615'
+  codigo: '1325'
+  nombre: DERIVADOS PECUARIOS
+  archivos:
+    STATA: 615-Modulo1325
+    SPSS: 615-Modulo1325
+    DBF: 615-Modulo1325
+    CSV: 615-Modulo1325
+  local:
+    formato: STATA
+    ruta: ENA/2017/615-Modulo1325.zip
+    bytes: 6459892
+    sha256: f68bbc99f85c398d09f3ceafcb6357d0744af3ec6282d57a3df3e7faad50c13f
+- anio: 2017
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '615'
+  codigo: '1326'
+  nombre: BUENAS PRÁCTICAS PECUARIAS
+  archivos:
+    STATA: 615-Modulo1326
+    SPSS: 615-Modulo1326
+    DBF: 615-Modulo1326
+    CSV: 615-Modulo1326
+  local:
+    formato: STATA
+    ruta: ENA/2017/615-Modulo1326.zip
+    bytes: 6766943
+    sha256: b7cd070a5306c81b1022da83bce6b04b9dceb39c6cb274f81b762b5e48928e7d
+- anio: 2017
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '615'
+  codigo: '1327'
+  nombre: INOCUIDAD AGROALIMENTARIA
+  archivos:
+    STATA: 615-Modulo1327
+    SPSS: 615-Modulo1327
+    DBF: 615-Modulo1327
+    CSV: 615-Modulo1327
+  local:
+    formato: STATA
+    ruta: ENA/2017/615-Modulo1327.zip
+    bytes: 6753093
+    sha256: 5e73c62035260126fe60ae224bf8c0eddc19d2fcd1e8f23956231bfe4970755a
+- anio: 2017
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '615'
+  codigo: '1328'
+  nombre: SERVICIOS DE EXTENSIÓN AGRARÍA
+  archivos:
+    STATA: 615-Modulo1328
+    SPSS: 615-Modulo1328
+    DBF: 615-Modulo1328
+    CSV: 615-Modulo1328
+  local:
+    formato: STATA
+    ruta: ENA/2017/615-Modulo1328.zip
+    bytes: 7361634
+    sha256: 77aa8972ea5aca56b0a4d141492cbe5bac923fe29f4bd3cb46a6b4d767c79f66
+- anio: 2017
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '615'
+  codigo: '1329'
+  nombre: ASOCIATIVIDAD
+  archivos:
+    STATA: 615-Modulo1329
+    SPSS: 615-Modulo1329
+    DBF: 615-Modulo1329
+    CSV: 615-Modulo1329
+  local:
+    formato: STATA
+    ruta: ENA/2017/615-Modulo1329.zip
+    bytes: 6759375
+    sha256: 74e46da750e71641868ac79dde871168688dcbc27f20e04a7519fba82f714466
+- anio: 2017
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '615'
+  codigo: '1330'
+  nombre: SERVICIOS FINANCIEROS
+  archivos:
+    STATA: 615-Modulo1330
+    SPSS: 615-Modulo1330
+    DBF: 615-Modulo1330
+    CSV: 615-Modulo1330
+  local:
+    formato: STATA
+    ruta: ENA/2017/615-Modulo1330.zip
+    bytes: 6668072
+    sha256: 031a881ca62dbf1a80393c23d5fb5021d79677de1d39289c83425bb72e53bb92
+- anio: 2017
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '615'
+  codigo: '1331'
+  nombre: COSTOS DE PRODUCCIÓN DE LA ACTIVIDAD AGROPECUARIA
+  archivos:
+    STATA: 615-Modulo1331
+    SPSS: 615-Modulo1331
+    DBF: 615-Modulo1331
+    CSV: 615-Modulo1331
+  local:
+    formato: STATA
+    ruta: ENA/2017/615-Modulo1331.zip
+    bytes: 7347259
+    sha256: 66e5bf13aa2e11f2981d0beff292fb6e5434954260ad5a602ec2154437e5f95b
+- anio: 2017
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '615'
+  codigo: '1332'
+  nombre: CARACTERÍSTICAS DEL PRODUCTOR/A AGROPECUARIO/A Y SU FAMILIA
+  archivos:
+    STATA: 615-Modulo1332
+    SPSS: 615-Modulo1332
+    DBF: 615-Modulo1332
+    CSV: 615-Modulo1332
+  local:
+    formato: STATA
+    ruta: ENA/2017/615-Modulo1332.zip
+    bytes: 7429157
+    sha256: 5ba1a94f4d3de47a8fc70b7f4ae5a1e45efc505687c40c881a4d7ddaa10be0af
+- anio: 2017
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '615'
+  codigo: '1333'
+  nombre: CARACTERÍSTICAS DE LA UNIDAD AGROPECUARIA AL DÍA DE LA ENTREVISTA
+  archivos:
+    STATA: 615-Modulo1333
+    SPSS: 615-Modulo1333
+    DBF: 615-Modulo1333
+    CSV: 615-Modulo1333
+  local:
+    formato: STATA
+    ruta: ENA/2017/615-Modulo1333.zip
+    bytes: 6694125
+    sha256: 75feb28108aefdd299aa7ecd77c613863077decaf0eeeee8b095cdf7179300b0
+- anio: 2017
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '615'
+  codigo: '1334'
+  nombre: CULTIVOS INSTALADOS O SEMBRADOS
+  archivos:
+    STATA: 615-Modulo1334
+    SPSS: 615-Modulo1334
+    DBF: 615-Modulo1334
+    CSV: 615-Modulo1334
+  local:
+    formato: STATA
+    ruta: ENA/2017/615-Modulo1334.zip
+    bytes: 7972979
+    sha256: 5c45808bcb077600e11ff12394966224b0b80cd078db33f756d8d7a5de4c946f
+- anio: 2017
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '615'
+  codigo: '1335'
+  nombre: USOS DE LA TIERRA
+  archivos:
+    STATA: 615-Modulo1335
+    SPSS: 615-Modulo1335
+    DBF: 615-Modulo1335
+    CSV: 615-Modulo1335
+  local:
+    formato: STATA
+    ruta: ENA/2017/615-Modulo1335.zip
+    bytes: 7475466
+    sha256: 0f90457aeb103531816eb5ec08d6a9cd9e0dbe8508dfb220bfd08d23fb917cb8
+- anio: 2017
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '615'
+  codigo: '1336'
+  nombre: EXISTENCIA DE GANADO, AVES Y OTROS ANIMALES
+  archivos:
+    STATA: 615-Modulo1336
+    SPSS: 615-Modulo1336
+    DBF: 615-Modulo1336
+    CSV: 615-Modulo1336
+  local:
+    formato: STATA
+    ruta: ENA/2017/615-Modulo1336.zip
+    bytes: 6902204
+    sha256: 72a94da84316da1bd220167e2d53cacd8562758355e5b65cd065f72f06e78c34
+- anio: 2017
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '615'
+  codigo: '1337'
+  nombre: BD_ESPACIAL
+  archivos:
+    STATA: 615-Modulo1337
+    SPSS: 615-Modulo1337
+    DBF: 615-Modulo1337
+    CSV: 615-Modulo1337
+  local:
+    formato: STATA
+    ruta: ENA/2017/615-Modulo1337.zip
+    bytes: 6353271
+    sha256: 83536404e46850261dcc39d61a98068e77f0cbd4c37d64748816aa57c1a9f436
+- anio: 2018
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '650'
+  codigo: '1450'
+  nombre: CARATERÍSTICAS DE LA UNIDAD AGROPECUARIA
+  archivos:
+    STATA: 650-Modulo1450
+    SPSS: 650-Modulo1450
+    DBF: 650-Modulo1450
+    CSV: 650-Modulo1450
+  local:
+    formato: STATA
+    ruta: ENA/2018/650-Modulo1450.zip
+    bytes: 4572363
+    sha256: 5025dd19609c1b45eac871b479f77f953124feb711b0ee78694021aec1ddea2f
+- anio: 2018
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '650'
+  codigo: '1451'
+  nombre: SUPERFICIE COSECHADA, SEMBRADA, PRODUCCIÓN Y DESTINO DE LOS CULTIVOS COSECHADOS
+  archivos:
+    STATA: 650-Modulo1451
+    SPSS: 650-Modulo1451
+    DBF: 650-Modulo1451
+    CSV: 650-Modulo1451
+  local:
+    formato: STATA
+    ruta: ENA/2018/650-Modulo1451.zip
+    bytes: 8665789
+    sha256: da5bfdf3649e8d0104c97626888323e6610f311bedec1308fb1ef5511fc2b539
+- anio: 2018
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '650'
+  codigo: '1452'
+  nombre: PRODUCCIÓN DE PASTOS POR CORTE / PASTOREO
+  archivos:
+    STATA: 650-Modulo1452
+    SPSS: 650-Modulo1452
+    DBF: 650-Modulo1452
+    CSV: 650-Modulo1452
+  local:
+    formato: STATA
+    ruta: ENA/2018/650-Modulo1452.zip
+    bytes: 3429964
+    sha256: 510122eab1053b6a47e3d6c633950e52f1233821354682aa72f529ec8eb96ae3
+- anio: 2018
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '650'
+  codigo: '1453'
+  nombre: PERDIDA TOTAL DE PRODUCCIÓN O SUPERFICIE SEMBRADA
+  archivos:
+    STATA: 650-Modulo1453
+    SPSS: 650-Modulo1453
+    DBF: 650-Modulo1453
+    CSV: 650-Modulo1453
+  local:
+    formato: STATA
+    ruta: ENA/2018/650-Modulo1453.zip
+    bytes: 3181799
+    sha256: cb8769eae0ab46a36490cb49b53d4c8047853d2ac10ffe0e7419a4773b587288
+- anio: 2018
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '650'
+  codigo: '1454'
+  nombre: PRODUCCION Y DESTINO DE LOS CULTIVOS COSECHADOS
+  archivos:
+    STATA: 650-Modulo1454
+    SPSS: 650-Modulo1454
+    DBF: 650-Modulo1454
+    CSV: 650-Modulo1454
+  local:
+    formato: STATA
+    ruta: ENA/2018/650-Modulo1454.zip
+    bytes: 3341586
+    sha256: 479b478d458223eaf63dcd4510c4cf6930f7194ba92ab9245adce07da013f92a
+- anio: 2018
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '650'
+  codigo: '1455'
+  nombre: DERIVADOS AGRÍCOLAS DE LOS CULTIVOS COSECHADOS
+  archivos:
+    STATA: 650-Modulo1455
+    SPSS: 650-Modulo1455
+    DBF: 650-Modulo1455
+    CSV: 650-Modulo1455
+  local:
+    formato: STATA
+    ruta: ENA/2018/650-Modulo1455.zip
+    bytes: 3211516
+    sha256: 7b9597a9ab4d9cbc600cfd22abc4a4a23871c340310c58d96bd3c9110606e4d5
+- anio: 2018
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '650'
+  codigo: '1456'
+  nombre: SUBPRODUCTOS AGRÍCOLAS DE LOS CULTIVOS COSECHADOS
+  archivos:
+    STATA: 650-Modulo1456
+    SPSS: 650-Modulo1456
+    DBF: 650-Modulo1456
+    CSV: 650-Modulo1456
+  local:
+    formato: STATA
+    ruta: ENA/2018/650-Modulo1456.zip
+    bytes: 3149117
+    sha256: c71f7659b1d9f7f4c467c52a7e8bb9ab785ac4fe6d0ad4a816423d485a860226
+- anio: 2018
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '650'
+  codigo: '1457'
+  nombre: COSTOS DE PRODUCCIÓN DE LOS CULTIVOS COSECHADOS
+  archivos:
+    STATA: 650-Modulo1457
+    SPSS: 650-Modulo1457
+    DBF: 650-Modulo1457
+    CSV: 650-Modulo1457
+  local:
+    formato: STATA
+    ruta: ENA/2018/650-Modulo1457.zip
+    bytes: 5170968
+    sha256: f3db673f7eafc5818c0a68f31e42204a9b628a3566701ab418146be95edef2d8
+- anio: 2018
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '650'
+  codigo: '1458'
+  nombre: BUENAS PRÁCTICAS AGRÍCOLAS
+  archivos:
+    STATA: 650-Modulo1458
+    SPSS: 650-Modulo1458
+    DBF: 650-Modulo1458
+    CSV: 650-Modulo1458
+  local:
+    formato: STATA
+    ruta: ENA/2018/650-Modulo1458.zip
+    bytes: 3702965
+    sha256: 22123345ba2727f1a41fccd65e01775be9eef16fd4faaccc4ea3bcc90d1f5f74
+- anio: 2018
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '650'
+  codigo: '1459'
+  nombre: PRODUCCIÓN PECUARIA
+  archivos:
+    STATA: 650-Modulo1459
+    SPSS: 650-Modulo1459
+    DBF: 650-Modulo1459
+    CSV: 650-Modulo1459
+  local:
+    formato: STATA
+    ruta: ENA/2018/650-Modulo1459.zip
+    bytes: 5311536
+    sha256: 27350c62281c5c0f7d0a928c1e16cde01faf7fddf0d03e9b28d4f5268c49cf7f
+- anio: 2018
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '650'
+  codigo: '1460'
+  nombre: SUBPRODUCTOS PECUARIOS
+  archivos:
+    STATA: 650-Modulo1460
+    SPSS: 650-Modulo1460
+    DBF: 650-Modulo1460
+    CSV: 650-Modulo1460
+  local:
+    formato: STATA
+    ruta: ENA/2018/650-Modulo1460.zip
+    bytes: 3486033
+    sha256: 0b214dc616c707bbb531384cab9bd4c82a2372c9116a73ef1298d13469f01e8a
+- anio: 2018
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '650'
+  codigo: '1461'
+  nombre: DERIVADOS PECUARIOS
+  archivos:
+    STATA: 650-Modulo1461
+    SPSS: 650-Modulo1461
+    DBF: 650-Modulo1461
+    CSV: 650-Modulo1461
+  local:
+    formato: STATA
+    ruta: ENA/2018/650-Modulo1461.zip
+    bytes: 3091232
+    sha256: aeedefd6cec60cab90a3444e409aa86ef43fecd00988daf6e13943da2f1661d2
+- anio: 2018
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '650'
+  codigo: '1462'
+  nombre: BUENAS PRÁCTICAS PECUARIAS
+  archivos:
+    STATA: 650-Modulo1462
+    SPSS: 650-Modulo1462
+    DBF: 650-Modulo1462
+    CSV: 650-Modulo1462
+  local:
+    formato: STATA
+    ruta: ENA/2018/650-Modulo1462.zip
+    bytes: 3447560
+    sha256: 8340cd08c5e6d8dab1ce1caa16782ab93291e3a14f621d9b466e08bffe6ff575
+- anio: 2018
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '650'
+  codigo: '1463'
+  nombre: INOCUIDAD AGROALIMENTARIA
+  archivos:
+    STATA: 650-Modulo1463
+    SPSS: 650-Modulo1463
+    DBF: 650-Modulo1463
+    CSV: 650-Modulo1463
+  local:
+    formato: STATA
+    ruta: ENA/2018/650-Modulo1463.zip
+    bytes: 3382927
+    sha256: 6b688be5f05d334c3884a0a3aa318a47d79ee39461bbad38e60579121124a5fe
+- anio: 2018
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '650'
+  codigo: '1464'
+  nombre: SERVICIOS DE EXTENSIÓN AGRARÍA
+  archivos:
+    STATA: 650-Modulo1464
+    SPSS: 650-Modulo1464
+    DBF: 650-Modulo1464
+    CSV: 650-Modulo1464
+  local:
+    formato: STATA
+    ruta: ENA/2018/650-Modulo1464.zip
+    bytes: 4038597
+    sha256: d41c3c01e158afdcf77e3e0d2477f8eb12489f699f5f5de0875b5aa4271d08ac
+- anio: 2018
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '650'
+  codigo: '1465'
+  nombre: ASOCIATIVIDAD
+  archivos:
+    STATA: 650-Modulo1465
+    SPSS: 650-Modulo1465
+    DBF: 650-Modulo1465
+    CSV: 650-Modulo1465
+  local:
+    formato: STATA
+    ruta: ENA/2018/650-Modulo1465.zip
+    bytes: 3389460
+    sha256: a1eeef0fc9642584f576bfe18524711da41abc1a8ed1d59c41fcbf3c1302b181
+- anio: 2018
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '650'
+  codigo: '1466'
+  nombre: SERVICIOS FINANCIEROS
+  archivos:
+    STATA: 650-Modulo1466
+    SPSS: 650-Modulo1466
+    DBF: 650-Modulo1466
+    CSV: 650-Modulo1466
+  local:
+    formato: STATA
+    ruta: ENA/2018/650-Modulo1466.zip
+    bytes: 3295436
+    sha256: 7789d6c5a0f531139667b197f21ab464e9d3a506c7e57a86bc669fb266036ce4
+- anio: 2018
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '650'
+  codigo: '1467'
+  nombre: COSTOS DE PRODUCCIÓN DE LA ACTIVIDAD AGROPECUARIA
+  archivos:
+    STATA: 650-Modulo1467
+    SPSS: 650-Modulo1467
+    DBF: 650-Modulo1467
+    CSV: 650-Modulo1467
+  local:
+    formato: STATA
+    ruta: ENA/2018/650-Modulo1467.zip
+    bytes: 3966571
+    sha256: a20372f33612bef3c7f5ee92002daf84bda111aee03205c3ba35c2e4d15fe676
+- anio: 2018
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '650'
+  codigo: '1468'
+  nombre: CARACTERÍSTICAS DEL PRODUCTOR/A AGROPECUARIO/A Y SU FAMILIA
+  archivos:
+    STATA: 650-Modulo1468
+    SPSS: 650-Modulo1468
+    DBF: 650-Modulo1468
+    CSV: 650-Modulo1468
+  local:
+    formato: STATA
+    ruta: ENA/2018/650-Modulo1468.zip
+    bytes: 4048052
+    sha256: 42141975c67ec17f44b00247835512a9899e126be8edd49e4628dadde6206020
+- anio: 2018
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '650'
+  codigo: '1469'
+  nombre: CARACTERÍSTICAS DE LA UNIDAD AGROPECUARIA AL DÍA DE LA ENTREVISTA
+  archivos:
+    STATA: 650-Modulo1469
+    SPSS: 650-Modulo1469
+    DBF: 650-Modulo1469
+    CSV: 650-Modulo1469
+  local:
+    formato: STATA
+    ruta: ENA/2018/650-Modulo1469.zip
+    bytes: 3330452
+    sha256: ae5014cad07047a1e8c9584404477bf72cf72041fc2878dc369102eda42f5098
+- anio: 2018
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '650'
+  codigo: '1470'
+  nombre: CULTIVOS INSTALADOS O SEMBRADOS
+  archivos:
+    STATA: 650-Modulo1470
+    SPSS: 650-Modulo1470
+    DBF: 650-Modulo1470
+    CSV: 650-Modulo1470
+  local:
+    formato: STATA
+    ruta: ENA/2018/650-Modulo1470.zip
+    bytes: 4714141
+    sha256: 89f4f64143002c9b7bfc19bdf833a9b8b84571794430cbecc961008cf6be1320
+- anio: 2018
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '650'
+  codigo: '1471'
+  nombre: USOS DE LA TIERRA
+  archivos:
+    STATA: 650-Modulo1471
+    SPSS: 650-Modulo1471
+    DBF: 650-Modulo1471
+    CSV: 650-Modulo1471
+  local:
+    formato: STATA
+    ruta: ENA/2018/650-Modulo1471.zip
+    bytes: 4148344
+    sha256: 4c3291e8670350cd18488a2c0247235628d892943e3acde326fef945484e0e72
+- anio: 2018
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '650'
+  codigo: '1472'
+  nombre: EXISTENCIA DE GANADO, AVES Y OTROS ANIMALES
+  archivos:
+    STATA: 650-Modulo1472
+    SPSS: 650-Modulo1472
+    DBF: 650-Modulo1472
+    CSV: 650-Modulo1472
+  local:
+    formato: STATA
+    ruta: ENA/2018/650-Modulo1472.zip
+    bytes: 3586997
+    sha256: 7d46b35c0a14a5ef98d50a7513d423be23c040e06b40cd260914e018d615fc7c
+- anio: 2018
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '650'
+  codigo: '1473'
+  nombre: BD_ESPACIAL
+  archivos:
+    STATA: 650-Modulo1473
+    SPSS: 650-Modulo1473
+    DBF: 650-Modulo1473
+    CSV: 650-Modulo1473
+  local:
+    formato: STATA
+    ruta: ENA/2018/650-Modulo1473.zip
+    bytes: 2978418
+    sha256: a5eae3dbeb171fb405c2537bf8a9dce8bc25480c9e8c793c0c5de02444673a42
+- anio: 2019
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '701'
+  codigo: '1529'
+  nombre: CARATERÍSTICAS DE LA UNIDAD AGROPECUARIA
+  archivos:
+    STATA: 701-Modulo1529
+    SPSS: 701-Modulo1529
+    DBF: 701-Modulo1529
+    CSV: 701-Modulo1529
+  local:
+    formato: STATA
+    ruta: ENA/2019/701-Modulo1529.zip
+    bytes: 8064126
+    sha256: 6104e175d48c3c75ab4a06f0eb4fd8c003050873ae7cc999e00b57f150144e2a
+- anio: 2019
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '701'
+  codigo: '1530'
+  nombre: SUPERFICIE COSECHADA, SEMBRADA, PRODUCCIÓN Y DESTINO DE LOS CULTIVOS COSECHADOS
+  archivos:
+    STATA: 701-Modulo1530
+    SPSS: 701-Modulo1530
+    DBF: 701-Modulo1530
+    CSV: 701-Modulo1530
+  local:
+    formato: STATA
+    ruta: ENA/2019/701-Modulo1530.zip
+    bytes: 12403270
+    sha256: 409ae70982cccfaad89f811d806e3ec5d4d446665606a54532ebc797d4bc5dd7
+- anio: 2019
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '701'
+  codigo: '1531'
+  nombre: PRODUCCIÓN DE PASTOS POR CORTE / PASTOREO
+  archivos:
+    STATA: 701-Modulo1531
+    SPSS: 701-Modulo1531
+    DBF: 701-Modulo1531
+    CSV: 701-Modulo1531
+  local:
+    formato: STATA
+    ruta: ENA/2019/701-Modulo1531.zip
+    bytes: 6739295
+    sha256: cf555567ef171b5ee6aec44bc77343a4188a6791793e31b0b48720f68d8e376f
+- anio: 2019
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '701'
+  codigo: '1532'
+  nombre: PERDIDA TOTAL DE PRODUCCIÓN O SUPERFICIE SEMBRADA
+  archivos:
+    STATA: 701-Modulo1532
+    SPSS: 701-Modulo1532
+    DBF: 701-Modulo1532
+    CSV: 701-Modulo1532
+  local:
+    formato: STATA
+    ruta: ENA/2019/701-Modulo1532.zip
+    bytes: 6381323
+    sha256: 5cfa1f2c391e7278e550189ef112562fdc3131b5144df4b0476f394be5164184
+- anio: 2019
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '701'
+  codigo: '1533'
+  nombre: PRODUCCION Y DESTINO DE LOS CULTIVOS COSECHADOS
+  archivos:
+    STATA: 701-Modulo1533
+    SPSS: 701-Modulo1533
+    DBF: 701-Modulo1533
+    CSV: 701-Modulo1533
+  local:
+    formato: STATA
+    ruta: ENA/2019/701-Modulo1533.zip
+    bytes: 6659386
+    sha256: ae0f14facf8d2342468a7c97407cd88d41b5f9c029055696e09547454899c925
+- anio: 2019
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '701'
+  codigo: '1534'
+  nombre: DERIVADOS AGRÍCOLAS DE LOS CULTIVOS COSECHADOS
+  archivos:
+    STATA: 701-Modulo1534
+    SPSS: 701-Modulo1534
+    DBF: 701-Modulo1534
+    CSV: 701-Modulo1534
+  local:
+    formato: STATA
+    ruta: ENA/2019/701-Modulo1534.zip
+    bytes: 6548278
+    sha256: c8a7da613982b3693a6a3a86d53cde45c4b5c9a37a0861ed0fde7c0aa8b181c3
+- anio: 2019
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '701'
+  codigo: '1535'
+  nombre: SUBPRODUCTOS AGRÍCOLAS DE LOS CULTIVOS COSECHADOS
+  archivos:
+    STATA: 701-Modulo1535
+    SPSS: 701-Modulo1535
+    DBF: 701-Modulo1535
+    CSV: 701-Modulo1535
+  local:
+    formato: STATA
+    ruta: ENA/2019/701-Modulo1535.zip
+    bytes: 6468690
+    sha256: 8b9b04a98e66833e4d5d890876364e74ee56d9bbfed7b136d47937a21c3f1d1a
+- anio: 2019
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '701'
+  codigo: '1536'
+  nombre: COSTOS DE PRODUCCIÓN DE LOS CULTIVOS COSECHADOS
+  archivos:
+    STATA: 701-Modulo1536
+    SPSS: 701-Modulo1536
+    DBF: 701-Modulo1536
+    CSV: 701-Modulo1536
+  local:
+    formato: STATA
+    ruta: ENA/2019/701-Modulo1536.zip
+    bytes: 8617648
+    sha256: 5bdc4c433c44b661afa7935388fbecaa5d45c260c13cd20d00b5aa497cbb2c35
+- anio: 2019
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '701'
+  codigo: '1537'
+  nombre: BUENAS PRÁCTICAS AGRÍCOLAS
+  archivos:
+    STATA: 701-Modulo1537
+    SPSS: 701-Modulo1537
+    DBF: 701-Modulo1537
+    CSV: 701-Modulo1537
+  local:
+    formato: STATA
+    ruta: ENA/2019/701-Modulo1537.zip
+    bytes: 7073479
+    sha256: 3a881572a406cfb278cd01df87051ec7443d432b15118e5a131c4c583325c490
+- anio: 2019
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '701'
+  codigo: '1538'
+  nombre: PRODUCCIÓN PECUARIA
+  archivos:
+    STATA: 701-Modulo1538
+    SPSS: 701-Modulo1538
+    DBF: 701-Modulo1538
+    CSV: 701-Modulo1538
+  local:
+    formato: STATA
+    ruta: ENA/2019/701-Modulo1538.zip
+    bytes: 8692656
+    sha256: 52f392028637258a53c83094d4415563dd44d1b0e24cd6de4a6d37fcc3add761
+- anio: 2019
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '701'
+  codigo: '1539'
+  nombre: SUBPRODUCTOS PECUARIOS
+  archivos:
+    STATA: 701-Modulo1539
+    SPSS: 701-Modulo1539
+    DBF: 701-Modulo1539
+    CSV: 701-Modulo1539
+  local:
+    formato: STATA
+    ruta: ENA/2019/701-Modulo1539.zip
+    bytes: 6861674
+    sha256: a54e941012215f2f171ce47f1c8cfc750f31e1f66d65fafdb6a0402d2a141262
+- anio: 2019
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '701'
+  codigo: '1540'
+  nombre: DERIVADOS PECUARIOS
+  archivos:
+    STATA: 701-Modulo1540
+    SPSS: 701-Modulo1540
+    DBF: 701-Modulo1540
+    CSV: 701-Modulo1540
+  local:
+    formato: STATA
+    ruta: ENA/2019/701-Modulo1540.zip
+    bytes: 6407867
+    sha256: 5f12aca1b0bf8185a6aa5fe17209d74f10c767b884129a80d55f701e701c2b4d
+- anio: 2019
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '701'
+  codigo: '1541'
+  nombre: BUENAS PRÁCTICAS PECUARIAS
+  archivos:
+    STATA: 701-Modulo1541
+    SPSS: 701-Modulo1541
+    DBF: 701-Modulo1541
+    CSV: 701-Modulo1541
+  local:
+    formato: STATA
+    ruta: ENA/2019/701-Modulo1541.zip
+    bytes: 6783009
+    sha256: 0c90d74dc37b7799168ed282d653225902e86eb0b6f0c4204fa6089f702c5890
+- anio: 2019
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '701'
+  codigo: '1542'
+  nombre: INOCUIDAD AGROALIMENTARIA
+  archivos:
+    STATA: 701-Modulo1542
+    SPSS: 701-Modulo1542
+    DBF: 701-Modulo1542
+    CSV: 701-Modulo1542
+  local:
+    formato: STATA
+    ruta: ENA/2019/701-Modulo1542.zip
+    bytes: 6742028
+    sha256: 29d7f5d7f3f6eb7e5a13d7eb56605e555e2f0ad2248a9ac56dc1899d2065c5dc
+- anio: 2019
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '701'
+  codigo: '1543'
+  nombre: SERVICIOS DE EXTENSIÓN AGRARÍA
+  archivos:
+    STATA: 701-Modulo1543
+    SPSS: 701-Modulo1543
+    DBF: 701-Modulo1543
+    CSV: 701-Modulo1543
+  local:
+    formato: STATA
+    ruta: ENA/2019/701-Modulo1543.zip
+    bytes: 7550294
+    sha256: 8e685cb91269737d773a86d1f6385c411831dc4b2b1cb715eb7b7048fe88e1d8
+- anio: 2019
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '701'
+  codigo: '1544'
+  nombre: ASOCIATIVIDAD
+  archivos:
+    STATA: 701-Modulo1544
+    SPSS: 701-Modulo1544
+    DBF: 701-Modulo1544
+    CSV: 701-Modulo1544
+  local:
+    formato: STATA
+    ruta: ENA/2019/701-Modulo1544.zip
+    bytes: 6718870
+    sha256: 65375642b9702e18df2d0a8b3c5e43b8a8954ddcb9194b78744922c8c4ef1285
+- anio: 2019
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '701'
+  codigo: '1545'
+  nombre: SERVICIOS FINANCIEROS
+  archivos:
+    STATA: 701-Modulo1545
+    SPSS: 701-Modulo1545
+    DBF: 701-Modulo1545
+    CSV: 701-Modulo1545
+  local:
+    formato: STATA
+    ruta: ENA/2019/701-Modulo1545.zip
+    bytes: 6655649
+    sha256: 9476270b47db2917ab5c494a3ab5bbc45a0eb49167a260c373d614f09b80c1e5
+- anio: 2019
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '701'
+  codigo: '1546'
+  nombre: COSTOS DE PRODUCCIÓN DE LA ACTIVIDAD AGROPECUARIA
+  archivos:
+    STATA: 701-Modulo1546
+    SPSS: 701-Modulo1546
+    DBF: 701-Modulo1546
+    CSV: 701-Modulo1546
+  local:
+    formato: STATA
+    ruta: ENA/2019/701-Modulo1546.zip
+    bytes: 7314171
+    sha256: c1d96335d308570ce597ed1933b2932fe75f98baca751da320a48eeacf8b2c99
+- anio: 2019
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '701'
+  codigo: '1547'
+  nombre: CARACTERÍSTICAS DEL PRODUCTOR/A AGROPECUARIO/A Y SU FAMILIA
+  archivos:
+    STATA: 701-Modulo1547
+    SPSS: 701-Modulo1547
+    DBF: 701-Modulo1547
+    CSV: 701-Modulo1547
+  local:
+    formato: STATA
+    ruta: ENA/2019/701-Modulo1547.zip
+    bytes: 7487535
+    sha256: a67f69a8581bb7fa9832b24736036532d27a86ad774bf67e46d983e6fdb2c012
+- anio: 2019
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '701'
+  codigo: '1548'
+  nombre: CARACTERÍSTICAS DE LA UNIDAD AGROPECUARIA AL DÍA DE LA ENTREVISTA
+  archivos:
+    STATA: 701-Modulo1548
+    SPSS: 701-Modulo1548
+    DBF: 701-Modulo1548
+    CSV: 701-Modulo1548
+  local:
+    formato: STATA
+    ruta: ENA/2019/701-Modulo1548.zip
+    bytes: 6723751
+    sha256: 164009ac16cddc8a13a412a68c31dea7ab994f84dbf981a5f7fdef86a7741018
+- anio: 2019
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '701'
+  codigo: '1549'
+  nombre: CULTIVOS INSTALADOS O SEMBRADOS
+  archivos:
+    STATA: 701-Modulo1549
+    SPSS: 701-Modulo1549
+    DBF: 701-Modulo1549
+    CSV: 701-Modulo1549
+  local:
+    formato: STATA
+    ruta: ENA/2019/701-Modulo1549.zip
+    bytes: 8119434
+    sha256: 83e47f197536ce5dac91d545c8d58f773a22af108154ea9f867550b8ce7d0598
+- anio: 2019
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '701'
+  codigo: '1550'
+  nombre: USOS DE LA TIERRA
+  archivos:
+    STATA: 701-Modulo1550
+    SPSS: 701-Modulo1550
+    DBF: 701-Modulo1550
+    CSV: 701-Modulo1550
+  local:
+    formato: STATA
+    ruta: ENA/2019/701-Modulo1550.zip
+    bytes: 7687369
+    sha256: 4e5377573fe7bb6d95318fa22c7ef516ef7c1817b2f57a97c070809e9c03828c
+- anio: 2019
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '701'
+  codigo: '1551'
+  nombre: EXISTENCIA DE GANADO, AVES Y OTROS ANIMALES
+  archivos:
+    STATA: 701-Modulo1551
+    SPSS: 701-Modulo1551
+    DBF: 701-Modulo1551
+    CSV: 701-Modulo1551
+  local:
+    formato: STATA
+    ruta: ENA/2019/701-Modulo1551.zip
+    bytes: 7024529
+    sha256: b6bb88ff900fec5858f2798523bc751b51c80d0b2745f389c27469ed71f59a9d
+- anio: 2021
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '868'
+  codigo: '1793'
+  nombre: CARATERÍSTICAS DE LA UNIDAD AGROPECUARIA
+  archivos:
+    CSV: 868-Modulo1793
+    STATA: 868-Modulo1793
+    SPSS: 868-Modulo1793
+    DBF: 868-Modulo1793
+  local:
+    formato: CSV
+    ruta: ENA/2021/868-Modulo1793.zip
+    bytes: 6286831
+    sha256: 4ab2ee97c788f7e172a4609c9dec64f590cac2c2fe54d9b0975731671c5edb38
+- anio: 2021
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '868'
+  codigo: '1794'
+  nombre: SUPERFICIE COSECHADA, SEMBRADA, PRODUCCIÓN Y DESTINO DE LOS CULTIVOS COSECHADOS
+  archivos:
+    CSV: 868-Modulo1794
+    STATA: 868-Modulo1794
+    SPSS: 868-Modulo1794
+    DBF: 868-Modulo1794
+  local:
+    formato: CSV
+    ruta: ENA/2021/868-Modulo1794.zip
+    bytes: 8237967
+    sha256: 02499f86d1a88fcf25bec8c4e57ad1f80a3bf0b6283ab5f15a5bf184b8657263
+- anio: 2021
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '868'
+  codigo: '1795'
+  nombre: PRODUCCIÓN DE PASTOS POR CORTE / PASTOREO
+  archivos:
+    CSV: 868-Modulo1795
+    STATA: 868-Modulo1795
+    SPSS: 868-Modulo1795
+    DBF: 868-Modulo1795
+  local:
+    formato: CSV
+    ruta: ENA/2021/868-Modulo1795.zip
+    bytes: 5214664
+    sha256: 3c76396c1710af60b5bf37abca1e7d6a585e61d002167b09f2f1db72bcfb2231
+- anio: 2021
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '868'
+  codigo: '1796'
+  nombre: DERIVADOS AGRÍCOLAS DE LOS CULTIVOS COSECHADOS
+  archivos:
+    CSV: 868-Modulo1796
+    STATA: 868-Modulo1796
+    SPSS: 868-Modulo1796
+    DBF: 868-Modulo1796
+  local:
+    formato: CSV
+    ruta: ENA/2021/868-Modulo1796.zip
+    bytes: 5945068
+    sha256: e73ba104174fdf95d865e047feece258a8121d01bac9f2bfd0f245c7c0c6d2ca
+- anio: 2021
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '868'
+  codigo: '1797'
+  nombre: SUBPRODUCTOS AGRÍCOLAS DE LOS CULTIVOS COSECHADOS
+  archivos:
+    CSV: 868-Modulo1797
+    STATA: 868-Modulo1797
+    SPSS: 868-Modulo1797
+    DBF: 868-Modulo1797
+  local:
+    formato: CSV
+    ruta: ENA/2021/868-Modulo1797.zip
+    bytes: 5014198
+    sha256: e90d35192b42c621ee5618571e5df7f2586314c3731bcf4330df42b2b408556c
+- anio: 2021
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '868'
+  codigo: '1798'
+  nombre: COSTOS DE PRODUCCIÓN DE LOS CULTIVOS COSECHADOS
+  archivos:
+    CSV: 868-Modulo1798
+    STATA: 868-Modulo1798
+    SPSS: 868-Modulo1798
+    DBF: 868-Modulo1798
+  local:
+    formato: CSV
+    ruta: ENA/2021/868-Modulo1798.zip
+    bytes: 6062301
+    sha256: eafb59a45b14aeec7df0dbb2e6ed96c7564ea60370779e4d8ef5d30bb1a06263
+- anio: 2021
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '868'
+  codigo: '1799'
+  nombre: BUENAS PRÁCTICAS AGRÍCOLAS
+  archivos:
+    CSV: 868-Modulo1799
+    STATA: 868-Modulo1799
+    SPSS: 868-Modulo1799
+    DBF: 868-Modulo1799
+  local:
+    formato: CSV
+    ruta: ENA/2021/868-Modulo1799.zip
+    bytes: 5245714
+    sha256: bcdaf4a535ccef17f31b8abd58b72d24a6a87273e7613a693328b6ae080ca3c2
+- anio: 2021
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '868'
+  codigo: '1800'
+  nombre: PRODUCCIÓN PECUARIA
+  archivos:
+    CSV: 868-Modulo1800
+    STATA: 868-Modulo1800
+    SPSS: 868-Modulo1800
+    DBF: 868-Modulo1800
+  local:
+    formato: CSV
+    ruta: ENA/2021/868-Modulo1800.zip
+    bytes: 6409843
+    sha256: 6ce38481deefe38d1138c900ebf302f222275e7304ffe8abd5a85b29a809de46
+- anio: 2021
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '868'
+  codigo: '1801'
+  nombre: SUBPRODUCTOS PECUARIOS
+  archivos:
+    CSV: 868-Modulo1801
+    STATA: 868-Modulo1801
+    SPSS: 868-Modulo1801
+    DBF: 868-Modulo1801
+  local:
+    formato: CSV
+    ruta: ENA/2021/868-Modulo1801.zip
+    bytes: 5458323
+    sha256: a41f6ebcf59bab45252339d3fecaf5eb29c87f10f3e568b891b9b6ee02aab984
+- anio: 2021
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '868'
+  codigo: '1802'
+  nombre: DERIVADOS PECUARIOS
+  archivos:
+    CSV: 868-Modulo1802
+    STATA: 868-Modulo1802
+    SPSS: 868-Modulo1802
+    DBF: 868-Modulo1802
+  local:
+    formato: CSV
+    ruta: ENA/2021/868-Modulo1802.zip
+    bytes: 4979716
+    sha256: a1c231945fbbbc08f0307401be150776df9e215f7a6a1fae3b2423bb61446070
+- anio: 2021
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '868'
+  codigo: '1803'
+  nombre: BUENAS PRÁCTICAS PECUARIAS
+  archivos:
+    CSV: 868-Modulo1803
+    STATA: 868-Modulo1803
+    SPSS: 868-Modulo1803
+    DBF: 868-Modulo1803
+  local:
+    formato: CSV
+    ruta: ENA/2021/868-Modulo1803.zip
+    bytes: 5058618
+    sha256: 7693fc1221143f6f4c9370456a2e53e9685ee7323a2507e28f9653b2e013b536
+- anio: 2021
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '868'
+  codigo: '1804'
+  nombre: SERVICIOS DE EXTENSIÓN AGRARÍA
+  archivos:
+    CSV: 868-Modulo1804
+    STATA: 868-Modulo1804
+    SPSS: 868-Modulo1804
+    DBF: 868-Modulo1804
+  local:
+    formato: CSV
+    ruta: ENA/2021/868-Modulo1804.zip
+    bytes: 5417449
+    sha256: 0b7578f6b4907e3dc9c4fec0f4476c696adc022b6d51aacbfe49d57f12e60968
+- anio: 2021
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '868'
+  codigo: '1805'
+  nombre: ASOCIATIVIDAD
+  archivos:
+    CSV: 868-Modulo1805
+    STATA: 868-Modulo1805
+    SPSS: 868-Modulo1805
+    DBF: 868-Modulo1805
+  local:
+    formato: CSV
+    ruta: ENA/2021/868-Modulo1805.zip
+    bytes: 5081047
+    sha256: f6189b243a8e21b1a84258c28efb6bf20be21e963ca29c9f1863a6a1a989b8b8
+- anio: 2021
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '868'
+  codigo: '1806'
+  nombre: COSTOS DE PRODUCCIÓN DE LA ACTIVIDAD AGROPECUARIA
+  archivos:
+    CSV: 868-Modulo1806
+    STATA: 868-Modulo1806
+    SPSS: 868-Modulo1806
+    DBF: 868-Modulo1806
+  local:
+    formato: CSV
+    ruta: ENA/2021/868-Modulo1806.zip
+    bytes: 5590657
+    sha256: 4f25a330fbc6d121ea3231756e833045c200cdadbeba757227bb60f7df7bb568
+- anio: 2021
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '868'
+  codigo: '1807'
+  nombre: CARACTERÍSTICAS DEL PRODUCTOR/A AGROPECUARIO/A Y SU FAMILIA
+  archivos:
+    CSV: 868-Modulo1807
+    STATA: 868-Modulo1807
+    SPSS: 868-Modulo1807
+    DBF: 868-Modulo1807
+  local:
+    formato: CSV
+    ruta: ENA/2021/868-Modulo1807.zip
+    bytes: 5778265
+    sha256: 21eabf5bcee31217cddd7cdd37082284beef5eaf80513baac26c4bef605500e6
+- anio: 2021
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '868'
+  codigo: '1808'
+  nombre: CARACTERÍSTICAS DE LA UNIDAD AGROPECUARIA AL DÍA DE LA ENTREVISTA
+  archivos:
+    CSV: 868-Modulo1808
+    STATA: 868-Modulo1808
+    SPSS: 868-Modulo1808
+    DBF: 868-Modulo1808
+  local:
+    formato: CSV
+    ruta: ENA/2021/868-Modulo1808.zip
+    bytes: 5162061
+    sha256: 1e20c0acdbfe5da6c9ca9001573d01096d20c02523877c9012e3714edd67a714
+- anio: 2021
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '868'
+  codigo: '1809'
+  nombre: CARACTERÍSTICAS DE LA UNIDAD AGROPECUARIA AL DÍA DE LA ENTREVISTA - CULTIVOS
+  archivos:
+    CSV: 868-Modulo1809
+    STATA: 868-Modulo1809
+    SPSS: 868-Modulo1809
+    DBF: 868-Modulo1809
+  local:
+    formato: CSV
+    ruta: ENA/2021/868-Modulo1809.zip
+    bytes: 4929033
+    sha256: 6bec3bc1587c4b6316b058c2e7bccd734eb3036cd891e2c1506e688254519e32
+- anio: 2021
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '868'
+  codigo: '1810'
+  nombre: USOS DE LA TIERRA
+  archivos:
+    CSV: 868-Modulo1810
+    STATA: 868-Modulo1810
+    SPSS: 868-Modulo1810
+    DBF: 868-Modulo1810
+  local:
+    formato: CSV
+    ruta: ENA/2021/868-Modulo1810.zip
+    bytes: 5590822
+    sha256: 61e6310b512a495c29ec53ec94ab9447cfa78e9c01c1c0344def6d9c82a9a16d
+- anio: 2021
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '868'
+  codigo: '1811'
+  nombre: CARACTERÍSTICAS DE LA UNIDAD AGROPECUARIA AL DÍA DE LA ENTREVISTA - PARCELAS EN OTROS DISTRITOS
+  archivos:
+    CSV: 868-Modulo1811
+    STATA: 868-Modulo1811
+    SPSS: 868-Modulo1811
+    DBF: 868-Modulo1811
+  local:
+    formato: CSV
+    ruta: ENA/2021/868-Modulo1811.zip
+    bytes: 5319016
+    sha256: 6bbc8202d47b31c95b47f15c5dd81ea564cdf973e4371795b34550fca44dbebd
+- anio: 2021
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '868'
+  codigo: '1812'
+  nombre: EXISTENCIA DE GANADO, AVES Y OTROS ANIMALES
+  archivos:
+    CSV: 868-Modulo1812
+    STATA: 868-Modulo1812
+    SPSS: 868-Modulo1812
+    DBF: 868-Modulo1812
+  local:
+    formato: CSV
+    ruta: ENA/2021/868-Modulo1812.zip
+    bytes: 5294436
+    sha256: 5bdebf1bbf1a85eeadafec3c3efc79ce9bd391e75ad4e522a82b242837e45a24
+- anio: 2021
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '868'
+  codigo: '1813'
+  nombre: SITUACIÓN ACTUAL EN LA UNIDAD AGROPECUARIA
+  archivos:
+    CSV: 868-Modulo1813
+    STATA: 868-Modulo1813
+    SPSS: 868-Modulo1813
+    DBF: 868-Modulo1813
+  local:
+    formato: CSV
+    ruta: ENA/2021/868-Modulo1813.zip
+    bytes: 5117923
+    sha256: f557469e58c53f2490bffdb17915b8e9b840b2c9bc05d5ccaf14181c2aea491c
+- anio: 2022
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '844'
+  codigo: '1737'
+  nombre: CARATERÍSTICAS DE LA UNIDAD AGROPECUARIA
+  archivos:
+    CSV: 844-Modulo1737
+    STATA: 844-Modulo1737
+    SPSS: 844-Modulo1737
+    DBF: 844-Modulo1737
+  local:
+    formato: CSV
+    ruta: ENA/2022/844-Modulo1737.zip
+    bytes: 8029713
+    sha256: fd6a968bb9d0f4908ca04b2cc6f411e0d1ea0056143a1869ba0795b6aa6016e2
+- anio: 2022
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '844'
+  codigo: '1738'
+  nombre: SUPERFICIE COSECHADA, SEMBRADA, PRODUCCIÓN Y DESTINO DE LOS CULTIVOS COSECHADOS
+  archivos:
+    CSV: 844-Modulo1738
+    STATA: 844-Modulo1738
+    SPSS: 844-Modulo1738
+    DBF: 844-Modulo1738
+  local:
+    formato: CSV
+    ruta: ENA/2022/844-Modulo1738.zip
+    bytes: 9052548
+    sha256: fdeaba7936d4cea5d780af6c85edc306862807117766c5347bcd2324741adf04
+- anio: 2022
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '844'
+  codigo: '1739'
+  nombre: PRODUCCIÓN DE PASTOS POR CORTE / PASTOREO
+  archivos:
+    CSV: 844-Modulo1739
+    STATA: 844-Modulo1739
+    SPSS: 844-Modulo1739
+    DBF: 844-Modulo1739
+  local:
+    formato: CSV
+    ruta: ENA/2022/844-Modulo1739.zip
+    bytes: 6062837
+    sha256: 131f89a4ca07be80f93d0d29db5336cd316ce49239e494c9160924039473835e
+- anio: 2022
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '844'
+  codigo: '1740'
+  nombre: PERDIDA TOTAL DE PRODUCCIÓN O SUPERFICIE SEMBRADA
+  archivos:
+    CSV: 844-Modulo1740
+    STATA: 844-Modulo1740
+    SPSS: 844-Modulo1740
+    DBF: 844-Modulo1740
+  local:
+    formato: CSV
+    ruta: ENA/2022/844-Modulo1740.zip
+    bytes: 5768846
+    sha256: 91c8a34eedf6dde9280a4a1640c87cbc966970a0b583d995413f255e34bc4818
+- anio: 2022
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '844'
+  codigo: '1741'
+  nombre: DERIVADOS AGRÍCOLAS DE LOS CULTIVOS COSECHADOS
+  archivos:
+    CSV: 844-Modulo1741
+    STATA: 844-Modulo1741
+    SPSS: 844-Modulo1741
+    DBF: 844-Modulo1741
+  local:
+    formato: CSV
+    ruta: ENA/2022/844-Modulo1741.zip
+    bytes: 5862533
+    sha256: 399473ab89416ee3cfde3a912e8ad88b4c58336cbbc2033e3738d0d3e0d0691b
+- anio: 2022
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '844'
+  codigo: '1742'
+  nombre: SUBPRODUCTOS AGRÍCOLAS DE LOS CULTIVOS COSECHADOS
+  archivos:
+    CSV: 844-Modulo1742
+    STATA: 844-Modulo1742
+    SPSS: 844-Modulo1742
+    DBF: 844-Modulo1742
+  local:
+    formato: CSV
+    ruta: ENA/2022/844-Modulo1742.zip
+    bytes: 5828035
+    sha256: 5afa336c1275fb1b8910fed05863a7191e791e7e087374deb7325c24ccc68646
+- anio: 2022
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '844'
+  codigo: '1743'
+  nombre: COSTOS DE PRODUCCIÓN DE LOS CULTIVOS COSECHADOS
+  archivos:
+    CSV: 844-Modulo1743
+    STATA: 844-Modulo1743
+    SPSS: 844-Modulo1743
+    DBF: 844-Modulo1743
+  local:
+    formato: CSV
+    ruta: ENA/2022/844-Modulo1743.zip
+    bytes: 6926641
+    sha256: 758a580294982b205d06a0d2626a4fa5ff05b6b08284a7f7ae336c6f159b137f
+- anio: 2022
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '844'
+  codigo: '1744'
+  nombre: BUENAS PRÁCTICAS AGRÍCOLAS
+  archivos:
+    CSV: 844-Modulo1744
+    STATA: 844-Modulo1744
+    SPSS: 844-Modulo1744
+    DBF: 844-Modulo1744
+  local:
+    formato: CSV
+    ruta: ENA/2022/844-Modulo1744.zip
+    bytes: 6277696
+    sha256: dbd886cf3740482ac6b50a6b5b508a107ce3dcda5a9837003975bcfae18e87f0
+- anio: 2022
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '844'
+  codigo: '1745'
+  nombre: PRODUCCIÓN PECUARIA
+  archivos:
+    CSV: 844-Modulo1745
+    STATA: 844-Modulo1745
+    SPSS: 844-Modulo1745
+    DBF: 844-Modulo1745
+  local:
+    formato: CSV
+    ruta: ENA/2022/844-Modulo1745.zip
+    bytes: 8213810
+    sha256: 0f7ac2d12fde129a45ff19dc8c1b76976976b0d6863f6d5fa6c59bc86c1d9de9
+- anio: 2022
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '844'
+  codigo: '1746'
+  nombre: SUBPRODUCTOS PECUARIOS
+  archivos:
+    CSV: 844-Modulo1746
+    STATA: 844-Modulo1746
+    SPSS: 844-Modulo1746
+    DBF: 844-Modulo1746
+  local:
+    formato: CSV
+    ruta: ENA/2022/844-Modulo1746.zip
+    bytes: 6381947
+    sha256: 1cf9aab54872c41e9207e538c135ec4af7656be963771ef4d78aa18f11a6836a
+- anio: 2022
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '844'
+  codigo: '1747'
+  nombre: DERIVADOS PECUARIOS
+  archivos:
+    CSV: 844-Modulo1747
+    STATA: 844-Modulo1747
+    SPSS: 844-Modulo1747
+    DBF: 844-Modulo1747
+  local:
+    formato: CSV
+    ruta: ENA/2022/844-Modulo1747.zip
+    bytes: 5793776
+    sha256: 6c4d9cfb002a6cd7f78c3b7b1f695ff64fb4783ae728b6490b370d107f92f2ae
+- anio: 2022
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '844'
+  codigo: '1748'
+  nombre: BUENAS PRÁCTICAS PECUARIAS
+  archivos:
+    CSV: 844-Modulo1748
+    STATA: 844-Modulo1748
+    SPSS: 844-Modulo1748
+    DBF: 844-Modulo1748
+  local:
+    formato: CSV
+    ruta: ENA/2022/844-Modulo1748.zip
+    bytes: 6491403
+    sha256: 889f19de0702fc465b3511ca33312a86d7cf64b34c405bc985d925eb90aaf0ef
+- anio: 2022
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '844'
+  codigo: '1749'
+  nombre: INOCUIDAD AGROALIMENTARIA
+  archivos:
+    CSV: 844-Modulo1749
+    STATA: 844-Modulo1749
+    SPSS: 844-Modulo1749
+    DBF: 844-Modulo1749
+  local:
+    formato: CSV
+    ruta: ENA/2022/844-Modulo1749.zip
+    bytes: 6006322
+    sha256: f898c121b59c6cc3b2e1e79fffce39d88b120deae1345d7616d8376473b58c62
+- anio: 2022
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '844'
+  codigo: '1750'
+  nombre: SERVICIOS DE EXTENSIÓN AGRARÍA
+  archivos:
+    CSV: 844-Modulo1750
+    STATA: 844-Modulo1750
+    SPSS: 844-Modulo1750
+    DBF: 844-Modulo1750
+  local:
+    formato: CSV
+    ruta: ENA/2022/844-Modulo1750.zip
+    bytes: 7194134
+    sha256: 9cb9c2571f2acfb71d6a8eec8f4f1848da55414dd17bd3f09f15d8af22aa057c
+- anio: 2022
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '844'
+  codigo: '1751'
+  nombre: ASOCIATIVIDAD
+  archivos:
+    CSV: 844-Modulo1751
+    STATA: 844-Modulo1751
+    SPSS: 844-Modulo1751
+    DBF: 844-Modulo1751
+  local:
+    formato: CSV
+    ruta: ENA/2022/844-Modulo1751.zip
+    bytes: 6027435
+    sha256: b98cf9a177545f7686a1dc900cb080f7e538628c1c5336aac629b51bb6c0972b
+- anio: 2022
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '844'
+  codigo: '1752'
+  nombre: SERVICIOS FINANCIEROS
+  archivos:
+    CSV: 844-Modulo1752
+    STATA: 844-Modulo1752
+    SPSS: 844-Modulo1752
+    DBF: 844-Modulo1752
+  local:
+    formato: CSV
+    ruta: ENA/2022/844-Modulo1752.zip
+    bytes: 5946892
+    sha256: 1afa998a086ddca95666979878da2f5875620510fe6d02c9c70e93d8da1f6126
+- anio: 2022
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '844'
+  codigo: '1753'
+  nombre: COSTOS DE PRODUCCIÓN DE LA ACTIVIDAD AGROPECUARIA
+  archivos:
+    CSV: 844-Modulo1753
+    STATA: 844-Modulo1753
+    SPSS: 844-Modulo1753
+    DBF: 844-Modulo1753
+  local:
+    formato: CSV
+    ruta: ENA/2022/844-Modulo1753.zip
+    bytes: 6479638
+    sha256: a735688711554aeb446677b5561c7200be01536b5cbe4bcc76f97ce6e6fd167b
+- anio: 2022
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '844'
+  codigo: '1754'
+  nombre: CARACTERÍSTICAS DEL PRODUCTOR/A AGROPECUARIO/A Y SU FAMILIA
+  archivos:
+    CSV: 844-Modulo1754
+    STATA: 844-Modulo1754
+    SPSS: 844-Modulo1754
+    DBF: 844-Modulo1754
+  local:
+    formato: CSV
+    ruta: ENA/2022/844-Modulo1754.zip
+    bytes: 7383936
+    sha256: 98564db383d824beff4655dfee40d831a3c6f98e3b086f00e77d53dd85122344
+- anio: 2022
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '844'
+  codigo: '1755'
+  nombre: CARACTERÍSTICAS DE LA UNIDAD AGROPECUARIA AL DÍA DE LA ENTREVISTA
+  archivos:
+    CSV: 844-Modulo1755
+    STATA: 844-Modulo1755
+    SPSS: 844-Modulo1755
+    DBF: 844-Modulo1755
+  local:
+    formato: CSV
+    ruta: ENA/2022/844-Modulo1755.zip
+    bytes: 6029928
+    sha256: 8737dfa22dea1496ea1d5d39eb0eba453a9b738d35b8a524485faf5332007316
+- anio: 2022
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '844'
+  codigo: '1756'
+  nombre: CARACTERÍSTICAS DE LA UNIDAD AGROPECUARIA AL DÍA DE LA ENTREVISTA - CULTIVOS
+  archivos:
+    CSV: 844-Modulo1756
+    STATA: 844-Modulo1756
+    SPSS: 844-Modulo1756
+    DBF: 844-Modulo1756
+  local:
+    formato: CSV
+    ruta: ENA/2022/844-Modulo1756.zip
+    bytes: 7097129
+    sha256: b1911c6c2a92c9cc940e98191c6aea31f65f6ac75e508da0456c2d125c97e956
+- anio: 2022
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '844'
+  codigo: '1757'
+  nombre: USOS DE LA TIERRA
+  archivos:
+    CSV: 844-Modulo1757
+    STATA: 844-Modulo1757
+    SPSS: 844-Modulo1757
+    DBF: 844-Modulo1757
+  local:
+    formato: CSV
+    ruta: ENA/2022/844-Modulo1757.zip
+    bytes: 6627293
+    sha256: 471d70e424d0d9a077f1baec2d160e36baa0a8011cdbe6cc30b40511c959d56e
+- anio: 2022
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '844'
+  codigo: '1758'
+  nombre: USOS DE LA TIERRA - INTENCION DE SIEMBRA
+  archivos:
+    CSV: 844-Modulo1758
+    STATA: 844-Modulo1758
+    SPSS: 844-Modulo1758
+    DBF: 844-Modulo1758
+  local:
+    formato: CSV
+    ruta: ENA/2022/844-Modulo1758.zip
+    bytes: 6104992
+    sha256: 8efae92141736b1faf0067ee48583dda25d69d038787ec74c592371a9e441bec
+- anio: 2022
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '844'
+  codigo: '1759'
+  nombre: EXISTENCIA DE GANADO, AVES Y OTROS ANIMALES
+  archivos:
+    CSV: 844-Modulo1759
+    STATA: 844-Modulo1759
+    SPSS: 844-Modulo1759
+    DBF: 844-Modulo1759
+  local:
+    formato: CSV
+    ruta: ENA/2022/844-Modulo1759.zip
+    bytes: 6122691
+    sha256: af328923c1dca24122ffa1842b57748fbfa8ff41537f50181eb7cd912b56c33d
+- anio: 2022
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '844'
+  codigo: '1760'
+  nombre: CARACTERÍSTICAS DE LA UNIDAD AGROPECUARIA EN LOS ÚLTIMOS DOCE MESES - MAQUINARIA Y EQUIPO
+  archivos:
+    CSV: 844-Modulo1760
+    STATA: 844-Modulo1760
+    SPSS: 844-Modulo1760
+    DBF: 844-Modulo1760
+  local:
+    formato: CSV
+    ruta: ENA/2022/844-Modulo1760.zip
+    bytes: 5826296
+    sha256: c71654d81dd8241c59d708b21388b3f6c94f41d56bd1f29168224026f31764d6
+- anio: 2023
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '922'
+  codigo: '1828'
+  nombre: CARATERÍSTICAS DE LA UNIDAD AGROPECUARIA AL DÍA DE LA ENTREVISTA
+  archivos:
+    CSV: 922-Modulo1828
+    STATA: 922-Modulo1828
+    SPSS: 922-Modulo1828
+    DBF: 922-Modulo1828
+  local:
+    formato: CSV
+    ruta: ENA/2023/922-Modulo1828.zip
+    bytes: 21451474
+    sha256: 3bcc0f75285637969d187392e1b4201d0660a8667ebdebf4323d20a625f22d2a
+- anio: 2023
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '922'
+  codigo: '1829'
+  nombre: CARATERÍSTICAS DE LA UNIDAD AGROPECUARIA EN LOS ÚLTIMOS 12 MESES
+  archivos:
+    CSV: 922-Modulo1829
+    STATA: 922-Modulo1829
+    SPSS: 922-Modulo1829
+    DBF: 922-Modulo1829
+  local:
+    formato: CSV
+    ruta: ENA/2023/922-Modulo1829.zip
+    bytes: 9096967
+    sha256: 37f5a8ad0202644352cc402d26f478fa881f8f1a0454f39aa0c00eebc81abfc1
+- anio: 2023
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '922'
+  codigo: '1830'
+  nombre: SUPERFICIE COSECHADA, SEMBRADA, PRODUCCIÓN Y DESTINO DE LOS CULTIVOS COSECHADOS
+  archivos:
+    CSV: 922-Modulo1830
+    STATA: 922-Modulo1830
+    SPSS: 922-Modulo1830
+    DBF: 922-Modulo1830
+  local:
+    formato: CSV
+    ruta: ENA/2023/922-Modulo1830.zip
+    bytes: 10032750
+    sha256: 2441e74c7375e6c31820f7e7f9d6dcb5011cea472f8694e11d1de848641cae81
+- anio: 2023
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '922'
+  codigo: '1831'
+  nombre: PÉRDIDA TOTAL DE PRODUCCIÓN O SUPERFICIE SEMBRADA
+  archivos:
+    CSV: 922-Modulo1831
+    STATA: 922-Modulo1831
+    SPSS: 922-Modulo1831
+    DBF: 922-Modulo1831
+  local:
+    formato: CSV
+    ruta: ENA/2023/922-Modulo1831.zip
+    bytes: 5651827
+    sha256: 0f9861b02efaecb07bd4bc3021d4212d6d02357e370c083a5c1b8dea8283bb31
+- anio: 2023
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '922'
+  codigo: '1832'
+  nombre: DERIVADOS AGRÍCOLAS DE LOS CULTIVOS COSECHADOS
+  archivos:
+    CSV: 922-Modulo1832
+    STATA: 922-Modulo1832
+    SPSS: 922-Modulo1832
+    DBF: 922-Modulo1832
+  local:
+    formato: CSV
+    ruta: ENA/2023/922-Modulo1832.zip
+    bytes: 5779311
+    sha256: 531737d9e22f6cbb7ad29343a66e34073e20aee77faf2638a45f3cef4bc86355
+- anio: 2023
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '922'
+  codigo: '1833'
+  nombre: SUBPRODUCTOS AGRÍCOLAS DE LOS CULTIVOS COSECHADOS
+  archivos:
+    CSV: 922-Modulo1833
+    STATA: 922-Modulo1833
+    SPSS: 922-Modulo1833
+    DBF: 922-Modulo1833
+  local:
+    formato: CSV
+    ruta: ENA/2023/922-Modulo1833.zip
+    bytes: 5681888
+    sha256: 682d52d8730cdffbb503d281ff1f566c4004bfc2692b6012c76f267d153c9353
+- anio: 2023
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '922'
+  codigo: '1834'
+  nombre: COSTOS DE PRODUCCIÓN DE LOS CULTIVOS COSECHADOS
+  archivos:
+    CSV: 922-Modulo1834
+    STATA: 922-Modulo1834
+    SPSS: 922-Modulo1834
+    DBF: 922-Modulo1834
+  local:
+    formato: CSV
+    ruta: ENA/2023/922-Modulo1834.zip
+    bytes: 7136725
+    sha256: 820f7b9bc819af2c07ccb2602ad374e4ad08454aa2c591da970d32c1fda917f4
+- anio: 2023
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '922'
+  codigo: '1835'
+  nombre: BUENAS PRÁCTICAS AGRÍCOLAS (PARA LOS CULTIVOS COSECHADOS Y NO COSECHADOS)
+  archivos:
+    CSV: 922-Modulo1835
+    STATA: 922-Modulo1835
+    SPSS: 922-Modulo1835
+    DBF: 922-Modulo1835
+  local:
+    formato: CSV
+    ruta: ENA/2023/922-Modulo1835.zip
+    bytes: 6499526
+    sha256: 2d5daafe41f1324fbe98e473bed03253b973e874f66d999778f25e1269d3bfa3
+- anio: 2023
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '922'
+  codigo: '1836'
+  nombre: ACTIVIDAD PECUARIA AL DÍA DE LA ENTREVISTA
+  archivos:
+    CSV: 922-Modulo1836
+    STATA: 922-Modulo1836
+    SPSS: 922-Modulo1836
+    DBF: 922-Modulo1836
+  local:
+    formato: CSV
+    ruta: ENA/2023/922-Modulo1836.zip
+    bytes: 6499571
+    sha256: b15049afa6d5115317913c560105feb2502c94cd38946ea3a036c9559cb68c92
+- anio: 2023
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '922'
+  codigo: '1837'
+  nombre: ACTIVIDAD PECUARIA EN LOS ÚLTIMOS 12 MESES
+  archivos:
+    CSV: 922-Modulo1837
+    STATA: 922-Modulo1837
+    SPSS: 922-Modulo1837
+    DBF: 922-Modulo1837
+  local:
+    formato: CSV
+    ruta: ENA/2023/922-Modulo1837.zip
+    bytes: 8470748
+    sha256: 43cffa4a64d2fa7100ca397bfdf6dacff3d9cdd750c896d6bc6e2efde85942b6
+- anio: 2023
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '922'
+  codigo: '1838'
+  nombre: SUBPRODUCTOS PECUARIOS
+  archivos:
+    CSV: 922-Modulo1838
+    STATA: 922-Modulo1838
+    SPSS: 922-Modulo1838
+    DBF: 922-Modulo1838
+  local:
+    formato: CSV
+    ruta: ENA/2023/922-Modulo1838.zip
+    bytes: 6292076
+    sha256: 441eee7b364249b9ed8423e2a420466978c7cf0c793781feef75a16b89cb0841
+- anio: 2023
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '922'
+  codigo: '1839'
+  nombre: DERIVADOS PECUARIOS
+  archivos:
+    CSV: 922-Modulo1839
+    STATA: 922-Modulo1839
+    SPSS: 922-Modulo1839
+    DBF: 922-Modulo1839
+  local:
+    formato: CSV
+    ruta: ENA/2023/922-Modulo1839.zip
+    bytes: 5680690
+    sha256: 1edc53cbf9358b3b49c5cd0927eaf39420dede716f94a907fb8fa794e0c46264
+- anio: 2023
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '922'
+  codigo: '1840'
+  nombre: BUENAS PRÁCTICAS PECUARIAS
+  archivos:
+    CSV: 922-Modulo1840
+    STATA: 922-Modulo1840
+    SPSS: 922-Modulo1840
+    DBF: 922-Modulo1840
+  local:
+    formato: CSV
+    ruta: ENA/2023/922-Modulo1840.zip
+    bytes: 6447776
+    sha256: cb44e86692ffe4368484d3753839460581b9f623be0aa7af77f42ae00811f1b0
+- anio: 2023
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '922'
+  codigo: '1841'
+  nombre: INOCUIDAD
+  archivos:
+    CSV: 922-Modulo1841
+    STATA: 922-Modulo1841
+    SPSS: 922-Modulo1841
+    DBF: 922-Modulo1841
+  local:
+    formato: CSV
+    ruta: ENA/2023/922-Modulo1841.zip
+    bytes: 6161333
+    sha256: d95062c2774dd3a920a23adf55441cf5b31ea9a794d1bfb3ed9548856bed7cee
+- anio: 2023
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '922'
+  codigo: '1842'
+  nombre: SERVICIOS DE EXTENSIÓN AGRARÍA
+  archivos:
+    CSV: 922-Modulo1842
+    STATA: 922-Modulo1842
+    SPSS: 922-Modulo1842
+    DBF: 922-Modulo1842
+  local:
+    formato: CSV
+    ruta: ENA/2023/922-Modulo1842.zip
+    bytes: 7260351
+    sha256: ac546d7473a84bc89265037789cb383c1e64a4fc3e500999428c46dcbe069e3e
+- anio: 2023
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '922'
+  codigo: '1843'
+  nombre: ASOCIATIVIDAD
+  archivos:
+    CSV: 922-Modulo1843
+    STATA: 922-Modulo1843
+    SPSS: 922-Modulo1843
+    DBF: 922-Modulo1843
+  local:
+    formato: CSV
+    ruta: ENA/2023/922-Modulo1843.zip
+    bytes: 6136042
+    sha256: 0f80706bfb602803b20ef0671d7855309ec113ebc63a33e144387e05dfef4da0
+- anio: 2023
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '922'
+  codigo: '1844'
+  nombre: SERVICIOS FINANCIEROS
+  archivos:
+    CSV: 922-Modulo1844
+    STATA: 922-Modulo1844
+    SPSS: 922-Modulo1844
+    DBF: 922-Modulo1844
+  local:
+    formato: CSV
+    ruta: ENA/2023/922-Modulo1844.zip
+    bytes: 6090023
+    sha256: 1e8a68013256ebb998f4c0312a4bc27b4169952dcd8b74adf86f0b31e98492ab
+- anio: 2023
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '922'
+  codigo: '1845'
+  nombre: COSTOS DE PRODUCCIÓN DE LA ACTIVIDAD AGROPECUARIA
+  archivos:
+    CSV: 922-Modulo1845
+    STATA: 922-Modulo1845
+    SPSS: 922-Modulo1845
+    DBF: 922-Modulo1845
+  local:
+    formato: CSV
+    ruta: ENA/2023/922-Modulo1845.zip
+    bytes: 6699918
+    sha256: 96b40f2a6a28eb07bca21c9a7d225f785979f94de84fa67213aae95329cf1dfd
+- anio: 2023
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '922'
+  codigo: '1846'
+  nombre: CARACTERÍSTICAS DEL PRODUCTOR/A AGROPECUARIO/A Y SU FAMILIA
+  archivos:
+    CSV: 922-Modulo1846
+    STATA: 922-Modulo1846
+    SPSS: 922-Modulo1846
+    DBF: 922-Modulo1846
+  local:
+    formato: CSV
+    ruta: ENA/2023/922-Modulo1846.zip
+    bytes: 7038902
+    sha256: caa355282ad46909b33a604bc606b7b9c13a738ef01e0f602ecb3bba5f9a495b
+- anio: 2023
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '922'
+  codigo: '1847'
+  nombre: INTENCIÓN DE SIEMBRA
+  archivos:
+    CSV: 922-Modulo1847
+    STATA: 922-Modulo1847
+    SPSS: 922-Modulo1847
+    DBF: 922-Modulo1847
+  local:
+    formato: CSV
+    ruta: ENA/2023/922-Modulo1847.zip
+    bytes: 6343777
+    sha256: ab1c4ca9fd9aa5f9ba7cf170609708f3fa48e42defe48cb6c5f7335d94963a22
+- anio: 2023
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '922'
+  codigo: '1848'
+  nombre: MAQUINARIA Y/O EQUIPO
+  archivos:
+    CSV: 922-Modulo1848
+    STATA: 922-Modulo1848
+    SPSS: 922-Modulo1848
+    DBF: 922-Modulo1848
+  local:
+    formato: CSV
+    ruta: ENA/2023/922-Modulo1848.zip
+    bytes: 6163645
+    sha256: 5c2149c8463e5a406e9abdf5a4cd4ae4cd54a9f2f8bf9e6e147e73b8bdd85dc8
+- anio: 2024
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '973'
+  codigo: '1893'
+  nombre: CARATERÍSTICAS DE LA UNIDAD AGROPECUARIA AL DÍA DE LA ENTREVISTA
+  archivos:
+    CSV: 973-Modulo1893
+    STATA: 973-Modulo1893
+    SPSS: 973-Modulo1893
+    DBF: 973-Modulo1893
+  local:
+    formato: CSV
+    ruta: ENA/2024/973-Modulo1893.zip
+    bytes: 31234791
+    sha256: f3f8971f37b5db2b5278f8c3d8ae38c0b7c70a7e1ddfe9c54dedbb714e85b3b0
+- anio: 2024
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '973'
+  codigo: '1894'
+  nombre: CARATERÍSTICAS DE LA UNIDAD AGROPECUARIA EN LOS ÚLTIMOS 12 MESES
+  archivos:
+    CSV: 973-Modulo1894
+    STATA: 973-Modulo1894
+    SPSS: 973-Modulo1894
+    DBF: 973-Modulo1894
+  local:
+    formato: CSV
+    ruta: ENA/2024/973-Modulo1894.zip
+    bytes: 9056583
+    sha256: 066f65d88bafe8dada45cac688159c8737d949b82d218732ca2a6dde64094a0e
+- anio: 2024
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '973'
+  codigo: '1895'
+  nombre: SUPERFICIE COSECHADA, SEMBRADA, PRODUCCIÓN Y DESTINO DE LOS CULTIVOS COSECHADOS
+  archivos:
+    CSV: 973-Modulo1895
+    STATA: 973-Modulo1895
+    SPSS: 973-Modulo1895
+    DBF: 973-Modulo1895
+  local:
+    formato: CSV
+    ruta: ENA/2024/973-Modulo1895.zip
+    bytes: 11141946
+    sha256: 5b452b8a87f5d5200e2b8b305128e65299f8d0fb93c20233ff4a39e473e11277
+- anio: 2024
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '973'
+  codigo: '1896'
+  nombre: PÉRDIDA TOTAL DE PRODUCCIÓN O SUPERFICIE SEMBRADA
+  archivos:
+    CSV: 973-Modulo1896
+    STATA: 973-Modulo1896
+    SPSS: 973-Modulo1896
+    DBF: 973-Modulo1896
+  local:
+    formato: CSV
+    ruta: ENA/2024/973-Modulo1896.zip
+    bytes: 5195544
+    sha256: e17f1d7a0aad6172d9dd3e8f02ad90d78410d7401ead49a8c796c132ab33f85e
+- anio: 2024
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '973'
+  codigo: '1897'
+  nombre: DERIVADOS AGRÍCOLAS DE LOS CULTIVOS COSECHADOS
+  archivos:
+    CSV: 973-Modulo1897
+    STATA: 973-Modulo1897
+    SPSS: 973-Modulo1897
+    DBF: 973-Modulo1897
+  local:
+    formato: CSV
+    ruta: ENA/2024/973-Modulo1897.zip
+    bytes: 5433764
+    sha256: ffc7969498d23f4b8443e0492c502d1d65b60b12179e1fc493d277cec3082e21
+- anio: 2024
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '973'
+  codigo: '1898'
+  nombre: SUBPRODUCTOS AGRÍCOLAS DE LOS CULTIVOS COSECHADOS
+  archivos:
+    CSV: 973-Modulo1898
+    STATA: 973-Modulo1898
+    SPSS: 973-Modulo1898
+    DBF: 973-Modulo1898
+  local:
+    formato: CSV
+    ruta: ENA/2024/973-Modulo1898.zip
+    bytes: 5280757
+    sha256: 091e54c19c40376e11c464df36a38b227bbec34a86cb7b8a9596fba9d1ad1315
+- anio: 2024
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '973'
+  codigo: '1899'
+  nombre: COSTOS DE PRODUCCIÓN DE LOS CULTIVOS COSECHADOS
+  archivos:
+    CSV: 973-Modulo1899
+    STATA: 973-Modulo1899
+    SPSS: 973-Modulo1899
+    DBF: 973-Modulo1899
+  local:
+    formato: CSV
+    ruta: ENA/2024/973-Modulo1899.zip
+    bytes: 6998724
+    sha256: c309529df4bd7beb8fd971156b0f38bcb1d8dd58b243ae70065e345b2f3e7066
+- anio: 2024
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '973'
+  codigo: '1900'
+  nombre: BUENAS PRÁCTICAS AGRÍCOLAS (PARA LOS CULTIVOS COSECHADOS Y NO COSECHADOS)
+  archivos:
+    CSV: 973-Modulo1900
+    STATA: 973-Modulo1900
+    SPSS: 973-Modulo1900
+    DBF: 973-Modulo1900
+  local:
+    formato: CSV
+    ruta: ENA/2024/973-Modulo1900.zip
+    bytes: 6032951
+    sha256: b0d9d264cd73493044aa8a02507c398ec4a12af2bf31103b318f8d42bebad770
+- anio: 2024
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '973'
+  codigo: '1901'
+  nombre: ACTIVIDAD PECUARIA AL DÍA DE LA ENTREVISTA
+  archivos:
+    CSV: 973-Modulo1901
+    STATA: 973-Modulo1901
+    SPSS: 973-Modulo1901
+    DBF: 973-Modulo1901
+  local:
+    formato: CSV
+    ruta: ENA/2024/973-Modulo1901.zip
+    bytes: 6234916
+    sha256: 2ad8b0ff40df3cf3f316a9747b877fdc3b5bb5a5e2e7d8cddf717cdd84bd3efc
+- anio: 2024
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '973'
+  codigo: '1902'
+  nombre: ACTIVIDAD PECUARIA EN LOS ÚLTIMOS 12 MESES
+  archivos:
+    CSV: 973-Modulo1902
+    STATA: 973-Modulo1902
+    SPSS: 973-Modulo1902
+    DBF: 973-Modulo1902
+  local:
+    formato: CSV
+    ruta: ENA/2024/973-Modulo1902.zip
+    bytes: 8296402
+    sha256: 2479d5645792af61a8d2004e17ceac826e39a9c88ad084564ba9fc2cf7f0f704
+- anio: 2024
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '973'
+  codigo: '1903'
+  nombre: SUBPRODUCTOS PECUARIOS
+  archivos:
+    CSV: 973-Modulo1903
+    STATA: 973-Modulo1903
+    SPSS: 973-Modulo1903
+    DBF: 973-Modulo1903
+  local:
+    formato: CSV
+    ruta: ENA/2024/973-Modulo1903.zip
+    bytes: 5912424
+    sha256: 3910c9fb7fb49a36a98f938a018466e97ce60b89818aaf7af358f7bcd66b2d3b
+- anio: 2024
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '973'
+  codigo: '1904'
+  nombre: DERIVADOS PECUARIOS
+  archivos:
+    CSV: 973-Modulo1904
+    STATA: 973-Modulo1904
+    SPSS: 973-Modulo1904
+    DBF: 973-Modulo1904
+  local:
+    formato: CSV
+    ruta: ENA/2024/973-Modulo1904.zip
+    bytes: 5258651
+    sha256: 61ec21282d5a249f6159498ef28db08b57ff26aefe9d1505273a43c1466697e7
+- anio: 2024
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '973'
+  codigo: '1905'
+  nombre: BUENAS PRÁCTICAS PECUARIAS
+  archivos:
+    CSV: 973-Modulo1905
+    STATA: 973-Modulo1905
+    SPSS: 973-Modulo1905
+    DBF: 973-Modulo1905
+  local:
+    formato: CSV
+    ruta: ENA/2024/973-Modulo1905.zip
+    bytes: 6103067
+    sha256: 7b0aaffad293f8554355cfebc05325255e2f395807fd853e7a6b1f1cc7b2b1dc
+- anio: 2024
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '973'
+  codigo: '1906'
+  nombre: INOCUIDAD
+  archivos:
+    CSV: 973-Modulo1906
+    STATA: 973-Modulo1906
+    SPSS: 973-Modulo1906
+    DBF: 973-Modulo1906
+  local:
+    formato: CSV
+    ruta: ENA/2024/973-Modulo1906.zip
+    bytes: 5661420
+    sha256: 4da7920dc4f226bf252d8370e27c4d418d129096067bb36a2516904beae3faac
+- anio: 2024
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '973'
+  codigo: '1907'
+  nombre: SERVICIOS DE EXTENSIÓN AGRARÍA
+  archivos:
+    CSV: 973-Modulo1907
+    STATA: 973-Modulo1907
+    SPSS: 973-Modulo1907
+    DBF: 973-Modulo1907
+  local:
+    formato: CSV
+    ruta: ENA/2024/973-Modulo1907.zip
+    bytes: 7012345
+    sha256: e4eb909ecadb59fd1b2e4612f4b612f699376a973908429d97c9e3a09a32d7f8
+- anio: 2024
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '973'
+  codigo: '1908'
+  nombre: ASOCIATIVIDAD
+  archivos:
+    CSV: 973-Modulo1908
+    STATA: 973-Modulo1908
+    SPSS: 973-Modulo1908
+    DBF: 973-Modulo1908
+  local:
+    formato: CSV
+    ruta: ENA/2024/973-Modulo1908.zip
+    bytes: 5621731
+    sha256: 89e48a549614c9e739edf67e0b9abd96cdf4ce76adec9d9324e84a7b11012b55
+- anio: 2024
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '973'
+  codigo: '1909'
+  nombre: SERVICIOS FINANCIEROS
+  archivos:
+    CSV: 973-Modulo1909
+    STATA: 973-Modulo1909
+    SPSS: 973-Modulo1909
+    DBF: 973-Modulo1909
+  local:
+    formato: CSV
+    ruta: ENA/2024/973-Modulo1909.zip
+    bytes: 5712305
+    sha256: e579aef1c373b93270bb8dca44584c15cc303532a6f262f443cf065f1dab41a9
+- anio: 2024
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '973'
+  codigo: '1910'
+  nombre: COSTOS DE PRODUCCIÓN DE LA ACTIVIDAD AGROPECUARIA
+  archivos:
+    CSV: 973-Modulo1910
+    STATA: 973-Modulo1910
+    SPSS: 973-Modulo1910
+    DBF: 973-Modulo1910
+  local:
+    formato: CSV
+    ruta: ENA/2024/973-Modulo1910.zip
+    bytes: 6454026
+    sha256: 3025969c90971eda8d65a222163545b7ba47ceefc03124f2088a60cd2d0c5067
+- anio: 2024
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '973'
+  codigo: '1911'
+  nombre: CARACTERÍSTICAS DEL PRODUCTOR/A AGROPECUARIO/A Y SU FAMILIA
+  archivos:
+    CSV: 973-Modulo1911
+    STATA: 973-Modulo1911
+    SPSS: 973-Modulo1911
+    DBF: 973-Modulo1911
+  local:
+    formato: CSV
+    ruta: ENA/2024/973-Modulo1911.zip
+    bytes: 6474555
+    sha256: 7a06e68d8912e86254589c2ce531515a1ee502471ece7de892dd858bcda3eee3
+- anio: 2024
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '973'
+  codigo: '1912'
+  nombre: INTENCIÓN DE SIEMBRA
+  archivos:
+    CSV: 973-Modulo1912
+    STATA: 973-Modulo1912
+    SPSS: 973-Modulo1912
+    DBF: 973-Modulo1912
+  local:
+    formato: CSV
+    ruta: ENA/2024/973-Modulo1912.zip
+    bytes: 5931587
+    sha256: 3eb6ebf19769d58f6b79f3611f59ce7f68c3dec0270b11d871b55e3aef0ae1fa
+- anio: 2024
+  periodo: Anual
+  serie: anual
+  encuesta_inei: '973'
+  codigo: '1913'
+  nombre: MAQUINARIA Y/O EQUIPO
+  archivos:
+    CSV: 973-Modulo1913
+    STATA: 973-Modulo1913
+    SPSS: 973-Modulo1913
+    DBF: 973-Modulo1913
+  local:
+    formato: CSV
+    ruta: ENA/2024/973-Modulo1913.zip
+    bytes: 5631709
+    sha256: 4d02cffe38f25276616c2bee2500efcf957794762053c411d03ca315f470db8a
+- anio: 2025
+  periodo: '62'
+  serie: anual
+  encuesta_inei: '1036'
+  codigo: '1893'
+  nombre: "CARATERÃ\x8DSTICAS DE LA UNIDAD AGROPECUARIA AL DÃ\x8DA DE LA ENTREVISTA"
+  archivos:
+    CSV: 1036-Modulo1893
+    STATA: 1036-Modulo1893
+    SPSS: 1036-Modulo1893
+  local:
+    formato: CSV
+    ruta: ENA/2025/1036-Modulo1893.zip
+    bytes: 42350738
+    sha256: df5ddaf61bca1149d41fdbb1e8ed0d04edddddb2a9321d647b1eea3f4147e287
+- anio: 2025
+  periodo: '62'
+  serie: anual
+  encuesta_inei: '1036'
+  codigo: '1894'
+  nombre: "CARATERÃ\x8DSTICAS DE LA UNIDAD AGROPECUARIA EN LOS Ã\x9ALTIMOS 12 MESES"
+  archivos:
+    CSV: 1036-Modulo1894
+    STATA: 1036-Modulo1894
+    SPSS: 1036-Modulo1894
+  local:
+    formato: CSV
+    ruta: ENA/2025/1036-Modulo1894.zip
+    bytes: 8744397
+    sha256: bc4661eef38f26c41ea740337a99e0be1e1b323699c3f677dfc3a06f2ab30bbf
+- anio: 2025
+  periodo: '62'
+  serie: anual
+  encuesta_inei: '1036'
+  codigo: '1895'
+  nombre: "SUPERFICIE COSECHADA, SEMBRADA, PRODUCCIÃ\x93N Y DESTINO DE LOS CULTIVOS COSECHADOS"
+  archivos:
+    CSV: 1036-Modulo1895
+    STATA: 1036-Modulo1895
+    SPSS: 1036-Modulo1895
+  local:
+    formato: CSV
+    ruta: ENA/2025/1036-Modulo1895.zip
+    bytes: 12471352
+    sha256: a9dd122b65b2d6ff1960b181f5750677dc971f9ff9b0d07600f4b15592bcf0cf
+- anio: 2025
+  periodo: '62'
+  serie: anual
+  encuesta_inei: '1036'
+  codigo: '1896'
+  nombre: "PÃ\x89RDIDA TOTAL DE PRODUCCIÃ\x93N O SUPERFICIE SEMBRADA"
+  archivos:
+    CSV: 1036-Modulo1896
+    STATA: 1036-Modulo1896
+    SPSS: 1036-Modulo1896
+  local:
+    formato: CSV
+    ruta: ENA/2025/1036-Modulo1896.zip
+    bytes: 6732459
+    sha256: db710908fcfc6cf264e43c00af2a77a0022f1ed97c4962292646595fac14ebff
+- anio: 2025
+  periodo: '62'
+  serie: anual
+  encuesta_inei: '1036'
+  codigo: '1897'
+  nombre: "DERIVADOS AGRÃ\x8DCOLAS DE LOS CULTIVOS COSECHADOS"
+  archivos:
+    CSV: 1036-Modulo1897
+    STATA: 1036-Modulo1897
+    SPSS: 1036-Modulo1897
+  local:
+    formato: CSV
+    ruta: ENA/2025/1036-Modulo1897.zip
+    bytes: 6911091
+    sha256: d5340c04b0bee0f3fbcb403dd52ce08015155f7236fd288c1e95b32f95f15c08
+- anio: 2025
+  periodo: '62'
+  serie: anual
+  encuesta_inei: '1036'
+  codigo: '1898'
+  nombre: "SUBPRODUCTOS AGRÃ\x8DCOLAS DE LOS CULTIVOS COSECHADOS"
+  archivos:
+    CSV: 1036-Modulo1898
+    STATA: 1036-Modulo1898
+    SPSS: 1036-Modulo1898
+  local:
+    formato: CSV
+    ruta: ENA/2025/1036-Modulo1898.zip
+    bytes: 6782166
+    sha256: 57e07408116dc5e1ab9961c75338afc30a41702848ddec4998cb9f8b2857ba5e
+- anio: 2025
+  periodo: '62'
+  serie: anual
+  encuesta_inei: '1036'
+  codigo: '1899'
+  nombre: "COSTOS DE PRODUCCIÃ\x93N DE LOS CULTIVOS COSECHADOS"
+  archivos:
+    CSV: 1036-Modulo1899
+    STATA: 1036-Modulo1899
+    SPSS: 1036-Modulo1899
+  local:
+    formato: CSV
+    ruta: ENA/2025/1036-Modulo1899.zip
+    bytes: 8445091
+    sha256: 1262c544c14ecedce8d8bfa249e2059e49a339aa79e5e86af22aa379ab613251
+- anio: 2025
+  periodo: '62'
+  serie: anual
+  encuesta_inei: '1036'
+  codigo: '1900'
+  nombre: "BUENAS PRÃ\x81CTICAS AGRÃ\x8DCOLAS (PARA LOS CULTIVOS COSECHADOS Y NO COSECHADOS)"
+  archivos:
+    CSV: 1036-Modulo1900
+    STATA: 1036-Modulo1900
+    SPSS: 1036-Modulo1900
+  local:
+    formato: CSV
+    ruta: ENA/2025/1036-Modulo1900.zip
+    bytes: 7612334
+    sha256: 97bd949ae39a0d1f63816a63bb1096fc2f6d55e97bde24c673b87b2b40d0f448
+- anio: 2025
+  periodo: '62'
+  serie: anual
+  encuesta_inei: '1036'
+  codigo: '1901'
+  nombre: "ACTIVIDAD PECUARIA AL DÃ\x8DA DE LA ENTREVISTA"
+  archivos:
+    CSV: 1036-Modulo1901
+    STATA: 1036-Modulo1901
+    SPSS: 1036-Modulo1901
+  local:
+    formato: CSV
+    ruta: ENA/2025/1036-Modulo1901.zip
+    bytes: 7501298
+    sha256: d55463a358ac7f4af17374847b3d564ad1175aa2ad7d64baab8836b257ae2adf
+- anio: 2025
+  periodo: '62'
+  serie: anual
+  encuesta_inei: '1036'
+  codigo: '1902'
+  nombre: "ACTIVIDAD PECUARIA EN LOS Ã\x9ALTIMOS 12 MESES"
+  archivos:
+    CSV: 1036-Modulo1902
+    STATA: 1036-Modulo1902
+    SPSS: 1036-Modulo1902
+  local:
+    formato: CSV
+    ruta: ENA/2025/1036-Modulo1902.zip
+    bytes: 10942041
+    sha256: e8b4fbfb999a2ad72b6b0313d72f56abbe968cd3b8c1615889b20501f2ba4b6f
+- anio: 2025
+  periodo: '62'
+  serie: anual
+  encuesta_inei: '1036'
+  codigo: '1903'
+  nombre: SUBPRODUCTOS PECUARIOS
+  archivos:
+    CSV: 1036-Modulo1903
+    STATA: 1036-Modulo1903
+    SPSS: 1036-Modulo1903
+  local:
+    formato: CSV
+    ruta: ENA/2025/1036-Modulo1903.zip
+    bytes: 7742962
+    sha256: 8619d64351756a56d5ca3fed8bb5e34f1c6a32888b46cecf26d13992059a900d
+- anio: 2025
+  periodo: '62'
+  serie: anual
+  encuesta_inei: '1036'
+  codigo: '1904'
+  nombre: DERIVADOS PECUARIOS
+  archivos:
+    CSV: 1036-Modulo1904
+    STATA: 1036-Modulo1904
+    SPSS: 1036-Modulo1904
+  local:
+    formato: CSV
+    ruta: ENA/2025/1036-Modulo1904.zip
+    bytes: 6788747
+    sha256: 12faef9e8bfb5c4010e32d89e5582784f2a3dcc161be3e8aebf5fdcaab756b74
+- anio: 2025
+  periodo: '62'
+  serie: anual
+  encuesta_inei: '1036'
+  codigo: '1905'
+  nombre: "BUENAS PRÃ\x81CTICAS PECUARIAS"
+  archivos:
+    CSV: 1036-Modulo1905
+    STATA: 1036-Modulo1905
+    SPSS: 1036-Modulo1905
+  local:
+    formato: CSV
+    ruta: ENA/2025/1036-Modulo1905.zip
+    bytes: 8175414
+    sha256: bc8f1b330c957ee59a4d58be3b9d464e061c98442a3734e59d4d9f6bfb23f838
+- anio: 2025
+  periodo: '62'
+  serie: anual
+  encuesta_inei: '1036'
+  codigo: '1906'
+  nombre: INOCUIDAD
+  archivos:
+    CSV: 1036-Modulo1906
+    STATA: 1036-Modulo1906
+    SPSS: 1036-Modulo1906
+  local:
+    formato: CSV
+    ruta: ENA/2025/1036-Modulo1906.zip
+    bytes: 7213449
+    sha256: 4596636a462eec763832dd6747bb121633df4a547a005a6e992659dbb68471fd
+- anio: 2025
+  periodo: '62'
+  serie: anual
+  encuesta_inei: '1036'
+  codigo: '1907'
+  nombre: "SERVICIOS DE EXTENSIÃ\x93N AGRARÃ\x8DA"
+  archivos:
+    CSV: 1036-Modulo1907
+    STATA: 1036-Modulo1907
+    SPSS: 1036-Modulo1907
+  local:
+    formato: CSV
+    ruta: ENA/2025/1036-Modulo1907.zip
+    bytes: 8854237
+    sha256: 591fd4aa532cbcb68328a46a23a47d88c1c056867fc0a95e5f76fcefa339cdcb
+- anio: 2025
+  periodo: '62'
+  serie: anual
+  encuesta_inei: '1036'
+  codigo: '1908'
+  nombre: ASOCIATIVIDAD
+  archivos:
+    CSV: 1036-Modulo1908
+    STATA: 1036-Modulo1908
+    SPSS: 1036-Modulo1908
+  local:
+    formato: CSV
+    ruta: ENA/2025/1036-Modulo1908.zip
+    bytes: 7184579
+    sha256: fba11461497ade8f20834c8e8427344be82a90bdb9cfab0a03f9ec08e2c74a84
+- anio: 2025
+  periodo: '62'
+  serie: anual
+  encuesta_inei: '1036'
+  codigo: '1909'
+  nombre: SERVICIOS FINANCIEROS
+  archivos:
+    CSV: 1036-Modulo1909
+    STATA: 1036-Modulo1909
+    SPSS: 1036-Modulo1909
+  local:
+    formato: CSV
+    ruta: ENA/2025/1036-Modulo1909.zip
+    bytes: 7139326
+    sha256: 0502fced0c7c90e1022e35c8f0f7ed6e0940a8a891633391daab194260e23fda
+- anio: 2025
+  periodo: '62'
+  serie: anual
+  encuesta_inei: '1036'
+  codigo: '1910'
+  nombre: "COSTOS DE PRODUCCIÃ\x93N DE LA ACTIVIDAD AGROPECUARIA"
+  archivos:
+    CSV: 1036-Modulo1910
+    STATA: 1036-Modulo1910
+    SPSS: 1036-Modulo1910
+  local:
+    formato: CSV
+    ruta: ENA/2025/1036-Modulo1910.zip
+    bytes: 8018561
+    sha256: a9f54f5210763a05896f47b4a0ef4e2a2c21326911fa406576ac959755e3538c
+- anio: 2025
+  periodo: '62'
+  serie: anual
+  encuesta_inei: '1036'
+  codigo: '1911'
+  nombre: "CARACTERÃ\x8DSTICAS DEL PRODUCTOR/A AGROPECUARIO/A Y SU FAMILIA"
+  archivos:
+    CSV: 1036-Modulo1911
+    STATA: 1036-Modulo1911
+    SPSS: 1036-Modulo1911
+  local:
+    formato: CSV
+    ruta: ENA/2025/1036-Modulo1911.zip
+    bytes: 9137042
+    sha256: 155b2ef9c4367e9bcfdcd9ccc86e55920b80e7c7ddbf184fba23768c622f66f6
+- anio: 2025
+  periodo: '62'
+  serie: anual
+  encuesta_inei: '1036'
+  codigo: '1912'
+  nombre: "INTENCIÃ\x93N DE SIEMBRA"
+  archivos:
+    CSV: 1036-Modulo1912
+    STATA: 1036-Modulo1912
+    SPSS: 1036-Modulo1912
+  local:
+    formato: CSV
+    ruta: ENA/2025/1036-Modulo1912.zip
+    bytes: 7426991
+    sha256: 25bad53b4a5fd40f306ef68732523a09a6d9328e13d7771232b88995ada7c738
+- anio: 2025
+  periodo: '62'
+  serie: anual
+  encuesta_inei: '1036'
+  codigo: '1913'
+  nombre: MAQUINARIA Y/O EQUIPO
+  archivos:
+    CSV: 1036-Modulo1913
+    STATA: 1036-Modulo1913
+    SPSS: 1036-Modulo1913
+  local:
+    formato: CSV
+    ruta: ENA/2025/1036-Modulo1913.zip
+    bytes: 7108612
+    sha256: eb140f76804024ac96cdebcec87a77af00dbcfee44544fa79795809e2f6d571b
+documentos:
+- anio: 2014
+  serie: anual
+  archivo: 01_FICHA_TECNICA.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2014-62/01_FICHA_TECNICA.zip
+  ruta: ENA/2014/docs/01_FICHA_TECNICA.zip
+  bytes: 411898
+  sha256: 4b0436b615e812dd01379dcfc7e96603b768fe0e2d95bfe01d2bd5dd8ea73d07
+- anio: 2014
+  serie: anual
+  archivo: 02_CUESTIONARIO_PEQUENOS_MEDIANOS.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2014-62/02_CUESTIONARIO_PEQUENOS_MEDIANOS.zip
+  ruta: ENA/2014/docs/02_CUESTIONARIO_PEQUENOS_MEDIANOS.zip
+  bytes: 695177
+  sha256: 8871bb26d9f0efcf3c1fd58dc280ae02b3f184b26b418c76c5cd2d9382f77e3d
+- anio: 2014
+  serie: anual
+  archivo: 03_CUESTIONARIO_ESTRATO_ESPECIAL.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2014-62/03_CUESTIONARIO_ESTRATO_ESPECIAL.zip
+  ruta: ENA/2014/docs/03_CUESTIONARIO_ESTRATO_ESPECIAL.zip
+  bytes: 448918
+  sha256: 662125ec741e33b1b4eca976b5e21f4930049e70186177a3fb3acc85d439faed
+- anio: 2014
+  serie: anual
+  archivo: 04_Manual_del_Encuestador_PEQUENOS_MEDIANOS.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2014-62/04_Manual_del_Encuestador_PEQUENOS_MEDIANOS.zip
+  ruta: ENA/2014/docs/04_Manual_del_Encuestador_PEQUENOS_MEDIANOS.zip
+  bytes: 12031035
+  sha256: 00f810d685cdfd1691cfb7e6c4bdd32c263fa3fb131a660c2d2971c626ef65ba
+- anio: 2014
+  serie: anual
+  archivo: 05_Manual_del_Encuestador_Estrato_Especial.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2014-62/05_Manual_del_Encuestador_Estrato_Especial.zip
+  ruta: ENA/2014/docs/05_Manual_del_Encuestador_Estrato_Especial.zip
+  bytes: 12265194
+  sha256: 4e794405f31a1b0cbacd6052c1fc0edf4e7d798c7f9e794a40815a7f803c6fa2
+- anio: 2014
+  serie: anual
+  archivo: 06_Manual_Supervisor_Nacional.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2014-62/06_Manual_Supervisor_Nacional.zip
+  ruta: ENA/2014/docs/06_Manual_Supervisor_Nacional.zip
+  bytes: 1234960
+  sha256: feb9e787610af18d3096778290d1ce391e0d073b54b4b7fa1e44406bc33686bc
+- anio: 2014
+  serie: anual
+  archivo: 07_Manual_Coordinador_Departamental.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2014-62/07_Manual_Coordinador_Departamental.zip
+  ruta: ENA/2014/docs/07_Manual_Coordinador_Departamental.zip
+  bytes: 1274407
+  sha256: 5ed6b0d4b84b67230cb68d855aabc92c114970da6c9d09df1b487b682283661f
+- anio: 2014
+  serie: anual
+  archivo: 08_Manual_Supervisor_Local.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2014-62/08_Manual_Supervisor_Local.zip
+  ruta: ENA/2014/docs/08_Manual_Supervisor_Local.zip
+  bytes: 2754154
+  sha256: 6b3d83a795eb0258244a9e2d6779654d5e3087728982ce1d3859b62c8a43e8ff
+- anio: 2014
+  serie: anual
+  archivo: 09_Reduccion_de_la_degradacion_P.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2014-62/09_Reduccion%20de%20la%20degradacion_P.zip
+  ruta: ENA/2014/docs/09_Reduccion_de_la_degradacion_P.zip
+  bytes: 99085
+  sha256: 8a7dd180edaa58e8347841bf736d7c323f7a5d65e3fe2dcf3e4b8bc6b97402b7
+- anio: 2014
+  serie: anual
+  archivo: 10_Reduccion_de_la_degradacion_C.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2014-62/10_Reduccion%20de%20la%20degradacion_C.zip
+  ruta: ENA/2014/docs/10_Reduccion_de_la_degradacion_C.zip
+  bytes: 100700
+  sha256: b9369924e5d3b78077f0906361badb05e7df2a2078f3e7667979a3624a5927ae
+- anio: 2014
+  serie: anual
+  archivo: 11_Aprovechamiento_P.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2014-62/11_Aprovechamiento_P.zip
+  ruta: ENA/2014/docs/11_Aprovechamiento_P.zip
+  bytes: 50666
+  sha256: 7da13fac44f09d249c2c4d0e761ad17fa57b3a89bf0c2cdd5566c410563427ac
+- anio: 2014
+  serie: anual
+  archivo: 12_Mejora_de_la_Inocuidad_P.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2014-62/12_Mejora%20de%20la%20Inocuidad_P.zip
+  ruta: ENA/2014/docs/12_Mejora_de_la_Inocuidad_P.zip
+  bytes: 85952
+  sha256: afddef66e26b2df84e7d9a21db9b15c876c2abf56a81af9c03502f48b7e3ce84
+- anio: 2014
+  serie: anual
+  archivo: 13_Mejora_de_la_articulacion_P.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2014-62/13_Mejora%20de%20la%20articulacion_P.zip
+  ruta: ENA/2014/docs/13_Mejora_de_la_articulacion_P.zip
+  bytes: 94574
+  sha256: de65b917057d0d063edf5164ce8dc8986ca7c2a14f1d75ab9a8e8de187ee7435
+- anio: 2014
+  serie: anual
+  archivo: 14_Mejora_de_la_articulacion_C.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2014-62/14_Mejora%20de%20la%20articulacion_C.zip
+  ruta: ENA/2014/docs/14_Mejora_de_la_articulacion_C.zip
+  bytes: 124338
+  sha256: 4caed3b41489ddbbabd8d4641249b13b7bf92dc18ac58ad50a0c2b884af4fe21
+- anio: 2015
+  serie: anual
+  archivo: 01_FICHA_TECNICA_ENA.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2015-62/01_FICHA_TECNICA_ENA.zip
+  ruta: ENA/2015/docs/01_FICHA_TECNICA_ENA.zip
+  bytes: 435234
+  sha256: ae74352484225e8cd2b2f1b84a939473d1c6f92f67a03d833d2a30ba8a287bd4
+- anio: 2015
+  serie: anual
+  archivo: 02_CUESTIONARIO_PEQUENOS_MEDIANOS.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2015-62/02_CUESTIONARIO_PEQUENOS_MEDIANOS.zip
+  ruta: ENA/2015/docs/02_CUESTIONARIO_PEQUENOS_MEDIANOS.zip
+  bytes: 899613
+  sha256: 87bcdacf197aa5e6359192dab88003121bc76fcc03f6e7d0ab8b2468078526e7
+- anio: 2015
+  serie: anual
+  archivo: 03_CUESTIONARIO_ESTRATO_ESPECIAL.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2015-62/03_CUESTIONARIO_ESTRATO_ESPECIAL.zip
+  ruta: ENA/2015/docs/03_CUESTIONARIO_ESTRATO_ESPECIAL.zip
+  bytes: 756595
+  sha256: fb74f061d024ea13349948e1b649152e606b03bb0ea422c05248f7f457db06e2
+- anio: 2015
+  serie: anual
+  archivo: 04_MANUAL_DEL_ENCUESTADOR_ENA.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2015-62/04_MANUAL_DEL_ENCUESTADOR_ENA.zip
+  ruta: ENA/2015/docs/04_MANUAL_DEL_ENCUESTADOR_ENA.zip
+  bytes: 20742008
+  sha256: b0757ff37348faf8bd545b79f6d04f341f617360789069f2eb1d30da70bedd5e
+- anio: 2015
+  serie: anual
+  archivo: 05_MANUAL_SUPERVISOR_NACIONAL_ENA.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2015-62/05_MANUAL_SUPERVISOR_NACIONAL_ENA.zip
+  ruta: ENA/2015/docs/05_MANUAL_SUPERVISOR_NACIONAL_ENA.zip
+  bytes: 2494466
+  sha256: e3054e8b1371338ea059a3ef9d7f308e25232597567da5a4f51c67bf2fe219c8
+- anio: 2015
+  serie: anual
+  archivo: 06_MANUAL_COORDINADOR_DEPARTAMENTAL_ENA.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2015-62/06_MANUAL_COORDINADOR_DEPARTAMENTAL_ENA.zip
+  ruta: ENA/2015/docs/06_MANUAL_COORDINADOR_DEPARTAMENTAL_ENA.zip
+  bytes: 3293564
+  sha256: 5e9135bec679d16a196bbc086f1c54a01746d3cc98f1deb1d99165aea2a36486
+- anio: 2015
+  serie: anual
+  archivo: 07_MANUAL_SUPERVISOR_LOCAL_ENA.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2015-62/07_MANUAL_SUPERVISOR_LOCAL_ENA.zip
+  ruta: ENA/2015/docs/07_MANUAL_SUPERVISOR_LOCAL_ENA.zip
+  bytes: 3198296
+  sha256: b5af24a69b798420bd21b7e1b1d87c55019574110acbfcfa52ed2adfe53d9c3f
+- anio: 2015
+  serie: anual
+  archivo: 08_PRESENTACION_PRINCIPALES_RESULTADOS_ENA2015.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2015-62/08_PRESENTACION_PRINCIPALES%20RESULTADOS_ENA2015.zip
+  ruta: ENA/2015/docs/08_PRESENTACION_PRINCIPALES_RESULTADOS_ENA2015.zip
+  bytes: 6777556
+  sha256: aafcfcbb93ee9ca8f90aac099a32b2b551a5f8852ae16a5b5f1dfb3a9587cd42
+- anio: 2015
+  serie: anual
+  archivo: 09_Reduccion_P.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2015-62/09_Reduccion_P.zip
+  ruta: ENA/2015/docs/09_Reduccion_P.zip
+  bytes: 97061
+  sha256: cbfb7e88e77243e7457007b8bcce72175673e9790404c7d876b6a84764bd0873
+- anio: 2015
+  serie: anual
+  archivo: 10_Reduccion_C.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2015-62/10_Reduccion_C.zip
+  ruta: ENA/2015/docs/10_Reduccion_C.zip
+  bytes: 100270
+  sha256: a5f307f18d6e548a365f074478552357b66e16c1d2428de39547d4040fc093c0
+- anio: 2015
+  serie: anual
+  archivo: 11_Aprovechamiento_P.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2015-62/11_Aprovechamiento_P.zip
+  ruta: ENA/2015/docs/11_Aprovechamiento_P.zip
+  bytes: 50015
+  sha256: 5435b70d4510729526024c9270b6f30c3f2b7371cf5afcd68facb40f0d488ed2
+- anio: 2015
+  serie: anual
+  archivo: 12_Mejora_P.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2015-62/12_Mejora_P.zip
+  ruta: ENA/2015/docs/12_Mejora_P.zip
+  bytes: 112139
+  sha256: c4be2450b7306368b55d4a1d34032d89a6b7e6943a38a3785a0c916ad1ab7b6f
+- anio: 2015
+  serie: anual
+  archivo: 13_Mejora_P.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2015-62/13_Mejora_P.zip
+  ruta: ENA/2015/docs/13_Mejora_P.zip
+  bytes: 123536
+  sha256: 3da0d7d436c79eb49b70b00ea4d1e0fd1b1c432f1303a8608a4bc11a79de4f15
+- anio: 2015
+  serie: anual
+  archivo: 14_Mejora_C.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2015-62/14_Mejora_C.zip
+  ruta: ENA/2015/docs/14_Mejora_C.zip
+  bytes: 121537
+  sha256: 5fc80aa34cd5fec04ff15f3ccbaa47e1d65cf2b3a4b46f6140593295a8d34758
+- anio: 2016
+  serie: anual
+  archivo: 01_CUESTIONARIO_PEQUENOS_MEDIANOS_2016.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2016-62/01_CUESTIONARIO_PEQUENOS_MEDIANOS_2016.zip
+  ruta: ENA/2016/docs/01_CUESTIONARIO_PEQUENOS_MEDIANOS_2016.zip
+  bytes: 943551
+  sha256: b3dea9a19edb6575e12964db22305ba1831a09e2499a5e779363c5f8e21ccccc
+- anio: 2016
+  serie: anual
+  archivo: 02_CUESTIONARIO_ESTRATO_ESPECIAL_2016.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2016-62/02_CUESTIONARIO_ESTRATO_ESPECIAL_2016.zip
+  ruta: ENA/2016/docs/02_CUESTIONARIO_ESTRATO_ESPECIAL_2016.zip
+  bytes: 794370
+  sha256: 2615638c0d5e6512e3d4a7e1726823bdc53a51a160411a23709644fa4e3f7906
+- anio: 2016
+  serie: anual
+  archivo: 03_FICHA_TECNICA_ENA_2016.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2016-62/03_FICHA_TECNICA_ENA_2016.zip
+  ruta: ENA/2016/docs/03_FICHA_TECNICA_ENA_2016.zip
+  bytes: 609495
+  sha256: 6d53987be5d03be3d66631391fa1646e5050f177bd2af08fb094b1b709380ba6
+- anio: 2016
+  serie: anual
+  archivo: 04_MANUAL_DEL_ENCUESTADOR_ENA_2016.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2016-62/04_MANUAL_DEL_ENCUESTADOR_ENA_2016.zip
+  ruta: ENA/2016/docs/04_MANUAL_DEL_ENCUESTADOR_ENA_2016.zip
+  bytes: 24355359
+  sha256: 7ff6dd93025ec26ca46537d4c76f2aba55701dfaad6375669699d550e39891f8
+- anio: 2016
+  serie: anual
+  archivo: 05_MANUAL_SUPERVISOR_NACIONAL__ENA_2016.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2016-62/05_MANUAL_SUPERVISOR_NACIONAL_%20ENA_2016.zip
+  ruta: ENA/2016/docs/05_MANUAL_SUPERVISOR_NACIONAL__ENA_2016.zip
+  bytes: 1542662
+  sha256: 55eb49101f8a8348ebadaf6ba5bd317ce41552bd015ee0e38c6e7e9d3a953576
+- anio: 2016
+  serie: anual
+  archivo: 06_MANUAL_COORDINADOR_DEP_ENA_2016.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2016-62/06_MANUAL_COORDINADOR_DEP_ENA_2016.zip
+  ruta: ENA/2016/docs/06_MANUAL_COORDINADOR_DEP_ENA_2016.zip
+  bytes: 1741446
+  sha256: 19c0d2abd3e945a8f938b6c4cabcd157fb9397b387cc64c5494b1287858d9d36
+- anio: 2016
+  serie: anual
+  archivo: 07_MANUAL_SUPERVISOR_LOCAL_ENA_2016.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2016-62/07_MANUAL_SUPERVISOR_LOCAL_ENA%202016.zip
+  ruta: ENA/2016/docs/07_MANUAL_SUPERVISOR_LOCAL_ENA_2016.zip
+  bytes: 3140434
+  sha256: 011e3aa0c93d6e41ef42b923da33d636890d40b2d882277f0e6d10800b21fbe8
+- anio: 2016
+  serie: anual
+  archivo: 08_PRESENT_PRINCIP_RESULT__ENA_2016.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2016-62/08_PRESENT_PRINCIP_RESULT_%20ENA_2016.zip
+  ruta: ENA/2016/docs/08_PRESENT_PRINCIP_RESULT__ENA_2016.zip
+  bytes: 6225909
+  sha256: 0b47be4a6770a25bed59bc6962bb14cc744ecdd26a06a3e66b676fc160b794ad
+- anio: 2016
+  serie: anual
+  archivo: 09_REDUC_DE_LA_DEGRAD_DE_LOS_SUELOS_AGRAR_P_2016.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2016-62/09_REDUC_DE_LA_DEGRAD_DE_LOS_SUELOS_AGRAR_P_2016.zip
+  ruta: ENA/2016/docs/09_REDUC_DE_LA_DEGRAD_DE_LOS_SUELOS_AGRAR_P_2016.zip
+  bytes: 356281
+  sha256: 6eec8219e1306bd432c6bac8f6da7d99bb2ae19876c1af24dd3165466f4ea079
+- anio: 2016
+  serie: anual
+  archivo: 10_REDUC_DE_LA_DEGRAD_DE_LOS_SUELOS_AGRAR_C_2016.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2016-62/10_REDUC_DE_LA_DEGRAD_DE_LOS_SUELOS_AGRAR_C_2016.zip
+  ruta: ENA/2016/docs/10_REDUC_DE_LA_DEGRAD_DE_LOS_SUELOS_AGRAR_C_2016.zip
+  bytes: 334610
+  sha256: 80274900f2d29871568dd9b7e5284500b0164ba0f0e6475cc419b3c37a012a7d
+- anio: 2016
+  serie: anual
+  archivo: 11_APROV_DE_LOS_RECUR_HIDRIC_PARA_USO_AGR_P_2016.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2016-62/11_APROV_DE_LOS_RECUR_HIDRIC_PARA_USO_AGR_P_2016.zip
+  ruta: ENA/2016/docs/11_APROV_DE_LOS_RECUR_HIDRIC_PARA_USO_AGR_P_2016.zip
+  bytes: 422106
+  sha256: 5b7c89c1edafee2ceb55adb242d81bcb1ee1fb3f995d34eb06793a8025c02034
+- anio: 2016
+  serie: anual
+  archivo: 12_MEJORA_DE_LA_INOC_AGROAL_P_2016.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2016-62/12_MEJORA_DE_LA_INOC_AGROAL_P_2016.zip
+  ruta: ENA/2016/docs/12_MEJORA_DE_LA_INOC_AGROAL_P_2016.zip
+  bytes: 591888
+  sha256: 3c087e090004a76889bc624b96549a85e9d8490723eed81c9000ab5679bc58fb
+- anio: 2016
+  serie: anual
+  archivo: 13_MEJORA_DE_LA_ART_DE_PEQUE_P_2016.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2016-62/13_MEJORA_DE_LA_ART_DE_PEQUE_P_2016.zip
+  ruta: ENA/2016/docs/13_MEJORA_DE_LA_ART_DE_PEQUE_P_2016.zip
+  bytes: 495451
+  sha256: 47cb32e5d03b397da2d3486b83f0b6fe624775fb773260f33a04c084ee5d14fd
+- anio: 2016
+  serie: anual
+  archivo: 14_MEJORA_DE_LA_ARTIC_DE_PEQUE_C_2016.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2016-62/14_MEJORA_DE_LA_ARTIC_DE_PEQUE_C_2016.zip
+  ruta: ENA/2016/docs/14_MEJORA_DE_LA_ARTIC_DE_PEQUE_C_2016.zip
+  bytes: 368711
+  sha256: 65549d40c5b01edad2c7686b7f4c6bb8659627b8f3f692d1321c8ca76ebfd9cb
+- anio: 2017
+  serie: anual
+  archivo: 01_CUESTIONARIO_PEQUENOS_MEDIANOS_2017.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2017-62/01_CUESTIONARIO_PEQUENOS_MEDIANOS_2017.zip
+  ruta: ENA/2017/docs/01_CUESTIONARIO_PEQUENOS_MEDIANOS_2017.zip
+  bytes: 3228648
+  sha256: aa4fb180d2761c7fcbe04051d4b0bea4e53919fc3c890be3088752c0f2eb3c57
+- anio: 2017
+  serie: anual
+  archivo: 02_CUESTIONARIO_ESTRATO_ESPECIAL_2017.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2017-62/02_CUESTIONARIO_ESTRATO_ESPECIAL_2017.zip
+  ruta: ENA/2017/docs/02_CUESTIONARIO_ESTRATO_ESPECIAL_2017.zip
+  bytes: 3028123
+  sha256: 0d6e8fe0b2a1d9dd689767abe3097fd2923c691eda3c825936eacbafd8931e4c
+- anio: 2017
+  serie: anual
+  archivo: 03_FICHA_TECNICA_ENA_2017.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2017-62/03_FICHA_TECNICA_ENA_2017.zip
+  ruta: ENA/2017/docs/03_FICHA_TECNICA_ENA_2017.zip
+  bytes: 418659
+  sha256: b987670f53380dd337a2cc9d878f2288a91a794eb184d404cdfe63b9aa13441e
+- anio: 2017
+  serie: anual
+  archivo: 04_MANUAL_DEL_ENCUESTADOR_ENA_2017.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2017-62/04_MANUAL_DEL_ENCUESTADOR_ENA_2017.zip
+  ruta: ENA/2017/docs/04_MANUAL_DEL_ENCUESTADOR_ENA_2017.zip
+  bytes: 24878978
+  sha256: d6a31e5cd43d129445edaf650bbc80abe7e3897b1faecf659bd8e8f31f65ef04
+- anio: 2017
+  serie: anual
+  archivo: 05_MANUAL_SUPERVISOR_NACIONAL__ENA_2017.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2017-62/05_MANUAL_SUPERVISOR_NACIONAL_%20ENA_2017.zip
+  ruta: ENA/2017/docs/05_MANUAL_SUPERVISOR_NACIONAL__ENA_2017.zip
+  bytes: 1671998
+  sha256: 5a342628bba828f42f3da6b678ec3a49b1606db0ac0f26bee324783663187a3b
+- anio: 2017
+  serie: anual
+  archivo: 06_MANUAL_COORDINADOR_DEPARTAMENTAL_ENA_2017.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2017-62/06_MANUAL_COORDINADOR_DEPARTAMENTAL_ENA_2017.zip
+  ruta: ENA/2017/docs/06_MANUAL_COORDINADOR_DEPARTAMENTAL_ENA_2017.zip
+  bytes: 1858940
+  sha256: 7f9275c29bcb5953b4d6abfbbc6f4a00b8592c56863df9f8474b01e625e1ccaa
+- anio: 2017
+  serie: anual
+  archivo: 07_MANUAL_SUPERVISOR_LOCAL_ENA_2017.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2017-62/07_MANUAL_SUPERVISOR_LOCAL_ENA%202017.zip
+  ruta: ENA/2017/docs/07_MANUAL_SUPERVISOR_LOCAL_ENA_2017.zip
+  bytes: 2255733
+  sha256: 629114dfab0f4554f416bc0cf7c4608d58ffd2775d9af073878a120b7d39aac2
+- anio: 2018
+  serie: anual
+  archivo: 01_CUESTIONARIO_PEQUENOS_MEDIANOS_2018.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2018-62/01_CUESTIONARIO_PEQUENOS_MEDIANOS_2018.zip
+  ruta: ENA/2018/docs/01_CUESTIONARIO_PEQUENOS_MEDIANOS_2018.zip
+  bytes: 1405388
+  sha256: 07ea0b8c4ce9ff20b3211f7fba2b17240f5338554613b084dc839c7e3245db1f
+- anio: 2018
+  serie: anual
+  archivo: 02_CUESTIONARIO_ESTRATO_ESPECIAL_2018.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2018-62/02_CUESTIONARIO_ESTRATO_ESPECIAL_2018.zip
+  ruta: ENA/2018/docs/02_CUESTIONARIO_ESTRATO_ESPECIAL_2018.zip
+  bytes: 1482456
+  sha256: a5450de311443ef0dd81790aeeb6e185d26c41bf8d0e949417196c3dd7ae1089
+- anio: 2018
+  serie: anual
+  archivo: 03_FICHA_TECNICA_ENA_2018.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2018-62/03_FICHA_TECNICA_ENA_2018.zip
+  ruta: ENA/2018/docs/03_FICHA_TECNICA_ENA_2018.zip
+  bytes: 388099
+  sha256: 76682a7131bfc8880622a102e42c1b80d5fe998493be61222f6874a2cea4dad7
+- anio: 2018
+  serie: anual
+  archivo: 04_MANUAL_DEL_ENCUESTADOR_ENA_2018.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2018-62/04_MANUAL_DEL_ENCUESTADOR_ENA_2018.zip
+  ruta: ENA/2018/docs/04_MANUAL_DEL_ENCUESTADOR_ENA_2018.zip
+  bytes: 24989843
+  sha256: ee3a01fa87992de5827c0c4cacbdb5e4b4d636e7c2ae4ce4aa3ebdb15e520b95
+- anio: 2018
+  serie: anual
+  archivo: 05_MANUAL_SUPERVISOR_NACIONAL__ENA_2018.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2018-62/05_MANUAL_SUPERVISOR_NACIONAL_%20ENA_2018.zip
+  ruta: ENA/2018/docs/05_MANUAL_SUPERVISOR_NACIONAL__ENA_2018.zip
+  bytes: 1598121
+  sha256: 720656a5409629a440d2cd57327a0c8dd358e2580b7fd66c32461f7ba51871e6
+- anio: 2018
+  serie: anual
+  archivo: 06_MANUAL_COORDINADOR_DEPARTAMENTAL_ENA_2018.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2018-62/06_MANUAL_COORDINADOR_DEPARTAMENTAL_ENA_2018.zip
+  ruta: ENA/2018/docs/06_MANUAL_COORDINADOR_DEPARTAMENTAL_ENA_2018.zip
+  bytes: 1854915
+  sha256: d9f87462ae84821792d39c6075233fc16d28c4e9cf9c31c63373d8738218e6ee
+- anio: 2018
+  serie: anual
+  archivo: 07_MANUAL_SUPERVISOR_LOCAL_ENA_2018.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2018-62/07_MANUAL_SUPERVISOR_LOCAL_ENA%202018.zip
+  ruta: ENA/2018/docs/07_MANUAL_SUPERVISOR_LOCAL_ENA_2018.zip
+  bytes: 2250394
+  sha256: f196c1f8b0e812fdba3debdeaaf0c9c3cc67f1d8cabd9cbfc711b387d633dd3a
+- anio: 2018
+  serie: anual
+  archivo: 08_PRESENTACION_PRINCIPALES_RESULTADOS_ENA_2018.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2018-62/08_PRESENTACION_PRINCIPALES_RESULTADOS_ENA_2018.zip
+  ruta: ENA/2018/docs/08_PRESENTACION_PRINCIPALES_RESULTADOS_ENA_2018.zip
+  bytes: 4833559
+  sha256: 9ca32fc81a35e47b2facc5f32b2883a453ef31005477ac0ac36f18a43a815f70
+- anio: 2018
+  serie: anual
+  archivo: 09_INFORME_MEF_2018.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2018-62/09_INFORME_MEF_2018.zip
+  ruta: ENA/2018/docs/09_INFORME_MEF_2018.zip
+  bytes: 7324278
+  sha256: 61c5f7413297a695395a6830cd4981f0ccbe7dd9f3c8cc6f0ca827e50deb139c
+- anio: 2018
+  serie: anual
+  archivo: 10_REDUCCION_DE_LA_DEGRADACION_DE_LOS_SUELOS_AGRARIOS_P_2018.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2018-62/10_REDUCCION_DE_LA_DEGRADACION_DE_LOS_SUELOS_AGRARIOS_P_2018.zip
+  ruta: ENA/2018/docs/10_REDUCCION_DE_LA_DEGRADACION_DE_LOS_SUELOS_AGRARIOS_P_2018.zip
+  bytes: 320794
+  sha256: d80b2c5e57e408140c402d6a5ce96ccd672c59a9eb327744c7a3347b4daec9e4
+- anio: 2018
+  serie: anual
+  archivo: 11_REDUCCION_DE_LA_DEGRADACION_DE_LOS_SUELOS_AGRARIOS_C_2018.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2018-62/11_REDUCCION_DE_LA%20DEGRADACION_DE_LOS_SUELOS_AGRARIOS_C_2018.zip
+  ruta: ENA/2018/docs/11_REDUCCION_DE_LA_DEGRADACION_DE_LOS_SUELOS_AGRARIOS_C_2018.zip
+  bytes: 214158
+  sha256: 17c1673afbb9808c0006107d2a3b06784bdac1cf1b80d6a07a8effd11f53997c
+- anio: 2018
+  serie: anual
+  archivo: 12_APROVECHAMIENTO_DE_LOS_RECURSOS_HIDRICOS_PARA_USO_AGRARIO_P_2018.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2018-62/12_APROVECHAMIENTO_DE_LOS_RECURSOS_HIDRICOS_PARA_USO_AGRARIO_P_2018.zip
+  ruta: ENA/2018/docs/12_APROVECHAMIENTO_DE_LOS_RECURSOS_HIDRICOS_PARA_USO_AGRARIO_P_2018.zip
+  bytes: 393721
+  sha256: abba4607f7a25c4d176ff60cf14881425d084438164a8d7cc8b438568d0c4173
+- anio: 2018
+  serie: anual
+  archivo: 13_MEJORA_DE_LA_INOCUIDAD_AGROALIMENTARIA_P_2018.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2018-62/13_MEJORA_DE_LA_INOCUIDAD_AGROALIMENTARIA_P_2018.zip
+  ruta: ENA/2018/docs/13_MEJORA_DE_LA_INOCUIDAD_AGROALIMENTARIA_P_2018.zip
+  bytes: 582003
+  sha256: 08365c347215cafa135bfe13bafdd53f374af2fe1503f8a6d1165a1d136f5111
+- anio: 2018
+  serie: anual
+  archivo: 14_MEJORA_DE_LA_ARTICULACION_DE_PEQUENOS_P_2018.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2018-62/14_MEJORA_DE_LA_ARTICULACION_DE_PEQUENOS_P_2018.zip
+  ruta: ENA/2018/docs/14_MEJORA_DE_LA_ARTICULACION_DE_PEQUENOS_P_2018.zip
+  bytes: 322990
+  sha256: b0d9b01a60e9dd23ce062004385e292ea4f31ca5205d537a6dee7d35de6896e9
+- anio: 2018
+  serie: anual
+  archivo: 15_MEJORA_DE_LA_ARTICULACION_DE_PEQUENOS_C_2018.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2018-62/15_MEJORA_DE_LA_ARTICULACION_DE_PEQUENOS_C_2018.zip
+  ruta: ENA/2018/docs/15_MEJORA_DE_LA_ARTICULACION_DE_PEQUENOS_C_2018.zip
+  bytes: 239845
+  sha256: fa835688a5a75970213273f2feb71bc5f271c35c33050655df7af1fb7c463eb3
+- anio: 2019
+  serie: anual
+  archivo: 01_CUESTIONARIO_PEQUENOS_MEDIANOS_2019.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2019-62/01_CUESTIONARIO_PEQUENOS_MEDIANOS_2019.zip
+  ruta: ENA/2019/docs/01_CUESTIONARIO_PEQUENOS_MEDIANOS_2019.zip
+  bytes: 3267353
+  sha256: 7c3f62ba13f33e01442eaeb5125ccf03c176f08f85eed901be24534ec76cbaaf
+- anio: 2019
+  serie: anual
+  archivo: 02_CUESTIONARIO_ESTRATO_ESPECIAL_2019.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2019-62/02_CUESTIONARIO_ESTRATO_ESPECIAL_2019.zip
+  ruta: ENA/2019/docs/02_CUESTIONARIO_ESTRATO_ESPECIAL_2019.zip
+  bytes: 2973947
+  sha256: 5a252a736fd35d3cc6bb1fa0d09b09aea8c7769577429b6c8e1bd039cf060990
+- anio: 2019
+  serie: anual
+  archivo: 03_FICHA_TECNICA_ENA_2019.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2019-62/03_FICHA_TECNICA_ENA_2019.zip
+  ruta: ENA/2019/docs/03_FICHA_TECNICA_ENA_2019.zip
+  bytes: 481201
+  sha256: bdb502cd84665b6cf9e71e5832872d8e43aed403bd8dd346f568c1bb996981d8
+- anio: 2019
+  serie: anual
+  archivo: 04_MANUAL_DEL_ENCUESTADOR_ENA_2019.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2019-62/04_MANUAL_DEL_ENCUESTADOR_ENA_2019.zip
+  ruta: ENA/2019/docs/04_MANUAL_DEL_ENCUESTADOR_ENA_2019.zip
+  bytes: 21481156
+  sha256: 0b7bec47b9a8baadf79d6b3aa8ccf14275f6056a3a19276b6148aa39f74d498b
+- anio: 2019
+  serie: anual
+  archivo: 05_MANUAL_SUPERVISOR_NACIONAL__ENA_2019.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2019-62/05_MANUAL_SUPERVISOR_NACIONAL_%20ENA_2019.zip
+  ruta: ENA/2019/docs/05_MANUAL_SUPERVISOR_NACIONAL__ENA_2019.zip
+  bytes: 1649583
+  sha256: dc77d46620ab31ea4a34cde6f291a74fa018cb7e4a5d1c5302f02da8c40de04b
+- anio: 2019
+  serie: anual
+  archivo: 06_MANUAL_COORDINADOR_DEPARTAMENTAL_ENA_2019.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2019-62/06_MANUAL_COORDINADOR_DEPARTAMENTAL_ENA_2019.zip
+  ruta: ENA/2019/docs/06_MANUAL_COORDINADOR_DEPARTAMENTAL_ENA_2019.zip
+  bytes: 1883079
+  sha256: 0d6c19a0e558ce388f2edf82e323d2dff9e72a0e7874dd3e1131b6e7e4a16953
+- anio: 2019
+  serie: anual
+  archivo: 07_MANUAL_SUPERVISOR_LOCAL_ENA_2019.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2019-62/07_MANUAL_SUPERVISOR_LOCAL_ENA%202019.zip
+  ruta: ENA/2019/docs/07_MANUAL_SUPERVISOR_LOCAL_ENA_2019.zip
+  bytes: 2201090
+  sha256: 9a0ec484dfb9d99e42cfc45385abf2f789aacb1275458952024a2ec3f312de0e
+- anio: 2019
+  serie: anual
+  archivo: 08_PRESENTACION_PRINCIPALES_RESULTADOS_ENA_2019.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2019-62/08_PRESENTACION_PRINCIPALES_RESULTADOS_ENA_2019.zip
+  ruta: ENA/2019/docs/08_PRESENTACION_PRINCIPALES_RESULTADOS_ENA_2019.zip
+  bytes: 5200207
+  sha256: be989157ab098f8277f47af35bc9cfdf1ff7f3882da6e9ade939ed71632104c8
+- anio: 2019
+  serie: anual
+  archivo: 09_INFORME_MEF_2019.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2019-62/09_INFORME_MEF_2019.zip
+  ruta: ENA/2019/docs/09_INFORME_MEF_2019.zip
+  bytes: 7000726
+  sha256: e029cd7e275208424d3212aba1e8d0e5cbab27aea8464fea01f1ed5eb32c3914
+- anio: 2019
+  serie: anual
+  archivo: 10_REDUCCION_DE_LA_DEGRADACION_DE_LOS_SUELOS_AGRARIOS_P_2019.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2019-62/10_REDUCCION_DE_LA_DEGRADACION_DE_LOS_SUELOS_AGRARIOS_P_2019.zip
+  ruta: ENA/2019/docs/10_REDUCCION_DE_LA_DEGRADACION_DE_LOS_SUELOS_AGRARIOS_P_2019.zip
+  bytes: 320794
+  sha256: e9bf7d6ef17288a1a8c8f32a4c449d592aa97ab71a4d9ec3f7f40498236502a5
+- anio: 2019
+  serie: anual
+  archivo: 11_REDUCCION_DE_LA_DEGRADACION_DE_LOS_SUELOS_AGRARIOS_C_2019.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2019-62/11_REDUCCION_DE_LA%20DEGRADACION_DE_LOS_SUELOS_AGRARIOS_C_2019.zip
+  ruta: ENA/2019/docs/11_REDUCCION_DE_LA_DEGRADACION_DE_LOS_SUELOS_AGRARIOS_C_2019.zip
+  bytes: 214158
+  sha256: 15c55a97f53da355c04224eb240721265623ccd2aff20cef9874469a30a9417c
+- anio: 2019
+  serie: anual
+  archivo: 12_APROVECHAMIENTO_DE_LOS_RECURSOS_HIDRICOS_PARA_USO_AGRARIO_P_2019.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2019-62/12_APROVECHAMIENTO_DE_LOS_RECURSOS_HIDRICOS_PARA_USO_AGRARIO_P_2019.zip
+  ruta: ENA/2019/docs/12_APROVECHAMIENTO_DE_LOS_RECURSOS_HIDRICOS_PARA_USO_AGRARIO_P_2019.zip
+  bytes: 393721
+  sha256: 044f86cdcecb029583be22c74b92a0eda85ab3f0d6ccd5f73684c7439e625c0e
+- anio: 2019
+  serie: anual
+  archivo: 13_MEJORA_DE_LA_INOCUIDAD_AGROALIMENTARIA_P_2019.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2019-62/13_MEJORA_DE_LA_INOCUIDAD_AGROALIMENTARIA_P_2019.zip
+  ruta: ENA/2019/docs/13_MEJORA_DE_LA_INOCUIDAD_AGROALIMENTARIA_P_2019.zip
+  bytes: 261249
+  sha256: 1fe0255a9ab1e6343c25ce0bac3a4d7d5518bb3a7d790f027eb0e6e219c68619
+- anio: 2019
+  serie: anual
+  archivo: 14_MEJORA_DE_LA_ARTICULACION_DE_PEQUENOS_P_2019.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2019-62/14_MEJORA_DE_LA_ARTICULACION_DE_PEQUENOS_P_2019.zip
+  ruta: ENA/2019/docs/14_MEJORA_DE_LA_ARTICULACION_DE_PEQUENOS_P_2019.zip
+  bytes: 322990
+  sha256: 46a62fb6ddfab3441dbc9489c3714707fc33ec8317aae692e7578a06002757e9
+- anio: 2019
+  serie: anual
+  archivo: 15_MEJORA_DE_LA_ARTICULACION_DE_PEQUENOS_C_2019.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2019-62/15_MEJORA_DE_LA_ARTICULACION_DE_PEQUENOS_C_2019.zip
+  ruta: ENA/2019/docs/15_MEJORA_DE_LA_ARTICULACION_DE_PEQUENOS_C_2019.zip
+  bytes: 236893
+  sha256: e043afbd2160aa03ccbc1dca458ad96eed4375d114045141f77bf29d0a67b452
+- anio: 2021
+  serie: anual
+  archivo: 01_CUESTIONARIO_PEQUENOS_MEDIANOS_2021.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2021-62/01_CUESTIONARIO_PEQUENOS_MEDIANOS_2021.zip
+  ruta: ENA/2021/docs/01_CUESTIONARIO_PEQUENOS_MEDIANOS_2021.zip
+  bytes: 4844133
+  sha256: a4ffd67af290fccc3721dd0d98b60c1a655481265f98f31a3cdd07375d6ac1b8
+- anio: 2021
+  serie: anual
+  archivo: 02_FICHA_TECNICA_ENA_2021.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2021-62/02_FICHA_TECNICA_ENA_2021.zip
+  ruta: ENA/2021/docs/02_FICHA_TECNICA_ENA_2021.zip
+  bytes: 240287
+  sha256: 5f9de6828f2cf832bbd59e1b01680b8c66b86a79d8c4a0769ceedbd40040212d
+- anio: 2021
+  serie: anual
+  archivo: 03_MANUAL_DEL_ENCUESTADOR_ENA_2021.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2021-62/03_MANUAL_DEL_ENCUESTADOR_ENA_2021.zip
+  ruta: ENA/2021/docs/03_MANUAL_DEL_ENCUESTADOR_ENA_2021.zip
+  bytes: 4607028
+  sha256: 373b80b17e5b802f7aa61ce598d654501b2fd167c2bdb8ab1abe09cb200856ac
+- anio: 2022
+  serie: anual
+  archivo: 01_CUESTIONARIO_PEQUENOS_MEDIANOS_2022.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2022-62/01_CUESTIONARIO_PEQUENOS_MEDIANOS_2022.zip
+  ruta: ENA/2022/docs/01_CUESTIONARIO_PEQUENOS_MEDIANOS_2022.zip
+  bytes: 5617175
+  sha256: d47d44b49777934f53bf346ed6e628839a4d9da1e68b7d46fa51d9f80e9d2849
+- anio: 2022
+  serie: anual
+  archivo: 02_FICHA_TECNICA_ENA_2022.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2022-62/02_FICHA_TECNICA_ENA_2022.zip
+  ruta: ENA/2022/docs/02_FICHA_TECNICA_ENA_2022.zip
+  bytes: 486374
+  sha256: 038b4e69468661ecc7ea84853013960b543b46f95273cdb9085d854196620783
+- anio: 2022
+  serie: anual
+  archivo: 03_MANUAL_DEL_ENCUESTADOR_ENA_2022.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2022-62/03_MANUAL_DEL_ENCUESTADOR_ENA_2022.zip
+  ruta: ENA/2022/docs/03_MANUAL_DEL_ENCUESTADOR_ENA_2022.zip
+  bytes: 5572326
+  sha256: be539bbca7ad82bbd3da6d44220aaeefd9650b97bfdc94123b5e239d0ef3958f
+- anio: 2022
+  serie: anual
+  archivo: 04_INFORME_MEF_2022.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2022-62/04_INFORME_MEF_2022.zip
+  ruta: ENA/2022/docs/04_INFORME_MEF_2022.zip
+  bytes: 10064218
+  sha256: abd82d8afaf6b0b26d4ba618895501e5f4213229947bae5b12f8f0d306305e96
+- anio: 2022
+  serie: anual
+  archivo: 05_PUBLICACION_ENA_2022.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2022-62/05_PUBLICACION_ENA_2022.zip
+  ruta: ENA/2022/docs/05_PUBLICACION_ENA_2022.zip
+  bytes: 2187067
+  sha256: 092b26a02e9d35ab5895dac96d479da70e2e7514847a87a8ca1bf8b3abf78285
+- anio: 2022
+  serie: anual
+  archivo: 06_RESULTADOS_DE_LOS_INDICADORES_DEL_SECTOR_AGRARIO.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2022-62/06_RESULTADOS_DE_LOS_INDICADORES_DEL_SECTOR_AGRARIO.zip
+  ruta: ENA/2022/docs/06_RESULTADOS_DE_LOS_INDICADORES_DEL_SECTOR_AGRARIO.zip
+  bytes: 4768149
+  sha256: e5a1a9d8c02715495a53bab4ff0d6e9724c0a93af19346a35d74cdb19503a6f5
+- anio: 2023
+  serie: anual
+  archivo: 01_CUESTIONARIO_ENA_2023.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2023-62/01_CUESTIONARIO_ENA_2023.zip
+  ruta: ENA/2023/docs/01_CUESTIONARIO_ENA_2023.zip
+  bytes: 5424266
+  sha256: a3bb74576085ee6811a00c3464516225b2205b7f40f421fa737d7cc8405d56a6
+- anio: 2023
+  serie: anual
+  archivo: 02_FICHA_TECNICA_ENA_2023.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2023-62/02_FICHA_TECNICA_ENA_2023.zip
+  ruta: ENA/2023/docs/02_FICHA_TECNICA_ENA_2023.zip
+  bytes: 5336267
+  sha256: 49f516dcc38524fce84737371dc4bc24a20029dc98e83c0b756b76177514fe25
+- anio: 2023
+  serie: anual
+  archivo: 03_MANUAL_DEL_ENTREVISTADOR_ENA_2023.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2023-62/03_MANUAL_DEL_ENTREVISTADOR_ENA_2023.zip
+  ruta: ENA/2023/docs/03_MANUAL_DEL_ENTREVISTADOR_ENA_2023.zip
+  bytes: 17300799
+  sha256: 4e56993b679a87236390d51a601ee1e776ee5098db29439a1e9ccb43745b1864
+- anio: 2023
+  serie: anual
+  archivo: 04_INFORME_MEF_2023.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2023-62/04_INFORME_MEF_2023.zip
+  ruta: ENA/2023/docs/04_INFORME_MEF_2023.zip
+  bytes: 5758423
+  sha256: 76a7eeb98334a23eb5e24aa798110c352084dbb678bfcfd862c8ea449b33b5e7
+- anio: 2023
+  serie: anual
+  archivo: 05_PUBLICACION_ENA_2023.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2023-62/05_PUBLICACION_ENA_2023.zip
+  ruta: ENA/2023/docs/05_PUBLICACION_ENA_2023.zip
+  bytes: 8272857
+  sha256: ea53927aae7bd9aa0a202a46727d3a2b1d04006df5fe2817ee60e4717d9835c3
+- anio: 2023
+  serie: anual
+  archivo: 06_RESULTADOS_DE_LOS_INDICADORES_DEL_SECTOR_AGRARIO_2023.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2023-62/06_RESULTADOS_DE_LOS_INDICADORES_DEL_SECTOR_AGRARIO_2023.zip
+  ruta: ENA/2023/docs/06_RESULTADOS_DE_LOS_INDICADORES_DEL_SECTOR_AGRARIO_2023.zip
+  bytes: 2919666
+  sha256: 5f6affa0a50a724a7d6eb130c9845c30cdcabc026bafe632056a920da1867fa5
+- anio: 2024
+  serie: anual
+  archivo: 01_CUESTIONARIO_ENA_2024.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2024-62/01_CUESTIONARIO_ENA_2024.zip
+  ruta: ENA/2024/docs/01_CUESTIONARIO_ENA_2024.zip
+  bytes: 2800045
+  sha256: 38fcf615cb2fa73c91aa3b4a9900d6e9368dc434319b51a9e6e4362cbba969e9
+- anio: 2024
+  serie: anual
+  archivo: 02_CUESTIONARIO_EMPRESA_2024.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2024-62/02_CUESTIONARIO_EMPRESA_2024.zip
+  ruta: ENA/2024/docs/02_CUESTIONARIO_EMPRESA_2024.zip
+  bytes: 2136045
+  sha256: 4ee288ea488e87e2c243082a1897cd99ecb7290b64364fdf744bf94f0c7ffb32
+- anio: 2024
+  serie: anual
+  archivo: 03_FICHA_TECNICA_ENA_2024.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2024-62/03_FICHA_TECNICA_ENA_2024.zip
+  ruta: ENA/2024/docs/03_FICHA_TECNICA_ENA_2024.zip
+  bytes: 297936
+  sha256: fe2b4d26a000301b5e04b84897f6e9a487362884fc592fe3b69a1f052c7e7717
+- anio: 2024
+  serie: anual
+  archivo: 04_MANUAL_DEL_ENTREVISTADOR_ENA_2024.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2024-62/04_MANUAL_DEL_ENTREVISTADOR_ENA_2024.zip
+  ruta: ENA/2024/docs/04_MANUAL_DEL_ENTREVISTADOR_ENA_2024.zip
+  bytes: 8768995
+  sha256: 3723f711d3ea4ac21469622642ebd09b74fdeb1b7434229bc01fd6ccd02e9f7a
+- anio: 2024
+  serie: anual
+  archivo: 05_PUBLICACION_ENA_2024.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2024-62/05_PUBLICACION_ENA_2024.zip
+  ruta: ENA/2024/docs/05_PUBLICACION_ENA_2024.zip
+  bytes: 4113178
+  sha256: 10b6e44cb4c9dfff168ade615c1a64c29c9ccd415f8c0e6d17b5b65385f428c8
+- anio: 2024
+  serie: anual
+  archivo: 06_INFORME_MEF_ENA_2024.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2024-62/06_INFORME%20MEF_ENA_2024.zip
+  ruta: ENA/2024/docs/06_INFORME_MEF_ENA_2024.zip
+  bytes: 14365808
+  sha256: 639a49958b6ed009f7f6a87529d5eda4d50a520332084a6f8c069ee31bef306b
+- anio: 2024
+  serie: anual
+  archivo: 07_RESULTADOS_INDICADORES_SECTOR_AGRARIO_ENA-2024.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2024-62/07_RESULTADOS_INDICADORES_SECTOR_AGRARIO_ENA-2024.zip
+  ruta: ENA/2024/docs/07_RESULTADOS_INDICADORES_SECTOR_AGRARIO_ENA-2024.zip
+  bytes: 3184851
+  sha256: 6c80cfc88f5df959928453f1183c54a16f2c6936e9692b6891ee9965abf42278
+- anio: 2025
+  serie: anual
+  archivo: 01_CUESTIONARIO_ENA_2025.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2025-62/01_CUESTIONARIO_ENA_2025.zip
+  ruta: ENA/2025/docs/01_CUESTIONARIO_ENA_2025.zip
+  bytes: 4758103
+  sha256: 99b55bb1ab1c00817cc64d183de689105ab03c204b112d637e5403638ea95931
+- anio: 2025
+  serie: anual
+  archivo: 02_CUESTIONARIO_EMPRESA_2025.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2025-62/02_CUESTIONARIO_EMPRESA_2025.zip
+  ruta: ENA/2025/docs/02_CUESTIONARIO_EMPRESA_2025.zip
+  bytes: 1784392
+  sha256: f8faf606daeee80c079cbb336ab90b34d73617c962ab243acd3bce8deb5bcc8a
+- anio: 2025
+  serie: anual
+  archivo: 03_FICHA_TECNICA_ENA_2025.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2025-62/03_FICHA_TECNICA_ENA_2025.zip
+  ruta: ENA/2025/docs/03_FICHA_TECNICA_ENA_2025.zip
+  bytes: 476896
+  sha256: d9fb5f07cc647ba8119bdbdd61c85742c2bae237520ddb435f7521191611bab4
+- anio: 2025
+  serie: anual
+  archivo: 04_MANUAL_DEL_ENTREVISTADOR_ENA_2025.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2025-62/04_MANUAL_DEL_ENTREVISTADOR_ENA_2025.zip
+  ruta: ENA/2025/docs/04_MANUAL_DEL_ENTREVISTADOR_ENA_2025.zip
+  bytes: 8072512
+  sha256: 6bdb2643fbf899ef997fddb03b24f9c3a791d580328ac5df3737412223463762
+- anio: 2025
+  serie: anual
+  archivo: 05_PUBLICACION_ENA_2025.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2025-62/05_PUBLICACION_ENA_2025.zip
+  ruta: ENA/2025/docs/05_PUBLICACION_ENA_2025.zip
+  bytes: 6842674
+  sha256: ebdcaad707d32bb21e5c48916dbd8917335af5ff1e87caeec53dc0239115b70d
+- anio: 2025
+  serie: anual
+  archivo: 06_INFORME_MEF_ENA_2025.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2025-62/06_INFORME_MEF_ENA_2025.zip
+  ruta: ENA/2025/docs/06_INFORME_MEF_ENA_2025.zip
+  bytes: 8811386
+  sha256: c306699c1596190c5a48e843d26bd53adf9f66825ea8cb6dc8fe38da75d9ef70
+- anio: 2025
+  serie: anual
+  archivo: 07_RESULTADOS_DE_LOS_INDICADORES_DEL_SECTOR_AGRARIO_ENA_2025.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2025-62/07_RESULTADOS_DE_LOS_INDICADORES_DEL_SECTOR_AGRARIO_ENA_2025.zip
+  ruta: ENA/2025/docs/07_RESULTADOS_DE_LOS_INDICADORES_DEL_SECTOR_AGRARIO_ENA_2025.zip
+  bytes: 3222540
+  sha256: 849dbf9d8a0dc26398daf07720cf810d4d023763b77f6f6c336f4fb40ffd8646

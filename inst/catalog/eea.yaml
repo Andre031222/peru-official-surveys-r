@@ -1,0 +1,5458 @@
+id: eea
+siglas: EEA
+nombre: Encuesta Económica Anual
+organismo: INEI
+tipo: encuesta
+fuente: inei_portal
+portal:
+  encuesta: [ENCUESTA ECONÓMICA ANUAL - EEA]
+url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/{formato}/{archivo}
+formatos: [CSV, SPSS]
+anios: [2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
+unidad: empresa
+ubigeo: por verificar
+diseno:
+  peso: []
+  escala: 1
+  estrato: []
+  conglomerado: []
+  verificado: false
+  nota: Pesos y estratos por verificar; no hay conglomerados (muestra de empresas). Datos de empresas con anonimización propia del INEI; cada año se divide en varios módulos por sector.
+estado: Catálogo de mayo de 2026; el año 2025 se detectó en vivo y falta rastrear sus módulos. Sin descargar todavía.
+modulos:
+- anio: 2001
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '590'
+  codigo: '1201'
+  nombre: Capítulo 01 para todos los sectores
+  archivos:
+    CSV: 590-Modulo1201
+    SPSS: 590-Modulo1201
+- anio: 2001
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '590'
+  codigo: '1202'
+  nombre: Agencias de Viajes 2001 B
+  archivos:
+    CSV: 590-Modulo1202
+    SPSS: 590-Modulo1202
+- anio: 2001
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '590'
+  codigo: '1203'
+  nombre: Agencias de Viajes 2001 B1
+  archivos:
+    CSV: 590-Modulo1203
+    SPSS: 590-Modulo1203
+- anio: 2001
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '590'
+  codigo: '1204'
+  nombre: Agroindustria 2001 F
+  archivos:
+    CSV: 590-Modulo1204
+    SPSS: 590-Modulo1204
+- anio: 2001
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '590'
+  codigo: '1205'
+  nombre: Agroindustria 2001 F1
+  archivos:
+    CSV: 590-Modulo1205
+    SPSS: 590-Modulo1205
+- anio: 2001
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '590'
+  codigo: '1206'
+  nombre: Agroindustria 2001 F2
+  archivos:
+    CSV: 590-Modulo1206
+    SPSS: 590-Modulo1206
+- anio: 2001
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '590'
+  codigo: '1207'
+  nombre: Educación 2001 U
+  archivos:
+    CSV: 590-Modulo1207
+    SPSS: 590-Modulo1207
+- anio: 2001
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '590'
+  codigo: '1208'
+  nombre: Comercio Y Servicios 2001 F1
+  archivos:
+    CSV: 590-Modulo1208
+    SPSS: 590-Modulo1208
+- anio: 2001
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '590'
+  codigo: '1209'
+  nombre: Comercio Y Servicios 2001 F2
+  archivos:
+    CSV: 590-Modulo1209
+    SPSS: 590-Modulo1209
+- anio: 2001
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '590'
+  codigo: '1210'
+  nombre: Construcción 2001 F1
+  archivos:
+    CSV: 590-Modulo1210
+    SPSS: 590-Modulo1210
+- anio: 2001
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '590'
+  codigo: '1211'
+  nombre: Construcción 2001 F2
+  archivos:
+    CSV: 590-Modulo1211
+    SPSS: 590-Modulo1211
+- anio: 2001
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '590'
+  codigo: '1212'
+  nombre: Hospedaje 2001 A
+  archivos:
+    CSV: 590-Modulo1212
+    SPSS: 590-Modulo1212
+- anio: 2001
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '590'
+  codigo: '1213'
+  nombre: Hospedaje 2001 A1
+  archivos:
+    CSV: 590-Modulo1213
+    SPSS: 590-Modulo1213
+- anio: 2001
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '590'
+  codigo: '1214'
+  nombre: Hidrocarburos 2001 F1
+  archivos:
+    CSV: 590-Modulo1214
+    SPSS: 590-Modulo1214
+- anio: 2001
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '590'
+  codigo: '1215'
+  nombre: Hidrocarburos 2001 F2
+  archivos:
+    CSV: 590-Modulo1215
+    SPSS: 590-Modulo1215
+- anio: 2001
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '590'
+  codigo: '1216'
+  nombre: Hidrocarburos 2001 F3
+  archivos:
+    CSV: 590-Modulo1216
+    SPSS: 590-Modulo1216
+- anio: 2001
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '590'
+  codigo: '1217'
+  nombre: Pesca 2001 A
+  archivos:
+    CSV: 590-Modulo1217
+    SPSS: 590-Modulo1217
+- anio: 2001
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '590'
+  codigo: '1218'
+  nombre: Acuicultura 2001 U
+  archivos:
+    CSV: 590-Modulo1218
+    SPSS: 590-Modulo1218
+- anio: 2001
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '590'
+  codigo: '1219'
+  nombre: Manufactura 2001 D
+  archivos:
+    CSV: 590-Modulo1219
+    SPSS: 590-Modulo1219
+- anio: 2001
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '590'
+  codigo: '1220'
+  nombre: Manufactura 2001 D1
+  archivos:
+    CSV: 590-Modulo1220
+    SPSS: 590-Modulo1220
+- anio: 2001
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '590'
+  codigo: '1221'
+  nombre: Manufactura 2001 D2
+  archivos:
+    CSV: 590-Modulo1221
+    SPSS: 590-Modulo1221
+- anio: 2001
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '590'
+  codigo: '1222'
+  nombre: Servicios Electricos 2001 U
+  archivos:
+    CSV: 590-Modulo1222
+    SPSS: 590-Modulo1222
+- anio: 2001
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '590'
+  codigo: '1223'
+  nombre: Transportes y Comunicaciones 2001 F1
+  archivos:
+    CSV: 590-Modulo1223
+    SPSS: 590-Modulo1223
+- anio: 2001
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '590'
+  codigo: '1224'
+  nombre: Transportes y Comunicaciones 2001 F2
+  archivos:
+    CSV: 590-Modulo1224
+    SPSS: 590-Modulo1224
+- anio: 2001
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '590'
+  codigo: '1225'
+  nombre: Universidades 2001 U
+  archivos:
+    CSV: 590-Modulo1225
+    SPSS: 590-Modulo1225
+- anio: 2002
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '585'
+  codigo: '1171'
+  nombre: Capítulo 01 para todos los sectores
+  archivos:
+    CSV: 585-Modulo1171
+    SPSS: 585-Modulo1171
+- anio: 2002
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '585'
+  codigo: '1172'
+  nombre: Agencias de Viajes 2002 B
+  archivos:
+    CSV: 585-Modulo1172
+    SPSS: 585-Modulo1172
+- anio: 2002
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '585'
+  codigo: '1173'
+  nombre: Agencias de Viajes 2002 B1
+  archivos:
+    CSV: 585-Modulo1173
+    SPSS: 585-Modulo1173
+- anio: 2002
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '585'
+  codigo: '1174'
+  nombre: Agroindustria 2002 F
+  archivos:
+    CSV: 585-Modulo1174
+    SPSS: 585-Modulo1174
+- anio: 2002
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '585'
+  codigo: '1175'
+  nombre: Agroindustria 2002 F1
+  archivos:
+    CSV: 585-Modulo1175
+    SPSS: 585-Modulo1175
+- anio: 2002
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '585'
+  codigo: '1176'
+  nombre: Agroindustria 2002 F2
+  archivos:
+    CSV: 585-Modulo1176
+    SPSS: 585-Modulo1176
+- anio: 2002
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '585'
+  codigo: '1177'
+  nombre: Educación 2002 U
+  archivos:
+    CSV: 585-Modulo1177
+    SPSS: 585-Modulo1177
+- anio: 2002
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '585'
+  codigo: '1178'
+  nombre: Comercio 2002 F1
+  archivos:
+    CSV: 585-Modulo1178
+    SPSS: 585-Modulo1178
+- anio: 2002
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '585'
+  codigo: '1179'
+  nombre: Comercio 2002 F2
+  archivos:
+    CSV: 585-Modulo1179
+    SPSS: 585-Modulo1179
+- anio: 2002
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '585'
+  codigo: '1180'
+  nombre: Construcción 2002 F1
+  archivos:
+    CSV: 585-Modulo1180
+    SPSS: 585-Modulo1180
+- anio: 2002
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '585'
+  codigo: '1181'
+  nombre: Construcción 2002 F2
+  archivos:
+    CSV: 585-Modulo1181
+    SPSS: 585-Modulo1181
+- anio: 2002
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '585'
+  codigo: '1182'
+  nombre: No Financieras 2002 U
+  archivos:
+    CSV: 585-Modulo1182
+    SPSS: 585-Modulo1182
+- anio: 2002
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '585'
+  codigo: '1183'
+  nombre: Hospedaje 2002 A
+  archivos:
+    CSV: 585-Modulo1183
+    SPSS: 585-Modulo1183
+- anio: 2002
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '585'
+  codigo: '1184'
+  nombre: Hospedaje 2002 A1
+  archivos:
+    CSV: 585-Modulo1184
+    SPSS: 585-Modulo1184
+- anio: 2002
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '585'
+  codigo: '1185'
+  nombre: Hidrocarburos 2002 F1
+  archivos:
+    CSV: 585-Modulo1185
+    SPSS: 585-Modulo1185
+- anio: 2002
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '585'
+  codigo: '1186'
+  nombre: Hidrocarburos 2002 F2
+  archivos:
+    CSV: 585-Modulo1186
+    SPSS: 585-Modulo1186
+- anio: 2002
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '585'
+  codigo: '1187'
+  nombre: Hidrocarburos 2002 F3
+  archivos:
+    CSV: 585-Modulo1187
+    SPSS: 585-Modulo1187
+- anio: 2002
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '585'
+  codigo: '1188'
+  nombre: Acuicultura 2002 U
+  archivos:
+    CSV: 585-Modulo1188
+    SPSS: 585-Modulo1188
+- anio: 2002
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '585'
+  codigo: '1189'
+  nombre: Pesca 2002 A
+  archivos:
+    CSV: 585-Modulo1189
+    SPSS: 585-Modulo1189
+- anio: 2002
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '585'
+  codigo: '1190'
+  nombre: Manufactura 2002 D
+  archivos:
+    CSV: 585-Modulo1190
+    SPSS: 585-Modulo1190
+- anio: 2002
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '585'
+  codigo: '1191'
+  nombre: Manufactura 2002 D1
+  archivos:
+    CSV: 585-Modulo1191
+    SPSS: 585-Modulo1191
+- anio: 2002
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '585'
+  codigo: '1192'
+  nombre: Manufactura 2002 D2
+  archivos:
+    CSV: 585-Modulo1192
+    SPSS: 585-Modulo1192
+- anio: 2002
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '585'
+  codigo: '1193'
+  nombre: Servicios Electricos 2002 U
+  archivos:
+    CSV: 585-Modulo1193
+    SPSS: 585-Modulo1193
+- anio: 2002
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '585'
+  codigo: '1194'
+  nombre: Transportes 2002 F1
+  archivos:
+    CSV: 585-Modulo1194
+    SPSS: 585-Modulo1194
+- anio: 2002
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '585'
+  codigo: '1195'
+  nombre: Transportes 2002 F2
+  archivos:
+    CSV: 585-Modulo1195
+    SPSS: 585-Modulo1195
+- anio: 2002
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '585'
+  codigo: '1196'
+  nombre: Universidades 2002 U
+  archivos:
+    CSV: 585-Modulo1196
+    SPSS: 585-Modulo1196
+- anio: 2003
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '581'
+  codigo: '1145'
+  nombre: Capítulo 01 para todos los sectores
+  archivos:
+    CSV: 581-Modulo1145
+    SPSS: 581-Modulo1145
+- anio: 2003
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '581'
+  codigo: '1146'
+  nombre: Agencias de Viajes 2003 B
+  archivos:
+    CSV: 581-Modulo1146
+    SPSS: 581-Modulo1146
+- anio: 2003
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '581'
+  codigo: '1147'
+  nombre: Agencias de Viajes 2003 B1
+  archivos:
+    CSV: 581-Modulo1147
+    SPSS: 581-Modulo1147
+- anio: 2003
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '581'
+  codigo: '1148'
+  nombre: Agroindustria 2003 F
+  archivos:
+    CSV: 581-Modulo1148
+    SPSS: 581-Modulo1148
+- anio: 2003
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '581'
+  codigo: '1149'
+  nombre: Agroindustria 2003 F1
+  archivos:
+    CSV: 581-Modulo1149
+    SPSS: 581-Modulo1149
+- anio: 2003
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '581'
+  codigo: '1150'
+  nombre: Agroindustria 2003 F2
+  archivos:
+    CSV: 581-Modulo1150
+    SPSS: 581-Modulo1150
+- anio: 2003
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '581'
+  codigo: '1151'
+  nombre: Educación 2003 U
+  archivos:
+    CSV: 581-Modulo1151
+    SPSS: 581-Modulo1151
+- anio: 2003
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '581'
+  codigo: '1152'
+  nombre: Comercio 2003 F1
+  archivos:
+    CSV: 581-Modulo1152
+    SPSS: 581-Modulo1152
+- anio: 2003
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '581'
+  codigo: '1153'
+  nombre: Comercio 2003 F2
+  archivos:
+    CSV: 581-Modulo1153
+    SPSS: 581-Modulo1153
+- anio: 2003
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '581'
+  codigo: '1154'
+  nombre: Construcción 2003 F1
+  archivos:
+    CSV: 581-Modulo1154
+    SPSS: 581-Modulo1154
+- anio: 2003
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '581'
+  codigo: '1155'
+  nombre: Construcción 2003 F2
+  archivos:
+    CSV: 581-Modulo1155
+    SPSS: 581-Modulo1155
+- anio: 2003
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '581'
+  codigo: '1156'
+  nombre: No Financieras 2003 U
+  archivos:
+    CSV: 581-Modulo1156
+    SPSS: 581-Modulo1156
+- anio: 2003
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '581'
+  codigo: '1157'
+  nombre: Hospedaje 2003 A
+  archivos:
+    CSV: 581-Modulo1157
+    SPSS: 581-Modulo1157
+- anio: 2003
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '581'
+  codigo: '1158'
+  nombre: Hospedaje 2003 A1
+  archivos:
+    CSV: 581-Modulo1158
+    SPSS: 581-Modulo1158
+- anio: 2003
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '581'
+  codigo: '1159'
+  nombre: Hidrocarburos 2003 F1
+  archivos:
+    CSV: 581-Modulo1159
+    SPSS: 581-Modulo1159
+- anio: 2003
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '581'
+  codigo: '1160'
+  nombre: Hidrocarburos 2003 F2
+  archivos:
+    CSV: 581-Modulo1160
+    SPSS: 581-Modulo1160
+- anio: 2003
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '581'
+  codigo: '1161'
+  nombre: Hidrocarburos 2003 F3
+  archivos:
+    CSV: 581-Modulo1161
+    SPSS: 581-Modulo1161
+- anio: 2003
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '581'
+  codigo: '1162'
+  nombre: Acuicultura 2003 A
+  archivos:
+    CSV: 581-Modulo1162
+    SPSS: 581-Modulo1162
+- anio: 2003
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '581'
+  codigo: '1163'
+  nombre: Pesca 2003 P
+  archivos:
+    CSV: 581-Modulo1163
+    SPSS: 581-Modulo1163
+- anio: 2003
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '581'
+  codigo: '1164'
+  nombre: Manufactura 2003 D
+  archivos:
+    CSV: 581-Modulo1164
+    SPSS: 581-Modulo1164
+- anio: 2003
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '581'
+  codigo: '1165'
+  nombre: Manufactura 2003 D1
+  archivos:
+    CSV: 581-Modulo1165
+    SPSS: 581-Modulo1165
+- anio: 2003
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '581'
+  codigo: '1166'
+  nombre: Manufactura 2003 D2
+  archivos:
+    CSV: 581-Modulo1166
+    SPSS: 581-Modulo1166
+- anio: 2003
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '581'
+  codigo: '1167'
+  nombre: Servicios Electricos 2003 U
+  archivos:
+    CSV: 581-Modulo1167
+    SPSS: 581-Modulo1167
+- anio: 2003
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '581'
+  codigo: '1168'
+  nombre: Transportes 2003 F1
+  archivos:
+    CSV: 581-Modulo1168
+    SPSS: 581-Modulo1168
+- anio: 2003
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '581'
+  codigo: '1169'
+  nombre: Transportes 2003 F2
+  archivos:
+    CSV: 581-Modulo1169
+    SPSS: 581-Modulo1169
+- anio: 2003
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '581'
+  codigo: '1170'
+  nombre: Universidades 2003 U
+  archivos:
+    CSV: 581-Modulo1170
+    SPSS: 581-Modulo1170
+- anio: 2004
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '530'
+  codigo: '1008'
+  nombre: Capítulo 01 para todos los sectores
+  archivos:
+    CSV: 530-Modulo1008
+    SPSS: 530-Modulo1008
+- anio: 2004
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '530'
+  codigo: '1009'
+  nombre: Agencias de Viajes 2004 B
+  archivos:
+    CSV: 530-Modulo1009
+    SPSS: 530-Modulo1009
+- anio: 2004
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '530'
+  codigo: '1010'
+  nombre: Agencias de Viajes 2004 B1
+  archivos:
+    CSV: 530-Modulo1010
+    SPSS: 530-Modulo1010
+- anio: 2004
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '530'
+  codigo: '1011'
+  nombre: Agroindustria 2004 F
+  archivos:
+    CSV: 530-Modulo1011
+    SPSS: 530-Modulo1011
+- anio: 2004
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '530'
+  codigo: '1012'
+  nombre: Agroindustria 2004 F1
+  archivos:
+    CSV: 530-Modulo1012
+    SPSS: 530-Modulo1012
+- anio: 2004
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '530'
+  codigo: '1013'
+  nombre: Agroindustria 2004 F2
+  archivos:
+    CSV: 530-Modulo1013
+    SPSS: 530-Modulo1013
+- anio: 2004
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '530'
+  codigo: '1014'
+  nombre: Educación 2004 U
+  archivos:
+    CSV: 530-Modulo1014
+    SPSS: 530-Modulo1014
+- anio: 2004
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '530'
+  codigo: '1015'
+  nombre: Comercio 2004 F1
+  archivos:
+    CSV: 530-Modulo1015
+    SPSS: 530-Modulo1015
+- anio: 2004
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '530'
+  codigo: '1016'
+  nombre: Comercio 2004 F2
+  archivos:
+    CSV: 530-Modulo1016
+    SPSS: 530-Modulo1016
+- anio: 2004
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '530'
+  codigo: '1017'
+  nombre: Construcción 2004 F1
+  archivos:
+    CSV: 530-Modulo1017
+    SPSS: 530-Modulo1017
+- anio: 2004
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '530'
+  codigo: '1018'
+  nombre: Construcción 2004 F2
+  archivos:
+    CSV: 530-Modulo1018
+    SPSS: 530-Modulo1018
+- anio: 2004
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '530'
+  codigo: '1019'
+  nombre: No Financieras 2004 U
+  archivos:
+    CSV: 530-Modulo1019
+    SPSS: 530-Modulo1019
+- anio: 2004
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '530'
+  codigo: '1020'
+  nombre: Hospedaje 2004 A
+  archivos:
+    CSV: 530-Modulo1020
+    SPSS: 530-Modulo1020
+- anio: 2004
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '530'
+  codigo: '1021'
+  nombre: Hospedaje 2004 A1
+  archivos:
+    CSV: 530-Modulo1021
+    SPSS: 530-Modulo1021
+- anio: 2004
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '530'
+  codigo: '1022'
+  nombre: Hidrocarburos 2004 F1
+  archivos:
+    CSV: 530-Modulo1022
+    SPSS: 530-Modulo1022
+- anio: 2004
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '530'
+  codigo: '1023'
+  nombre: Hidrocarburos 2004 F2
+  archivos:
+    CSV: 530-Modulo1023
+    SPSS: 530-Modulo1023
+- anio: 2004
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '530'
+  codigo: '1024'
+  nombre: Hidrocarburos 2004 F3
+  archivos:
+    CSV: 530-Modulo1024
+    SPSS: 530-Modulo1024
+- anio: 2004
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '530'
+  codigo: '1025'
+  nombre: Acuicultura 2004 A
+  archivos:
+    CSV: 530-Modulo1025
+    SPSS: 530-Modulo1025
+- anio: 2004
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '530'
+  codigo: '1026'
+  nombre: Pesca 2004 P
+  archivos:
+    CSV: 530-Modulo1026
+    SPSS: 530-Modulo1026
+- anio: 2004
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '530'
+  codigo: '1027'
+  nombre: Manufactura 2004 D
+  archivos:
+    CSV: 530-Modulo1027
+    SPSS: 530-Modulo1027
+- anio: 2004
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '530'
+  codigo: '1028'
+  nombre: Manufactura 2004 D1
+  archivos:
+    CSV: 530-Modulo1028
+    SPSS: 530-Modulo1028
+- anio: 2004
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '530'
+  codigo: '1029'
+  nombre: Manufactura 2004 D2
+  archivos:
+    CSV: 530-Modulo1029
+    SPSS: 530-Modulo1029
+- anio: 2004
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '530'
+  codigo: '1030'
+  nombre: Servicios Electricos 2004 U
+  archivos:
+    CSV: 530-Modulo1030
+    SPSS: 530-Modulo1030
+- anio: 2004
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '530'
+  codigo: '1031'
+  nombre: Transportes 2004 F1
+  archivos:
+    CSV: 530-Modulo1031
+    SPSS: 530-Modulo1031
+- anio: 2004
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '530'
+  codigo: '1032'
+  nombre: Transportes 2004 F2
+  archivos:
+    CSV: 530-Modulo1032
+    SPSS: 530-Modulo1032
+- anio: 2004
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '530'
+  codigo: '1033'
+  nombre: Universidades 2004 U
+  archivos:
+    CSV: 530-Modulo1033
+    SPSS: 530-Modulo1033
+- anio: 2005
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '517'
+  codigo: '899'
+  nombre: Capítulo 01 para todos los sectores
+  archivos:
+    CSV: 517-Modulo899
+    SPSS: 517-Modulo899
+- anio: 2005
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '517'
+  codigo: '900'
+  nombre: Agencia de Viajes 2005 B
+  archivos:
+    CSV: 517-Modulo900
+    SPSS: 517-Modulo900
+- anio: 2005
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '517'
+  codigo: '901'
+  nombre: Agencia de Viajes 2005 B1
+  archivos:
+    CSV: 517-Modulo901
+    SPSS: 517-Modulo901
+- anio: 2005
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '517'
+  codigo: '902'
+  nombre: Agroindustria 2005 F
+  archivos:
+    CSV: 517-Modulo902
+    SPSS: 517-Modulo902
+- anio: 2005
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '517'
+  codigo: '903'
+  nombre: Agroindustria 2005 F1
+  archivos:
+    CSV: 517-Modulo903
+    SPSS: 517-Modulo903
+- anio: 2005
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '517'
+  codigo: '904'
+  nombre: Agroindustria 2005 F2
+  archivos:
+    CSV: 517-Modulo904
+    SPSS: 517-Modulo904
+- anio: 2005
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '517'
+  codigo: '905'
+  nombre: Educación 2005 U
+  archivos:
+    CSV: 517-Modulo905
+    SPSS: 517-Modulo905
+- anio: 2005
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '517'
+  codigo: '906'
+  nombre: Comercio 2005 F1
+  archivos:
+    CSV: 517-Modulo906
+    SPSS: 517-Modulo906
+- anio: 2005
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '517'
+  codigo: '907'
+  nombre: Comercio 2005 F2
+  archivos:
+    CSV: 517-Modulo907
+    SPSS: 517-Modulo907
+- anio: 2005
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '517'
+  codigo: '908'
+  nombre: Construcción 2005 F1
+  archivos:
+    CSV: 517-Modulo908
+    SPSS: 517-Modulo908
+- anio: 2005
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '517'
+  codigo: '909'
+  nombre: Construcción 2005 F2
+  archivos:
+    CSV: 517-Modulo909
+    SPSS: 517-Modulo909
+- anio: 2005
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '517'
+  codigo: '910'
+  nombre: No Financieras 2005 U
+  archivos:
+    CSV: 517-Modulo910
+    SPSS: 517-Modulo910
+- anio: 2005
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '517'
+  codigo: '911'
+  nombre: Hospedaje 2005 A
+  archivos:
+    CSV: 517-Modulo911
+    SPSS: 517-Modulo911
+- anio: 2005
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '517'
+  codigo: '912'
+  nombre: Hospedaje 2005 A1
+  archivos:
+    CSV: 517-Modulo912
+    SPSS: 517-Modulo912
+- anio: 2005
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '517'
+  codigo: '913'
+  nombre: Hidrocarburos 2005 F1
+  archivos:
+    CSV: 517-Modulo913
+    SPSS: 517-Modulo913
+- anio: 2005
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '517'
+  codigo: '914'
+  nombre: Hidrocarburos 2005 F2
+  archivos:
+    CSV: 517-Modulo914
+    SPSS: 517-Modulo914
+- anio: 2005
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '517'
+  codigo: '915'
+  nombre: Hidrocarburos 2005 F3
+  archivos:
+    CSV: 517-Modulo915
+    SPSS: 517-Modulo915
+- anio: 2005
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '517'
+  codigo: '916'
+  nombre: Acuicultura 2005 A
+  archivos:
+    CSV: 517-Modulo916
+    SPSS: 517-Modulo916
+- anio: 2005
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '517'
+  codigo: '917'
+  nombre: Pesca 2005 P
+  archivos:
+    CSV: 517-Modulo917
+    SPSS: 517-Modulo917
+- anio: 2005
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '517'
+  codigo: '918'
+  nombre: Manufactura 2005 D
+  archivos:
+    CSV: 517-Modulo918
+    SPSS: 517-Modulo918
+- anio: 2005
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '517'
+  codigo: '919'
+  nombre: Manufactura 2005 D1
+  archivos:
+    CSV: 517-Modulo919
+    SPSS: 517-Modulo919
+- anio: 2005
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '517'
+  codigo: '920'
+  nombre: Manufactura 2005 D2
+  archivos:
+    CSV: 517-Modulo920
+    SPSS: 517-Modulo920
+- anio: 2005
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '517'
+  codigo: '921'
+  nombre: Servicios Electricos 2005 U
+  archivos:
+    CSV: 517-Modulo921
+    SPSS: 517-Modulo921
+- anio: 2005
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '517'
+  codigo: '922'
+  nombre: Transportes 2005 F1
+  archivos:
+    CSV: 517-Modulo922
+    SPSS: 517-Modulo922
+- anio: 2005
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '517'
+  codigo: '923'
+  nombre: Transportes 2005 F2
+  archivos:
+    CSV: 517-Modulo923
+    SPSS: 517-Modulo923
+- anio: 2005
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '517'
+  codigo: '924'
+  nombre: Universidades 2005 U
+  archivos:
+    CSV: 517-Modulo924
+    SPSS: 517-Modulo924
+- anio: 2006
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '513'
+  codigo: '865'
+  nombre: Capítulo 01 para todos los sectores
+  archivos:
+    CSV: 513-Modulo865
+    SPSS: 513-Modulo865
+- anio: 2006
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '513'
+  codigo: '866'
+  nombre: Agencia de Viajes 2006 B
+  archivos:
+    CSV: 513-Modulo866
+    SPSS: 513-Modulo866
+- anio: 2006
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '513'
+  codigo: '867'
+  nombre: Agencia de Viajes 2006 B1
+  archivos:
+    CSV: 513-Modulo867
+    SPSS: 513-Modulo867
+- anio: 2006
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '513'
+  codigo: '868'
+  nombre: Agroindustria 2006 F
+  archivos:
+    CSV: 513-Modulo868
+    SPSS: 513-Modulo868
+- anio: 2006
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '513'
+  codigo: '869'
+  nombre: Agroindustria 2006 F1
+  archivos:
+    CSV: 513-Modulo869
+    SPSS: 513-Modulo869
+- anio: 2006
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '513'
+  codigo: '870'
+  nombre: Agroindustria 2006 F2
+  archivos:
+    CSV: 513-Modulo870
+    SPSS: 513-Modulo870
+- anio: 2006
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '513'
+  codigo: '871'
+  nombre: Educación 2006 U
+  archivos:
+    CSV: 513-Modulo871
+    SPSS: 513-Modulo871
+- anio: 2006
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '513'
+  codigo: '872'
+  nombre: Comercio 2006 F1
+  archivos:
+    CSV: 513-Modulo872
+    SPSS: 513-Modulo872
+- anio: 2006
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '513'
+  codigo: '873'
+  nombre: Comercio 2006 F2
+  archivos:
+    CSV: 513-Modulo873
+    SPSS: 513-Modulo873
+- anio: 2006
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '513'
+  codigo: '874'
+  nombre: Construcción 2006 F1
+  archivos:
+    CSV: 513-Modulo874
+    SPSS: 513-Modulo874
+- anio: 2006
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '513'
+  codigo: '875'
+  nombre: Construcción 2006 F2
+  archivos:
+    CSV: 513-Modulo875
+    SPSS: 513-Modulo875
+- anio: 2006
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '513'
+  codigo: '876'
+  nombre: No Financieras 2006 U
+  archivos:
+    CSV: 513-Modulo876
+    SPSS: 513-Modulo876
+- anio: 2006
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '513'
+  codigo: '877'
+  nombre: Hospedaje 2006 A
+  archivos:
+    CSV: 513-Modulo877
+    SPSS: 513-Modulo877
+- anio: 2006
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '513'
+  codigo: '878'
+  nombre: Hospedaje 2006 A1
+  archivos:
+    CSV: 513-Modulo878
+    SPSS: 513-Modulo878
+- anio: 2006
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '513'
+  codigo: '879'
+  nombre: Hidrocarburos 2006 F1
+  archivos:
+    CSV: 513-Modulo879
+    SPSS: 513-Modulo879
+- anio: 2006
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '513'
+  codigo: '880'
+  nombre: Hidrocarburos 2006 F2
+  archivos:
+    CSV: 513-Modulo880
+    SPSS: 513-Modulo880
+- anio: 2006
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '513'
+  codigo: '881'
+  nombre: Hidrocarburos 2006 F3
+  archivos:
+    CSV: 513-Modulo881
+    SPSS: 513-Modulo881
+- anio: 2006
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '513'
+  codigo: '882'
+  nombre: Acuicultura 2006 A
+  archivos:
+    CSV: 513-Modulo882
+    SPSS: 513-Modulo882
+- anio: 2006
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '513'
+  codigo: '883'
+  nombre: Pesca 2006 P
+  archivos:
+    CSV: 513-Modulo883
+    SPSS: 513-Modulo883
+- anio: 2006
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '513'
+  codigo: '884'
+  nombre: Manufactura 2006 D
+  archivos:
+    CSV: 513-Modulo884
+    SPSS: 513-Modulo884
+- anio: 2006
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '513'
+  codigo: '885'
+  nombre: Manufactura 2006 D1
+  archivos:
+    CSV: 513-Modulo885
+    SPSS: 513-Modulo885
+- anio: 2006
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '513'
+  codigo: '886'
+  nombre: Manufactura 2006 D2
+  archivos:
+    CSV: 513-Modulo886
+    SPSS: 513-Modulo886
+- anio: 2006
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '513'
+  codigo: '887'
+  nombre: Servicios Electricos 2006 U
+  archivos:
+    CSV: 513-Modulo887
+    SPSS: 513-Modulo887
+- anio: 2006
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '513'
+  codigo: '888'
+  nombre: Transportes 2006 F1
+  archivos:
+    CSV: 513-Modulo888
+    SPSS: 513-Modulo888
+- anio: 2006
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '513'
+  codigo: '889'
+  nombre: Transportes 2006 F2
+  archivos:
+    CSV: 513-Modulo889
+    SPSS: 513-Modulo889
+- anio: 2006
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '513'
+  codigo: '890'
+  nombre: Universidades 2006 U
+  archivos:
+    CSV: 513-Modulo890
+    SPSS: 513-Modulo890
+- anio: 2006
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '513'
+  codigo: '891'
+  nombre: Restaurantes 2006 J2
+  archivos:
+    CSV: 513-Modulo891
+    SPSS: 513-Modulo891
+- anio: 2006
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '513'
+  codigo: '892'
+  nombre: Restaurantes 2006 R1
+  archivos:
+    CSV: 513-Modulo892
+    SPSS: 513-Modulo892
+- anio: 2006
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '513'
+  codigo: '893'
+  nombre: Restaurantes 2006 R2
+  archivos:
+    CSV: 513-Modulo893
+    SPSS: 513-Modulo893
+- anio: 2007
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '507'
+  codigo: '810'
+  nombre: Capítulo 01 para todos los sectores
+  archivos:
+    CSV: 507-Modulo810
+    SPSS: 507-Modulo810
+- anio: 2007
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '507'
+  codigo: '811'
+  nombre: Agencia de Viajes B
+  archivos:
+    CSV: 507-Modulo811
+    SPSS: 507-Modulo811
+- anio: 2007
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '507'
+  codigo: '812'
+  nombre: Agencia de Viajes B1
+  archivos:
+    CSV: 507-Modulo812
+    SPSS: 507-Modulo812
+- anio: 2007
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '507'
+  codigo: '813'
+  nombre: Agroindustria F
+  archivos:
+    CSV: 507-Modulo813
+    SPSS: 507-Modulo813
+- anio: 2007
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '507'
+  codigo: '814'
+  nombre: Agroindustria F1
+  archivos:
+    CSV: 507-Modulo814
+    SPSS: 507-Modulo814
+- anio: 2007
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '507'
+  codigo: '815'
+  nombre: Agroindustria F2
+  archivos:
+    CSV: 507-Modulo815
+    SPSS: 507-Modulo815
+- anio: 2007
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '507'
+  codigo: '816'
+  nombre: Educación 2007 U
+  archivos:
+    CSV: 507-Modulo816
+    SPSS: 507-Modulo816
+- anio: 2007
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '507'
+  codigo: '817'
+  nombre: Comercio 2007 F1
+  archivos:
+    CSV: 507-Modulo817
+    SPSS: 507-Modulo817
+- anio: 2007
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '507'
+  codigo: '818'
+  nombre: Comercio 2007 F2
+  archivos:
+    CSV: 507-Modulo818
+    SPSS: 507-Modulo818
+- anio: 2007
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '507'
+  codigo: '819'
+  nombre: Construcción 2007 F1
+  archivos:
+    CSV: 507-Modulo819
+    SPSS: 507-Modulo819
+- anio: 2007
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '507'
+  codigo: '820'
+  nombre: Construcción 2007 F2
+  archivos:
+    CSV: 507-Modulo820
+    SPSS: 507-Modulo820
+- anio: 2007
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '507'
+  codigo: '821'
+  nombre: Hospedaje 2007 A
+  archivos:
+    CSV: 507-Modulo821
+    SPSS: 507-Modulo821
+- anio: 2007
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '507'
+  codigo: '822'
+  nombre: Hospedaje 2007 A1
+  archivos:
+    CSV: 507-Modulo822
+    SPSS: 507-Modulo822
+- anio: 2007
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '507'
+  codigo: '823'
+  nombre: Hidrocarburos 2007 F1
+  archivos:
+    CSV: 507-Modulo823
+    SPSS: 507-Modulo823
+- anio: 2007
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '507'
+  codigo: '824'
+  nombre: EEA 08 Hidrocarburos F2
+  archivos:
+    CSV: 507-Modulo824
+    SPSS: 507-Modulo824
+- anio: 2007
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '507'
+  codigo: '825'
+  nombre: EEA 08 Hidrocarburos F3
+  archivos:
+    CSV: 507-Modulo825
+    SPSS: 507-Modulo825
+- anio: 2007
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '507'
+  codigo: '826'
+  nombre: Acuicultura A
+  archivos:
+    CSV: 507-Modulo826
+    SPSS: 507-Modulo826
+- anio: 2007
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '507'
+  codigo: '827'
+  nombre: Pesca 2007 P
+  archivos:
+    CSV: 507-Modulo827
+    SPSS: 507-Modulo827
+- anio: 2007
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '507'
+  codigo: '828'
+  nombre: Manufactura D
+  archivos:
+    CSV: 507-Modulo828
+    SPSS: 507-Modulo828
+- anio: 2007
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '507'
+  codigo: '829'
+  nombre: Manufactura D1
+  archivos:
+    CSV: 507-Modulo829
+    SPSS: 507-Modulo829
+- anio: 2007
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '507'
+  codigo: '830'
+  nombre: Manufactura D2
+  archivos:
+    CSV: 507-Modulo830
+    SPSS: 507-Modulo830
+- anio: 2007
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '507'
+  codigo: '831'
+  nombre: Servicios Electricos U
+  archivos:
+    CSV: 507-Modulo831
+    SPSS: 507-Modulo831
+- anio: 2007
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '507'
+  codigo: '832'
+  nombre: Transportes F1
+  archivos:
+    CSV: 507-Modulo832
+    SPSS: 507-Modulo832
+- anio: 2007
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '507'
+  codigo: '833'
+  nombre: Transportes F2
+  archivos:
+    CSV: 507-Modulo833
+    SPSS: 507-Modulo833
+- anio: 2007
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '507'
+  codigo: '834'
+  nombre: Universidades U
+  archivos:
+    CSV: 507-Modulo834
+    SPSS: 507-Modulo834
+- anio: 2007
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '507'
+  codigo: '835'
+  nombre: Restaurantes J2
+  archivos:
+    CSV: 507-Modulo835
+    SPSS: 507-Modulo835
+- anio: 2007
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '507'
+  codigo: '836'
+  nombre: Restaurantes R1
+  archivos:
+    CSV: 507-Modulo836
+    SPSS: 507-Modulo836
+- anio: 2007
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '507'
+  codigo: '837'
+  nombre: Restaurantes R2
+  archivos:
+    CSV: 507-Modulo837
+    SPSS: 507-Modulo837
+- anio: 2008
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '394'
+  codigo: '345'
+  nombre: Capítulo 01 para todos los sectores
+  archivos:
+    CSV: 394-Modulo345
+    SPSS: 394-Modulo345
+- anio: 2008
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '394'
+  codigo: '368'
+  nombre: Agencia de Viajes U
+  archivos:
+    CSV: 394-Modulo368
+    SPSS: 394-Modulo368
+- anio: 2008
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '394'
+  codigo: '369'
+  nombre: Agroindustrias U
+  archivos:
+    CSV: 394-Modulo369
+    SPSS: 394-Modulo369
+- anio: 2008
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '394'
+  codigo: '370'
+  nombre: Centros Educativos no Estatale U
+  archivos:
+    CSV: 394-Modulo370
+    SPSS: 394-Modulo370
+- anio: 2008
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '394'
+  codigo: '371'
+  nombre: Comercio U
+  archivos:
+    CSV: 394-Modulo371
+    SPSS: 394-Modulo371
+- anio: 2008
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '394'
+  codigo: '372'
+  nombre: Construcción U
+  archivos:
+    CSV: 394-Modulo372
+    SPSS: 394-Modulo372
+- anio: 2008
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '394'
+  codigo: '373'
+  nombre: Establecimientos de Hospedaje U
+  archivos:
+    CSV: 394-Modulo373
+    SPSS: 394-Modulo373
+- anio: 2008
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '394'
+  codigo: '374'
+  nombre: Hidrocarburos F1
+  archivos:
+    CSV: 394-Modulo374
+    SPSS: 394-Modulo374
+- anio: 2008
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '394'
+  codigo: '375'
+  nombre: Hidrocarburos F2
+  archivos:
+    CSV: 394-Modulo375
+    SPSS: 394-Modulo375
+- anio: 2008
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '394'
+  codigo: '376'
+  nombre: Hidrocarburos F3
+  archivos:
+    CSV: 394-Modulo376
+    SPSS: 394-Modulo376
+- anio: 2008
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '394'
+  codigo: '377'
+  nombre: Acuicultura A
+  archivos:
+    CSV: 394-Modulo377
+    SPSS: 394-Modulo377
+- anio: 2008
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '394'
+  codigo: '378'
+  nombre: Pesca P
+  archivos:
+    CSV: 394-Modulo378
+    SPSS: 394-Modulo378
+- anio: 2008
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '394'
+  codigo: '379'
+  nombre: Manufactura U
+  archivos:
+    CSV: 394-Modulo379
+    SPSS: 394-Modulo379
+- anio: 2008
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '394'
+  codigo: '380'
+  nombre: Servicios Electricos U
+  archivos:
+    CSV: 394-Modulo380
+    SPSS: 394-Modulo380
+- anio: 2008
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '394'
+  codigo: '381'
+  nombre: Transportes y Comunicaciones U
+  archivos:
+    CSV: 394-Modulo381
+    SPSS: 394-Modulo381
+- anio: 2008
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '394'
+  codigo: '382'
+  nombre: Universidades no Estatales U
+  archivos:
+    CSV: 394-Modulo382
+    SPSS: 394-Modulo382
+- anio: 2008
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '394'
+  codigo: '383'
+  nombre: Restaurantes U
+  archivos:
+    CSV: 394-Modulo383
+    SPSS: 394-Modulo383
+- anio: 2008
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '394'
+  codigo: '384'
+  nombre: Servicios U
+  archivos:
+    CSV: 394-Modulo384
+    SPSS: 394-Modulo384
+- anio: 2008
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '394'
+  codigo: '385'
+  nombre: MINERIA U
+  archivos:
+    CSV: 394-Modulo385
+    SPSS: 394-Modulo385
+- anio: 2009
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '395'
+  codigo: '345'
+  nombre: Capítulo 01 para todos los sectores
+  archivos:
+    CSV: 395-Modulo345
+    SPSS: 395-Modulo345
+- anio: 2009
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '395'
+  codigo: '386'
+  nombre: Agencia de Viajes B1
+  archivos:
+    CSV: 395-Modulo386
+    SPSS: 395-Modulo386
+- anio: 2009
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '395'
+  codigo: '387'
+  nombre: Agroindustrias F2
+  archivos:
+    CSV: 395-Modulo387
+    SPSS: 395-Modulo387
+- anio: 2009
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '395'
+  codigo: '388'
+  nombre: Centros Educativos no Estatale U
+  archivos:
+    CSV: 395-Modulo388
+    SPSS: 395-Modulo388
+- anio: 2009
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '395'
+  codigo: '389'
+  nombre: Comercio F2
+  archivos:
+    CSV: 395-Modulo389
+    SPSS: 395-Modulo389
+- anio: 2009
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '395'
+  codigo: '390'
+  nombre: Construcción F2
+  archivos:
+    CSV: 395-Modulo390
+    SPSS: 395-Modulo390
+- anio: 2009
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '395'
+  codigo: '391'
+  nombre: Establecimientos de Hospedaje A1
+  archivos:
+    CSV: 395-Modulo391
+    SPSS: 395-Modulo391
+- anio: 2009
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '395'
+  codigo: '392'
+  nombre: Hidrocarburos F1
+  archivos:
+    CSV: 395-Modulo392
+    SPSS: 395-Modulo392
+- anio: 2009
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '395'
+  codigo: '393'
+  nombre: Hidrocarburos F2
+  archivos:
+    CSV: 395-Modulo393
+    SPSS: 395-Modulo393
+- anio: 2009
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '395'
+  codigo: '394'
+  nombre: Hidrocarburos F3
+  archivos:
+    CSV: 395-Modulo394
+    SPSS: 395-Modulo394
+- anio: 2009
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '395'
+  codigo: '395'
+  nombre: Acuicultura A
+  archivos:
+    CSV: 395-Modulo395
+    SPSS: 395-Modulo395
+- anio: 2009
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '395'
+  codigo: '396'
+  nombre: Pesca P
+  archivos:
+    CSV: 395-Modulo396
+    SPSS: 395-Modulo396
+- anio: 2009
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '395'
+  codigo: '397'
+  nombre: Manufactura D2
+  archivos:
+    CSV: 395-Modulo397
+    SPSS: 395-Modulo397
+- anio: 2009
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '395'
+  codigo: '398'
+  nombre: Servicios Electricos U
+  archivos:
+    CSV: 395-Modulo398
+    SPSS: 395-Modulo398
+- anio: 2009
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '395'
+  codigo: '399'
+  nombre: Transportes y Comunicaciones F2
+  archivos:
+    CSV: 395-Modulo399
+    SPSS: 395-Modulo399
+- anio: 2009
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '395'
+  codigo: '400'
+  nombre: Universidades no Estatales U
+  archivos:
+    CSV: 395-Modulo400
+    SPSS: 395-Modulo400
+- anio: 2009
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '395'
+  codigo: '401'
+  nombre: Restaurantes R2
+  archivos:
+    CSV: 395-Modulo401
+    SPSS: 395-Modulo401
+- anio: 2009
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '395'
+  codigo: '402'
+  nombre: Servicios F2
+  archivos:
+    CSV: 395-Modulo402
+    SPSS: 395-Modulo402
+- anio: 2009
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '395'
+  codigo: '403'
+  nombre: Agencia de Viajes B
+  archivos:
+    CSV: 395-Modulo403
+    SPSS: 395-Modulo403
+- anio: 2009
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '395'
+  codigo: '404'
+  nombre: Agroindustrias M
+  archivos:
+    CSV: 395-Modulo404
+    SPSS: 395-Modulo404
+- anio: 2009
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '395'
+  codigo: '405'
+  nombre: Comercio M
+  archivos:
+    CSV: 395-Modulo405
+    SPSS: 395-Modulo405
+- anio: 2009
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '395'
+  codigo: '406'
+  nombre: Construcción  M
+  archivos:
+    CSV: 395-Modulo406
+    SPSS: 395-Modulo406
+- anio: 2009
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '395'
+  codigo: '407'
+  nombre: Establecimientos de Hospedaje A
+  archivos:
+    CSV: 395-Modulo407
+    SPSS: 395-Modulo407
+- anio: 2009
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '395'
+  codigo: '408'
+  nombre: Manufactura M
+  archivos:
+    CSV: 395-Modulo408
+    SPSS: 395-Modulo408
+- anio: 2009
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '395'
+  codigo: '409'
+  nombre: Transportes y Comunicaciones M
+  archivos:
+    CSV: 395-Modulo409
+    SPSS: 395-Modulo409
+- anio: 2009
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '395'
+  codigo: '410'
+  nombre: Restaurantes R1
+  archivos:
+    CSV: 395-Modulo410
+    SPSS: 395-Modulo410
+- anio: 2009
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '395'
+  codigo: '411'
+  nombre: Servicios M
+  archivos:
+    CSV: 395-Modulo411
+    SPSS: 395-Modulo411
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '396'
+  codigo: '345'
+  nombre: Capítulo 01 para todos los sectores
+  archivos:
+    CSV: 396-Modulo345
+    SPSS: 396-Modulo345
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '396'
+  codigo: '386'
+  nombre: Agencia de Viajes B1
+  archivos:
+    CSV: 396-Modulo386
+    SPSS: 396-Modulo386
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '396'
+  codigo: '387'
+  nombre: Agroindustrias F2
+  archivos:
+    CSV: 396-Modulo387
+    SPSS: 396-Modulo387
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '396'
+  codigo: '388'
+  nombre: Centros Educativos no Estatale U
+  archivos:
+    CSV: 396-Modulo388
+    SPSS: 396-Modulo388
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '396'
+  codigo: '389'
+  nombre: Comercio F2
+  archivos:
+    CSV: 396-Modulo389
+    SPSS: 396-Modulo389
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '396'
+  codigo: '390'
+  nombre: Construcción F2
+  archivos:
+    CSV: 396-Modulo390
+    SPSS: 396-Modulo390
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '396'
+  codigo: '391'
+  nombre: Establecimientos de Hospedaje A1
+  archivos:
+    CSV: 396-Modulo391
+    SPSS: 396-Modulo391
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '396'
+  codigo: '392'
+  nombre: Hidrocarburos F1
+  archivos:
+    CSV: 396-Modulo392
+    SPSS: 396-Modulo392
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '396'
+  codigo: '393'
+  nombre: Hidrocarburos F2
+  archivos:
+    CSV: 396-Modulo393
+    SPSS: 396-Modulo393
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '396'
+  codigo: '394'
+  nombre: Hidrocarburos F3
+  archivos:
+    CSV: 396-Modulo394
+    SPSS: 396-Modulo394
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '396'
+  codigo: '395'
+  nombre: Acuicultura A
+  archivos:
+    CSV: 396-Modulo395
+    SPSS: 396-Modulo395
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '396'
+  codigo: '396'
+  nombre: Pesca P
+  archivos:
+    CSV: 396-Modulo396
+    SPSS: 396-Modulo396
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '396'
+  codigo: '397'
+  nombre: Manufactura D2
+  archivos:
+    CSV: 396-Modulo397
+    SPSS: 396-Modulo397
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '396'
+  codigo: '398'
+  nombre: Servicios Electricos U
+  archivos:
+    CSV: 396-Modulo398
+    SPSS: 396-Modulo398
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '396'
+  codigo: '399'
+  nombre: Transportes y Comunicaciones F2
+  archivos:
+    CSV: 396-Modulo399
+    SPSS: 396-Modulo399
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '396'
+  codigo: '400'
+  nombre: Universidades no Estatales U
+  archivos:
+    CSV: 396-Modulo400
+    SPSS: 396-Modulo400
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '396'
+  codigo: '401'
+  nombre: Restaurantes R2
+  archivos:
+    CSV: 396-Modulo401
+    SPSS: 396-Modulo401
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '396'
+  codigo: '402'
+  nombre: Servicios F2
+  archivos:
+    CSV: 396-Modulo402
+    SPSS: 396-Modulo402
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '396'
+  codigo: '403'
+  nombre: Agencia de Viajes B
+  archivos:
+    CSV: 396-Modulo403
+    SPSS: 396-Modulo403
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '396'
+  codigo: '404'
+  nombre: Agroindustrias M
+  archivos:
+    CSV: 396-Modulo404
+    SPSS: 396-Modulo404
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '396'
+  codigo: '405'
+  nombre: Comercio M
+  archivos:
+    CSV: 396-Modulo405
+    SPSS: 396-Modulo405
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '396'
+  codigo: '406'
+  nombre: Construcción  M
+  archivos:
+    CSV: 396-Modulo406
+    SPSS: 396-Modulo406
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '396'
+  codigo: '407'
+  nombre: Establecimientos de Hospedaje A
+  archivos:
+    CSV: 396-Modulo407
+    SPSS: 396-Modulo407
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '396'
+  codigo: '408'
+  nombre: Manufactura M
+  archivos:
+    CSV: 396-Modulo408
+    SPSS: 396-Modulo408
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '396'
+  codigo: '409'
+  nombre: Transportes y Comunicaciones M
+  archivos:
+    CSV: 396-Modulo409
+    SPSS: 396-Modulo409
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '396'
+  codigo: '410'
+  nombre: Restaurantes R1
+  archivos:
+    CSV: 396-Modulo410
+    SPSS: 396-Modulo410
+- anio: 2010
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '396'
+  codigo: '411'
+  nombre: Servicios M
+  archivos:
+    CSV: 396-Modulo411
+    SPSS: 396-Modulo411
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '397'
+  codigo: '345'
+  nombre: Capítulo 01 para todos los sectores
+  archivos:
+    CSV: 397-Modulo345
+    SPSS: 397-Modulo345
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '397'
+  codigo: '386'
+  nombre: Agencia de Viajes B1
+  archivos:
+    CSV: 397-Modulo386
+    SPSS: 397-Modulo386
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '397'
+  codigo: '387'
+  nombre: Agroindustrias F2
+  archivos:
+    CSV: 397-Modulo387
+    SPSS: 397-Modulo387
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '397'
+  codigo: '388'
+  nombre: Centros Educativos no Estatale U
+  archivos:
+    CSV: 397-Modulo388
+    SPSS: 397-Modulo388
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '397'
+  codigo: '389'
+  nombre: Comercio F2
+  archivos:
+    CSV: 397-Modulo389
+    SPSS: 397-Modulo389
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '397'
+  codigo: '390'
+  nombre: Construcción F2
+  archivos:
+    CSV: 397-Modulo390
+    SPSS: 397-Modulo390
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '397'
+  codigo: '391'
+  nombre: Establecimientos de Hospedaje A1
+  archivos:
+    CSV: 397-Modulo391
+    SPSS: 397-Modulo391
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '397'
+  codigo: '392'
+  nombre: Hidrocarburos F1
+  archivos:
+    CSV: 397-Modulo392
+    SPSS: 397-Modulo392
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '397'
+  codigo: '393'
+  nombre: Hidrocarburos F2
+  archivos:
+    CSV: 397-Modulo393
+    SPSS: 397-Modulo393
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '397'
+  codigo: '394'
+  nombre: Hidrocarburos F3
+  archivos:
+    CSV: 397-Modulo394
+    SPSS: 397-Modulo394
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '397'
+  codigo: '395'
+  nombre: Acuicultura A
+  archivos:
+    CSV: 397-Modulo395
+    SPSS: 397-Modulo395
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '397'
+  codigo: '396'
+  nombre: Pesca P
+  archivos:
+    CSV: 397-Modulo396
+    SPSS: 397-Modulo396
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '397'
+  codigo: '397'
+  nombre: Manufactura D2
+  archivos:
+    CSV: 397-Modulo397
+    SPSS: 397-Modulo397
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '397'
+  codigo: '398'
+  nombre: Servicios Electricos U
+  archivos:
+    CSV: 397-Modulo398
+    SPSS: 397-Modulo398
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '397'
+  codigo: '399'
+  nombre: Transportes y Comunicaciones F2
+  archivos:
+    CSV: 397-Modulo399
+    SPSS: 397-Modulo399
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '397'
+  codigo: '400'
+  nombre: Universidades no Estatales U
+  archivos:
+    CSV: 397-Modulo400
+    SPSS: 397-Modulo400
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '397'
+  codigo: '401'
+  nombre: Restaurantes R2
+  archivos:
+    CSV: 397-Modulo401
+    SPSS: 397-Modulo401
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '397'
+  codigo: '402'
+  nombre: Servicios F2
+  archivos:
+    CSV: 397-Modulo402
+    SPSS: 397-Modulo402
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '397'
+  codigo: '403'
+  nombre: Agencia de Viajes B
+  archivos:
+    CSV: 397-Modulo403
+    SPSS: 397-Modulo403
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '397'
+  codigo: '404'
+  nombre: Agroindustrias M
+  archivos:
+    CSV: 397-Modulo404
+    SPSS: 397-Modulo404
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '397'
+  codigo: '405'
+  nombre: Comercio M
+  archivos:
+    CSV: 397-Modulo405
+    SPSS: 397-Modulo405
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '397'
+  codigo: '406'
+  nombre: Construcción  M
+  archivos:
+    CSV: 397-Modulo406
+    SPSS: 397-Modulo406
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '397'
+  codigo: '407'
+  nombre: Establecimientos de Hospedaje A
+  archivos:
+    CSV: 397-Modulo407
+    SPSS: 397-Modulo407
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '397'
+  codigo: '408'
+  nombre: Manufactura M
+  archivos:
+    CSV: 397-Modulo408
+    SPSS: 397-Modulo408
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '397'
+  codigo: '409'
+  nombre: Transportes y Comunicaciones M
+  archivos:
+    CSV: 397-Modulo409
+    SPSS: 397-Modulo409
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '397'
+  codigo: '410'
+  nombre: Restaurantes R1
+  archivos:
+    CSV: 397-Modulo410
+    SPSS: 397-Modulo410
+- anio: 2011
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '397'
+  codigo: '411'
+  nombre: Servicios M
+  archivos:
+    CSV: 397-Modulo411
+    SPSS: 397-Modulo411
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '398'
+  codigo: '345'
+  nombre: Capítulo 01 para todos los sectores
+  archivos:
+    CSV: 398-Modulo345
+    SPSS: 398-Modulo345
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '398'
+  codigo: '346'
+  nombre: Agencia de Viajes B1
+  archivos:
+    CSV: 398-Modulo346
+    SPSS: 398-Modulo346
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '398'
+  codigo: '347'
+  nombre: Agroindustrias F2
+  archivos:
+    CSV: 398-Modulo347
+    SPSS: 398-Modulo347
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '398'
+  codigo: '348'
+  nombre: Centros Educativos no Estatale U
+  archivos:
+    CSV: 398-Modulo348
+    SPSS: 398-Modulo348
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '398'
+  codigo: '349'
+  nombre: Comercio F2
+  archivos:
+    CSV: 398-Modulo349
+    SPSS: 398-Modulo349
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '398'
+  codigo: '350'
+  nombre: Construcción F2
+  archivos:
+    CSV: 398-Modulo350
+    SPSS: 398-Modulo350
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '398'
+  codigo: '351'
+  nombre: Establecimientos de Hospedaje A1
+  archivos:
+    CSV: 398-Modulo351
+    SPSS: 398-Modulo351
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '398'
+  codigo: '352'
+  nombre: Hidrocarburos U
+  archivos:
+    CSV: 398-Modulo352
+    SPSS: 398-Modulo352
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '398'
+  codigo: '353'
+  nombre: Acuicultura A
+  archivos:
+    CSV: 398-Modulo353
+    SPSS: 398-Modulo353
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '398'
+  codigo: '354'
+  nombre: Pesca P
+  archivos:
+    CSV: 398-Modulo354
+    SPSS: 398-Modulo354
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '398'
+  codigo: '355'
+  nombre: Manufactura D2
+  archivos:
+    CSV: 398-Modulo355
+    SPSS: 398-Modulo355
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '398'
+  codigo: '356'
+  nombre: Servicios Electricos U
+  archivos:
+    CSV: 398-Modulo356
+    SPSS: 398-Modulo356
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '398'
+  codigo: '357'
+  nombre: Transportes y Comunicaciones F2
+  archivos:
+    CSV: 398-Modulo357
+    SPSS: 398-Modulo357
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '398'
+  codigo: '358'
+  nombre: Universidades no Estatales U
+  archivos:
+    CSV: 398-Modulo358
+    SPSS: 398-Modulo358
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '398'
+  codigo: '359'
+  nombre: Restaurantes R2
+  archivos:
+    CSV: 398-Modulo359
+    SPSS: 398-Modulo359
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '398'
+  codigo: '360'
+  nombre: Servicios F2
+  archivos:
+    CSV: 398-Modulo360
+    SPSS: 398-Modulo360
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '398'
+  codigo: '361'
+  nombre: Agroindustrias M
+  archivos:
+    CSV: 398-Modulo361
+    SPSS: 398-Modulo361
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '398'
+  codigo: '362'
+  nombre: Comercio M
+  archivos:
+    CSV: 398-Modulo362
+    SPSS: 398-Modulo362
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '398'
+  codigo: '363'
+  nombre: Construcción  M
+  archivos:
+    CSV: 398-Modulo363
+    SPSS: 398-Modulo363
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '398'
+  codigo: '364'
+  nombre: Manufactura M
+  archivos:
+    CSV: 398-Modulo364
+    SPSS: 398-Modulo364
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '398'
+  codigo: '365'
+  nombre: Transportes y Comunicaciones M
+  archivos:
+    CSV: 398-Modulo365
+    SPSS: 398-Modulo365
+- anio: 2012
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '398'
+  codigo: '366'
+  nombre: Servicios M
+  archivos:
+    CSV: 398-Modulo366
+    SPSS: 398-Modulo366
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '393'
+  codigo: '345'
+  nombre: Capítulo 01 para todos los sectores
+  archivos:
+    CSV: 393-Modulo345
+    SPSS: 393-Modulo345
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '393'
+  codigo: '346'
+  nombre: Agencia de Viajes B1
+  archivos:
+    CSV: 393-Modulo346
+    SPSS: 393-Modulo346
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '393'
+  codigo: '347'
+  nombre: Agroindustrias F2
+  archivos:
+    CSV: 393-Modulo347
+    SPSS: 393-Modulo347
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '393'
+  codigo: '348'
+  nombre: Centros Educativos no Estatale U
+  archivos:
+    CSV: 393-Modulo348
+    SPSS: 393-Modulo348
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '393'
+  codigo: '349'
+  nombre: Comercio F2
+  archivos:
+    CSV: 393-Modulo349
+    SPSS: 393-Modulo349
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '393'
+  codigo: '350'
+  nombre: Construcción F2
+  archivos:
+    CSV: 393-Modulo350
+    SPSS: 393-Modulo350
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '393'
+  codigo: '351'
+  nombre: Establecimientos de Hospedaje A1
+  archivos:
+    CSV: 393-Modulo351
+    SPSS: 393-Modulo351
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '393'
+  codigo: '352'
+  nombre: Hidrocarburos U
+  archivos:
+    CSV: 393-Modulo352
+    SPSS: 393-Modulo352
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '393'
+  codigo: '353'
+  nombre: Acuicultura A
+  archivos:
+    CSV: 393-Modulo353
+    SPSS: 393-Modulo353
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '393'
+  codigo: '354'
+  nombre: Pesca P
+  archivos:
+    CSV: 393-Modulo354
+    SPSS: 393-Modulo354
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '393'
+  codigo: '355'
+  nombre: Manufactura D2
+  archivos:
+    CSV: 393-Modulo355
+    SPSS: 393-Modulo355
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '393'
+  codigo: '356'
+  nombre: Servicios Electricos U
+  archivos:
+    CSV: 393-Modulo356
+    SPSS: 393-Modulo356
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '393'
+  codigo: '357'
+  nombre: Transportes y Comunicaciones F2
+  archivos:
+    CSV: 393-Modulo357
+    SPSS: 393-Modulo357
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '393'
+  codigo: '358'
+  nombre: Universidades no Estatales U
+  archivos:
+    CSV: 393-Modulo358
+    SPSS: 393-Modulo358
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '393'
+  codigo: '359'
+  nombre: Restaurantes R2
+  archivos:
+    CSV: 393-Modulo359
+    SPSS: 393-Modulo359
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '393'
+  codigo: '360'
+  nombre: Servicios F2
+  archivos:
+    CSV: 393-Modulo360
+    SPSS: 393-Modulo360
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '393'
+  codigo: '361'
+  nombre: Agroindustrias M
+  archivos:
+    CSV: 393-Modulo361
+    SPSS: 393-Modulo361
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '393'
+  codigo: '362'
+  nombre: Comercio M
+  archivos:
+    CSV: 393-Modulo362
+    SPSS: 393-Modulo362
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '393'
+  codigo: '363'
+  nombre: Construcción  M
+  archivos:
+    CSV: 393-Modulo363
+    SPSS: 393-Modulo363
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '393'
+  codigo: '364'
+  nombre: Manufactura M
+  archivos:
+    CSV: 393-Modulo364
+    SPSS: 393-Modulo364
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '393'
+  codigo: '365'
+  nombre: Transportes y Comunicaciones M
+  archivos:
+    CSV: 393-Modulo365
+    SPSS: 393-Modulo365
+- anio: 2013
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '393'
+  codigo: '366'
+  nombre: Servicios M
+  archivos:
+    CSV: 393-Modulo366
+    SPSS: 393-Modulo366
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '451'
+  codigo: '345'
+  nombre: Capítulo 01 para todos los sectores
+  archivos:
+    CSV: 451-Modulo345
+    SPSS: 451-Modulo345
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '451'
+  codigo: '346'
+  nombre: Agencia de Viajes B1
+  archivos:
+    CSV: 451-Modulo346
+    SPSS: 451-Modulo346
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '451'
+  codigo: '347'
+  nombre: Agroindustrias F2
+  archivos:
+    CSV: 451-Modulo347
+    SPSS: 451-Modulo347
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '451'
+  codigo: '348'
+  nombre: Centros Educativos no Estatale U
+  archivos:
+    CSV: 451-Modulo348
+    SPSS: 451-Modulo348
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '451'
+  codigo: '349'
+  nombre: Comercio F2
+  archivos:
+    CSV: 451-Modulo349
+    SPSS: 451-Modulo349
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '451'
+  codigo: '350'
+  nombre: Construcción F2
+  archivos:
+    CSV: 451-Modulo350
+    SPSS: 451-Modulo350
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '451'
+  codigo: '351'
+  nombre: Establecimientos de Hospedaje A1
+  archivos:
+    CSV: 451-Modulo351
+    SPSS: 451-Modulo351
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '451'
+  codigo: '352'
+  nombre: Hidrocarburos U
+  archivos:
+    CSV: 451-Modulo352
+    SPSS: 451-Modulo352
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '451'
+  codigo: '353'
+  nombre: Acuicultura A
+  archivos:
+    CSV: 451-Modulo353
+    SPSS: 451-Modulo353
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '451'
+  codigo: '354'
+  nombre: Pesca P
+  archivos:
+    CSV: 451-Modulo354
+    SPSS: 451-Modulo354
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '451'
+  codigo: '355'
+  nombre: Manufactura D2
+  archivos:
+    CSV: 451-Modulo355
+    SPSS: 451-Modulo355
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '451'
+  codigo: '356'
+  nombre: Servicios Electricos U
+  archivos:
+    CSV: 451-Modulo356
+    SPSS: 451-Modulo356
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '451'
+  codigo: '357'
+  nombre: Transportes y Comunicaciones F2
+  archivos:
+    CSV: 451-Modulo357
+    SPSS: 451-Modulo357
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '451'
+  codigo: '358'
+  nombre: Universidades no Estatales U
+  archivos:
+    CSV: 451-Modulo358
+    SPSS: 451-Modulo358
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '451'
+  codigo: '359'
+  nombre: Restaurantes R2
+  archivos:
+    CSV: 451-Modulo359
+    SPSS: 451-Modulo359
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '451'
+  codigo: '360'
+  nombre: Servicios F2
+  archivos:
+    CSV: 451-Modulo360
+    SPSS: 451-Modulo360
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '451'
+  codigo: '361'
+  nombre: Agroindustrias M
+  archivos:
+    CSV: 451-Modulo361
+    SPSS: 451-Modulo361
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '451'
+  codigo: '362'
+  nombre: Comercio M
+  archivos:
+    CSV: 451-Modulo362
+    SPSS: 451-Modulo362
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '451'
+  codigo: '363'
+  nombre: Construcción  M
+  archivos:
+    CSV: 451-Modulo363
+    SPSS: 451-Modulo363
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '451'
+  codigo: '364'
+  nombre: Manufactura M
+  archivos:
+    CSV: 451-Modulo364
+    SPSS: 451-Modulo364
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '451'
+  codigo: '365'
+  nombre: Transportes y Comunicaciones M
+  archivos:
+    CSV: 451-Modulo365
+    SPSS: 451-Modulo365
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '451'
+  codigo: '366'
+  nombre: Servicios M
+  archivos:
+    CSV: 451-Modulo366
+    SPSS: 451-Modulo366
+- anio: 2014
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '451'
+  codigo: '1787'
+  nombre: TICS para todos los sectores
+  archivos:
+    CSV: 451-Modulo1787
+    SPSS: 451-Modulo1787
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '511'
+  codigo: '838'
+  nombre: Capítulo 01 para todos los sectores
+  archivos:
+    CSV: 511-Modulo838
+    SPSS: 511-Modulo838
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '511'
+  codigo: '839'
+  nombre: Agencia de Viajes B1
+  archivos:
+    CSV: 511-Modulo839
+    SPSS: 511-Modulo839
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '511'
+  codigo: '840'
+  nombre: Agroindustria F2
+  archivos:
+    CSV: 511-Modulo840
+    SPSS: 511-Modulo840
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '511'
+  codigo: '841'
+  nombre: Centros Educativos no Estatales U
+  archivos:
+    CSV: 511-Modulo841
+    SPSS: 511-Modulo841
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '511'
+  codigo: '842'
+  nombre: Comercio F2
+  archivos:
+    CSV: 511-Modulo842
+    SPSS: 511-Modulo842
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '511'
+  codigo: '843'
+  nombre: Construcción F2
+  archivos:
+    CSV: 511-Modulo843
+    SPSS: 511-Modulo843
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '511'
+  codigo: '844'
+  nombre: Establecimiento de Hospedaje A1
+  archivos:
+    CSV: 511-Modulo844
+    SPSS: 511-Modulo844
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '511'
+  codigo: '845'
+  nombre: Hidrocarburos U
+  archivos:
+    CSV: 511-Modulo845
+    SPSS: 511-Modulo845
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '511'
+  codigo: '846'
+  nombre: Acuicultura A
+  archivos:
+    CSV: 511-Modulo846
+    SPSS: 511-Modulo846
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '511'
+  codigo: '847'
+  nombre: Pesca P
+  archivos:
+    CSV: 511-Modulo847
+    SPSS: 511-Modulo847
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '511'
+  codigo: '848'
+  nombre: Manufactura D2
+  archivos:
+    CSV: 511-Modulo848
+    SPSS: 511-Modulo848
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '511'
+  codigo: '849'
+  nombre: Servicios Electricos U
+  archivos:
+    CSV: 511-Modulo849
+    SPSS: 511-Modulo849
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '511'
+  codigo: '850'
+  nombre: Transportes y Comunicaciones F2
+  archivos:
+    CSV: 511-Modulo850
+    SPSS: 511-Modulo850
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '511'
+  codigo: '851'
+  nombre: Universidades no Estatales U
+  archivos:
+    CSV: 511-Modulo851
+    SPSS: 511-Modulo851
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '511'
+  codigo: '852'
+  nombre: Restaurantes R2
+  archivos:
+    CSV: 511-Modulo852
+    SPSS: 511-Modulo852
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '511'
+  codigo: '853'
+  nombre: Servicios F2
+  archivos:
+    CSV: 511-Modulo853
+    SPSS: 511-Modulo853
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '511'
+  codigo: '854'
+  nombre: Agroindustria M
+  archivos:
+    CSV: 511-Modulo854
+    SPSS: 511-Modulo854
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '511'
+  codigo: '855'
+  nombre: Comercio M
+  archivos:
+    CSV: 511-Modulo855
+    SPSS: 511-Modulo855
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '511'
+  codigo: '856'
+  nombre: Construcción M
+  archivos:
+    CSV: 511-Modulo856
+    SPSS: 511-Modulo856
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '511'
+  codigo: '857'
+  nombre: Manufactura M
+  archivos:
+    CSV: 511-Modulo857
+    SPSS: 511-Modulo857
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '511'
+  codigo: '858'
+  nombre: Transportes y Comunicaciones M
+  archivos:
+    CSV: 511-Modulo858
+    SPSS: 511-Modulo858
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '511'
+  codigo: '859'
+  nombre: Servicios M
+  archivos:
+    CSV: 511-Modulo859
+    SPSS: 511-Modulo859
+- anio: 2015
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '511'
+  codigo: '1787'
+  nombre: TICS para todos los sectores
+  archivos:
+    CSV: 511-Modulo1787
+    SPSS: 511-Modulo1787
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '552'
+  codigo: '1094'
+  nombre: Capítulo 01 para todos los sectores
+  archivos:
+    CSV: 552-Modulo1094
+    SPSS: 552-Modulo1094
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '552'
+  codigo: '1095'
+  nombre: Agencia de Viajes B1
+  archivos:
+    CSV: 552-Modulo1095
+    SPSS: 552-Modulo1095
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '552'
+  codigo: '1096'
+  nombre: Agroindustria F2
+  archivos:
+    CSV: 552-Modulo1096
+    SPSS: 552-Modulo1096
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '552'
+  codigo: '1097'
+  nombre: Centros Educativos no Estatales U
+  archivos:
+    CSV: 552-Modulo1097
+    SPSS: 552-Modulo1097
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '552'
+  codigo: '1098'
+  nombre: Comercio F2
+  archivos:
+    CSV: 552-Modulo1098
+    SPSS: 552-Modulo1098
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '552'
+  codigo: '1099'
+  nombre: Construcción F2
+  archivos:
+    CSV: 552-Modulo1099
+    SPSS: 552-Modulo1099
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '552'
+  codigo: '1100'
+  nombre: Establecimiento de Hospedaje A1
+  archivos:
+    CSV: 552-Modulo1100
+    SPSS: 552-Modulo1100
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '552'
+  codigo: '1101'
+  nombre: Hidrocarburos U
+  archivos:
+    CSV: 552-Modulo1101
+    SPSS: 552-Modulo1101
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '552'
+  codigo: '1102'
+  nombre: Acuicultura A
+  archivos:
+    CSV: 552-Modulo1102
+    SPSS: 552-Modulo1102
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '552'
+  codigo: '1103'
+  nombre: Pesca P
+  archivos:
+    CSV: 552-Modulo1103
+    SPSS: 552-Modulo1103
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '552'
+  codigo: '1104'
+  nombre: Manufactura D2
+  archivos:
+    CSV: 552-Modulo1104
+    SPSS: 552-Modulo1104
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '552'
+  codigo: '1105'
+  nombre: Servicios Electricos U
+  archivos:
+    CSV: 552-Modulo1105
+    SPSS: 552-Modulo1105
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '552'
+  codigo: '1106'
+  nombre: Transportes y Comunicaciones F2
+  archivos:
+    CSV: 552-Modulo1106
+    SPSS: 552-Modulo1106
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '552'
+  codigo: '1107'
+  nombre: Universidades no Estatales U
+  archivos:
+    CSV: 552-Modulo1107
+    SPSS: 552-Modulo1107
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '552'
+  codigo: '1108'
+  nombre: Restaurantes R2
+  archivos:
+    CSV: 552-Modulo1108
+    SPSS: 552-Modulo1108
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '552'
+  codigo: '1109'
+  nombre: Servicios F2
+  archivos:
+    CSV: 552-Modulo1109
+    SPSS: 552-Modulo1109
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '552'
+  codigo: '1110'
+  nombre: Agroindustria M
+  archivos:
+    CSV: 552-Modulo1110
+    SPSS: 552-Modulo1110
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '552'
+  codigo: '1111'
+  nombre: Comercio M
+  archivos:
+    CSV: 552-Modulo1111
+    SPSS: 552-Modulo1111
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '552'
+  codigo: '1112'
+  nombre: Construcción M
+  archivos:
+    CSV: 552-Modulo1112
+    SPSS: 552-Modulo1112
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '552'
+  codigo: '1113'
+  nombre: Manufactura M
+  archivos:
+    CSV: 552-Modulo1113
+    SPSS: 552-Modulo1113
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '552'
+  codigo: '1114'
+  nombre: Transportes y Comunicaciones M
+  archivos:
+    CSV: 552-Modulo1114
+    SPSS: 552-Modulo1114
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '552'
+  codigo: '1115'
+  nombre: Servicios M
+  archivos:
+    CSV: 552-Modulo1115
+    SPSS: 552-Modulo1115
+- anio: 2016
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '552'
+  codigo: '1787'
+  nombre: TICS para todos los sectores
+  archivos:
+    CSV: 552-Modulo1787
+    SPSS: 552-Modulo1787
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '627'
+  codigo: '1348'
+  nombre: Capítulo 01 para todos los sectores
+  archivos:
+    CSV: 627-Modulo1348
+    SPSS: 627-Modulo1348
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '627'
+  codigo: '1349'
+  nombre: Agencia de Viajes B1
+  archivos:
+    CSV: 627-Modulo1349
+    SPSS: 627-Modulo1349
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '627'
+  codigo: '1350'
+  nombre: Agroindustria F2
+  archivos:
+    CSV: 627-Modulo1350
+    SPSS: 627-Modulo1350
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '627'
+  codigo: '1351'
+  nombre: Centros Educativos no Estatales U
+  archivos:
+    CSV: 627-Modulo1351
+    SPSS: 627-Modulo1351
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '627'
+  codigo: '1352'
+  nombre: Comercio F2
+  archivos:
+    CSV: 627-Modulo1352
+    SPSS: 627-Modulo1352
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '627'
+  codigo: '1353'
+  nombre: Construcción F2
+  archivos:
+    CSV: 627-Modulo1353
+    SPSS: 627-Modulo1353
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '627'
+  codigo: '1354'
+  nombre: Establecimientos de Hospedaje A1
+  archivos:
+    CSV: 627-Modulo1354
+    SPSS: 627-Modulo1354
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '627'
+  codigo: '1355'
+  nombre: Hidrocarburos U
+  archivos:
+    CSV: 627-Modulo1355
+    SPSS: 627-Modulo1355
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '627'
+  codigo: '1356'
+  nombre: Acuicultuta A
+  archivos:
+    CSV: 627-Modulo1356
+    SPSS: 627-Modulo1356
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '627'
+  codigo: '1357'
+  nombre: Pesca P
+  archivos:
+    CSV: 627-Modulo1357
+    SPSS: 627-Modulo1357
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '627'
+  codigo: '1358'
+  nombre: Manufactura D2
+  archivos:
+    CSV: 627-Modulo1358
+    SPSS: 627-Modulo1358
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '627'
+  codigo: '1359'
+  nombre: Servicios Electricos U
+  archivos:
+    CSV: 627-Modulo1359
+    SPSS: 627-Modulo1359
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '627'
+  codigo: '1360'
+  nombre: Transportes y Comunicaciones F2
+  archivos:
+    CSV: 627-Modulo1360
+    SPSS: 627-Modulo1360
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '627'
+  codigo: '1361'
+  nombre: Universidades no Estatales U
+  archivos:
+    CSV: 627-Modulo1361
+    SPSS: 627-Modulo1361
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '627'
+  codigo: '1362'
+  nombre: Restaurantes R2
+  archivos:
+    CSV: 627-Modulo1362
+    SPSS: 627-Modulo1362
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '627'
+  codigo: '1363'
+  nombre: Servicios F2
+  archivos:
+    CSV: 627-Modulo1363
+    SPSS: 627-Modulo1363
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '627'
+  codigo: '1364'
+  nombre: Agroindustria M
+  archivos:
+    CSV: 627-Modulo1364
+    SPSS: 627-Modulo1364
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '627'
+  codigo: '1365'
+  nombre: Comercio M
+  archivos:
+    CSV: 627-Modulo1365
+    SPSS: 627-Modulo1365
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '627'
+  codigo: '1366'
+  nombre: Construcción M
+  archivos:
+    CSV: 627-Modulo1366
+    SPSS: 627-Modulo1366
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '627'
+  codigo: '1367'
+  nombre: Manufactura M
+  archivos:
+    CSV: 627-Modulo1367
+    SPSS: 627-Modulo1367
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '627'
+  codigo: '1368'
+  nombre: Transportes y Comunicaciones M
+  archivos:
+    CSV: 627-Modulo1368
+    SPSS: 627-Modulo1368
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '627'
+  codigo: '1369'
+  nombre: Servicios M
+  archivos:
+    CSV: 627-Modulo1369
+    SPSS: 627-Modulo1369
+- anio: 2017
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '627'
+  codigo: '1787'
+  nombre: TICS para todos los sectores
+  archivos:
+    CSV: 627-Modulo1787
+    SPSS: 627-Modulo1787
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '645'
+  codigo: '1428'
+  nombre: Capítulo 01 para todos los sectores
+  archivos:
+    CSV: 645-Modulo1428
+    SPSS: 645-Modulo1428
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '645'
+  codigo: '1429'
+  nombre: Agencia de Viajes B1
+  archivos:
+    CSV: 645-Modulo1429
+    SPSS: 645-Modulo1429
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '645'
+  codigo: '1430'
+  nombre: Agroindustria F2
+  archivos:
+    CSV: 645-Modulo1430
+    SPSS: 645-Modulo1430
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '645'
+  codigo: '1431'
+  nombre: Centros Educativos no Estatales U
+  archivos:
+    CSV: 645-Modulo1431
+    SPSS: 645-Modulo1431
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '645'
+  codigo: '1432'
+  nombre: Comercio F2
+  archivos:
+    CSV: 645-Modulo1432
+    SPSS: 645-Modulo1432
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '645'
+  codigo: '1433'
+  nombre: Construcción F2
+  archivos:
+    CSV: 645-Modulo1433
+    SPSS: 645-Modulo1433
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '645'
+  codigo: '1434'
+  nombre: Establecimientos de Hospedaje A1
+  archivos:
+    CSV: 645-Modulo1434
+    SPSS: 645-Modulo1434
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '645'
+  codigo: '1435'
+  nombre: Hidrocarburos U
+  archivos:
+    CSV: 645-Modulo1435
+    SPSS: 645-Modulo1435
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '645'
+  codigo: '1436'
+  nombre: Acuicultuta A
+  archivos:
+    CSV: 645-Modulo1436
+    SPSS: 645-Modulo1436
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '645'
+  codigo: '1437'
+  nombre: Pesca P
+  archivos:
+    CSV: 645-Modulo1437
+    SPSS: 645-Modulo1437
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '645'
+  codigo: '1438'
+  nombre: Manufactura D2
+  archivos:
+    CSV: 645-Modulo1438
+    SPSS: 645-Modulo1438
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '645'
+  codigo: '1439'
+  nombre: Servicios Electricos U
+  archivos:
+    CSV: 645-Modulo1439
+    SPSS: 645-Modulo1439
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '645'
+  codigo: '1440'
+  nombre: Transportes y Comunicaciones F2
+  archivos:
+    CSV: 645-Modulo1440
+    SPSS: 645-Modulo1440
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '645'
+  codigo: '1441'
+  nombre: Universidades no Estatales U
+  archivos:
+    CSV: 645-Modulo1441
+    SPSS: 645-Modulo1441
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '645'
+  codigo: '1442'
+  nombre: Restaurantes R2
+  archivos:
+    CSV: 645-Modulo1442
+    SPSS: 645-Modulo1442
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '645'
+  codigo: '1443'
+  nombre: Servicios F2
+  archivos:
+    CSV: 645-Modulo1443
+    SPSS: 645-Modulo1443
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '645'
+  codigo: '1444'
+  nombre: Agroindustria M
+  archivos:
+    CSV: 645-Modulo1444
+    SPSS: 645-Modulo1444
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '645'
+  codigo: '1445'
+  nombre: Comercio M
+  archivos:
+    CSV: 645-Modulo1445
+    SPSS: 645-Modulo1445
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '645'
+  codigo: '1446'
+  nombre: Construcción M
+  archivos:
+    CSV: 645-Modulo1446
+    SPSS: 645-Modulo1446
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '645'
+  codigo: '1447'
+  nombre: Manufactura M
+  archivos:
+    CSV: 645-Modulo1447
+    SPSS: 645-Modulo1447
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '645'
+  codigo: '1448'
+  nombre: Transportes y Comunicaciones M
+  archivos:
+    CSV: 645-Modulo1448
+    SPSS: 645-Modulo1448
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '645'
+  codigo: '1449'
+  nombre: Servicios M
+  archivos:
+    CSV: 645-Modulo1449
+    SPSS: 645-Modulo1449
+- anio: 2018
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '645'
+  codigo: '1787'
+  nombre: TICS para todos los sectores
+  archivos:
+    CSV: 645-Modulo1787
+    SPSS: 645-Modulo1787
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '733'
+  codigo: '1592'
+  nombre: Capítulo 01 para todos los sectores
+  archivos:
+    CSV: 733-Modulo1592
+    SPSS: 733-Modulo1592
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '733'
+  codigo: '1593'
+  nombre: Agencia de Viajes B1
+  archivos:
+    CSV: 733-Modulo1593
+    SPSS: 733-Modulo1593
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '733'
+  codigo: '1594'
+  nombre: Agroindustria F2
+  archivos:
+    CSV: 733-Modulo1594
+    SPSS: 733-Modulo1594
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '733'
+  codigo: '1595'
+  nombre: Centros Educativos no Estatales U
+  archivos:
+    CSV: 733-Modulo1595
+    SPSS: 733-Modulo1595
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '733'
+  codigo: '1596'
+  nombre: Comercio F2
+  archivos:
+    CSV: 733-Modulo1596
+    SPSS: 733-Modulo1596
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '733'
+  codigo: '1597'
+  nombre: Construcción F2
+  archivos:
+    CSV: 733-Modulo1597
+    SPSS: 733-Modulo1597
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '733'
+  codigo: '1598'
+  nombre: Establecimientos de Hospedaje A1
+  archivos:
+    CSV: 733-Modulo1598
+    SPSS: 733-Modulo1598
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '733'
+  codigo: '1599'
+  nombre: Hidrocarburos U
+  archivos:
+    CSV: 733-Modulo1599
+    SPSS: 733-Modulo1599
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '733'
+  codigo: '1600'
+  nombre: Acuicultuta A
+  archivos:
+    CSV: 733-Modulo1600
+    SPSS: 733-Modulo1600
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '733'
+  codigo: '1601'
+  nombre: Pesca P
+  archivos:
+    CSV: 733-Modulo1601
+    SPSS: 733-Modulo1601
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '733'
+  codigo: '1602'
+  nombre: Manufactura D2
+  archivos:
+    CSV: 733-Modulo1602
+    SPSS: 733-Modulo1602
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '733'
+  codigo: '1603'
+  nombre: Servicios Electricos U
+  archivos:
+    CSV: 733-Modulo1603
+    SPSS: 733-Modulo1603
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '733'
+  codigo: '1604'
+  nombre: Transportes y Comunicaciones F2
+  archivos:
+    CSV: 733-Modulo1604
+    SPSS: 733-Modulo1604
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '733'
+  codigo: '1605'
+  nombre: Universidades no Estatales U
+  archivos:
+    CSV: 733-Modulo1605
+    SPSS: 733-Modulo1605
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '733'
+  codigo: '1606'
+  nombre: Restaurantes R2
+  archivos:
+    CSV: 733-Modulo1606
+    SPSS: 733-Modulo1606
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '733'
+  codigo: '1607'
+  nombre: Servicios F2
+  archivos:
+    CSV: 733-Modulo1607
+    SPSS: 733-Modulo1607
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '733'
+  codigo: '1608'
+  nombre: Agroindustria M
+  archivos:
+    CSV: 733-Modulo1608
+    SPSS: 733-Modulo1608
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '733'
+  codigo: '1609'
+  nombre: Comercio M
+  archivos:
+    CSV: 733-Modulo1609
+    SPSS: 733-Modulo1609
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '733'
+  codigo: '1610'
+  nombre: Construcción M
+  archivos:
+    CSV: 733-Modulo1610
+    SPSS: 733-Modulo1610
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '733'
+  codigo: '1611'
+  nombre: Manufactura M
+  archivos:
+    CSV: 733-Modulo1611
+    SPSS: 733-Modulo1611
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '733'
+  codigo: '1612'
+  nombre: Transportes y Comunicaciones M
+  archivos:
+    CSV: 733-Modulo1612
+    SPSS: 733-Modulo1612
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '733'
+  codigo: '1613'
+  nombre: Servicios M
+  archivos:
+    CSV: 733-Modulo1613
+    SPSS: 733-Modulo1613
+- anio: 2019
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '733'
+  codigo: '1787'
+  nombre: TICS para todos los sectores
+  archivos:
+    CSV: 733-Modulo1787
+    SPSS: 733-Modulo1787
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '767'
+  codigo: '1686'
+  nombre: Capítulo 01 para todos los sectores
+  archivos:
+    CSV: 767-Modulo1686
+    SPSS: 767-Modulo1686
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '767'
+  codigo: '1687'
+  nombre: Agencia de Viajes F2
+  archivos:
+    CSV: 767-Modulo1687
+    SPSS: 767-Modulo1687
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '767'
+  codigo: '1688'
+  nombre: Centros Educativos no Estatales F2
+  archivos:
+    CSV: 767-Modulo1688
+    SPSS: 767-Modulo1688
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '767'
+  codigo: '1689'
+  nombre: Comercio F1
+  archivos:
+    CSV: 767-Modulo1689
+    SPSS: 767-Modulo1689
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '767'
+  codigo: '1690'
+  nombre: Construcción F2
+  archivos:
+    CSV: 767-Modulo1690
+    SPSS: 767-Modulo1690
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '767'
+  codigo: '1691'
+  nombre: Establecimientos de Hospedaje F2
+  archivos:
+    CSV: 767-Modulo1691
+    SPSS: 767-Modulo1691
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '767'
+  codigo: '1692'
+  nombre: Hidrocarburos F2
+  archivos:
+    CSV: 767-Modulo1692
+    SPSS: 767-Modulo1692
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '767'
+  codigo: '1693'
+  nombre: Acuicultuta A
+  archivos:
+    CSV: 767-Modulo1693
+    SPSS: 767-Modulo1693
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '767'
+  codigo: '1694'
+  nombre: Pesca F2
+  archivos:
+    CSV: 767-Modulo1694
+    SPSS: 767-Modulo1694
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '767'
+  codigo: '1695'
+  nombre: Manufactura D2
+  archivos:
+    CSV: 767-Modulo1695
+    SPSS: 767-Modulo1695
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '767'
+  codigo: '1696'
+  nombre: Servicios Electricos F2
+  archivos:
+    CSV: 767-Modulo1696
+    SPSS: 767-Modulo1696
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '767'
+  codigo: '1697'
+  nombre: Transportes y Comunicaciones F2
+  archivos:
+    CSV: 767-Modulo1697
+    SPSS: 767-Modulo1697
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '767'
+  codigo: '1698'
+  nombre: Universidades no Estatales F2
+  archivos:
+    CSV: 767-Modulo1698
+    SPSS: 767-Modulo1698
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '767'
+  codigo: '1699'
+  nombre: Restaurantes F2
+  archivos:
+    CSV: 767-Modulo1699
+    SPSS: 767-Modulo1699
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '767'
+  codigo: '1700'
+  nombre: Servicios F2
+  archivos:
+    CSV: 767-Modulo1700
+    SPSS: 767-Modulo1700
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '767'
+  codigo: '1701'
+  nombre: Agencia de Viajes M
+  archivos:
+    CSV: 767-Modulo1701
+    SPSS: 767-Modulo1701
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '767'
+  codigo: '1702'
+  nombre: Centros Educativos no Estatales M
+  archivos:
+    CSV: 767-Modulo1702
+    SPSS: 767-Modulo1702
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '767'
+  codigo: '1703'
+  nombre: Comercio M
+  archivos:
+    CSV: 767-Modulo1703
+    SPSS: 767-Modulo1703
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '767'
+  codigo: '1704'
+  nombre: Construcción M
+  archivos:
+    CSV: 767-Modulo1704
+    SPSS: 767-Modulo1704
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '767'
+  codigo: '1705'
+  nombre: Establecimientos de Hospedaje M
+  archivos:
+    CSV: 767-Modulo1705
+    SPSS: 767-Modulo1705
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '767'
+  codigo: '1706'
+  nombre: Pesca M
+  archivos:
+    CSV: 767-Modulo1706
+    SPSS: 767-Modulo1706
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '767'
+  codigo: '1707'
+  nombre: Manufactura M
+  archivos:
+    CSV: 767-Modulo1707
+    SPSS: 767-Modulo1707
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '767'
+  codigo: '1708'
+  nombre: Transportes y Comunicaciones M
+  archivos:
+    CSV: 767-Modulo1708
+    SPSS: 767-Modulo1708
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '767'
+  codigo: '1709'
+  nombre: Restaurantes M
+  archivos:
+    CSV: 767-Modulo1709
+    SPSS: 767-Modulo1709
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '767'
+  codigo: '1710'
+  nombre: Servicios M
+  archivos:
+    CSV: 767-Modulo1710
+    SPSS: 767-Modulo1710
+- anio: 2020
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '767'
+  codigo: '1787'
+  nombre: TICS para todos los sectores
+  archivos:
+    CSV: 767-Modulo1787
+    SPSS: 767-Modulo1787
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '975'
+  codigo: '1914'
+  nombre: Capítulo 01 para todos los sectores
+  archivos:
+    CSV: 975-Modulo1914
+    SPSS: 975-Modulo1914
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '975'
+  codigo: '1915'
+  nombre: Agencia de Viajes F2
+  archivos:
+    CSV: 975-Modulo1915
+    SPSS: 975-Modulo1915
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '975'
+  codigo: '1916'
+  nombre: Centros Educativos no Estatales F2
+  archivos:
+    CSV: 975-Modulo1916
+    SPSS: 975-Modulo1916
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '975'
+  codigo: '1917'
+  nombre: Comercio F1
+  archivos:
+    CSV: 975-Modulo1917
+    SPSS: 975-Modulo1917
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '975'
+  codigo: '1918'
+  nombre: Construcción F2
+  archivos:
+    CSV: 975-Modulo1918
+    SPSS: 975-Modulo1918
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '975'
+  codigo: '1919'
+  nombre: Establecimientos de Hospedaje F2
+  archivos:
+    CSV: 975-Modulo1919
+    SPSS: 975-Modulo1919
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '975'
+  codigo: '1920'
+  nombre: Hidrocarburos F2
+  archivos:
+    CSV: 975-Modulo1920
+    SPSS: 975-Modulo1920
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '975'
+  codigo: '1921'
+  nombre: Acuicultuta A
+  archivos:
+    CSV: 975-Modulo1921
+    SPSS: 975-Modulo1921
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '975'
+  codigo: '1922'
+  nombre: Pesca F2
+  archivos:
+    CSV: 975-Modulo1922
+    SPSS: 975-Modulo1922
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '975'
+  codigo: '1923'
+  nombre: Manufactura D2
+  archivos:
+    CSV: 975-Modulo1923
+    SPSS: 975-Modulo1923
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '975'
+  codigo: '1924'
+  nombre: Servicios Electricos F2
+  archivos:
+    CSV: 975-Modulo1924
+    SPSS: 975-Modulo1924
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '975'
+  codigo: '1925'
+  nombre: Transportes y Comunicaciones F2
+  archivos:
+    CSV: 975-Modulo1925
+    SPSS: 975-Modulo1925
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '975'
+  codigo: '1926'
+  nombre: Universidades no Estatales F2
+  archivos:
+    CSV: 975-Modulo1926
+    SPSS: 975-Modulo1926
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '975'
+  codigo: '1927'
+  nombre: Restaurantes F2
+  archivos:
+    CSV: 975-Modulo1927
+    SPSS: 975-Modulo1927
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '975'
+  codigo: '1928'
+  nombre: Servicios F2
+  archivos:
+    CSV: 975-Modulo1928
+    SPSS: 975-Modulo1928
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '975'
+  codigo: '1929'
+  nombre: Agencia de Viajes M
+  archivos:
+    CSV: 975-Modulo1929
+    SPSS: 975-Modulo1929
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '975'
+  codigo: '1930'
+  nombre: Centros Educativos no Estatales M
+  archivos:
+    CSV: 975-Modulo1930
+    SPSS: 975-Modulo1930
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '975'
+  codigo: '1931'
+  nombre: Comercio M
+  archivos:
+    CSV: 975-Modulo1931
+    SPSS: 975-Modulo1931
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '975'
+  codigo: '1932'
+  nombre: Construcción M
+  archivos:
+    CSV: 975-Modulo1932
+    SPSS: 975-Modulo1932
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '975'
+  codigo: '1933'
+  nombre: Establecimientos de Hospedaje M
+  archivos:
+    CSV: 975-Modulo1933
+    SPSS: 975-Modulo1933
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '975'
+  codigo: '1934'
+  nombre: Pesca M
+  archivos:
+    CSV: 975-Modulo1934
+    SPSS: 975-Modulo1934
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '975'
+  codigo: '1935'
+  nombre: Manufactura M
+  archivos:
+    CSV: 975-Modulo1935
+    SPSS: 975-Modulo1935
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '975'
+  codigo: '1936'
+  nombre: Transportes y Comunicaciones M
+  archivos:
+    CSV: 975-Modulo1936
+    SPSS: 975-Modulo1936
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '975'
+  codigo: '1937'
+  nombre: Restaurantes M
+  archivos:
+    CSV: 975-Modulo1937
+    SPSS: 975-Modulo1937
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '975'
+  codigo: '1938'
+  nombre: Servicios M
+  archivos:
+    CSV: 975-Modulo1938
+    SPSS: 975-Modulo1938
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '975'
+  codigo: '1939'
+  nombre: TICS para todos los sectores
+  archivos:
+    CSV: 975-Modulo1939
+    SPSS: 975-Modulo1939
+- anio: 2021
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '975'
+  codigo: '1940'
+  nombre: Seguridad para todos los sectores
+  archivos:
+    CSV: 975-Modulo1940
+    SPSS: 975-Modulo1940
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '988'
+  codigo: '1993'
+  nombre: Capítulo 01 para todos los sectores
+  archivos:
+    CSV: 988-Modulo1993
+    SPSS: 988-Modulo1993
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '988'
+  codigo: '1994'
+  nombre: Agencia de Viajes F2
+  archivos:
+    CSV: 988-Modulo1994
+    SPSS: 988-Modulo1994
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '988'
+  codigo: '1995'
+  nombre: Centros Educativos no Estatales F2
+  archivos:
+    CSV: 988-Modulo1995
+    SPSS: 988-Modulo1995
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '988'
+  codigo: '1996'
+  nombre: Comercio F2
+  archivos:
+    CSV: 988-Modulo1996
+    SPSS: 988-Modulo1996
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '988'
+  codigo: '1997'
+  nombre: Construcción F2
+  archivos:
+    CSV: 988-Modulo1997
+    SPSS: 988-Modulo1997
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '988'
+  codigo: '1998'
+  nombre: Establecimientos de Hospedaje F2
+  archivos:
+    CSV: 988-Modulo1998
+    SPSS: 988-Modulo1998
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '988'
+  codigo: '1999'
+  nombre: Hidrocarburos F2
+  archivos:
+    CSV: 988-Modulo1999
+    SPSS: 988-Modulo1999
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '988'
+  codigo: '2000'
+  nombre: Pesca F2
+  archivos:
+    CSV: 988-Modulo2000
+    SPSS: 988-Modulo2000
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '988'
+  codigo: '2001'
+  nombre: Manufactura F2
+  archivos:
+    CSV: 988-Modulo2001
+    SPSS: 988-Modulo2001
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '988'
+  codigo: '2002'
+  nombre: Servicios Electricos F2
+  archivos:
+    CSV: 988-Modulo2002
+    SPSS: 988-Modulo2002
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '988'
+  codigo: '2003'
+  nombre: Transportes y Comunicaciones F2
+  archivos:
+    CSV: 988-Modulo2003
+    SPSS: 988-Modulo2003
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '988'
+  codigo: '2004'
+  nombre: Universidades no Estatales F2
+  archivos:
+    CSV: 988-Modulo2004
+    SPSS: 988-Modulo2004
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '988'
+  codigo: '2005'
+  nombre: Restaurantes F2
+  archivos:
+    CSV: 988-Modulo2005
+    SPSS: 988-Modulo2005
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '988'
+  codigo: '2006'
+  nombre: Servicios F2
+  archivos:
+    CSV: 988-Modulo2006
+    SPSS: 988-Modulo2006
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '988'
+  codigo: '2007'
+  nombre: Mineria F2
+  archivos:
+    CSV: 988-Modulo2007
+    SPSS: 988-Modulo2007
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '988'
+  codigo: '2008'
+  nombre: Agencia de Viajes M
+  archivos:
+    CSV: 988-Modulo2008
+    SPSS: 988-Modulo2008
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '988'
+  codigo: '2009'
+  nombre: Centros Educativos no Estatales M
+  archivos:
+    CSV: 988-Modulo2009
+    SPSS: 988-Modulo2009
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '988'
+  codigo: '2010'
+  nombre: Comercio M
+  archivos:
+    CSV: 988-Modulo2010
+    SPSS: 988-Modulo2010
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '988'
+  codigo: '2011'
+  nombre: Construcción M
+  archivos:
+    CSV: 988-Modulo2011
+    SPSS: 988-Modulo2011
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '988'
+  codigo: '2012'
+  nombre: Establecimientos de Hospedaje M
+  archivos:
+    CSV: 988-Modulo2012
+    SPSS: 988-Modulo2012
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '988'
+  codigo: '2013'
+  nombre: Pesca M
+  archivos:
+    CSV: 988-Modulo2013
+    SPSS: 988-Modulo2013
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '988'
+  codigo: '2014'
+  nombre: Manufactura M
+  archivos:
+    CSV: 988-Modulo2014
+    SPSS: 988-Modulo2014
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '988'
+  codigo: '2015'
+  nombre: Transportes y Comunicaciones M
+  archivos:
+    CSV: 988-Modulo2015
+    SPSS: 988-Modulo2015
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '988'
+  codigo: '2016'
+  nombre: Restaurantes M
+  archivos:
+    CSV: 988-Modulo2016
+    SPSS: 988-Modulo2016
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '988'
+  codigo: '2017'
+  nombre: Servicios M
+  archivos:
+    CSV: 988-Modulo2017
+    SPSS: 988-Modulo2017
+- anio: 2022
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '988'
+  codigo: '2018'
+  nombre: Mineria M
+  archivos:
+    CSV: 988-Modulo2018
+    SPSS: 988-Modulo2018
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '987'
+  codigo: '1965'
+  nombre: Capítulo 01 para todos los sectores
+  archivos:
+    CSV: 987-Modulo1965
+    SPSS: 987-Modulo1965
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '987'
+  codigo: '1966'
+  nombre: Agencia de Viajes F2
+  archivos:
+    CSV: 987-Modulo1966
+    SPSS: 987-Modulo1966
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '987'
+  codigo: '1967'
+  nombre: Centros Educativos no Estatales F2
+  archivos:
+    CSV: 987-Modulo1967
+    SPSS: 987-Modulo1967
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '987'
+  codigo: '1968'
+  nombre: Comercio F2
+  archivos:
+    CSV: 987-Modulo1968
+    SPSS: 987-Modulo1968
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '987'
+  codigo: '1969'
+  nombre: Construcción F2
+  archivos:
+    CSV: 987-Modulo1969
+    SPSS: 987-Modulo1969
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '987'
+  codigo: '1970'
+  nombre: Establecimientos de Hospedaje F2
+  archivos:
+    CSV: 987-Modulo1970
+    SPSS: 987-Modulo1970
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '987'
+  codigo: '1971'
+  nombre: Hidrocarburos F2
+  archivos:
+    CSV: 987-Modulo1971
+    SPSS: 987-Modulo1971
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '987'
+  codigo: '1972'
+  nombre: Acuicultuta F2
+  archivos:
+    CSV: 987-Modulo1972
+    SPSS: 987-Modulo1972
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '987'
+  codigo: '1973'
+  nombre: Pesca F2
+  archivos:
+    CSV: 987-Modulo1973
+    SPSS: 987-Modulo1973
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '987'
+  codigo: '1974'
+  nombre: Manufactura F2
+  archivos:
+    CSV: 987-Modulo1974
+    SPSS: 987-Modulo1974
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '987'
+  codigo: '1975'
+  nombre: Servicios Electricos F2
+  archivos:
+    CSV: 987-Modulo1975
+    SPSS: 987-Modulo1975
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '987'
+  codigo: '1976'
+  nombre: Transportes y Comunicaciones F2
+  archivos:
+    CSV: 987-Modulo1976
+    SPSS: 987-Modulo1976
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '987'
+  codigo: '1977'
+  nombre: Universidades no Estatales F2
+  archivos:
+    CSV: 987-Modulo1977
+    SPSS: 987-Modulo1977
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '987'
+  codigo: '1978'
+  nombre: Restaurantes F2
+  archivos:
+    CSV: 987-Modulo1978
+    SPSS: 987-Modulo1978
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '987'
+  codigo: '1979'
+  nombre: Servicios F2
+  archivos:
+    CSV: 987-Modulo1979
+    SPSS: 987-Modulo1979
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '987'
+  codigo: '1980'
+  nombre: Agencia de Viajes M
+  archivos:
+    CSV: 987-Modulo1980
+    SPSS: 987-Modulo1980
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '987'
+  codigo: '1981'
+  nombre: Centros Educativos no Estatales M
+  archivos:
+    CSV: 987-Modulo1981
+    SPSS: 987-Modulo1981
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '987'
+  codigo: '1982'
+  nombre: Comercio M
+  archivos:
+    CSV: 987-Modulo1982
+    SPSS: 987-Modulo1982
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '987'
+  codigo: '1983'
+  nombre: Construcción M
+  archivos:
+    CSV: 987-Modulo1983
+    SPSS: 987-Modulo1983
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '987'
+  codigo: '1984'
+  nombre: Establecimientos de Hospedaje M
+  archivos:
+    CSV: 987-Modulo1984
+    SPSS: 987-Modulo1984
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '987'
+  codigo: '1985'
+  nombre: Acuicultuta M
+  archivos:
+    CSV: 987-Modulo1985
+    SPSS: 987-Modulo1985
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '987'
+  codigo: '1986'
+  nombre: Pesca M
+  archivos:
+    CSV: 987-Modulo1986
+    SPSS: 987-Modulo1986
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '987'
+  codigo: '1987'
+  nombre: Manufactura M
+  archivos:
+    CSV: 987-Modulo1987
+    SPSS: 987-Modulo1987
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '987'
+  codigo: '1988'
+  nombre: Transportes y Comunicaciones M
+  archivos:
+    CSV: 987-Modulo1988
+    SPSS: 987-Modulo1988
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '987'
+  codigo: '1989'
+  nombre: Restaurantes M
+  archivos:
+    CSV: 987-Modulo1989
+    SPSS: 987-Modulo1989
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '987'
+  codigo: '1990'
+  nombre: Servicios M
+  archivos:
+    CSV: 987-Modulo1990
+    SPSS: 987-Modulo1990
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '987'
+  codigo: '1991'
+  nombre: TICS para todos los sectores
+  archivos:
+    CSV: 987-Modulo1991
+    SPSS: 987-Modulo1991
+- anio: 2023
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '987'
+  codigo: '1992'
+  nombre: Seguridad para todos los sectores
+  archivos:
+    CSV: 987-Modulo1992
+    SPSS: 987-Modulo1992
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '1026'
+  codigo: '2042'
+  nombre: Capítulo 01 para todos los sectores
+  archivos:
+    CSV: 1026-Modulo2042
+    SPSS: 1026-Modulo2042
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '1026'
+  codigo: '2043'
+  nombre: Agencia de Viajes F2
+  archivos:
+    CSV: 1026-Modulo2043
+    SPSS: 1026-Modulo2043
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '1026'
+  codigo: '2044'
+  nombre: Centros Educativos no Estatales F2
+  archivos:
+    CSV: 1026-Modulo2044
+    SPSS: 1026-Modulo2044
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '1026'
+  codigo: '2045'
+  nombre: Comercio F2
+  archivos:
+    CSV: 1026-Modulo2045
+    SPSS: 1026-Modulo2045
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '1026'
+  codigo: '2046'
+  nombre: Construcción F2
+  archivos:
+    CSV: 1026-Modulo2046
+    SPSS: 1026-Modulo2046
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '1026'
+  codigo: '2047'
+  nombre: Establecimientos de Hospedaje F2
+  archivos:
+    CSV: 1026-Modulo2047
+    SPSS: 1026-Modulo2047
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '1026'
+  codigo: '2048'
+  nombre: Hidrocarburos F2
+  archivos:
+    CSV: 1026-Modulo2048
+    SPSS: 1026-Modulo2048
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '1026'
+  codigo: '2049'
+  nombre: Acuicultuta F2
+  archivos:
+    CSV: 1026-Modulo2049
+    SPSS: 1026-Modulo2049
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '1026'
+  codigo: '2050'
+  nombre: Pesca F2
+  archivos:
+    CSV: 1026-Modulo2050
+    SPSS: 1026-Modulo2050
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '1026'
+  codigo: '2051'
+  nombre: Manufactura F2
+  archivos:
+    CSV: 1026-Modulo2051
+    SPSS: 1026-Modulo2051
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '1026'
+  codigo: '2052'
+  nombre: Servicios Electricos F2
+  archivos:
+    CSV: 1026-Modulo2052
+    SPSS: 1026-Modulo2052
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '1026'
+  codigo: '2053'
+  nombre: Transportes y Comunicaciones F2
+  archivos:
+    CSV: 1026-Modulo2053
+    SPSS: 1026-Modulo2053
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '1026'
+  codigo: '2054'
+  nombre: Universidades no Estatales F2
+  archivos:
+    CSV: 1026-Modulo2054
+    SPSS: 1026-Modulo2054
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '1026'
+  codigo: '2055'
+  nombre: Restaurantes F2
+  archivos:
+    CSV: 1026-Modulo2055
+    SPSS: 1026-Modulo2055
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '1026'
+  codigo: '2056'
+  nombre: Servicios F2
+  archivos:
+    CSV: 1026-Modulo2056
+    SPSS: 1026-Modulo2056
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '1026'
+  codigo: '2057'
+  nombre: Agencia de Viajes M
+  archivos:
+    CSV: 1026-Modulo2057
+    SPSS: 1026-Modulo2057
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '1026'
+  codigo: '2058'
+  nombre: Centros Educativos no Estatales M
+  archivos:
+    CSV: 1026-Modulo2058
+    SPSS: 1026-Modulo2058
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '1026'
+  codigo: '2059'
+  nombre: Comercio M
+  archivos:
+    CSV: 1026-Modulo2059
+    SPSS: 1026-Modulo2059
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '1026'
+  codigo: '2060'
+  nombre: Construcción M
+  archivos:
+    CSV: 1026-Modulo2060
+    SPSS: 1026-Modulo2060
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '1026'
+  codigo: '2061'
+  nombre: Establecimientos de Hospedaje M
+  archivos:
+    CSV: 1026-Modulo2061
+    SPSS: 1026-Modulo2061
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '1026'
+  codigo: '2062'
+  nombre: Acuicultuta M
+  archivos:
+    CSV: 1026-Modulo2062
+    SPSS: 1026-Modulo2062
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '1026'
+  codigo: '2063'
+  nombre: Pesca M
+  archivos:
+    CSV: 1026-Modulo2063
+    SPSS: 1026-Modulo2063
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '1026'
+  codigo: '2064'
+  nombre: Manufactura M
+  archivos:
+    CSV: 1026-Modulo2064
+    SPSS: 1026-Modulo2064
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '1026'
+  codigo: '2065'
+  nombre: Transportes y Comunicaciones M
+  archivos:
+    CSV: 1026-Modulo2065
+    SPSS: 1026-Modulo2065
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '1026'
+  codigo: '2066'
+  nombre: Restaurantes M
+  archivos:
+    CSV: 1026-Modulo2066
+    SPSS: 1026-Modulo2066
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '1026'
+  codigo: '2067'
+  nombre: Servicios M
+  archivos:
+    CSV: 1026-Modulo2067
+    SPSS: 1026-Modulo2067
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '1026'
+  codigo: '2068'
+  nombre: Microempresas
+  archivos:
+    CSV: 1026-Modulo2068
+    SPSS: 1026-Modulo2068
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '1026'
+  codigo: '2069'
+  nombre: TICS para todos los sectores
+  archivos:
+    CSV: 1026-Modulo2069
+    SPSS: 1026-Modulo2069
+- anio: 2024
+  periodo: Anual
+  serie: principal
+  encuesta_inei: '1026'
+  codigo: '2070'
+  nombre: Seguridad para todos los sectores
+  archivos:
+    CSV: 1026-Modulo2070
+    SPSS: 1026-Modulo2070

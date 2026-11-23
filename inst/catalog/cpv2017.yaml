@@ -1,0 +1,47 @@
+id: cpv2017
+siglas: CPV 2017
+nombre: 'Censos Nacionales 2017: XII de Población, VII de Vivienda y III de Comunidades Indígenas'
+organismo: INEI
+tipo: censo
+fuente: inei_censo
+redatam:
+  distrital: https://censos2017.inei.gob.pe/bininei/RpWebEngine.exe/Portal?BASE=CPV2017DI&lang=esp
+  manzana: https://www.gob.pe/24124-consultar-base-de-datos-a-nivel-de-manzana
+  nota: REDATAM permite frecuencias y cruces por distrito; exporta a Excel. No hay un archivo público único de microdatos.
+tabulados: https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib1544/
+formatos: [XLSX, consulta REDATAM]
+anios: [2017]
+unidad: vivienda, hogar y persona (censo completo)
+ubigeo: UBIGEO de 6 dígitos (versión 2017)
+diseno:
+  peso: []
+  escala: 1
+  estrato: []
+  conglomerado: []
+  verificado: true
+  nota: 'No aplica: es un censo completo.'
+siguiente:
+  anio: 2025
+  nota: El INEI ya publica tabulados del Censo 2025 (redatamcpv2025.inei.gob.pe). Se agrega como año nuevo cuando salga la base completa.
+estado: Solo tabulados oficiales y consultas REDATAM. El adaptador REDATAM está por escribir.
+modulos:
+- anio: 2017
+  codigo: CPV2017-00-tomo-01
+  nombre: 'Resultados definitivos: Tomo 1'
+  url: https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib1544/cuadros/00TOMO_01.xlsx
+- anio: 2017
+  codigo: CPV2017-00-tomo-02
+  nombre: 'Resultados definitivos: Tomo 2'
+  url: https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib1544/cuadros/00TOMO_02.xlsx
+- anio: 2017
+  codigo: CPV2017-00-tomo-03
+  nombre: 'Resultados definitivos: Tomo 3'
+  url: https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib1544/cuadros/00TOMO_03.xlsx
+- anio: 2017
+  codigo: CPV2017-00-tomo-04
+  nombre: 'Resultados definitivos: Tomo 4'
+  url: https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib1544/cuadros/00TOMO_04.xlsx
+- anio: 2017
+  codigo: CPV2017-00-tomo-05
+  nombre: 'Resultados definitivos: Tomo 5'
+  url: https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib1544/cuadros/00TOMO_05.xlsx

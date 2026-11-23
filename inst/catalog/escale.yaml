@@ -1,0 +1,396 @@
+id: escale
+siglas: CE
+nombre: Censo Educativo (Censo Escolar)
+organismo: MINEDU, Unidad de Estadística (ESCALE)
+tipo: censo
+fuente: escale_dir
+url: https://escale.minedu.gob.pe/documents/inicio/Bases%20de%20datos/A.%20Censo%20Educativo/{anio}/{archivo}
+listado: https://escale.minedu.gob.pe/documents/inicio/Bases%20de%20datos/A.%20Censo%20Educativo/{anio}/
+formatos: [ZIP (DBF o CSV según el año)]
+anios: [2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
+unidad: servicio educativo y local escolar
+ubigeo: CODGEO o UBIGEO según el año (por verificar)
+diseno:
+  peso: []
+  escala: 1
+  estrato: []
+  conglomerado: []
+  verificado: true
+  nota: 'No aplica: es un censo.'
+estado: Los archivos de cada año se descubren leyendo el listado del directorio. Abajo va el listado de 2025 visto el 23 de noviembre de 2026.
+modulos:
+- anio: 2025
+  codigo: '10'
+  nombre: 10_Lineal_1A_1
+  archivos:
+    ZIP: 10_Lineal_1A_1
+- anio: 2025
+  codigo: '11'
+  nombre: 11_Lineal_1A_2
+  archivos:
+    ZIP: 11_Lineal_1A_2
+- anio: 2025
+  codigo: '12'
+  nombre: 12_Lineal_1A_3
+  archivos:
+    ZIP: 12_Lineal_1A_3
+- anio: 2025
+  codigo: '13'
+  nombre: 13_Lineal_2A_1
+  archivos:
+    ZIP: 13_Lineal_2A_1
+- anio: 2025
+  codigo: '14'
+  nombre: 14_Lineal_2A_2
+  archivos:
+    ZIP: 14_Lineal_2A_2
+- anio: 2025
+  codigo: '15'
+  nombre: 15_Lineal_3AP_1
+  archivos:
+    ZIP: 15_Lineal_3AP_1
+- anio: 2025
+  codigo: '16'
+  nombre: 16_Lineal_3AP_2
+  archivos:
+    ZIP: 16_Lineal_3AP_2
+- anio: 2025
+  codigo: '17'
+  nombre: 17_Lineal_3AP_3
+  archivos:
+    ZIP: 17_Lineal_3AP_3
+- anio: 2025
+  codigo: '18'
+  nombre: 18_Lineal_3AP_4
+  archivos:
+    ZIP: 18_Lineal_3AP_4
+- anio: 2025
+  codigo: '19'
+  nombre: 19_Lineal_3AS_1
+  archivos:
+    ZIP: 19_Lineal_3AS_1
+- anio: 2025
+  codigo: '20'
+  nombre: 20_Lineal_3AS_2
+  archivos:
+    ZIP: 20_Lineal_3AS_2
+- anio: 2025
+  codigo: '21'
+  nombre: 21_Lineal_3AS_3
+  archivos:
+    ZIP: 21_Lineal_3AS_3
+- anio: 2025
+  codigo: '22'
+  nombre: 22_Lineal_3AS_4
+  archivos:
+    ZIP: 22_Lineal_3AS_4
+- anio: 2025
+  codigo: '24'
+  nombre: 24_Lineal_4AA_2
+  archivos:
+    ZIP: 24_Lineal_4AA_2
+- anio: 2025
+  codigo: '23'
+  nombre: 23_Lineal_4AA_1
+  archivos:
+    ZIP: 23_Lineal_4AA_1
+- anio: 2025
+  codigo: '25'
+  nombre: 25_Lineal_4AA_3
+  archivos:
+    ZIP: 25_Lineal_4AA_3
+- anio: 2025
+  codigo: '26'
+  nombre: 26_Lineal_4AI_1
+  archivos:
+    ZIP: 26_Lineal_4AI_1
+- anio: 2025
+  codigo: '27'
+  nombre: 27_Lineal_4AI_2
+  archivos:
+    ZIP: 27_Lineal_4AI_2
+- anio: 2025
+  codigo: '28'
+  nombre: 28_Lineal_4AI_3
+  archivos:
+    ZIP: 28_Lineal_4AI_3
+- anio: 2025
+  codigo: '29'
+  nombre: 29_Lineal_5A
+  archivos:
+    ZIP: 29_Lineal_5A
+- anio: 2025
+  codigo: '30'
+  nombre: 30_Lineal_6A
+  archivos:
+    ZIP: 30_Lineal_6A
+- anio: 2025
+  codigo: '31'
+  nombre: 31_Lineal_7A
+  archivos:
+    ZIP: 31_Lineal_7A
+- anio: 2025
+  codigo: '32'
+  nombre: 32_Lineal_8A
+  archivos:
+    ZIP: 32_Lineal_8A
+- anio: 2025
+  codigo: '33'
+  nombre: 33_Lineal_8AI_1
+  archivos:
+    ZIP: 33_Lineal_8AI_1
+- anio: 2025
+  codigo: '34'
+  nombre: 34_Lineal_8AI_2
+  archivos:
+    ZIP: 34_Lineal_8AI_2
+- anio: 2025
+  codigo: '35'
+  nombre: 35_Lineal_8AP_1
+  archivos:
+    ZIP: 35_Lineal_8AP_1
+- anio: 2025
+  codigo: '36'
+  nombre: 36_Lineal_8AP_2
+  archivos:
+    ZIP: 36_Lineal_8AP_2
+- anio: 2025
+  codigo: '37'
+  nombre: 37_Lineal_9A
+  archivos:
+    ZIP: 37_Lineal_9A
+- anio: 2025
+  codigo: '38'
+  nombre: 38_Multiedad
+  archivos:
+    ZIP: 38_Multiedad
+- anio: 2025
+  codigo: '39'
+  nombre: 39_Horario
+  archivos:
+    ZIP: 39_Horario
+- anio: 2025
+  codigo: '40'
+  nombre: 40_Sec100_matrices
+  archivos:
+    ZIP: 40_Sec100_matrices
+- anio: 2025
+  codigo: '41'
+  nombre: 41_Materiales
+  archivos:
+    ZIP: 41_Materiales
+- anio: 2025
+  codigo: '43'
+  nombre: 43_Biblioteca
+  archivos:
+    ZIP: 43_Biblioteca
+- anio: 2025
+  codigo: '42'
+  nombre: 42_Equipamiento
+  archivos:
+    ZIP: 42_Equipamiento
+- anio: 2025
+  codigo: '44'
+  nombre: 44_Tutoria_EBR_IN
+  archivos:
+    ZIP: 44_Tutoria_EBR_IN
+- anio: 2025
+  codigo: '45'
+  nombre: 45_Tutoria_EBR_PS
+  archivos:
+    ZIP: 45_Tutoria_EBR_PS
+- anio: 2025
+  codigo: '46'
+  nombre: 46_Tutoria_EBA
+  archivos:
+    ZIP: 46_Tutoria_EBA
+- anio: 2025
+  codigo: '47'
+  nombre: 47_Carreras
+  archivos:
+    ZIP: 47_Carreras
+- anio: 2025
+  codigo: '48'
+  nombre: 48_Charlas
+  archivos:
+    ZIP: 48_Charlas
+- anio: 2025
+  codigo: '49'
+  nombre: 49_Saanee
+  archivos:
+    ZIP: 49_Saanee
+- anio: 2025
+  codigo: '00'
+  nombre: 00_Padlocal
+  archivos:
+    ZIP: 00_Padlocal
+- anio: 2025
+  codigo: '52'
+  nombre: 52_Loc_lineal_2
+  archivos:
+    ZIP: 52_Loc_lineal_2
+- anio: 2025
+  codigo: '53'
+  nombre: 53_Loc_P121_niveles
+  archivos:
+    ZIP: 53_Loc_P121_niveles
+- anio: 2025
+  codigo: '54'
+  nombre: 54_Loc_P123_carrer
+  archivos:
+    ZIP: 54_Loc_P123_carrer
+- anio: 2025
+  codigo: '55'
+  nombre: 55_loc_p214_infobra
+  archivos:
+    ZIP: 55_loc_p214_infobra
+- anio: 2025
+  codigo: '56'
+  nombre: 56_loc_p233_safile
+  archivos:
+    ZIP: 56_loc_p233_safile
+- anio: 2025
+  codigo: '57'
+  nombre: 57_Loc_P236_Tramos
+  archivos:
+    ZIP: 57_Loc_P236_Tramos
+- anio: 2025
+  codigo: '58'
+  nombre: 58_Loc_Trayectos
+  archivos:
+    ZIP: 58_Loc_Trayectos
+- anio: 2025
+  codigo: '60'
+  nombre: 60_loc_p3239_otelem
+  archivos:
+    ZIP: 60_loc_p3239_otelem
+- anio: 2025
+  codigo: '61'
+  nombre: 61_Loc_P43_Cerco
+  archivos:
+    ZIP: 61_Loc_P43_Cerco
+- anio: 2025
+  codigo: '62'
+  nombre: 62_Loc_P53_Edific
+  archivos:
+    ZIP: 62_Loc_P53_Edific
+- anio: 2025
+  codigo: '63'
+  nombre: 63_Loc_P61_Aulas
+  archivos:
+    ZIP: 63_Loc_P61_Aulas
+- anio: 2025
+  codigo: '64'
+  nombre: 64_Loc_p71_otesp
+  archivos:
+    ZIP: 64_Loc_p71_otesp
+- anio: 2025
+  codigo: '65'
+  nombre: 65_loc_p77_otespa
+  archivos:
+    ZIP: 65_loc_p77_otespa
+- anio: 2025
+  codigo: '66'
+  nombre: 66_loc_p81_sshh
+  archivos:
+    ZIP: 66_loc_p81_sshh
+- anio: 2025
+  codigo: '67'
+  nombre: 67_loc_p91_rectec
+  archivos:
+    ZIP: 67_loc_p91_rectec
+- anio: 2025
+  codigo: '68'
+  nombre: 68_loc_p92_equip
+  archivos:
+    ZIP: 68_loc_p92_equip
+- anio: 2025
+  codigo: '69'
+  nombre: 69_loc_p93_intpro
+  archivos:
+    ZIP: 69_loc_p93_intpro
+- anio: 2025
+  codigo: '70'
+  nombre: 70_Loc_P10_1_EduAdm
+  archivos:
+    ZIP: 70_Loc_P10_1_EduAdm
+- anio: 2025
+  codigo: '00'
+  nombre: 00_Padron
+  archivos:
+    ZIP: 00_Padron
+- anio: 2025
+  codigo: '01'
+  nombre: 01_Matricula_01
+  archivos:
+    ZIP: 01_Matricula_01
+- anio: 2025
+  codigo: '02'
+  nombre: 02_Matricula_02
+  archivos:
+    ZIP: 02_Matricula_02
+- anio: 2025
+  codigo: '03'
+  nombre: 03_Matricula_03
+  archivos:
+    ZIP: 03_Matricula_03
+- anio: 2025
+  codigo: '04'
+  nombre: 04_Docente_01
+  archivos:
+    ZIP: 04_Docente_01
+- anio: 2025
+  codigo: '05'
+  nombre: 05_Docente_02
+  archivos:
+    ZIP: 05_Docente_02
+- anio: 2025
+  codigo: '06'
+  nombre: 06_Docente_03
+  archivos:
+    ZIP: 06_Docente_03
+- anio: 2025
+  codigo: '07'
+  nombre: 07_No_Docente
+  archivos:
+    ZIP: 07_No_Docente
+- anio: 2025
+  codigo: 08
+  nombre: 08_Auxiliar_Edu
+  archivos:
+    ZIP: 08_Auxiliar_Edu
+- anio: 2025
+  codigo: 09
+  nombre: 09_Tsecciones
+  archivos:
+    ZIP: 09_Tsecciones
+- anio: 2025
+  codigo: '50'
+  nombre: 50_c2pc_prof_coord
+  archivos:
+    ZIP: 50_c2pc_prof_coord
+- anio: 2025
+  codigo: '71'
+  nombre: 71_Local_pronoei
+  archivos:
+    ZIP: 71_Local_pronoei
+- anio: 2025
+  codigo: '59'
+  nombre: 59_loc_p3230_inter
+  archivos:
+    ZIP: 59_loc_p3230_inter
+- anio: 2025
+  codigo: '51'
+  nombre: 51_Loc_lineal_1
+  archivos:
+    ZIP: 51_Loc_lineal_1
+- anio: 2025
+  codigo: '73'
+  nombre: 73_Resultado_2025
+  archivos:
+    ZIP: 73_Resultado_2025
+- anio: 2025
+  codigo: '74'
+  nombre: 74_Proyec_otr
+  archivos:
+    ZIP: 74_Proyec_otr

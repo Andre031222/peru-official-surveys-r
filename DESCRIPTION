@@ -1,0 +1,39 @@
+Package: faperu
+Title: Access to Peruvian Official Surveys and Censuses
+Version: 0.1.0
+Authors@R: c(
+    person("Richar Andre", "Vilca Solorzano", email = "andrevilcasolorzano@gmail.com",
+           role = c("aut", "cre"), comment = c(ORCID = "0009-0003-2385-5263")),
+    person("Dina Maribel", "Yana-Yucra", role = "aut",
+           comment = c(ORCID = "0009-0003-6218-2735"))
+  )
+Description: One catalog, one download function and a few helpers to read,
+    weight and locate ten Peruvian official data sources: ENAHO, ENDES, ENA, EPEN, ENAPRES, ENUT, ENARES
+    and the Annual Economic Survey from INEI, the School Census from
+    MINEDU (ESCALE) and the 2017 National Censuses. Files are cached and
+    checked with SHA-256, and new survey years are detected from the INEI
+    microdata portal. This package is independent and is not affiliated
+    with INEI or MINEDU.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1)
+Imports:
+    curl,
+    digest,
+    haven,
+    stats,
+    survey,
+    tools,
+    utils,
+    yaml
+Suggests:
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0),
+    withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/Andre031222/faperu
+BugReports: https://github.com/Andre031222/faperu/issues
+Roxygen: list(markdown = TRUE)
+Config/roxygen2/version: 8.0.0

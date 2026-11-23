@@ -1,0 +1,94 @@
+---
+title: "faperu"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{faperu}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>", eval = FALSE)
+```
+
+This guide goes from nothing to a poverty rate with its standard error. The code does not run when
+the vignette is built, because it needs the INEI files.
+
+## 1. What is there
+
+```{r}
+library(faperu)
+fa_surveys()
+fa_years("enaho")
+fa_catalog("enaho", 2024)
+```
+
+Each source is one YAML file in `inst/catalog/`. Modules that were already downloaded once carry
+their SHA-256, so faperu notices when INEI replaces a file.
+
+## 2. Where files go
+
+```{r}
+fa_cache()                       # default user cache
+fa_cache("~/data/inei")          # or a folder you choose
+```
+
+If you already have the zip files with the layout `<SURVEY>/<year>/<file>.zip`, point the cache
+there and nothing will be downloaded again.
+
+## 3. Download and read
+
+```{r}
+fa_download("enaho", 2024, "34")
+s <- fa_read("enaho", 2024, "34", file = "Sumaria-2024\\.")
+```
+
+`fa_download()` returns one row per module with a `status`: `cached`, `downloaded` or `changed`.
+`fa_read()` unzips next to the zip and reads the file you name; SPSS and Stata keep their labels.
+
+## 4. Sampling design
+
+```{r}
+options(survey.lonely.psu = "adjust")
+d <- fa_design(s, "enaho")
+survey::svymean(~I(pobreza < 3), d)          # share of poor households: 0.219 (SE 0.004)
+
+s$facpob <- s$factor07 * s$mieperho           # weight by persons, as INEI does
+p <- fa_design(s, "enaho", weight = "facpob")
+survey::svymean(~I(pobreza < 3), p)          # 0.276 (SE 0.005), INEI's official 27.6 % for 2024
+survey::svyby(~I(pobreza < 3), ~dominio, p, survey::svymean)
+```
+
+The two numbers were computed with faperu 0.1.0 on the ENAHO 2024 files. The second one matches
+the official monetary poverty rate published by INEI for 2024.
+
+`fa_design()` takes the weight, strata and cluster that the catalog declares. For ENAHO they are
+`FACTOR07`, `ESTRATO` and `CONGLOME`; for ENDES, `V005` or `HV005` (divided by one million),
+`V022` and `V001`. Where the catalog says the design is not verified yet, pass the variables
+yourself.
+
+## 5. Places
+
+```{r}
+s <- fa_ubigeo(s)
+table(s$department_name)
+```
+
+## 6. New years
+
+```{r}
+fa_check_updates()
+```
+
+A row with `new = TRUE` is a year the source already publishes and the catalog does not have yet.
+
+## Errors
+
+Every error has class `faperu_error` and a subclass that says what went wrong:
+
+```{r}
+tryCatch(
+  fa_download("enaho", 2024, "34"),
+  faperu_error_download = function(e) message("INEI did not answer: ", conditionMessage(e))
+)
+```

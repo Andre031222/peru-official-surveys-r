@@ -1,0 +1,4144 @@
+id: endes
+siglas: ENDES
+nombre: Encuesta Demográfica y de Salud Familiar
+organismo: INEI
+tipo: encuesta
+fuente: inei_portal
+portal:
+  encuesta: [Encuesta Demográfica y de Salud Familiar - ENDES]
+url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/{formato}/{archivo}
+formatos: [CSV, STATA, SPSS]
+anios: [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
+unidad: hogar, mujer de 15 a 49 años y niño menor de 5 años
+ubigeo: UBIGEO
+diseno:
+  peso: [V005, HV005]
+  escala: 1.0e-06
+  estrato: [V022, HV022]
+  conglomerado: [V001, HV001]
+  verificado: true
+  nota: 'Nombres verificados en REC0111_2024. Se usa el primer nombre que exista en los datos: V para mujeres, HV para hogares (RECH). El peso se divide entre 1 000 000.'
+estado: Años 2010-2025 descargados y verificados con sha256 en la Arch. 1996, 2000 y 2004-2009 están en el portal y faltan en el catálogo.
+modulos:
+- anio: 2010
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '260'
+  codigo: '64'
+  nombre: Caracteristicas del Hogar
+  archivos:
+    SPSS: 260-Modulo64
+    DBF: 260-Modulo64
+    CSV: 260-Modulo64
+    STATA: 260-Modulo64
+  local:
+    formato: SPSS
+    ruta: ENDES/2010/260-Modulo64.zip
+    bytes: 3468955
+    sha256: d9162f933b231a37613d0a461328d111ca41c27f45dfdbbbc306ab94086956db
+- anio: 2010
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '260'
+  codigo: '65'
+  nombre: Caracteristicas de la Vivienda
+  archivos:
+    SPSS: 260-Modulo65
+    DBF: 260-Modulo65
+    CSV: 260-Modulo65
+    STATA: 260-Modulo65
+  local:
+    formato: SPSS
+    ruta: ENDES/2010/260-Modulo65.zip
+    bytes: 1943819
+    sha256: 747329adc4ec7a496126fabcc0c70a8c0977512e4ad49d62ef1db00c74e4a6b6
+- anio: 2010
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '260'
+  codigo: '66'
+  nombre: Datos Basicos de MEF
+  archivos:
+    SPSS: 260-Modulo66
+    DBF: 260-Modulo66
+    CSV: 260-Modulo66
+    STATA: 260-Modulo66
+  local:
+    formato: SPSS
+    ruta: ENDES/2010/260-Modulo66.zip
+    bytes: 3409008
+    sha256: 7640f1f28087e25c11c090b915e2f8680d71932b3341b406b1f181330009897f
+- anio: 2010
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '260'
+  codigo: '67'
+  nombre: Historia de Nacimiento - Tabla de Conocimiento de Metodo
+  archivos:
+    SPSS: 260-Modulo67
+    DBF: 260-Modulo67
+    CSV: 260-Modulo67
+    STATA: 260-Modulo67
+  local:
+    formato: SPSS
+    ruta: ENDES/2010/260-Modulo67.zip
+    bytes: 3090427
+    sha256: e0b1ab87c634fcde9a254bfc4c6edf8dd575860b1577f4ae735840167d049e86
+- anio: 2010
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '260'
+  codigo: '69'
+  nombre: Embarazo, Parto, Puerperio y Lactancia
+  archivos:
+    SPSS: 260-Modulo69
+    DBF: 260-Modulo69
+    CSV: 260-Modulo69
+    STATA: 260-Modulo69
+  local:
+    formato: SPSS
+    ruta: ENDES/2010/260-Modulo69.zip
+    bytes: 1941442
+    sha256: 0f30c2a6bb59282d7c1acf4edd2ab747e69be5b4732b59fb2a6ca9dc4ad43ec1
+- anio: 2010
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '260'
+  codigo: '70'
+  nombre: Inmunización y Salud
+  archivos:
+    SPSS: 260-Modulo70
+    DBF: 260-Modulo70
+    CSV: 260-Modulo70
+    STATA: 260-Modulo70
+  local:
+    formato: SPSS
+    ruta: ENDES/2010/260-Modulo70.zip
+    bytes: 3870568
+    sha256: af6bbe26e761bc99e46f25f921689e5d6f54653e9e9c2d0f467a0fb1423df5af
+- anio: 2010
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '260'
+  codigo: '71'
+  nombre: Nupcialidad - Fecundidad - Cónyugue y Mujer
+  archivos:
+    SPSS: 260-Modulo71
+    DBF: 260-Modulo71
+    CSV: 260-Modulo71
+    STATA: 260-Modulo71
+  local:
+    formato: SPSS
+    ruta: ENDES/2010/260-Modulo71.zip
+    bytes: 2098951
+    sha256: 43bd26485f87f595d84c770eb19f8b004b05647b2dcdbee8342e9ca30d9a6228
+- anio: 2010
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '260'
+  codigo: '72'
+  nombre: Conocimiento de Sida y uso del condón
+  archivos:
+    SPSS: 260-Modulo72
+    DBF: 260-Modulo72
+    CSV: 260-Modulo72
+    STATA: 260-Modulo72
+  local:
+    formato: SPSS
+    ruta: ENDES/2010/260-Modulo72.zip
+    bytes: 3123979
+    sha256: 9a44d71dbf7dc3f7ac93aac6147acf935fa820169cbbf46722ed77ae66425aa6
+- anio: 2010
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '260'
+  codigo: '73'
+  nombre: Mortalidad Materna - Violencia Familiar
+  archivos:
+    SPSS: 260-Modulo73
+    DBF: 260-Modulo73
+    CSV: 260-Modulo73
+    STATA: 260-Modulo73
+  local:
+    formato: SPSS
+    ruta: ENDES/2010/260-Modulo73.zip
+    bytes: 3011986
+    sha256: 899051048d3259972770fdd1c48550db4f1d6897c9ffd6f6c5c0f4535989bca3
+- anio: 2010
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '260'
+  codigo: '74'
+  nombre: Peso y talla - Anemia
+  archivos:
+    SPSS: 260-Modulo74
+    DBF: 260-Modulo74
+    CSV: 260-Modulo74
+    STATA: 260-Modulo74
+  local:
+    formato: SPSS
+    ruta: ENDES/2010/260-Modulo74.zip
+    bytes: 3744732
+    sha256: 38ea39bc1a5f7155612241346b33c5e6d87e91c2d37c6c36b4cf5e7ca2708b35
+- anio: 2011
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '290'
+  codigo: '64'
+  nombre: Caracteristicas del Hogar
+  archivos:
+    SPSS: 290-Modulo64
+    DBF: 290-Modulo64
+    CSV: 290-Modulo64
+    STATA: 290-Modulo64
+  local:
+    formato: SPSS
+    ruta: ENDES/2011/290-Modulo64.zip
+    bytes: 5018292
+    sha256: d1da9a30d99685c84f2de5de77b6b558dd32a4ffb44f0ae95dadd943d8533f97
+- anio: 2011
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '290'
+  codigo: '65'
+  nombre: Caracteristicas de la Vivienda
+  archivos:
+    SPSS: 290-Modulo65
+    DBF: 290-Modulo65
+    CSV: 290-Modulo65
+    STATA: 290-Modulo65
+  local:
+    formato: SPSS
+    ruta: ENDES/2011/290-Modulo65.zip
+    bytes: 3423018
+    sha256: 2b3d0c93e3587bfab570df7a64ab5319cc7036079aa75081aa1f9119f5aeca95
+- anio: 2011
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '290'
+  codigo: '66'
+  nombre: Datos Basicos de MEF
+  archivos:
+    SPSS: 290-Modulo66
+    DBF: 290-Modulo66
+    CSV: 290-Modulo66
+    STATA: 290-Modulo66
+  local:
+    formato: SPSS
+    ruta: ENDES/2011/290-Modulo66.zip
+    bytes: 4213185
+    sha256: 762d4e3c861964055e319b9daaae1ecc70d2d4c497eb7235a47d7e763893c0cd
+- anio: 2011
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '290'
+  codigo: '67'
+  nombre: Historia de Nacimiento - Tabla de Conocimiento de Metodo
+  archivos:
+    SPSS: 290-Modulo67
+    DBF: 290-Modulo67
+    CSV: 290-Modulo67
+    STATA: 290-Modulo67
+  local:
+    formato: SPSS
+    ruta: ENDES/2011/290-Modulo67.zip
+    bytes: 3787751
+    sha256: 204408a66f8fdb67c91056bbe87153b5d09b19514f3de55adfb960a4210f26a1
+- anio: 2011
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '290'
+  codigo: '69'
+  nombre: Embarazo, Parto, Puerperio y Lactancia
+  archivos:
+    SPSS: 290-Modulo69
+    DBF: 290-Modulo69
+    CSV: 290-Modulo69
+    STATA: 290-Modulo69
+  local:
+    formato: SPSS
+    ruta: ENDES/2011/290-Modulo69.zip
+    bytes: 2854500
+    sha256: a13b606767352f36297d001e272bbf2a637580302462779741146b17e6fbc1dd
+- anio: 2011
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '290'
+  codigo: '70'
+  nombre: Inmunización y Salud
+  archivos:
+    SPSS: 290-Modulo70
+    DBF: 290-Modulo70
+    CSV: 290-Modulo70
+    STATA: 290-Modulo70
+  local:
+    formato: SPSS
+    ruta: ENDES/2011/290-Modulo70.zip
+    bytes: 4729715
+    sha256: ff804f99cd64ab0f672bc0f53f838f2a5d58985c3b484eec5d7d27462680cf6a
+- anio: 2011
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '290'
+  codigo: '71'
+  nombre: Nupcialidad - Fecundidad - Cónyugue y Mujer
+  archivos:
+    SPSS: 290-Modulo71
+    DBF: 290-Modulo71
+    CSV: 290-Modulo71
+    STATA: 290-Modulo71
+  local:
+    formato: SPSS
+    ruta: ENDES/2011/290-Modulo71.zip
+    bytes: 3001569
+    sha256: 45c8f7b8835793c4c37c11330f5b7e8fa981af787b81956c76fa944fed57b915
+- anio: 2011
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '290'
+  codigo: '72'
+  nombre: Conocimiento de Sida y uso del condón
+  archivos:
+    SPSS: 290-Modulo72
+    DBF: 290-Modulo72
+    CSV: 290-Modulo72
+    STATA: 290-Modulo72
+  local:
+    formato: SPSS
+    ruta: ENDES/2011/290-Modulo72.zip
+    bytes: 3895053
+    sha256: 794e2617b70843c7f9e11f3343cec0f2b3243d96843041fc5aeb9bf6bb083af3
+- anio: 2011
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '290'
+  codigo: '73'
+  nombre: Mortalidad Materna - Violencia Familiar
+  archivos:
+    SPSS: 290-Modulo73
+    DBF: 290-Modulo73
+    CSV: 290-Modulo73
+    STATA: 290-Modulo73
+  local:
+    formato: SPSS
+    ruta: ENDES/2011/290-Modulo73.zip
+    bytes: 3816944
+    sha256: 979f805def704430083d0229a5697ac2e64733fda2f91bd6e6097599171e30de
+- anio: 2011
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '290'
+  codigo: '74'
+  nombre: Peso y talla - Anemia
+  archivos:
+    SPSS: 290-Modulo74
+    DBF: 290-Modulo74
+    CSV: 290-Modulo74
+    STATA: 290-Modulo74
+  local:
+    formato: SPSS
+    ruta: ENDES/2011/290-Modulo74.zip
+    bytes: 4452614
+    sha256: 45ade44e68fc14e93e83e1254b4a0b6fdbf1ee6d184ab75977a962600a8b1a44
+- anio: 2012
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '323'
+  codigo: '64'
+  nombre: Caracteristicas del Hogar
+  archivos:
+    SPSS: 323-Modulo64
+    DBF: 323-Modulo64
+    CSV: 323-Modulo64
+    STATA: 323-Modulo64
+  local:
+    formato: SPSS
+    ruta: ENDES/2012/323-Modulo64.zip
+    bytes: 4215026
+    sha256: 687530de006b5c34ca93e55abdc22ff357d079ecfd0158a9aae2b4a3acca2efb
+- anio: 2012
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '323'
+  codigo: '65'
+  nombre: Caracteristicas de la Vivienda
+  archivos:
+    SPSS: 323-Modulo65
+    DBF: 323-Modulo65
+    CSV: 323-Modulo65
+    STATA: 323-Modulo65
+  local:
+    formato: SPSS
+    ruta: ENDES/2012/323-Modulo65.zip
+    bytes: 2399888
+    sha256: 933cdea88aa5a8b71c2406732a4d08799e293d7573da4f5dbce4861a13f6f4ca
+- anio: 2012
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '323'
+  codigo: '66'
+  nombre: Datos Basicos de MEF
+  archivos:
+    SPSS: 323-Modulo66
+    DBF: 323-Modulo66
+    CSV: 323-Modulo66
+    STATA: 323-Modulo66
+  local:
+    formato: SPSS
+    ruta: ENDES/2012/323-Modulo66.zip
+    bytes: 3491055
+    sha256: 1cabfa4be96ddbc8b145e328e646f5c984867b8433ca9a3c4915f8979501b49a
+- anio: 2012
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '323'
+  codigo: '67'
+  nombre: Historia de Nacimiento - Tabla de Conocimiento de Metodo
+  archivos:
+    SPSS: 323-Modulo67
+    DBF: 323-Modulo67
+    CSV: 323-Modulo67
+    STATA: 323-Modulo67
+  local:
+    formato: SPSS
+    ruta: ENDES/2012/323-Modulo67.zip
+    bytes: 3089839
+    sha256: 6b9e5b9db47a94f5c6e389166402681bba10cc3f5884a8537379fd70a4e2920e
+- anio: 2012
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '323'
+  codigo: '69'
+  nombre: Embarazo, Parto, Puerperio y Lactancia
+  archivos:
+    SPSS: 323-Modulo69
+    DBF: 323-Modulo69
+    CSV: 323-Modulo69
+    STATA: 323-Modulo69
+  local:
+    formato: SPSS
+    ruta: ENDES/2012/323-Modulo69.zip
+    bytes: 1915679
+    sha256: 1f7287e2b334cde0b61a7f918386576779d91c9058c3e52461d97e1b78f8d749
+- anio: 2012
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '323'
+  codigo: '70'
+  nombre: Inmunización y Salud
+  archivos:
+    SPSS: 323-Modulo70
+    DBF: 323-Modulo70
+    CSV: 323-Modulo70
+    STATA: 323-Modulo70
+  local:
+    formato: SPSS
+    ruta: ENDES/2012/323-Modulo70.zip
+    bytes: 3931644
+    sha256: bbcae93e1d232b0e25c9402d302332c2eafb1e8b213f856dada919d5f527ed66
+- anio: 2012
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '323'
+  codigo: '71'
+  nombre: Nupcialidad - Fecundidad - Cónyugue y Mujer
+  archivos:
+    SPSS: 323-Modulo71
+    DBF: 323-Modulo71
+    CSV: 323-Modulo71
+    STATA: 323-Modulo71
+  local:
+    formato: SPSS
+    ruta: ENDES/2012/323-Modulo71.zip
+    bytes: 2144012
+    sha256: 6af83465364889d882a74ad677c3907cf50fff12440de1e9cb340ee209cc1a0d
+- anio: 2012
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '323'
+  codigo: '72'
+  nombre: Conocimiento de Sida y uso del condón
+  archivos:
+    SPSS: 323-Modulo72
+    DBF: 323-Modulo72
+    CSV: 323-Modulo72
+    STATA: 323-Modulo72
+  local:
+    formato: SPSS
+    ruta: ENDES/2012/323-Modulo72.zip
+    bytes: 3090233
+    sha256: ce595ce5f6581daafde5026da565aa876c48fa47a41129cdf0ac52233fcf7dea
+- anio: 2012
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '323'
+  codigo: '73'
+  nombre: Mortalidad Materna - Violencia Familiar
+  archivos:
+    SPSS: 323-Modulo73
+    DBF: 323-Modulo73
+    CSV: 323-Modulo73
+    STATA: 323-Modulo73
+  local:
+    formato: SPSS
+    ruta: ENDES/2012/323-Modulo73.zip
+    bytes: 2597665
+    sha256: 4b4ab9f50a63fe914b5fa147d8e4d0a10396c383fe8fc8b519f29affb2657d58
+- anio: 2012
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '323'
+  codigo: '74'
+  nombre: Peso y talla - Anemia
+  archivos:
+    SPSS: 323-Modulo74
+    DBF: 323-Modulo74
+    CSV: 323-Modulo74
+    STATA: 323-Modulo74
+  local:
+    formato: SPSS
+    ruta: ENDES/2012/323-Modulo74.zip
+    bytes: 3614268
+    sha256: 81ec5fc9fcb298de6e3e293d250506109a940689aab54d44c797fc34cf63d004
+- anio: 2013
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '407'
+  codigo: '64'
+  nombre: Caracteristicas del Hogar
+  archivos:
+    SPSS: 407-Modulo64
+    DBF: 407-Modulo64
+    CSV: 407-Modulo64
+    STATA: 407-Modulo64
+  local:
+    formato: SPSS
+    ruta: ENDES/2013/407-Modulo64.zip
+    bytes: 6278311
+    sha256: f1d9e84171a675c4f6b1c6ed7cab31f0c491586e736341c09ffb3f98f654214b
+- anio: 2013
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '407'
+  codigo: '65'
+  nombre: Caracteristicas de la Vivienda
+  archivos:
+    SPSS: 407-Modulo65
+    DBF: 407-Modulo65
+    CSV: 407-Modulo65
+    STATA: 407-Modulo65
+  local:
+    formato: SPSS
+    ruta: ENDES/2013/407-Modulo65.zip
+    bytes: 4280444
+    sha256: 62356c86fdb299ff715454cb207c0ba6eab4197e0f840dfa641cbfaafd9ff852
+- anio: 2013
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '407'
+  codigo: '66'
+  nombre: Datos Basicos de MEF
+  archivos:
+    SPSS: 407-Modulo66
+    DBF: 407-Modulo66
+    CSV: 407-Modulo66
+    STATA: 407-Modulo66
+  local:
+    formato: SPSS
+    ruta: ENDES/2013/407-Modulo66.zip
+    bytes: 5610696
+    sha256: 7cea36c2830e567e49845c2f250932f12e5f78f2580e8e203790ee6d8fa47474
+- anio: 2013
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '407'
+  codigo: '67'
+  nombre: Historia de Nacimiento - Tabla de Conocimiento de Metodo
+  archivos:
+    SPSS: 407-Modulo67
+    DBF: 407-Modulo67
+    CSV: 407-Modulo67
+    STATA: 407-Modulo67
+  local:
+    formato: SPSS
+    ruta: ENDES/2013/407-Modulo67.zip
+    bytes: 6061319
+    sha256: 180aeac4eab40cbc57564034bd2ee74e0f30b268f3e674b78986faba7b18a2c0
+- anio: 2013
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '407'
+  codigo: '69'
+  nombre: Embarazo, Parto, Puerperio y Lactancia
+  archivos:
+    SPSS: 407-Modulo69
+    DBF: 407-Modulo69
+    CSV: 407-Modulo69
+    STATA: 407-Modulo69
+  local:
+    formato: SPSS
+    ruta: ENDES/2013/407-Modulo69.zip
+    bytes: 3574349
+    sha256: 6442fd3f85cb80e6ecf413e3d219ca8b02f0efe37e84c079759b158c2ab87c77
+- anio: 2013
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '407'
+  codigo: '70'
+  nombre: Inmunización y Salud
+  archivos:
+    SPSS: 407-Modulo70
+    DBF: 407-Modulo70
+    CSV: 407-Modulo70
+    STATA: 407-Modulo70
+  local:
+    formato: SPSS
+    ruta: ENDES/2013/407-Modulo70.zip
+    bytes: 5531795
+    sha256: 23b90544a7af56a4d6de6cab0685ed9d61f4b8d131c46bcf5df41560bc1ad47c
+- anio: 2013
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '407'
+  codigo: '71'
+  nombre: Nupcialidad - Fecundidad - Cónyugue y Mujer
+  archivos:
+    SPSS: 407-Modulo71
+    DBF: 407-Modulo71
+    CSV: 407-Modulo71
+    STATA: 407-Modulo71
+  local:
+    formato: SPSS
+    ruta: ENDES/2013/407-Modulo71.zip
+    bytes: 3850420
+    sha256: 547d018eb3dbb6301530b24a633fcdfc4b9f29efacb8d58a1302387a2ba239d9
+- anio: 2013
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '407'
+  codigo: '72'
+  nombre: Conocimiento de Sida y uso del condón
+  archivos:
+    SPSS: 407-Modulo72
+    DBF: 407-Modulo72
+    CSV: 407-Modulo72
+    STATA: 407-Modulo72
+  local:
+    formato: SPSS
+    ruta: ENDES/2013/407-Modulo72.zip
+    bytes: 4633253
+    sha256: c48ecda35b0da1cc6447e27bd1dbd3bd08e8048f018c57f73ee7d5432f2d20b6
+- anio: 2013
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '407'
+  codigo: '73'
+  nombre: Mortalidad Materna - Violencia Familiar
+  archivos:
+    SPSS: 407-Modulo73
+    DBF: 407-Modulo73
+    CSV: 407-Modulo73
+    STATA: 407-Modulo73
+  local:
+    formato: SPSS
+    ruta: ENDES/2013/407-Modulo73.zip
+    bytes: 4077526
+    sha256: e98ae09c76a6996f16bcb261c56c7a0a97a18a705816931e0c948386f2140705
+- anio: 2013
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '407'
+  codigo: '74'
+  nombre: Peso y talla - Anemia
+  archivos:
+    SPSS: 407-Modulo74
+    DBF: 407-Modulo74
+    CSV: 407-Modulo74
+    STATA: 407-Modulo74
+  local:
+    formato: SPSS
+    ruta: ENDES/2013/407-Modulo74.zip
+    bytes: 5174155
+    sha256: bc46a10f37ae8dd72bc4bdc3abd1f19fc1913d21a075069018a503dfbff69159
+- anio: 2013
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '407'
+  codigo: '413'
+  nombre: Disciplina Infantil
+  archivos:
+    SPSS: 407-Modulo413
+    DBF: 407-Modulo413
+    CSV: 407-Modulo413
+    STATA: 407-Modulo413
+  local:
+    formato: SPSS
+    ruta: ENDES/2013/407-Modulo413.zip
+    bytes: 3181045
+    sha256: 06c6ff6140d5c1d0fa42ac08bb36de08fa1f106788057f3d1e8973f8fc65711c
+- anio: 2013
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '407'
+  codigo: '414'
+  nombre: Encuesta de salud
+  archivos:
+    SPSS: 407-Modulo414
+    DBF: 407-Modulo414
+    CSV: 407-Modulo414
+    STATA: 407-Modulo414
+  local:
+    formato: SPSS
+    ruta: ENDES/2013/407-Modulo414.zip
+    bytes: 3742310
+    sha256: bbc9084d65d616be0dca9209f928427a5c2b359554eb0713c2b8f82232fed670
+- anio: 2014
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '441'
+  codigo: '64'
+  nombre: Caracteristicas del Hogar
+  archivos:
+    SPSS: 441-Modulo64
+    DBF: 441-Modulo64
+    CSV: 441-Modulo64
+    STATA: 441-Modulo64
+  local:
+    formato: SPSS
+    ruta: ENDES/2014/441-Modulo64.zip
+    bytes: 3642017
+    sha256: e60a11b560228d73536378790690bdfa7e6f2c9afabc40c687826cdca98cd7cf
+- anio: 2014
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '441'
+  codigo: '65'
+  nombre: Caracteristicas de la Vivienda
+  archivos:
+    SPSS: 441-Modulo65
+    DBF: 441-Modulo65
+    CSV: 441-Modulo65
+    STATA: 441-Modulo65
+  local:
+    formato: SPSS
+    ruta: ENDES/2014/441-Modulo65.zip
+    bytes: 2539874
+    sha256: 89ff58e6dafd9980c0b6407d722b99feab1539a5e050f9435f0e6b15f8d6dac9
+- anio: 2014
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '441'
+  codigo: '66'
+  nombre: Datos Basicos de MEF
+  archivos:
+    SPSS: 441-Modulo66
+    DBF: 441-Modulo66
+    CSV: 441-Modulo66
+    STATA: 441-Modulo66
+  local:
+    formato: SPSS
+    ruta: ENDES/2014/441-Modulo66.zip
+    bytes: 4832962
+    sha256: 1c0428f97056e78c0393aca3e2506ca99d14029d49872113c6de21d517ce56d5
+- anio: 2014
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '441'
+  codigo: '67'
+  nombre: Historia de Nacimiento - Tabla de Conocimiento de Metodo
+  archivos:
+    SPSS: 441-Modulo67
+    DBF: 441-Modulo67
+    CSV: 441-Modulo67
+    STATA: 441-Modulo67
+  local:
+    formato: SPSS
+    ruta: ENDES/2014/441-Modulo67.zip
+    bytes: 4241049
+    sha256: 96ad8be0b5a54873e87b376b499b98a64fb71900dfbca794103f814039349a58
+- anio: 2014
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '441'
+  codigo: '69'
+  nombre: Embarazo, Parto, Puerperio y Lactancia
+  archivos:
+    SPSS: 441-Modulo69
+    DBF: 441-Modulo69
+    CSV: 441-Modulo69
+    STATA: 441-Modulo69
+  local:
+    formato: SPSS
+    ruta: ENDES/2014/441-Modulo69.zip
+    bytes: 2940827
+    sha256: ef22af163ead8b16920b3a1da4340374576cba2a3554e24938668047c2a45e11
+- anio: 2014
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '441'
+  codigo: '70'
+  nombre: Inmunización y Salud
+  archivos:
+    SPSS: 441-Modulo70
+    DBF: 441-Modulo70
+    CSV: 441-Modulo70
+    STATA: 441-Modulo70
+  local:
+    formato: SPSS
+    ruta: ENDES/2014/441-Modulo70.zip
+    bytes: 5105649
+    sha256: f213b53a3dfe8eb14fa5a8059b058e59ee68d13c9030cb18b9dbf17f280cb9f8
+- anio: 2014
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '441'
+  codigo: '71'
+  nombre: Nupcialidad - Fecundidad - Cónyugue y Mujer
+  archivos:
+    SPSS: 441-Modulo71
+    DBF: 441-Modulo71
+    CSV: 441-Modulo71
+    STATA: 441-Modulo71
+  local:
+    formato: SPSS
+    ruta: ENDES/2014/441-Modulo71.zip
+    bytes: 3250688
+    sha256: 7450a9c3e854b69f05b1aee08d5d4bc20ca98c098687fed9e74e21eb80c68917
+- anio: 2014
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '441'
+  codigo: '72'
+  nombre: Conocimiento de Sida y uso del condón
+  archivos:
+    SPSS: 441-Modulo72
+    DBF: 441-Modulo72
+    CSV: 441-Modulo72
+    STATA: 441-Modulo72
+  local:
+    formato: SPSS
+    ruta: ENDES/2014/441-Modulo72.zip
+    bytes: 4107715
+    sha256: ca68b37ea735c571b2845a0a847d0974772692df58b49d6988d8a5c7e730b98e
+- anio: 2014
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '441'
+  codigo: '73'
+  nombre: Mortalidad Materna - Violencia Familiar
+  archivos:
+    SPSS: 441-Modulo73
+    DBF: 441-Modulo73
+    CSV: 441-Modulo73
+    STATA: 441-Modulo73
+  local:
+    formato: SPSS
+    ruta: ENDES/2014/441-Modulo73.zip
+    bytes: 3472127
+    sha256: d0b22e0a405ab36dfd5d617bfa38c87a436529cd1f1de317475b32013d9b4118
+- anio: 2014
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '441'
+  codigo: '74'
+  nombre: Peso y talla - Anemia
+  archivos:
+    SPSS: 441-Modulo74
+    DBF: 441-Modulo74
+    CSV: 441-Modulo74
+    STATA: 441-Modulo74
+  local:
+    formato: SPSS
+    ruta: ENDES/2014/441-Modulo74.zip
+    bytes: 4660531
+    sha256: 4c470f239a2794e348fe5f20700a39c0f3ed6a968fb3e5c6601a7a35402908f9
+- anio: 2014
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '441'
+  codigo: '413'
+  nombre: Disciplina Infantil
+  archivos:
+    SPSS: 441-Modulo413
+    DBF: 441-Modulo413
+    CSV: 441-Modulo413
+    STATA: 441-Modulo413
+  local:
+    formato: SPSS
+    ruta: ENDES/2014/441-Modulo413.zip
+    bytes: 2515359
+    sha256: 857d6cd9c618ba137d93170818d859064063ea94be73dd3ef7c1497e8bd0cfd2
+- anio: 2014
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '441'
+  codigo: '414'
+  nombre: Encuesta de salud
+  archivos:
+    SPSS: 441-Modulo414
+    DBF: 441-Modulo414
+    CSV: 441-Modulo414
+    STATA: 441-Modulo414
+  local:
+    formato: SPSS
+    ruta: ENDES/2014/441-Modulo414.zip
+    bytes: 4258579
+    sha256: e65b40368c9230907e556b24b1066856bfa4751ff48820ab904634fdaddc0063
+- anio: 2014
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '441'
+  codigo: '569'
+  nombre: Programas Sociales
+  archivos:
+    SPSS: 441-Modulo569
+    DBF: 441-Modulo569
+    CSV: 441-Modulo569
+    STATA: 441-Modulo569
+  local:
+    formato: SPSS
+    ruta: ENDES/2014/441-Modulo569.zip
+    bytes: 1768849
+    sha256: 6077d13a07fe81d98bc09f3f44f1ed41f4143af650ef233c60176705b59dde67
+- anio: 2015
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '504'
+  codigo: '64'
+  nombre: Caracteristicas del Hogar
+  archivos:
+    SPSS: 504-Modulo64
+    DBF: 504-Modulo64
+    CSV: 504-Modulo64
+    STATA: 504-Modulo64
+  local:
+    formato: SPSS
+    ruta: ENDES/2015/504-Modulo64.zip
+    bytes: 4177277
+    sha256: 8a348b2419759a86765ca7e05459a50d11c75113fe0fc31641cb70b44529ba5d
+- anio: 2015
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '504'
+  codigo: '65'
+  nombre: Caracteristicas de la Vivienda
+  archivos:
+    SPSS: 504-Modulo65
+    DBF: 504-Modulo65
+    CSV: 504-Modulo65
+    STATA: 504-Modulo65
+  local:
+    formato: SPSS
+    ruta: ENDES/2015/504-Modulo65.zip
+    bytes: 2694215
+    sha256: 433a6db27a2704b9e0d85af573be0a0c3961c3681722281045e4cffaaf07560f
+- anio: 2015
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '504'
+  codigo: '66'
+  nombre: Datos Basicos de MEF
+  archivos:
+    SPSS: 504-Modulo66
+    DBF: 504-Modulo66
+    CSV: 504-Modulo66
+    STATA: 504-Modulo66
+  local:
+    formato: SPSS
+    ruta: ENDES/2015/504-Modulo66.zip
+    bytes: 6376423
+    sha256: 0828373b84170cbfca03b9988358521b5e6ad39901507060ff447161bd0c5627
+- anio: 2015
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '504'
+  codigo: '67'
+  nombre: Historia de Nacimiento - Tabla de Conocimiento de Metodo
+  archivos:
+    SPSS: 504-Modulo67
+    DBF: 504-Modulo67
+    CSV: 504-Modulo67
+    STATA: 504-Modulo67
+  local:
+    formato: SPSS
+    ruta: ENDES/2015/504-Modulo67.zip
+    bytes: 5848294
+    sha256: 8bcd847483227f164e401dc1970eb11d9592b287db039a65669e5ab9d2d5f2e5
+- anio: 2015
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '504'
+  codigo: '69'
+  nombre: Embarazo, Parto, Puerperio y Lactancia
+  archivos:
+    SPSS: 504-Modulo69
+    DBF: 504-Modulo69
+    CSV: 504-Modulo69
+    STATA: 504-Modulo69
+  local:
+    formato: SPSS
+    ruta: ENDES/2015/504-Modulo69.zip
+    bytes: 4191585
+    sha256: 0bc9d26ba1062aa63efea62ba9a17e0214f75a294f6d9f8f083717c9a8a85dcb
+- anio: 2015
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '504'
+  codigo: '70'
+  nombre: Inmunización y Salud
+  archivos:
+    SPSS: 504-Modulo70
+    DBF: 504-Modulo70
+    CSV: 504-Modulo70
+    STATA: 504-Modulo70
+  local:
+    formato: SPSS
+    ruta: ENDES/2015/504-Modulo70.zip
+    bytes: 8900639
+    sha256: 4a6df419229b196aae7838c2db95c13070866a51c05b13368f2876007bf88e00
+- anio: 2015
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '504'
+  codigo: '71'
+  nombre: Nupcialidad - Fecundidad - Cónyugue y Mujer
+  archivos:
+    SPSS: 504-Modulo71
+    DBF: 504-Modulo71
+    CSV: 504-Modulo71
+    STATA: 504-Modulo71
+  local:
+    formato: SPSS
+    ruta: ENDES/2015/504-Modulo71.zip
+    bytes: 4078293
+    sha256: 3e2cf25d1817851f6f8a441f6030f9857775a462d5a0244995da7996e673af23
+- anio: 2015
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '504'
+  codigo: '72'
+  nombre: Conocimiento de Sida y uso del condón
+  archivos:
+    SPSS: 504-Modulo72
+    DBF: 504-Modulo72
+    CSV: 504-Modulo72
+    STATA: 504-Modulo72
+  local:
+    formato: SPSS
+    ruta: ENDES/2015/504-Modulo72.zip
+    bytes: 5587039
+    sha256: 9693e0a663260ad58403c8832d2d4d3e54b3278d6cb40c33e1fb53bbd301f274
+- anio: 2015
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '504'
+  codigo: '73'
+  nombre: Mortalidad Materna - Violencia Familiar
+  archivos:
+    SPSS: 504-Modulo73
+    DBF: 504-Modulo73
+    CSV: 504-Modulo73
+    STATA: 504-Modulo73
+  local:
+    formato: SPSS
+    ruta: ENDES/2015/504-Modulo73.zip
+    bytes: 4416254
+    sha256: 189adf110828ed3ac507d91b4edef7667c5f80ec9a06cc0796089c6d7bb1e42f
+- anio: 2015
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '504'
+  codigo: '74'
+  nombre: Peso y talla - Anemia
+  archivos:
+    SPSS: 504-Modulo74
+    DBF: 504-Modulo74
+    CSV: 504-Modulo74
+    STATA: 504-Modulo74
+  local:
+    formato: SPSS
+    ruta: ENDES/2015/504-Modulo74.zip
+    bytes: 7445544
+    sha256: 5cbe2c9e249959b77b85c06aee2d37b55d8ef54b21b3128f9c3da39b81742975
+- anio: 2015
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '504'
+  codigo: '413'
+  nombre: Disciplina Infantil
+  archivos:
+    SPSS: 504-Modulo413
+    DBF: 504-Modulo413
+    CSV: 504-Modulo413
+    STATA: 504-Modulo413
+  local:
+    formato: SPSS
+    ruta: ENDES/2015/504-Modulo413.zip
+    bytes: 3224849
+    sha256: 58d8645d23e58204be78313af61fe30b1fdd92bd6b08ffc17cbd6a237090167a
+- anio: 2015
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '504'
+  codigo: '414'
+  nombre: Encuesta de salud
+  archivos:
+    SPSS: 504-Modulo414
+    DBF: 504-Modulo414
+    CSV: 504-Modulo414
+    STATA: 504-Modulo414
+  local:
+    formato: SPSS
+    ruta: ENDES/2015/504-Modulo414.zip
+    bytes: 6587765
+    sha256: d3975b8f8c041cf5266ed983f1ef4c3d6c1e4b3c4ff4fb200701f972d351f17e
+- anio: 2015
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '504'
+  codigo: '569'
+  nombre: Programas Sociales
+  archivos:
+    SPSS: 504-Modulo569
+    DBF: 504-Modulo569
+    CSV: 504-Modulo569
+    STATA: 504-Modulo569
+  local:
+    formato: SPSS
+    ruta: ENDES/2015/504-Modulo569.zip
+    bytes: 1897037
+    sha256: 1928379d69a25667703dd13978dfea45bb948155411ac9cd943af0206d344775
+- anio: 2016
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '548'
+  codigo: '64'
+  nombre: Caracteristicas del Hogar
+  archivos:
+    SPSS: 548-Modulo64
+    DBF: 548-Modulo64
+    CSV: 548-Modulo64
+    STATA: 548-Modulo64
+  local:
+    formato: SPSS
+    ruta: ENDES/2016/548-Modulo64.zip
+    bytes: 4227699
+    sha256: 4555897dbdd29e86d303c828fbd57b04f611943327f2269347690ef4171dedc2
+- anio: 2016
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '548'
+  codigo: '65'
+  nombre: Caracteristicas de la Vivienda
+  archivos:
+    SPSS: 548-Modulo65
+    DBF: 548-Modulo65
+    CSV: 548-Modulo65
+    STATA: 548-Modulo65
+  local:
+    formato: SPSS
+    ruta: ENDES/2016/548-Modulo65.zip
+    bytes: 2555497
+    sha256: c8734c7ec090e5e2e6c3264933734a55995a629ae49f98b6a8c62534eb48b4f6
+- anio: 2016
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '548'
+  codigo: '66'
+  nombre: Datos Basicos de MEF
+  archivos:
+    SPSS: 548-Modulo66
+    DBF: 548-Modulo66
+    CSV: 548-Modulo66
+    STATA: 548-Modulo66
+  local:
+    formato: SPSS
+    ruta: ENDES/2016/548-Modulo66.zip
+    bytes: 6026339
+    sha256: 90f7a210675e8c3013e1a6d33f8fc06c69170ea92907a36ac4c5948f9e7a11c9
+- anio: 2016
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '548'
+  codigo: '67'
+  nombre: Historia de Nacimiento - Tabla de Conocimiento de Metodo
+  archivos:
+    SPSS: 548-Modulo67
+    DBF: 548-Modulo67
+    CSV: 548-Modulo67
+    STATA: 548-Modulo67
+  local:
+    formato: SPSS
+    ruta: ENDES/2016/548-Modulo67.zip
+    bytes: 5546153
+    sha256: 0a3fd11a63dfdac0287c1c17fbf6aa42808f3817fcccb64ec9c42e8573e95d7c
+- anio: 2016
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '548'
+  codigo: '69'
+  nombre: Embarazo, Parto, Puerperio y Lactancia
+  archivos:
+    SPSS: 548-Modulo69
+    DBF: 548-Modulo69
+    CSV: 548-Modulo69
+    STATA: 548-Modulo69
+  local:
+    formato: SPSS
+    ruta: ENDES/2016/548-Modulo69.zip
+    bytes: 4025999
+    sha256: 8ba4e3ca6cda66746a416e8200dd873a4a4f132e887e9daafbc207c711295af2
+- anio: 2016
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '548'
+  codigo: '70'
+  nombre: Inmunización y Salud
+  archivos:
+    SPSS: 548-Modulo70
+    DBF: 548-Modulo70
+    CSV: 548-Modulo70
+    STATA: 548-Modulo70
+  local:
+    formato: SPSS
+    ruta: ENDES/2016/548-Modulo70.zip
+    bytes: 8746719
+    sha256: 8550fce361d757669ed5fbacb8a4905927d106c110ccfdf6de26c3f800e589c7
+- anio: 2016
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '548'
+  codigo: '71'
+  nombre: Nupcialidad - Fecundidad - Cónyugue y Mujer
+  archivos:
+    SPSS: 548-Modulo71
+    DBF: 548-Modulo71
+    CSV: 548-Modulo71
+    STATA: 548-Modulo71
+  local:
+    formato: SPSS
+    ruta: ENDES/2016/548-Modulo71.zip
+    bytes: 4090744
+    sha256: 0cbdf06683438a21974f1f6ec21dbe49af0caa356c86f2f04b7c1d2a0c01235e
+- anio: 2016
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '548'
+  codigo: '72'
+  nombre: Conocimiento de Sida y uso del condón
+  archivos:
+    SPSS: 548-Modulo72
+    DBF: 548-Modulo72
+    CSV: 548-Modulo72
+    STATA: 548-Modulo72
+  local:
+    formato: SPSS
+    ruta: ENDES/2016/548-Modulo72.zip
+    bytes: 5689626
+    sha256: 92c7c9e13f201da5b44292f3351e7ae29af8263fdfad1cc06006e5403b1592a2
+- anio: 2016
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '548'
+  codigo: '73'
+  nombre: Mortalidad Materna - Violencia Familiar
+  archivos:
+    SPSS: 548-Modulo73
+    DBF: 548-Modulo73
+    CSV: 548-Modulo73
+    STATA: 548-Modulo73
+  local:
+    formato: SPSS
+    ruta: ENDES/2016/548-Modulo73.zip
+    bytes: 4425866
+    sha256: ce851f474619b672e2b997e1c3a186762b58b7fa43b27410c3b6776d6ee6a39e
+- anio: 2016
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '548'
+  codigo: '74'
+  nombre: Peso y talla - Anemia
+  archivos:
+    SPSS: 548-Modulo74
+    DBF: 548-Modulo74
+    CSV: 548-Modulo74
+    STATA: 548-Modulo74
+  local:
+    formato: SPSS
+    ruta: ENDES/2016/548-Modulo74.zip
+    bytes: 6953290
+    sha256: 9a8877d0e9bf9cb097d3ffcbfa2574df2a9650268687c7263223f63b9d763453
+- anio: 2016
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '548'
+  codigo: '413'
+  nombre: Disciplina Infantil
+  archivos:
+    SPSS: 548-Modulo413
+    DBF: 548-Modulo413
+    CSV: 548-Modulo413
+    STATA: 548-Modulo413
+  local:
+    formato: SPSS
+    ruta: ENDES/2016/548-Modulo413.zip
+    bytes: 3116713
+    sha256: 1da6f76223c1a3fd518a5ed879eff4f551347a47dba76419f7bd1c50b51de6a5
+- anio: 2016
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '548'
+  codigo: '414'
+  nombre: Encuesta de salud
+  archivos:
+    SPSS: 548-Modulo414
+    DBF: 548-Modulo414
+    CSV: 548-Modulo414
+    STATA: 548-Modulo414
+  local:
+    formato: SPSS
+    ruta: ENDES/2016/548-Modulo414.zip
+    bytes: 5770702
+    sha256: 2d53570396c8db64d833107ed0627b8effed7e4f30c15c1036bb02fb177d56fd
+- anio: 2016
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '548'
+  codigo: '569'
+  nombre: Programas Sociales
+  archivos:
+    SPSS: 548-Modulo569
+    DBF: 548-Modulo569
+    CSV: 548-Modulo569
+    STATA: 548-Modulo569
+  local:
+    formato: SPSS
+    ruta: ENDES/2016/548-Modulo569.zip
+    bytes: 1918483
+    sha256: 9274f7752dbff08bc2f3387b07e9fa3191187d2a67fd161a963628bda3dafc6c
+- anio: 2017
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '605'
+  codigo: '64'
+  nombre: Caracteristicas del Hogar
+  archivos:
+    SPSS: 605-Modulo64
+    DBF: 605-Modulo64
+    CSV: 605-Modulo64
+    STATA: 605-Modulo64
+  local:
+    formato: SPSS
+    ruta: ENDES/2017/605-Modulo64.zip
+    bytes: 4225214
+    sha256: bd6d3c4657712643657a66539466ca4b216664698af9e9273562a6b08274d19a
+- anio: 2017
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '605'
+  codigo: '65'
+  nombre: Caracteristicas de la Vivienda
+  archivos:
+    SPSS: 605-Modulo65
+    DBF: 605-Modulo65
+    CSV: 605-Modulo65
+    STATA: 605-Modulo65
+  local:
+    formato: SPSS
+    ruta: ENDES/2017/605-Modulo65.zip
+    bytes: 2505926
+    sha256: e05231c6cce43141ce2d42d2bbf23edce4de1128c6790a6f7ceec8bd16000078
+- anio: 2017
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '605'
+  codigo: '66'
+  nombre: Datos Basicos de MEF
+  archivos:
+    SPSS: 605-Modulo66
+    DBF: 605-Modulo66
+    CSV: 605-Modulo66
+    STATA: 605-Modulo66
+  local:
+    formato: SPSS
+    ruta: ENDES/2017/605-Modulo66.zip
+    bytes: 6025013
+    sha256: 99034d71e2703353e2cb5b0b78b2bdf6697c95d029f54b962a4d107454c30f4c
+- anio: 2017
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '605'
+  codigo: '67'
+  nombre: Historia de Nacimiento - Tabla de Conocimiento de Metodo
+  archivos:
+    SPSS: 605-Modulo67
+    DBF: 605-Modulo67
+    CSV: 605-Modulo67
+    STATA: 605-Modulo67
+  local:
+    formato: SPSS
+    ruta: ENDES/2017/605-Modulo67.zip
+    bytes: 5937066
+    sha256: 262527335661229747d1d026ab7d9c2650501853fcea7b3e7305de86a2b2ccfa
+- anio: 2017
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '605'
+  codigo: '69'
+  nombre: Embarazo, Parto, Puerperio y Lactancia
+  archivos:
+    SPSS: 605-Modulo69
+    DBF: 605-Modulo69
+    CSV: 605-Modulo69
+    STATA: 605-Modulo69
+  local:
+    formato: SPSS
+    ruta: ENDES/2017/605-Modulo69.zip
+    bytes: 3777885
+    sha256: 0129dd99c71f817fefb06b6936bffc47d149de6aca72e32584b5f644c5c6d381
+- anio: 2017
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '605'
+  codigo: '70'
+  nombre: Inmunización y Salud
+  archivos:
+    SPSS: 605-Modulo70
+    DBF: 605-Modulo70
+    CSV: 605-Modulo70
+    STATA: 605-Modulo70
+  local:
+    formato: SPSS
+    ruta: ENDES/2017/605-Modulo70.zip
+    bytes: 8075100
+    sha256: 5f404dd3c201a557babf38bf24d7b83849cda02b4ccbde8e26a7dbda9bca9392
+- anio: 2017
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '605'
+  codigo: '71'
+  nombre: Nupcialidad - Fecundidad - Cónyugue y Mujer
+  archivos:
+    SPSS: 605-Modulo71
+    DBF: 605-Modulo71
+    CSV: 605-Modulo71
+    STATA: 605-Modulo71
+  local:
+    formato: SPSS
+    ruta: ENDES/2017/605-Modulo71.zip
+    bytes: 3904629
+    sha256: a4cead2ec935c301e6af373b8a882445a7b4e012885d5e59fa02f321add07420
+- anio: 2017
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '605'
+  codigo: '72'
+  nombre: Conocimiento de Sida y uso del condón
+  archivos:
+    SPSS: 605-Modulo72
+    DBF: 605-Modulo72
+    CSV: 605-Modulo72
+    STATA: 605-Modulo72
+  local:
+    formato: SPSS
+    ruta: ENDES/2017/605-Modulo72.zip
+    bytes: 5124661
+    sha256: 1ca248be81a81da01d49740068b776469ed981fe5a5953cd02cdb35be4d233b1
+- anio: 2017
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '605'
+  codigo: '73'
+  nombre: Mortalidad Materna - Violencia Familiar
+  archivos:
+    SPSS: 605-Modulo73
+    DBF: 605-Modulo73
+    CSV: 605-Modulo73
+    STATA: 605-Modulo73
+  local:
+    formato: SPSS
+    ruta: ENDES/2017/605-Modulo73.zip
+    bytes: 4156405
+    sha256: e1a038321e5d9eb025a0a3c912bca774aa40db7ae2e50980275fde343ba304b4
+- anio: 2017
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '605'
+  codigo: '74'
+  nombre: Peso y talla - Anemia
+  archivos:
+    SPSS: 605-Modulo74
+    DBF: 605-Modulo74
+    CSV: 605-Modulo74
+    STATA: 605-Modulo74
+  local:
+    formato: SPSS
+    ruta: ENDES/2017/605-Modulo74.zip
+    bytes: 7008627
+    sha256: 0faf60166b7bbd3638c9b1d8443d4c014d04481fb6bed6b74558aecc8f269509
+- anio: 2017
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '605'
+  codigo: '413'
+  nombre: Disciplina Infantil
+  archivos:
+    SPSS: 605-Modulo413
+    DBF: 605-Modulo413
+    CSV: 605-Modulo413
+    STATA: 605-Modulo413
+  local:
+    formato: SPSS
+    ruta: ENDES/2017/605-Modulo413.zip
+    bytes: 3043964
+    sha256: 5b4cee3dda473b1dfe04da454a86aadae9a3b471066f84710bd2fe70daefdf24
+- anio: 2017
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '605'
+  codigo: '414'
+  nombre: Encuesta de salud
+  archivos:
+    SPSS: 605-Modulo414
+    DBF: 605-Modulo414
+    CSV: 605-Modulo414
+    STATA: 605-Modulo414
+  local:
+    formato: SPSS
+    ruta: ENDES/2017/605-Modulo414.zip
+    bytes: 5074193
+    sha256: 570b8ee438d61e4dcd92dfdbd6032863334fc865f685d1fef24090544d72be59
+- anio: 2017
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '605'
+  codigo: '569'
+  nombre: Programas Sociales
+  archivos:
+    SPSS: 605-Modulo569
+    DBF: 605-Modulo569
+    CSV: 605-Modulo569
+    STATA: 605-Modulo569
+  local:
+    formato: SPSS
+    ruta: ENDES/2017/605-Modulo569.zip
+    bytes: 1930580
+    sha256: bd5fe4a0f2c24af112045e361fc1071275fb0e87c5f65a70845a06cdd584dbda
+- anio: 2018
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '638'
+  codigo: '64'
+  nombre: Caracteristicas del Hogar
+  archivos:
+    SPSS: 638-Modulo64
+    DBF: 638-Modulo64
+    CSV: 638-Modulo64
+    STATA: 638-Modulo64
+  local:
+    formato: SPSS
+    ruta: ENDES/2018/638-Modulo64.zip
+    bytes: 6262792
+    sha256: 52e4848dc22800f767e477053d7daada3f7360f5d03d1cd022d6785319955a39
+- anio: 2018
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '638'
+  codigo: '65'
+  nombre: Caracteristicas de la Vivienda
+  archivos:
+    SPSS: 638-Modulo65
+    DBF: 638-Modulo65
+    CSV: 638-Modulo65
+    STATA: 638-Modulo65
+  local:
+    formato: SPSS
+    ruta: ENDES/2018/638-Modulo65.zip
+    bytes: 4381037
+    sha256: 4224522757a2a8b964fdc242fe2179f216620125e3cd022fe6807acd2880481f
+- anio: 2018
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '638'
+  codigo: '66'
+  nombre: Datos Basicos de MEF
+  archivos:
+    SPSS: 638-Modulo66
+    DBF: 638-Modulo66
+    CSV: 638-Modulo66
+    STATA: 638-Modulo66
+  local:
+    formato: SPSS
+    ruta: ENDES/2018/638-Modulo66.zip
+    bytes: 9278641
+    sha256: 4a44eafa73a54f24f2c6aec583e860e01d810b40e6d5c409abdd347d732e8ee9
+- anio: 2018
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '638'
+  codigo: '67'
+  nombre: Historia de Nacimiento - Tabla de Conocimiento de Metodo
+  archivos:
+    SPSS: 638-Modulo67
+    DBF: 638-Modulo67
+    CSV: 638-Modulo67
+    STATA: 638-Modulo67
+  local:
+    formato: SPSS
+    ruta: ENDES/2018/638-Modulo67.zip
+    bytes: 8331614
+    sha256: 74147d2d8b18eb5a86cc3a2751672347e0afc4eb93b78084e25a93d5e2b851c3
+- anio: 2018
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '638'
+  codigo: '69'
+  nombre: Embarazo, Parto, Puerperio y Lactancia
+  archivos:
+    SPSS: 638-Modulo69
+    DBF: 638-Modulo69
+    CSV: 638-Modulo69
+    STATA: 638-Modulo69
+  local:
+    formato: SPSS
+    ruta: ENDES/2018/638-Modulo69.zip
+    bytes: 6332688
+    sha256: 7346c96c26481e43d81298c1273ff9d82f42c808da19c66fa31ac4b2df0a68f4
+- anio: 2018
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '638'
+  codigo: '70'
+  nombre: Inmunización y Salud
+  archivos:
+    SPSS: 638-Modulo70
+    DBF: 638-Modulo70
+    CSV: 638-Modulo70
+    STATA: 638-Modulo70
+  local:
+    formato: SPSS
+    ruta: ENDES/2018/638-Modulo70.zip
+    bytes: 11684857
+    sha256: 1226e85aa040cfe004d568c9fe108dd27c1f488c4c0e8065a35bafb9be25b6f6
+- anio: 2018
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '638'
+  codigo: '71'
+  nombre: Nupcialidad - Fecundidad - Cónyugue y Mujer
+  archivos:
+    SPSS: 638-Modulo71
+    DBF: 638-Modulo71
+    CSV: 638-Modulo71
+    STATA: 638-Modulo71
+  local:
+    formato: SPSS
+    ruta: ENDES/2018/638-Modulo71.zip
+    bytes: 6415331
+    sha256: caae554f55f8dae2fc204b07f804d736d3d5bcae183de8bd76daa3221853b16b
+- anio: 2018
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '638'
+  codigo: '72'
+  nombre: Conocimiento de Sida y uso del condón
+  archivos:
+    SPSS: 638-Modulo72
+    DBF: 638-Modulo72
+    CSV: 638-Modulo72
+    STATA: 638-Modulo72
+  local:
+    formato: SPSS
+    ruta: ENDES/2018/638-Modulo72.zip
+    bytes: 7361046
+    sha256: 317d033e9cf4f470453249b7ed0fc7b1acd8ba0a4d7e192721306a7dba8b726a
+- anio: 2018
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '638'
+  codigo: '73'
+  nombre: Mortalidad Materna - Violencia Familiar
+  archivos:
+    SPSS: 638-Modulo73
+    DBF: 638-Modulo73
+    CSV: 638-Modulo73
+    STATA: 638-Modulo73
+  local:
+    formato: SPSS
+    ruta: ENDES/2018/638-Modulo73.zip
+    bytes: 6685582
+    sha256: 42fa73e196d215d3402e69e02f58087cf3f4c096a541bdb577ade4ed97ca765f
+- anio: 2018
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '638'
+  codigo: '74'
+  nombre: Peso y talla - Anemia
+  archivos:
+    SPSS: 638-Modulo74
+    DBF: 638-Modulo74
+    CSV: 638-Modulo74
+    STATA: 638-Modulo74
+  local:
+    formato: SPSS
+    ruta: ENDES/2018/638-Modulo74.zip
+    bytes: 10015509
+    sha256: 3f3404b444895da2def53d20bfabac7afc4563b5a87a14453cf41967ef6d9afd
+- anio: 2018
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '638'
+  codigo: '413'
+  nombre: Disciplina Infantil
+  archivos:
+    SPSS: 638-Modulo413
+    DBF: 638-Modulo413
+    CSV: 638-Modulo413
+    STATA: 638-Modulo413
+  local:
+    formato: SPSS
+    ruta: ENDES/2018/638-Modulo413.zip
+    bytes: 5435839
+    sha256: a835d87313d344a01f1cb52c7ec80ce15396bdb646415940a1e9ef6f005ef328
+- anio: 2018
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '638'
+  codigo: '414'
+  nombre: Encuesta de salud
+  archivos:
+    SPSS: 638-Modulo414
+    DBF: 638-Modulo414
+    CSV: 638-Modulo414
+    STATA: 638-Modulo414
+  local:
+    formato: SPSS
+    ruta: ENDES/2018/638-Modulo414.zip
+    bytes: 5837654
+    sha256: cef5185605f13ac8b70debf8c753968156d6ede76edf5b91be69b13fc068f4f0
+- anio: 2018
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '638'
+  codigo: '569'
+  nombre: Programas Sociales
+  archivos:
+    SPSS: 638-Modulo569
+    DBF: 638-Modulo569
+    CSV: 638-Modulo569
+    STATA: 638-Modulo569
+  local:
+    formato: SPSS
+    ruta: ENDES/2018/638-Modulo569.zip
+    bytes: 3755718
+    sha256: 16739d3042b80961d44b1ecc4b0cdef71aa04e3223b395d4ff00c99f5d80fa26
+- anio: 2019
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '691'
+  codigo: '64'
+  nombre: Caracteristicas del Hogar
+  archivos:
+    SPSS: 691-Modulo64
+    DBF: 691-Modulo64
+    CSV: 691-Modulo64
+    STATA: 691-Modulo64
+  local:
+    formato: SPSS
+    ruta: ENDES/2019/691-Modulo64.zip
+    bytes: 5324747
+    sha256: 0f93549a141fda8cc9db5935a0011fcde024a398739ed45906fec213d5ad17cf
+- anio: 2019
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '691'
+  codigo: '65'
+  nombre: Caracteristicas de la Vivienda
+  archivos:
+    SPSS: 691-Modulo65
+    DBF: 691-Modulo65
+    CSV: 691-Modulo65
+    STATA: 691-Modulo65
+  local:
+    formato: SPSS
+    ruta: ENDES/2019/691-Modulo65.zip
+    bytes: 2871634
+    sha256: 6abac980438eb12d87fc3aa7d76f5917607edc7676474a1ede6035e37cf50a35
+- anio: 2019
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '691'
+  codigo: '66'
+  nombre: Datos Basicos de MEF
+  archivos:
+    SPSS: 691-Modulo66
+    DBF: 691-Modulo66
+    CSV: 691-Modulo66
+    STATA: 691-Modulo66
+  local:
+    formato: SPSS
+    ruta: ENDES/2019/691-Modulo66.zip
+    bytes: 8459430
+    sha256: 46d4145b4eaeb284d6b155621637499c529fff10bb9345050916f295b9a2731c
+- anio: 2019
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '691'
+  codigo: '67'
+  nombre: Historia de Nacimiento - Tabla de Conocimiento de Metodo
+  archivos:
+    SPSS: 691-Modulo67
+    DBF: 691-Modulo67
+    CSV: 691-Modulo67
+    STATA: 691-Modulo67
+  local:
+    formato: SPSS
+    ruta: ENDES/2019/691-Modulo67.zip
+    bytes: 7525890
+    sha256: 71a04cd4e55b61c12acf0fda14dc09bacce11985fa06be183d7c941568ae039c
+- anio: 2019
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '691'
+  codigo: '69'
+  nombre: Embarazo, Parto, Puerperio y Lactancia
+  archivos:
+    SPSS: 691-Modulo69
+    DBF: 691-Modulo69
+    CSV: 691-Modulo69
+    STATA: 691-Modulo69
+  local:
+    formato: SPSS
+    ruta: ENDES/2019/691-Modulo69.zip
+    bytes: 5671743
+    sha256: 69160a8152be16b5c778ad5af43736a95c023a9a7ad1f3c7bb64e2c340fed3f8
+- anio: 2019
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '691'
+  codigo: '70'
+  nombre: Inmunización y Salud
+  archivos:
+    SPSS: 691-Modulo70
+    DBF: 691-Modulo70
+    CSV: 691-Modulo70
+    STATA: 691-Modulo70
+  local:
+    formato: SPSS
+    ruta: ENDES/2019/691-Modulo70.zip
+    bytes: 10919671
+    sha256: 5d12d07a577e43d42dc3117df03f14d008d13b6664f477fefdc6ead90329b9ae
+- anio: 2019
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '691'
+  codigo: '71'
+  nombre: Nupcialidad - Fecundidad - Cónyugue y Mujer
+  archivos:
+    SPSS: 691-Modulo71
+    DBF: 691-Modulo71
+    CSV: 691-Modulo71
+    STATA: 691-Modulo71
+  local:
+    formato: SPSS
+    ruta: ENDES/2019/691-Modulo71.zip
+    bytes: 5488398
+    sha256: e4eec0c1961eec28b3e0c69563fc57f721f37e4419bbe945c20fc38eb3833309
+- anio: 2019
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '691'
+  codigo: '72'
+  nombre: Conocimiento de Sida y uso del condón
+  archivos:
+    SPSS: 691-Modulo72
+    DBF: 691-Modulo72
+    CSV: 691-Modulo72
+    STATA: 691-Modulo72
+  local:
+    formato: SPSS
+    ruta: ENDES/2019/691-Modulo72.zip
+    bytes: 7076065
+    sha256: 01466688c529acfe5f717ae8ad5495f7d87708990f552aaccaf6c012f4152192
+- anio: 2019
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '691'
+  codigo: '73'
+  nombre: Mortalidad Materna - Violencia Familiar
+  archivos:
+    SPSS: 691-Modulo73
+    DBF: 691-Modulo73
+    CSV: 691-Modulo73
+    STATA: 691-Modulo73
+  local:
+    formato: SPSS
+    ruta: ENDES/2019/691-Modulo73.zip
+    bytes: 6182059
+    sha256: aff86d93ae8fd9514f2726bc298b1665739315f46f79c10ab5c14b91ccb7ac8b
+- anio: 2019
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '691'
+  codigo: '74'
+  nombre: Peso y talla - Anemia
+  archivos:
+    SPSS: 691-Modulo74
+    DBF: 691-Modulo74
+    CSV: 691-Modulo74
+    STATA: 691-Modulo74
+  local:
+    formato: SPSS
+    ruta: ENDES/2019/691-Modulo74.zip
+    bytes: 9041516
+    sha256: 5831d3326670c6eca5c9b53a0307630c2abed756b16ad693e29b3fc53a72d3f4
+- anio: 2019
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '691'
+  codigo: '413'
+  nombre: Disciplina Infantil
+  archivos:
+    SPSS: 691-Modulo413
+    DBF: 691-Modulo413
+    CSV: 691-Modulo413
+    STATA: 691-Modulo413
+  local:
+    formato: SPSS
+    ruta: ENDES/2019/691-Modulo413.zip
+    bytes: 4397923
+    sha256: ccf6573a3bc244a4df0899949b8cd5eaaca8d6d7394f12481542aaeeae504631
+- anio: 2019
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '691'
+  codigo: '414'
+  nombre: Encuesta de salud
+  archivos:
+    SPSS: 691-Modulo414
+    DBF: 691-Modulo414
+    CSV: 691-Modulo414
+    STATA: 691-Modulo414
+  local:
+    formato: SPSS
+    ruta: ENDES/2019/691-Modulo414.zip
+    bytes: 5671299
+    sha256: 8626e797f8dc1e2a61b4d037991a6b8a4bc0ff5269af54cf392e555ec7452633
+- anio: 2019
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '691'
+  codigo: '569'
+  nombre: Programas Sociales
+  archivos:
+    SPSS: 691-Modulo569
+    DBF: 691-Modulo569
+    CSV: 691-Modulo569
+    STATA: 691-Modulo569
+  local:
+    formato: SPSS
+    ruta: ENDES/2019/691-Modulo569.zip
+    bytes: 2862481
+    sha256: 3871f9860a925ed3803b26562025995b5c7cf62fac76aaf9818f8410d6d1d41d
+- anio: 2020
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '739'
+  codigo: '1629'
+  nombre: Caracteristicas del Hogar
+  archivos:
+    CSV: 739-Modulo1629
+    SPSS: 739-Modulo1629
+    DBF: 739-Modulo1629
+    STATA: 739-Modulo1629
+  local:
+    formato: CSV
+    ruta: ENDES/2020/739-Modulo1629.zip
+    bytes: 4371696
+    sha256: 3ed39a91a0313897105bc0969b5fed8f6b14bd91f15628ead07f1b852d94cd87
+- anio: 2020
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '739'
+  codigo: '1630'
+  nombre: Caracteristicas de la Vivienda
+  archivos:
+    CSV: 739-Modulo1630
+    SPSS: 739-Modulo1630
+    DBF: 739-Modulo1630
+    STATA: 739-Modulo1630
+  local:
+    formato: CSV
+    ruta: ENDES/2020/739-Modulo1630.zip
+    bytes: 2845986
+    sha256: ff512975ed85fdd5a9a971b5ae04a85b1a204079c81d8b0196a5b3aaff53add9
+- anio: 2020
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '739'
+  codigo: '1631'
+  nombre: Datos Basicos de MEF
+  archivos:
+    CSV: 739-Modulo1631
+    SPSS: 739-Modulo1631
+    DBF: 739-Modulo1631
+    STATA: 739-Modulo1631
+  local:
+    formato: CSV
+    ruta: ENDES/2020/739-Modulo1631.zip
+    bytes: 7739542
+    sha256: bd220f0b4fb91d2bf38067cc4dfa78c05e43afbe0b25765f378140f0b439484d
+- anio: 2020
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '739'
+  codigo: '1632'
+  nombre: Historia de Nacimiento - Tabla de Conocimiento de Metodo
+  archivos:
+    CSV: 739-Modulo1632
+    SPSS: 739-Modulo1632
+    DBF: 739-Modulo1632
+    STATA: 739-Modulo1632
+  local:
+    formato: CSV
+    ruta: ENDES/2020/739-Modulo1632.zip
+    bytes: 6657653
+    sha256: a9720477ce3739a5d3fd787e1cd29990889f897d0fdcffc814c47ca5707a1cfa
+- anio: 2020
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '739'
+  codigo: '1633'
+  nombre: Embarazo, Parto, Puerperio y Lactancia
+  archivos:
+    CSV: 739-Modulo1633
+    SPSS: 739-Modulo1633
+    DBF: 739-Modulo1633
+    STATA: 739-Modulo1633
+  local:
+    formato: CSV
+    ruta: ENDES/2020/739-Modulo1633.zip
+    bytes: 5071544
+    sha256: b312475dc91c0f374079a3aebdf64c755f48f109422ea2019194158a793cc9d9
+- anio: 2020
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '739'
+  codigo: '1634'
+  nombre: Inmunización y Salud
+  archivos:
+    CSV: 739-Modulo1634
+    SPSS: 739-Modulo1634
+    DBF: 739-Modulo1634
+    STATA: 739-Modulo1634
+  local:
+    formato: CSV
+    ruta: ENDES/2020/739-Modulo1634.zip
+    bytes: 8271384
+    sha256: 0f066991eb09382e61eac93d8e407a18d9434187155cae8d78ac9f491fbf5889
+- anio: 2020
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '739'
+  codigo: '1635'
+  nombre: Nupcialidad - Fecundidad - Cónyugue y Mujer
+  archivos:
+    CSV: 739-Modulo1635
+    SPSS: 739-Modulo1635
+    DBF: 739-Modulo1635
+    STATA: 739-Modulo1635
+  local:
+    formato: CSV
+    ruta: ENDES/2020/739-Modulo1635.zip
+    bytes: 4886768
+    sha256: 701d45562ef72f218474e5f85feee441fbdb3a85a8fa15bcdbe5019c1d5f93e7
+- anio: 2020
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '739'
+  codigo: '1636'
+  nombre: Conocimiento de Sida y uso del condón
+  archivos:
+    CSV: 739-Modulo1636
+    SPSS: 739-Modulo1636
+    DBF: 739-Modulo1636
+    STATA: 739-Modulo1636
+  local:
+    formato: CSV
+    ruta: ENDES/2020/739-Modulo1636.zip
+    bytes: 5159700
+    sha256: f70b51abafab9cc59ccc7b553511f53146a15974ed40e48bcbbd8bfffe09f45b
+- anio: 2020
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '739'
+  codigo: '1637'
+  nombre: Mortalidad Materna - Violencia Familiar
+  archivos:
+    CSV: 739-Modulo1637
+    SPSS: 739-Modulo1637
+    DBF: 739-Modulo1637
+    STATA: 739-Modulo1637
+  local:
+    formato: CSV
+    ruta: ENDES/2020/739-Modulo1637.zip
+    bytes: 5154281
+    sha256: 5cb64b4df7b307ade3423d2f33d48c5987a4b6ea260e1a62eabfad486ac13cf9
+- anio: 2020
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '739'
+  codigo: '1638'
+  nombre: Peso y talla - Anemia
+  archivos:
+    CSV: 739-Modulo1638
+    SPSS: 739-Modulo1638
+    DBF: 739-Modulo1638
+    STATA: 739-Modulo1638
+  local:
+    formato: CSV
+    ruta: ENDES/2020/739-Modulo1638.zip
+    bytes: 6657716
+    sha256: e9bbf646dde6d37ccca5a178a597141416c1cbb5dafb05a9a7d4d2e5e8c78f55
+- anio: 2020
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '739'
+  codigo: '1639'
+  nombre: Disciplina Infantil
+  archivos:
+    CSV: 739-Modulo1639
+    SPSS: 739-Modulo1639
+    DBF: 739-Modulo1639
+    STATA: 739-Modulo1639
+  local:
+    formato: CSV
+    ruta: ENDES/2020/739-Modulo1639.zip
+    bytes: 4142313
+    sha256: a7c584e55eedf7d5a9237d621a6acb9476fe015033bd5e511d987865326849ca
+- anio: 2020
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '739'
+  codigo: '1640'
+  nombre: Encuesta de salud
+  archivos:
+    CSV: 739-Modulo1640
+    SPSS: 739-Modulo1640
+    DBF: 739-Modulo1640
+    STATA: 739-Modulo1640
+  local:
+    formato: CSV
+    ruta: ENDES/2020/739-Modulo1640.zip
+    bytes: 4629511
+    sha256: 62c539e9e454b47a660006678edd2cbd88bfa4e45420dd64a36e1adf4a610d74
+- anio: 2020
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '739'
+  codigo: '1641'
+  nombre: Programas Sociales
+  archivos:
+    CSV: 739-Modulo1641
+    SPSS: 739-Modulo1641
+    DBF: 739-Modulo1641
+    STATA: 739-Modulo1641
+  local:
+    formato: CSV
+    ruta: ENDES/2020/739-Modulo1641.zip
+    bytes: 2609182
+    sha256: 9d5c785bab85837c5aa8cb0b3b957889269d8325b77e5a4bd45b40f18181ce3a
+- anio: 2021
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '760'
+  codigo: '1629'
+  nombre: Caracteristicas del Hogar
+  archivos:
+    CSV: 760-Modulo1629
+    STATA: 760-Modulo1629
+    SPSS: 760-Modulo1629
+    DBF: 760-Modulo1629
+  local:
+    formato: CSV
+    ruta: ENDES/2021/760-Modulo1629.zip
+    bytes: 5219768
+    sha256: 476660ceb5718dff5cc54851adbfbb5f12dc69c7064a3e41d5e57aa105854b12
+- anio: 2021
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '760'
+  codigo: '1630'
+  nombre: Caracteristicas de la Vivienda
+  archivos:
+    CSV: 760-Modulo1630
+    STATA: 760-Modulo1630
+    SPSS: 760-Modulo1630
+    DBF: 760-Modulo1630
+  local:
+    formato: CSV
+    ruta: ENDES/2021/760-Modulo1630.zip
+    bytes: 3645313
+    sha256: 3629f217fbe0b80ba5f95621406e06cfbd50a88758b25e0366b9b6157e56045a
+- anio: 2021
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '760'
+  codigo: '1631'
+  nombre: Datos Basicos de MEF
+  archivos:
+    CSV: 760-Modulo1631
+    STATA: 760-Modulo1631
+    SPSS: 760-Modulo1631
+    DBF: 760-Modulo1631
+  local:
+    formato: CSV
+    ruta: ENDES/2021/760-Modulo1631.zip
+    bytes: 7479644
+    sha256: 3530329539a5bb5766a695384a15678cfce3a90144d9fddfaaa8bd9a50ab2322
+- anio: 2021
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '760'
+  codigo: '1632'
+  nombre: Historia de Nacimiento - Tabla de Conocimiento de Metodo
+  archivos:
+    CSV: 760-Modulo1632
+    STATA: 760-Modulo1632
+    SPSS: 760-Modulo1632
+    DBF: 760-Modulo1632
+  local:
+    formato: CSV
+    ruta: ENDES/2021/760-Modulo1632.zip
+    bytes: 6288483
+    sha256: 4f3f02091b0663e43ddbb804c50907b66b51f59bb0f9acdbafb7bf1c0bb74b1e
+- anio: 2021
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '760'
+  codigo: '1633'
+  nombre: Embarazo, Parto, Puerperio y Lactancia
+  archivos:
+    CSV: 760-Modulo1633
+    STATA: 760-Modulo1633
+    SPSS: 760-Modulo1633
+    DBF: 760-Modulo1633
+  local:
+    formato: CSV
+    ruta: ENDES/2021/760-Modulo1633.zip
+    bytes: 4608375
+    sha256: d19ac7245598b23b695a6ee83d018f916ce2875ab7d4e5186aab417957068c24
+- anio: 2021
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '760'
+  codigo: '1634'
+  nombre: Inmunización y Salud
+  archivos:
+    CSV: 760-Modulo1634
+    STATA: 760-Modulo1634
+    SPSS: 760-Modulo1634
+    DBF: 760-Modulo1634
+  local:
+    formato: CSV
+    ruta: ENDES/2021/760-Modulo1634.zip
+    bytes: 8773837
+    sha256: 4b0f33c0d13d29215da413b39dd99304a9716c8c1207f8630e1a92fe33be952c
+- anio: 2021
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '760'
+  codigo: '1635'
+  nombre: Nupcialidad - Fecundidad - Cónyugue y Mujer
+  archivos:
+    CSV: 760-Modulo1635
+    STATA: 760-Modulo1635
+    SPSS: 760-Modulo1635
+    DBF: 760-Modulo1635
+  local:
+    formato: CSV
+    ruta: ENDES/2021/760-Modulo1635.zip
+    bytes: 4154721
+    sha256: a3f16362788f83d1a0de338ca9900f28cf65c1313cb9a21dabde16aadc8f77cf
+- anio: 2021
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '760'
+  codigo: '1636'
+  nombre: Conocimiento de Sida y uso del condón
+  archivos:
+    CSV: 760-Modulo1636
+    STATA: 760-Modulo1636
+    SPSS: 760-Modulo1636
+    DBF: 760-Modulo1636
+  local:
+    formato: CSV
+    ruta: ENDES/2021/760-Modulo1636.zip
+    bytes: 5489344
+    sha256: 9baeedd0d3d57189cbca212a832c11fa76fb73b158e8d18e072d920090a34352
+- anio: 2021
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '760'
+  codigo: '1637'
+  nombre: Mortalidad Materna - Violencia Familiar
+  archivos:
+    CSV: 760-Modulo1637
+    STATA: 760-Modulo1637
+    SPSS: 760-Modulo1637
+    DBF: 760-Modulo1637
+  local:
+    formato: CSV
+    ruta: ENDES/2021/760-Modulo1637.zip
+    bytes: 4768124
+    sha256: cfa1ac07e9a9dbb402ef15cdf7db83d3ce1ce22da85e343e7a51ddc9d441d9f1
+- anio: 2021
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '760'
+  codigo: '1638'
+  nombre: Peso y talla - Anemia
+  archivos:
+    CSV: 760-Modulo1638
+    STATA: 760-Modulo1638
+    SPSS: 760-Modulo1638
+    DBF: 760-Modulo1638
+  local:
+    formato: CSV
+    ruta: ENDES/2021/760-Modulo1638.zip
+    bytes: 6578820
+    sha256: fd9fea9eff3d880673955a294d1dfabb643d4385adaf6af84218eae57dfe08ff
+- anio: 2021
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '760'
+  codigo: '1639'
+  nombre: Disciplina Infantil
+  archivos:
+    CSV: 760-Modulo1639
+    STATA: 760-Modulo1639
+    SPSS: 760-Modulo1639
+    DBF: 760-Modulo1639
+  local:
+    formato: CSV
+    ruta: ENDES/2021/760-Modulo1639.zip
+    bytes: 3164435
+    sha256: cae4432400ba7bafeef8fb7246d1cbb3ffa6457d8eccb36ee734dc142336e9d2
+- anio: 2021
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '760'
+  codigo: '1640'
+  nombre: Encuesta de salud
+  archivos:
+    CSV: 760-Modulo1640
+    STATA: 760-Modulo1640
+    SPSS: 760-Modulo1640
+    DBF: 760-Modulo1640
+  local:
+    formato: CSV
+    ruta: ENDES/2021/760-Modulo1640.zip
+    bytes: 5607906
+    sha256: ed0ce1ff2790aa859f98ba492ca30d9d7b908c36260967dafee4e5206a0078f3
+- anio: 2021
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '760'
+  codigo: '1641'
+  nombre: Programas Sociales
+  archivos:
+    CSV: 760-Modulo1641
+    STATA: 760-Modulo1641
+    SPSS: 760-Modulo1641
+    DBF: 760-Modulo1641
+  local:
+    formato: CSV
+    ruta: ENDES/2021/760-Modulo1641.zip
+    bytes: 3240097
+    sha256: 441b9fab7669d61747aaae44cdf6ab64aa04c50d19a03d49c12dd8ef050e68b0
+- anio: 2022
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '786'
+  codigo: '1629'
+  nombre: Caracteristicas del Hogar
+  archivos:
+    CSV: 786-Modulo1629
+    STATA: 786-Modulo1629
+    SPSS: 786-Modulo1629
+    DBF: 786-Modulo1629
+  local:
+    formato: CSV
+    ruta: ENDES/2022/786-Modulo1629.zip
+    bytes: 5080662
+    sha256: ad4442a0a2723767c0d093ca5223dea53dd66b106e6457555be29284c4698d24
+- anio: 2022
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '786'
+  codigo: '1630'
+  nombre: Caracteristicas de la Vivienda
+  archivos:
+    CSV: 786-Modulo1630
+    STATA: 786-Modulo1630
+    SPSS: 786-Modulo1630
+    DBF: 786-Modulo1630
+  local:
+    formato: CSV
+    ruta: ENDES/2022/786-Modulo1630.zip
+    bytes: 3577248
+    sha256: 35c2fe920c74565a4fef764dfbd7d5c383f0a8811c3498624d936838ff4ab47e
+- anio: 2022
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '786'
+  codigo: '1631'
+  nombre: Datos Basicos de MEF
+  archivos:
+    CSV: 786-Modulo1631
+    STATA: 786-Modulo1631
+    SPSS: 786-Modulo1631
+    DBF: 786-Modulo1631
+  local:
+    formato: CSV
+    ruta: ENDES/2022/786-Modulo1631.zip
+    bytes: 7113839
+    sha256: 7d61f57bddd6488c4cf768adbceb3c163c00a95644583c91a6327cfc498778f7
+- anio: 2022
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '786'
+  codigo: '1632'
+  nombre: Historia de Nacimiento - Tabla de Conocimiento de Metodo
+  archivos:
+    CSV: 786-Modulo1632
+    STATA: 786-Modulo1632
+    SPSS: 786-Modulo1632
+    DBF: 786-Modulo1632
+  local:
+    formato: CSV
+    ruta: ENDES/2022/786-Modulo1632.zip
+    bytes: 5981382
+    sha256: e2402f6adc42e9492a9504f69996d0cd7d9aa55cb587ff7f9fe3dfdcb56bff81
+- anio: 2022
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '786'
+  codigo: '1633'
+  nombre: Embarazo, Parto, Puerperio y Lactancia
+  archivos:
+    CSV: 786-Modulo1633
+    STATA: 786-Modulo1633
+    SPSS: 786-Modulo1633
+    DBF: 786-Modulo1633
+  local:
+    formato: CSV
+    ruta: ENDES/2022/786-Modulo1633.zip
+    bytes: 4539231
+    sha256: e5e8d8a369d842476fbf4c103a32f5b89a9e99d0602a14ef147d9d252e4eeac4
+- anio: 2022
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '786'
+  codigo: '1634'
+  nombre: Inmunización y Salud
+  archivos:
+    CSV: 786-Modulo1634
+    STATA: 786-Modulo1634
+    SPSS: 786-Modulo1634
+    DBF: 786-Modulo1634
+  local:
+    formato: CSV
+    ruta: ENDES/2022/786-Modulo1634.zip
+    bytes: 9015248
+    sha256: bd74dc334aba46eae5eaab60f899510c51b3e3f1921c68f9a4e9fcd71aa391a3
+- anio: 2022
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '786'
+  codigo: '1635'
+  nombre: Nupcialidad - Fecundidad - Cónyugue y Mujer
+  archivos:
+    CSV: 786-Modulo1635
+    STATA: 786-Modulo1635
+    SPSS: 786-Modulo1635
+    DBF: 786-Modulo1635
+  local:
+    formato: CSV
+    ruta: ENDES/2022/786-Modulo1635.zip
+    bytes: 4254694
+    sha256: 6cc34f9c30bdb2e15aded2f07eb666bea19516f4bc56d760dd19f6cb64a654d7
+- anio: 2022
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '786'
+  codigo: '1636'
+  nombre: Conocimiento de Sida y uso del condón
+  archivos:
+    CSV: 786-Modulo1636
+    STATA: 786-Modulo1636
+    SPSS: 786-Modulo1636
+    DBF: 786-Modulo1636
+  local:
+    formato: CSV
+    ruta: ENDES/2022/786-Modulo1636.zip
+    bytes: 5334517
+    sha256: b8f33329b07a7ef6e9bebe4d835bd1123b361e71392ce9e1446104d948735555
+- anio: 2022
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '786'
+  codigo: '1637'
+  nombre: Mortalidad Materna - Violencia Familiar
+  archivos:
+    CSV: 786-Modulo1637
+    STATA: 786-Modulo1637
+    SPSS: 786-Modulo1637
+    DBF: 786-Modulo1637
+  local:
+    formato: CSV
+    ruta: ENDES/2022/786-Modulo1637.zip
+    bytes: 4713229
+    sha256: cc9c6f8958d11580d7c488d7e8dcdadef83ee914a40927a9cfca1beceea43c3c
+- anio: 2022
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '786'
+  codigo: '1638'
+  nombre: Peso y talla - Anemia
+  archivos:
+    CSV: 786-Modulo1638
+    STATA: 786-Modulo1638
+    SPSS: 786-Modulo1638
+    DBF: 786-Modulo1638
+  local:
+    formato: CSV
+    ruta: ENDES/2022/786-Modulo1638.zip
+    bytes: 6740541
+    sha256: 6a55516437869f8263238b9b9fc498c047e12f6dc7e56fb581b522cb3e996b6c
+- anio: 2022
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '786'
+  codigo: '1639'
+  nombre: Disciplina Infantil
+  archivos:
+    CSV: 786-Modulo1639
+    STATA: 786-Modulo1639
+    SPSS: 786-Modulo1639
+    DBF: 786-Modulo1639
+  local:
+    formato: CSV
+    ruta: ENDES/2022/786-Modulo1639.zip
+    bytes: 3341155
+    sha256: ed8408041ffe347b7614b05d6aba68d8273326aa2f232202c51f820d9ba3c7a7
+- anio: 2022
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '786'
+  codigo: '1640'
+  nombre: Encuesta de salud
+  archivos:
+    CSV: 786-Modulo1640
+    STATA: 786-Modulo1640
+    SPSS: 786-Modulo1640
+    DBF: 786-Modulo1640
+  local:
+    formato: CSV
+    ruta: ENDES/2022/786-Modulo1640.zip
+    bytes: 5360680
+    sha256: 6b9a7364aa7fe4dec3186a933b601408f7a9f9ca487394a7d8601c47a995d07b
+- anio: 2022
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '786'
+  codigo: '1641'
+  nombre: Programas Sociales
+  archivos:
+    CSV: 786-Modulo1641
+    STATA: 786-Modulo1641
+    SPSS: 786-Modulo1641
+    DBF: 786-Modulo1641
+  local:
+    formato: CSV
+    ruta: ENDES/2022/786-Modulo1641.zip
+    bytes: 3399914
+    sha256: 4a53ed1e1f75d8aa77400eed95ad4477a941776fdc614f58109dd9cfc42177fe
+- anio: 2023
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '910'
+  codigo: '1629'
+  nombre: Caracteristicas del Hogar
+  archivos:
+    CSV: 910-Modulo1629
+    STATA: 910-Modulo1629
+    SPSS: 910-Modulo1629
+    DBF: 910-Modulo1629
+  local:
+    formato: CSV
+    ruta: ENDES/2023/910-Modulo1629.zip
+    bytes: 6957790
+    sha256: d3e20abc0576e8d58503a6f4de89d726d49d667937be45a44d6124ac8477a3cf
+- anio: 2023
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '910'
+  codigo: '1630'
+  nombre: Caracteristicas de la Vivienda
+  archivos:
+    CSV: 910-Modulo1630
+    STATA: 910-Modulo1630
+    SPSS: 910-Modulo1630
+    DBF: 910-Modulo1630
+  local:
+    formato: CSV
+    ruta: ENDES/2023/910-Modulo1630.zip
+    bytes: 5522124
+    sha256: 73e906a8b5d8b5207a09b29992c1370828a23eb2e6822d7f9454ed1d78c77cee
+- anio: 2023
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '910'
+  codigo: '1631'
+  nombre: Datos Basicos de MEF
+  archivos:
+    CSV: 910-Modulo1631
+    STATA: 910-Modulo1631
+    SPSS: 910-Modulo1631
+    DBF: 910-Modulo1631
+  local:
+    formato: CSV
+    ruta: ENDES/2023/910-Modulo1631.zip
+    bytes: 9572647
+    sha256: e70571867697224ef1d0dc40982155b37fd50942357c834259533dc1708f43d7
+- anio: 2023
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '910'
+  codigo: '1632'
+  nombre: Historia de Nacimiento - Tabla de Conocimiento de Metodo
+  archivos:
+    CSV: 910-Modulo1632
+    STATA: 910-Modulo1632
+    SPSS: 910-Modulo1632
+    DBF: 910-Modulo1632
+  local:
+    formato: CSV
+    ruta: ENDES/2023/910-Modulo1632.zip
+    bytes: 8186587
+    sha256: c36eb8b512c89532494b059016fb4131e2109c63ecd90effd5b51bdd14fbeb3f
+- anio: 2023
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '910'
+  codigo: '1633'
+  nombre: Embarazo, Parto, Puerperio y Lactancia
+  archivos:
+    CSV: 910-Modulo1633
+    STATA: 910-Modulo1633
+    SPSS: 910-Modulo1633
+    DBF: 910-Modulo1633
+  local:
+    formato: CSV
+    ruta: ENDES/2023/910-Modulo1633.zip
+    bytes: 6624293
+    sha256: a7f7a9bc7c7b72c31d16e03870f398feae09e7aa10e959687c1b1a9a652f1871
+- anio: 2023
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '910'
+  codigo: '1634'
+  nombre: Inmunización y Salud
+  archivos:
+    CSV: 910-Modulo1634
+    STATA: 910-Modulo1634
+    SPSS: 910-Modulo1634
+    DBF: 910-Modulo1634
+  local:
+    formato: CSV
+    ruta: ENDES/2023/910-Modulo1634.zip
+    bytes: 11292148
+    sha256: ea927ee246d3d733c7130e0c24d6cb6516380c8e645dd1a92b7658d2a3ba9693
+- anio: 2023
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '910'
+  codigo: '1635'
+  nombre: Nupcialidad - Fecundidad - Cónyugue y Mujer
+  archivos:
+    CSV: 910-Modulo1635
+    STATA: 910-Modulo1635
+    SPSS: 910-Modulo1635
+    DBF: 910-Modulo1635
+  local:
+    formato: CSV
+    ruta: ENDES/2023/910-Modulo1635.zip
+    bytes: 6527921
+    sha256: 3f50740a5c90338ab7851b6e1951887d46d35b33cbdda0f985c3e0de3c05546c
+- anio: 2023
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '910'
+  codigo: '1636'
+  nombre: Conocimiento de Sida y uso del condón
+  archivos:
+    CSV: 910-Modulo1636
+    STATA: 910-Modulo1636
+    SPSS: 910-Modulo1636
+    DBF: 910-Modulo1636
+  local:
+    formato: CSV
+    ruta: ENDES/2023/910-Modulo1636.zip
+    bytes: 7528414
+    sha256: e3504b5e4aa43802d572585c78eccc4b7632b8974a1d9d6b05001696dfe4c668
+- anio: 2023
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '910'
+  codigo: '1637'
+  nombre: Mortalidad Materna - Violencia Familiar
+  archivos:
+    CSV: 910-Modulo1637
+    STATA: 910-Modulo1637
+    SPSS: 910-Modulo1637
+    DBF: 910-Modulo1637
+  local:
+    formato: CSV
+    ruta: ENDES/2023/910-Modulo1637.zip
+    bytes: 6913580
+    sha256: 0d14e207bef8269a03d04a40601069dd73cdd08dc2a2e6ebbbb715d6aaead55d
+- anio: 2023
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '910'
+  codigo: '1638'
+  nombre: Peso y talla - Anemia
+  archivos:
+    CSV: 910-Modulo1638
+    STATA: 910-Modulo1638
+    SPSS: 910-Modulo1638
+    DBF: 910-Modulo1638
+  local:
+    formato: CSV
+    ruta: ENDES/2023/910-Modulo1638.zip
+    bytes: 9615914
+    sha256: 67b9061450891a5407101f0598a62ec837ff2e948eb55f1d6ac3e7eb48e8b5ca
+- anio: 2023
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '910'
+  codigo: '1639'
+  nombre: Disciplina Infantil
+  archivos:
+    CSV: 910-Modulo1639
+    STATA: 910-Modulo1639
+    SPSS: 910-Modulo1639
+    DBF: 910-Modulo1639
+  local:
+    formato: CSV
+    ruta: ENDES/2023/910-Modulo1639.zip
+    bytes: 5439625
+    sha256: dc36ddd372a576564b9046f56eb4be44743f29f114f37d95bdd4f6eae773ba38
+- anio: 2023
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '910'
+  codigo: '1640'
+  nombre: Encuesta de salud
+  archivos:
+    CSV: 910-Modulo1640
+    STATA: 910-Modulo1640
+    SPSS: 910-Modulo1640
+    DBF: 910-Modulo1640
+  local:
+    formato: CSV
+    ruta: ENDES/2023/910-Modulo1640.zip
+    bytes: 7665077
+    sha256: 6dc829a989bb8f5df2ed8d71d2fe1710f79a16cc45bf4ec53154f59bd71d45b6
+- anio: 2023
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '910'
+  codigo: '1641'
+  nombre: Programas Sociales
+  archivos:
+    CSV: 910-Modulo1641
+    STATA: 910-Modulo1641
+    SPSS: 910-Modulo1641
+    DBF: 910-Modulo1641
+  local:
+    formato: CSV
+    ruta: ENDES/2023/910-Modulo1641.zip
+    bytes: 5231331
+    sha256: 161e849ecf564e5ab2e58ef8361520a6c4262faf24828f9f52c2d3a53f55c57c
+- anio: 2024
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '968'
+  codigo: '1629'
+  nombre: Caracteristicas del Hogar
+  archivos:
+    CSV: 968-Modulo1629
+    STATA: 968-Modulo1629
+    SPSS: 968-Modulo1629
+    DBF: 968-Modulo1629
+  local:
+    formato: CSV
+    ruta: ENDES/2024/968-Modulo1629.zip
+    bytes: 5614967
+    sha256: d40ca096acd91aa296742820c872350006ea55e44354cefae6f6bbd24c27838c
+- anio: 2024
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '968'
+  codigo: '1630'
+  nombre: Caracteristicas de la Vivienda
+  archivos:
+    CSV: 968-Modulo1630
+    STATA: 968-Modulo1630
+    SPSS: 968-Modulo1630
+    DBF: 968-Modulo1630
+  local:
+    formato: CSV
+    ruta: ENDES/2024/968-Modulo1630.zip
+    bytes: 3658861
+    sha256: 3ba67f49104110cbbf5c221bf9e3415ef2a94a00bcd378a9b0f543dff42f40fa
+- anio: 2024
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '968'
+  codigo: '1631'
+  nombre: Datos Basicos de MEF
+  archivos:
+    CSV: 968-Modulo1631
+    STATA: 968-Modulo1631
+    SPSS: 968-Modulo1631
+    DBF: 968-Modulo1631
+  local:
+    formato: CSV
+    ruta: ENDES/2024/968-Modulo1631.zip
+    bytes: 8067927
+    sha256: b0fcd33614fc3932992a5752e6910d05c809d95baebd06630ce2faf4866cd0a0
+- anio: 2024
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '968'
+  codigo: '1632'
+  nombre: Historia de Nacimiento - Tabla de Conocimiento de Metodo
+  archivos:
+    CSV: 968-Modulo1632
+    STATA: 968-Modulo1632
+    SPSS: 968-Modulo1632
+    DBF: 968-Modulo1632
+  local:
+    formato: CSV
+    ruta: ENDES/2024/968-Modulo1632.zip
+    bytes: 6824234
+    sha256: 3a782b74854a480f8c06919d97448086172f199c588f18a41995f51750698d22
+- anio: 2024
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '968'
+  codigo: '1633'
+  nombre: Embarazo, Parto, Puerperio y Lactancia
+  archivos:
+    CSV: 968-Modulo1633
+    STATA: 968-Modulo1633
+    SPSS: 968-Modulo1633
+    DBF: 968-Modulo1633
+  local:
+    formato: CSV
+    ruta: ENDES/2024/968-Modulo1633.zip
+    bytes: 5854080
+    sha256: 165b4b06f33e5b51adff85b73588e7afdb65c20240a62ad6ce538fda38b12e4e
+- anio: 2024
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '968'
+  codigo: '1634'
+  nombre: Inmunización y Salud
+  archivos:
+    CSV: 968-Modulo1634
+    STATA: 968-Modulo1634
+    SPSS: 968-Modulo1634
+    DBF: 968-Modulo1634
+  local:
+    formato: CSV
+    ruta: ENDES/2024/968-Modulo1634.zip
+    bytes: 12107078
+    sha256: 2bbbbde6377a1c49e150799f36523284cfc77511929f5caee0408fb635a6d594
+- anio: 2024
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '968'
+  codigo: '1635'
+  nombre: Nupcialidad - Fecundidad - Cónyugue y Mujer
+  archivos:
+    CSV: 968-Modulo1635
+    STATA: 968-Modulo1635
+    SPSS: 968-Modulo1635
+    DBF: 968-Modulo1635
+  local:
+    formato: CSV
+    ruta: ENDES/2024/968-Modulo1635.zip
+    bytes: 5282316
+    sha256: cde5c90661de73035d481dbe3c21472df0894a2924aace9f60ff0aeae05ccaf9
+- anio: 2024
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '968'
+  codigo: '1636'
+  nombre: Conocimiento de Sida y uso del condón
+  archivos:
+    CSV: 968-Modulo1636
+    STATA: 968-Modulo1636
+    SPSS: 968-Modulo1636
+    DBF: 968-Modulo1636
+  local:
+    formato: CSV
+    ruta: ENDES/2024/968-Modulo1636.zip
+    bytes: 6225698
+    sha256: 87c072af274166de2a3f36594fde87779fe23f5bb5ad4a26f5d24c8671e9de38
+- anio: 2024
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '968'
+  codigo: '1637'
+  nombre: Mortalidad Materna - Violencia Familiar
+  archivos:
+    CSV: 968-Modulo1637
+    STATA: 968-Modulo1637
+    SPSS: 968-Modulo1637
+    DBF: 968-Modulo1637
+  local:
+    formato: CSV
+    ruta: ENDES/2024/968-Modulo1637.zip
+    bytes: 5514512
+    sha256: 9368430036f7c4c9c09271498ead04bdcf804870a9b13a49aa5913ba0cf78903
+- anio: 2024
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '968'
+  codigo: '1638'
+  nombre: Peso y talla - Anemia
+  archivos:
+    CSV: 968-Modulo1638
+    STATA: 968-Modulo1638
+    SPSS: 968-Modulo1638
+    DBF: 968-Modulo1638
+  local:
+    formato: CSV
+    ruta: ENDES/2024/968-Modulo1638.zip
+    bytes: 9463248
+    sha256: 0f5ead4cd363a48b72b45d78f7c7d8313e8ab2ad98ac6d3dc8f087b282e3fab5
+- anio: 2024
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '968'
+  codigo: '1639'
+  nombre: Disciplina Infantil
+  archivos:
+    CSV: 968-Modulo1639
+    STATA: 968-Modulo1639
+    SPSS: 968-Modulo1639
+    DBF: 968-Modulo1639
+  local:
+    formato: CSV
+    ruta: ENDES/2024/968-Modulo1639.zip
+    bytes: 4249939
+    sha256: 754fcbe5af1c86aaeea5650c67c37314be36f69ab3d4524a1616b2672bbb31c1
+- anio: 2024
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '968'
+  codigo: '1640'
+  nombre: Encuesta de salud
+  archivos:
+    CSV: 968-Modulo1640
+    STATA: 968-Modulo1640
+    SPSS: 968-Modulo1640
+    DBF: 968-Modulo1640
+  local:
+    formato: CSV
+    ruta: ENDES/2024/968-Modulo1640.zip
+    bytes: 5502169
+    sha256: cccf3cdb6dd1c1291405b826f0fd7ed99339089003cc6de8fe4bd1f7af73064a
+- anio: 2024
+  periodo: Unico
+  serie: anual
+  encuesta_inei: '968'
+  codigo: '1641'
+  nombre: Programas Sociales
+  archivos:
+    CSV: 968-Modulo1641
+    STATA: 968-Modulo1641
+    SPSS: 968-Modulo1641
+    DBF: 968-Modulo1641
+  local:
+    formato: CSV
+    ruta: ENDES/2024/968-Modulo1641.zip
+    bytes: 2930922
+    sha256: 0e42ba4a5b25dcd1614153a9c1605b90ac675f2020d0b859285e58286881a318
+- anio: 2025
+  periodo: '5'
+  serie: anual
+  encuesta_inei: '1038'
+  codigo: '1629'
+  nombre: Caracteristicas del Hogar
+  archivos:
+    CSV: 1038-Modulo1629
+    STATA: 1038-Modulo1629
+    SPSS: 1038-Modulo1629
+  local:
+    formato: CSV
+    ruta: ENDES/2025/1038-Modulo1629.zip
+    bytes: 4629553
+    sha256: a2ccb43f83e527b1b015a2ea8c15ab0319f7b2bf5e522e6338d5b83c4a547343
+- anio: 2025
+  periodo: '5'
+  serie: anual
+  encuesta_inei: '1038'
+  codigo: '1630'
+  nombre: Caracteristicas de la Vivienda
+  archivos:
+    CSV: 1038-Modulo1630
+    STATA: 1038-Modulo1630
+    SPSS: 1038-Modulo1630
+  local:
+    formato: CSV
+    ruta: ENDES/2025/1038-Modulo1630.zip
+    bytes: 3178199
+    sha256: 23679820c8a1e7e9d4fc6e13e78d21111c8d4d73010494d770c9a3287df2aef2
+- anio: 2025
+  periodo: '5'
+  serie: anual
+  encuesta_inei: '1038'
+  codigo: '1631'
+  nombre: Datos Basicos de MEF
+  archivos:
+    CSV: 1038-Modulo1631
+    STATA: 1038-Modulo1631
+    SPSS: 1038-Modulo1631
+  local:
+    formato: CSV
+    ruta: ENDES/2025/1038-Modulo1631.zip
+    bytes: 7940534
+    sha256: d39d906f14df9597a1da1985bf9dc280e89bc3be78347e8c4676a16a3401bb35
+- anio: 2025
+  periodo: '5'
+  serie: anual
+  encuesta_inei: '1038'
+  codigo: '1632'
+  nombre: Historia de Nacimiento - Tabla de Conocimiento de Metodo
+  archivos:
+    CSV: 1038-Modulo1632
+    STATA: 1038-Modulo1632
+    SPSS: 1038-Modulo1632
+  local:
+    formato: CSV
+    ruta: ENDES/2025/1038-Modulo1632.zip
+    bytes: 6778669
+    sha256: d0940cf5c60ddeefefb1b4b64d2dadeba70912d55deb559012a5eb413f530067
+- anio: 2025
+  periodo: '5'
+  serie: anual
+  encuesta_inei: '1038'
+  codigo: '1633'
+  nombre: Embarazo, Parto, Puerperio y Lactancia
+  archivos:
+    CSV: 1038-Modulo1633
+    STATA: 1038-Modulo1633
+    SPSS: 1038-Modulo1633
+  local:
+    formato: CSV
+    ruta: ENDES/2025/1038-Modulo1633.zip
+    bytes: 5305684
+    sha256: b1f0cc549511d7deeec229cd484d60720d4a0df6fe83a4d0f32e7ae0bd3173a0
+- anio: 2025
+  periodo: '5'
+  serie: anual
+  encuesta_inei: '1038'
+  codigo: '1634'
+  nombre: InmunizaciÃ³n y Salud
+  archivos:
+    CSV: 1038-Modulo1634
+    STATA: 1038-Modulo1634
+    SPSS: 1038-Modulo1634
+  local:
+    formato: CSV
+    ruta: ENDES/2025/1038-Modulo1634.zip
+    bytes: 9603720
+    sha256: e5f46e1e066e4ed881dc78428888dfd1ecb6717b36bc0d14c8f32729de6a6764
+- anio: 2025
+  periodo: '5'
+  serie: anual
+  encuesta_inei: '1038'
+  codigo: '1635'
+  nombre: Nupcialidad - Fecundidad - CÃ³nyugue y Mujer
+  archivos:
+    CSV: 1038-Modulo1635
+    STATA: 1038-Modulo1635
+    SPSS: 1038-Modulo1635
+  local:
+    formato: CSV
+    ruta: ENDES/2025/1038-Modulo1635.zip
+    bytes: 5254330
+    sha256: 6c5d4b6738f00c02a647e59d9e99591d3df6375f32e71101e0a5e065dc63606e
+- anio: 2025
+  periodo: '5'
+  serie: anual
+  encuesta_inei: '1038'
+  codigo: '1636'
+  nombre: Conocimiento de Sida y uso del condÃ³n
+  archivos:
+    CSV: 1038-Modulo1636
+    STATA: 1038-Modulo1636
+    SPSS: 1038-Modulo1636
+  local:
+    formato: CSV
+    ruta: ENDES/2025/1038-Modulo1636.zip
+    bytes: 6198281
+    sha256: 5cfcdeb0f05a1b441d5283a5eb7a1a64ecab7bf250427cb0a8add8667d9de19a
+- anio: 2025
+  periodo: '5'
+  serie: anual
+  encuesta_inei: '1038'
+  codigo: '1637'
+  nombre: Mortalidad Materna - Violencia Familiar
+  archivos:
+    CSV: 1038-Modulo1637
+    STATA: 1038-Modulo1637
+    SPSS: 1038-Modulo1637
+  local:
+    formato: CSV
+    ruta: ENDES/2025/1038-Modulo1637.zip
+    bytes: 5541511
+    sha256: 942197a74803eada52c26486f9207751bf53b4b84bec59582b13e72b3cc1cfbb
+- anio: 2025
+  periodo: '5'
+  serie: anual
+  encuesta_inei: '1038'
+  codigo: '1638'
+  nombre: Peso y talla - Anemia
+  archivos:
+    CSV: 1038-Modulo1638
+    STATA: 1038-Modulo1638
+    SPSS: 1038-Modulo1638
+  local:
+    formato: CSV
+    ruta: ENDES/2025/1038-Modulo1638.zip
+    bytes: 8544327
+    sha256: 1408cf26aab6f890d3d87b091067979d3f005e3e32b0911a7c281c73d319ad36
+- anio: 2025
+  periodo: '5'
+  serie: anual
+  encuesta_inei: '1038'
+  codigo: '1639'
+  nombre: Disciplina Infantil
+  archivos:
+    CSV: 1038-Modulo1639
+    STATA: 1038-Modulo1639
+    SPSS: 1038-Modulo1639
+  local:
+    formato: CSV
+    ruta: ENDES/2025/1038-Modulo1639.zip
+    bytes: 4284350
+    sha256: 0dfad11e92ff7c3293967cd51480d9bc1e7000f4c6b4423950481b6220a8a631
+- anio: 2025
+  periodo: '5'
+  serie: anual
+  encuesta_inei: '1038'
+  codigo: '1640'
+  nombre: Encuesta de salud
+  archivos:
+    CSV: 1038-Modulo1640
+    STATA: 1038-Modulo1640
+    SPSS: 1038-Modulo1640
+  local:
+    formato: CSV
+    ruta: ENDES/2025/1038-Modulo1640.zip
+    bytes: 5289383
+    sha256: c62cc20cfa1e928824688dc477212b4c39059ac513222b5164dfa5e320309ae2
+- anio: 2025
+  periodo: '5'
+  serie: anual
+  encuesta_inei: '1038'
+  codigo: '1641'
+  nombre: Programas Sociales
+  archivos:
+    CSV: 1038-Modulo1641
+    STATA: 1038-Modulo1641
+    SPSS: 1038-Modulo1641
+  local:
+    formato: CSV
+    ruta: ENDES/2025/1038-Modulo1641.zip
+    bytes: 3180924
+    sha256: db7281ef8a125e08b4cf316666af6520ae06482225cc895521048ac4bb8fe51f
+documentos:
+- anio: 2010
+  serie: anual
+  archivo: CuestionarioHogar.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2010-5/CuestionarioHogar.zip
+  ruta: ENDES/2010/docs/CuestionarioHogar.zip
+  bytes: 135096
+  sha256: 1ed4720f967127340defaae06a2bfd0f851ca984238bb79c0f7f79110d41e4ca
+- anio: 2010
+  serie: anual
+  archivo: CuestionarioIndividual.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2010-5/CuestionarioIndividual.zip
+  ruta: ENDES/2010/docs/CuestionarioIndividual.zip
+  bytes: 740602
+  sha256: 31b28c0f32c90d625ef1aa7386a7fcb4a57726c9a07194e32095d2157c8dbd61
+- anio: 2010
+  serie: anual
+  archivo: DiccionarioDatos.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2010-5/DiccionarioDatos.zip
+  ruta: ENDES/2010/docs/DiccionarioDatos.zip
+  bytes: 625173
+  sha256: 51ae8ff17067e611fd93fca8ff7c607277a6f583dd6aab26c84d0fc399570f9f
+- anio: 2010
+  serie: anual
+  archivo: FichaTecnica.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2010-5/FichaTecnica.zip
+  ruta: ENDES/2010/docs/FichaTecnica.zip
+  bytes: 119438
+  sha256: 300e2095acdd2dfa78e0ebff056c87835cb89c5193e667dc7fd8927a4d737b9c
+- anio: 2010
+  serie: anual
+  archivo: ManualEntrevistadora.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2010-5/ManualEntrevistadora.zip
+  ruta: ENDES/2010/docs/ManualEntrevistadora.zip
+  bytes: 3733018
+  sha256: ee2ffe451be7f3d15d09cddf350bb5624c1e87de1f5434ca811a888c9ab8af12
+- anio: 2010
+  serie: anual
+  archivo: ManualSupervisora.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2010-5/ManualSupervisora.zip
+  ruta: ENDES/2010/docs/ManualSupervisora.zip
+  bytes: 1114757
+  sha256: b1073ff0727b1bd91fbfa25ea739401f46cec890342c95f52add9ccf45c15ef8
+- anio: 2010
+  serie: anual
+  archivo: ManualdeAntropometrista.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2010-5/ManualdeAntropometrista.zip
+  ruta: ENDES/2010/docs/ManualdeAntropometrista.zip
+  bytes: 4178556
+  sha256: a58aa8a64e301baa9de2d8b1fa5b589d100c5e0d5476d9663a2519249bdce04c
+- anio: 2011
+  serie: anual
+  archivo: CuestionarioHogar.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2011-5/CuestionarioHogar.zip
+  ruta: ENDES/2011/docs/CuestionarioHogar.zip
+  bytes: 350659
+  sha256: aec6d2cc2ba4ffd568db9ccb61cec3777baa9cd3af8f1f94bd5b2226d0c6e7b0
+- anio: 2011
+  serie: anual
+  archivo: CuestionarioIndividual.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2011-5/CuestionarioIndividual.zip
+  ruta: ENDES/2011/docs/CuestionarioIndividual.zip
+  bytes: 1483238
+  sha256: b81b134f481b32b25d26ae75ebb3b091100a30e4b2f7df349dac1eba69dee983
+- anio: 2011
+  serie: anual
+  archivo: DiccionarioDatos.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2011-5/DiccionarioDatos.zip
+  ruta: ENDES/2011/docs/DiccionarioDatos.zip
+  bytes: 475201
+  sha256: b0ba7c5f10dd03998d7503f6f7ca7a9f14641ac2f778d0d426724d5bf99f685c
+- anio: 2011
+  serie: anual
+  archivo: Endesppr.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2011-5/Endesppr.zip
+  ruta: ENDES/2011/docs/Endesppr.zip
+  bytes: 3286181
+  sha256: 9d630d2ad41e95393adf4a2287139cc1fe5f85a32417edc0a4b9da50e9398378
+- anio: 2011
+  serie: anual
+  archivo: FichaTecnica.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2011-5/FichaTecnica.zip
+  ruta: ENDES/2011/docs/FichaTecnica.zip
+  bytes: 218311
+  sha256: 062d024dc3e19338dc8b950e4c6ce64d5df578d35676d6ba3b562eaa4f7b89e9
+- anio: 2011
+  serie: anual
+  archivo: ManualAntropometrista.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2011-5/ManualAntropometrista.zip
+  ruta: ENDES/2011/docs/ManualAntropometrista.zip
+  bytes: 1769700
+  sha256: 1d27e568d6495e32467dfeda48e8221d131c2a062665291e41f9874b2fd53adf
+- anio: 2011
+  serie: anual
+  archivo: ManualEntrevistadora.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2011-5/ManualEntrevistadora.zip
+  ruta: ENDES/2011/docs/ManualEntrevistadora.zip
+  bytes: 2185612
+  sha256: 63f30eda87ffcd61c9f40a228705919ca17f5df8d07e8f9ef37cdd4363e77ef0
+- anio: 2011
+  serie: anual
+  archivo: ManualSupervisora.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2011-5/ManualSupervisora.zip
+  ruta: ENDES/2011/docs/ManualSupervisora.zip
+  bytes: 557745
+  sha256: dd0d4a937599c614dda023c31516cc8795a0721ecd927d1ac52137e87a4a98ae
+- anio: 2012
+  serie: anual
+  archivo: CuestionarioHogar.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2012-5/CuestionarioHogar.zip
+  ruta: ENDES/2012/docs/CuestionarioHogar.zip
+  bytes: 387568
+  sha256: d9ee178607e22db70f04d61fd63e08e5801a64d78e54d8a30f0aa5636c71d788
+- anio: 2012
+  serie: anual
+  archivo: CuestionarioIndividual.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2012-5/CuestionarioIndividual.zip
+  ruta: ENDES/2012/docs/CuestionarioIndividual.zip
+  bytes: 635443
+  sha256: 4d58dc7439ef4fd623aff8274966fc05cda1fb46024c80ef29ffbafe4f39621e
+- anio: 2012
+  serie: anual
+  archivo: DiccionarioDatos.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2012-5/DiccionarioDatos.zip
+  ruta: ENDES/2012/docs/DiccionarioDatos.zip
+  bytes: 149094
+  sha256: ca17322ddd01bf824cd59502930a7518913aa417d43a802515e3dc33f11894d8
+- anio: 2012
+  serie: anual
+  archivo: Endesppr.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2012-5/Endesppr.zip
+  ruta: ENDES/2012/docs/Endesppr.zip
+  bytes: 2430460
+  sha256: bc53ef029e44b96723963cb29b70454a1e08d40dab586664dfaccf4eed7dd192
+- anio: 2012
+  serie: anual
+  archivo: FichaTecnica.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2012-5/FichaTecnica.zip
+  ruta: ENDES/2012/docs/FichaTecnica.zip
+  bytes: 222816
+  sha256: 173cf5ed880aff7c77d610f34a81c0dc7fc11e9c88a5ffd0844c95368b8145a3
+- anio: 2012
+  serie: anual
+  archivo: ManualAntropometrista.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2012-5/ManualAntropometrista.zip
+  ruta: ENDES/2012/docs/ManualAntropometrista.zip
+  bytes: 2027719
+  sha256: 25c92645c6d7f110ded8ef6b0e6a7de14d1edf0f6ca3f94d8fa4da550f45b1bb
+- anio: 2012
+  serie: anual
+  archivo: ManualEntrevistadora.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2012-5/ManualEntrevistadora.zip
+  ruta: ENDES/2012/docs/ManualEntrevistadora.zip
+  bytes: 2828137
+  sha256: fb20c916b80fc2804c79455fdd00b115ba14e58a3b32c2042169a895f3537feb
+- anio: 2012
+  serie: anual
+  archivo: ManualSupervisora.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2012-5/ManualSupervisora.zip
+  ruta: ENDES/2012/docs/ManualSupervisora.zip
+  bytes: 539950
+  sha256: b9cc67bb5e3b7f4c273239ec0513245bdb0020bb5bd345f258c2bce84a0af9b0
+- anio: 2013
+  serie: anual
+  archivo: CuestionarioHogar.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2013-5/CuestionarioHogar.zip
+  ruta: ENDES/2013/docs/CuestionarioHogar.zip
+  bytes: 580099
+  sha256: 23b470e0152a4270738fdf0c8c0e3b1721f1aa6a116725cc8994ee1837269f4e
+- anio: 2013
+  serie: anual
+  archivo: CuestionarioIndividual.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2013-5/CuestionarioIndividual.zip
+  ruta: ENDES/2013/docs/CuestionarioIndividual.zip
+  bytes: 1466566
+  sha256: 87e3c33c11e6cc89885e2eb0d248f24d28f420bf622600ab20f590f3632dd1d9
+- anio: 2013
+  serie: anual
+  archivo: CuestionarioSalud.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2013-5/CuestionarioSalud.zip
+  ruta: ENDES/2013/docs/CuestionarioSalud.zip
+  bytes: 536104
+  sha256: 054be760afbab8149cb6acb8fde299f679089497e1bb111cfa4c6c33bb5bbe8e
+- anio: 2013
+  serie: anual
+  archivo: DiccionarioDatos.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2013-5/DiccionarioDatos.zip
+  ruta: ENDES/2013/docs/DiccionarioDatos.zip
+  bytes: 348046
+  sha256: 8ec3049c87a9619b3164a2d64ee5c45bf05d270dbd376e93c77202a923242a5d
+- anio: 2013
+  serie: anual
+  archivo: Diccionariosalud.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2013-5/Diccionariosalud.zip
+  ruta: ENDES/2013/docs/Diccionariosalud.zip
+  bytes: 55197
+  sha256: 75c339265716212033f951928b2b25d49132b94f25e055b11b4d81917d1560d7
+- anio: 2013
+  serie: anual
+  archivo: FichaTecnica.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2013-5/FichaTecnica.zip
+  ruta: ENDES/2013/docs/FichaTecnica.zip
+  bytes: 117186
+  sha256: 3188581b406729aba67e545286933a890f0d6bcdf822a3011a1e9afd6a584c32
+- anio: 2013
+  serie: anual
+  archivo: ManualEntrevistadora.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2013-5/ManualEntrevistadora.zip
+  ruta: ENDES/2013/docs/ManualEntrevistadora.zip
+  bytes: 3750028
+  sha256: d70e1e6863fea8a52c661a4c5d62a1db3e4b67f8d832b5ed55ccb31df8bc702e
+- anio: 2014
+  serie: anual
+  archivo: CuestionarioHogar.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2014-5/CuestionarioHogar.zip
+  ruta: ENDES/2014/docs/CuestionarioHogar.zip
+  bytes: 675345
+  sha256: 938d9b2be09298404e6eeb623853cc9786540e349ac8df926b0b52c47ac89c18
+- anio: 2014
+  serie: anual
+  archivo: CuestionarioIndividual.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2014-5/CuestionarioIndividual.zip
+  ruta: ENDES/2014/docs/CuestionarioIndividual.zip
+  bytes: 1459461
+  sha256: 3b78b58acf20ca148fe1398edbc2658f9406ce0ccc3234f42b86dbf4439f7d03
+- anio: 2014
+  serie: anual
+  archivo: CuestionarioSalud.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2014-5/CuestionarioSalud.zip
+  ruta: ENDES/2014/docs/CuestionarioSalud.zip
+  bytes: 536596
+  sha256: 07bd57fb1a871882e3adbdc1198e5815c99f79d591faa5fa843756449aac9d5b
+- anio: 2014
+  serie: anual
+  archivo: DiccionarioHogar.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2014-5/DiccionarioHogar.zip
+  ruta: ENDES/2014/docs/DiccionarioHogar.zip
+  bytes: 133259
+  sha256: 5ca2f1267cb326c1b045a5f251608837bbe5264bdbc460d4c9a9496649b644aa
+- anio: 2014
+  serie: anual
+  archivo: DiccionarioIndividual.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2014-5/DiccionarioIndividual.zip
+  ruta: ENDES/2014/docs/DiccionarioIndividual.zip
+  bytes: 508784
+  sha256: db792cba50fe94014d39e0339ce2696a890efab9ebc2560e586f0b8a6ee0806f
+- anio: 2014
+  serie: anual
+  archivo: DiccionarioSalud.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2014-5/DiccionarioSalud.zip
+  ruta: ENDES/2014/docs/DiccionarioSalud.zip
+  bytes: 343659
+  sha256: c7dd20fdb52bad613d903c582b6e554d2b9853099735c8f347952159ccb90bac
+- anio: 2014
+  serie: anual
+  archivo: FichaTecnica.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2014-5/FichaTecnica.zip
+  ruta: ENDES/2014/docs/FichaTecnica.zip
+  bytes: 465218
+  sha256: 0a1e40740b6b31c95188390add0b23ed942a8a8ccc72eedb05678a8f5111c03f
+- anio: 2014
+  serie: anual
+  archivo: ManualEntrevistadora.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2014-5/ManualEntrevistadora.zip
+  ruta: ENDES/2014/docs/ManualEntrevistadora.zip
+  bytes: 3980386
+  sha256: 1f9f41e8505ed0466792550e1b6fcf3c6ac353684e08de11dc00fc60ac635446
+- anio: 2015
+  serie: anual
+  archivo: CuestionarioHogar.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2015-5/CuestionarioHogar.zip
+  ruta: ENDES/2015/docs/CuestionarioHogar.zip
+  bytes: 691897
+  sha256: 4bffda5a6c0a90055a6f846f2cf820871fb7cd9f21952ed7cbbd679ae018f911
+- anio: 2015
+  serie: anual
+  archivo: CuestionarioIndividual.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2015-5/CuestionarioIndividual.zip
+  ruta: ENDES/2015/docs/CuestionarioIndividual.zip
+  bytes: 1902817
+  sha256: ef1e196d3d453248d13d711d2df67e64fc59f268408f22e3c46f864815ca7452
+- anio: 2015
+  serie: anual
+  archivo: CuestionarioSalud.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2015-5/CuestionarioSalud.zip
+  ruta: ENDES/2015/docs/CuestionarioSalud.zip
+  bytes: 487928
+  sha256: e8b5683153ede82c4e99f06d213ab3999c9c356b1a2c6435af97a7c8eaeae150
+- anio: 2015
+  serie: anual
+  archivo: DiccionarioHogar.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2015-5/DiccionarioHogar.zip
+  ruta: ENDES/2015/docs/DiccionarioHogar.zip
+  bytes: 130502
+  sha256: a95b27afb868dbcb4f1325656221ba44f111815a1aa688f55cbcb4ed80d6863d
+- anio: 2015
+  serie: anual
+  archivo: DiccionarioIndividual.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2015-5/DiccionarioIndividual.zip
+  ruta: ENDES/2015/docs/DiccionarioIndividual.zip
+  bytes: 540083
+  sha256: ebd78ce49e3738d5327e79bed2ceb3a05af0e4cdae0946e293c1680589ea89f5
+- anio: 2015
+  serie: anual
+  archivo: DiccionarioSalud.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2015-5/DiccionarioSalud.zip
+  ruta: ENDES/2015/docs/DiccionarioSalud.zip
+  bytes: 122062
+  sha256: f1c475c09a371539d307f2c912b08243e620eb854fec3d5fdb573987b0dc585a
+- anio: 2015
+  serie: anual
+  archivo: FichaTecnica.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2015-5/FichaTecnica.zip
+  ruta: ENDES/2015/docs/FichaTecnica.zip
+  bytes: 427526
+  sha256: 5c7fb111ee4ae1ddc38196e1bcc95ce129d90b67b2e462829ad4bb4398f09701
+- anio: 2015
+  serie: anual
+  archivo: ManualEntrevistadora.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2015-5/ManualEntrevistadora.zip
+  ruta: ENDES/2015/docs/ManualEntrevistadora.zip
+  bytes: 18810552
+  sha256: 07454061c96a6376e08b79247067ebdc07cc94a02032119af4ea60b2863331ca
+- anio: 2016
+  serie: anual
+  archivo: CuestionarioHogar.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2016-5/CuestionarioHogar.zip
+  ruta: ENDES/2016/docs/CuestionarioHogar.zip
+  bytes: 500263
+  sha256: 6abbb6fc33c8d9f86dc9c555d729b825aa71ac2935a974b268e4ca9eb64ddd3d
+- anio: 2016
+  serie: anual
+  archivo: CuestionarioIndividual.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2016-5/CuestionarioIndividual.zip
+  ruta: ENDES/2016/docs/CuestionarioIndividual.zip
+  bytes: 1743928
+  sha256: 0f2f00f11c6e2d6f5b851f738d994f9d3a7f3fc84ed7f677dd16b058d3460fca
+- anio: 2016
+  serie: anual
+  archivo: CuestionarioSalud.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2016-5/CuestionarioSalud.zip
+  ruta: ENDES/2016/docs/CuestionarioSalud.zip
+  bytes: 484124
+  sha256: 8a626e48c9db7b845d329f7c9fb17941d234c8cfbbd918c38e3c344a3ceb97e4
+- anio: 2016
+  serie: anual
+  archivo: DiccionarioHogar.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2016-5/DiccionarioHogar.zip
+  ruta: ENDES/2016/docs/DiccionarioHogar.zip
+  bytes: 165184
+  sha256: 24a6cc82bbdab591fd03a57a436812646cda0b12b0c2412c93f4a8458951484f
+- anio: 2016
+  serie: anual
+  archivo: DiccionarioIndividual.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2016-5/DiccionarioIndividual.zip
+  ruta: ENDES/2016/docs/DiccionarioIndividual.zip
+  bytes: 547285
+  sha256: 97f83fd8333a1adfafecbd37870619e32530cc213182b4969d0103ec309b7ebc
+- anio: 2016
+  serie: anual
+  archivo: DiccionarioSalud.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2016-5/DiccionarioSalud.zip
+  ruta: ENDES/2016/docs/DiccionarioSalud.zip
+  bytes: 165864
+  sha256: 86db8c96d237d7934b34455de7453145c4ad4205e172d3d38d3e88b876b8ecdb
+- anio: 2016
+  serie: anual
+  archivo: FichaTecnica.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2016-5/FichaTecnica.zip
+  ruta: ENDES/2016/docs/FichaTecnica.zip
+  bytes: 549257
+  sha256: 1d9cdf3084a918f8c960c939953c9516a3f294e5375c49d8164b9c3534de5380
+- anio: 2016
+  serie: anual
+  archivo: ManualEntrevistadora.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2016-5/ManualEntrevistadora.zip
+  ruta: ENDES/2016/docs/ManualEntrevistadora.zip
+  bytes: 33735353
+  sha256: 0c75ed317d7de5b836f1aa4ef559763adf5625c844157f884e2b6b2433a7cbdb
+- anio: 2017
+  serie: anual
+  archivo: CuestionarioHogar.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2017-5/CuestionarioHogar.zip
+  ruta: ENDES/2017/docs/CuestionarioHogar.zip
+  bytes: 566547
+  sha256: 893f8fbfb15e4a1ef9de32ae056f3cb3f37310b19d061864e22ff966732d5859
+- anio: 2017
+  serie: anual
+  archivo: CuestionarioIndividual.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2017-5/CuestionarioIndividual.zip
+  ruta: ENDES/2017/docs/CuestionarioIndividual.zip
+  bytes: 1745214
+  sha256: 237e6ecd99261ecd9d7a0326f46a2a86f00a8963c2f542e36cb376ab35fa26d1
+- anio: 2017
+  serie: anual
+  archivo: CuestionarioSalud.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2017-5/CuestionarioSalud.zip
+  ruta: ENDES/2017/docs/CuestionarioSalud.zip
+  bytes: 476151
+  sha256: 59bcb933044a4ba592c1321895c43f3e1850cff6206d2d04804dc6d960f2a851
+- anio: 2017
+  serie: anual
+  archivo: DiccionarioHogar.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2017-5/DiccionarioHogar.zip
+  ruta: ENDES/2017/docs/DiccionarioHogar.zip
+  bytes: 146110
+  sha256: 862bdaf145dec9fcc706e8535a08a0fbeccb46ef73cdad20a0dbfd917230ddeb
+- anio: 2017
+  serie: anual
+  archivo: DiccionarioIndividual.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2017-5/DiccionarioIndividual.zip
+  ruta: ENDES/2017/docs/DiccionarioIndividual.zip
+  bytes: 601823
+  sha256: 243b9203c531097290ac00e3edab0b3a7c874e9915dbcc7b961cbdf7deab514a
+- anio: 2017
+  serie: anual
+  archivo: DiccionarioSalud.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2017-5/DiccionarioSalud.zip
+  ruta: ENDES/2017/docs/DiccionarioSalud.zip
+  bytes: 207689
+  sha256: 4c58815782fb7db7bfaf5077b5c5ce83ade305f2903821453ef9a6f39460dbff
+- anio: 2017
+  serie: anual
+  archivo: FichaTecnica.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2017-5/FichaTecnica.zip
+  ruta: ENDES/2017/docs/FichaTecnica.zip
+  bytes: 511845
+  sha256: b428bdb7d67424c91852ed9192e6437f754dccf7eac218edf627f1733b6dec60
+- anio: 2017
+  serie: anual
+  archivo: ManualEntrevistadora.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2017-5/ManualEntrevistadora.zip
+  ruta: ENDES/2017/docs/ManualEntrevistadora.zip
+  bytes: 34480462
+  sha256: 6f28441c20bd90037e2b4954ea3a704d5ca27d30bc9d32241e42fcd0b7e57bce
+- anio: 2018
+  serie: anual
+  archivo: CuestionarioHogar.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2018-5/CuestionarioHogar.zip
+  ruta: ENDES/2018/docs/CuestionarioHogar.zip
+  bytes: 536844
+  sha256: 85e48384b5b6a0194fcd1a5bb14b4719c54304a9ef824bfbda434ea54a54f1b1
+- anio: 2018
+  serie: anual
+  archivo: CuestionarioIndividual.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2018-5/CuestionarioIndividual.zip
+  ruta: ENDES/2018/docs/CuestionarioIndividual.zip
+  bytes: 3146585
+  sha256: d5cab409d3085df1f5a81037445c6b1b4c1b1d83aa80ab5a2a79842767287076
+- anio: 2018
+  serie: anual
+  archivo: CuestionarioSalud.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2018-5/CuestionarioSalud.zip
+  ruta: ENDES/2018/docs/CuestionarioSalud.zip
+  bytes: 856861
+  sha256: 7e0216546210d04c9334cb483bf882413d076cd0b59d93d2ed8886259df25962
+- anio: 2018
+  serie: anual
+  archivo: DiccionarioHogar.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2018-5/DiccionarioHogar.zip
+  ruta: ENDES/2018/docs/DiccionarioHogar.zip
+  bytes: 2266742
+  sha256: e93c4cc9001d9a311efb04f03e8e65a6fcfff3e3b3ed29a4fbe349a5fcc5574a
+- anio: 2018
+  serie: anual
+  archivo: DiccionarioIndividual.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2018-5/DiccionarioIndividual.zip
+  ruta: ENDES/2018/docs/DiccionarioIndividual.zip
+  bytes: 1806982
+  sha256: 36e5207e7e8c70324e9edc11c518e6e4328c5de0b3edafb5f64bc2880b434a75
+- anio: 2018
+  serie: anual
+  archivo: DiccionarioSalud.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2018-5/DiccionarioSalud.zip
+  ruta: ENDES/2018/docs/DiccionarioSalud.zip
+  bytes: 295179
+  sha256: fa6322f43b163a067329badf9fa719b08a6996767c13c9aac20da3c33861e7b5
+- anio: 2018
+  serie: anual
+  archivo: FichaTecnica.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2018-5/FichaTecnica.zip
+  ruta: ENDES/2018/docs/FichaTecnica.zip
+  bytes: 323823
+  sha256: 88cb4aee7cf20054c7403e8a2788f646619ba4ad0e64a91f9c9c82d64009c598
+- anio: 2018
+  serie: anual
+  archivo: ManualEntrevistadora.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2018-5/ManualEntrevistadora.zip
+  ruta: ENDES/2018/docs/ManualEntrevistadora.zip
+  bytes: 34163061
+  sha256: 9296ed342ba1820fe37e5c3f8122427c8b89ae8afbe4a55117186bfd635540c1
+- anio: 2019
+  serie: anual
+  archivo: CuestionarioHogar.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2019-5/CuestionarioHogar.zip
+  ruta: ENDES/2019/docs/CuestionarioHogar.zip
+  bytes: 658459
+  sha256: a919878b578bdd7a42180734d4a2e54cb31817395accddf4ca46d2e6bc5ab444
+- anio: 2019
+  serie: anual
+  archivo: CuestionarioIndividual.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2019-5/CuestionarioIndividual.zip
+  ruta: ENDES/2019/docs/CuestionarioIndividual.zip
+  bytes: 3359735
+  sha256: b084eade36453d645bc336b413259ac4f85c6ad5ce35879a7f62fa11b66d8b01
+- anio: 2019
+  serie: anual
+  archivo: CuestionarioSalud.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2019-5/CuestionarioSalud.zip
+  ruta: ENDES/2019/docs/CuestionarioSalud.zip
+  bytes: 932238
+  sha256: 5334de09b48cc13e74d32c5a6c7d254b235877e6aca162d3909bd7174bd8f481
+- anio: 2019
+  serie: anual
+  archivo: DiccionarioHogar.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2019-5/DiccionarioHogar.zip
+  ruta: ENDES/2019/docs/DiccionarioHogar.zip
+  bytes: 226175
+  sha256: d2f62e5191612e553450e9344a04628aa8eee4ca487eb6522ba8490f99505e06
+- anio: 2019
+  serie: anual
+  archivo: DiccionarioIndividual.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2019-5/DiccionarioIndividual.zip
+  ruta: ENDES/2019/docs/DiccionarioIndividual.zip
+  bytes: 1610530
+  sha256: 2b8b7f3b3a7656544805acb2ff2576e4a2f015a39c2f48a825ef019b7b5cda4e
+- anio: 2019
+  serie: anual
+  archivo: DiccionarioSalud.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2019-5/DiccionarioSalud.zip
+  ruta: ENDES/2019/docs/DiccionarioSalud.zip
+  bytes: 209447
+  sha256: 0ea3ff398522e72015fecca826bb17f37c687ce668c94a508ae63162fab85623
+- anio: 2019
+  serie: anual
+  archivo: FichaTecnica.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2019-5/FichaTecnica.zip
+  ruta: ENDES/2019/docs/FichaTecnica.zip
+  bytes: 672417
+  sha256: ab4016c7c9a34d046034084ba9f1e83be8838943c6c89cfe9ac25f800e3dc862
+- anio: 2019
+  serie: anual
+  archivo: ManualAntropometrista.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2019-5/ManualAntropometrista.zip
+  ruta: ENDES/2019/docs/ManualAntropometrista.zip
+  bytes: 9397506
+  sha256: a4600525e3c0ace10cf5e98c5713ea3a5ac02b1b28e7817a044ec5c6f1f63cc3
+- anio: 2019
+  serie: anual
+  archivo: ManualEntrevistadora.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2019-5/ManualEntrevistadora.zip
+  ruta: ENDES/2019/docs/ManualEntrevistadora.zip
+  bytes: 36965646
+  sha256: f325b5b19ed2cfc74d641ffd8d46d25c727d2124a817b8fac56f8ba130af6926
+- anio: 2020
+  serie: anual
+  archivo: CuestionarioHogar.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2020-5/CuestionarioHogar.zip
+  ruta: ENDES/2020/docs/CuestionarioHogar.zip
+  bytes: 799995
+  sha256: 59ff8449e24f34d0b9b6b6ce8ac9f5d7289c2c633f8ae8a862a07aecc82595ae
+- anio: 2020
+  serie: anual
+  archivo: CuestionarioIndividual.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2020-5/CuestionarioIndividual.zip
+  ruta: ENDES/2020/docs/CuestionarioIndividual.zip
+  bytes: 3388089
+  sha256: e373cce25df1a408023b1666a4aae3efe26744ffbbd729b97997344a3e996b76
+- anio: 2020
+  serie: anual
+  archivo: CuestionarioSalud.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2020-5/CuestionarioSalud.zip
+  ruta: ENDES/2020/docs/CuestionarioSalud.zip
+  bytes: 937431
+  sha256: e78a7ac9a799b8aec930c940f9c3ce07689fb3ca5a99b1e516022603e5dcb1fd
+- anio: 2020
+  serie: anual
+  archivo: DiccionarioHogar.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2020-5/DiccionarioHogar.zip
+  ruta: ENDES/2020/docs/DiccionarioHogar.zip
+  bytes: 1615812
+  sha256: 638c04f8b23c61201408f0fdd473ac1972bdc1b6f64a5476035b95c8756e9615
+- anio: 2020
+  serie: anual
+  archivo: DiccionarioIndividual.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2020-5/DiccionarioIndividual.zip
+  ruta: ENDES/2020/docs/DiccionarioIndividual.zip
+  bytes: 2993057
+  sha256: 48bc43e1ed80fa6921e7274cb9049eb67f38bbefc73d0652ae5417e22584b5b4
+- anio: 2020
+  serie: anual
+  archivo: DiccionarioSalud.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2020-5/DiccionarioSalud.zip
+  ruta: ENDES/2020/docs/DiccionarioSalud.zip
+  bytes: 224859
+  sha256: ad29ccd1fd660a39bb1f4caa42a86ba6de4c8bf5e061e70a923d7df1e3fdf400
+- anio: 2020
+  serie: anual
+  archivo: FichaTecnica.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2020-5/FichaTecnica.zip
+  ruta: ENDES/2020/docs/FichaTecnica.zip
+  bytes: 535094
+  sha256: ff8c306995e5f8e697933a2d28181d98b54f1b47ee3c4762485e705ff91655b9
+- anio: 2020
+  serie: anual
+  archivo: ManualAntropometrista.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2020-5/ManualAntropometrista.zip
+  ruta: ENDES/2020/docs/ManualAntropometrista.zip
+  bytes: 9384827
+  sha256: c45e176e5d67c00148b24a8067d722b412a17b7d861ebde98fa2b0f9917e3252
+- anio: 2020
+  serie: anual
+  archivo: ManualEntrevistadora.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2020-5/ManualEntrevistadora.zip
+  ruta: ENDES/2020/docs/ManualEntrevistadora.zip
+  bytes: 42708335
+  sha256: 0529082c7c82b325ba49f40ba3c4b6646f6aeee749339b6e414a9d6d8750bbd7
+- anio: 2021
+  serie: anual
+  archivo: CuestionarioHogar.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2021-5/CuestionarioHogar.zip
+  ruta: ENDES/2021/docs/CuestionarioHogar.zip
+  bytes: 1010373
+  sha256: 5f429c106ba40019e215215f62f966de0c228bf5648287b9cb1cb19446c13fb5
+- anio: 2021
+  serie: anual
+  archivo: CuestionarioIndividual.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2021-5/CuestionarioIndividual.zip
+  ruta: ENDES/2021/docs/CuestionarioIndividual.zip
+  bytes: 2062157
+  sha256: fc548ddf37243a3e5dad5bd93fd49fa9b4a43d408e4faa66f163dd89f472abfd
+- anio: 2021
+  serie: anual
+  archivo: CuestionarioSalud.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2021-5/CuestionarioSalud.zip
+  ruta: ENDES/2021/docs/CuestionarioSalud.zip
+  bytes: 498221
+  sha256: 6d6da3e44e8e668dd3f78c239b688f25321dcbaf380120ab41c1f5780d1b08d0
+- anio: 2021
+  serie: anual
+  archivo: FichaTecnica.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2021-5/FichaTecnica.zip
+  ruta: ENDES/2021/docs/FichaTecnica.zip
+  bytes: 846522
+  sha256: c5cdabd8f5ad90c26ab58b08960af06bd241c40dea1968ed71338757cafa3520
+- anio: 2021
+  serie: anual
+  archivo: ManualAntropometrista.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2021-5/ManualAntropometrista.zip
+  ruta: ENDES/2021/docs/ManualAntropometrista.zip
+  bytes: 3052833
+  sha256: 35c67602fa436b1eff830415fec170ea3b4f3c6c2488b30fa7edef3ab55f4b0e
+- anio: 2021
+  serie: anual
+  archivo: ManualEntrevistadora.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2021-5/ManualEntrevistadora.zip
+  ruta: ENDES/2021/docs/ManualEntrevistadora.zip
+  bytes: 41997595
+  sha256: 3f10ba56b4de031c578180db0e946bc0c83a18ab8c0c9ec9bae21942b790824f
+- anio: 2022
+  serie: anual
+  archivo: CuestionarioHogar.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2022-5/CuestionarioHogar.zip
+  ruta: ENDES/2022/docs/CuestionarioHogar.zip
+  bytes: 1075812
+  sha256: 3e08c3aec6f0c6cb9a36f988a2f51acd0cedf6c6747884a776117fe4376fc724
+- anio: 2022
+  serie: anual
+  archivo: CuestionarioIndividual.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2022-5/CuestionarioIndividual.zip
+  ruta: ENDES/2022/docs/CuestionarioIndividual.zip
+  bytes: 2128446
+  sha256: a2e03337c3862dac676d3f01bf4ac56153680e0ace7f7ba1a1df6cbba761d824
+- anio: 2022
+  serie: anual
+  archivo: CuestionarioSalud.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2022-5/CuestionarioSalud.zip
+  ruta: ENDES/2022/docs/CuestionarioSalud.zip
+  bytes: 503911
+  sha256: ad0a45c1bdcb9b2ee8fa53789f5c501c8a24897481c1e4634d540f2cf522db0e
+- anio: 2022
+  serie: anual
+  archivo: DiccionarioHogar.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2022-5/DiccionarioHogar.zip
+  ruta: ENDES/2022/docs/DiccionarioHogar.zip
+  bytes: 328858
+  sha256: b1d61969e419811a08805bd7e3fa9bf6f83866d1c500b3cc8f09713c23974ff0
+- anio: 2022
+  serie: anual
+  archivo: DiccionarioIndividual.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2022-5/DiccionarioIndividual.zip
+  ruta: ENDES/2022/docs/DiccionarioIndividual.zip
+  bytes: 2815608
+  sha256: 74272e3a74ca146d76f9ec846654b6d325be6b65ff108073ab3336f9bd1ebcbe
+- anio: 2022
+  serie: anual
+  archivo: DiccionarioSalud.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2022-5/DiccionarioSalud.zip
+  ruta: ENDES/2022/docs/DiccionarioSalud.zip
+  bytes: 161865
+  sha256: b8b7d55cdbc84e1d656ff9132f9ee468048f489e8a0bded0745ec23f85262323
+- anio: 2022
+  serie: anual
+  archivo: FichaTecnica.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2022-5/FichaTecnica.zip
+  ruta: ENDES/2022/docs/FichaTecnica.zip
+  bytes: 981748
+  sha256: be468fe5a24c5ff8863f64b5c6a0884329fbbaba72287fa26d60a11106ad4377
+- anio: 2022
+  serie: anual
+  archivo: Ident-de-las-bd.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2022-5/Ident-de-las-bd.zip
+  ruta: ENDES/2022/docs/Ident-de-las-bd.zip
+  bytes: 895501
+  sha256: 01f56d37a4911e981aab26719dc1bd5597bc86f155d11c6dae385155903f34ad
+- anio: 2022
+  serie: anual
+  archivo: ManualAntropometrista.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2022-5/ManualAntropometrista.zip
+  ruta: ENDES/2022/docs/ManualAntropometrista.zip
+  bytes: 10925736
+  sha256: bcf7f719415ef8e76d6b8c4ea63a360c5bb5c09bb2d84522dfeb00cfe95ff088
+- anio: 2022
+  serie: anual
+  archivo: ManualEntrevistadora.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2022-5/ManualEntrevistadora.zip
+  ruta: ENDES/2022/docs/ManualEntrevistadora.zip
+  bytes: 18705934
+  sha256: 49fd029a51dfcd66d76021163fd0a0b51596ad922c1930899154cce2fb352970
+- anio: 2022
+  serie: anual
+  archivo: ManualSupervisoraLocal.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2022-5/ManualSupervisoraLocal.zip
+  ruta: ENDES/2022/docs/ManualSupervisoraLocal.zip
+  bytes: 7758651
+  sha256: 200a2c128a610d4ea0a61dc0a19c236404afde2ace9cc5c82720e55b8db9eeb8
+- anio: 2023
+  serie: anual
+  archivo: CuestionarioHogar.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2023-5/CuestionarioHogar.zip
+  ruta: ENDES/2023/docs/CuestionarioHogar.zip
+  bytes: 854470
+  sha256: 45c7787a3006c284f0d8b69a7011fe47aa087e70e0b64befa44a8235fe7ac6d5
+- anio: 2023
+  serie: anual
+  archivo: CuestionarioIndividual.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2023-5/CuestionarioIndividual.zip
+  ruta: ENDES/2023/docs/CuestionarioIndividual.zip
+  bytes: 2133477
+  sha256: 900ba7d461ee15d0421e5fcfdbca185ecf267ad61ca4d625a9b5c96527dfc744
+- anio: 2023
+  serie: anual
+  archivo: CuestionarioSalud.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2023-5/CuestionarioSalud.zip
+  ruta: ENDES/2023/docs/CuestionarioSalud.zip
+  bytes: 511374
+  sha256: ed5e8ce201ac5ff2c4d28ad64141f6da977ae6fcd17c62439e3aebe53464d591
+- anio: 2023
+  serie: anual
+  archivo: DiccionarioHogar.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2023-5/DiccionarioHogar.zip
+  ruta: ENDES/2023/docs/DiccionarioHogar.zip
+  bytes: 1402243
+  sha256: a366d93a3d12027e97737b0a8b326be0721ad133f3f7b4ed43ea67c750d9a5a1
+- anio: 2023
+  serie: anual
+  archivo: DiccionarioIndividual.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2023-5/DiccionarioIndividual.zip
+  ruta: ENDES/2023/docs/DiccionarioIndividual.zip
+  bytes: 2146071
+  sha256: 02a63048da80ae561566704d3defed52acc99c8172fa4be951843fa79917612f
+- anio: 2023
+  serie: anual
+  archivo: DiccionarioSalud.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2023-5/DiccionarioSalud.zip
+  ruta: ENDES/2023/docs/DiccionarioSalud.zip
+  bytes: 464532
+  sha256: 288770ee5b89afe4a24827c0a44362d185c2e9187221f5714356625efc88cace
+- anio: 2023
+  serie: anual
+  archivo: FichaTecnica.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2023-5/FichaTecnica.zip
+  ruta: ENDES/2023/docs/FichaTecnica.zip
+  bytes: 3079353
+  sha256: 9077c0ba01174481cf2b12636818f00b656ccb32de1a2eeda7fb79f02ce72a40
+- anio: 2023
+  serie: anual
+  archivo: Ident-de-las-bd.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2023-5/Ident-de-las-bd.zip
+  ruta: ENDES/2023/docs/Ident-de-las-bd.zip
+  bytes: 708617
+  sha256: 689fa958ca2fc19f9b4bb97d9dc3d2898d7934698f415d36b3e5bd2a447de34f
+- anio: 2023
+  serie: anual
+  archivo: ManualAntropometrista.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2023-5/ManualAntropometrista.zip
+  ruta: ENDES/2023/docs/ManualAntropometrista.zip
+  bytes: 13629523
+  sha256: 2af4d3267ec1d894aa7df4907c64fb146bf77ce318333d036ff287c1d7f84e47
+- anio: 2023
+  serie: anual
+  archivo: ManualEntrevistadora.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2023-5/ManualEntrevistadora.zip
+  ruta: ENDES/2023/docs/ManualEntrevistadora.zip
+  bytes: 18008816
+  sha256: b9c72cde6fdca65b2e59c80a8f9be94ec9cfb419bd80025f9ca17696c59ffa62
+- anio: 2023
+  serie: anual
+  archivo: ManualSupervisoraLocal.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2023-5/ManualSupervisoraLocal.zip
+  ruta: ENDES/2023/docs/ManualSupervisoraLocal.zip
+  bytes: 9555637
+  sha256: 8d3a6ece0018be282e21db096f7161f04ab5076480ead387d1102ea76a643a9d
+- anio: 2024
+  serie: anual
+  archivo: CuestionarioHogar.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2024-5/CuestionarioHogar.zip
+  ruta: ENDES/2024/docs/CuestionarioHogar.zip
+  bytes: 998637
+  sha256: 64d0a8eaf3aef517176844619465c144b7f5233c49275620434494a03990ce85
+- anio: 2024
+  serie: anual
+  archivo: CuestionarioIndividual.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2024-5/CuestionarioIndividual.zip
+  ruta: ENDES/2024/docs/CuestionarioIndividual.zip
+  bytes: 3415465
+  sha256: d5c1befc3f80067964d890ee5ab5300814d82e9286a66bb92a7814a248f36248
+- anio: 2024
+  serie: anual
+  archivo: CuestionarioSalud.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2024-5/CuestionarioSalud.zip
+  ruta: ENDES/2024/docs/CuestionarioSalud.zip
+  bytes: 933318
+  sha256: faaaffefd69087424aaf37e01d0757e16af1c8c133993f69a6184fff4d0e55b8
+- anio: 2024
+  serie: anual
+  archivo: DiccionarioHogar.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2024-5/DiccionarioHogar.zip
+  ruta: ENDES/2024/docs/DiccionarioHogar.zip
+  bytes: 474837
+  sha256: b8aa4d408b9faa1f0ac82cfa281f1f75557a60775bd262f47fc122deb4dc5040
+- anio: 2024
+  serie: anual
+  archivo: DiccionarioIndividual.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2024-5/DiccionarioIndividual.zip
+  ruta: ENDES/2024/docs/DiccionarioIndividual.zip
+  bytes: 2146925
+  sha256: 60249d3c78c6830a0cc83a2def5f5239769599dbc93424cb63eb9714c4dd5ef9
+- anio: 2024
+  serie: anual
+  archivo: DiccionarioSalud.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2024-5/DiccionarioSalud.zip
+  ruta: ENDES/2024/docs/DiccionarioSalud.zip
+  bytes: 422495
+  sha256: 4d554f653844f51cea2467bea79f09165374e627d9268c79bdc80f46d5d0ee11
+- anio: 2024
+  serie: anual
+  archivo: FichaTecnica.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2024-5/FichaTecnica.zip
+  ruta: ENDES/2024/docs/FichaTecnica.zip
+  bytes: 588798
+  sha256: c13a68a33e59b049635b90c9dbbd9c7cc502ed2f563127530d3933f9ddd34ac8
+- anio: 2024
+  serie: anual
+  archivo: Ident-de-las-bd.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2024-5/Ident-de-las-bd.zip
+  ruta: ENDES/2024/docs/Ident-de-las-bd.zip
+  bytes: 708617
+  sha256: c202728d5df96a6b27c4b345ac752e5c324663e9b2ac0b904c927842ee55b074
+- anio: 2024
+  serie: anual
+  archivo: ManualAntropometrista.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2024-5/ManualAntropometrista.zip
+  ruta: ENDES/2024/docs/ManualAntropometrista.zip
+  bytes: 13965587
+  sha256: 0148421236178937180c95f8aa5d0ff2683004421fdf0cc947233570a6720319
+- anio: 2024
+  serie: anual
+  archivo: ManualEntrevistadora.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2024-5/ManualEntrevistadora.zip
+  ruta: ENDES/2024/docs/ManualEntrevistadora.zip
+  bytes: 46478344
+  sha256: e2f49e0ee2c485bfbf8671ff3bd1df0ef8e20a617c8bd432c2b11ae4018f0210
+- anio: 2024
+  serie: anual
+  archivo: ManualSupervisoraLocal.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2024-5/ManualSupervisoraLocal.zip
+  ruta: ENDES/2024/docs/ManualSupervisoraLocal.zip
+  bytes: 13135516
+  sha256: 4c0edaf65b06e780e86b5f141fc7f661e2dfea6498eb96b651549a4869915e59
+- anio: 2025
+  serie: anual
+  archivo: CuestionarioHogar.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2025-5/CuestionarioHogar.zip
+  ruta: ENDES/2025/docs/CuestionarioHogar.zip
+  bytes: 982120
+  sha256: 59acad8f214e9b5b49f8377b32aa2aac6320852c70b68ca3395bef129274e542
+- anio: 2025
+  serie: anual
+  archivo: CuestionarioIndividual.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2025-5/CuestionarioIndividual.zip
+  ruta: ENDES/2025/docs/CuestionarioIndividual.zip
+  bytes: 3432077
+  sha256: c90ef094b52d3c631fb98e3403cca24e73bf79c14447de955d45e91e1463399b
+- anio: 2025
+  serie: anual
+  archivo: CuestionarioSalud.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2025-5/CuestionarioSalud.zip
+  ruta: ENDES/2025/docs/CuestionarioSalud.zip
+  bytes: 941122
+  sha256: 8953209ac45f38153daafecf077e04d66beefc759bf3ae3576e0348030ed053e
+- anio: 2025
+  serie: anual
+  archivo: DiccionarioHogar.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2025-5/DiccionarioHogar.zip
+  ruta: ENDES/2025/docs/DiccionarioHogar.zip
+  bytes: 488910
+  sha256: 020fe41ee36949a44882682827d9c24b9d00173706b818f569c926e2b9c54f42
+- anio: 2025
+  serie: anual
+  archivo: DiccionarioIndividual.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2025-5/DiccionarioIndividual.zip
+  ruta: ENDES/2025/docs/DiccionarioIndividual.zip
+  bytes: 2131823
+  sha256: 2ee57d77dee2bf28fbd63f09f7d085c8c870cb3831e8680d9380e2546a57f255
+- anio: 2025
+  serie: anual
+  archivo: DiccionarioSalud.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2025-5/DiccionarioSalud.zip
+  ruta: ENDES/2025/docs/DiccionarioSalud.zip
+  bytes: 465635
+  sha256: 675ebbe5b6aaa2c04be70d92cbbe6cf1b98a7790ce3207d8121ddd7981be88ae
+- anio: 2025
+  serie: anual
+  archivo: FichaTecnica.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2025-5/FichaTecnica.zip
+  ruta: ENDES/2025/docs/FichaTecnica.zip
+  bytes: 592500
+  sha256: 717001b1c6cecead1652d91caf0f42da6b6a19edfe9699468b0408d2875489ca
+- anio: 2025
+  serie: anual
+  archivo: Ident-de-las-bd.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2025-5/Ident-de-las-bd.zip
+  ruta: ENDES/2025/docs/Ident-de-las-bd.zip
+  bytes: 708617
+  sha256: a8819d95bd0116d8ae779796e612df527113186434adab2c6013acf72baa6f1e
+- anio: 2025
+  serie: anual
+  archivo: ManualAntropometrista.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2025-5/ManualAntropometrista.zip
+  ruta: ENDES/2025/docs/ManualAntropometrista.zip
+  bytes: 14195425
+  sha256: 40a091508d8256a22b47b56b7f4a4eae92bee3829688dc936c7b0c59950691d3
+- anio: 2025
+  serie: anual
+  archivo: ManualEntrevistadora.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2025-5/ManualEntrevistadora.zip
+  ruta: ENDES/2025/docs/ManualEntrevistadora.zip
+  bytes: 27992180
+  sha256: d2eebab342329169a525ed3aaf1bcb57c3259ba8d8ce6abac0924d5e38fe2fe6
+- anio: 2025
+  serie: anual
+  archivo: ManualSupervisoraLocal.zip
+  url: https://proyectos.inei.gob.pe/iinei/srienaho/descarga/DocumentosZIP/2025-5/ManualSupervisoraLocal.zip
+  ruta: ENDES/2025/docs/ManualSupervisoraLocal.zip
+  bytes: 9666041
+  sha256: ead9cb717116e025316e6ca373904779597814506daa0731291c9e5d9da9ed97
