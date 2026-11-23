@@ -138,7 +138,7 @@ fa_variables <- function(survey, year, module, file = NULL, format = "auto", ser
   # A UTF-8 byte order mark would end up glued to the first name.
   head <- readLines(path, n = 1L, warn = FALSE)
   head <- sub("^\xef\xbb\xbf", "", head, useBytes = TRUE)
-  head <- iconv(head, "latin1", "UTF-8")
+  head <- .fix_text(head)
   sep <- if (lengths(gregexpr(";", head, fixed = TRUE)) >
              lengths(gregexpr(",", head, fixed = TRUE))) ";" else ","
   cols <- strsplit(head, sep, fixed = TRUE)[[1]]
@@ -154,49 +154,141 @@ fa_variables <- function(survey, year, module, file = NULL, format = "auto", ser
 .read_csv <- function(path, cols = NULL) {
   h <- .csv_head(path)
   keep <- if (is.null(cols)) h$cols else h$cols[.match_cols(cols, h$cols, path)]
-  text <- keep[tolower(keep) %in% .code_cols]
-  # With ";" as separator INEI writes decimals with a comma (ENAHO 2025).
-  dec <- if (h$sep == ";") "," else "."
   x <- NULL
   if (.csv_engine() == "data.table") {
     # fread stops at the first malformed line and only warns, which would
-    # silently drop the rest of the file. Any warning sends us to base R.
-    x <- tryCatch(
-      data.table::fread(path, sep = h$sep, dec = dec, select = if (!is.null(cols)) keep,
-                        colClasses = if (length(text)) list(character = text),
-                        encoding = "Latin-1", integer64 = "double",
-                        check.names = FALSE, showProgress = FALSE, data.table = FALSE),
-      warning = function(w) NULL)
-    if (!is.null(x)) {
-      chr <- vapply(x, is.character, logical(1))
-      x[chr] <- lapply(x[chr], function(v) iconv(v, "latin1", "UTF-8"))
-    } else {
-      .csv_check(path, h)
+    # silently drop the rest of the file. On any warning the file is repaired
+    # first and read again.
+    # Let fread finish (interrupting it leaves its state dirty) and only note
+    # that it complained.
+    warned <- FALSE
+    x <- withCallingHandlers(.fread(path, h, keep, cols), warning = function(w) {
+      warned <<- TRUE
+      invokeRestart("muffleWarning")
+    })
+    if (warned) {
+      fixed <- .csv_repair(path, h)
+      on.exit(if (!identical(c(fixed), path)) unlink(fixed), add = TRUE)
+      x <- if (identical(c(fixed), path)) {
+        # Nothing to repair line by line, yet fread complained: base R is
+        # slower but reads quoted fields with line breaks the standard way.
+        .base_csv(path, h, keep, cols)
+      } else if (isTRUE(attr(fixed, "left") > 0)) {
+        # What could not be repaired was already reported; read the rest whole.
+        suppressWarnings(.fread(fixed, h, keep, cols, fill = TRUE))
+      } else {
+        .fread(fixed, h, keep, cols)
+      }
     }
-  }
-  if (is.null(x)) {
-    classes <- rep(NA_character_, length(h$cols))
-    if (!is.null(cols)) classes[!h$cols %in% keep] <- "NULL"
-    classes[h$cols %in% text] <- "character"
-    x <- utils::read.csv(path, sep = h$sep, dec = dec, fileEncoding = "latin1", encoding = "UTF-8",
-                         stringsAsFactors = FALSE, check.names = FALSE, colClasses = classes)
-    names(x) <- h$cols[h$cols %in% keep]
+  } else {
+    fixed <- .csv_repair(path, h)
+    on.exit(if (!identical(c(fixed), path)) unlink(fixed), add = TRUE)
+    x <- .base_csv(fixed, h, keep, cols)
   }
   # Same order as asked, like the other formats.
   x[keep]
 }
 
-# Lines whose number of fields differs from the header: usually a text answer
-# with a line break inside, which splits one row into two.
-.csv_check <- function(path, h) {
-  n <- utils::count.fields(path, sep = h$sep, quote = "\"", blank.lines.skip = TRUE,
-                           comment.char = "")
-  bad <- sum(n != length(h$cols), na.rm = TRUE)
-  if (bad > 0L) {
-    .warn("csv", paste("%s has %d malformed lines (text with line breaks); some rows may be split.",
-                       "Read the STATA or SPSS version for an exact copy."), basename(path), bad)
+.csv_dec <- function(h) if (h$sep == ";") "," else "."
+
+.fread <- function(path, h, keep, cols, fill = FALSE) {
+  # Columns go by position: the names in the file may still be Latin-1 bytes,
+  # while `h$cols` is already UTF-8.
+  idx <- sort(match(keep, h$cols))
+  text <- which(tolower(h$cols) %in% .code_cols)
+  # With ";" as separator INEI writes decimals with a comma (ENAHO 2025).
+  x <- data.table::fread(path, sep = h$sep, dec = .csv_dec(h), select = if (!is.null(cols)) idx,
+                         colClasses = if (length(text)) list(character = text),
+                         integer64 = "double", keepLeadingZeros = TRUE,
+                         check.names = FALSE, showProgress = FALSE, data.table = FALSE,
+                         fill = fill)
+  x <- x[seq_len(min(ncol(x), length(h$cols)))]
+  names(x) <- h$cols[if (is.null(cols)) seq_len(ncol(x)) else idx]
+  .fix_cols(x)
+}
+
+# INEI's CSV files come in Latin-1 or, lately, in UTF-8 (ENARES 2024), even
+# within one survey. Each text value that is not valid UTF-8 is taken as
+# Latin-1; converting a UTF-8 file again would turn "FERRE\u00d1AFE" into
+# mojibake.
+.fix_text <- function(v) {
+  bad <- !is.na(v) & !validUTF8(v)
+  v[bad] <- iconv(v[bad], "latin1", "UTF-8")
+  Encoding(v[!bad & !is.na(v)]) <- "UTF-8"
+  v
+}
+
+.fix_cols <- function(x) {
+  chr <- vapply(x, is.character, logical(1))
+  x[chr] <- lapply(x[chr], .fix_text)
+  x
+}
+
+.base_csv <- function(path, h, keep, cols) {
+  text <- keep[tolower(keep) %in% .code_cols]
+  # Everything as text first, so codes such as CONGLOME "07060" keep their
+  # leading zero, as they do in the Stata and SPSS files.
+  classes <- rep("character", length(h$cols))
+  if (!is.null(cols)) classes[!h$cols %in% keep] <- "NULL"
+  x <- utils::read.csv(path, sep = h$sep, stringsAsFactors = FALSE, check.names = FALSE,
+                       colClasses = classes, na.strings = "NA")
+  names(x) <- h$cols[h$cols %in% keep]
+  for (n in setdiff(names(x), text)) {
+    v <- x[[n]]
+    if (!any(grepl("^-?0[0-9]", v, useBytes = TRUE))) {
+      x[[n]] <- utils::type.convert(v, as.is = TRUE, dec = .csv_dec(h), numerals = "no.loss")
+    }
   }
-  invisible(bad)
+  .fix_cols(x)
+}
+
+# INEI writes text answers without quotes, and a line break typed inside an
+# answer splits the row in two (ENUT 2024 has 26 of them). A short line is
+# glued to the next ones while that adds up to exactly the number of columns;
+# the break becomes a space. Returns the path of a repaired copy, or the
+# original path when there is nothing to repair. Lines that cannot be
+# repaired are reported.
+.csv_repair <- function(path, h) {
+  N <- length(h$cols)
+  n <- utils::count.fields(path, sep = h$sep, quote = "\"", blank.lines.skip = FALSE,
+                           comment.char = "")
+  # A blank line inside an answer counts as one empty field.
+  n[!is.na(n) & n == 0L] <- 1L
+  # NA marks lines inside a quoted field, which fread reads fine.
+  bad <- which(!is.na(n) & n != N)
+  if (length(bad) == 0L) return(path)
+  lines <- readLines(path, warn = FALSE)
+  if (length(lines) != length(n)) {
+    .warn("csv", "%s could not be checked line by line; read the STATA or SPSS version.", basename(path))
+    return(path)
+  }
+  keep <- rep(TRUE, length(lines))
+  left <- 0L
+  j <- 1L
+  while (j <= length(bad)) {
+    i <- bad[j]
+    acc <- n[i]
+    k <- i
+    while (!is.na(acc) && acc < N && k < length(lines)) {
+      k <- k + 1L
+      acc <- acc + n[k] - 1L
+    }
+    if (!is.na(acc) && acc == N && k > i) {
+      lines[i] <- paste(lines[i:k], collapse = " ")
+      keep[(i + 1L):k] <- FALSE
+    } else {
+      left <- left + 1L
+      k <- i
+    }
+    j <- j + sum(bad[j:length(bad)] <= k)
+  }
+  if (left > 0L) {
+    .warn("csv", paste("%s has %d malformed lines that could not be repaired.",
+                       "Read the STATA or SPSS version for an exact copy."), basename(path), left)
+  }
+  out <- tempfile(fileext = ".csv")
+  writeLines(lines[keep], out, useBytes = TRUE)
+  structure(out, left = left)
 }
 
 # Match requested names without caring about case; stop on the ones missing.

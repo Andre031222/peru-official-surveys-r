@@ -200,12 +200,44 @@ test_that("reading selected columns of the real ENAHO equals the full read", {
   expect_equal(b$pobreza, a$pobreza)
 })
 
-test_that("a CSV with line breaks inside answers is read whole and flagged", {
-  skip_if_not_installed("data.table")
+test_that("a CSV with line breaks inside answers is repaired", {
   f <- tempfile(fileext = ".csv")
-  rows <- c("ID,NOTA,FACTOR", sprintf("%d,ok,1", 1:200), "201,vuelva a las", "3pm,2", sprintf("%d,ok,1", 202:400))
+  rows <- c("ID,NOTA,FACTOR", sprintf("%d,ok,1", 1:200), "201,vuelva a las", "3pm,2",
+            sprintf("%d,ok,1", 202:300), "301,dos", "", "saltos,3", sprintf("%d,ok,1", 302:400))
   writeLines(rows, f)
+  for (eng in c("data.table", "base")) {
+    if (eng == "data.table" && !requireNamespace("data.table", quietly = TRUE)) next
+    x <- withr::with_options(list(faperu.csv_engine = eng), faperu:::.read_file(f))
+    expect_equal(nrow(x), 400L, info = eng)
+    expect_equal(x$nota[201], "vuelva a las 3pm", info = eng)
+    expect_equal(x$factor[201], 2, info = eng)
+    expect_equal(x$nota[301], "dos  saltos", info = eng)
+    expect_equal(x$id, 1:400, info = eng)
+  }
+})
+
+test_that("lines that cannot be repaired are reported", {
+  f <- tempfile(fileext = ".csv")
+  writeLines(c("A,B", "1,2", "3,4,5", "6,7"), f)
   expect_warning(x <- faperu:::.read_file(f), class = "faperu_warning_csv")
-  # Without the fallback fread would have stopped at line 202.
-  expect_gt(nrow(x), 300)
+  # The rest of the file is still there.
+  expect_equal(nrow(x), 3L)
+  expect_equal(x$a, c(1L, 3L, 6L))
+})
+
+test_that("UTF-8 CSV files are not converted twice and codes keep their zeros", {
+  f <- tempfile(fileext = ".csv")
+  con <- file(f, "w", encoding = "UTF-8")
+  writeLines(c("CONGLOME,A\u00d1O,PROVINCIA,FACTOR", "07060,2024,FERRE\u00d1AFE,1.5", "12001,2024,JARD\u00cdN,2"), con)
+  close(con)
+  for (eng in c("data.table", "base")) {
+    if (eng == "data.table" && !requireNamespace("data.table", quietly = TRUE)) next
+    x <- withr::with_options(list(faperu.csv_engine = eng), faperu:::.read_file(f))
+    expect_equal(names(x), c("conglome", "a\u00f1o", "provincia", "factor"), info = eng)
+    expect_equal(x$provincia, c("FERRE\u00d1AFE", "JARD\u00cdN"), info = eng)
+    expect_equal(x$conglome, c("07060", "12001"), info = eng)
+    expect_equal(x$factor, c(1.5, 2), info = eng)
+    y <- withr::with_options(list(faperu.csv_engine = eng), faperu:::.read_file(f, cols = c("provincia", "a\u00d1o")))
+    expect_equal(names(y), c("provincia", "a\u00f1o"), info = eng)
+  }
 })
