@@ -2784,7 +2784,7 @@ modulos:
     SPSS: 968-Modulo1629
     DBF: 968-Modulo1629
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENDES/2024/968-Modulo1629.zip
     bytes: 5614967
     sha256: d40ca096acd91aa296742820c872350006ea55e44354cefae6f6bbd24c27838c
@@ -2800,7 +2800,7 @@ modulos:
     SPSS: 968-Modulo1630
     DBF: 968-Modulo1630
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENDES/2024/968-Modulo1630.zip
     bytes: 3658861
     sha256: 3ba67f49104110cbbf5c221bf9e3415ef2a94a00bcd378a9b0f543dff42f40fa
@@ -2848,7 +2848,7 @@ modulos:
     SPSS: 968-Modulo1633
     DBF: 968-Modulo1633
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENDES/2024/968-Modulo1633.zip
     bytes: 5854080
     sha256: 165b4b06f33e5b51adff85b73588e7afdb65c20240a62ad6ce538fda38b12e4e
@@ -2864,7 +2864,7 @@ modulos:
     SPSS: 968-Modulo1634
     DBF: 968-Modulo1634
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENDES/2024/968-Modulo1634.zip
     bytes: 12107078
     sha256: 2bbbbde6377a1c49e150799f36523284cfc77511929f5caee0408fb635a6d594
@@ -2928,7 +2928,7 @@ modulos:
     SPSS: 968-Modulo1638
     DBF: 968-Modulo1638
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENDES/2024/968-Modulo1638.zip
     bytes: 9463248
     sha256: 0f5ead4cd363a48b72b45d78f7c7d8313e8ab2ad98ac6d3dc8f087b282e3fab5

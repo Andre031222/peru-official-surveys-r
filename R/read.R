@@ -157,14 +157,24 @@ fa_variables <- function(survey, year, module, file = NULL, format = "auto", ser
   text <- keep[tolower(keep) %in% .code_cols]
   # With ";" as separator INEI writes decimals with a comma (ENAHO 2025).
   dec <- if (h$sep == ";") "," else "."
+  x <- NULL
   if (.csv_engine() == "data.table") {
-    x <- data.table::fread(path, sep = h$sep, dec = dec, select = if (!is.null(cols)) keep,
-                           colClasses = if (length(text)) list(character = text),
-                           encoding = "Latin-1", integer64 = "double",
-                           check.names = FALSE, showProgress = FALSE, data.table = FALSE)
-    chr <- vapply(x, is.character, logical(1))
-    x[chr] <- lapply(x[chr], function(v) iconv(v, "latin1", "UTF-8"))
-  } else {
+    # fread stops at the first malformed line and only warns, which would
+    # silently drop the rest of the file. Any warning sends us to base R.
+    x <- tryCatch(
+      data.table::fread(path, sep = h$sep, dec = dec, select = if (!is.null(cols)) keep,
+                        colClasses = if (length(text)) list(character = text),
+                        encoding = "Latin-1", integer64 = "double",
+                        check.names = FALSE, showProgress = FALSE, data.table = FALSE),
+      warning = function(w) NULL)
+    if (!is.null(x)) {
+      chr <- vapply(x, is.character, logical(1))
+      x[chr] <- lapply(x[chr], function(v) iconv(v, "latin1", "UTF-8"))
+    } else {
+      .csv_check(path, h)
+    }
+  }
+  if (is.null(x)) {
     classes <- rep(NA_character_, length(h$cols))
     if (!is.null(cols)) classes[!h$cols %in% keep] <- "NULL"
     classes[h$cols %in% text] <- "character"
@@ -174,6 +184,19 @@ fa_variables <- function(survey, year, module, file = NULL, format = "auto", ser
   }
   # Same order as asked, like the other formats.
   x[keep]
+}
+
+# Lines whose number of fields differs from the header: usually a text answer
+# with a line break inside, which splits one row into two.
+.csv_check <- function(path, h) {
+  n <- utils::count.fields(path, sep = h$sep, quote = "\"", blank.lines.skip = TRUE,
+                           comment.char = "")
+  bad <- sum(n != length(h$cols), na.rm = TRUE)
+  if (bad > 0L) {
+    .warn("csv", paste("%s has %d malformed lines (text with line breaks); some rows may be split.",
+                       "Read the STATA or SPSS version for an exact copy."), basename(path), bad)
+  }
+  invisible(bad)
 }
 
 # Match requested names without caring about case; stop on the ones missing.

@@ -19,7 +19,10 @@
 #'   (e.g. `"00_Padron"` in the School Census). `NULL` means all modules of
 #'   that year.
 #' @param format `"auto"` uses the format of the verified copy, or else the
-#'   first of CSV, STATA, SPSS and DBF. You can also ask for one of those.
+#'   first of STATA, SPSS, CSV and DBF that the module has. Stata comes
+#'   first because it is read exactly, with labels, and quickly; INEI's CSV
+#'   files can have line breaks inside text answers. You can also ask for
+#'   one of those formats.
 #' @param series For sources with several series, e.g. `"panel"` in ENAHO.
 #' @param period For sources with several files per year, the `period`
 #'   shown by [fa_catalog()], e.g. `"Anual - (Ene-Dic)"` in EPEN. A
@@ -69,7 +72,7 @@ fa_download <- function(survey, year, module = NULL, format = "auto", series = N
   if (identical(format, "auto")) {
     for (j in which(plan$status == "failed" & grepl("HTTP 404", plan$why))) {
       m <- x$modulos[[todo$.i[j]]]
-      for (f in setdiff(intersect(c("CSV", "STATA", "SPSS", "DBF"), names(m$archivos)), plan$format[j])) {
+      for (f in setdiff(intersect(.order, names(m$archivos)), plan$format[j])) {
         alt <- .plan(x, m, f, cache, overwrite)
         if (alt$status == "pending") alt <- .transfer(alt)
         if (alt$status != "failed") {
@@ -105,7 +108,10 @@ fa_download <- function(survey, year, module = NULL, format = "auto", series = N
   sha <- NA_character_
   if (file.exists(dest) && !overwrite) {
     sha <- .sha256(dest)
-    if (is.na(expected) || identical(sha, expected)) {
+    # A file faperu downloaded itself carries its SHA-256 next to it; that
+    # also covers a module INEI changed after the catalog was made.
+    mine <- .sidecar(dest)[1]
+    if (is.na(expected) || identical(sha, expected) || identical(sha, mine)) {
       status <- "cached"
     } else {
       .warn("checksum", "%s is cached but its SHA-256 does not match; downloading again.", rel)
@@ -129,7 +135,11 @@ fa_download <- function(survey, year, module = NULL, format = "auto", series = N
   other <- file.path(base, fmt, paste0(stem, ".zip"))
   if (file.exists(file.path(cache, other))) return(other)
   p <- file.path(cache, plain)
-  if (!file.exists(p) || fmt %in% .zip_formats(p)) plain else other
+  if (!file.exists(p)) return(plain)
+  # What faperu asked for is in the note beside the file; for a copy made
+  # elsewhere, look inside the zip.
+  got <- .sidecar(p)[2]
+  if (fmt %in% if (is.na(got)) .zip_formats(p) else c("ZIP", got)) plain else other
 }
 
 # Formats found inside a zip; "ZIP" (ESCALE) matches whatever is there.
@@ -172,6 +182,7 @@ fa_download <- function(survey, year, module = NULL, format = "auto", series = N
   for (i in setdiff(seq_len(nrow(p)), left)) {
     sha <- .sha256(part[i])
     file.rename(part[i], p$path[i])
+    writeLines(c(sha, p$format[i]), paste0(p$path[i], ".sha256"))
     p$sha256[i] <- sha
     p$bytes[i] <- file.size(p$path[i])
     # INEI sometimes replaces files without notice. Keep the new one, but say so.
@@ -234,6 +245,11 @@ fa_download <- function(survey, year, module = NULL, format = "auto", series = N
 
 .host <- function(url) sub("^https?://([^/]+).*$", "\\1", url)
 
+# Order tried with format = "auto". Stata first: it keeps labels and types,
+# and INEI's CSV files sometimes carry line breaks inside text answers that
+# split rows (ENUT 2024).
+.order <- c("STATA", "SPSS", "CSV", "DBF")
+
 .pick_format <- function(m, format) {
   have <- names(m$archivos)
   if (!identical(format, "auto")) {
@@ -247,7 +263,7 @@ fa_download <- function(survey, year, module = NULL, format = "auto", series = N
   if (!is.null(m$local$formato) && toupper(m$local$formato) %in% have) {
     return(toupper(m$local$formato))
   }
-  pref <- intersect(c("CSV", "STATA", "SPSS", "DBF", "ZIP"), have)
+  pref <- intersect(c(.order, "ZIP"), have)
   if (length(pref) == 0L) have[1] else pref[1]
 }
 
@@ -266,4 +282,11 @@ fa_download <- function(survey, year, module = NULL, format = "auto", series = N
   x <- sub("^.*/", "", x, useBytes = TRUE)
   has <- grepl(".", x, fixed = TRUE, useBytes = TRUE)
   ifelse(has, tolower(sub("^.*[.]", "", x, useBytes = TRUE)), "")
+}
+
+# SHA-256 and format of a file faperu downloaded, or NA.
+.sidecar <- function(path) {
+  f <- paste0(path, ".sha256")
+  v <- if (file.exists(f)) readLines(f, n = 2L, warn = FALSE) else character()
+  c(v, NA_character_, NA_character_)[1:2]
 }

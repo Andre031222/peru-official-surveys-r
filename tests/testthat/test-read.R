@@ -199,3 +199,13 @@ test_that("reading selected columns of the real ENAHO equals the full read", {
   expect_equal(b$factor07, a$factor07)
   expect_equal(b$pobreza, a$pobreza)
 })
+
+test_that("a CSV with line breaks inside answers is read whole and flagged", {
+  skip_if_not_installed("data.table")
+  f <- tempfile(fileext = ".csv")
+  rows <- c("ID,NOTA,FACTOR", sprintf("%d,ok,1", 1:200), "201,vuelva a las", "3pm,2", sprintf("%d,ok,1", 202:400))
+  writeLines(rows, f)
+  expect_warning(x <- faperu:::.read_file(f), class = "faperu_warning_csv")
+  # Without the fallback fread would have stopped at line 202.
+  expect_gt(nrow(x), 300)
+})

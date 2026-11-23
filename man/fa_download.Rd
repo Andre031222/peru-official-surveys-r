@@ -25,7 +25,10 @@ fa_download(
 that year.}
 
 \item{format}{\code{"auto"} uses the format of the verified copy, or else the
-first of CSV, STATA, SPSS and DBF. You can also ask for one of those.}
+first of STATA, SPSS, CSV and DBF that the module has. Stata comes
+first because it is read exactly, with labels, and quickly; INEI's CSV
+files can have line breaks inside text answers. You can also ask for
+one of those formats.}
 
 \item{series}{For sources with several series, e.g. \code{"panel"} in ENAHO.}
 

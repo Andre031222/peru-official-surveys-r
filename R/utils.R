@@ -20,7 +20,18 @@
 
 .or <- function(x, y) if (is.null(x) || length(x) == 0L) y else x
 
-.sha256 <- function(path) digest::digest(file = path, algo = "sha256")
+# Hashing a large zip takes a second; within a session the result is reused
+# while the file keeps its size and modification time.
+.sha256 <- function(path) {
+  info <- file.info(path)[, c("size", "mtime")]
+  key <- normalizePath(path, mustWork = FALSE)
+  memo <- .fa$.sha[[key]]
+  if (!is.null(memo) && identical(memo$info, info)) return(memo$sha)
+  sha <- digest::digest(file = path, algo = "sha256")
+  if (is.null(.fa$.sha)) .fa$.sha <- list()
+  .fa$.sha[[key]] <- list(info = info, sha = sha)
+  sha
+}
 
 .check_survey <- function(survey) {
   if (!is.character(survey) || length(survey) != 1L || is.na(survey)) {

@@ -1025,7 +1025,7 @@ modulos:
     CSV: 579-Modulo1144
     STATA: 579-Modulo1144
   local:
-    formato: SPSS
+    formato: STATA
     ruta: ENA/2016/579-Modulo1144.zip
     bytes: 89580
     sha256: 240dbda57f999c693f1c76c2384a34642f3c213ddd30a138bd4217639a4a89ff
@@ -2161,7 +2161,7 @@ modulos:
     SPSS: 868-Modulo1793
     DBF: 868-Modulo1793
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2021/868-Modulo1793.zip
     bytes: 6286831
     sha256: 4ab2ee97c788f7e172a4609c9dec64f590cac2c2fe54d9b0975731671c5edb38
@@ -2273,7 +2273,7 @@ modulos:
     SPSS: 868-Modulo1800
     DBF: 868-Modulo1800
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2021/868-Modulo1800.zip
     bytes: 6409843
     sha256: 6ce38481deefe38d1138c900ebf302f222275e7304ffe8abd5a85b29a809de46
@@ -2289,7 +2289,7 @@ modulos:
     SPSS: 868-Modulo1801
     DBF: 868-Modulo1801
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2021/868-Modulo1801.zip
     bytes: 5458323
     sha256: a41f6ebcf59bab45252339d3fecaf5eb29c87f10f3e568b891b9b6ee02aab984
@@ -2321,7 +2321,7 @@ modulos:
     SPSS: 868-Modulo1803
     DBF: 868-Modulo1803
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2021/868-Modulo1803.zip
     bytes: 5058618
     sha256: 7693fc1221143f6f4c9370456a2e53e9685ee7323a2507e28f9653b2e013b536
@@ -2497,7 +2497,7 @@ modulos:
     SPSS: 844-Modulo1737
     DBF: 844-Modulo1737
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2022/844-Modulo1737.zip
     bytes: 8029713
     sha256: fd6a968bb9d0f4908ca04b2cc6f411e0d1ea0056143a1869ba0795b6aa6016e2
@@ -2625,7 +2625,7 @@ modulos:
     SPSS: 844-Modulo1745
     DBF: 844-Modulo1745
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2022/844-Modulo1745.zip
     bytes: 8213810
     sha256: 0f7ac2d12fde129a45ff19dc8c1b76976976b0d6863f6d5fa6c59bc86c1d9de9
@@ -2641,7 +2641,7 @@ modulos:
     SPSS: 844-Modulo1746
     DBF: 844-Modulo1746
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2022/844-Modulo1746.zip
     bytes: 6381947
     sha256: 1cf9aab54872c41e9207e538c135ec4af7656be963771ef4d78aa18f11a6836a
@@ -2673,7 +2673,7 @@ modulos:
     SPSS: 844-Modulo1748
     DBF: 844-Modulo1748
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2022/844-Modulo1748.zip
     bytes: 6491403
     sha256: 889f19de0702fc465b3511ca33312a86d7cf64b34c405bc985d925eb90aaf0ef
@@ -2705,7 +2705,7 @@ modulos:
     SPSS: 844-Modulo1750
     DBF: 844-Modulo1750
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2022/844-Modulo1750.zip
     bytes: 7194134
     sha256: 9cb9c2571f2acfb71d6a8eec8f4f1848da55414dd17bd3f09f15d8af22aa057c
@@ -2769,7 +2769,7 @@ modulos:
     SPSS: 844-Modulo1754
     DBF: 844-Modulo1754
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2022/844-Modulo1754.zip
     bytes: 7383936
     sha256: 98564db383d824beff4655dfee40d831a3c6f98e3b086f00e77d53dd85122344
@@ -2881,7 +2881,7 @@ modulos:
     SPSS: 922-Modulo1828
     DBF: 922-Modulo1828
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2023/922-Modulo1828.zip
     bytes: 21451474
     sha256: 3bcc0f75285637969d187392e1b4201d0660a8667ebdebf4323d20a625f22d2a
@@ -2897,7 +2897,7 @@ modulos:
     SPSS: 922-Modulo1829
     DBF: 922-Modulo1829
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2023/922-Modulo1829.zip
     bytes: 9096967
     sha256: 37f5a8ad0202644352cc402d26f478fa881f8f1a0454f39aa0c00eebc81abfc1
@@ -3009,7 +3009,7 @@ modulos:
     SPSS: 922-Modulo1836
     DBF: 922-Modulo1836
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2023/922-Modulo1836.zip
     bytes: 6499571
     sha256: b15049afa6d5115317913c560105feb2502c94cd38946ea3a036c9559cb68c92
@@ -3025,7 +3025,7 @@ modulos:
     SPSS: 922-Modulo1837
     DBF: 922-Modulo1837
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2023/922-Modulo1837.zip
     bytes: 8470748
     sha256: 43cffa4a64d2fa7100ca397bfdf6dacff3d9cdd750c896d6bc6e2efde85942b6
@@ -3041,7 +3041,7 @@ modulos:
     SPSS: 922-Modulo1838
     DBF: 922-Modulo1838
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2023/922-Modulo1838.zip
     bytes: 6292076
     sha256: 441eee7b364249b9ed8423e2a420466978c7cf0c793781feef75a16b89cb0841
@@ -3073,7 +3073,7 @@ modulos:
     SPSS: 922-Modulo1840
     DBF: 922-Modulo1840
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2023/922-Modulo1840.zip
     bytes: 6447776
     sha256: cb44e86692ffe4368484d3753839460581b9f623be0aa7af77f42ae00811f1b0
@@ -3105,7 +3105,7 @@ modulos:
     SPSS: 922-Modulo1842
     DBF: 922-Modulo1842
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2023/922-Modulo1842.zip
     bytes: 7260351
     sha256: ac546d7473a84bc89265037789cb383c1e64a4fc3e500999428c46dcbe069e3e
@@ -3169,7 +3169,7 @@ modulos:
     SPSS: 922-Modulo1846
     DBF: 922-Modulo1846
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2023/922-Modulo1846.zip
     bytes: 7038902
     sha256: caa355282ad46909b33a604bc606b7b9c13a738ef01e0f602ecb3bba5f9a495b
@@ -3201,7 +3201,7 @@ modulos:
     SPSS: 922-Modulo1848
     DBF: 922-Modulo1848
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2023/922-Modulo1848.zip
     bytes: 6163645
     sha256: 5c2149c8463e5a406e9abdf5a4cd4ae4cd54a9f2f8bf9e6e147e73b8bdd85dc8
@@ -3217,7 +3217,7 @@ modulos:
     SPSS: 973-Modulo1893
     DBF: 973-Modulo1893
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2024/973-Modulo1893.zip
     bytes: 31234791
     sha256: f3f8971f37b5db2b5278f8c3d8ae38c0b7c70a7e1ddfe9c54dedbb714e85b3b0
@@ -3233,7 +3233,7 @@ modulos:
     SPSS: 973-Modulo1894
     DBF: 973-Modulo1894
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2024/973-Modulo1894.zip
     bytes: 9056583
     sha256: 066f65d88bafe8dada45cac688159c8737d949b82d218732ca2a6dde64094a0e
@@ -3345,7 +3345,7 @@ modulos:
     SPSS: 973-Modulo1901
     DBF: 973-Modulo1901
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2024/973-Modulo1901.zip
     bytes: 6234916
     sha256: 2ad8b0ff40df3cf3f316a9747b877fdc3b5bb5a5e2e7d8cddf717cdd84bd3efc
@@ -3361,7 +3361,7 @@ modulos:
     SPSS: 973-Modulo1902
     DBF: 973-Modulo1902
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2024/973-Modulo1902.zip
     bytes: 8296402
     sha256: 2479d5645792af61a8d2004e17ceac826e39a9c88ad084564ba9fc2cf7f0f704
@@ -3377,7 +3377,7 @@ modulos:
     SPSS: 973-Modulo1903
     DBF: 973-Modulo1903
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2024/973-Modulo1903.zip
     bytes: 5912424
     sha256: 3910c9fb7fb49a36a98f938a018466e97ce60b89818aaf7af358f7bcd66b2d3b
@@ -3409,7 +3409,7 @@ modulos:
     SPSS: 973-Modulo1905
     DBF: 973-Modulo1905
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2024/973-Modulo1905.zip
     bytes: 6103067
     sha256: 7b0aaffad293f8554355cfebc05325255e2f395807fd853e7a6b1f1cc7b2b1dc
@@ -3441,7 +3441,7 @@ modulos:
     SPSS: 973-Modulo1907
     DBF: 973-Modulo1907
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2024/973-Modulo1907.zip
     bytes: 7012345
     sha256: e4eb909ecadb59fd1b2e4612f4b612f699376a973908429d97c9e3a09a32d7f8
@@ -3473,7 +3473,7 @@ modulos:
     SPSS: 973-Modulo1909
     DBF: 973-Modulo1909
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2024/973-Modulo1909.zip
     bytes: 5712305
     sha256: e579aef1c373b93270bb8dca44584c15cc303532a6f262f443cf065f1dab41a9
@@ -3505,7 +3505,7 @@ modulos:
     SPSS: 973-Modulo1911
     DBF: 973-Modulo1911
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2024/973-Modulo1911.zip
     bytes: 6474555
     sha256: 7a06e68d8912e86254589c2ce531515a1ee502471ece7de892dd858bcda3eee3
@@ -3537,7 +3537,7 @@ modulos:
     SPSS: 973-Modulo1913
     DBF: 973-Modulo1913
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2024/973-Modulo1913.zip
     bytes: 5631709
     sha256: 4d02cffe38f25276616c2bee2500efcf957794762053c411d03ca315f470db8a
@@ -3552,7 +3552,7 @@ modulos:
     STATA: 1036-Modulo1893
     SPSS: 1036-Modulo1893
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2025/1036-Modulo1893.zip
     bytes: 42350738
     sha256: df5ddaf61bca1149d41fdbb1e8ed0d04edddddb2a9321d647b1eea3f4147e287
@@ -3687,7 +3687,7 @@ modulos:
     STATA: 1036-Modulo1902
     SPSS: 1036-Modulo1902
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2025/1036-Modulo1902.zip
     bytes: 10942041
     sha256: e8b4fbfb999a2ad72b6b0313d72f56abbe968cd3b8c1615889b20501f2ba4b6f
@@ -3702,7 +3702,7 @@ modulos:
     STATA: 1036-Modulo1903
     SPSS: 1036-Modulo1903
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2025/1036-Modulo1903.zip
     bytes: 7742962
     sha256: 8619d64351756a56d5ca3fed8bb5e34f1c6a32888b46cecf26d13992059a900d
@@ -3732,7 +3732,7 @@ modulos:
     STATA: 1036-Modulo1905
     SPSS: 1036-Modulo1905
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2025/1036-Modulo1905.zip
     bytes: 8175414
     sha256: bc8f1b330c957ee59a4d58be3b9d464e061c98442a3734e59d4d9f6bfb23f838
@@ -3762,7 +3762,7 @@ modulos:
     STATA: 1036-Modulo1907
     SPSS: 1036-Modulo1907
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2025/1036-Modulo1907.zip
     bytes: 8854237
     sha256: 591fd4aa532cbcb68328a46a23a47d88c1c056867fc0a95e5f76fcefa339cdcb
@@ -3822,7 +3822,7 @@ modulos:
     STATA: 1036-Modulo1911
     SPSS: 1036-Modulo1911
   local:
-    formato: CSV
+    formato: STATA
     ruta: ENA/2025/1036-Modulo1911.zip
     bytes: 9137042
     sha256: 155b2ef9c4367e9bcfdcd9ccc86e55920b80e7c7ddbf184fba23768c622f66f6

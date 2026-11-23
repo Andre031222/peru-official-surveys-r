@@ -91,14 +91,25 @@ test_that("a broken transfer is retried and resumed", {
   expect_equal(calls$n, 2L)
 })
 
-test_that("with format auto a missing CSV falls back to another format", {
+test_that("with format auto a format the server lacks falls back to another", {
   zip <- small_zip()
   tmp <- tempfile()
-  local_mocked_bindings(.multi = fake_multi(src = zip, code = function(u) if (grepl("/CSV/", u)) 404 else 200))
+  local_mocked_bindings(.multi = fake_multi(src = zip, code = function(u) if (grepl("/STATA/", u)) 404 else 200))
   d <- suppressMessages(fa_download("enut", 2024, "1849", cache = tmp))
-  expect_equal(d$format, "STATA")
-  expect_error(suppressMessages(fa_download("enut", 2024, "1849", format = "CSV", cache = tempfile())),
+  expect_equal(d$format, "SPSS")
+  expect_error(suppressMessages(fa_download("enut", 2024, "1849", format = "STATA", cache = tempfile())),
                "HTTP 404", class = "faperu_error_download")
+})
+
+test_that("auto prefers Stata, then SPSS, then CSV", {
+  m <- list(archivos = list(CSV = "a", STATA = "a", SPSS = "a", DBF = "a"))
+  expect_equal(faperu:::.pick_format(m, "auto"), "STATA")
+  m$archivos$STATA <- NULL
+  expect_equal(faperu:::.pick_format(m, "auto"), "SPSS")
+  expect_equal(faperu:::.pick_format(list(archivos = list(DBF = "a", CSV = "a")), "auto"), "CSV")
+  # A verified local copy is used in its own format.
+  m$local <- list(formato = "CSV")
+  expect_equal(faperu:::.pick_format(m, "auto"), "CSV")
 })
 
 test_that("downloads are checked before they are accepted", {
@@ -147,4 +158,18 @@ test_that("each format of a module has its own place in the cache", {
   expect_equal(fa_download("enut", 2024, "1849", format = "CSV", cache = tmp)$path, a$path)
   expect_equal(fa_download("enut", 2024, "1849", format = "SPSS", cache = tmp)$path, b$path)
   expect_s3_class(fa_read("enut", 2024, "1849", format = "SPSS", cache = tmp), "tbl_df")
+})
+
+test_that("a module INEI changed is downloaded once, not on every call", {
+  m <- fa_catalog("ena", 2014)
+  m <- m[!is.na(m$path), ][1, ]
+  zip <- small_zip()
+  tmp <- tempfile()
+  local_mocked_bindings(.multi = fake_multi(src = zip))
+  expect_warning(d <- suppressMessages(fa_download("ena", 2014, m$module, cache = tmp)),
+                 class = "faperu_warning_changed")
+  expect_equal(d$status, "changed")
+  expect_true(file.exists(paste0(d$path, ".sha256")))
+  local_mocked_bindings(.multi = function(...) stop("downloaded again"))
+  expect_equal(fa_download("ena", 2014, m$module, cache = tmp)$status, "cached")
 })
