@@ -492,7 +492,7 @@ ubigeo,distrito,provincia,departamento,desde,hasta,desde_fuente,primer_anio_rena
 050506,Luis Carranza,La Mar,Ayacucho,2004,,RENAMU,2004,Ley N° 14746,11 Dic 1963
 050507,Santa Rosa,La Mar,Ayacucho,2004,,RENAMU,2004,,06 Nov 1992
 050508,Tambo,La Mar,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
-050509,Samugari,La Mar,Ayacucho,2012,,RENAMU,2012,,15 Jul 2010
+050509,Samugari,La Mar,Ayacucho,2010,,ley de creacion,2012,,15 Jul 2010
 050510,Anchihuay,La Mar,Ayacucho,2013,,ley de creacion,2015,Ley N° 30086,28 Set 2013
 050511,Oronccoy,La Mar,Ayacucho,2016,,ley de creacion,2018,Ley N° 30457,14 Jun 2016
 050512,Union Progreso,La Mar,Ayacucho,2021,,ley de creacion,2023,Ley N° 31130,04 Mar 2021
@@ -780,7 +780,7 @@ ubigeo,distrito,provincia,departamento,desde,hasta,desde_fuente,primer_anio_rena
 080911,Inkawasi,La Convencion,Cusco,2014,,ley de creacion,2016,Ley N° 30265,18 Nov 2014
 080912,Villa Virgen,La Convencion,Cusco,2014,,ley de creacion,2016,Ley N° 30279,02 Dic 2014
 080913,Villa Kintiarina,La Convencion,Cusco,2015,,ley de creacion,2018,Ley N° 30349,14 Oct 2015
-080914,Megantoni,La Convencion,Cusco,2018,,RENAMU,2018,,05 Jul 2016
+080914,Megantoni,La Convencion,Cusco,2016,,ley de creacion,2018,,05 Jul 2016
 080915,Kumpirushiato,La Convencion,Cusco,2021,,ley de creacion,2023,Ley N° 31142,17 Mar 2021
 080916,Cielo Punco,La Convencion,Cusco,2021,,ley de creacion,2023,Ley N° 31162,06 Abr 2021
 080917,Manitea,La Convencion,Cusco,2021,,ley de creacion,2023,Ley N° 31163,06 Abr 2021
@@ -916,9 +916,9 @@ ubigeo,distrito,provincia,departamento,desde,hasta,desde_fuente,primer_anio_rena
 090718,Tintay Puncu,Tayacaja,Huancavelica,2004,,RENAMU,2004,Ley N° 23941,03 Oct 1984
 090719,Quichuas,Tayacaja,Huancavelica,2014,,ley de creacion,2016,Ley N° 30278,02 Dic 2014
 090720,Andaymarca,Tayacaja,Huancavelica,2014,,ley de creacion,2016,Ley N° 30280,02 Dic 2014
-090721,Roble,Tayacaja,Huancavelica,2018,,RENAMU,2018,Ley N°30388,
-090722,Pichos,Tayacaja,Huancavelica,2018,,RENAMU,2018,Ley N° 30391,
-090723,Santiago de Tucuma,Tayacaja,Huancavelica,2018,,RENAMU,2018,Ley N° 30445,
+090721,Roble,Tayacaja,Huancavelica,2017,,CPV 2017,2018,Ley N°30388,
+090722,Pichos,Tayacaja,Huancavelica,2017,,CPV 2017,2018,Ley N° 30391,
+090723,Santiago de Tucuma,Tayacaja,Huancavelica,2017,,CPV 2017,2018,Ley N° 30445,
 090724,Lambras,Tayacaja,Huancavelica,2023,,RENAMU,2023,Ley N° 31092,
 090725,Cochabamba,Tayacaja,Huancavelica,2023,,RENAMU,2023,Ley N° 31132,
 100101,Huanuco,Huanuco,Huanuco,2004,,RENAMU,2004,Epoca de la Independencia,
@@ -974,7 +974,7 @@ ubigeo,distrito,provincia,departamento,desde,hasta,desde_fuente,primer_anio_rena
 100606,Mariano Damaso Beraun,Leoncio Prado,Huanuco,2004,,RENAMU,2004,Ley N° 11843,27 May 1952
 100607,Pucayacu,Leoncio Prado,Huanuco,2015,,ley de creacion,2018,Ley N° 30376,07 Dic 2015
 100608,Castillo Grande,Leoncio Prado,Huanuco,2015,,ley de creacion,2018,Ley N° 30377,07 Dic 2015
-100609,Pueblo Nuevo,Leoncio Prado,Huanuco,2019,,RENAMU,2019,Ley N° 30440,
+100609,Pueblo Nuevo,Leoncio Prado,Huanuco,2017,,CPV 2017,2019,Ley N° 30440,
 100610,Santo Domingo de Anda,Leoncio Prado,Huanuco,2016,,ley de creacion,2018,Ley N° 30491,23 Jul 2016
 100701,Huacrachuco,Marañon,Huanuco,2004,,RENAMU,2004,Epoca de la Independencia,
 100702,Cholon,Marañon,Huanuco,2004,,RENAMU,2004,Ley N° 1595,21 Oct 1912
@@ -1498,6 +1498,7 @@ ubigeo,distrito,provincia,departamento,desde,hasta,desde_fuente,primer_anio_rena
 160402,Pebas,Mariscal Ramon Castilla,Loreto,2004,,RENAMU,2004,,07 Feb 1866
 160403,Yavari,Mariscal Ramon Castilla,Loreto,2004,,RENAMU,2004,Ley N° 9815,02 Jul 1943
 160404,San Pablo,Mariscal Ramon Castilla,Loreto,2004,,RENAMU,2004,Ley N° 26240,19 Oct 1993
+160405,Santa Rosa de Loreto,Mariscal Ramon Castilla,Loreto,2025,,Padron MINEDU 2025,,,
 160501,Requena,Requena,Loreto,2004,,RENAMU,2004,Ley N° 9815,02 Jul 1943
 160502,Alto Tapiche,Requena,Loreto,2004,,RENAMU,2004,Ley N° 10633,20 Jul 1946
 160503,Capelo,Requena,Loreto,2004,,RENAMU,2004,Ley N° 10633,20 Jul 1946

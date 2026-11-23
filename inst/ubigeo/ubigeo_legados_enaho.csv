@@ -1,0 +1,5 @@
+ubigeo_legado,anios_en_enaho,ubigeo_cpv2017_probable,motivo,verificado,tratamiento_faperu
+160203,2004-2006,160701,Barranca pasa de Alto Amazonas a Datem del Maranon (provincia creada en 2005),no,"Se recodifica a 160701 (cambio de 2006 en RENAMU), con estado recoded_partial porque Andoas (160706) se creó en la misma provincia."
+160207,2004-2006,160703,Manseriche pasa de Alto Amazonas a Datem del Maranon,no,"Se recodifica a 160703 (cambio de 2006 en RENAMU), con estado recoded_partial por Andoas (160706)."
+160109,2007-2012,160801;160802;160803;160804,Distrito Putumayo de Maynas; en 2014 se crea la provincia Putumayo (1608) con 4 distritos,no,"Se recodifica a 160801 con estado recoded_partial: en 2014 se crearon 160802 y 160804 en la nueva provincia y no se sabe qué parte salió de Putumayo. 160803 viene de 160114, no de 160109 (RENAMU)."
+120699,2013-2020,120609,Codigo 99 sin distrito oficial en Satipo; probablemente zona de Vizcatan del Ene antes de codificarse,no,Sin destino: ubigeo_base NA y estado legacy. El destino probable no está verificado.

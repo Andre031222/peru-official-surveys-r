@@ -75,18 +75,22 @@ table(s$department_name)
 ```
 
 District codes change: new provinces moved some districts to new codes, and new districts appear
-every year. To compare years, translate the codes to one base year:
+every year. To compare years, translate the codes to one base year. The natural base is 2017, the
+1874 districts of the 2017 Census, which every INEI survey since 2018 uses as its frame:
 
 ```{r}
 s <- fa_ubigeo(s, year = 2024, base = 2017)
-table(s$ubigeo_status)          # same, recoded, created_after_base, ...
-fa_districts(2017)              # districts valid in the census year
+table(s$ubigeo_status)          # same, recoded, to_parent, multi_parent, ...
+fa_districts(2017)              # the 1874 districts of the census frame
 ```
 
-The equivalences come from INEI's municipal registry (RENAMU 2004-2025) and its 2025 national
-directory, and cover only the recodings those sources show. Districts created after the base year
-get `NA`; faperu does not guess which district they came from. The sources and the method are in
-`system.file("ubigeo", "README.md", package = "faperu")`.
+Codes are INEI's, always as six-digit text; RENIEC numbers districts differently from department 07
+on. The equivalences come from INEI's municipal registry (RENAMU 2004-2025), its 2025 national
+directory, the 2017 census frame and, for the 18 districts created after 2017, the 2017 district
+that holds their schools in MINEDU's 2025 register, not yet checked law by law. Districts with two
+parents (Lambras, Santa Lucia) and districts created between 2005 and 2017 get `NA`: faperu does
+not guess. The sources and the method are in `system.file("ubigeo", "README.md", package =
+"faperu")`.
 
 ## 6. New years
 

@@ -144,7 +144,7 @@ for s in segs:
     law=law or {}
     desde=s['desde']; fuente_desde='RENAMU'
     is_last = s['hasta']==ys[-1]
-    if s['desde']>ys[0] and u not in recoded_new and law.get('fecha') and law.get('ley') and law['ley']!='Epoca de la Independencia':
+    if s['desde']>ys[0] and u not in recoded_new and law.get('fecha') and law.get('ley')!='Epoca de la Independencia':
         y=int(law['fecha'][-4:])
         if y < s['desde']:
             desde=y; fuente_desde='ley de creacion'
@@ -154,5 +154,13 @@ for s in segs:
 print(len(rows), sum(1 for r in rows if not r['hasta']))
 with open('ubigeo_distritos.csv','w',newline='',encoding='utf-8') as f:
     w=csv.DictWriter(f,fieldnames=list(rows[0])); w.writeheader(); w.writerows(rows)
+# A new province can also receive districts created at the same time (Andoas in Datem del
+# Maranon, Rosa Panduro and Yaguas in Putumayo). The sources do not say which recoded district
+# gave up territory, so every recoding in that province is flagged and none is guessed.
+targets={c['a'] for c in changes}
+for c in changes:
+    new=[r['ubigeo'] for r in rows if r['ubigeo'][:4]==c['a'][:4] and r['ubigeo'] not in targets
+         and not r['hasta'] and c['anio']-1 <= r['desde'] <= c['anio']]
+    c['nuevos_en_provincia']=';'.join(sorted(new))
 with open('ubigeo_cambios.csv','w',newline='',encoding='utf-8') as f:
-    w=csv.DictWriter(f,fieldnames=['anio','de','a','nombre','tipo','metodo']); w.writeheader(); w.writerows(changes)
+    w=csv.DictWriter(f,fieldnames=['anio','de','a','nombre','tipo','nuevos_en_provincia','metodo']); w.writeheader(); w.writerows(changes)

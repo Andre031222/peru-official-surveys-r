@@ -71,16 +71,19 @@ fa_download("ena", 2014, "947")   # status "cached": no baja nada
 ## Ubigeo entre años / Ubigeo across years
 
 ```r
-e <- fa_ubigeo(enaho_2024, year = 2024, base = 2017)   # para cruzar con el Censo 2017
+e <- fa_ubigeo(enaho_2024, year = 2024, base = 2017)   # al marco del Censo 2017 (1874 distritos)
 table(e$ubigeo_status)
 ```
 
-La tabla de equivalencias sale de RENAMU 2004-2025 y del Directorio Nacional 2025 del INEI; solo
-recoge los nueve cambios de código que esas fuentes muestran. Los distritos creados después del año
-base quedan `NA`: no se inventa de qué distrito salieron. Fuentes y método en
-[`inst/ubigeo/README.md`](inst/ubigeo/README.md).
-*Built from INEI's RENAMU 2004-2025 and 2025 National Directory. Districts created after the base
-year get `NA`; no parent district is guessed.*
+El ubigeo siempre es texto de 6 dígitos (los CSV del INEI pierden el cero: `10101` es `010101`) y
+siempre es el del INEI, que no coincide con el de RENIEC desde el departamento 07. La base natural
+es 2017: todas las encuestas del INEI desde 2018 usan ese marco. Las equivalencias salen de RENAMU
+2004-2025, del Directorio Nacional 2025, del marco del CPV 2017 y, para los 18 distritos creados
+después de 2017, del Padrón MINEDU 2025 (por verificar contra cada ley). Lambras y Santa Lucía
+tienen dos padres y quedan `NA`; los distritos creados entre 2005 y 2017 no tienen padre conocido y
+también quedan `NA`. Fuentes y método en [`inst/ubigeo/README.md`](inst/ubigeo/README.md).
+*INEI codes only, always six-digit text. Base 2017 is the census frame used by every INEI survey
+since 2018. No parent district is guessed.*
 
 ## Errores / Errors
 

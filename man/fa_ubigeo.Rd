@@ -16,29 +16,59 @@ and then for \code{ccdd}, \code{ccpp} and \code{ccdi} (any case).}
 flag codes that did not exist that year. Years outside 2004-2025 are
 moved to the nearest end of the table, with a warning.}
 
-\item{base}{Year whose coding you want, for example \code{2017} to match the
-2017 Census.}
+\item{base}{Year whose coding you want, usually \code{2017}.}
 }
 \value{
 \code{data} with the new columns. With \code{base}, also \code{ubigeo_base} and
-\code{ubigeo_status} (\code{"same"}, \code{"recoded"}, \code{"created_after_base"},
-\code{"not_in_base"} or \code{"unknown"}).
+\code{ubigeo_status}.
 }
 \description{
 Adds a six-digit \code{ubigeo} with its \code{department}, \code{province} and
 \code{department_name}. It takes an existing ubigeo column, or builds one from
-INEI's separate codes (\code{CCDD}, \code{CCPP}, \code{CCDI}), as in the ENA.
+INEI's separate codes (\code{CCDD}, \code{CCPP}, \code{CCDI}), as in the ENA. Codes are
+always text padded to six digits, because INEI's CSV files drop the
+leading zero (\code{10101} is \code{010101}).
 }
 \details{
+The codes are INEI's. RENIEC and SUNAT number districts differently
+(INEI puts Callao in \code{07}, RENIEC in \code{24}), so do not mix them.
+
 With \code{year} and \code{base}, it also translates the codes from the coding used
-in \code{year} to the coding used in \code{base}, following the recodings that INEI
-made when new provinces were created (Datem del Maranon in 2006, Putumayo
-in 2015) and the Bagua and La Peca swap of 2007. Districts created between
-the two years have no code in the older coding: their \code{ubigeo_base} is
-\code{NA} and \code{ubigeo_status} says why. No parent district is guessed.
+in \code{year} to the coding used in \code{base}. The natural base is \code{2017}: the
+1874 districts of the 2017 Census, the frame of every INEI survey since
+2018. The translation follows, and only follows:
+\itemize{
+\item the recodings INEI made when it created the provinces of Datem del
+Maranon (2006) and Putumayo (2015), and the Bagua and La Peca swap of
+2007, as seen in RENAMU 2004-2025;
+\item for districts created after 2017, the 2017 district that holds their
+schools in MINEDU's 2025 school register. This crosswalk has not been
+checked law by law yet.
+}
+
+Nothing else is guessed. Districts created between 2005 and 2017 have no
+known parent, and Lambras and Santa Lucia have two, so they get \code{NA}.
+Sources and method are in \code{system.file("ubigeo", "README.md", package = "faperu")}.
+
+\code{ubigeo_status} is one of:
+\itemize{
+\item \code{"same"}: the code means the same district in both years.
+\item \code{"recoded"}: same district, new code.
+\item \code{"recoded_partial"}: same name, new code, but the new province also got
+new districts at the time, so the old district may have been larger.
+\item \code{"area_changed"}: same code, but a district was carved out of it between
+the two years (from the 2017 crosswalk).
+\item \code{"to_parent"}: a district created after \code{base}, given the code of the
+district it came from.
+\item \code{"multi_parent"}: created after \code{base} out of two districts; \code{NA}.
+\item \code{"created_after_base"}: created after \code{base}, parent unknown; \code{NA}.
+\item \code{"legacy"}: an old code INEI surveys used that matches no district
+(ENAHO's \code{120699}); \code{NA}.
+\item \code{"unknown"}: not a district in \code{year}; \code{NA}.
+}
 }
 \examples{
 fa_ubigeo(data.frame(UBIGEO = c("210101", "150101")))
 fa_ubigeo(data.frame(CCDD = "21", CCPP = "01", CCDI = "01"))
-fa_ubigeo(data.frame(ubigeo = c("160109", "160101")), year = 2010, base = 2020)
+fa_ubigeo(data.frame(ubigeo = c("130112", "160109")), year = 2024, base = 2017)
 }

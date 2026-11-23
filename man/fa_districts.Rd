@@ -11,16 +11,18 @@ fa_districts(year)
 }
 \value{
 A data frame with \code{ubigeo}, \code{distrito}, \code{provincia},
-\code{departamento}, \code{desde}, \code{hasta}, the creation law and the year the
-district first appears in RENAMU.
+\code{departamento}, \code{desde}, \code{hasta}, where \code{desde} comes from
+(\code{desde_fuente}), the first year in RENAMU and the creation law.
 }
 \description{
-The official INEI district list for one year, built from the National
-Registry of Municipalities (RENAMU) 2004-2025. For districts created by
-law before they first appear in RENAMU, the start year is the year of the
-law, taken from INEI's 2025 national directory. See
-\code{system.file("ubigeo", package = "faperu")} and the package README for
-sources.
+The official INEI district list for one year. It comes from the National
+Registry of Municipalities (RENAMU) 2004-2025, with three corrections,
+because RENAMU lists a new district a year or two after its law:
+a district starts in the year of its creation law when INEI's 2025
+national directory gives the date; the 2017 list is the 2017 Census frame
+(1874 districts); and Santa Rosa de Loreto, missing from RENAMU 2025, is
+added from MINEDU's 2025 school register. Sources are listed in
+\code{system.file("ubigeo", "README.md", package = "faperu")}.
 }
 \examples{
 nrow(fa_districts(2017))
