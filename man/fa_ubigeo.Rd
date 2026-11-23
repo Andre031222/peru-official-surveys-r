@@ -2,29 +2,43 @@
 % Please edit documentation in R/ubigeo.R
 \name{fa_ubigeo}
 \alias{fa_ubigeo}
-\title{Standard ubigeo columns}
+\title{Standard and harmonised ubigeo columns}
 \usage{
-fa_ubigeo(data, var = NULL)
+fa_ubigeo(data, var = NULL, year = NULL, base = NULL)
 }
 \arguments{
 \item{data}{A data frame.}
 
 \item{var}{Name of the ubigeo column. If \code{NULL}, it looks for \code{ubigeo}
 and then for \code{ccdd}, \code{ccpp} and \code{ccdi} (any case).}
+
+\item{year}{Year the data were collected. Needed for \code{base}, and used to
+flag codes that did not exist that year. Years outside 2004-2025 are
+moved to the nearest end of the table, with a warning.}
+
+\item{base}{Year whose coding you want, for example \code{2017} to match the
+2017 Census.}
 }
 \value{
-\code{data} with the new columns.
+\code{data} with the new columns. With \code{base}, also \code{ubigeo_base} and
+\code{ubigeo_status} (\code{"same"}, \code{"recoded"}, \code{"created_after_base"},
+\code{"not_in_base"} or \code{"unknown"}).
 }
 \description{
-Adds a six-digit \code{ubigeo} and its \code{department}, \code{province} and
+Adds a six-digit \code{ubigeo} with its \code{department}, \code{province} and
 \code{department_name}. It takes an existing ubigeo column, or builds one from
 INEI's separate codes (\code{CCDD}, \code{CCPP}, \code{CCDI}), as in the ENA.
 }
 \details{
-Harmonising districts across ubigeo versions (districts created after
-2017) is not done yet.
+With \code{year} and \code{base}, it also translates the codes from the coding used
+in \code{year} to the coding used in \code{base}, following the recodings that INEI
+made when new provinces were created (Datem del Maranon in 2006, Putumayo
+in 2015) and the Bagua and La Peca swap of 2007. Districts created between
+the two years have no code in the older coding: their \code{ubigeo_base} is
+\code{NA} and \code{ubigeo_status} says why. No parent district is guessed.
 }
 \examples{
 fa_ubigeo(data.frame(UBIGEO = c("210101", "150101")))
 fa_ubigeo(data.frame(CCDD = "21", CCPP = "01", CCDI = "01"))
+fa_ubigeo(data.frame(ubigeo = c("160109", "160101")), year = 2010, base = 2020)
 }

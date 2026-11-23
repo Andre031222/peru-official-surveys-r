@@ -1,0 +1,1901 @@
+ubigeo,distrito,provincia,departamento,desde,hasta,desde_fuente,primer_anio_renamu,ley,fecha_ley
+010101,Chachapoyas,Chachapoyas,Amazonas,2004,,RENAMU,2004,Epoca de la Independencia,
+010102,Asuncion,Chachapoyas,Amazonas,2004,,RENAMU,2004,Ley N° 7877,03 Nov 1933
+010103,Balsas,Chachapoyas,Amazonas,2004,,RENAMU,2004,Epoca de la Independencia,
+010104,Cheto,Chachapoyas,Amazonas,2004,,RENAMU,2004,Ley N° 11955,09 Ene 1953
+010105,Chiliquin,Chachapoyas,Amazonas,2004,,RENAMU,2004,Epoca de la Independencia,
+010106,Chuquibamba,Chachapoyas,Amazonas,2004,,RENAMU,2004,Epoca de la Independencia,
+010107,Granada,Chachapoyas,Amazonas,2004,,RENAMU,2004,Ley N° 7877,03 Nov 1933
+010108,Huancas,Chachapoyas,Amazonas,2004,,RENAMU,2004,,05 Feb 1861
+010109,La Jalca,Chachapoyas,Amazonas,2004,,RENAMU,2004,Epoca de la Independencia,
+010110,Leimebamba,Chachapoyas,Amazonas,2004,,RENAMU,2004,Epoca de la Independencia,
+010111,Levanto,Chachapoyas,Amazonas,2004,,RENAMU,2004,Epoca de la Independencia,
+010112,Magdalena,Chachapoyas,Amazonas,2004,,RENAMU,2004,Ley N° 7877,03 Nov 1933
+010113,Mariscal Castilla,Chachapoyas,Amazonas,2004,,RENAMU,2004,,06 Set 1904
+010114,Molinopampa,Chachapoyas,Amazonas,2004,,RENAMU,2004,,05 Feb 1861
+010115,Montevideo,Chachapoyas,Amazonas,2004,,RENAMU,2004,Ley N° 7877,03 Nov 1933
+010116,Olleros,Chachapoyas,Amazonas,2004,,RENAMU,2004,Epoca de la Independencia,
+010117,Quinjalca,Chachapoyas,Amazonas,2004,,RENAMU,2004,,05 Feb 1861
+010118,San Francisco de Daguas,Chachapoyas,Amazonas,2004,,RENAMU,2004,Ley N° 11839,14 May 1952
+010119,San Isidro de Maino,Chachapoyas,Amazonas,2004,,RENAMU,2004,Ley N° 11793,25 Mar 1952
+010120,Soloco,Chachapoyas,Amazonas,2004,,RENAMU,2004,,05 Feb 1861
+010121,Sonche,Chachapoyas,Amazonas,2004,,RENAMU,2004,Ley N° 12098,07 Abr 1954
+010201,La Peca,Bagua,Amazonas,2004,2006,RENAMU,2004,,
+010201,Bagua,Bagua,Amazonas,2007,,RENAMU,2007,Ley N° 29218,25 Abr 2008
+010202,Aramango,Bagua,Amazonas,2004,,RENAMU,2004,Ley N° 13789,28 Dic 1961
+010203,Copallin,Bagua,Amazonas,2004,,RENAMU,2004,,26 Dic 1870
+010204,El Parco,Bagua,Amazonas,2004,,RENAMU,2004,Ley N° 9364,01 Set 1941
+010205,Imaza,Bagua,Amazonas,2004,,RENAMU,2004,Ley N° 23838,25 May 1984
+010206,La Peca,Bagua,Amazonas,2007,,RENAMU,2007,,05 Feb 1861
+010299,Bagua,Bagua,Amazonas,2004,2006,RENAMU,2004,,
+010301,Jumbilla,Bongara,Amazonas,2004,,RENAMU,2004,,26 Dic 1870
+010302,Chisquilla,Bongara,Amazonas,2004,,RENAMU,2004,Ley N° 10632,20 Jul 1946
+010303,Churuja,Bongara,Amazonas,2004,,RENAMU,2004,Ley N° 10150,30 Dic 1944
+010304,Corosha,Bongara,Amazonas,2004,,RENAMU,2004,Ley N° 10632,20 Jul 1946
+010305,Cuispes,Bongara,Amazonas,2004,,RENAMU,2004,Ley N° 10004,11 Nov 1944
+010306,Florida,Bongara,Amazonas,2004,,RENAMU,2004,Ley N° 7877,03 Nov 1933
+010307,Jazan,Bongara,Amazonas,2004,,RENAMU,2004,,26 Feb 1980
+010308,Recta,Bongara,Amazonas,2004,,RENAMU,2004,Ley N° 10632,20 Jul 1946
+010309,San Carlos,Bongara,Amazonas,2004,,RENAMU,2004,Epoca de la Independencia,
+010310,Shipasbamba,Bongara,Amazonas,2004,,RENAMU,2004,,05 Feb 1861
+010311,Valera,Bongara,Amazonas,2004,,RENAMU,2004,Ley N° 7877,03 Nov 1933
+010312,Yambrasbamba,Bongara,Amazonas,2004,,RENAMU,2004,,26 Dic 1870
+010401,Nieva,Condorcanqui,Amazonas,2004,,RENAMU,2004,Ley N° 23832,18 May 1984
+010402,El Cenepa,Condorcanqui,Amazonas,2004,,RENAMU,2004,Ley N° 9364,01 Set 1941
+010403,Rio Santiago,Condorcanqui,Amazonas,2004,,RENAMU,2004,Ley N° 23832,18 May 1984
+010501,Lamud,Luya,Amazonas,2004,,RENAMU,2004,,05 Feb 1861
+010502,Camporredondo,Luya,Amazonas,2004,,RENAMU,2004,Ley N° 7877,03 Nov 1933
+010503,Cocabamba,Luya,Amazonas,2004,,RENAMU,2004,,05 Feb 1861
+010504,Colcamar,Luya,Amazonas,2004,,RENAMU,2004,,05 Feb 1861
+010505,Conila,Luya,Amazonas,2004,,RENAMU,2004,,05 Feb 1861
+010506,Inguilpata,Luya,Amazonas,2004,,RENAMU,2004,Ley N° 9633,21 Oct 1942
+010507,Longuita,Luya,Amazonas,2004,,RENAMU,2004,Ley N° 10009,14 Nov 1944
+010508,Lonya Chico,Luya,Amazonas,2004,,RENAMU,2004,,02 Ene 1875
+010509,Luya,Luya,Amazonas,2004,,RENAMU,2004,Epoca de la Independencia,
+010510,Luya Viejo,Luya,Amazonas,2004,,RENAMU,2004,Ley N° 2848,22 Nov 1918
+010511,Maria,Luya,Amazonas,2004,,RENAMU,2004,Ley N° 13935,27 Ene 1962
+010512,Ocalli,Luya,Amazonas,2004,,RENAMU,2004,Epoca de la Independencia,
+010513,Ocumal,Luya,Amazonas,2004,,RENAMU,2004,,05 Feb 1861
+010514,Pisuquia,Luya,Amazonas,2004,,RENAMU,2004,Epoca de la Independencia,
+010515,Providencia,Luya,Amazonas,2004,,RENAMU,2004,Ley N° 24695,
+010516,San Cristobal,Luya,Amazonas,2004,,RENAMU,2004,Ley N° 10152,30 Dic 1944
+010517,San Francisco del Yeso,Luya,Amazonas,2004,,RENAMU,2004,,16 Ago 1920
+010518,San Jeronimo,Luya,Amazonas,2004,,RENAMU,2004,,05 Feb 1861
+010519,San Juan de Lopecancha,Luya,Amazonas,2004,,RENAMU,2004,,16 Ago 1920
+010520,Santa Catalina,Luya,Amazonas,2004,,RENAMU,2004,Ley N° 12418,07 Nov 1955
+010521,Santo Tomas,Luya,Amazonas,2004,,RENAMU,2004,Epoca de la Independencia,
+010522,Tingo,Luya,Amazonas,2004,,RENAMU,2004,,02 Ene 1875
+010523,Trita,Luya,Amazonas,2004,,RENAMU,2004,Ley N° 13383,12 Feb 1960
+010601,San Nicolas,Rodriguez de Mendoza,Amazonas,2004,,RENAMU,2004,,05 Feb 1875
+010602,Chirimoto,Rodriguez de Mendoza,Amazonas,2004,,RENAMU,2004,Ley N° 7626,31 Oct 1932
+010603,Cochamal,Rodriguez de Mendoza,Amazonas,2004,,RENAMU,2004,Ley N° 7626,31 Oct 1932
+010604,Huambo,Rodriguez de Mendoza,Amazonas,2004,,RENAMU,2004,,05 Feb 1875
+010605,Limabamba,Rodriguez de Mendoza,Amazonas,2004,,RENAMU,2004,Ley N° 7626,31 Oct 1932
+010606,Longar,Rodriguez de Mendoza,Amazonas,2004,,RENAMU,2004,Ley N° 7626,31 Oct 1932
+010607,Mariscal Benavides,Rodriguez de Mendoza,Amazonas,2004,,RENAMU,2004,Ley N° 12639,02 Feb 1956
+010608,Milpuc,Rodriguez de Mendoza,Amazonas,2004,,RENAMU,2004,Ley N° 7626,31 Oct 1932
+010609,Omia,Rodriguez de Mendoza,Amazonas,2004,,RENAMU,2004,,05 Feb 1875
+010610,Santa Rosa,Rodriguez de Mendoza,Amazonas,2004,,RENAMU,2004,,05 Feb 1875
+010611,Totora,Rodriguez de Mendoza,Amazonas,2004,,RENAMU,2004,,05 Feb 1875
+010612,Vista Alegre,Rodriguez de Mendoza,Amazonas,2004,,RENAMU,2004,Ley N° 7626,31 Oct 1932
+010701,Bagua Grande,Utcubamba,Amazonas,2004,,RENAMU,2004,Epoca de la Independencia,
+010702,Cajaruro,Utcubamba,Amazonas,2004,,RENAMU,2004,Ley N° 15146,17 Set 1964
+010703,Cumba,Utcubamba,Amazonas,2004,,RENAMU,2004,Ley N° 10013,14 Nov 1944
+010704,El Milagro,Utcubamba,Amazonas,2004,,RENAMU,2004,Ley N° 23843,30 May 1984
+010705,Jamalca,Utcubamba,Amazonas,2004,,RENAMU,2004,,05 Feb 1861
+010706,Lonya Grande,Utcubamba,Amazonas,2004,,RENAMU,2004,,05 Feb 1861
+010707,Yamon,Utcubamba,Amazonas,2004,,RENAMU,2004,,05 Feb 1861
+020101,Huaraz,Huaraz,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+020102,Cochabamba,Huaraz,Ancash,2004,,RENAMU,2004,Ley N° 9826,30 Set 1943
+020103,Colcabamba,Huaraz,Ancash,2004,,RENAMU,2004,Ley N° 9422,31 Oct 1941
+020104,Huanchay,Huaraz,Ancash,2004,,RENAMU,2004,Ley N° 7858,16 Oct 1933
+020105,Independencia,Huaraz,Ancash,2004,,RENAMU,2004,,16 Nov 1992
+020106,Jangas,Huaraz,Ancash,2004,,RENAMU,2004,,02 Ene 1857
+020107,La Libertad,Huaraz,Ancash,2004,,RENAMU,2004,Ley N° 628,11 Nov 1907
+020108,Olleros,Huaraz,Ancash,2004,,RENAMU,2004,Ley N° 7859,16 Oct 1933
+020109,Pampas Grande,Huaraz,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+020110,Pariacoto,Huaraz,Ancash,2004,,RENAMU,2004,,02 Ene 1857
+020111,Pira,Huaraz,Ancash,2004,,RENAMU,2004,Ley N° 2547,19 Nov 1917
+020112,Tarica,Huaraz,Ancash,2004,,RENAMU,2004,Ley N° 12643,02 Feb 1956
+020201,Aija,Aija,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+020202,Coris,Aija,Ancash,2004,,RENAMU,2004,Ley N° 4488,10 Feb 1922
+020203,Huacllan,Aija,Ancash,2004,,RENAMU,2004,Ley N° 8188,05 Mar 1936
+020204,La Merced,Aija,Ancash,2004,,RENAMU,2004,,05 Mar 1936
+020205,Succha,Aija,Ancash,2004,,RENAMU,2004,Ley N° 715,21 Dic 1907
+020301,Llamellin,Antonio Raymondi,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+020302,Aczo,Antonio Raymondi,Ancash,2004,,RENAMU,2004,Ley N° 12646,02 Feb 1956
+020303,Chaccho,Antonio Raymondi,Ancash,2004,,RENAMU,2004,Ley N° 15187,26 Oct 1964
+020304,Chingas,Antonio Raymondi,Ancash,2004,,RENAMU,2004,Ley N° 12645,02 Feb 1956
+020305,Mirgas,Antonio Raymondi,Ancash,2004,,RENAMU,2004,Ley N° 15187,26 Oct 1964
+020306,San Juan de Rontoy,Antonio Raymondi,Ancash,2004,,RENAMU,2004,Ley N° 24675,27 May 1987
+020401,Chacas,Asuncion,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+020402,Acochaca,Asuncion,Ancash,2004,,RENAMU,2004,Ley N° 23764,30 Dic 1983
+020501,Chiquian,Bolognesi,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+020502,Abelardo Pardo Lezameta,Bolognesi,Ancash,2004,,RENAMU,2004,Ley N° 12534,28 Ene 1956
+020503,Antonio Raymondi,Bolognesi,Ancash,2004,,RENAMU,2004,Ley N° 14063,24 Abr 1962
+020504,Aquia,Bolognesi,Ancash,2004,,RENAMU,2004,,02 Ene 1857
+020505,Cajacay,Bolognesi,Ancash,2004,,RENAMU,2004,,02 Ene 1857
+020506,Canis,Bolognesi,Ancash,2004,,RENAMU,2004,Ley N° 15408,29 Ene 1965
+020507,Colquioc,Bolognesi,Ancash,2004,,RENAMU,2004,Ley N° 15409,29 Ene 1965
+020508,Huallanca,Bolognesi,Ancash,2004,,RENAMU,2004,,02 Ene 1857
+020509,Huasta,Bolognesi,Ancash,2004,,RENAMU,2004,,28 Ene 1863
+020510,Huayllacayan,Bolognesi,Ancash,2004,,RENAMU,2004,,02 Ene 1857
+020511,La Primavera,Bolognesi,Ancash,2004,,RENAMU,2004,Ley N° 24314,21 Set 1985
+020512,Mangas,Bolognesi,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+020513,Pacllon,Bolognesi,Ancash,2004,,RENAMU,2004,,02 Ene 1857
+020514,San Miguel de Corpanqui,Bolognesi,Ancash,2004,,RENAMU,2004,Ley N° 12127,15 Oct 1954
+020515,Ticllos,Bolognesi,Ancash,2004,,RENAMU,2004,,02 Ene 1857
+020601,Carhuaz,Carhuaz,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+020602,Acopampa,Carhuaz,Ancash,2004,,RENAMU,2004,Ley N° 9456,05 Dic 1941
+020603,Amashca,Carhuaz,Ancash,2004,,RENAMU,2004,Ley N° 7951,14 Dic 1941
+020604,Anta,Carhuaz,Ancash,2004,,RENAMU,2004,Ley N° 1345,28 Nov 1910
+020605,Ataquero,Carhuaz,Ancash,2004,,RENAMU,2004,Ley N° 7951,14 Dic 1934
+020606,Marcara,Carhuaz,Ancash,2004,,RENAMU,2004,Ley N° 85,06 Oct 1905
+020607,Pariahuanca,Carhuaz,Ancash,2004,,RENAMU,2004,Ley N° 85,06 Oct 1905
+020608,San Miguel de Aco,Carhuaz,Ancash,2004,,RENAMU,2004,Ley N° 12025,07 Dic 1953
+020609,Shilla,Carhuaz,Ancash,2004,,RENAMU,2004,Ley N° 7951,14 Dic 1934
+020610,Tinco,Carhuaz,Ancash,2004,,RENAMU,2004,Ley N° 9391,30 Set 1941
+020611,Yungar,Carhuaz,Ancash,2004,,RENAMU,2004,,22 Nov 1868
+020701,San Luis,Carlos Fermin Fitzcarrald,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+020702,San Nicolas,Carlos Fermin Fitzcarrald,Ancash,2004,,RENAMU,2004,Ley N° 23609,06 Jun 1983
+020703,Yauya,Carlos Fermin Fitzcarrald,Ancash,2004,,RENAMU,2004,Ley N° 120,18 Nov 1905
+020801,Casma,Casma,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+020802,Buena Vista Alta,Casma,Ancash,2004,,RENAMU,2004,Ley N° 8075,05 Abr 1935
+020803,Comandante Noel,Casma,Ancash,2004,,RENAMU,2004,Ley N° 5444,03 May 1926
+020804,Yautan,Casma,Ancash,2004,,RENAMU,2004,,21 Oct 1870
+020901,Corongo,Corongo,Ancash,2004,,RENAMU,2004,,02 Ene 1857
+020902,Aco,Corongo,Ancash,2004,,RENAMU,2004,Ley N° 4662,09 May 1923
+020903,Bambas,Corongo,Ancash,2004,,RENAMU,2004,Ley N° 9189,05 Oct 1940
+020904,Cusca,Corongo,Ancash,2004,,RENAMU,2004,Ley N° 4662,09 May 1923
+020905,La Pampa,Corongo,Ancash,2004,,RENAMU,2004,,21 Nov 1898
+020906,Yanac,Corongo,Ancash,2004,,RENAMU,2004,Ley N° 8425,15 Jun 1936
+020907,Yupan,Corongo,Ancash,2004,,RENAMU,2004,Ley N° 4662,09 May 1923
+021001,Huari,Huari,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+021002,Anra,Huari,Ancash,2004,,RENAMU,2004,Ley N° 23533,24 Dic 1982
+021003,Cajay,Huari,Ancash,2004,,RENAMU,2004,Ley N° 13497,13 Ene 1961
+021004,Chavin de Huantar,Huari,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+021005,Huacachi,Huari,Ancash,2004,,RENAMU,2004,,14 Oct 1901
+021006,Huacchis,Huari,Ancash,2004,,RENAMU,2004,Ley N° 12172,14 Dic 1954
+021007,Huachis,Huari,Ancash,2004,,RENAMU,2004,,02 Ene 1857
+021008,Huantar,Huari,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+021009,Masin,Huari,Ancash,2004,,RENAMU,2004,Ley N° 12635,02 Feb 1956
+021010,Paucas,Huari,Ancash,2004,,RENAMU,2004,Ley N° 12313,10 May 1955
+021011,Ponto,Huari,Ancash,2004,,RENAMU,2004,Ley N° 9825,30 Set 1943
+021012,Rahuapampa,Huari,Ancash,2004,,RENAMU,2004,Ley N° 12845,11 Oct 1957
+021013,Rapayan,Huari,Ancash,2004,,RENAMU,2004,Ley N° 11862,16 Set 1952
+021014,San Marcos,Huari,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+021015,San Pedro de Chana,Huari,Ancash,2004,,RENAMU,2004,Ley N° 12338,10 Jun 1955
+021016,Uco,Huari,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+021101,Huarmey,Huarmey,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+021102,Cochapeti,Huarmey,Ancash,2004,,RENAMU,2004,Ley N° 8188,05 Mar 1936
+021103,Culebras,Huarmey,Ancash,2004,,RENAMU,2004,,20 Dic 1984
+021104,Huayan,Huarmey,Ancash,2004,,RENAMU,2004,Ley N° 715,21 Dic 1907
+021105,Malvas,Huarmey,Ancash,2004,,RENAMU,2004,,10 Feb 1892
+021201,Caraz,Huaylas,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+021202,Huallanca,Huaylas,Ancash,2004,,RENAMU,2004,,14 Abr 1950
+021203,Huata,Huaylas,Ancash,2004,,RENAMU,2004,,02 Ene 1857
+021204,Huaylas,Huaylas,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+021205,Mato,Huaylas,Ancash,2004,,RENAMU,2004,,02 Ene 1857
+021206,Pamparomas,Huaylas,Ancash,2004,,RENAMU,2004,,02 Ene 1857
+021207,Pueblo Libre,Huaylas,Ancash,2004,,RENAMU,2004,,02 Ene 1857
+021208,Santa Cruz,Huaylas,Ancash,2004,,RENAMU,2004,Ley N° 10207,10 Jul 1945
+021209,Santo Toribio,Huaylas,Ancash,2004,,RENAMU,2004,Ley N° 25255,19 Jun 1990
+021210,Yuracmarca,Huaylas,Ancash,2004,,RENAMU,2004,Ley N° 4662,09 May 1923
+021301,Piscobamba,Mariscal Luzuriaga,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+021302,Casca,Mariscal Luzuriaga,Ancash,2004,,RENAMU,2004,Ley N° 9986,17 Oct 1944
+021303,Eleazar Guzman Barron,Mariscal Luzuriaga,Ancash,2004,,RENAMU,2004,Ley N° 24398,13 Dic 1985
+021304,Fidel Olivas Escudero,Mariscal Luzuriaga,Ancash,2004,,RENAMU,2004,Ley N° 13426,05 May 1960
+021305,Llama,Mariscal Luzuriaga,Ancash,2004,,RENAMU,2004,Ley N° 139,22 Nov 1905
+021306,Llumpa,Mariscal Luzuriaga,Ancash,2004,,RENAMU,2004,,28 Oct 1889
+021307,Lucma,Mariscal Luzuriaga,Ancash,2004,,RENAMU,2004,Ley N° 13424,03 May 1960
+021308,Musga,Mariscal Luzuriaga,Ancash,2004,,RENAMU,2004,Ley N° 14075,12 May 1962
+021401,Ocros,Ocros,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+021402,Acas,Ocros,Ancash,2004,,RENAMU,2004,,02 Ene 1857
+021403,Cajamarquilla,Ocros,Ancash,2004,,RENAMU,2004,Ley N° 581,23 Oct 1907
+021404,Carhuapampa,Ocros,Ancash,2004,,RENAMU,2004,Ley N° 9392,30 Set 1941
+021405,Cochas,Ocros,Ancash,2004,,RENAMU,2004,,02 Ene 1857
+021406,Congas,Ocros,Ancash,2004,,RENAMU,2004,Ley N° 9862,13 Dic 1943
+021407,Llipa,Ocros,Ancash,2004,,RENAMU,2004,Ley N° 12856,15 Nov 1957
+021408,San Cristobal de Rajan,Ocros,Ancash,2004,,RENAMU,2004,Ley N° 12128,15 Oct 1954
+021409,San Pedro,Ocros,Ancash,2004,,RENAMU,2004,Ley N° 10174,17 Ene 1945
+021410,Santiago de Chilcas,Ocros,Ancash,2004,,RENAMU,2004,Ley N° 13034,19 Nov 1958
+021501,Cabana,Pallasca,Ancash,2004,,RENAMU,2004,,02 Ene 1857
+021502,Bolognesi,Pallasca,Ancash,2004,,RENAMU,2004,Ley N° 8425,15 Jul 1936
+021503,Conchucos,Pallasca,Ancash,2004,,RENAMU,2004,Ley N° 2971,16 Dic 1918
+021504,Huacaschuque,Pallasca,Ancash,2004,,RENAMU,2004,Ley N° 12189,13 Ene 1955
+021505,Huandoval,Pallasca,Ancash,2004,,RENAMU,2004,Ley N° 4662,09 May 1923
+021506,Lacabamba,Pallasca,Ancash,2004,,RENAMU,2004,Ley N° 9619,03 Oct 1942
+021507,Llapo,Pallasca,Ancash,2004,,RENAMU,2004,,02 Ene 1857
+021508,Pallasca,Pallasca,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+021509,Pampas,Pallasca,Ancash,2004,,RENAMU,2004,Ley N° 2971,16 Dic 1918
+021510,Santa Rosa,Pallasca,Ancash,2004,,RENAMU,2004,Ley N° 2616,10 Dic 1917
+021511,Tauca,Pallasca,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+021601,Pomabamba,Pomabamba,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+021602,Huayllan,Pomabamba,Ancash,2004,,RENAMU,2004,Ley N° 12374,28 Jun 1955
+021603,Parobamba,Pomabamba,Ancash,2004,,RENAMU,2004,,28 Ago 1868
+021604,Quinuabamba,Pomabamba,Ancash,2004,,RENAMU,2004,Ley N° 9378,26 Set 1941
+021701,Recuay,Recuay,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+021702,Catac,Recuay,Ancash,2004,,RENAMU,2004,Ley N° 15370,08 Ene 1965
+021703,Cotaparaco,Recuay,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+021704,Huayllapampa,Recuay,Ancash,2004,,RENAMU,2004,Ley N° 543,07 Oct 1907
+021705,Llacllin,Recuay,Ancash,2004,,RENAMU,2004,Ley N° 14699,08 Nov 1963
+021706,Marca,Recuay,Ancash,2004,,RENAMU,2004,,02 Ene 1857
+021707,Pampas Chico,Recuay,Ancash,2004,,RENAMU,2004,Ley N° 9422,31 Oct 1941
+021708,Pararin,Recuay,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+021709,Tapacocha,Recuay,Ancash,2004,,RENAMU,2004,Ley N° 8188,05 Mar 1936
+021710,Ticapampa,Recuay,Ancash,2004,,RENAMU,2004,,12 Oct 1921
+021801,Chimbote,Santa,Ancash,2004,,RENAMU,2004,Ley N° 417,06 Dic 1906
+021802,Caceres del Peru,Santa,Ancash,2004,,RENAMU,2004,,13 Oct 1886
+021803,Coishco,Santa,Ancash,2004,,RENAMU,2004,Ley N° 24959,13 Dic 1988
+021804,Macate,Santa,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+021805,Moro,Santa,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+021806,Nepeña,Santa,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+021807,Samanco,Santa,Ancash,2004,,RENAMU,2004,Ley N° 12294,15 Abr 1955
+021808,Santa,Santa,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+021809,Nuevo Chimbote,Santa,Ancash,2004,,RENAMU,2004,Ley N° 26318,27 May 1994
+021901,Sihuas,Sihuas,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+021902,Acobamba,Sihuas,Ancash,2004,,RENAMU,2004,Ley N° 14152,22 Jun 1962
+021903,Alfonso Ugarte,Sihuas,Ancash,2004,,RENAMU,2004,Ley N° 11983,27 Mar 1953
+021904,Cashapampa,Sihuas,Ancash,2004,,RENAMU,2004,Ley N° 14830,23 Ene 1964
+021905,Chingalpo,Sihuas,Ancash,2004,,RENAMU,2004,Ley N° 13012,14 Jun 1958
+021906,Huayllabamba,Sihuas,Ancash,2004,,RENAMU,2004,Ley N° 12560,26 Ene 1956
+021907,Quiches,Sihuas,Ancash,2004,,RENAMU,2004,Ley N° 1989,07 Oct 1914
+021908,Ragash,Sihuas,Ancash,2004,,RENAMU,2004,Ley N° 14761,12 Dic 1963
+021909,San Juan,Sihuas,Ancash,2004,,RENAMU,2004,Ley N° 14963,14 Mar 1964
+021910,Sicsibamba,Sihuas,Ancash,2004,,RENAMU,2004,Ley N° 1153,06 Nov 1909
+022001,Yungay,Yungay,Ancash,2004,,RENAMU,2004,Epoca de la Independencia,
+022002,Cascapara,Yungay,Ancash,2004,,RENAMU,2004,Ley N° 2208,
+022003,Mancos,Yungay,Ancash,2004,,RENAMU,2004,,02 Ene 1857
+022004,Matacoto,Yungay,Ancash,2004,,RENAMU,2004,Ley N° 12416,07 Nov 1955
+022005,Quillo,Yungay,Ancash,2004,,RENAMU,2004,,02 Ene 1857
+022006,Ranrahirca,Yungay,Ancash,2004,,RENAMU,2004,Ley N° 9403,15 Oct 1941
+022007,Shupluy,Yungay,Ancash,2004,,RENAMU,2004,,02 Ene 1857
+022008,Yanama,Yungay,Ancash,2004,,RENAMU,2004,,02 Ago 1920
+030101,Abancay,Abancay,Apurimac,2004,,RENAMU,2004,Epoca de la Independencia,
+030102,Chacoche,Abancay,Apurimac,2004,,RENAMU,2004,Ley N° 13795,28 Dic 1961
+030103,Circa,Abancay,Apurimac,2004,,RENAMU,2004,Epoca de la Independencia,
+030104,Curahuasi,Abancay,Apurimac,2004,,RENAMU,2004,,02 Ene 1857
+030105,Huanipaca,Abancay,Apurimac,2004,,RENAMU,2004,,21 Nov 1893
+030106,Lambrama,Abancay,Apurimac,2004,,RENAMU,2004,,23 Ago 1838
+030107,Pichirhua,Abancay,Apurimac,2004,,RENAMU,2004,,19 Nov 1839
+030108,San Pedro de Cachora,Abancay,Apurimac,2004,,RENAMU,2004,Ley N° 9857,07 Dic 1943
+030109,Tamburco,Abancay,Apurimac,2004,,RENAMU,2004,Ley N° 9480,31 Dic 1941
+030201,Andahuaylas,Andahuaylas,Apurimac,2004,,RENAMU,2004,Epoca de la Independencia,
+030202,Andarapa,Andahuaylas,Apurimac,2004,,RENAMU,2004,Ley N° 9357,14 Mar 1941
+030203,Chiara,Andahuaylas,Apurimac,2004,,RENAMU,2004,Ley N° 8073,05 Abr 1935
+030204,Huancarama,Andahuaylas,Apurimac,2004,,RENAMU,2004,Epoca de la Independencia,
+030205,Huancaray,Andahuaylas,Apurimac,2004,,RENAMU,2004,Epoca de la Independencia,
+030206,Huayana,Andahuaylas,Apurimac,2004,,RENAMU,2004,Ley N° 23977,30 Oct 1984
+030207,Kishuara,Andahuaylas,Apurimac,2004,,RENAMU,2004,Ley N° 9910,20 Ene 1944
+030208,Pacobamba,Andahuaylas,Apurimac,2004,,RENAMU,2004,Ley N° 9910,20 Ene 1944
+030209,Pacucha,Andahuaylas,Apurimac,2004,,RENAMU,2004,Ley N° 14629,21 Ago 1963
+030210,Pampachiri,Andahuaylas,Apurimac,2004,,RENAMU,2004,Epoca de la Independencia,
+030211,Pomacocha,Andahuaylas,Apurimac,2004,,RENAMU,2004,Ley N° 14630,21 Ago 1963
+030212,San Antonio de Cachi,Andahuaylas,Apurimac,2004,,RENAMU,2004,Ley N° 8312,08 Jun 1936
+030213,San Jeronimo,Andahuaylas,Apurimac,2004,,RENAMU,2004,Epoca de la Independencia,
+030214,San Miguel de Chaccrampa,Andahuaylas,Apurimac,2004,,RENAMU,2004,Ley N° 25235,08 Jun 1990
+030215,Santa Maria de Chicmo,Andahuaylas,Apurimac,2004,,RENAMU,2004,Ley N° 15258,11 Dic 1964
+030216,Talavera,Andahuaylas,Apurimac,2004,,RENAMU,2004,Epoca de la Independencia,
+030217,Tumay Huaraca,Andahuaylas,Apurimac,2004,,RENAMU,2004,Ley N° 15268,29 Dic 1964
+030218,Turpo,Andahuaylas,Apurimac,2004,,RENAMU,2004,Ley N° 9686,11 Dic 1942
+030219,Kaquiabamba,Andahuaylas,Apurimac,2004,,RENAMU,2004,Ley N° 26471,09 Jun 1995
+030220,José María Arguedas,Andahuaylas,Apurimac,2014,,ley de creacion,2016,Ley N° 30295,27 Dic 2014
+030301,Antabamba,Antabamba,Apurimac,2004,,RENAMU,2004,Epoca de la Independencia,
+030302,El Oro,Antabamba,Apurimac,2004,,RENAMU,2004,Ley N° 13677,18 Ago 1961
+030303,Huaquirca,Antabamba,Apurimac,2004,,RENAMU,2004,Ley N° 10176,17 Ene 1945
+030304,Juan Espinoza Medrano,Antabamba,Apurimac,2004,,RENAMU,2004,Ley N° 9690,12 Dic 1942
+030305,Oropesa,Antabamba,Apurimac,2004,,RENAMU,2004,,02 Ene 1857
+030306,Pachaconas,Antabamba,Apurimac,2004,,RENAMU,2004,,20 Ago 1872
+030307,Sabaino,Antabamba,Apurimac,2004,,RENAMU,2004,,20 Ago 1872
+030401,Chalhuanca,Aymaraes,Apurimac,2004,,RENAMU,2004,Epoca de la Independencia,
+030402,Capaya,Aymaraes,Apurimac,2004,,RENAMU,2004,Ley N° 12542,12 Ene 1956
+030403,Caraybamba,Aymaraes,Apurimac,2004,,RENAMU,2004,Ley N° 12678,14 Dic 1956
+030404,Chapimarca,Aymaraes,Apurimac,2004,,RENAMU,2004,,02 Ene 1857
+030405,Colcabamba,Aymaraes,Apurimac,2004,,RENAMU,2004,Epoca de la Independencia,
+030406,Cotaruse,Aymaraes,Apurimac,2004,,RENAMU,2004,Ley N° 1962,01 Jun 1914
+030407,Ihuayllo,Aymaraes,Apurimac,2004,,RENAMU,2004,Ley N° 13430,12 May 1960
+030408,Justo Apu Sahuaraura,Aymaraes,Apurimac,2004,,RENAMU,2004,Ley N° 23935,27 Set 1984
+030409,Lucre,Aymaraes,Apurimac,2004,,RENAMU,2004,Ley N° 13411,24 Mar 1960
+030410,Pocohuanca,Aymaraes,Apurimac,2004,,RENAMU,2004,Ley N° 11627,08 Oct 1951
+030411,San Juan de Chacña,Aymaraes,Apurimac,2004,,RENAMU,2004,Ley N° 15010,17 Abr 1964
+030412,Sañayca,Aymaraes,Apurimac,2004,,RENAMU,2004,Ley N° 10014,14 Nov 1944
+030413,Soraya,Aymaraes,Apurimac,2004,,RENAMU,2004,,02 Ene 1857
+030414,Tapairihua,Aymaraes,Apurimac,2004,,RENAMU,2004,,02 Ene 1857
+030415,Tintay,Aymaraes,Apurimac,2004,,RENAMU,2004,Ley N° 13787,27 Dic 1961
+030416,Toraya,Aymaraes,Apurimac,2004,,RENAMU,2004,Ley N° 8426,15 Jul 1936
+030417,Yanaca,Aymaraes,Apurimac,2004,,RENAMU,2004,Ley N° 13793,28 Dic 1961
+030501,Tambobamba,Cotabambas,Apurimac,2004,,RENAMU,2004,,02 Ene 1857
+030502,Cotabambas,Cotabambas,Apurimac,2004,,RENAMU,2004,Epoca de la Independencia,
+030503,Coyllurqui,Cotabambas,Apurimac,2004,,RENAMU,2004,Ley N° 9666,19 Nov 1942
+030504,Haquira,Cotabambas,Apurimac,2004,,RENAMU,2004,,02 Ene 1857
+030505,Mara,Cotabambas,Apurimac,2004,,RENAMU,2004,,02 Ene 1857
+030506,Challhuahuacho,Cotabambas,Apurimac,2004,,RENAMU,2004,Ley N° 26391,18 Nov 1994
+030601,Chincheros,Chincheros,Apurimac,2004,,RENAMU,2004,Epoca de la Independencia,
+030602,Anco-Huallo,Chincheros,Apurimac,2004,,RENAMU,2004,Ley N° 14909,20 Feb 1964
+030603,Cocharcas,Chincheros,Apurimac,2004,,RENAMU,2004,Epoca de la Independencia,
+030604,Huaccana,Chincheros,Apurimac,2004,,RENAMU,2004,Ley N° 24167,12 Jun 1985
+030605,Ocobamba,Chincheros,Apurimac,2004,,RENAMU,2004,Epoca de la Independencia,
+030606,Ongoy,Chincheros,Apurimac,2004,,RENAMU,2004,Epoca de la Independencia,
+030607,Uranmarca,Chincheros,Apurimac,2004,,RENAMU,2004,Ley N° 24368,19 Nov 1985
+030608,Ranracancha,Chincheros,Apurimac,2004,,RENAMU,2004,Ley N° 26243,29 Oct 1993
+030609,Rocchacc,Chincheros,Apurimac,2015,,ley de creacion,2018,Ley N° 30392,19 Dic 2015
+030610,El Porvenir,Chincheros,Apurimac,2015,,ley de creacion,2018,Ley N° 30393,19 Dic 2015
+030611,Los Chankas,Chincheros,Apurimac,2016,,ley de creacion,2018,Ley N° 30455,13 Jun 2016
+030612,Ahuayro,Chincheros,Apurimac,2021,,ley de creacion,2023,Ley N° 31186,30 Abr 2021
+030701,Chuquibambilla,Grau,Apurimac,2004,,RENAMU,2004,Epoca de la Independencia,
+030702,Curpahuasi,Grau,Apurimac,2004,,RENAMU,2004,Ley N° 12451,24 Nov 1955
+030703,Gamarra,Grau,Apurimac,2004,,RENAMU,2004,Ley N° 9687,11 Dic 1942
+030704,Huayllati,Grau,Apurimac,2004,,RENAMU,2004,,02 Ene 1857
+030705,Mamara,Grau,Apurimac,2004,,RENAMU,2004,,02 Ene 1857
+030706,Micaela Bastidas,Grau,Apurimac,2004,,RENAMU,2004,Ley N° 12861,20 Dic 1957
+030707,Pataypampa,Grau,Apurimac,2004,,RENAMU,2004,Ley N° 13786,27 Dic 1961
+030708,Progreso,Grau,Apurimac,2004,,RENAMU,2004,Ley N° 12983,17 Mar 1958
+030709,San Antonio,Grau,Apurimac,2004,,RENAMU,2004,Ley N° 12984,17 Mar 1958
+030710,Santa Rosa,Grau,Apurimac,2004,,RENAMU,2004,Ley N° 25245,14 Jun 1990
+030711,Turpay,Grau,Apurimac,2004,,RENAMU,2004,Ley N° 12962,28 Feb 1958
+030712,Vilcabamba,Grau,Apurimac,2004,,RENAMU,2004,Ley N° 9336,20 Feb 1941
+030713,Virundo,Grau,Apurimac,2004,,RENAMU,2004,Ley N° 24168,12 Jun 1985
+030714,Curasco,Grau,Apurimac,2004,,RENAMU,2004,Ley N° 26244,29 Oct 1993
+040101,Arequipa,Arequipa,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040102,Alto Selva Alegre,Arequipa,Arequipa,2004,,RENAMU,2004,,16 Nov 1992
+040103,Cayma,Arequipa,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040104,Cerro Colorado,Arequipa,Arequipa,2004,,RENAMU,2004,Ley N° 12075,26 Feb 1954
+040105,Characato,Arequipa,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040106,Chiguata,Arequipa,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040107,Jacobo Hunter,Arequipa,Arequipa,2004,,RENAMU,2004,Ley N° 25225,02 Jun 1990
+040108,La Joya,Arequipa,Arequipa,2004,,RENAMU,2004,Ley N° 11795,25 Mar 1952
+040109,Mariano Melgar,Arequipa,Arequipa,2004,,RENAMU,2004,Ley N° 15594,27 Ago 1965
+040110,Miraflores,Arequipa,Arequipa,2004,,RENAMU,2004,,02 Ene 1857
+040111,Mollebaya,Arequipa,Arequipa,2004,,RENAMU,2004,Ley N° 11845,27 May 1952
+040112,Paucarpata,Arequipa,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040113,Pocsi,Arequipa,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040114,Polobaya,Arequipa,Arequipa,2004,,RENAMU,2004,Ley N° 11845,27 May 1952
+040115,Quequeña,Arequipa,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040116,Sabandia,Arequipa,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040117,Sachaca,Arequipa,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040118,San Juan de Siguas,Arequipa,Arequipa,2004,,RENAMU,2004,,02 Ene 1857
+040119,San Juan de Tarucani,Arequipa,Arequipa,2004,,RENAMU,2004,Ley N° 14124,15 Jun 1962
+040120,Santa Isabel de Siguas,Arequipa,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040121,Santa Rita de Siguas,Arequipa,Arequipa,2004,,RENAMU,2004,Ley N° 10153,30 Dic 1944
+040122,Socabaya,Arequipa,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040123,Tiabaya,Arequipa,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040124,Uchumayo,Arequipa,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040125,Vitor,Arequipa,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040126,Yanahuara,Arequipa,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040127,Yarabamba,Arequipa,Arequipa,2004,,RENAMU,2004,Ley N° 9799,25 Ene 1943
+040128,Yura,Arequipa,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040129,Jose Luis Bustamante y Rivero,Arequipa,Arequipa,2004,,RENAMU,2004,Ley N° 26455,23 May 1995
+040201,Camana,Camana,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040202,Jose Maria Quimper,Camana,Arequipa,2004,,RENAMU,2004,Ley N° 9999,03 Nov 1944
+040203,Mariano Nicolas Valcarcel,Camana,Arequipa,2004,,RENAMU,2004,Ley N° 9999,03 Nov 1944
+040204,Mariscal Caceres,Camana,Arequipa,2004,,RENAMU,2004,Ley N° 9999,03 Nov 1944
+040205,Nicolas de Pierola,Camana,Arequipa,2004,,RENAMU,2004,Ley N° 9999,03 Nov 1944
+040206,Ocoña,Camana,Arequipa,2004,,RENAMU,2004,,02 Ene 1857
+040207,Quilca,Camana,Arequipa,2004,,RENAMU,2004,,02 Ene 1857
+040208,Samuel Pastor,Camana,Arequipa,2004,,RENAMU,2004,Ley N° 9999,03 Nov 1944
+040301,Caraveli,Caraveli,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040302,Acari,Caraveli,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040303,Atico,Caraveli,Arequipa,2004,,RENAMU,2004,,09 Dic 1897
+040304,Atiquipa,Caraveli,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040305,Bella Union,Caraveli,Arequipa,2004,,RENAMU,2004,Ley N° 12450,24 Nov 1955
+040306,Cahuacho,Caraveli,Arequipa,2004,,RENAMU,2004,Ley N° 8004,22 Feb 1935
+040307,Chala,Caraveli,Arequipa,2004,,RENAMU,2004,,02 Ene 1857
+040308,Chaparra,Caraveli,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040309,Huanuhuanu,Caraveli,Arequipa,2004,,RENAMU,2004,,02 Ene 1857
+040310,Jaqui,Caraveli,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040311,Lomas,Caraveli,Arequipa,2004,,RENAMU,2004,,22 Oct 1935
+040312,Quicacha,Caraveli,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040313,Yauca,Caraveli,Arequipa,2004,,RENAMU,2004,,02 Ene 1857
+040401,Aplao,Castilla,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040402,Andagua,Castilla,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040403,Ayo,Castilla,Arequipa,2004,,RENAMU,2004,Ley N° 6162,03 Abr 1928
+040404,Chachas,Castilla,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040405,Chilcaymarca,Castilla,Arequipa,2004,,RENAMU,2004,Ley N° 4733,
+040406,Choco,Castilla,Arequipa,2004,,RENAMU,2004,,02 Ene 1857
+040407,Huancarqui,Castilla,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040408,Machaguay,Castilla,Arequipa,2004,,RENAMU,2004,,04 Nov 1889
+040409,Orcopampa,Castilla,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040410,Pampacolca,Castilla,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040411,Tipan,Castilla,Arequipa,2004,,RENAMU,2004,Ley N° 9863,13 Dic 1943
+040412,Uñon,Castilla,Arequipa,2004,,RENAMU,2004,Ley N° 14142,18 Jun 1962
+040413,Uraca,Castilla,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040414,Viraco,Castilla,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040501,Chivay,Caylloma,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040502,Achoma,Caylloma,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040503,Cabanaconde,Caylloma,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040504,Callalli,Caylloma,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040505,Caylloma,Caylloma,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040506,Coporaque,Caylloma,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040507,Huambo,Caylloma,Arequipa,2004,,RENAMU,2004,,04 Nov 1889
+040508,Huanca,Caylloma,Arequipa,2004,,RENAMU,2004,Ley N° 5677,14 Feb 1927
+040509,Ichupampa,Caylloma,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040510,Lari,Caylloma,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040511,Lluta,Caylloma,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040512,Maca,Caylloma,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040513,Madrigal,Caylloma,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040514,San Antonio de Chuca,Caylloma,Arequipa,2004,,RENAMU,2004,Ley N° 10011,14 Nov 1944
+040515,Sibayo,Caylloma,Arequipa,2004,,RENAMU,2004,Ley N° 9800,25 Ene 1943
+040516,Tapay,Caylloma,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040517,Tisco,Caylloma,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040518,Tuti,Caylloma,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040519,Yanque,Caylloma,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040520,Majes,Caylloma,Arequipa,2004,,RENAMU,2004,Ley N° 27236,20 Dic 1999
+040601,Chuquibamba,Condesuyos,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040602,Andaray,Condesuyos,Arequipa,2004,,RENAMU,2004,,02 Ene 1857
+040603,Cayarani,Condesuyos,Arequipa,2004,,RENAMU,2004,,02 Ene 1857
+040604,Chichas,Condesuyos,Arequipa,2004,,RENAMU,2004,,02 Ene 1857
+040605,Iray,Condesuyos,Arequipa,2004,,RENAMU,2004,Ley N° 2574,26 Nov 1917
+040606,Rio Grande,Condesuyos,Arequipa,2004,,RENAMU,2004,Ley N° 15517,23 Abr 1965
+040607,Salamanca,Condesuyos,Arequipa,2004,,RENAMU,2004,,02 Ene 1857
+040608,Yanaquihua,Condesuyos,Arequipa,2004,,RENAMU,2004,,02 Ene 1857
+040701,Mollendo,Islay,Arequipa,2004,,RENAMU,2004,,03 Ene 1879
+040702,Cocachacra,Islay,Arequipa,2004,,RENAMU,2004,,03 Ene 1879
+040703,Dean Valdivia,Islay,Arequipa,2004,,RENAMU,2004,Ley N° 11870,23 Oct 1952
+040704,Islay,Islay,Arequipa,2004,,RENAMU,2004,,02 Ene 1857
+040705,Mejia,Islay,Arequipa,2004,,RENAMU,2004,,27 Ene 1920
+040706,Punta de Bombon,Islay,Arequipa,2004,,RENAMU,2004,,03 Ene 1879
+040801,Cotahuasi,La Union,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040802,Alca,La Union,Arequipa,2004,,RENAMU,2004,,04 May 1835
+040803,Charcana,La Union,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040804,Huaynacotas,La Union,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040805,Pampamarca,La Union,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040806,Puyca,La Union,Arequipa,2004,,RENAMU,2004,,13 Oct 1891
+040807,Quechualla,La Union,Arequipa,2004,,RENAMU,2004,,04 May 1835
+040808,Sayla,La Union,Arequipa,2004,,RENAMU,2004,Epoca de la Independencia,
+040809,Tauria,La Union,Arequipa,2004,,RENAMU,2004,Ley N° 12147,19 Nov 1954
+040810,Tomepampa,La Union,Arequipa,2004,,RENAMU,2004,,04 May 1835
+040811,Toro,La Union,Arequipa,2004,,RENAMU,2004,,04 May 1835
+050101,Ayacucho,Huamanga,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050102,Acocro,Huamanga,Ayacucho,2004,,RENAMU,2004,Ley N° 15232,23 Nov 1964
+050103,Acos Vinchos,Huamanga,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050104,Carmen Alto,Huamanga,Ayacucho,2004,,RENAMU,2004,,06 Set 1920
+050105,Chiara,Huamanga,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050106,Ocros,Huamanga,Ayacucho,2004,,RENAMU,2004,Ley N° 8501,15 Jul 1936
+050107,Pacaycasa,Huamanga,Ayacucho,2004,,RENAMU,2004,Ley N° 12562,26 Jun 1956
+050108,Quinua,Huamanga,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050109,San Jose de Ticllas,Huamanga,Ayacucho,2004,,RENAMU,2004,,20 Jun 1955
+050110,San Juan Bautista,Huamanga,Ayacucho,2004,,RENAMU,2004,Ley N° 13415,07 Abr 1960
+050111,Santiago de Pischa,Huamanga,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050112,Socos,Huamanga,Ayacucho,2004,,RENAMU,2004,Ley N° 17041,
+050113,Tambillo,Huamanga,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050114,Vinchos,Huamanga,Ayacucho,2004,,RENAMU,2004,,02 Ene 1857
+050115,Jesus Nazareno,Huamanga,Ayacucho,2004,,RENAMU,2004,Ley N° 27281,06 Jun 2000
+050116,Andrés Avelino Cáceres Dorregaray,Huamanga,Ayacucho,2013,,ley de creacion,2015,Ley N° 30013,26 Abr 2013
+050201,Cangallo,Cangallo,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050202,Chuschi,Cangallo,Ayacucho,2004,,RENAMU,2004,,02 Ene 1857
+050203,Los Morochucos,Cangallo,Ayacucho,2004,,RENAMU,2004,Ley N° 12826,12 Abr 1957
+050204,Maria Parado de Bellido,Cangallo,Ayacucho,2004,,RENAMU,2004,Ley N° 14140,18 Jun 1962
+050205,Paras,Cangallo,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050206,Totos,Cangallo,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050301,Sancos,Huanca Sancos,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050302,Carapo,Huanca Sancos,Ayacucho,2004,,RENAMU,2004,,02 Ene 1857
+050303,Sacsamarca,Huanca Sancos,Ayacucho,2004,,RENAMU,2004,Ley N° 13719,11 Nov 1961
+050304,Santiago de Lucanamarca,Huanca Sancos,Ayacucho,2004,,RENAMU,2004,Ley N° 15410,29 Ene 1965
+050401,Huanta,Huanta,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050402,Ayahuanco,Huanta,Ayacucho,2004,,RENAMU,2004,Ley N° 12362,20 Jun 1955
+050403,Huamanguilla,Huanta,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050404,Iguain,Huanta,Ayacucho,2004,,RENAMU,2004,Ley N° 5600,27 Dic 1926
+050405,Luricocha,Huanta,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050406,Santillana,Huanta,Ayacucho,2004,,RENAMU,2004,Ley N° 3000,21 Dic 1918
+050407,Sivia,Huanta,Ayacucho,2004,,RENAMU,2004,,06 Nov 1992
+050408,Llochegua,Huanta,Ayacucho,2004,,RENAMU,2004,Ley N° 27346,14 Set 2000
+050409,Canayre,Huanta,Ayacucho,2013,,ley de creacion,2015,Ley N° 30087,28 Set 2013
+050410,Uchuraccay,Huanta,Ayacucho,2014,,ley de creacion,2016,Ley N° 30221,10 Jul 2014
+050411,Pucacolpa,Huanta,Ayacucho,2015,,ley de creacion,2018,Ley N° 30320,27 Abr 2015
+050412,Chaca,Huanta,Ayacucho,2015,,ley de creacion,2018,Ley N° 30387,16 Dic 2015
+050413,Putis,Huanta,Ayacucho,2021,,ley de creacion,2023,Ley N° 31134,08 Mar 2021
+050501,San Miguel,La Mar,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050502,Anco,La Mar,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050503,Ayna,La Mar,Ayacucho,2004,,RENAMU,2004,Ley N° 10175,17 Ene 1945
+050504,Chilcas,La Mar,Ayacucho,2004,,RENAMU,2004,,17 Oct 1893
+050505,Chungui,La Mar,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050506,Luis Carranza,La Mar,Ayacucho,2004,,RENAMU,2004,Ley N° 14746,11 Dic 1963
+050507,Santa Rosa,La Mar,Ayacucho,2004,,RENAMU,2004,,06 Nov 1992
+050508,Tambo,La Mar,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050509,Samugari,La Mar,Ayacucho,2012,,RENAMU,2012,,15 Jul 2010
+050510,Anchihuay,La Mar,Ayacucho,2013,,ley de creacion,2015,Ley N° 30086,28 Set 2013
+050511,Oronccoy,La Mar,Ayacucho,2016,,ley de creacion,2018,Ley N° 30457,14 Jun 2016
+050512,Union Progreso,La Mar,Ayacucho,2021,,ley de creacion,2023,Ley N° 31130,04 Mar 2021
+050513,Rio Magdalena,La Mar,Ayacucho,2021,,ley de creacion,2023,Ley N° 31135,08 Mar 2021
+050514,Ninabamba,La Mar,Ayacucho,2021,,ley de creacion,2023,Ley N° 31137,15 Mar 2021
+050515,Patibamba,La Mar,Ayacucho,2021,,ley de creacion,2023,Ley N° 31138,15 Mar 2021
+050601,Puquio,Lucanas,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050602,Aucara,Lucanas,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050603,Cabana,Lucanas,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050604,Carmen Salcedo,Lucanas,Ayacucho,2004,,RENAMU,2004,Ley N° 9867,28 Dic 1943
+050605,Chaviña,Lucanas,Ayacucho,2004,,RENAMU,2004,,22 Ago 1921
+050606,Chipao,Lucanas,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050607,Huac-Huas,Lucanas,Ayacucho,2004,,RENAMU,2004,Ley N° 6612,08 Abr 1929
+050608,Laramate,Lucanas,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050609,Leoncio Prado,Lucanas,Ayacucho,2004,,RENAMU,2004,Ley N° 9149,14 Jun 1940
+050610,Llauta,Lucanas,Ayacucho,2004,,RENAMU,2004,Ley N° 6612,08 Abr 1929
+050611,Lucanas,Lucanas,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050612,Ocaña,Lucanas,Ayacucho,2004,,RENAMU,2004,Ley N° 6612,08 Abr 1929
+050613,Otoca,Lucanas,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050614,Saisa,Lucanas,Ayacucho,2004,,RENAMU,2004,Ley N° 15091,08 Jul 1964
+050615,San Cristobal,Lucanas,Ayacucho,2004,,RENAMU,2004,Ley N° 24491,25 Mar 1986
+050616,San Juan,Lucanas,Ayacucho,2004,,RENAMU,2004,,29 Ago 1921
+050617,San Pedro,Lucanas,Ayacucho,2004,,RENAMU,2004,Ley N° 701,16 Dic 1907
+050618,San Pedro de Palco,Lucanas,Ayacucho,2004,,RENAMU,2004,Ley N° 15091,08 Jul 1964
+050619,Sancos,Lucanas,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050620,Santa Ana de Huaycahuacho,Lucanas,Ayacucho,2004,,RENAMU,2004,Ley N° 14079,21 May 1962
+050621,Santa Lucia,Lucanas,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050701,Coracora,Parinacochas,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050702,Chumpi,Parinacochas,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050703,Coronel Castañeda,Parinacochas,Ayacucho,2004,,RENAMU,2004,Ley N° 12375,28 Jun 1955
+050704,Pacapausa,Parinacochas,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050705,Pullo,Parinacochas,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050706,Puyusca,Parinacochas,Ayacucho,2004,,RENAMU,2004,Ley N° 12086,05 Mar 1954
+050707,San Francisco de Rivacayco,Parinacochas,Ayacucho,2004,,RENAMU,2004,Ley N° 13421,23 Abr 1960
+050708,Upahuacho,Parinacochas,Ayacucho,2004,,RENAMU,2004,Ley N° 13636,10 Abr 1961
+050801,Pausa,Paucar del Sara Sara,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050802,Colta,Paucar del Sara Sara,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050803,Corculla,Paucar del Sara Sara,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050804,Lampa,Paucar del Sara Sara,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050805,Marcabamba,Paucar del Sara Sara,Ayacucho,2004,,RENAMU,2004,Ley N° 14996,03 Abr 1964
+050806,Oyolo,Paucar del Sara Sara,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050807,Pararca,Paucar del Sara Sara,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050808,San Javier de Alpabamba,Paucar del Sara Sara,Ayacucho,2004,,RENAMU,2004,Ley N° 11855,24 Jul 1952
+050809,San Jose de Ushua,Paucar del Sara Sara,Ayacucho,2004,,RENAMU,2004,Ley N° 12492,20 Dic 1955
+050810,Sara Sara,Paucar del Sara Sara,Ayacucho,2004,,RENAMU,2004,Ley N° 24046,02 Ene 1985
+050901,Querobamba,Sucre,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050902,Belen,Sucre,Ayacucho,2004,,RENAMU,2004,Ley N° 15231,23 Nov 1964
+050903,Chalcos,Sucre,Ayacucho,2004,,RENAMU,2004,Ley N° 6163,03 Abr 1928
+050904,Chilcayoc,Sucre,Ayacucho,2004,,RENAMU,2004,Ley N° 6119,20 Mar 1928
+050905,Huacaña,Sucre,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050906,Morcolla,Sucre,Ayacucho,2004,,RENAMU,2004,Ley N° 12682,21 Dic 1956
+050907,Paico,Sucre,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+050908,San Pedro de Larcay,Sucre,Ayacucho,2004,,RENAMU,2004,Ley N° 15091,08 Jul 1964
+050909,San Salvador de Quije,Sucre,Ayacucho,2004,,RENAMU,2004,Ley N° 14079,21 May 1962
+050910,Santiago de Paucaray,Sucre,Ayacucho,2004,,RENAMU,2004,Ley N° 14079,21 May 1962
+050911,Soras,Sucre,Ayacucho,2004,,RENAMU,2004,,02 Ene 1857
+051001,Huancapi,Victor Fajardo,Ayacucho,2004,,RENAMU,2004,,16 Ago 1920
+051002,Alcamenca,Victor Fajardo,Ayacucho,2004,,RENAMU,2004,Ley N° 13015,09 Ene 1936
+051003,Apongo,Victor Fajardo,Ayacucho,2004,,RENAMU,2004,Ley N° 8277,13 May 1936
+051004,Asquipata,Victor Fajardo,Ayacucho,2004,,RENAMU,2004,Ley N° 24623,23 Dic 1986
+051005,Canaria,Victor Fajardo,Ayacucho,2004,,RENAMU,2004,,02 Ene 1857
+051006,Cayara,Victor Fajardo,Ayacucho,2004,,RENAMU,2004,Ley N° 13298,09 Ene 1960
+051007,Colca,Victor Fajardo,Ayacucho,2004,,RENAMU,2004,,02 Ene 1857
+051008,Huamanquiquia,Victor Fajardo,Ayacucho,2004,,RENAMU,2004,Ley N° 8298,02 Jun 1936
+051009,Huancaraylla,Victor Fajardo,Ayacucho,2004,,RENAMU,2004,,02 Ene 1857
+051010,Hualla,Victor Fajardo,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+051011,Sarhua,Victor Fajardo,Ayacucho,2004,,RENAMU,2004,Ley N° 1306,14 Nov 1910
+051012,Vilcanchos,Victor Fajardo,Ayacucho,2004,,RENAMU,2004,Ley N° 1306,14 Nov 1910
+051101,Vilcas Huaman,Vilcas Huaman,Ayacucho,2004,,RENAMU,2004,Ley N° 9942,01 Feb 1944
+051102,Accomarca,Vilcas Huaman,Ayacucho,2004,,RENAMU,2004,Ley N° 15406,29 Ene 1965
+051103,Carhuanca,Vilcas Huaman,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+051104,Concepcion,Vilcas Huaman,Ayacucho,2004,,RENAMU,2004,Ley N° 12145,19 Nov 1954
+051105,Huambalpa,Vilcas Huaman,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+051106,Independencia,Vilcas Huaman,Ayacucho,2004,,RENAMU,2004,Ley N° 24469,12 Mar 1986
+051107,Saurama,Vilcas Huaman,Ayacucho,2004,,RENAMU,2004,Ley N° 24450,19 Feb 1986
+051108,Vischongo,Vilcas Huaman,Ayacucho,2004,,RENAMU,2004,Epoca de la Independencia,
+060101,Cajamarca,Cajamarca,Cajamarca,2004,,RENAMU,2004,Epoca de la Independencia,
+060102,Asuncion,Cajamarca,Cajamarca,2004,,RENAMU,2004,Epoca de la Independencia,
+060103,Chetilla,Cajamarca,Cajamarca,2004,,RENAMU,2004,,02 Ene 1857
+060104,Cospan,Cajamarca,Cajamarca,2004,,RENAMU,2004,,14 Dic 1870
+060105,Encañada,Cajamarca,Cajamarca,2004,,RENAMU,2004,,02 Ene 1857
+060106,Jesus,Cajamarca,Cajamarca,2004,,RENAMU,2004,Epoca de la Independencia,
+060107,Llacanora,Cajamarca,Cajamarca,2004,,RENAMU,2004,,02 Ene 1857
+060108,Los Baños del Inca,Cajamarca,Cajamarca,2004,,RENAMU,2004,Ley N° 13251,07 Set 1959
+060109,Magdalena,Cajamarca,Cajamarca,2004,,RENAMU,2004,Epoca de la Independencia,
+060110,Matara,Cajamarca,Cajamarca,2004,,RENAMU,2004,,02 Ene 1857
+060111,Namora,Cajamarca,Cajamarca,2004,,RENAMU,2004,,14 Ago 1920
+060112,San Juan,Cajamarca,Cajamarca,2004,,RENAMU,2004,Ley N° 8076,05 Abr 1935
+060201,Cajabamba,Cajabamba,Cajamarca,2004,,RENAMU,2004,Epoca de la Independencia,
+060202,Cachachi,Cajabamba,Cajamarca,2004,,RENAMU,2004,,11 Feb 1855
+060203,Condebamba,Cajabamba,Cajamarca,2004,,RENAMU,2004,,11 Feb 1855
+060204,Sitacocha,Cajabamba,Cajamarca,2004,,RENAMU,2004,,11 Feb 1855
+060301,Celendin,Celendin,Cajamarca,2004,,RENAMU,2004,Epoca de la Independencia,
+060302,Chumuch,Celendin,Cajamarca,2004,,RENAMU,2004,,30 Set 1862
+060303,Cortegana,Celendin,Cajamarca,2004,,RENAMU,2004,Ley N° 7855,16 Oct 1933
+060304,Huasmin,Celendin,Cajamarca,2004,,RENAMU,2004,,30 Set 1862
+060305,Jorge Chavez,Celendin,Cajamarca,2004,,RENAMU,2004,,30 Set 1862
+060306,Jose Galvez,Celendin,Cajamarca,2004,,RENAMU,2004,,07 Nov 1887
+060307,Miguel Iglesias,Celendin,Cajamarca,2004,,RENAMU,2004,Ley N° 9818,21 Set 1943
+060308,Oxamarca,Celendin,Cajamarca,2004,,RENAMU,2004,Ley N° 4860,27 Dic 1923
+060309,Sorochuco,Celendin,Cajamarca,2004,,RENAMU,2004,Epoca de la Independencia,
+060310,Sucre,Celendin,Cajamarca,2004,,RENAMU,2004,,02 Ene 1857
+060311,Utco,Celendin,Cajamarca,2004,,RENAMU,2004,Ley N° 12171,14 Dic 1954
+060312,La Libertad de Pallan,Celendin,Cajamarca,2004,,RENAMU,2004,Ley N° 26262,23 Dic 1993
+060401,Chota,Chota,Cajamarca,2004,,RENAMU,2004,Epoca de la Independencia,
+060402,Anguia,Chota,Cajamarca,2004,,RENAMU,2004,Ley N° 7856,16 Oct 1933
+060403,Chadin,Chota,Cajamarca,2004,,RENAMU,2004,Ley N° 9607,18 Set 1942
+060404,Chiguirip,Chota,Cajamarca,2004,,RENAMU,2004,,31 Oct 1896
+060405,Chimban,Chota,Cajamarca,2004,,RENAMU,2004,Ley N° 9632,21 Oct 1942
+060406,Choropampa,Chota,Cajamarca,2004,,RENAMU,2004,Ley N° 25366,12 Dic 1991
+060407,Cochabamba,Chota,Cajamarca,2004,,RENAMU,2004,,02 Ene 1857
+060408,Conchan,Chota,Cajamarca,2004,,RENAMU,2004,,04 Nov 1889
+060409,Huambos,Chota,Cajamarca,2004,,RENAMU,2004,Epoca de la Independencia,
+060410,Lajas,Chota,Cajamarca,2004,,RENAMU,2004,,02 Ene 1857
+060411,Llama,Chota,Cajamarca,2004,,RENAMU,2004,,18 Abr 1835
+060412,Miracosta,Chota,Cajamarca,2004,,RENAMU,2004,Epoca de la Independencia,
+060413,Paccha,Chota,Cajamarca,2004,,RENAMU,2004,,02 Ene 1857
+060414,Pion,Chota,Cajamarca,2004,,RENAMU,2004,,02 Ene 1857
+060415,Querocoto,Chota,Cajamarca,2004,,RENAMU,2004,,14 May 1876
+060416,San Juan de Licupis,Chota,Cajamarca,2004,,RENAMU,2004,Ley N° 24720,11 Set 1987
+060417,Tacabamba,Chota,Cajamarca,2004,,RENAMU,2004,Epoca de la Independencia,
+060418,Tocmoche,Chota,Cajamarca,2004,,RENAMU,2004,Ley N° 9607,18 Set 1942
+060419,Chalamarca,Chota,Cajamarca,2004,,RENAMU,2004,Ley N° 26456,23 May 1995
+060501,Contumaza,Contumaza,Cajamarca,2004,,RENAMU,2004,Epoca de la Independencia,
+060502,Chilete,Contumaza,Cajamarca,2004,,RENAMU,2004,Ley N° 7690,30 Ene 1933
+060503,Cupisnique,Contumaza,Cajamarca,2004,,RENAMU,2004,Ley N° 14908,20 Feb 1964
+060504,Guzmango,Contumaza,Cajamarca,2004,,RENAMU,2004,Epoca de la Independencia,
+060505,San Benito,Contumaza,Cajamarca,2004,,RENAMU,2004,,19 Nov 1888
+060506,Santa Cruz de Toled,Contumaza,Cajamarca,2004,,RENAMU,2004,Ley N° 15416,29 Ene 1965
+060507,Tantarica,Contumaza,Cajamarca,2004,,RENAMU,2004,Ley N° 14925,28 Feb 1964
+060508,Yonan,Contumaza,Cajamarca,2004,,RENAMU,2004,Ley N° 15046,05 Jun 1964
+060601,Cutervo,Cutervo,Cajamarca,2004,,RENAMU,2004,Epoca de la Independencia,
+060602,Callayuc,Cutervo,Cajamarca,2004,,RENAMU,2004,Epoca de la Independencia,
+060603,Choros,Cutervo,Cajamarca,2004,,RENAMU,2004,,02 Ene 1857
+060604,Cujillo,Cutervo,Cajamarca,2004,,RENAMU,2004,Epoca de la Independencia,
+060605,La Ramada,Cutervo,Cajamarca,2004,,RENAMU,2004,Ley N° 13703,06 Oct 1961
+060606,Pimpingos,Cutervo,Cajamarca,2004,,RENAMU,2004,Epoca de la Independencia,
+060607,Querocotillo,Cutervo,Cajamarca,2004,,RENAMU,2004,Epoca de la Independencia,
+060608,San Andres de Cutervo,Cutervo,Cajamarca,2004,,RENAMU,2004,Ley N° 13702,06 Oct 1961
+060609,San Juan de Cutervo,Cutervo,Cajamarca,2004,,RENAMU,2004,Ley N° 13433,08 Ago 1960
+060610,San Luis de Lucma,Cutervo,Cajamarca,2004,,RENAMU,2004,Ley N° 6613,08 Abr 1929
+060611,Santa Cruz,Cutervo,Cajamarca,2004,,RENAMU,2004,Ley N° 13272,10 Dic 1959
+060612,Santo Domingo de la Capilla,Cutervo,Cajamarca,2004,,RENAMU,2004,Ley N° 12549,12 Ene 1956
+060613,Santo Tomas,Cutervo,Cajamarca,2004,,RENAMU,2004,,17 Ago 1920
+060614,Socota,Cutervo,Cajamarca,2004,,RENAMU,2004,,05 Feb 1875
+060615,Toribio Casanova,Cutervo,Cajamarca,2004,,RENAMU,2004,Ley N° 12146,19 Nov 1954
+060701,Bambamarca,Hualgayoc,Cajamarca,2004,,RENAMU,2004,Epoca de la Independencia,
+060702,Chugur,Hualgayoc,Cajamarca,2004,,RENAMU,2004,Ley N° 2207,29 Nov 1915
+060703,Hualgayoc,Hualgayoc,Cajamarca,2004,,RENAMU,2004,Epoca de la Independencia,
+060801,Jaen,Jaen,Cajamarca,2004,,RENAMU,2004,Epoca de la Independencia,
+060802,Bellavista,Jaen,Cajamarca,2004,,RENAMU,2004,,02 Ene 1857
+060803,Chontali,Jaen,Cajamarca,2004,,RENAMU,2004,Ley N° 9868,28 Dic 1943
+060804,Colasay,Jaen,Cajamarca,2004,,RENAMU,2004,Epoca de la Independencia,
+060805,Huabal,Jaen,Cajamarca,2004,,RENAMU,2004,Ley N° 24055,03 Ene 1985
+060806,Las Pirias,Jaen,Cajamarca,2004,,RENAMU,2004,Ley N° 24054,04 Ene 1985
+060807,Pomahuaca,Jaen,Cajamarca,2004,,RENAMU,2004,Ley N° 9868,28 Dic 1943
+060808,Pucara,Jaen,Cajamarca,2004,,RENAMU,2004,Ley N° 12636,02 Feb 1956
+060809,Sallique,Jaen,Cajamarca,2004,,RENAMU,2004,,02 Ene 1857
+060810,San Felipe,Jaen,Cajamarca,2004,,RENAMU,2004,,02 Ene 1857
+060811,San Jose del Alto,Jaen,Cajamarca,2004,,RENAMU,2004,Ley N° 9868,
+060812,Santa Rosa,Jaen,Cajamarca,2004,,RENAMU,2004,Ley N° 9868,28 Dic 1943
+060901,San Ignacio,San Ignacio,Cajamarca,2004,,RENAMU,2004,,02 Ene 1857
+060902,Chirinos,San Ignacio,Cajamarca,2004,,RENAMU,2004,Epoca de la Independencia,
+060903,Huarango,San Ignacio,Cajamarca,2004,,RENAMU,2004,Ley N° 15560,12 May 1965
+060904,La Coipa,San Ignacio,Cajamarca,2004,,RENAMU,2004,Ley N° 15560,12 May 1965
+060905,Namballe,San Ignacio,Cajamarca,2004,,RENAMU,2004,,28 Dic 1943
+060906,San Jose de Lourdes,San Ignacio,Cajamarca,2004,,RENAMU,2004,Ley N° 9868,28 Dic 1943
+060907,Tabaconas,San Ignacio,Cajamarca,2004,,RENAMU,2004,,11 Feb 1855
+061001,Pedro Galvez,San Marcos,Cajamarca,2004,,RENAMU,2004,Epoca de la Independencia,
+061002,Chancay,San Marcos,Cajamarca,2004,,RENAMU,2004,,16 Nov 1992
+061003,Eduardo Villanueva,San Marcos,Cajamarca,2004,,RENAMU,2004,,29 Dic 1984
+061004,Gregorio Pita,San Marcos,Cajamarca,2004,,RENAMU,2004,Ley N° 23508,11 Dic 1982
+061005,Ichocan,San Marcos,Cajamarca,2004,,RENAMU,2004,Epoca de la Independencia,
+061006,Jose Manuel Quiroz,San Marcos,Cajamarca,2004,,RENAMU,2004,Ley N° 23508,11 Dic 1982
+061007,Jose Sabogal,San Marcos,Cajamarca,2004,,RENAMU,2004,Ley N° 23508,11 Dic 1982
+061101,San Miguel,San Miguel,Cajamarca,2004,,RENAMU,2004,Epoca de la Independencia,
+061102,Bolivar,San Miguel,Cajamarca,2004,,RENAMU,2004,Ley N° 25156,26 Dic 1989
+061103,Calquis,San Miguel,Cajamarca,2004,,RENAMU,2004,Ley N° 15465,19 Mar 1965
+061104,Catilluc,San Miguel,Cajamarca,2004,,RENAMU,2004,Ley N° 25053,19 Jun 1989
+061105,El Prado,San Miguel,Cajamarca,2004,,RENAMU,2004,Ley N° 23929,20 Set 1984
+061106,La Florida,San Miguel,Cajamarca,2004,,RENAMU,2004,Ley N° 15477,26 Mar 1965
+061107,Llapa,San Miguel,Cajamarca,2004,,RENAMU,2004,,02 Ene 1857
+061108,Nanchoc,San Miguel,Cajamarca,2004,,RENAMU,2004,Ley N° 13039,02 Dic 1958
+061109,Niepos,San Miguel,Cajamarca,2004,,RENAMU,2004,Epoca de la Independencia,
+061110,San Gregorio,San Miguel,Cajamarca,2004,,RENAMU,2004,,02 Ene 1857
+061111,San Silvestre de Cochan,San Miguel,Cajamarca,2004,,RENAMU,2004,Ley N° 15911,08 Ene 1966
+061112,Tongod,San Miguel,Cajamarca,2004,,RENAMU,2004,Ley N° 25042,14 Jun 1989
+061113,Union Agua Blanca,San Miguel,Cajamarca,2004,,RENAMU,2004,Ley N° 23936,26 Set 1984
+061201,San Pablo,San Pablo,Cajamarca,2004,,RENAMU,2004,Epoca de la Independencia,
+061202,San Bernardino,San Pablo,Cajamarca,2004,,RENAMU,2004,Ley N° 23336,11 Dic 1981
+061203,San Luis,San Pablo,Cajamarca,2004,,RENAMU,2004,Ley N° 23336,11 Dic 1981
+061204,Tumbaden,San Pablo,Cajamarca,2004,,RENAMU,2004,Ley N° 23336,11 Dic 1981
+061301,Santa Cruz,Santa Cruz,Cajamarca,2004,,RENAMU,2004,Epoca de la Independencia,
+061302,Andabamba,Santa Cruz,Cajamarca,2004,,RENAMU,2004,Ley N° 16684,21 Ago 1967
+061303,Catache,Santa Cruz,Cajamarca,2004,,RENAMU,2004,,21 Abr 1950
+061304,Chancaybaños,Santa Cruz,Cajamarca,2004,,RENAMU,2004,Ley N° 9607,18 Set 1942
+061305,La Esperanza,Santa Cruz,Cajamarca,2004,,RENAMU,2004,Ley N° 4652,23 Abr 1923
+061306,Ninabamba,Santa Cruz,Cajamarca,2004,,RENAMU,2004,,21 Abr 1950
+061307,Pulan,Santa Cruz,Cajamarca,2004,,RENAMU,2004,,
+061308,Saucepampa,Santa Cruz,Cajamarca,2004,,RENAMU,2004,Ley N° 25094,01 Set 1989
+061309,Sexi,Santa Cruz,Cajamarca,2004,,RENAMU,2004,Ley N° 9607,18 Set 1942
+061310,Uticyacu,Santa Cruz,Cajamarca,2004,,RENAMU,2004,Ley N° 9393,01 Oct 1941
+061311,Yauyucan,Santa Cruz,Cajamarca,2004,,RENAMU,2004,,21 Abr 1950
+070101,Callao,Callao,Callao,2004,,RENAMU,2004,,20 Ago 1836
+070102,Bellavista,Callao,Callao,2004,,RENAMU,2004,Epoca de la Independencia,
+070103,Carmen de la Legua Reynoso,Callao,Callao,2004,,RENAMU,2004,Ley N° 15247,04 Dic 1964
+070104,La Perla,Callao,Callao,2004,,RENAMU,2004,Ley N° 15185,22 Oct 1964
+070105,La Punta,Callao,Callao,2004,,RENAMU,2004,Ley N° 2141,06 Oct 1915
+070106,Ventanilla,Callao,Callao,2004,,RENAMU,2004,,28 Ene 1969
+070107,Mi Perú,Callao,Callao,2014,,ley de creacion,2016,Ley N° 30197,16 May 2014
+080101,Cusco,Cusco,Cusco,2004,,RENAMU,2004,Epoca de la Independencia,
+080102,Ccorca,Cusco,Cusco,2004,,RENAMU,2004,Ley N° 9549,14 Ene 1942
+080103,Poroy,Cusco,Cusco,2004,,RENAMU,2004,Ley N° 9335,20 Feb 1941
+080104,San Jeronimo,Cusco,Cusco,2004,,RENAMU,2004,Epoca de la Independencia,
+080105,San Sebastian,Cusco,Cusco,2004,,RENAMU,2004,Epoca de la Independencia,
+080106,Santiago,Cusco,Cusco,2004,,RENAMU,2004,Ley N° 12336,10 Jun 1955
+080107,Saylla,Cusco,Cusco,2004,,RENAMU,2004,Ley N° 9550,14 Ene 1942
+080108,Wanchaq,Cusco,Cusco,2004,,RENAMU,2004,Ley N° 12336,10 Jun 1955
+080201,Acomayo,Acomayo,Cusco,2004,,RENAMU,2004,Epoca de la Independencia,
+080202,Acopia,Acomayo,Cusco,2004,,RENAMU,2004,Ley N° 10003,11 Nov 1944
+080203,Acos,Acomayo,Cusco,2004,,RENAMU,2004,,02 Ene 1857
+080204,Mosoc Llacta,Acomayo,Cusco,2004,,RENAMU,2004,Ley N° 15206,11 Nov 1964
+080205,Pomacanchi,Acomayo,Cusco,2004,,RENAMU,2004,,02 Ene 1857
+080206,Rondocan,Acomayo,Cusco,2004,,RENAMU,2004,,02 Ene 1857
+080207,Sangarara,Acomayo,Cusco,2004,,RENAMU,2004,,23 Nov 1861
+080301,Anta,Anta,Cusco,2004,,RENAMU,2004,Epoca de la Independencia,
+080302,Ancahuasi,Anta,Cusco,2004,,RENAMU,2004,Ley N° 24549,15 Set 1986
+080303,Cachimayo,Anta,Cusco,2004,,RENAMU,2004,,15 May 1970
+080304,Chinchaypujio,Anta,Cusco,2004,,RENAMU,2004,Ley N° 9394,01 Oct 1941
+080305,Huarocondo,Anta,Cusco,2004,,RENAMU,2004,,
+080306,Limatambo,Anta,Cusco,2004,,RENAMU,2004,Epoca de la Independencia,
+080307,Mollepata,Anta,Cusco,2004,,RENAMU,2004,Ley N° 6623,29 Abr 1929
+080308,Pucyura,Anta,Cusco,2004,,RENAMU,2004,Ley N° 9618,30 Set 1942
+080309,Zurite,Anta,Cusco,2004,,RENAMU,2004,,02 Ene 1857
+080401,Calca,Calca,Cusco,2004,,RENAMU,2004,Epoca de la Independencia,
+080402,Coya,Calca,Cusco,2004,,RENAMU,2004,Ley N° 11609,11 Set 1951
+080403,Lamay,Calca,Cusco,2004,,RENAMU,2004,Ley N° 11693,03 Ene 1952
+080404,Lares,Calca,Cusco,2004,,RENAMU,2004,Epoca de la Independencia,
+080405,Pisac,Calca,Cusco,2004,,RENAMU,2004,Epoca de la Independencia,
+080406,San Salvador,Calca,Cusco,2004,,RENAMU,2004,Ley N° 10415,28 Feb 1946
+080407,Taray,Calca,Cusco,2004,,RENAMU,2004,Ley N° 15027,06 May 1964
+080408,Yanatile,Calca,Cusco,2004,,RENAMU,2004,Ley N° 23383,18 May 1982
+080501,Yanaoca,Canas,Cusco,2004,,RENAMU,2004,,29 Ago 1834
+080502,Checca,Canas,Cusco,2004,,RENAMU,2004,Epoca de la Independencia,
+080503,Kunturkanki,Canas,Cusco,2004,,RENAMU,2004,Ley N° 13484,07 Ene 1961
+080504,Langui,Canas,Cusco,2004,,RENAMU,2004,Epoca de la Independencia,
+080505,Layo,Canas,Cusco,2004,,RENAMU,2004,,02 Ene 1857
+080506,Pampamarca,Canas,Cusco,2004,,RENAMU,2004,,29 Ago 1834
+080507,Quehue,Canas,Cusco,2004,,RENAMU,2004,Ley N° 2542,17 Nov 1917
+080508,Tupac Amaru,Canas,Cusco,2004,,RENAMU,2004,Ley N° 9363,01 Set 1941
+080601,Sicuani,Canchis,Cusco,2004,,RENAMU,2004,Epoca de la Independencia,
+080602,Checacupe,Canchis,Cusco,2004,,RENAMU,2004,Epoca de la Independencia,
+080603,Combapata,Canchis,Cusco,2004,,RENAMU,2004,Ley N° 1640,22 Nov 1912
+080604,Marangani,Canchis,Cusco,2004,,RENAMU,2004,,29 Ago 1834
+080605,Pitumarca,Canchis,Cusco,2004,,RENAMU,2004,Ley N° 629,11 Nov 1907
+080606,San Pablo,Canchis,Cusco,2004,,RENAMU,2004,Epoca de la Independencia,
+080607,San Pedro,Canchis,Cusco,2004,,RENAMU,2004,Ley N° 1673,28 Nov 1912
+080608,Tinta,Canchis,Cusco,2004,,RENAMU,2004,Epoca de la Independencia,
+080701,Santo Tomas,Chumbivilcas,Cusco,2004,,RENAMU,2004,Epoca de la Independencia,
+080702,Capacmarca,Chumbivilcas,Cusco,2004,,RENAMU,2004,,02 Ene 1857
+080703,Chamaca,Chumbivilcas,Cusco,2004,,RENAMU,2004,,02 Ene 1857
+080704,Colquemarca,Chumbivilcas,Cusco,2004,,RENAMU,2004,Epoca de la Independencia,
+080705,Livitaca,Chumbivilcas,Cusco,2004,,RENAMU,2004,,02 Ene 1857
+080706,Llusco,Chumbivilcas,Cusco,2004,,RENAMU,2004,,02 Ene 1857
+080707,Quiñota,Chumbivilcas,Cusco,2004,,RENAMU,2004,Ley N° 14047,17 Mar 1962
+080708,Velille,Chumbivilcas,Cusco,2004,,RENAMU,2004,Epoca de la Independencia,
+080801,Espinar,Espinar,Cusco,2004,,RENAMU,2004,Epoca de la Independencia,
+080802,Condoroma,Espinar,Cusco,2004,,RENAMU,2004,,29 Ago 1834
+080803,Coporaque,Espinar,Cusco,2004,,RENAMU,2004,,29 Ago 1834
+080804,Ocoruro,Espinar,Cusco,2004,,RENAMU,2004,,02 Ene 1857
+080805,Pallpata,Espinar,Cusco,2004,,RENAMU,2004,Ley N° 2542,17 Nov 1917
+080806,Pichigua,Espinar,Cusco,2004,,RENAMU,2004,,29 Ago 1834
+080807,Suyckutambo,Espinar,Cusco,2004,,RENAMU,2004,Ley N° 13623,17 Mar 1961
+080808,Alto Pichigua,Espinar,Cusco,2004,,RENAMU,2004,Ley N° 26367,14 Oct 1994
+080901,Santa Ana,La Convencion,Cusco,2004,,RENAMU,2004,Epoca de la Independencia,
+080902,Echarate,La Convencion,Cusco,2004,,RENAMU,2004,,02 Ene 1857
+080903,Huayopata,La Convencion,Cusco,2004,,RENAMU,2004,,02 Ene 1857
+080904,Maranura,La Convencion,Cusco,2004,,RENAMU,2004,Ley N° 13620,17 Mar 1961
+080905,Ocobamba,La Convencion,Cusco,2004,,RENAMU,2004,,02 Ene 1857
+080906,Quellouno,La Convencion,Cusco,2004,,RENAMU,2004,Ley N° 24553,01 Oct 1986
+080907,Kimbiri,La Convencion,Cusco,2004,,RENAMU,2004,Ley N° 25209,04 May 1990
+080908,Santa Teresa,La Convencion,Cusco,2004,,RENAMU,2004,Ley N° 12849,11 Oct 1957
+080909,Vilcabamba,La Convencion,Cusco,2004,,RENAMU,2004,,02 Ene 1857
+080910,Pichari,La Convencion,Cusco,2004,,RENAMU,2004,Ley N° 26521,07 Ago 1995
+080911,Inkawasi,La Convencion,Cusco,2014,,ley de creacion,2016,Ley N° 30265,18 Nov 2014
+080912,Villa Virgen,La Convencion,Cusco,2014,,ley de creacion,2016,Ley N° 30279,02 Dic 2014
+080913,Villa Kintiarina,La Convencion,Cusco,2015,,ley de creacion,2018,Ley N° 30349,14 Oct 2015
+080914,Megantoni,La Convencion,Cusco,2018,,RENAMU,2018,,05 Jul 2016
+080915,Kumpirushiato,La Convencion,Cusco,2021,,ley de creacion,2023,Ley N° 31142,17 Mar 2021
+080916,Cielo Punco,La Convencion,Cusco,2021,,ley de creacion,2023,Ley N° 31162,06 Abr 2021
+080917,Manitea,La Convencion,Cusco,2021,,ley de creacion,2023,Ley N° 31163,06 Abr 2021
+080918,Union Ashaninka,La Convencion,Cusco,2023,,RENAMU,2023,Ley N° 31197,
+081001,Paruro,Paruro,Cusco,2004,,RENAMU,2004,Epoca de la Independencia,
+081002,Accha,Paruro,Cusco,2004,,RENAMU,2004,Epoca de la Independencia,
+081003,Ccapi,Paruro,Cusco,2004,,RENAMU,2004,,02 Ene 1857
+081004,Colcha,Paruro,Cusco,2004,,RENAMU,2004,,02 Ene 1857
+081005,Huanoquite,Paruro,Cusco,2004,,RENAMU,2004,Epoca de la Independencia,
+081006,Omacha,Paruro,Cusco,2004,,RENAMU,2004,,02 Ene 1857
+081007,Paccaritambo,Paruro,Cusco,2004,,RENAMU,2004,Ley N° 14864,22 Oct 1963
+081008,Pillpinto,Paruro,Cusco,2004,,RENAMU,2004,Ley N° 14747,11 Dic 1963
+081009,Yaurisque,Paruro,Cusco,2004,,RENAMU,2004,Ley N° 13203,15 Abr 1959
+081101,Paucartambo,Paucartambo,Cusco,2004,,RENAMU,2004,Epoca de la Independencia,
+081102,Caicay,Paucartambo,Cusco,2004,,RENAMU,2004,Epoca de la Independencia,
+081103,Challabamba,Paucartambo,Cusco,2004,,RENAMU,2004,,02 Ene 1857
+081104,Colquepata,Paucartambo,Cusco,2004,,RENAMU,2004,,02 Ene 1857
+081105,Huancarani,Paucartambo,Cusco,2004,,RENAMU,2004,Ley N° 24662,11 May 1987
+081106,Kosñipata,Paucartambo,Cusco,2004,,RENAMU,2004,Ley N° 14116,15 Jun 1962
+081201,Urcos,Quispicanchi,Cusco,2004,,RENAMU,2004,,02 Ene 1857
+081202,Andahuaylillas,Quispicanchi,Cusco,2004,,RENAMU,2004,,02 Ene 1857
+081203,Camanti,Quispicanchi,Cusco,2004,,RENAMU,2004,Ley N° 11624,02 Oct 1951
+081204,Ccarhuayo,Quispicanchi,Cusco,2004,,RENAMU,2004,Ley N° 13476,25 Nov 1960
+081205,Ccatca,Quispicanchi,Cusco,2004,,RENAMU,2004,Epoca de la Independencia,
+081206,Cusipata,Quispicanchi,Cusco,2004,,RENAMU,2004,Ley N° 9164,05 Set 1940
+081207,Huaro,Quispicanchi,Cusco,2004,,RENAMU,2004,,26 Set 1952
+081208,Lucre,Quispicanchi,Cusco,2004,,RENAMU,2004,Ley N° 9295,17 Ene 1941
+081209,Marcapata,Quispicanchi,Cusco,2004,,RENAMU,2004,,20 Ene 1869
+081210,Ocongate,Quispicanchi,Cusco,2004,,RENAMU,2004,,02 Ene 1857
+081211,Oropesa,Quispicanchi,Cusco,2004,,RENAMU,2004,Epoca de la Independencia,
+081212,Quiquijana,Quispicanchi,Cusco,2004,,RENAMU,2004,Epoca de la Independencia,
+081301,Urubamba,Urubamba,Cusco,2004,,RENAMU,2004,Epoca de la Independencia,
+081302,Chinchero,Urubamba,Cusco,2004,,RENAMU,2004,Ley N° 59,09 Set 1905
+081303,Huayllabamba,Urubamba,Cusco,2004,,RENAMU,2004,,02 Ene 1857
+081304,Machupicchu,Urubamba,Cusco,2004,,RENAMU,2004,Ley N° 9396,01 Oct 1941
+081305,Maras,Urubamba,Cusco,2004,,RENAMU,2004,,02 Ene 1857
+081306,Ollantaytambo,Urubamba,Cusco,2004,,RENAMU,2004,,02 Ene 1857
+081307,Yucay,Urubamba,Cusco,2004,,RENAMU,2004,Epoca de la Independencia,
+090101,Huancavelica,Huancavelica,Huancavelica,2004,,RENAMU,2004,Epoca de la Independencia,
+090102,Acobambilla,Huancavelica,Huancavelica,2004,,RENAMU,2004,Ley N° 8254,30 Abr 1936
+090103,Acoria,Huancavelica,Huancavelica,2004,,RENAMU,2004,Epoca de la Independencia,
+090104,Conayca,Huancavelica,Huancavelica,2004,,RENAMU,2004,Epoca de la Independencia,
+090105,Cuenca,Huancavelica,Huancavelica,2004,,RENAMU,2004,,17 Ago 1920
+090106,Huachocolpa,Huancavelica,Huancavelica,2004,,RENAMU,2004,Ley N° 12000,29 Oct 1953
+090107,Huayllahuara,Huancavelica,Huancavelica,2004,,RENAMU,2004,Ley N° 9505,12 Ene 1942
+090108,Izcuchaca,Huancavelica,Huancavelica,2004,,RENAMU,2004,Ley N° 4612,05 Ene 1923
+090109,Laria,Huancavelica,Huancavelica,2004,,RENAMU,2004,Ley N° 14166,23 Jun 1962
+090110,Manta,Huancavelica,Huancavelica,2004,,RENAMU,2004,Ley N° 9115,01 Jun 1940
+090111,Mariscal Caceres,Huancavelica,Huancavelica,2004,,RENAMU,2004,Ley N° 8067,27 Mar 1935
+090112,Moya,Huancavelica,Huancavelica,2004,,RENAMU,2004,Epoca de la Independencia,
+090113,Nuevo Occoro,Huancavelica,Huancavelica,2004,,RENAMU,2004,Ley N° 12312,10 May 1955
+090114,Palca,Huancavelica,Huancavelica,2004,,RENAMU,2004,Ley N° 13239,08 Jun 1959
+090115,Pilchaca,Huancavelica,Huancavelica,2004,,RENAMU,2004,,16 Ago 1920
+090116,Vilca,Huancavelica,Huancavelica,2004,,RENAMU,2004,,15 Set 1920
+090117,Yauli,Huancavelica,Huancavelica,2004,,RENAMU,2004,Ley N° 14164,23 Jun 1962
+090118,Ascension,Huancavelica,Huancavelica,2004,,RENAMU,2004,Ley N° 27284,08 Jun 2000
+090119,Huando,Huancavelica,Huancavelica,2004,,RENAMU,2004,,16 Nov 1892
+090201,Acobamba,Acobamba,Huancavelica,2004,,RENAMU,2004,Epoca de la Independencia,
+090202,Andabamba,Acobamba,Huancavelica,2004,,RENAMU,2004,Ley N° 5292,23 Nov 1925
+090203,Anta,Acobamba,Huancavelica,2004,,RENAMU,2004,Ley N° 9718,15 Ene 1943
+090204,Caja,Acobamba,Huancavelica,2004,,RENAMU,2004,,02 Ene 1857
+090205,Marcas,Acobamba,Huancavelica,2004,,RENAMU,2004,Ley N° 5291,23 Nov 1925
+090206,Paucara,Acobamba,Huancavelica,2004,,RENAMU,2004,Ley N° 9718,15 Ene 1943
+090207,Pomacocha,Acobamba,Huancavelica,2004,,RENAMU,2004,Ley N° 9718,15 Ene 1943
+090208,Rosario,Acobamba,Huancavelica,2004,,RENAMU,2004,Ley N° 12449,24 Nov 1955
+090301,Lircay,Angaraes,Huancavelica,2004,,RENAMU,2004,Epoca de la Independencia,
+090302,Anchonga,Angaraes,Huancavelica,2004,,RENAMU,2004,Ley N° 10160,05 Ene 1945
+090303,Callanmarca,Angaraes,Huancavelica,2004,,RENAMU,2004,Ley N° 9354,28 Feb 1941
+090304,Ccochaccasa,Angaraes,Huancavelica,2004,,RENAMU,2004,Ley N° 23975,30 Oct 1984
+090305,Chincho,Angaraes,Huancavelica,2004,,RENAMU,2004,Ley N° 13264,31 Oct 1959
+090306,Congalla,Angaraes,Huancavelica,2004,,RENAMU,2004,Ley N° 9368,03 Set 1941
+090307,Huanca-Huanca,Angaraes,Huancavelica,2004,,RENAMU,2004,Ley N° 9354,28 Feb 1941
+090308,Huayllay Grande,Angaraes,Huancavelica,2004,,RENAMU,2004,Ley N° 9354,28 Feb 1941
+090309,Julcamarca,Angaraes,Huancavelica,2004,,RENAMU,2004,Epoca de la Independencia,
+090310,San Antonio de Antaparco,Angaraes,Huancavelica,2004,,RENAMU,2004,Ley N° 12101,07 Abr 1954
+090311,Santo Tomas de Pata,Angaraes,Huancavelica,2004,,RENAMU,2004,Ley N° 12310,10 May 1955
+090312,Secclla,Angaraes,Huancavelica,2004,,RENAMU,2004,Ley N° 12291,15 Abr 1955
+090401,Castrovirreyna,Castrovirreyna,Huancavelica,2004,,RENAMU,2004,Epoca de la Independencia,
+090402,Arma,Castrovirreyna,Huancavelica,2004,,RENAMU,2004,Epoca de la Independencia,
+090403,Aurahua,Castrovirreyna,Huancavelica,2004,,RENAMU,2004,,06 Set 1920
+090404,Capillas,Castrovirreyna,Huancavelica,2004,,RENAMU,2004,Ley N° 9299,22 Ene 1941
+090405,Chupamarca,Castrovirreyna,Huancavelica,2004,,RENAMU,2004,,02 Ene 1857
+090406,Cocas,Castrovirreyna,Huancavelica,2004,,RENAMU,2004,Ley N° 5349,18 Ene 1926
+090407,Huachos,Castrovirreyna,Huancavelica,2004,,RENAMU,2004,Epoca de la Independencia,
+090408,Huamatambo,Castrovirreyna,Huancavelica,2004,,RENAMU,2004,Ley N° 9505,12 Ene 1942
+090409,Mollepampa,Castrovirreyna,Huancavelica,2004,,RENAMU,2004,Ley N° 12363,20 Jun 1955
+090410,San Juan,Castrovirreyna,Huancavelica,2004,,RENAMU,2004,Ley N° 9505,12 Ene 1942
+090411,Santa Ana,Castrovirreyna,Huancavelica,2004,,RENAMU,2004,Ley N° 15369,08 Ene 1965
+090412,Tantara,Castrovirreyna,Huancavelica,2004,,RENAMU,2004,Ley N° 4207,12 Ene 1921
+090413,Ticrapo,Castrovirreyna,Huancavelica,2004,,RENAMU,2004,,06 Set 1920
+090501,Churcampa,Churcampa,Huancavelica,2004,,RENAMU,2004,Epoca de la Independencia,
+090502,Anco,Churcampa,Huancavelica,2004,,RENAMU,2004,Epoca de la Independencia,
+090503,Chinchihuasi,Churcampa,Huancavelica,2004,,RENAMU,2004,Ley N° 13841,11 Ene 1962
+090504,El Carmen,Churcampa,Huancavelica,2004,,RENAMU,2004,Ley N° 12339,10 Jun 1955
+090505,La Merced,Churcampa,Huancavelica,2004,,RENAMU,2004,Ley N° 10298,30 Nov 1945
+090506,Locroja,Churcampa,Huancavelica,2004,,RENAMU,2004,,21 Ene 1875
+090507,Paucarbamba,Churcampa,Huancavelica,2004,,RENAMU,2004,Epoca de la Independencia,
+090508,San Miguel de Mayocc,Churcampa,Huancavelica,2004,,RENAMU,2004,Ley N° 14153,22 Jun 1962
+090509,San Pedro de Coris,Churcampa,Huancavelica,2004,,RENAMU,2004,Ley N° 12309,10 May 1955
+090510,Pachamarca,Churcampa,Huancavelica,2004,,RENAMU,2004,Ley N° 15513,23 Abr 1965
+090511,Cosme,Churcampa,Huancavelica,2010,,ley de creacion,2012,Ley N° 29538,07 Jun 2010
+090601,Huaytara,Huaytara,Huancavelica,2004,,RENAMU,2004,Epoca de la Independencia,
+090602,Ayavi,Huaytara,Huancavelica,2004,,RENAMU,2004,Ley N° 9299,22 Ene 1941
+090603,Cordova,Huaytara,Huancavelica,2004,,RENAMU,2004,Epoca de la Independencia,
+090604,Huayacundo Arma,Huaytara,Huancavelica,2004,,RENAMU,2004,Ley N° 14009,09 Feb 1962
+090605,Laramarca,Huaytara,Huancavelica,2004,,RENAMU,2004,Ley N° 9299,22 Ene 1942
+090606,Ocoyo,Huaytara,Huancavelica,2004,,RENAMU,2004,,06 Set 1920
+090607,Pilpichaca,Huaytara,Huancavelica,2004,,RENAMU,2004,Epoca de la Independencia,
+090608,Querco,Huaytara,Huancavelica,2004,,RENAMU,2004,Ley N° 10160,05 Ene 1945
+090609,Quito-Arma,Huaytara,Huancavelica,2004,,RENAMU,2004,Ley N° 12380,25 Jul 1955
+090610,San Antonio de Cusicancha,Huaytara,Huancavelica,2004,,RENAMU,2004,Ley N° 14102,14 Jun 1962
+090611,San Francisco de Sangayaico,Huaytara,Huancavelica,2004,,RENAMU,2004,Ley N° 12558,26 Ene 1956
+090612,San Isidro,Huaytara,Huancavelica,2004,,RENAMU,2004,Ley N° 12381,25 Jul 1955
+090613,Santiago de Chocorvos,Huaytara,Huancavelica,2004,,RENAMU,2004,Epoca de la Independencia,
+090614,Santiago de Quirahuara,Huaytara,Huancavelica,2004,,RENAMU,2004,Ley N° 12561,26 Ene 1956
+090615,Santo Domingo de Capillas,Huaytara,Huancavelica,2004,,RENAMU,2004,Ley N° 12559,26 Ene 1956
+090616,Tambo,Huaytara,Huancavelica,2004,,RENAMU,2004,Ley N° 4207,12 Ene 1921
+090701,Pampas,Tayacaja,Huancavelica,2004,,RENAMU,2004,Epoca de la Independencia,
+090702,Acostambo,Tayacaja,Huancavelica,2004,,RENAMU,2004,Ley N° 1529,08 Ene 1912
+090703,Acraquia,Tayacaja,Huancavelica,2004,,RENAMU,2004,Ley N° 12107,09 Set 1954
+090704,Ahuaycha,Tayacaja,Huancavelica,2004,,RENAMU,2004,,14 Dic 1954
+090705,Colcabamba,Tayacaja,Huancavelica,2004,,RENAMU,2004,Epoca de la Independencia,
+090706,Daniel Hernandez,Tayacaja,Huancavelica,2004,,RENAMU,2004,Ley N° 12529,09 Ene 1956
+090707,Huachocolpa,Tayacaja,Huancavelica,2004,,RENAMU,2004,Ley N° 11585,31 Ene 1951
+090709,Huaribamba,Tayacaja,Huancavelica,2004,,RENAMU,2004,Epoca de la Independencia,
+090710,Ñahuimpuquio,Tayacaja,Huancavelica,2004,,RENAMU,2004,,06 Nov 1903
+090711,Pazos,Tayacaja,Huancavelica,2004,,RENAMU,2004,Ley N° 11585,31 Ene 1951
+090713,Quishuar,Tayacaja,Huancavelica,2004,,RENAMU,2004,Ley N° 12816,06 Mar 1957
+090714,Salcabamba,Tayacaja,Huancavelica,2004,,RENAMU,2004,Epoca de la Independencia,
+090715,Salcahuasi,Tayacaja,Huancavelica,2004,,RENAMU,2004,Ley N° 24694,18 Jun 1987
+090716,San Marcos de Rocchac,Tayacaja,Huancavelica,2004,,RENAMU,2004,Ley N° 13657,07 Jun 1961
+090717,Surcubamba,Tayacaja,Huancavelica,2004,,RENAMU,2004,Epoca de la Independencia,
+090718,Tintay Puncu,Tayacaja,Huancavelica,2004,,RENAMU,2004,Ley N° 23941,03 Oct 1984
+090719,Quichuas,Tayacaja,Huancavelica,2014,,ley de creacion,2016,Ley N° 30278,02 Dic 2014
+090720,Andaymarca,Tayacaja,Huancavelica,2014,,ley de creacion,2016,Ley N° 30280,02 Dic 2014
+090721,Roble,Tayacaja,Huancavelica,2018,,RENAMU,2018,Ley N°30388,
+090722,Pichos,Tayacaja,Huancavelica,2018,,RENAMU,2018,Ley N° 30391,
+090723,Santiago de Tucuma,Tayacaja,Huancavelica,2018,,RENAMU,2018,Ley N° 30445,
+090724,Lambras,Tayacaja,Huancavelica,2023,,RENAMU,2023,Ley N° 31092,
+090725,Cochabamba,Tayacaja,Huancavelica,2023,,RENAMU,2023,Ley N° 31132,
+100101,Huanuco,Huanuco,Huanuco,2004,,RENAMU,2004,Epoca de la Independencia,
+100102,Amarilis,Huanuco,Huanuco,2004,,RENAMU,2004,Ley N° 23419,01 Jun 1982
+100103,Chinchao,Huanuco,Huanuco,2004,,RENAMU,2004,,02 Ene 1857
+100104,Churubamba,Huanuco,Huanuco,2004,,RENAMU,2004,,
+100105,Margos,Huanuco,Huanuco,2004,,RENAMU,2004,Ley N° 202,10 Set 1906
+100106,Quisqui,Huanuco,Huanuco,2004,,RENAMU,2004,Ley N° 12564,26 Ene 1956
+100107,San Francisco de Cayran,Huanuco,Huanuco,2004,,RENAMU,2004,Ley N° 12311,10 May 1955
+100108,San Pedro de Chaulan,Huanuco,Huanuco,2004,,RENAMU,2004,,16 May 1936
+100109,Santa Maria del Valle,Huanuco,Huanuco,2004,,RENAMU,2004,Epoca de la Independencia,
+100110,Yarumayo,Huanuco,Huanuco,2004,,RENAMU,2004,Ley N° 10179,17 Ene 1945
+100111,Pillco Marca,Huanuco,Huanuco,2004,,RENAMU,2004,Ley N° 27258,05 May 2000
+100112,Yacus,Huanuco,Huanuco,2010,,ley de creacion,2012,Ley N° 29540,14 Jun 2010
+100113,San Pablo de Pillao,Huanuco,Huanuco,2015,,ley de creacion,2018,Ley N° 30379,07 Dic 2015
+100201,Ambo,Ambo,Huanuco,2004,,RENAMU,2004,Ley N° 1598,21 Oct 1912
+100202,Cayna,Ambo,Huanuco,2004,,RENAMU,2004,,02 Ene 1857
+100203,Colpas,Ambo,Huanuco,2004,,RENAMU,2004,Ley N° 12448,24 Nov 1955
+100204,Conchamarca,Ambo,Huanuco,2004,,RENAMU,2004,Ley N° 9165,05 Set 1940
+100205,Huacar,Ambo,Huanuco,2004,,RENAMU,2004,Epoca de la Independencia,
+100206,San Francisco,Ambo,Huanuco,2004,,RENAMU,2004,Ley N° 9817,21 Set 1943
+100207,San Rafael,Ambo,Huanuco,2004,,RENAMU,2004,Ley N° 1598,21 Oct 1912
+100208,Tomay Kichwa,Ambo,Huanuco,2004,,RENAMU,2004,Ley N° 8155,18 Dic 1935
+100301,La Union,Dos de Mayo,Huanuco,2004,,RENAMU,2004,,02 Ene 1857
+100307,Chuquis,Dos de Mayo,Huanuco,2004,,RENAMU,2004,Ley N° 11616,18 Set 1960
+100311,Marias,Dos de Mayo,Huanuco,2004,,RENAMU,2004,Ley N° 14072,12 May 1962
+100313,Pachas,Dos de Mayo,Huanuco,2004,,RENAMU,2004,Epoca de la Independencia,
+100316,Quivilla,Dos de Mayo,Huanuco,2004,,RENAMU,2004,,12 Set 1921
+100317,Ripan,Dos de Mayo,Huanuco,2004,,RENAMU,2004,Ley N° 13058,31 Dic 1958
+100321,Shunqui,Dos de Mayo,Huanuco,2004,,RENAMU,2004,Ley N° 8070,27 Mar 1935
+100322,Sillapata,Dos de Mayo,Huanuco,2004,,RENAMU,2004,Ley N° 11617,18 Set 1951
+100323,Yanas,Dos de Mayo,Huanuco,2004,,RENAMU,2004,,12 Set 1921
+100401,Huacaybamba,Huacaybamba,Huanuco,2004,,RENAMU,2004,Epoca de la Independencia,
+100402,Canchabamba,Huacaybamba,Huanuco,2004,,RENAMU,2004,Ley N° 24340,14 Nov 1985
+100403,Cochabamba,Huacaybamba,Huanuco,2004,,RENAMU,2004,Ley N° 24340,14 Nov 1985
+100404,Pinra,Huacaybamba,Huanuco,2004,,RENAMU,2004,,02 Ene 1857
+100501,Llata,Huamalies,Huanuco,2004,,RENAMU,2004,Epoca de la Independencia,
+100502,Arancay,Huamalies,Huanuco,2004,,RENAMU,2004,,02 Ene 1857
+100503,Chavin de Pariarca,Huamalies,Huanuco,2004,,RENAMU,2004,Epoca de la Independencia,
+100504,Jacas Grande,Huamalies,Huanuco,2004,,RENAMU,2004,Ley N° 4730,29 Oct 1923
+100505,Jircan,Huamalies,Huanuco,2004,,RENAMU,2004,Ley N° 9622,07 Oct 1942
+100506,Miraflores,Huamalies,Huanuco,2004,,RENAMU,2004,Ley N° 8424,15 Jul 1936
+100507,Monzon,Huamalies,Huanuco,2004,,RENAMU,2004,,02 Ene 1857
+100508,Punchao,Huamalies,Huanuco,2004,,RENAMU,2004,Ley N° 9622,07 Oct 1942
+100509,Puños,Huamalies,Huanuco,2004,,RENAMU,2004,Ley N° 9622,07 Oct 1942
+100510,Singa,Huamalies,Huanuco,2004,,RENAMU,2004,Epoca de la Independencia,
+100511,Tantamayo,Huamalies,Huanuco,2004,,RENAMU,2004,Ley N° 4731,29 Oct 1923
+100601,Rupa-Rupa,Leoncio Prado,Huanuco,2004,,RENAMU,2004,Ley N° 10538,09 Abr 1946
+100602,Daniel Alomia Robles,Leoncio Prado,Huanuco,2004,,RENAMU,2004,Ley N° 11843,27 May 1952
+100603,Hermilio Valdizan,Leoncio Prado,Huanuco,2004,,RENAMU,2004,Ley N° 11843,27 May 1952
+100604,Jose Crespo y Castillo,Leoncio Prado,Huanuco,2004,,RENAMU,2004,Ley N° 14777,26 Dic 1963
+100605,Luyando,Leoncio Prado,Huanuco,2004,,RENAMU,2004,Ley N° 11843,27 May 1952
+100606,Mariano Damaso Beraun,Leoncio Prado,Huanuco,2004,,RENAMU,2004,Ley N° 11843,27 May 1952
+100607,Pucayacu,Leoncio Prado,Huanuco,2015,,ley de creacion,2018,Ley N° 30376,07 Dic 2015
+100608,Castillo Grande,Leoncio Prado,Huanuco,2015,,ley de creacion,2018,Ley N° 30377,07 Dic 2015
+100609,Pueblo Nuevo,Leoncio Prado,Huanuco,2019,,RENAMU,2019,Ley N° 30440,
+100610,Santo Domingo de Anda,Leoncio Prado,Huanuco,2016,,ley de creacion,2018,Ley N° 30491,23 Jul 2016
+100701,Huacrachuco,Marañon,Huanuco,2004,,RENAMU,2004,Epoca de la Independencia,
+100702,Cholon,Marañon,Huanuco,2004,,RENAMU,2004,Ley N° 1595,21 Oct 1912
+100703,San Buenaventura,Marañon,Huanuco,2004,,RENAMU,2004,Ley N° 12403,31 Oct 1955
+100704,La Morada,Marañon,Huanuco,2015,,ley de creacion,2018,Ley N° 30360,11 Nov 2015
+100705,Santa Rosa de Alto Yanajanca,Marañon,Huanuco,2015,,ley de creacion,2018,Ley N° 30378,07 Dic 2015
+100801,Panao,Pachitea,Huanuco,2004,,RENAMU,2004,Epoca de la Independencia,
+100802,Chaglla,Pachitea,Huanuco,2004,,RENAMU,2004,Ley N° 2889,29 Nov 1918
+100803,Molino,Pachitea,Huanuco,2004,,RENAMU,2004,Ley N° 2889,29 Nov 1918
+100804,Umari,Pachitea,Huanuco,2004,,RENAMU,2004,Ley N° 2889,29 Nov 1918
+100901,Puerto Inca,Puerto Inca,Huanuco,2004,,RENAMU,2004,Ley N° 12640,02 Feb 1956
+100902,Codo del Pozuzo,Puerto Inca,Huanuco,2004,,RENAMU,2004,Ley N° 23994,19 Nov 1984
+100903,Honoria,Puerto Inca,Huanuco,2004,,RENAMU,2004,Ley N° 12640,02 Feb 1956
+100904,Tournavista,Puerto Inca,Huanuco,2004,,RENAMU,2004,Ley N° 23994,19 Nov 1984
+100905,Yuyapichis,Puerto Inca,Huanuco,2004,,RENAMU,2004,Ley N° 23994,19 Nov 1984
+101001,Jesus,Lauricocha,Huanuco,2004,,RENAMU,2004,Epoca de la Independencia,
+101002,Baños,Lauricocha,Huanuco,2004,,RENAMU,2004,Epoca de la Independencia,
+101003,Jivia,Lauricocha,Huanuco,2004,,RENAMU,2004,,06 Set 1920
+101004,Queropalca,Lauricocha,Huanuco,2004,,RENAMU,2004,Ley N° 14073,12 May 1962
+101005,Rondos,Lauricocha,Huanuco,2004,,RENAMU,2004,Ley N° 7665,27 Dic 1932
+101006,San Francisco de Asis,Lauricocha,Huanuco,2004,,RENAMU,2004,Ley N° 13418,20 Abr 1960
+101007,San Miguel de Cauri,Lauricocha,Huanuco,2004,,RENAMU,2004,Ley N° 9232,26 Dic 1940
+101101,Chavinillo,Yarowilca,Huanuco,2004,,RENAMU,2004,Ley N° 203,14 Set 1906
+101102,Cahuac,Yarowilca,Huanuco,2004,,RENAMU,2004,Ley N° 11694,03 Ene 1952
+101103,Chacabamba,Yarowilca,Huanuco,2004,,RENAMU,2004,,06 Set 1920
+101104,Aparicio Pomares,Yarowilca,Huanuco,2004,,RENAMU,2004,,02 Ene 1857
+101105,Jacas Chico,Yarowilca,Huanuco,2004,,RENAMU,2004,Ley N° 13419,20 Abr 1960
+101106,Obas,Yarowilca,Huanuco,2004,,RENAMU,2004,,02 Ene 1857
+101107,Pampamarca,Yarowilca,Huanuco,2004,,RENAMU,2004,Ley N° 25142,16 Dic 1989
+101108,Choras,Yarowilca,Huanuco,2004,,RENAMU,2004,Ley N° 27414,02 Feb 2001
+110101,Ica,Ica,Ica,2004,,RENAMU,2004,Epoca de la Independencia,
+110102,La Tinguiña,Ica,Ica,2004,,RENAMU,2004,Ley N° 13791,28 Dic 1961
+110103,Los Aquijes,Ica,Ica,2004,,RENAMU,2004,Ley N° 5566,29 Nov 1926
+110104,Ocucaje,Ica,Ica,2004,,RENAMU,2004,Ley N° 23833,18 May 1984
+110105,Pachacutec,Ica,Ica,2004,,RENAMU,2004,Ley N° 15114,24 Jul 1964
+110106,Parcona,Ica,Ica,2004,,RENAMU,2004,Ley N° 14046,17 Mar 1962
+110107,Pueblo Nuevo,Ica,Ica,2004,,RENAMU,2004,,30 Ene 1871
+110108,Salas,Ica,Ica,2004,,RENAMU,2004,Ley N° 5030,11 Feb 1925
+110109,San Jose de los Molinos,Ica,Ica,2004,,RENAMU,2004,,14 Jun 1876
+110110,San Juan Bautista,Ica,Ica,2004,,RENAMU,2004,,25 Jun 1876
+110111,Santiago,Ica,Ica,2004,,RENAMU,2004,,31 Oct 1870
+110112,Subtanjalla,Ica,Ica,2004,,RENAMU,2004,Ley N° 13174,10 Feb 1959
+110113,Tate,Ica,Ica,2004,,RENAMU,2004,Ley N° 14843,24 Ene 1964
+110114,Yauca del Rosario,Ica,Ica,2004,,RENAMU,2004,,25 Jun 1855
+110201,Chincha Alta,Chincha,Ica,2004,,RENAMU,2004,Epoca de la Independencia,
+110202,Alto Laran,Chincha,Ica,2004,,RENAMU,2004,Ley N° 15411,29 Ene 1965
+110203,Chavin,Chincha,Ica,2004,,RENAMU,2004,Epoca de la Independencia,
+110204,Chincha Baja,Chincha,Ica,2004,,RENAMU,2004,Epoca de la Independencia,
+110205,El Carmen,Chincha,Ica,2004,,RENAMU,2004,Ley N° 2235,28 Ago 1916
+110206,Grocio Prado,Chincha,Ica,2004,,RENAMU,2004,Ley N° 10044,07 Dic 1944
+110207,Pueblo Nuevo,Chincha,Ica,2004,,RENAMU,2004,Ley N° 15414,29 Ene 1965
+110208,San Juan de Yanac,Chincha,Ica,2004,,RENAMU,2004,Ley N° 15433,12 Feb 1965
+110209,San Pedro de Huacarpana,Chincha,Ica,2004,,RENAMU,2004,Ley N° 11620,22 Set 1951
+110210,Sunampe,Chincha,Ica,2004,,RENAMU,2004,Ley N° 10098,22 Dic 1944
+110211,Tambo de Mora,Chincha,Ica,2004,,RENAMU,2004,,05 Feb 1875
+110301,Nasca,Nasca,Ica,2004,,RENAMU,2004,Epoca de la Independencia,
+110302,Changuillo,Nasca,Ica,2004,,RENAMU,2004,Ley N° 10165,12 Ene 1945
+110303,El Ingenio,Nasca,Ica,2004,,RENAMU,2004,Ley N° 2548,19 Nov 1917
+110304,Marcona,Nasca,Ica,2004,,RENAMU,2004,Ley N° 12314,
+110305,Vista Alegre,Nasca,Ica,2004,,RENAMU,2004,Ley N° 23927,20 Set 1984
+110401,Palpa,Palpa,Ica,2004,,RENAMU,2004,Epoca de la Independencia,
+110402,Llipata,Palpa,Ica,2004,,RENAMU,2004,Ley N° 11969,16 Ene 1953
+110403,Rio Grande,Palpa,Ica,2004,,RENAMU,2004,Ley N° 11969,16 Ene 1953
+110404,Santa Cruz,Palpa,Ica,2004,,RENAMU,2004,Ley N° 11969,16 Ene 1953
+110405,Tibillo,Palpa,Ica,2004,,RENAMU,2004,Ley N° 11969,16 Ene 1953
+110501,Pisco,Pisco,Ica,2004,,RENAMU,2004,Epoca de la Independencia,
+110502,Huancano,Pisco,Ica,2004,,RENAMU,2004,,13 Oct 1900
+110503,Humay,Pisco,Ica,2004,,RENAMU,2004,,25 Jun 1855
+110504,Independencia,Pisco,Ica,2004,,RENAMU,2004,Ley N° 9637,29 Oct 1942
+110505,Paracas,Pisco,Ica,2004,,RENAMU,2004,Ley N° 11597,08 Mar 1951
+110506,San Andres,Pisco,Ica,2004,,RENAMU,2004,Ley N° 4431,09 Dic 1921
+110507,San Clemente,Pisco,Ica,2004,,RENAMU,2004,Ley N° 24161,04 Jun 1985
+110508,Tupac Amaru Inca,Pisco,Ica,2004,,RENAMU,2004,Ley N° 24525,06 Jun 1986
+120101,Huancayo,Huancayo,Junin,2004,,RENAMU,2004,,02 Ene 1857
+120104,Carhuacallanga,Huancayo,Junin,2004,,RENAMU,2004,Ley N° 9296,16 Ene 1941
+120105,Chacapampa,Huancayo,Junin,2004,,RENAMU,2004,Ley N° 13204,15 Abr 1959
+120106,Chicche,Huancayo,Junin,2004,,RENAMU,2004,Ley N° 13745,02 Dic 1961
+120107,Chilca,Huancayo,Junin,2004,,RENAMU,2004,Ley N° 12829,02 May 1957
+120108,Chongos Alto,Huancayo,Junin,2004,,RENAMU,2004,Ley N° 631,11 Nov 1907
+120111,Chupuro,Huancayo,Junin,2004,,RENAMU,2004,Ley N° 13444,14 Oct 1960
+120112,Colca,Huancayo,Junin,2004,,RENAMU,2004,,02 Ene 1857
+120113,Cullhuas,Huancayo,Junin,2004,,RENAMU,2004,Ley N° 12103,23 Abr 1954
+120114,El Tambo,Huancayo,Junin,2004,,RENAMU,2004,Ley N° 9847,13 Nov 1943
+120116,Huacrapuquio,Huancayo,Junin,2004,,RENAMU,2004,Ley N° 9068,20 Mar 1940
+120117,Hualhuas,Huancayo,Junin,2004,,RENAMU,2004,Ley N° 9458,13 Dic 1941
+120119,Huancan,Huancayo,Junin,2004,,RENAMU,2004,Ley N° 12401,31 Oct 1955
+120120,Huasicancha,Huancayo,Junin,2004,,RENAMU,2004,Ley N° 6849,07 Abr 1930
+120121,Huayucachi,Huancayo,Junin,2004,,RENAMU,2004,,10 Nov 1896
+120122,Ingenio,Huancayo,Junin,2004,,RENAMU,2004,Ley N° 12334,10 Jun 1955
+120124,Pariahuanca,Huancayo,Junin,2004,,RENAMU,2004,,02 Ene 1857
+120125,Pilcomayo,Huancayo,Junin,2004,,RENAMU,2004,Ley N° 9963,15 Set 1944
+120126,Pucara,Huancayo,Junin,2004,,RENAMU,2004,Ley N° 2926,06 Dic 1918
+120127,Quichuay,Huancayo,Junin,2004,,RENAMU,2004,Ley N° 12447,24 Nov 1955
+120128,Quilcas,Huancayo,Junin,2004,,RENAMU,2004,Ley N° 11846,27 May 1952
+120129,San Agustin,Huancayo,Junin,2004,,RENAMU,2004,Ley N° 9067,20 Mar 1940
+120130,San Jeronimo de Tunan,Huancayo,Junin,2004,,RENAMU,2004,,05 Oct 1854
+120132,Saño,Huancayo,Junin,2004,,RENAMU,2004,Ley N° 12129,15 Oct 1954
+120133,Sapallanga,Huancayo,Junin,2004,,RENAMU,2004,,02 Ene 1857
+120134,Sicaya,Huancayo,Junin,2004,,RENAMU,2004,,02 Ene 1857
+120135,Santo Domingo de Acobamba,Huancayo,Junin,2004,,RENAMU,2004,,06 Set 1920
+120136,Viques,Huancayo,Junin,2004,,RENAMU,2004,Ley N° 9475,24 Dic 1941
+120201,Concepcion,Concepcion,Junin,2004,,RENAMU,2004,,02 Ene 1857
+120202,Aco,Concepcion,Junin,2004,,RENAMU,2004,Ley N° 2604,03 Dic 1917
+120203,Andamarca,Concepcion,Junin,2004,,RENAMU,2004,Ley N° 6794,05 Mar 1930
+120204,Chambara,Concepcion,Junin,2004,,RENAMU,2004,Ley N° 9451,28 Nov 1941
+120205,Cochas,Concepcion,Junin,2004,,RENAMU,2004,Ley N° 12099,07 Abr 1954
+120206,Comas,Concepcion,Junin,2004,,RENAMU,2004,Epoca de la Independencia,
+120207,Heroinas Toledo,Concepcion,Junin,2004,,RENAMU,2004,Ley N° 12536,09 Ene 1956
+120208,Manzanares,Concepcion,Junin,2004,,RENAMU,2004,Ley N° 11963,16 Ene 1953
+120209,Mariscal Castilla,Concepcion,Junin,2004,,RENAMU,2004,Ley N° 12417,07 Nov 1955
+120210,Matahuasi,Concepcion,Junin,2004,,RENAMU,2004,,23 Oct 1896
+120211,Mito,Concepcion,Junin,2004,,RENAMU,2004,Epoca de la Independencia,
+120212,Nueve de Julio,Concepcion,Junin,2004,,RENAMU,2004,Ley N° 13838,09 Ene 1962
+120213,Orcotuna,Concepcion,Junin,2004,,RENAMU,2004,,02 Ene 1857
+120214,San Jose de Quero,Concepcion,Junin,2004,,RENAMU,2004,Ley N° 12373,28 Jun 1955
+120215,Santa Rosa de Ocopa,Concepcion,Junin,2004,,RENAMU,2004,,29 Ago 1921
+120301,Chanchamayo,Chanchamayo,Junin,2004,,RENAMU,2004,,31 Dic 1855
+120302,Perene,Chanchamayo,Junin,2004,,RENAMU,2004,Ley N° 24445,14 Ene 1986
+120303,Pichanaqui,Chanchamayo,Junin,2004,,RENAMU,2004,,24 Set 1977
+120304,San Luis de Shuaro,Chanchamayo,Junin,2004,,RENAMU,2004,,24 Set 1977
+120305,San Ramon,Chanchamayo,Junin,2004,,RENAMU,2004,Ley N° 820,14 Nov 1908
+120306,Vitoc,Chanchamayo,Junin,2004,,RENAMU,2004,,27 Ene 1871
+120401,Jauja,Jauja,Junin,2004,,RENAMU,2004,Epoca de la Independencia,
+120402,Acolla,Jauja,Junin,2004,,RENAMU,2004,,26 Oct 1886
+120403,Apata,Jauja,Junin,2004,,RENAMU,2004,,02 Ene 1857
+120404,Ataura,Jauja,Junin,2004,,RENAMU,2004,Ley N° 8068,27 Mar 1935
+120405,Canchayllo,Jauja,Junin,2004,,RENAMU,2004,Ley N° 12126,15 Oct 1954
+120406,Curicaca,Jauja,Junin,2004,,RENAMU,2004,Ley N° 14065,02 May 1962
+120407,El Mantaro,Jauja,Junin,2004,,RENAMU,2004,Ley N° 4404,23 Oct 1921
+120408,Huamali,Jauja,Junin,2004,,RENAMU,2004,Ley N° 1490,
+120409,Huaripampa,Jauja,Junin,2004,,RENAMU,2004,Epoca de la Independencia,
+120410,Huertas,Jauja,Junin,2004,,RENAMU,2004,Ley N° 12067,12 Ene 1954
+120411,Janjaillo,Jauja,Junin,2004,,RENAMU,2004,Ley N° 13202,15 Abr 1959
+120412,Julcan,Jauja,Junin,2004,,RENAMU,2004,Ley N° 5011,21 Ene 1925
+120413,Leonor Ordoñez,Jauja,Junin,2004,,RENAMU,2004,,29 Set 1920
+120414,Llocllapampa,Jauja,Junin,2004,,RENAMU,2004,,23 Oct 1896
+120415,Marco,Jauja,Junin,2004,,RENAMU,2004,Ley N° 569,16 Oct 1907
+120416,Masma,Jauja,Junin,2004,,RENAMU,2004,Ley N° 2264,02 Oct 1916
+120417,Masma Chicche,Jauja,Junin,2004,,RENAMU,2004,Ley N° 14924,28 Feb 1964
+120418,Molinos,Jauja,Junin,2004,,RENAMU,2004,Ley N° 12535,09 Ene 1956
+120419,Monobamba,Jauja,Junin,2004,,RENAMU,2004,Ley N° 12638,02 Feb 1956
+120420,Muqui,Jauja,Junin,2004,,RENAMU,2004,Ley N° 12333,10 Jun 1955
+120421,Muquiyauyo,Jauja,Junin,2004,,RENAMU,2004,,26 Oct 1886
+120422,Paca,Jauja,Junin,2004,,RENAMU,2004,Ley N° 9827,30 Set 1943
+120423,Paccha,Jauja,Junin,2004,,RENAMU,2004,,15 Jun 1920
+120424,Pancan,Jauja,Junin,2004,,RENAMU,2004,Ley N° 12553,26 Ene 1956
+120425,Parco,Jauja,Junin,2004,,RENAMU,2004,,09 Dic 1920
+120426,Pomacancha,Jauja,Junin,2004,,RENAMU,2004,Ley N° 13730,20 Nov 1961
+120427,Ricran,Jauja,Junin,2004,,RENAMU,2004,Ley N° 9909,20 Ene 1944
+120428,San Lorenzo,Jauja,Junin,2004,,RENAMU,2004,Ley N° 9631,21 Oct 1942
+120429,San Pedro de Chunan,Jauja,Junin,2004,,RENAMU,2004,Ley N° 12173,14 Dic 1954
+120430,Sausa,Jauja,Junin,2004,,RENAMU,2004,Ley N° 15437,24 Feb 1965
+120431,Sincos,Jauja,Junin,2004,,RENAMU,2004,,02 Ene 1857
+120432,Tunan Marca,Jauja,Junin,2004,,RENAMU,2004,Ley N° 9963,15 Set 1944
+120433,Yauli,Jauja,Junin,2004,,RENAMU,2004,Ley N° 9909,20 Ene 1944
+120434,Yauyos,Jauja,Junin,2004,,RENAMU,2004,Ley N° 15412,29 Ene 1965
+120501,Junin,Junin,Junin,2004,,RENAMU,2004,Epoca de la Independencia,
+120502,Carhuamayo,Junin,Junin,2004,,RENAMU,2004,Epoca de la Independencia,
+120503,Ondores,Junin,Junin,2004,,RENAMU,2004,Ley N° 10031,27 Nov 1944
+120504,Ulcumayo,Junin,Junin,2004,,RENAMU,2004,Ley N° 5516,26 Oct 1926
+120601,Satipo,Satipo,Junin,2004,,RENAMU,2004,Ley N° 9171,18 Dic 1940
+120602,Coviriali,Satipo,Junin,2004,,RENAMU,2004,Ley N° 15481,26 Mar 1965
+120603,Llaylla,Satipo,Junin,2004,,RENAMU,2004,Ley N° 15481,26 Mar 1965
+120604,Mazamari,Satipo,Junin,2004,,RENAMU,2004,Ley N° 15481,26 Mar 1965
+120605,Pampa Hermosa,Satipo,Junin,2004,,RENAMU,2004,Ley N° 15481,26 Mar 1965
+120606,Pangoa,Satipo,Junin,2004,,RENAMU,2004,Ley N° 15481,26 Mar 1965
+120607,Rio Negro,Satipo,Junin,2004,,RENAMU,2004,Ley N° 15481,26 Mar 1965
+120608,Rio Tambo,Satipo,Junin,2004,,RENAMU,2004,Ley N° 9801,29 Ene 1943
+120609,Vizcatán del Ene,Satipo,Junin,2015,,ley de creacion,2018,Ley N° 30346,02 Oct 2015
+120701,Tarma,Tarma,Junin,2004,,RENAMU,2004,Epoca de la Independencia,
+120702,Acobamba,Tarma,Junin,2004,,RENAMU,2004,,02 Ene 1857
+120703,Huaricolca,Tarma,Junin,2004,,RENAMU,2004,Ley N° 13011,14 Jun 1958
+120704,Huasahuasi,Tarma,Junin,2004,,RENAMU,2004,,02 Ene 1857
+120705,La Union,Tarma,Junin,2004,,RENAMU,2004,,30 Abr 1936
+120706,Palca,Tarma,Junin,2004,,RENAMU,2004,,02 Ene 1857
+120707,Palcamayo,Tarma,Junin,2004,,RENAMU,2004,,02 Ene 1857
+120708,San Pedro de Cajas,Tarma,Junin,2004,,RENAMU,2004,Ley N° 7629,02 Nov 1932
+120709,Tapo,Tarma,Junin,2004,,RENAMU,2004,,02 Ene 1857
+120801,La Oroya,Yauli,Junin,2004,,RENAMU,2004,,15 Nov 1893
+120802,Chacapalpa,Yauli,Junin,2004,,RENAMU,2004,,28 Nov 1876
+120803,Huay-Huay,Yauli,Junin,2004,,RENAMU,2004,Ley N° 13425,05 May 1960
+120804,Marcapomacocha,Yauli,Junin,2004,,RENAMU,2004,Epoca de la Independencia,
+120805,Morococha,Yauli,Junin,2004,,RENAMU,2004,Ley N° 682,21 Dic 1907
+120806,Paccha,Yauli,Junin,2004,,RENAMU,2004,Ley N° 12982,17 Mar 1958
+120807,Santa Barbara de Carhuacayan,Yauli,Junin,2004,,RENAMU,2004,Ley N° 12097,07 Abr 1954
+120808,Santa Rosa de Sacco,Yauli,Junin,2004,,RENAMU,2004,Ley N° 17033,01 Jun 1968
+120809,Suitucancha,Yauli,Junin,2004,,RENAMU,2004,Ley N° 13854,13 Ene 1962
+120810,Yauli,Yauli,Junin,2004,,RENAMU,2004,Epoca de la Independencia,
+120901,Chupaca,Chupaca,Junin,2004,,RENAMU,2004,Epoca de la Independencia,
+120902,Ahuac,Chupaca,Junin,2004,,RENAMU,2004,Ley N° 110,14 Nov 1905
+120903,Chongos Bajo,Chupaca,Junin,2004,,RENAMU,2004,,05 Oct 1854
+120904,Huachac,Chupaca,Junin,2004,,RENAMU,2004,Ley N° 9274,08 Ene 1941
+120905,Huamancaca Chico,Chupaca,Junin,2004,,RENAMU,2004,Ley N° 14037,06 Mar 1962
+120906,San Juan de Iscos,Chupaca,Junin,2004,,RENAMU,2004,Ley N° 9163,05 Set 1940
+120907,San Juan de Jarpa,Chupaca,Junin,2004,,RENAMU,2004,Ley N° 7860,16 Oct 1933
+120908,Tres de Diciembre,Chupaca,Junin,2004,,RENAMU,2004,Ley N° 13246,14 Jul 1959
+120909,Yanacancha,Chupaca,Junin,2004,,RENAMU,2004,Ley N° 13672,14 Jul 1961
+130101,Trujillo,Trujillo,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+130102,El Porvenir,Trujillo,La Libertad,2004,,RENAMU,2004,Ley N° 15368,08 Ene 1965
+130103,Florencia de Mora,Trujillo,La Libertad,2004,,RENAMU,2004,Ley N° 24316,17 Set 1985
+130104,Huanchaco,Trujillo,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+130105,La Esperanza,Trujillo,La Libertad,2004,,RENAMU,2004,Ley N° 15418,29 Ene 1965
+130106,Laredo,Trujillo,La Libertad,2004,,RENAMU,2004,Ley N° 13792,28 Dic 1961
+130107,Moche,Trujillo,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+130108,Poroto,Trujillo,La Libertad,2004,,RENAMU,2004,Ley N° 14952,07 Mar 1964
+130109,Salaverry,Trujillo,La Libertad,2004,,RENAMU,2004,,04 Ene 1879
+130110,Simbal,Trujillo,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+130111,Victor Larco Herrera,Trujillo,La Libertad,2004,,RENAMU,2004,Ley N° 9781,22 Ene 1943
+130112,Alto Trujillo,Trujillo,La Libertad,2022,,ley de creacion,2023,Ley N° 31644,15 Dic 2022
+130201,Ascope,Ascope,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+130202,Chicama,Ascope,La Libertad,2004,,RENAMU,2004,,02 Ene 1857
+130203,Chocope,Ascope,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+130204,Magdalena de Cao,Ascope,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+130205,Paijan,Ascope,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+130206,Razuri,Ascope,La Libertad,2004,,RENAMU,2004,Ley N° 5099,09 May 1925
+130207,Santiago de Cao,Ascope,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+130208,Casa Grande,Ascope,La Libertad,2004,,RENAMU,2004,Ley N° 26916,21 Ene 1998
+130301,Bolivar,Bolivar,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+130302,Bambamarca,Bolivar,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+130303,Condormarca,Bolivar,La Libertad,2004,,RENAMU,2004,Ley N° 2346,20 Nov 1916
+130304,Longotea,Bolivar,La Libertad,2004,,RENAMU,2004,Ley N° 2346,20 Nov 1916
+130305,Uchumarca,Bolivar,La Libertad,2004,,RENAMU,2004,,02 Ene 1857
+130306,Ucuncha,Bolivar,La Libertad,2004,,RENAMU,2004,Ley N° 2346,20 Nov 1916
+130401,Chepen,Chepen,La Libertad,2004,,RENAMU,2004,,18 Abr 1935
+130402,Pacanga,Chepen,La Libertad,2004,,RENAMU,2004,Ley N° 9222,05 Dic 1940
+130403,Pueblo Nuevo,Chepen,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+130501,Julcan,Julcan,La Libertad,2004,,RENAMU,2004,Ley N° 13659,12 Jun 1961
+130502,Calamarca,Julcan,La Libertad,2004,,RENAMU,2004,Ley N° 25261,19 Jun 1990
+130503,Carabamba,Julcan,La Libertad,2004,,RENAMU,2004,Ley N° 25261,19 Jun 1990
+130504,Huaso,Julcan,La Libertad,2004,,RENAMU,2004,Ley N° 25261,19 Jun 1990
+130601,Otuzco,Otuzco,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+130602,Agallpampa,Otuzco,La Libertad,2004,,RENAMU,2004,Ley N° 9370,10 Set 1941
+130604,Charat,Otuzco,La Libertad,2004,,RENAMU,2004,,14 May 1876
+130605,Huaranchal,Otuzco,La Libertad,2004,,RENAMU,2004,,17 Dic 1866
+130606,La Cuesta,Otuzco,La Libertad,2004,,RENAMU,2004,,14 May 1876
+130608,Mache,Otuzco,La Libertad,2004,,RENAMU,2004,Ley N° 14951,07 Mar 1964
+130610,Paranday,Otuzco,La Libertad,2004,,RENAMU,2004,Ley N° 13229,28 Abr 1959
+130611,Salpo,Otuzco,La Libertad,2004,,RENAMU,2004,,24 Dic 1847
+130613,Sinsicap,Otuzco,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+130614,Usquil,Otuzco,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+130701,San Pedro de Lloc,Pacasmayo,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+130702,Guadalupe,Pacasmayo,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+130703,Jequetepeque,Pacasmayo,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+130704,Pacasmayo,Pacasmayo,La Libertad,2004,,RENAMU,2004,,23 Nov 1864
+130705,San Jose,Pacasmayo,La Libertad,2004,,RENAMU,2004,,02 Ene 1857
+130801,Tayabamba,Pataz,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+130802,Buldibuyo,Pataz,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+130803,Chillia,Pataz,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+130804,Huancaspata,Pataz,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+130805,Huaylillas,Pataz,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+130806,Huayo,Pataz,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+130807,Ongon,Pataz,La Libertad,2004,,RENAMU,2004,,25 Nov 1876
+130808,Parcoy,Pataz,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+130809,Pataz,Pataz,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+130810,Pias,Pataz,La Libertad,2004,,RENAMU,2004,Ley N° 12402,31 Oct 1955
+130811,Santiago de Challas,Pataz,La Libertad,2004,,RENAMU,2004,Ley N° 24693,18 Jun 1987
+130812,Taurija,Pataz,La Libertad,2004,,RENAMU,2004,Ley N° 9406,18 Oct 1941
+130813,Urpay,Pataz,La Libertad,2004,,RENAMU,2004,Ley N° 13173,10 Feb 1959
+130901,Huamachuco,Sanchez Carrion,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+130902,Chugay,Sanchez Carrion,La Libertad,2004,,RENAMU,2004,Ley N° 9864,13 Dic 1943
+130903,Cochorco,Sanchez Carrion,La Libertad,2004,,RENAMU,2004,Ley N° 9864,13 Dic 1943
+130904,Curgos,Sanchez Carrion,La Libertad,2004,,RENAMU,2004,Ley N° 9864,13 Dic 1943
+130905,Marcabal,Sanchez Carrion,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+130906,Sanagoran,Sanchez Carrion,La Libertad,2004,,RENAMU,2004,,03 Nov 1900
+130907,Sarin,Sanchez Carrion,La Libertad,2004,,RENAMU,2004,,03 Nov 1900
+130908,Sartimbamba,Sanchez Carrion,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+131001,Santiago de Chuco,Santiago de Chuco,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+131002,Angasmarca,Santiago de Chuco,La Libertad,2004,,RENAMU,2004,Ley N° 24315,21 Set 1985
+131003,Cachicadan,Santiago de Chuco,La Libertad,2004,,RENAMU,2004,,03 Nov 1900
+131004,Mollebamba,Santiago de Chuco,La Libertad,2004,,RENAMU,2004,,03 Ago 1920
+131005,Mollepata,Santiago de Chuco,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+131006,Quiruvilca,Santiago de Chuco,La Libertad,2004,,RENAMU,2004,Ley N° 2338,13 Nov 1916
+131007,Santa Cruz de Chuca,Santiago de Chuco,La Libertad,2004,,RENAMU,2004,,20 Feb 1959
+131008,Sitabamba,Santiago de Chuco,La Libertad,2004,,RENAMU,2004,,03 Nov 1900
+131101,Cascas,Gran Chimu,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+131102,Lucma,Gran Chimu,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+131103,Marmot,Gran Chimu,La Libertad,2004,,RENAMU,2004,,14 May 1876
+131104,Sayapullo,Gran Chimu,La Libertad,2004,,RENAMU,2004,,11 Feb 1855
+131201,Viru,Viru,La Libertad,2004,,RENAMU,2004,Epoca de la Independencia,
+131202,Chao,Viru,La Libertad,2004,,RENAMU,2004,Ley N° 26427,04 Ene 1995
+131203,Guadalupito,Viru,La Libertad,2004,,RENAMU,2004,Ley N° 26427,04 Ene 1995
+140101,Chiclayo,Chiclayo,Lambayeque,2004,,RENAMU,2004,Epoca de la Independencia,
+140102,Chongoyape,Chiclayo,Lambayeque,2004,,RENAMU,2004,,30 Jul 1840
+140103,Eten,Chiclayo,Lambayeque,2004,,RENAMU,2004,Epoca de la Independencia,
+140104,Eten Puerto,Chiclayo,Lambayeque,2004,,RENAMU,2004,Ley N° 448,19 Dic 1906
+140105,Jose Leonardo Ortiz,Chiclayo,Lambayeque,2004,,RENAMU,2004,Ley N° 13734,28 Nov 1961
+140106,La Victoria,Chiclayo,Lambayeque,2004,,RENAMU,2004,Ley N° 23926,13 Set 1984
+140107,Lagunas,Chiclayo,Lambayeque,2004,,RENAMU,2004,,02 Feb 1857
+140108,Monsefu,Chiclayo,Lambayeque,2004,,RENAMU,2004,Epoca de la Independencia,
+140109,Nueva Arica,Chiclayo,Lambayeque,2004,,RENAMU,2004,,25 Ene 1944
+140110,Oyotun,Chiclayo,Lambayeque,2004,,RENAMU,2004,Ley N° 5290,23 Nov 1925
+140111,Picsi,Chiclayo,Lambayeque,2004,,RENAMU,2004,Epoca de la Independencia,
+140112,Pimentel,Chiclayo,Lambayeque,2004,,RENAMU,2004,Ley N° 4155,18 Oct 1920
+140113,Reque,Chiclayo,Lambayeque,2004,,RENAMU,2004,Epoca de la Independencia,
+140114,Santa Rosa,Chiclayo,Lambayeque,2004,,RENAMU,2004,,02 Ago 1920
+140115,Saña,Chiclayo,Lambayeque,2004,,RENAMU,2004,Epoca de la Independencia,
+140116,Cayalti,Chiclayo,Lambayeque,2004,,RENAMU,2004,Ley N° 26921,29 Ene 1998
+140117,Patapo,Chiclayo,Lambayeque,2004,,RENAMU,2004,Ley N° 26921,29 Ene 1998
+140118,Pomalca,Chiclayo,Lambayeque,2004,,RENAMU,2004,Ley N° 26921,29 Ene 1998
+140119,Pucala,Chiclayo,Lambayeque,2004,,RENAMU,2004,Ley N° 26921,29 Ene 1998
+140120,Tuman,Chiclayo,Lambayeque,2004,,RENAMU,2004,Ley N° 26921,29 Ene 1998
+140201,Ferreñafe,Ferreñafe,Lambayeque,2004,,RENAMU,2004,Epoca de la Independencia,
+140202,Cañaris,Ferreñafe,Lambayeque,2004,,RENAMU,2004,Ley N° 11590,17 Feb 1951
+140203,Incahuasi,Ferreñafe,Lambayeque,2004,,RENAMU,2004,Ley N° 11590,17 Feb 1951
+140204,Manuel Antonio Mesones Muro,Ferreñafe,Lambayeque,2004,,RENAMU,2004,Ley N° 11590,17 Feb 1951
+140205,Pitipo,Ferreñafe,Lambayeque,2004,,RENAMU,2004,Ley N° 11590,17 Feb 1951
+140206,Pueblo Nuevo,Ferreñafe,Lambayeque,2004,,RENAMU,2004,Ley N° 11590,17 Feb 1951
+140301,Lambayeque,Lambayeque,Lambayeque,2004,,RENAMU,2004,Epoca de la Independencia,
+140302,Chochope,Lambayeque,Lambayeque,2004,,RENAMU,2004,Ley N° 1114,11 Oct 1909
+140303,Illimo,Lambayeque,Lambayeque,2004,,RENAMU,2004,,22 Nov 1905
+140304,Jayanca,Lambayeque,Lambayeque,2004,,RENAMU,2004,Epoca de la Independencia,
+140305,Mochumi,Lambayeque,Lambayeque,2004,,RENAMU,2004,Epoca de la Independencia,
+140306,Morrope,Lambayeque,Lambayeque,2004,,RENAMU,2004,Epoca de la Independencia,
+140307,Motupe,Lambayeque,Lambayeque,2004,,RENAMU,2004,Epoca de la Independencia,
+140308,Olmos,Lambayeque,Lambayeque,2004,,RENAMU,2004,Epoca de la Independencia,
+140309,Pacora,Lambayeque,Lambayeque,2004,,RENAMU,2004,Epoca de la Independencia,
+140310,Salas,Lambayeque,Lambayeque,2004,,RENAMU,2004,Epoca de la Independencia,
+140311,San Jose,Lambayeque,Lambayeque,2004,,RENAMU,2004,,17 Nov 1894
+140312,Tucume,Lambayeque,Lambayeque,2004,,RENAMU,2004,,17 Nov 1894
+150101,Lima,Lima,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150102,Ancon,Lima,Lima,2004,,RENAMU,2004,,29 Oct 1874
+150103,Ate,Lima,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150104,Barranco,Lima,Lima,2004,,RENAMU,2004,,26 Oct 1874
+150105,Breña,Lima,Lima,2004,,RENAMU,2004,,15 Jul 1949
+150106,Carabayllo,Lima,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150107,Chaclacayo,Lima,Lima,2004,,RENAMU,2004,Ley N° 9080,24 Abr 1940
+150108,Chorrillos,Lima,Lima,2004,,RENAMU,2004,,02 Ene 1857
+150109,Cieneguilla,Lima,Lima,2004,,RENAMU,2004,,
+150110,Comas,Lima,Lima,2004,,RENAMU,2004,Ley N° 13757,12 Dic 1961
+150111,El Agustino,Lima,Lima,2004,,RENAMU,2004,Ley N° 15353,06 Ene 1965
+150112,Independencia,Lima,Lima,2004,,RENAMU,2004,Ley N° 14965,16 Mar 1964
+150113,Jesus Maria,Lima,Lima,2004,,RENAMU,2004,Ley N° 14763,13 Dic 1963
+150114,La Molina,Lima,Lima,2004,,RENAMU,2004,Ley N° 13981,06 Feb 1962
+150115,La Victoria,Lima,Lima,2004,,RENAMU,2004,,02 Feb 1920
+150116,Lince,Lima,Lima,2004,,RENAMU,2004,Ley N° 8281,29 May 1936
+150117,Los Olivos,Lima,Lima,2004,,RENAMU,2004,Ley N° 25017,06 Abr 1989
+150118,Lurigancho,Lima,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150119,Lurin,Lima,Lima,2004,,RENAMU,2004,,02 Ene 1857
+150120,Magdalena del Mar,Lima,Lima,2004,,RENAMU,2004,Ley N° 4101,10 May 1920
+150121,Pueblo Libre,Lima,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150122,Miraflores,Lima,Lima,2004,,RENAMU,2004,,02 Ene 1857
+150123,Pachacamac,Lima,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150124,Pucusana,Lima,Lima,2004,,RENAMU,2004,Ley N° 9782,22 Ene 1943
+150125,Puente Piedra,Lima,Lima,2004,,RENAMU,2004,Ley N° 5675,14 Feb 1927
+150126,Punta Hermosa,Lima,Lima,2004,,RENAMU,2004,Ley N° 12095,07 Abr 1954
+150127,Punta Negra,Lima,Lima,2004,,RENAMU,2004,Ley N° 12096,07 Abr 1954
+150128,Rimac,Lima,Lima,2004,,RENAMU,2004,,02 Feb 1920
+150129,San Bartolo,Lima,Lima,2004,,RENAMU,2004,Ley N° 10582,05 May 1946
+150130,San Borja,Lima,Lima,2004,,RENAMU,2004,Ley N° 23604,01 Jun 1983
+150131,San Isidro,Lima,Lima,2004,,RENAMU,2004,,24 Abr 1931
+150132,San Juan de Lurigancho,Lima,Lima,2004,,RENAMU,2004,Ley N° 16382,13 Ene 1967
+150133,San Juan de Miraflores,Lima,Lima,2004,,RENAMU,2004,Ley N° 15382,12 Ene 1965
+150134,San Luis,Lima,Lima,2004,,RENAMU,2004,Ley N° 17023,30 May 1968
+150135,San Martin de Porres,Lima,Lima,2004,,RENAMU,2004,,22 May 1950
+150136,San Miguel,Lima,Lima,2004,,RENAMU,2004,Ley N° 4101,10 May 1920
+150137,Santa Anita,Lima,Lima,2004,,RENAMU,2004,Ley N° 25116,25 Oct 1989
+150138,Santa Maria del Mar,Lima,Lima,2004,,RENAMU,2004,Ley N° 13888,16 Ene 1962
+150139,Santa Rosa,Lima,Lima,2004,,RENAMU,2004,Ley N° 13982,06 Feb 1962
+150140,Santiago de Surco,Lima,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150141,Surquillo,Lima,Lima,2004,,RENAMU,2004,,15 Jul 1949
+150142,Villa el Salvador,Lima,Lima,2004,,RENAMU,2004,Ley N° 23605,01 Jun 1983
+150143,Villa Maria del Triunfo,Lima,Lima,2004,,RENAMU,2004,Ley N° 13796,28 Dic 1961
+150201,Barranca,Barranca,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150202,Paramonga,Barranca,Lima,2004,,RENAMU,2004,,23 Nov 1976
+150203,Pativilca,Barranca,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150204,Supe,Barranca,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150205,Supe Puerto,Barranca,Lima,2004,,RENAMU,2004,Ley N° 410,05 Dic 1906
+150301,Cajatambo,Cajatambo,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150302,Copa,Cajatambo,Lima,2004,,RENAMU,2004,,02 Ene 1857
+150303,Gorgor,Cajatambo,Lima,2004,,RENAMU,2004,,02 Ene 1857
+150304,Huancapon,Cajatambo,Lima,2004,,RENAMU,2004,,25 Set 1868
+150305,Manas,Cajatambo,Lima,2004,,RENAMU,2004,,22 Ene 1921
+150401,Canta,Canta,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150402,Arahuay,Canta,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150403,Huamantanga,Canta,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150404,Huaros,Canta,Lima,2004,,RENAMU,2004,Ley N° 10151,30 Dic 1944
+150405,Lachaqui,Canta,Lima,2004,,RENAMU,2004,Ley N° 11726,16 Ene 1952
+150406,San Buenaventura,Canta,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150407,Santa Rosa de Quives,Canta,Lima,2004,,RENAMU,2004,Ley N° 11726,16 Ene 1952
+150501,San Vicente de Cañete,Cañete,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150502,Asia,Cañete,Lima,2004,,RENAMU,2004,Ley N° 15112,24 Jul 1964
+150503,Calango,Cañete,Lima,2004,,RENAMU,2004,,04 Nov 1887
+150504,Cerro Azul,Cañete,Lima,2004,,RENAMU,2004,,16 Ago 1921
+150505,Chilca,Cañete,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150506,Coayllo,Cañete,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150507,Imperial,Cañete,Lima,2004,,RENAMU,2004,Ley N° 1170,15 Nov 1909
+150508,Lunahuana,Cañete,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150509,Mala,Cañete,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150510,Nuevo Imperial,Cañete,Lima,2004,,RENAMU,2004,Ley N° 14154,22 Jun 1962
+150511,Pacaran,Cañete,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150512,Quilmana,Cañete,Lima,2004,,RENAMU,2004,Ley N° 9962,15 Set 1944
+150513,San Antonio,Cañete,Lima,2004,,RENAMU,2004,Ley N° 4611,27 Dic 1922
+150514,San Luis,Cañete,Lima,2004,,RENAMU,2004,,12 Ene 1871
+150515,Santa Cruz de Flores,Cañete,Lima,2004,,RENAMU,2004,Ley N° 4611,27 Dic 1922
+150516,Zuñiga,Cañete,Lima,2004,,RENAMU,2004,Ley N° 9674,13 Dic 1942
+150601,Huaral,Huaral,Lima,2004,,RENAMU,2004,,31 Oct 1890
+150602,Atavillos Alto,Huaral,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150603,Atavillos Bajo,Huaral,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150604,Aucallama,Huaral,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150605,Chancay,Huaral,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150606,Ihuari,Huaral,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150607,Lampian,Huaral,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150608,Pacaraos,Huaral,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150609,San Miguel de Acos,Huaral,Lima,2004,,RENAMU,2004,,31 Dic 1956
+150610,Santa Cruz de Andamarca,Huaral,Lima,2004,,RENAMU,2004,Ley N° 15468,19 Mar 1965
+150611,Sumbilca,Huaral,Lima,2004,,RENAMU,2004,,06 Nov 1903
+150612,Veintisiete de Noviembre,Huaral,Lima,2004,,RENAMU,2004,Ley N° 12702,18 Ene 1957
+150701,Matucana,Huarochiri,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150702,Antioquia,Huarochiri,Lima,2004,,RENAMU,2004,Ley N° 8074,05 Abr 1935
+150703,Callahuanca,Huarochiri,Lima,2004,,RENAMU,2004,Ley N° 12825,12 Abr 1957
+150704,Carampoma,Huarochiri,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150705,Chicla,Huarochiri,Lima,2004,,RENAMU,2004,Ley N° 11981,04 Mar 1953
+150706,Cuenca,Huarochiri,Lima,2004,,RENAMU,2004,Ley N° 8074,05 Abr 1935
+150707,Huachupampa,Huarochiri,Lima,2004,,RENAMU,2004,Ley N° 15113,24 Jul 1964
+150708,Huanza,Huarochiri,Lima,2004,,RENAMU,2004,Ley N° 13237,08 Jun 1959
+150709,Huarochiri,Huarochiri,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150710,Lahuaytambo,Huarochiri,Lima,2004,,RENAMU,2004,Ley N° 9875,31 Dic 1943
+150711,Langa,Huarochiri,Lima,2004,,RENAMU,2004,Ley N° 1622,17 Nov 1912
+150712,San Pedro de Laraos,Huarochiri,Lima,2004,,RENAMU,2004,Ley N° 15246,04 Dic 1964
+150713,Mariatana,Huarochiri,Lima,2004,,RENAMU,2004,Ley N° 12119,11 Oct 1954
+150714,Ricardo Palma,Huarochiri,Lima,2004,,RENAMU,2004,Ley N° 9964,15 Set 1944
+150715,San Andres de Tupicocha,Huarochiri,Lima,2004,,RENAMU,2004,Ley N° 9875,31 Dic 1943
+150716,San Antonio,Huarochiri,Lima,2004,,RENAMU,2004,Ley N° 10161,05 Ene 1945
+150717,San Bartolome,Huarochiri,Lima,2004,,RENAMU,2004,Ley N° 12001,09 Nov 1953
+150718,San Damian,Huarochiri,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150719,San Juan de Iris,Huarochiri,Lima,2004,,RENAMU,2004,Ley N° 15110,24 Jul 1964
+150720,San Juan de Tantaranche,Huarochiri,Lima,2004,,RENAMU,2004,Ley N° 14027,16 Feb 1962
+150721,San Lorenzo de Quinti,Huarochiri,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150722,San Mateo,Huarochiri,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150723,San Mateo de Otao,Huarochiri,Lima,2004,,RENAMU,2004,Ley N° 10001,07 Nov 1944
+150724,San Pedro de Casta,Huarochiri,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150725,San Pedro de Huancayre,Huarochiri,Lima,2004,,RENAMU,2004,Ley N° 14076,15 May 1962
+150726,Sangallaya,Huarochiri,Lima,2004,,RENAMU,2004,Ley N° 12113,30 Set 1954
+150727,Santa Cruz de Cocachacra,Huarochiri,Lima,2004,,RENAMU,2004,Ley N° 13261,29 Oct 1959
+150728,Santa Eulalia,Huarochiri,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150729,Santiago de Anchucaya,Huarochiri,Lima,2004,,RENAMU,2004,Ley N° 14048,17 Mar 1962
+150730,Santiago de Tuna,Huarochiri,Lima,2004,,RENAMU,2004,Ley N° 9875,31 Dic 1943
+150731,Santo Domingo de los Olleros,Huarochiri,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150732,Surco,Huarochiri,Lima,2004,,RENAMU,2004,,15 Set 1920
+150801,Huacho,Huaura,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150802,Ambar,Huaura,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150803,Caleta de Carquin,Huaura,Lima,2004,,RENAMU,2004,Ley N° 9389,30 Set 1941
+150804,Checras,Huaura,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150805,Hualmay,Huaura,Lima,2004,,RENAMU,2004,Ley N° 2918,06 Dic 1918
+150806,Huaura,Huaura,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150807,Leoncio Prado,Huaura,Lima,2004,,RENAMU,2004,Ley N° 11973,30 Ene 1953
+150808,Paccho,Huaura,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150809,Santa Leonor,Huaura,Lima,2004,,RENAMU,2004,Ley N° 9127,03 Jun 1940
+150810,Santa Maria,Huaura,Lima,2004,,RENAMU,2004,Ley N° 2918,06 Dic 1918
+150811,Sayan,Huaura,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150812,Vegueta,Huaura,Lima,2004,,RENAMU,2004,,23 Ago 1920
+150901,Oyon,Oyon,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+150902,Andajes,Oyon,Lima,2004,,RENAMU,2004,,02 Ene 1857
+150903,Caujul,Oyon,Lima,2004,,RENAMU,2004,,30 Ene 1871
+150904,Cochamarca,Oyon,Lima,2004,,RENAMU,2004,,02 Ene 1857
+150905,Navan,Oyon,Lima,2004,,RENAMU,2004,Ley N° 11984,27 Mar 1953
+150906,Pachangara,Oyon,Lima,2004,,RENAMU,2004,,28 Ene 1863
+151001,Yauyos,Yauyos,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+151002,Alis,Yauyos,Lima,2004,,RENAMU,2004,,
+151003,Allauca,Yauyos,Lima,2004,,RENAMU,2004,,16 Ago 1920
+151004,Ayaviri,Yauyos,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+151005,Azangaro,Yauyos,Lima,2004,,RENAMU,2004,Ley N° 12191,15 Feb 1955
+151006,Cacra,Yauyos,Lima,2004,,RENAMU,2004,Ley N° 8427,15 Jul 1936
+151007,Carania,Yauyos,Lima,2004,,RENAMU,2004,,03 Dic 1901
+151008,Catahuasi,Yauyos,Lima,2004,,RENAMU,2004,Ley N° 24524,06 Jun 1986
+151009,Chocos,Yauyos,Lima,2004,,RENAMU,2004,Ley N° 12100,07 Abr 1954
+151010,Cochas,Yauyos,Lima,2004,,RENAMU,2004,Ley N° 13432,22 Jul 1960
+151011,Colonia,Yauyos,Lima,2004,,RENAMU,2004,Ley N° 8423,15 Jul 1936
+151012,Hongos,Yauyos,Lima,2004,,RENAMU,2004,Ley N° 15413,29 Ene 1965
+151013,Huampara,Yauyos,Lima,2004,,RENAMU,2004,Ley N° 8276,13 May 1936
+151014,Huancaya,Yauyos,Lima,2004,,RENAMU,2004,Ley N° 2189,15 Nov 1915
+151015,Huangascar,Yauyos,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+151016,Huantan,Yauyos,Lima,2004,,RENAMU,2004,,02 Ene 1857
+151017,Huañec,Yauyos,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+151018,Laraos,Yauyos,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+151019,Lincha,Yauyos,Lima,2004,,RENAMU,2004,Ley N° 13245,07 Jul 1959
+151020,Madean,Yauyos,Lima,2004,,RENAMU,2004,Ley N° 15478,26 Mar 1965
+151021,Miraflores,Yauyos,Lima,2004,,RENAMU,2004,Ley N° 8199,13 Mar 1936
+151022,Omas,Yauyos,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+151023,Putinza,Yauyos,Lima,2004,,RENAMU,2004,Ley N° 15154,06 Oct 1964
+151024,Quinches,Yauyos,Lima,2004,,RENAMU,2004,,02 Ene 1857
+151025,Quinocay,Yauyos,Lima,2004,,RENAMU,2004,Ley N° 13412,25 Mar 1960
+151026,San Joaquin,Yauyos,Lima,2004,,RENAMU,2004,Ley N° 12120,11 Oct 1954
+151027,San Pedro de Pilas,Yauyos,Lima,2004,,RENAMU,2004,Ley N° 12846,11 Oct 1957
+151028,Tanta,Yauyos,Lima,2004,,RENAMU,2004,Ley N° 12644,02 Feb 1956
+151029,Tauripampa,Yauyos,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+151030,Tomas,Yauyos,Lima,2004,,RENAMU,2004,Ley N° 7857,16 Oct 1933
+151031,Tupe,Yauyos,Lima,2004,,RENAMU,2004,Ley N° 8423,15 Jul 1936
+151032,Viñac,Yauyos,Lima,2004,,RENAMU,2004,Epoca de la Independencia,
+151033,Vitis,Yauyos,Lima,2004,,RENAMU,2004,Ley N° 9949,07 Feb 1944
+160101,Iquitos,Maynas,Loreto,2004,,RENAMU,2004,,07 Feb 1866
+160102,Alto Nanay,Maynas,Loreto,2004,,RENAMU,2004,Ley N° 9815,02 Jul 1943
+160103,Fernando Lores,Maynas,Loreto,2004,,RENAMU,2004,Ley N° 8311,08 Jun 1936
+160104,Indiana,Maynas,Loreto,2004,,RENAMU,2004,Ley N° 13780,21 Dic 1961
+160105,Las Amazonas,Maynas,Loreto,2004,,RENAMU,2004,Ley N° 9815,02 Jul 1943
+160106,Mazan,Maynas,Loreto,2004,,RENAMU,2004,Ley N° 9815,02 Jul 1943
+160107,Napo,Maynas,Loreto,2004,,RENAMU,2004,Ley N° 9815,02 Jul 1943
+160108,Punchana,Maynas,Loreto,2004,,RENAMU,2004,Ley N° 24765,16 Dic 1987
+160109,Putumayo,Maynas,Loreto,2004,2014,RENAMU,2004,,
+160110,Torres Causana,Maynas,Loreto,2004,,RENAMU,2004,Ley N° 9815,02 Jul 1943
+160112,Belen,Maynas,Loreto,2004,,RENAMU,2004,Ley N° 27195,05 Nov 1999
+160113,San Juan Bautista,Maynas,Loreto,2004,,RENAMU,2004,Ley N° 27195,05 Nov 1999
+160114,Teniente Manuel Clavero,Maynas,Loreto,2004,2014,ley de creacion,2007,,
+160201,Yurimaguas,Alto Amazonas,Loreto,2004,,RENAMU,2004,,07 Feb 1866
+160202,Balsapuerto,Alto Amazonas,Loreto,2004,,RENAMU,2004,,02 Ene 1857
+160203,Barranca,Alto Amazonas,Loreto,2004,2005,RENAMU,2004,,
+160204,Cahuapanas,Alto Amazonas,Loreto,2004,2005,RENAMU,2004,,
+160205,Jeberos,Alto Amazonas,Loreto,2004,,RENAMU,2004,,02 Ene 1857
+160206,Lagunas,Alto Amazonas,Loreto,2004,,RENAMU,2004,,02 Ene 1857
+160207,Manseriche,Alto Amazonas,Loreto,2004,2005,RENAMU,2004,,
+160208,Morona,Alto Amazonas,Loreto,2004,2005,RENAMU,2004,,
+160209,Pastaza,Alto Amazonas,Loreto,2004,2005,RENAMU,2004,,
+160210,Santa Cruz,Alto Amazonas,Loreto,2004,,RENAMU,2004,,07 Feb 1866
+160211,Teniente Cesar Lopez Rojas,Alto Amazonas,Loreto,2004,,RENAMU,2004,Ley N° 15136,08 Set 1964
+160301,Nauta,Loreto,Loreto,2004,,RENAMU,2004,,02 Ene 1857
+160302,Parinari,Loreto,Loreto,2004,,RENAMU,2004,,07 Feb 1866
+160303,Tigre,Loreto,Loreto,2004,,RENAMU,2004,Ley N° 9815,02 Jul 1943
+160304,Trompeteros,Loreto,Loreto,2004,,RENAMU,2004,Ley N° 24696,18 Jun 1987
+160305,Urarinas,Loreto,Loreto,2004,,RENAMU,2004,Ley N° 9815,02 Jul 1943
+160401,Ramon Castilla,Mariscal Ramon Castilla,Loreto,2004,,RENAMU,2004,Ley N° 9815,02 Jul 1943
+160402,Pebas,Mariscal Ramon Castilla,Loreto,2004,,RENAMU,2004,,07 Feb 1866
+160403,Yavari,Mariscal Ramon Castilla,Loreto,2004,,RENAMU,2004,Ley N° 9815,02 Jul 1943
+160404,San Pablo,Mariscal Ramon Castilla,Loreto,2004,,RENAMU,2004,Ley N° 26240,19 Oct 1993
+160501,Requena,Requena,Loreto,2004,,RENAMU,2004,Ley N° 9815,02 Jul 1943
+160502,Alto Tapiche,Requena,Loreto,2004,,RENAMU,2004,Ley N° 10633,20 Jul 1946
+160503,Capelo,Requena,Loreto,2004,,RENAMU,2004,Ley N° 10633,20 Jul 1946
+160504,Emilio San Martin,Requena,Loreto,2004,,RENAMU,2004,Ley N° 1534,22 Ene 1912
+160505,Maquia,Requena,Loreto,2004,,RENAMU,2004,Ley N° 10633,20 Jul 1946
+160506,Puinahua,Requena,Loreto,2004,,RENAMU,2004,,02 Jul 1943
+160507,Saquena,Requena,Loreto,2004,,RENAMU,2004,Ley N° 9815,02 Jul 1943
+160508,Soplin,Requena,Loreto,2004,,RENAMU,2004,Ley N° 10633,20 Jul 1946
+160509,Tapiche,Requena,Loreto,2004,,RENAMU,2004,Ley N° 9815,02 Jul 1943
+160510,Jenaro Herrera,Requena,Loreto,2004,,RENAMU,2004,Ley N° 26239,19 Oct 1993
+160511,Yaquerana,Requena,Loreto,2004,,RENAMU,2004,Ley N° 9815,02 Jul 1943
+160601,Contamana,Ucayali,Loreto,2004,,RENAMU,2004,,13 Oct 1900
+160602,Inahuaya,Ucayali,Loreto,2004,,RENAMU,2004,Ley N° 14024,16 Feb 1962
+160603,Padre Marquez,Ucayali,Loreto,2004,,RENAMU,2004,Ley N° 9815,02 Jul 1943
+160604,Pampa Hermosa,Ucayali,Loreto,2004,,RENAMU,2004,Ley N° 13692,15 Set 1961
+160605,Sarayacu,Ucayali,Loreto,2004,,RENAMU,2004,,02 Ene 1857
+160606,Vargas Guerra,Ucayali,Loreto,2004,,RENAMU,2004,Ley N° 8311,08 Jun 1936
+160701,Barranca,Datem del Marañon,Loreto,2006,,RENAMU,2006,,26 Oct 1886
+160702,Cahuapanas,Datem del Marañon,Loreto,2006,,RENAMU,2006,,07 Feb 1866
+160703,Manseriche,Datem del Marañon,Loreto,2006,,RENAMU,2006,Ley N° 9815,02 Jul 1943
+160704,Morona,Datem del Marañon,Loreto,2006,,RENAMU,2006,Ley N° 9815,02 Jul 1943
+160705,Pastaza,Datem del Marañon,Loreto,2006,,RENAMU,2006,Ley N° 9815,02 Jul 1943
+160706,Andoas,Datem del Marañon,Loreto,2005,,ley de creacion,2007,Ley N° 28593,01 Ago 2005
+160801,Putumayo,Putumayo,Loreto,2015,,RENAMU,2015,Ley N° 9815,02 Jul 1943
+160802,Rosa Panduro,Putumayo,Loreto,2014,,ley de creacion,2016,Ley N° 30186,05 May 2014
+160803,Teniente Manuel Clavero,Putumayo,Loreto,2015,,RENAMU,2015,Ley N° 28362,19 Oct 2004
+160804,Yaguas,Putumayo,Loreto,2014,,ley de creacion,2016,Ley N° 30186,05 May 2014
+170101,Tambopata,Tambopata,Madre de Dios,2004,,RENAMU,2004,Ley Nº 1782,26 Dic 1912
+170102,Inambari,Tambopata,Madre de Dios,2004,,RENAMU,2004,Ley Nº 1782,26 Dic 1912
+170103,Las Piedras,Tambopata,Madre de Dios,2004,,RENAMU,2004,Ley Nº 1782,26 Dic 1912
+170104,Laberinto,Tambopata,Madre de Dios,2004,,RENAMU,2004,Ley Nº 26346,09 Set 1994
+170201,Manu,Manu,Madre de Dios,2004,,RENAMU,2004,Ley Nº 1782,26 Dic 1912
+170202,Fitzcarrald,Manu,Madre de Dios,2004,,RENAMU,2004,Ley Nº 1782,26 Dic 1912
+170203,Madre de Dios,Manu,Madre de Dios,2004,,RENAMU,2004,Ley Nº 1782,26 Dic 1912
+170204,Huepetuhe,Manu,Madre de Dios,2004,,RENAMU,2004,,09 Jun 2000
+170301,Iñapari,Tahuamanu,Madre de Dios,2004,,RENAMU,2004,Ley Nº 1782,26 Dic 1912
+170302,Iberia,Tahuamanu,Madre de Dios,2004,,RENAMU,2004,Ley Nº 13656,07 Jun 1961
+170303,Tahuamanu,Tahuamanu,Madre de Dios,2004,,RENAMU,2004,Ley Nº 1782,26 Dic 1912
+180101,Moquegua,Mariscal Nieto,Moquegua,2004,,RENAMU,2004,Epoca de la Independencia,
+180102,Carumas,Mariscal Nieto,Moquegua,2004,,RENAMU,2004,Epoca de la Independencia,
+180103,Cuchumbaya,Mariscal Nieto,Moquegua,2004,,RENAMU,2004,Ley N° 9940,31 Ene 1944
+180104,Samegua,Mariscal Nieto,Moquegua,2004,,RENAMU,2004,,08 Nov 1894
+180105,San Cristobal,Mariscal Nieto,Moquegua,2004,,RENAMU,2004,Ley N° 9940,31 Ene 1944
+180106,Torata,Mariscal Nieto,Moquegua,2004,,RENAMU,2004,Epoca de la Independencia,
+180107,San Antonio,Mariscal Nieto,Moquegua,2021,,ley de creacion,2023,Ley N° 31216,14 Jun 2021
+180201,Omate,General Sanchez Cerro,Moquegua,2004,,RENAMU,2004,Epoca de la Independencia,
+180202,Chojata,General Sanchez Cerro,Moquegua,2004,,RENAMU,2004,Ley N° 12193,15 Feb 1955
+180203,Coalaque,General Sanchez Cerro,Moquegua,2004,,RENAMU,2004,Ley N° 12563,26 Ene 1956
+180204,Ichuña,General Sanchez Cerro,Moquegua,2004,,RENAMU,2004,,02 Ene 1857
+180205,La Capilla,General Sanchez Cerro,Moquegua,2004,,RENAMU,2004,Ley N° 9617,30 Set 1942
+180206,Lloque,General Sanchez Cerro,Moquegua,2004,,RENAMU,2004,Ley N° 12641,02 Feb 1956
+180207,Matalaque,General Sanchez Cerro,Moquegua,2004,,RENAMU,2004,,28 Ago 1920
+180208,Puquina,General Sanchez Cerro,Moquegua,2004,,RENAMU,2004,Epoca de la Independencia,
+180209,Quinistaquillas,General Sanchez Cerro,Moquegua,2004,,RENAMU,2004,Ley N° 12337,10 Jun 1955
+180210,Ubinas,General Sanchez Cerro,Moquegua,2004,,RENAMU,2004,Epoca de la Independencia,
+180211,Yunga,General Sanchez Cerro,Moquegua,2004,,RENAMU,2004,Ley N° 15466,19 Mar 1965
+180301,Ilo,Ilo,Moquegua,2004,,RENAMU,2004,Epoca de la Independencia,
+180302,El Algarrobal,Ilo,Moquegua,2004,,RENAMU,2004,,26 May 1970
+180303,Pacocha,Ilo,Moquegua,2004,,RENAMU,2004,,26 May 1970
+190101,Chaupimarca,Pasco,Pasco,2004,,RENAMU,2004,Ley N° 10030,27 Nov 1944
+190102,Huachon,Pasco,Pasco,2004,,RENAMU,2004,Ley N° 4859,27 Dic 1923
+190103,Huariaca,Pasco,Pasco,2004,,RENAMU,2004,Epoca de la Independencia,
+190104,Huayllay,Pasco,Pasco,2004,,RENAMU,2004,Epoca de la Independencia,
+190105,Ninacaca,Pasco,Pasco,2004,,RENAMU,2004,,02 Ene 1857
+190106,Pallanchacra,Pasco,Pasco,2004,,RENAMU,2004,Ley N° 13268,14 Nov 1959
+190107,Paucartambo,Pasco,Pasco,2004,,RENAMU,2004,,23 May 1857
+190108,San Francisco de Asis de Yarusyacan,Pasco,Pasco,2004,,RENAMU,2004,Ley N° 13693,16 Set 1961
+190109,Simon Bolivar,Pasco,Pasco,2004,,RENAMU,2004,Ley N° 12292,15 Abr 1955
+190110,Ticlacayan,Pasco,Pasco,2004,,RENAMU,2004,,14 Jun 1958
+190111,Tinyahuarco,Pasco,Pasco,2004,,RENAMU,2004,Ley N° 2443,12 Set 1917
+190112,Vicco,Pasco,Pasco,2004,,RENAMU,2004,Ley N° 12981,17 Mar 1958
+190113,Yanacancha,Pasco,Pasco,2004,,RENAMU,2004,Ley N° 10030,27 Nov 1944
+190201,Yanahuanca,Daniel Alcides Carrion,Pasco,2004,,RENAMU,2004,Epoca de la Independencia,
+190202,Chacayan,Daniel Alcides Carrion,Pasco,2004,,RENAMU,2004,Epoca de la Independencia,
+190203,Goyllarisquizga,Daniel Alcides Carrion,Pasco,2004,,RENAMU,2004,Ley N° 10030,27 Nov 1944
+190204,Paucar,Daniel Alcides Carrion,Pasco,2004,,RENAMU,2004,Ley N° 11905,04 Dic 1952
+190205,San Pedro de Pillao,Daniel Alcides Carrion,Pasco,2004,,RENAMU,2004,Ley N° 13276,15 Dic 1959
+190206,Santa Ana de Tusi,Daniel Alcides Carrion,Pasco,2004,,RENAMU,2004,Ley N° 12548,12 Ene 1956
+190207,Tapuc,Daniel Alcides Carrion,Pasco,2004,,RENAMU,2004,,02 Ene 1857
+190208,Vilcabamba,Daniel Alcides Carrion,Pasco,2004,,RENAMU,2004,,06 Set 1920
+190301,Oxapampa,Oxapampa,Pasco,2004,,RENAMU,2004,,14 May 1876
+190302,Chontabamba,Oxapampa,Pasco,2004,,RENAMU,2004,Ley N° 10030,27 Nov 1944
+190303,Huancabamba,Oxapampa,Pasco,2004,,RENAMU,2004,Ley N° 10030,27 Nov 1944
+190304,Palcazu,Oxapampa,Pasco,2004,,RENAMU,2004,Ley N° 24526,06 Jun 1986
+190305,Pozuzo,Oxapampa,Pasco,2004,,RENAMU,2004,Ley N° 2889,29 Nov 1918
+190306,Puerto Bermudez,Oxapampa,Pasco,2004,,RENAMU,2004,Ley N° 13014,17 Jun 1958
+190307,Villa Rica,Oxapampa,Pasco,2004,,RENAMU,2004,Ley N° 10030,27 Nov 1944
+190308,Constitución,Oxapampa,Pasco,2010,,ley de creacion,2012,Ley N° 29541,14 Jun 2010
+200101,Piura,Piura,Piura,2004,,RENAMU,2004,Epoca de la Independencia,
+200104,Castilla,Piura,Piura,2004,,RENAMU,2004,,30 Mar 1861
+200105,Catacaos,Piura,Piura,2004,,RENAMU,2004,Epoca de la Independencia,
+200107,Cura Mori,Piura,Piura,2004,,RENAMU,2004,Ley N° 15434,19 Feb 1965
+200108,El Tallan,Piura,Piura,2004,,RENAMU,2004,Ley N° 15434,19 Feb 1965
+200109,La Arena,Piura,Piura,2004,,RENAMU,2004,Ley N° 4134,15 Jun 1920
+200110,La Union,Piura,Piura,2004,,RENAMU,2004,Ley N° 9551,28 Dic 1927
+200111,Las Lomas,Piura,Piura,2004,,RENAMU,2004,Ley N° 8231,03 Abr 1936
+200114,Tambo Grande,Piura,Piura,2004,,RENAMU,2004,,08 Oct 1840
+200115,Veintiséis de Octubre,Piura,Piura,2013,,ley de creacion,2015,Ley N° 29991,02 Feb 2013
+200201,Ayabaca,Ayabaca,Piura,2004,,RENAMU,2004,,02 Ene 1857
+200202,Frias,Ayabaca,Piura,2004,,RENAMU,2004,Epoca de la Independencia,
+200203,Jilili,Ayabaca,Piura,2004,,RENAMU,2004,Ley N° 15135,08 Set 1964
+200204,Lagunas,Ayabaca,Piura,2004,,RENAMU,2004,Ley N° 10399,23 Feb 1946
+200205,Montero,Ayabaca,Piura,2004,,RENAMU,2004,Ley N° 8056,24 Mar 1935
+200206,Pacaipampa,Ayabaca,Piura,2004,,RENAMU,2004,,02 Ene 1857
+200207,Paimas,Ayabaca,Piura,2004,,RENAMU,2004,Ley N° 15134,08 Set 1964
+200208,Sapillica,Ayabaca,Piura,2004,,RENAMU,2004,Ley N° 10399,23 Feb 1946
+200209,Sicchez,Ayabaca,Piura,2004,,RENAMU,2004,Ley N° 8243,08 Abr 1936
+200210,Suyo,Ayabaca,Piura,2004,,RENAMU,2004,,02 Ene 1857
+200301,Huancabamba,Huancabamba,Piura,2004,,RENAMU,2004,Epoca de la Independencia,
+200302,Canchaque,Huancabamba,Piura,2004,,RENAMU,2004,,05 Set 1904
+200303,El Carmen de la Frontera,Huancabamba,Piura,2004,,RENAMU,2004,Ley N° 15248,
+200304,Huarmaca,Huancabamba,Piura,2004,,RENAMU,2004,,08 Oct 1840
+200305,Lalaquiz,Huancabamba,Piura,2004,,RENAMU,2004,Ley N° 23760,30 Dic 1983
+200306,San Miguel de el Faique,Huancabamba,Piura,2004,,RENAMU,2004,Ley N° 15415,29 Ene 1965
+200307,Sondor,Huancabamba,Piura,2004,,RENAMU,2004,,02 Ene 1857
+200308,Sondorillo,Huancabamba,Piura,2004,,RENAMU,2004,Ley N° 8066,27 Mar 1935
+200401,Chulucanas,Morropon,Piura,2004,,RENAMU,2004,Ley N° 8174,31 Ene 1936
+200402,Buenos Aires,Morropon,Piura,2004,,RENAMU,2004,Ley N° 9908,20 Ene 1944
+200403,Chalaco,Morropon,Piura,2004,,RENAMU,2004,Epoca de la Independencia,
+200404,La Matanza,Morropon,Piura,2004,,RENAMU,2004,Ley N° 15198,05 Nov 1964
+200405,Morropon,Morropon,Piura,2004,,RENAMU,2004,,02 Ene 1857
+200406,Salitral,Morropon,Piura,2004,,RENAMU,2004,,08 Oct 1840
+200407,San Juan de Bigote,Morropon,Piura,2004,,RENAMU,2004,Ley N° 24627,29 Dic 1986
+200408,Santa Catalina de Mossa,Morropon,Piura,2004,,RENAMU,2004,Ley N° 13007,22 May 1958
+200409,Santo Domingo,Morropon,Piura,2004,,RENAMU,2004,,04 Nov 1887
+200410,Yamango,Morropon,Piura,2004,,RENAMU,2004,Ley N° 23762,30 Dic 1983
+200501,Paita,Paita,Piura,2004,,RENAMU,2004,Epoca de la Independencia,
+200502,Amotape,Paita,Piura,2004,,RENAMU,2004,,08 Oct 1840
+200503,Arenal,Paita,Piura,2004,,RENAMU,2004,,03 Nov 1874
+200504,Colan,Paita,Piura,2004,,RENAMU,2004,,08 Oct 1840
+200505,La Huaca,Paita,Piura,2004,,RENAMU,2004,Epoca de la Independencia,
+200506,Tamarindo,Paita,Piura,2004,,RENAMU,2004,,28 Ago 1920
+200507,Vichayal,Paita,Piura,2004,,RENAMU,2004,,28 Ago 1920
+200601,Sullana,Sullana,Piura,2004,,RENAMU,2004,,08 Oct 1840
+200602,Bellavista,Sullana,Piura,2004,,RENAMU,2004,Ley N° 12140,09 Nov 1954
+200603,Ignacio Escudero,Sullana,Piura,2004,,RENAMU,2004,Ley N° 15611,10 Set 1965
+200604,Lancones,Sullana,Piura,2004,,RENAMU,2004,Ley N° 2603,03 Dic 1917
+200605,Marcavelica,Sullana,Piura,2004,,RENAMU,2004,Ley N° 11794,25 Mar 1952
+200606,Miguel Checa,Sullana,Piura,2004,,RENAMU,2004,Ley N° 11515,10 Nov 1950
+200607,Querecotillo,Sullana,Piura,2004,,RENAMU,2004,Epoca de la Independencia,
+200608,Salitral,Sullana,Piura,2004,,RENAMU,2004,Ley N° 10617,29 Jun 1946
+200701,Pariñas,Talara,Piura,2004,,RENAMU,2004,Ley N° 7627,31 Oct 1932
+200702,El Alto,Talara,Piura,2004,,RENAMU,2004,Ley N° 12217,17 Mar 1955
+200703,La Brea,Talara,Piura,2004,,RENAMU,2004,Ley N° 7627,31 Oct 1932
+200704,Lobitos,Talara,Piura,2004,,RENAMU,2004,Ley N° 12217,17 Mar 1955
+200705,Los Organos,Talara,Piura,2004,,RENAMU,2004,Ley N° 15259,11 Dic 1964
+200706,Mancora,Talara,Piura,2004,,RENAMU,2004,Ley N° 818,14 Nov 1908
+200801,Sechura,Sechura,Piura,2004,,RENAMU,2004,Epoca de la Independencia,
+200802,Bellavista de la Union,Sechura,Piura,2004,,RENAMU,2004,Ley N° 15417,29 Ene 1965
+200803,Bernal,Sechura,Piura,2004,,RENAMU,2004,,20 Set 1921
+200804,Cristo Nos Valga,Sechura,Piura,2004,,RENAMU,2004,Ley N° 15434,19 Feb 1965
+200805,Vice,Sechura,Piura,2004,,RENAMU,2004,Ley N° 4134,15 Jun 1920
+200806,Rinconada Llicuar,Sechura,Piura,2004,,RENAMU,2004,Ley N° 15434,19 Feb 1965
+210101,Puno,Puno,Puno,2004,,RENAMU,2004,,22 Ene 1993
+210102,Acora,Puno,Puno,2004,,RENAMU,2004,,22 Dic 2008
+210103,Amantani,Puno,Puno,2004,,RENAMU,2004,,15 Set 1995
+210104,Atuncolla,Puno,Puno,2004,,RENAMU,2004,,03 Ene 2001
+210105,Capachica,Puno,Puno,2004,,RENAMU,2004,,20 Oct 1989
+210106,Chucuito,Puno,Puno,2004,,RENAMU,2004,,
+210107,Coata,Puno,Puno,2004,,RENAMU,2004,,27 Set 2002
+210108,Huata,Puno,Puno,2004,,RENAMU,2004,,
+210109,Mañazo,Puno,Puno,2004,,RENAMU,2004,,18 Jun 2012
+210110,Paucarcolla,Puno,Puno,2004,,RENAMU,2004,,27 Nov 2013
+210111,Pichacani,Puno,Puno,2004,,RENAMU,2004,Epoca de la Independencia,
+210112,Plateria,Puno,Puno,2004,,RENAMU,2004,,20 Dic 2013
+210113,San Antonio,Puno,Puno,2004,,RENAMU,2004,,08 Set 1993
+210114,Tiquillaca,Puno,Puno,2004,,RENAMU,2004,,
+210115,Vilque,Puno,Puno,2004,,RENAMU,2004,,11 Dic 2013
+210201,Azangaro,Azangaro,Puno,2004,,RENAMU,2004,,
+210202,Achaya,Azangaro,Puno,2004,,RENAMU,2004,,21 Oct 1987
+210203,Arapa,Azangaro,Puno,2004,,RENAMU,2004,,02 Dic 1988
+210204,Asillo,Azangaro,Puno,2004,,RENAMU,2004,,27 Nov 2002
+210205,Caminaca,Azangaro,Puno,2004,,RENAMU,2004,,14 Nov 1988
+210206,Chupa,Azangaro,Puno,2004,,RENAMU,2004,,14 Oct 1997
+210207,Jose Domingo Choquehuanca,Azangaro,Puno,2004,,RENAMU,2004,Ley N° 12121,11 Oct 1954
+210208,Muñani,Azangaro,Puno,2004,,RENAMU,2004,,14 Jun 2004
+210209,Potoni,Azangaro,Puno,2004,,RENAMU,2004,,27 Dic 2013
+210210,Saman,Azangaro,Puno,2004,,RENAMU,2004,,03 Jul 1999
+210211,San Anton,Azangaro,Puno,2004,,RENAMU,2004,,17 Dic 2001
+210212,San Jose,Azangaro,Puno,2004,,RENAMU,2004,,05 Dic 1988
+210213,San Juan de Salinas,Azangaro,Puno,2004,,RENAMU,2004,Ley N° 852,21 Nov 1908
+210214,Santiago de Pupuja,Azangaro,Puno,2004,,RENAMU,2004,Epoca de la Independencia,
+210215,Tirapata,Azangaro,Puno,2004,,RENAMU,2004,,
+210301,Macusani,Carabaya,Puno,2004,,RENAMU,2004,,15 Dic 1994
+210302,Ajoyani,Carabaya,Puno,2004,,RENAMU,2004,,
+210303,Ayapata,Carabaya,Puno,2004,,RENAMU,2004,,6 May 2010
+210304,Coasa,Carabaya,Puno,2004,,RENAMU,2004,,23 Nov 1998
+210305,Corani,Carabaya,Puno,2004,,RENAMU,2004,,24 Nov 2003
+210306,Crucero,Carabaya,Puno,2004,,RENAMU,2004,,20 Nov 1991
+210307,Ituata,Carabaya,Puno,2004,,RENAMU,2004,,09 Set 1989
+210308,Ollachea,Carabaya,Puno,2004,,RENAMU,2004,,05 Dic 2014
+210309,San Gaban,Carabaya,Puno,2004,,RENAMU,2004,,14 Feb 1991
+210310,Usicayos,Carabaya,Puno,2004,,RENAMU,2004,,
+210401,Juli,Chucuito,Puno,2004,,RENAMU,2004,,19 Mar 1990
+210402,Desaguadero,Chucuito,Puno,2004,,RENAMU,2004,,21 Dic 2013
+210403,Huacullani,Chucuito,Puno,2004,,RENAMU,2004,,16 Abr 2002
+210404,Kelluyo,Chucuito,Puno,2004,,RENAMU,2004,,22 Oct 2002
+210405,Pisacoma,Chucuito,Puno,2004,,RENAMU,2004,,
+210406,Pomata,Chucuito,Puno,2004,,RENAMU,2004,,05 Abr 2000
+210407,Zepita,Chucuito,Puno,2004,,RENAMU,2004,,16 Jun 1992
+210501,Ilave,El Collao,Puno,2004,,RENAMU,2004,,
+210502,Capazo,El Collao,Puno,2004,,RENAMU,2004,,12 May 2003
+210503,Pilcuyo,El Collao,Puno,2004,,RENAMU,2004,,25 May 1983
+210504,Santa Rosa,El Collao,Puno,2004,,RENAMU,2004,,31 Dic 2009
+210505,Conduriri,El Collao,Puno,2004,,RENAMU,2004,,25 Set 1990
+210601,Huancane,Huancane,Puno,2004,,RENAMU,2004,,29 Abr 1991
+210602,Cojata,Huancane,Puno,2004,,RENAMU,2004,,01 Dic 1998
+210603,Huatasani,Huancane,Puno,2004,,RENAMU,2004,,
+210604,Inchupalla,Huancane,Puno,2004,,RENAMU,2004,,13 Set 1999
+210605,Pusi,Huancane,Puno,2004,,RENAMU,2004,,31 Dic 2009
+210606,Rosaspata,Huancane,Puno,2004,,RENAMU,2004,,25 Jul 1998
+210607,Taraco,Huancane,Puno,2004,,RENAMU,2004,,19 Mar 1997
+210608,Vilque Chico,Huancane,Puno,2004,,RENAMU,2004,,09 Feb 1988
+210701,Lampa,Lampa,Puno,2004,,RENAMU,2004,,
+210702,Cabanilla,Lampa,Puno,2004,,RENAMU,2004,,30 Dic 2009
+210703,Calapuja,Lampa,Puno,2004,,RENAMU,2004,,
+210704,Nicasio,Lampa,Puno,2004,,RENAMU,2004,,22 May 1987
+210705,Ocuviri,Lampa,Puno,2004,,RENAMU,2004,,13 Dic 2017
+210706,Palca,Lampa,Puno,2004,,RENAMU,2004,,
+210707,Paratia,Lampa,Puno,2004,,RENAMU,2004,,17 Dic 2002
+210708,Pucara,Lampa,Puno,2004,,RENAMU,2004,,
+210709,Santa Lucia,Lampa,Puno,2004,,RENAMU,2004,,20 Ene 2001
+210710,Vilavila,Lampa,Puno,2004,,RENAMU,2004,,
+210801,Ayaviri,Melgar,Puno,2004,,RENAMU,2004,,
+210802,Antauta,Melgar,Puno,2004,,RENAMU,2004,,31 May 2005
+210803,Cupi,Melgar,Puno,2004,,RENAMU,2004,,
+210804,Llalli,Melgar,Puno,2004,,RENAMU,2004,,
+210805,Macari,Melgar,Puno,2004,,RENAMU,2004,,
+210806,Nuñoa,Melgar,Puno,2004,,RENAMU,2004,,23 Dic 2016
+210807,Orurillo,Melgar,Puno,2004,,RENAMU,2004,,12 Jun 2000
+210808,Santa Rosa,Melgar,Puno,2004,,RENAMU,2004,,27 Nov 2009
+210809,Umachiri,Melgar,Puno,2004,,RENAMU,2004,,26 Dic 2013
+210901,Moho,Moho,Puno,2004,,RENAMU,2004,,19 Feb 1993
+210902,Conima,Moho,Puno,2004,,RENAMU,2004,,02 Mar 1994
+210903,Huayrapata,Moho,Puno,2004,,RENAMU,2004,,02 Abr 1994
+210904,Tilali,Moho,Puno,2004,,RENAMU,2004,,
+211001,Putina,San Antonio de Putina,Puno,2004,,RENAMU,2004,,24 Ago 1990
+211002,Ananea,San Antonio de Putina,Puno,2004,,RENAMU,2004,,28 Ene 2004
+211003,Pedro Vilca Apaza,San Antonio de Putina,Puno,2004,,RENAMU,2004,Ley N° 14045,17 Mar 1962
+211004,Quilcapuncu,San Antonio de Putina,Puno,2004,,RENAMU,2004,,06 Oct 1998
+211005,Sina,San Antonio de Putina,Puno,2004,,RENAMU,2004,,
+211101,Juliaca,San Roman,Puno,2004,,RENAMU,2004,Epoca de la Independencia,
+211102,Cabana,San Roman,Puno,2004,,RENAMU,2004,Epoca de la Independencia,
+211103,Cabanillas,San Roman,Puno,2004,,RENAMU,2004,Ley N° 12963,28 Feb 1958
+211104,Caracoto,San Roman,Puno,2004,,RENAMU,2004,Epoca de la Independencia,
+211105,San Miguel,San Roman,Puno,2016,,ley de creacion,2019,Ley N° 30492,26 Jul 2016
+211201,Sandia,Sandia,Puno,2004,,RENAMU,2004,,16 Jun 2009
+211202,Cuyocuyo,Sandia,Puno,2004,,RENAMU,2004,,18 Jul 2000
+211203,Limbani,Sandia,Puno,2004,,RENAMU,2004,,12 Nov 2001
+211204,Patambuco,Sandia,Puno,2004,,RENAMU,2004,,20 Feb 1997
+211205,Phara,Sandia,Puno,2004,,RENAMU,2004,,12 Ago 2002
+211206,Quiaca,Sandia,Puno,2004,,RENAMU,2004,,29 Dic 1995
+211207,San Juan del Oro,Sandia,Puno,2004,,RENAMU,2004,Ley N° 12415,07 Nov 1955
+211208,Yanahuaya,Sandia,Puno,2004,,RENAMU,2004,,
+211209,Alto Inambari,Sandia,Puno,2004,,RENAMU,2004,,09 Abr 2008
+211210,San Pedro de Putina Punco,Sandia,Puno,2005,,ley de creacion,2007,Ley N° 28509,13 May 2005
+211301,Yunguyo,Yunguyo,Puno,2004,,RENAMU,2004,,23 Ago 2002
+211302,Anapia,Yunguyo,Puno,2004,,RENAMU,2004,,
+211303,Copani,Yunguyo,Puno,2004,,RENAMU,2004,,04 Set 1996
+211304,Cuturapi,Yunguyo,Puno,2004,,RENAMU,2004,,30 Jun 1989
+211305,Ollaraya,Yunguyo,Puno,2004,,RENAMU,2004,,04 Set 1995
+211306,Tinicachi,Yunguyo,Puno,2004,,RENAMU,2004,,
+211307,Unicachi,Yunguyo,Puno,2004,,RENAMU,2004,,04 Abr 1994
+220101,Moyobamba,Moyobamba,San Martin,2004,,RENAMU,2004,,02 Ene 1857
+220102,Calzada,Moyobamba,San Martin,2004,,RENAMU,2004,,02 Ene 1857
+220103,Habana,Moyobamba,San Martin,2004,,RENAMU,2004,,02 Ene 1857
+220104,Jepelacio,Moyobamba,San Martin,2004,,RENAMU,2004,Ley N° 4365,26 Oct 1921
+220105,Soritor,Moyobamba,San Martin,2004,,RENAMU,2004,,02 Ene 1857
+220106,Yantalo,Moyobamba,San Martin,2004,,RENAMU,2004,Ley N° 10149,30 Dic 1944
+220201,Bellavista,Bellavista,San Martin,2004,,RENAMU,2004,Ley N° 5215,15 Oct 1925
+220202,Alto Biavo,Bellavista,San Martin,2004,,RENAMU,2004,Ley N° 10164,05 Ene 1945
+220203,Bajo Biavo,Bellavista,San Martin,2004,,RENAMU,2004,Ley N° 9941,31 Ene 1944
+220204,Huallaga,Bellavista,San Martin,2004,,RENAMU,2004,Ley N° 15467,19 Mar 1965
+220205,San Pablo,Bellavista,San Martin,2004,,RENAMU,2004,Ley N° 10164,05 Ene 1945
+220206,San Rafael,Bellavista,San Martin,2004,,RENAMU,2004,Ley N° 10164,05 Ene 1945
+220301,San Jose de Sisa,El Dorado,San Martin,2004,,RENAMU,2004,,25 Nov 1876
+220302,Agua Blanca,El Dorado,San Martin,2004,,RENAMU,2004,Ley N° 9937,29 Ene 1944
+220303,San Martin,El Dorado,San Martin,2004,,RENAMU,2004,Ley N° 14060,06 Abr 1962
+220304,Santa Rosa,El Dorado,San Martin,2004,,RENAMU,2004,Ley N° 14058,06 Abr 1962
+220305,Shatoja,El Dorado,San Martin,2004,,RENAMU,2004,Ley N° 14059,06 Abr 1962
+220401,Saposoa,Huallaga,San Martin,2004,,RENAMU,2004,Epoca de la Independencia,
+220402,Alto Saposoa,Huallaga,San Martin,2004,,RENAMU,2004,Ley N° 14649,13 Set 1963
+220403,El Eslabon,Huallaga,San Martin,2004,,RENAMU,2004,Ley N° 14672,10 Oct 1963
+220404,Piscoyacu,Huallaga,San Martin,2004,,RENAMU,2004,Ley N° 9139,14 Jun 1940
+220405,Sacanche,Huallaga,San Martin,2004,,RENAMU,2004,Ley N° 8282,20 May 1936
+220406,Tingo de Saposoa,Huallaga,San Martin,2004,,RENAMU,2004,Ley N° 8268,08 May 1936
+220501,Lamas,Lamas,San Martin,2004,,RENAMU,2004,Epoca de la Independencia,
+220502,Alonso de Alvarado,Lamas,San Martin,2004,,RENAMU,2004,Ley N° 15269,29 Dic 1964
+220503,Barranquita,Lamas,San Martin,2004,,RENAMU,2004,Ley N° 14008,09 Feb 1962
+220504,Caynarachi,Lamas,San Martin,2004,,RENAMU,2004,,25 Nov 1876
+220505,Cuñumbuqui,Lamas,San Martin,2004,,RENAMU,2004,Ley N° 7848,16 Oct 1933
+220506,Pinto Recodo,Lamas,San Martin,2004,,RENAMU,2004,Ley N° 13972,02 Feb 1962
+220507,Rumisapa,Lamas,San Martin,2004,,RENAMU,2004,Ley N° 8268,08 May 1936
+220508,San Roque de Cumbaza,Lamas,San Martin,2004,,RENAMU,2004,,29 Dic 1964
+220509,Shanao,Lamas,San Martin,2004,,RENAMU,2004,Ley N° 11770,12 Feb 1952
+220510,Tabalosos,Lamas,San Martin,2004,,RENAMU,2004,,25 Nov 1876
+220511,Zapatero,Lamas,San Martin,2004,,RENAMU,2004,Ley N° 12130,15 Oct 1954
+220601,Juanjui,Mariscal Caceres,San Martin,2004,,RENAMU,2004,,07 Feb 1866
+220602,Campanilla,Mariscal Caceres,San Martin,2004,,RENAMU,2004,Ley N° 13070,24 Ene 1959
+220603,Huicungo,Mariscal Caceres,San Martin,2004,,RENAMU,2004,Ley N° 9097,07 May 1940
+220604,Pachiza,Mariscal Caceres,San Martin,2004,,RENAMU,2004,,07 Feb 1886
+220605,Pajarillo,Mariscal Caceres,San Martin,2004,,RENAMU,2004,Ley N° 13765,15 Dic 1961
+220701,Picota,Picota,San Martin,2004,,RENAMU,2004,,
+220702,Buenos Aires,Picota,San Martin,2004,,RENAMU,2004,Ley N° 12094,07 Abr 1954
+220703,Caspisapa,Picota,San Martin,2004,,RENAMU,2004,Ley N° 9941,31 Ene 1944
+220704,Pilluana,Picota,San Martin,2004,,RENAMU,2004,Ley N° 9941,31 Ene 1944
+220705,Pucacaca,Picota,San Martin,2004,,RENAMU,2004,Ley N° 8268,08 May 1936
+220706,San Cristobal,Picota,San Martin,2004,,RENAMU,2004,Ley N° 9941,31 Ene 1944
+220707,San Hilarion,Picota,San Martin,2004,,RENAMU,2004,Ley N° 13250,28 Ago 1859
+220708,Shamboyacu,Picota,San Martin,2004,,RENAMU,2004,Ley N° 15407,29 Ene 1965
+220709,Tingo de Ponasa,Picota,San Martin,2004,,RENAMU,2004,Ley N° 13472,22 Nov 1960
+220710,Tres Unidos,Picota,San Martin,2004,,RENAMU,2004,Ley N° 15435,19 Feb 1965
+220801,Rioja,Rioja,San Martin,2004,,RENAMU,2004,Epoca de la Independencia,
+220802,Awajun,Rioja,San Martin,2004,,RENAMU,2004,Ley N° 24040,26 Dic 1984
+220803,Elias Soplin Vargas,Rioja,San Martin,2004,,RENAMU,2004,Ley N° 24040,26 Dic 1984
+220804,Nueva Cajamarca,Rioja,San Martin,2004,,RENAMU,2004,Ley N° 24040,26 Dic 1984
+220805,Pardo Miguel,Rioja,San Martin,2004,,RENAMU,2004,Ley N° 24040,26 Dic 1984
+220806,Posic,Rioja,San Martin,2004,,RENAMU,2004,Ley N° 8142,09 Dic 1935
+220807,San Fernando,Rioja,San Martin,2004,,RENAMU,2004,Ley N° 24040,26 Dic 1984
+220808,Yorongos,Rioja,San Martin,2004,,RENAMU,2004,Ley N° 8142,09 Dic 1935
+220809,Yuracyacu,Rioja,San Martin,2004,,RENAMU,2004,Ley N° 8142,09 Dic 1935
+220901,Tarapoto,San Martin,San Martin,2004,,RENAMU,2004,Epoca de la Independencia,
+220902,Alberto Leveau,San Martin,San Martin,2004,,RENAMU,2004,Ley N° 13764,15 Dic 1961
+220903,Cacatachi,San Martin,San Martin,2004,,RENAMU,2004,Ley N° 7628,31 Oct 1932
+220904,Chazuta,San Martin,San Martin,2004,,RENAMU,2004,,02 Ene 1857
+220905,Chipurana,San Martin,San Martin,2004,,RENAMU,2004,Ley N° 9941,31 Ene 1944
+220906,El Porvenir,San Martin,San Martin,2004,,RENAMU,2004,Ley N° 14126,18 Jun 1962
+220907,Huimbayoc,San Martin,San Martin,2004,,RENAMU,2004,Ley N° 12062,30 Dic 1953
+220908,Juan Guerra,San Martin,San Martin,2004,,RENAMU,2004,Ley N° 7628,31 Oct 1932
+220909,La Banda de Shilcayo,San Martin,San Martin,2004,,RENAMU,2004,Ley N° 13735,28 Nov 1961
+220910,Morales,San Martin,San Martin,2004,,RENAMU,2004,Ley N° 7628,31 Oct 1932
+220911,Papaplaya,San Martin,San Martin,2004,,RENAMU,2004,Ley N° 8268,08 May 1936
+220912,San Antonio,San Martin,San Martin,2004,,RENAMU,2004,Ley N° 7628,31 Oct 1932
+220913,Sauce,San Martin,San Martin,2004,,RENAMU,2004,,20 May 1936
+220914,Shapaja,San Martin,San Martin,2004,,RENAMU,2004,,14 Ago 1920
+221001,Tocache,Tocache,San Martin,2004,,RENAMU,2004,Ley N° 9097,07 May 1940
+221002,Nuevo Progreso,Tocache,San Martin,2004,,RENAMU,2004,Ley N° 24016,06 Dic 1984
+221003,Polvora,Tocache,San Martin,2004,,RENAMU,2004,Ley N° 24016,06 Dic 1984
+221004,Shunte,Tocache,San Martin,2004,,RENAMU,2004,Ley N° 24016,06 Dic 1984
+221005,Uchiza,Tocache,San Martin,2004,,RENAMU,2004,Ley N° 1595,21 Oct 1912
+221006,Santa Lucia,Tocache,San Martin,2021,,ley de creacion,2023,Ley N° 31128,03 Mar 2021
+230101,Tacna,Tacna,Tacna,2004,,RENAMU,2004,Epoca de la Independencia,
+230102,Alto de la Alianza,Tacna,Tacna,2004,,RENAMU,2004,Ley N° 23828,09 May 1984
+230103,Calana,Tacna,Tacna,2004,,RENAMU,2004,,20 Ago 1872
+230104,Ciudad Nueva,Tacna,Tacna,2004,,RENAMU,2004,Ley N° 25851,16 Nov 1992
+230105,Inclan,Tacna,Tacna,2004,,RENAMU,2004,Ley N° 12445,24 Nov 1955
+230106,Pachia,Tacna,Tacna,2004,,RENAMU,2004,,02 Ene 1857
+230107,Palca,Tacna,Tacna,2004,,RENAMU,2004,Ley N° 13238,08 Jun 1959
+230108,Pocollay,Tacna,Tacna,2004,,RENAMU,2004,Ley N° 13069,15 Ene 1959
+230109,Sama,Tacna,Tacna,2004,,RENAMU,2004,Epoca de la Independencia,
+230110,Coronel Gregorio Albarracin Lanchipa,Tacna,Tacna,2004,,RENAMU,2004,Ley N° 27415,02 Feb 2001
+230111,La Yarada los Palos,Tacna,Tacna,2015,,ley de creacion,2018,Ley N° 30358,07 Nov 2015
+230201,Candarave,Candarave,Tacna,2004,,RENAMU,2004,Epoca de la Independencia,
+230202,Cairani,Candarave,Tacna,2004,,RENAMU,2004,Ley N° 11902,04 Dic 1952
+230203,Camilaca,Candarave,Tacna,2004,,RENAMU,2004,Ley N° 24887,06 Set 1988
+230204,Curibaya,Candarave,Tacna,2004,,RENAMU,2004,,05 Feb 1875
+230205,Huanuara,Candarave,Tacna,2004,,RENAMU,2004,Ley N° 10158,05 Ene 1945
+230206,Quilahuani,Candarave,Tacna,2004,,RENAMU,2004,Ley N° 12194,15 Feb 1955
+230301,Locumba,Jorge Basadre,Tacna,2004,,RENAMU,2004,,27 Jun 1855
+230302,Ilabaya,Jorge Basadre,Tacna,2004,,RENAMU,2004,Epoca de la Independencia,
+230303,Ite,Jorge Basadre,Tacna,2004,,RENAMU,2004,Ley N° 13660,12 Jun 1961
+230401,Tarata,Tarata,Tacna,2004,,RENAMU,2004,Epoca de la Independencia,
+230402,Heroes Albarracin,Tarata,Tacna,2004,,RENAMU,2004,Ley N° 11979,30 Ene 1953
+230403,Estique,Tarata,Tacna,2004,,RENAMU,2004,,02 Ene 1857
+230404,Estique-Pampa,Tarata,Tacna,2004,,RENAMU,2004,Ley N° 12539,12 Ene 1956
+230405,Sitajara,Tarata,Tacna,2004,,RENAMU,2004,Ley N° 12414,07 Nov 1955
+230406,Susapaya,Tarata,Tacna,2004,,RENAMU,2004,Ley N° 12136,26 Oct 1954
+230407,Tarucachi,Tarata,Tacna,2004,,RENAMU,2004,,12 Nov 1874
+230408,Ticaco,Tarata,Tacna,2004,,RENAMU,2004,,12 Nov 1874
+240101,Tumbes,Tumbes,Tumbes,2004,,RENAMU,2004,Epoca de la Independencia,
+240102,Corrales,Tumbes,Tumbes,2004,,RENAMU,2004,,12 Ene 1871
+240103,La Cruz,Tumbes,Tumbes,2004,,RENAMU,2004,Ley N° 14127,18 Jun 1962
+240104,Pampas de Hospital,Tumbes,Tumbes,2004,,RENAMU,2004,Ley N° 14137,18 Jun 1962
+240105,San Jacinto,Tumbes,Tumbes,2004,,RENAMU,2004,Ley N° 12446,24 Nov 1955
+240106,San Juan de la Virgen,Tumbes,Tumbes,2004,,RENAMU,2004,,12 Ene 1871
+240201,Zorritos,Contralmirante Villar,Tumbes,2004,,RENAMU,2004,Ley N° 9667,25 Nov 1942
+240202,Casitas,Contralmirante Villar,Tumbes,2004,,RENAMU,2004,Ley N° 9667,25 Nov 1942
+240203,Canoas de Punta Sal,Contralmirante Villar,Tumbes,2006,,ley de creacion,2008,Ley N° 28707,03 Abr 2006
+240301,Zarumilla,Zarumilla,Tumbes,2004,,RENAMU,2004,,12 Ene 1871
+240302,Aguas Verdes,Zarumilla,Tumbes,2004,,RENAMU,2004,Ley N° 24074,11 Ene 1985
+240303,Matapalo,Zarumilla,Tumbes,2004,,RENAMU,2004,Ley N° 9667,25 Nov 1942
+240304,Papayal,Zarumilla,Tumbes,2004,,RENAMU,2004,Ley N° 9667,25 Nov 1942
+250101,Calleria,Coronel Portillo,Ucayali,2004,,RENAMU,2004,,13 Oct 1900
+250102,Campoverde,Coronel Portillo,Ucayali,2004,,RENAMU,2004,Ley N° 23416,01 Jun 1982
+250103,Iparia,Coronel Portillo,Ucayali,2004,,RENAMU,2004,Ley N° 9815,02 Jul 1943
+250104,Masisea,Coronel Portillo,Ucayali,2004,,RENAMU,2004,,13 Oct 1900
+250105,Yarinacocha,Coronel Portillo,Ucayali,2004,,RENAMU,2004,Ley N° 15170,16 Oct 1964
+250106,Nueva Requena,Coronel Portillo,Ucayali,2004,,RENAMU,2004,Ley N° 26352,13 Set 1994
+250107,Manantay,Coronel Portillo,Ucayali,2006,,ley de creacion,2008,Ley N° 28753,02 Jun 2006
+250201,Raimondi,Atalaya,Ucayali,2004,,RENAMU,2004,Ley N° 9815,02 Jul 1943
+250202,Sepahua,Atalaya,Ucayali,2004,,RENAMU,2004,Ley N° 23416,01 Jun 1982
+250203,Tahuania,Atalaya,Ucayali,2004,,RENAMU,2004,Ley N° 9815,02 Jul 1943
+250204,Yurua,Atalaya,Ucayali,2004,,RENAMU,2004,Ley N° 9815,02 Jul 1943
+250301,Padre Abad,Padre Abad,Ucayali,2004,,RENAMU,2004,Ley N° 13723,13 Nov 1961
+250302,Irazola,Padre Abad,Ucayali,2004,,RENAMU,2004,Ley N° 23416,01 Jun 1982
+250303,Curimana,Padre Abad,Ucayali,2004,,RENAMU,2004,Ley N° 26429,05 Ene 1995
+250304,Neshuya,Padre Abad,Ucayali,2015,,ley de creacion,2018,Ley N° 30310,16 Mar 2015
+250305,Alexander Von Humboldt,Padre Abad,Ucayali,2015,,ley de creacion,2018,Ley N° 30310,16 Mar 2015
+250306,Huipoca,Padre Abad,Ucayali,2021,,ley de creacion,2023,Ley N° 31133,08 Mar 2021
+250307,Boqueron,Padre Abad,Ucayali,2021,,ley de creacion,2023,Ley N° 31141,17 Mar 2021
+250401,Purus,Purus,Ucayali,2004,,RENAMU,2004,Ley N° 9815,02 Jul 1943

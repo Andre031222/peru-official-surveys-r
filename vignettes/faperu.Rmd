@@ -74,6 +74,20 @@ s <- fa_ubigeo(s)
 table(s$department_name)
 ```
 
+District codes change: new provinces moved some districts to new codes, and new districts appear
+every year. To compare years, translate the codes to one base year:
+
+```{r}
+s <- fa_ubigeo(s, year = 2024, base = 2017)
+table(s$ubigeo_status)          # same, recoded, created_after_base, ...
+fa_districts(2017)              # districts valid in the census year
+```
+
+The equivalences come from INEI's municipal registry (RENAMU 2004-2025) and its 2025 national
+directory, and cover only the recodings those sources show. Districts created after the base year
+get `NA`; faperu does not guess which district they came from. The sources and the method are in
+`system.file("ubigeo", "README.md", package = "faperu")`.
+
 ## 6. New years
 
 ```{r}

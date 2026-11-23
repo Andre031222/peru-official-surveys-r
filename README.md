@@ -3,7 +3,7 @@
 **Las encuestas y censos oficiales del Perú en R, con una sola forma de pedirlos.**
 *Peru's official surveys and censuses in R, asked for one way.*
 
-Nueve funciones, cinco dependencias externas (`curl`, `digest`, `haven`, `survey`, `yaml`) y un catálogo en
+Diez funciones, cinco dependencias externas (`curl`, `digest`, `haven`, `survey`, `yaml`) y un catálogo en
 texto. Cada archivo se guarda en caché y se comprueba con sha256. Los años nuevos se detectan solos.
 
 > [!NOTE]
@@ -38,7 +38,8 @@ Weighting by persons gives INEI's official 27.6 %; see the vignette.*
 | `fa_download("ena", 2024, "1893")` | Baja a la caché o reutiliza | Downloads or reuses the cache |
 | `fa_read("ena", 2024, "1893")` | Lee SPSS, Stata o CSV con etiquetas | Reads SPSS, Stata or CSV with labels |
 | `fa_design(datos, "enaho")` | Diseño muestral para `survey` | Survey design for `survey` |
-| `fa_ubigeo(datos)` | Ubigeo, provincia y departamento | Ubigeo, province and department |
+| `fa_ubigeo(datos, year = 2024, base = 2017)` | Ubigeo, provincia, departamento y código en el año base | Ubigeo, province, department and the base-year code |
+| `fa_districts(2017)` | Distritos vigentes ese año | Districts valid that year |
 | `fa_check_updates()` | Años nuevos en la fuente | New years at the source |
 | `fa_cache()` | Carpeta de caché | Cache folder |
 
@@ -67,6 +68,20 @@ fa_cache("/mnt/discoD/Research-Dev/AUP_Papers/datos/inei_microdatos")
 fa_download("ena", 2014, "947")   # status "cached": no baja nada
 ```
 
+## Ubigeo entre años / Ubigeo across years
+
+```r
+e <- fa_ubigeo(enaho_2024, year = 2024, base = 2017)   # para cruzar con el Censo 2017
+table(e$ubigeo_status)
+```
+
+La tabla de equivalencias sale de RENAMU 2004-2025 y del Directorio Nacional 2025 del INEI; solo
+recoge los nueve cambios de código que esas fuentes muestran. Los distritos creados después del año
+base quedan `NA`: no se inventa de qué distrito salieron. Fuentes y método en
+[`inst/ubigeo/README.md`](inst/ubigeo/README.md).
+*Built from INEI's RENAMU 2004-2025 and 2025 National Directory. Districts created after the base
+year get `NA`; no parent district is guessed.*
+
 ## Errores / Errors
 
 Cada error tiene clase `faperu_error` y una subclase (`faperu_error_download`,
@@ -82,7 +97,7 @@ Cada error tiene clase `faperu_error` y una subclase (`faperu_error_download`,
 
 ## Estado / Status
 
-0.1.0, en desarrollo. Falta: armonizar ubigeo entre versiones, diseño muestral de EPEN, ENAPRES,
+0.2.0, en desarrollo. Hecho: ubigeo armonizado entre 2004 y 2025. Falta: diseño muestral de EPEN, ENAPRES,
 ENUT, ENARES y EEA, módulos 2025 de ENAPRES y EEA, ENDES 1996-2009 y el adaptador REDATAM del
 censo. Cambios en [NEWS.md](NEWS.md); guía completa en [vignettes/faperu.Rmd](vignettes/faperu.Rmd).
 
