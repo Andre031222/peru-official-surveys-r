@@ -22,14 +22,15 @@
 #' }
 #' @export
 fa_read <- function(survey, year, module, file = NULL, format = "auto", series = NULL,
-                    cache = fa_cache(), lower = TRUE) {
+                    cache = fa_cache(), lower = TRUE, period = NULL) {
   if (length(module) != 1L) .abort("input", "`module` must be a single code.")
   if (identical(.load(survey)$fuente, "inei_censo")) {
     .abort("unsupported", "The 2017 Census has no module files; query it with fa_redatam().")
   }
-  d <- fa_download(survey, year, module, format = format, series = series, cache = cache)
+  d <- fa_download(survey, year, module, format = format, series = series, cache = cache,
+                   period = period)
   if (nrow(d) != 1L) {
-    .abort("ambiguous", "Module %s matches %d entries; set `series`.", module, nrow(d))
+    .abort("ambiguous", "Module %s matches %d entries; set `series` or `period`.", module, nrow(d))
   }
   .read_zip(d$path, file = file, lower = lower)
 }

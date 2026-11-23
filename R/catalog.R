@@ -59,6 +59,7 @@ fa_catalog <- function(survey, years = NULL) {
     survey = x$id,
     year = vapply(mods, function(m) as.integer(m$anio), integer(1)),
     series = pick(function(m) m$serie, "main"),
+    period = pick(function(m) m$periodo, ""),
     module = pick(function(m) as.character(m$codigo), ""),
     name = pick(function(m) m$nombre, ""),
     formats = pick(function(m) paste(names(m$archivos), collapse = " "), ""),

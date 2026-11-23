@@ -11,6 +11,9 @@
 #' @param format `"auto"` uses the format of the verified copy, or else the
 #'   first of CSV, STATA, SPSS and DBF. You can also ask for one of those.
 #' @param series For sources with several series, e.g. `"panel"` in ENAHO.
+#' @param period For sources with several files per year, the `period`
+#'   shown by [fa_catalog()], e.g. `"Anual - (Ene-Dic)"` in EPEN. A
+#'   regular expression.
 #' @param cache Cache folder, see [fa_cache()].
 #' @param overwrite Download again even if the file is cached.
 #' @return Invisibly, a data frame with one row per module and a `status`
@@ -22,7 +25,7 @@
 #' }
 #' @export
 fa_download <- function(survey, year, module = NULL, format = "auto", series = NULL,
-                        cache = fa_cache(), overwrite = FALSE) {
+                        cache = fa_cache(), overwrite = FALSE, period = NULL) {
   x <- .load(survey)
   if (!x$fuente %in% c("inei_portal", "escale_dir")) {
     .abort("unsupported", "%s has no direct download yet: %s", x$siglas, x$estado)
@@ -31,6 +34,7 @@ fa_download <- function(survey, year, module = NULL, format = "auto", series = N
   todo <- fa_catalog(survey, year)
   if (!is.null(series)) todo <- todo[todo$series %in% series, , drop = FALSE]
   if (!is.null(module)) todo <- todo[todo$module %in% as.character(module), , drop = FALSE]
+  if (!is.null(period)) todo <- todo[grepl(period, todo$period), , drop = FALSE]
   if (nrow(todo) == 0L) {
     .abort("not_found", "No %s modules for %s with those filters. See fa_catalog(\"%s\", %s).",
            x$siglas, year, x$id, year)

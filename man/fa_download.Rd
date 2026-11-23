@@ -11,7 +11,8 @@ fa_download(
   format = "auto",
   series = NULL,
   cache = fa_cache(),
-  overwrite = FALSE
+  overwrite = FALSE,
+  period = NULL
 )
 }
 \arguments{
@@ -30,6 +31,10 @@ first of CSV, STATA, SPSS and DBF. You can also ask for one of those.}
 \item{cache}{Cache folder, see \code{\link[=fa_cache]{fa_cache()}}.}
 
 \item{overwrite}{Download again even if the file is cached.}
+
+\item{period}{For sources with several files per year, the \code{period}
+shown by \code{\link[=fa_catalog]{fa_catalog()}}, e.g. \code{"Anual - (Ene-Dic)"} in EPEN. A
+regular expression.}
 }
 \value{
 Invisibly, a data frame with one row per module and a \code{status}

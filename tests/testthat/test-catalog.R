@@ -17,3 +17,9 @@ test_that("fa_catalog filters by year and keeps checksums", {
   expect_true("34" %in% c24$module)
   expect_true(all(nchar(na.omit(c24$sha256)) == 64))
 })
+
+test_that("EPEN files are told apart by period", {
+  x <- fa_catalog("epen", 2024)
+  dep <- x[x$series == "departamentos" & grepl("^Anual", x$period), ]
+  expect_equal(nrow(dep), 1)
+})

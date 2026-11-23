@@ -12,7 +12,8 @@ fa_read(
   format = "auto",
   series = NULL,
   cache = fa_cache(),
-  lower = TRUE
+  lower = TRUE,
+  period = NULL
 )
 }
 \arguments{
@@ -34,6 +35,10 @@ first of CSV, STATA, SPSS and DBF. You can also ask for one of those.}
 
 \item{lower}{Turn variable names to lower case, so SPSS and Stata files
 look the same.}
+
+\item{period}{For sources with several files per year, the \code{period}
+shown by \code{\link[=fa_catalog]{fa_catalog()}}, e.g. \code{"Anual - (Ene-Dic)"} in EPEN. A
+regular expression.}
 }
 \value{
 A data frame (a tibble for SPSS and Stata files).

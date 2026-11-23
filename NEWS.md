@@ -8,6 +8,8 @@ In development.
   2017 census frame and, for the 18 districts created after 2017, MINEDU's 2025 school register
   (not yet checked against each law). `data-raw/` rebuilds them.
 - New `fa_districts()` lists the districts valid in a year.
+- `fa_catalog()` shows each file's `period`, and `fa_download()` and `fa_read()` take a `period`
+  filter, so EPEN's annual file can be told apart from the department files of the same year.
 - `fa_design()` now covers EPEN, ENAPRES, ENUT, ENARES and the Annual Economic Survey, with names
   checked in INEI's technical sheets and in real 2024-2025 file headers. Strata can cross two
   columns (`"CCDD*AREA"`), weights can be matched by pattern (EPE Lima), EPEN rows without weight
