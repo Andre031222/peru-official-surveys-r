@@ -67,3 +67,9 @@ fa_cache <- function(path = NULL) {
   if (!nzchar(p)) p <- tools::R_user_dir("faperu", "cache")
   p
 }
+
+# Forget what was added to a catalog during the session (used by the tests).
+.fa_reset <- function(survey = NULL) {
+  rm(list = intersect(.or(survey, ls(.fa)), ls(.fa)), envir = .fa)
+  invisible(NULL)
+}

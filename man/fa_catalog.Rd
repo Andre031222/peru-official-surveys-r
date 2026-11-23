@@ -19,6 +19,15 @@ Lists year, module code, name and available formats. When a copy was
 already downloaded and verified, it also gives its relative path, size and
 SHA-256.
 }
+\details{
+When you ask for a year that the catalog does not have, faperu looks it up
+at the source the first time: on the INEI microdata portal for INEI
+surveys (so a year published after this version, or an old one such as
+ENDES 2009, still works) and in the ESCALE folder for the School Census,
+whose catalog only lists the latest year. That needs a connection; the
+modules found are kept for the session, and their \code{series} is the last
+part of the portal survey name.
+}
 \examples{
 head(fa_catalog("enaho", 2024))
 }

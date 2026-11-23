@@ -52,15 +52,79 @@ fa_check_updates <- function(survey = NULL) {
   h
 }
 
-.portal_years <- function(value, h) {
-  body <- paste0("bandera=1&_cmbEncuesta=", .js_escape(value))
-  curl::handle_setopt(h, post = TRUE, postfields = body)
+.portal_post <- function(h, page, body) {
+  curl::handle_setopt(h, post = TRUE, postfields = body, timeout = 60)
   curl::handle_setheaders(h, "Content-Type" = "application/x-www-form-urlencoded")
-  r <- curl::curl_fetch_memory(paste0(.portal, "CambiaEnc.asp"), handle = h)
-  curl::handle_setopt(h, httpget = TRUE)
-  html <- iconv(rawToChar(r$content), "WINDOWS-1252", "UTF-8")
+  on.exit(curl::handle_setopt(h, httpget = TRUE), add = TRUE)
+  r <- curl::curl_fetch_memory(paste0(.portal, page), handle = h)
+  if (r$status_code != 200) stop(sprintf("HTTP %s from %s", r$status_code, page), call. = FALSE)
+  iconv(rawToChar(r$content), "WINDOWS-1252", "UTF-8")
+}
+
+.portal_years <- function(value, h) {
+  html <- .portal_post(h, "CambiaEnc.asp", paste0("bandera=1&_cmbEncuesta=", .js_escape(value)))
   v <- regmatches(html, gregexpr("value=\"?[0-9]{4}", html))[[1]]
   as.integer(sub("value=\"?", "", v))
+}
+
+# Add to the catalog the modules the portal lists for years it does not have.
+.portal_add <- function(x, years) {
+  h <- tryCatch(.portal_handle(), error = function(e) e)
+  if (inherits(h, "error")) {
+    .warn("unreachable", "The INEI portal did not answer (%s); only the catalog is used.",
+          conditionMessage(h))
+    return(x)
+  }
+  for (enc in unlist(x$portal$encuesta)) {
+    live <- tryCatch(.portal_years(enc, h), error = function(e) integer())
+    for (y in intersect(years, live)) {
+      mods <- tryCatch(.portal_modules(enc, y, h), error = function(e) {
+        .warn("unreachable", "Could not list %s %s on the INEI portal: %s", enc, y, conditionMessage(e))
+        list()
+      })
+      x$modulos <- c(x$modulos, mods)
+    }
+  }
+  x
+}
+
+# The portal asks for the survey, then the year, then the period, and only
+# then shows the table of modules with one link per format.
+.portal_modules <- function(enc, year, h) {
+  base <- paste0("bandera=1&_cmbEncuesta=", .js_escape(enc), "&_cmbAnno=", year)
+  html <- .portal_post(h, "CambiaAnio.asp", base)
+  opt <- regmatches(html, gregexpr("<option value=\"([^\"]+)\"[^>]*>([^<]*)", html))[[1]]
+  per <- sub("^<option value=\"([^\"]+)\".*$", "\\1", opt)
+  lab <- trimws(.unhtml(sub("^.*>", "", opt)))
+  serie <- tolower(trimws(sub("^.*[-\u2013] *", "", enc)))
+  out <- list()
+  for (k in seq_along(per)) {
+    tab <- .portal_post(h, "CambiaPeriodo.asp", paste0(base, "&_cmbTrimestre=", .js_escape(per[k])))
+    rows <- regmatches(tab, gregexpr("(?s)<tr[^>]*>.*?</tr>", tab, perl = TRUE))[[1]]
+    for (r in rows) {
+      td <- regmatches(r, gregexpr("(?s)<td[^>]*>.*?</td>", r, perl = TRUE))[[1]]
+      td <- trimws(gsub("\\s+", " ", .unhtml(gsub("<[^>]+>", " ", td))))
+      if (length(td) < 7L || !grepl("^[0-9]+$", td[1])) next
+      links <- regmatches(r, gregexpr("descarga/(CSV|STATA|SPSS|DBF)/[^\"/]+\\.zip", r))[[1]]
+      if (length(links) == 0L) next
+      fmt <- sub("^descarga/([A-Z]+)/.*$", "\\1", links)
+      stem <- sub("\\.zip$", "", basename(links))
+      out[[length(out) + 1L]] <- list(
+        anio = year, periodo = lab[k], serie = serie, encuesta_inei = td[4],
+        codigo = td[6], nombre = td[7], archivos = as.list(stats::setNames(stem, fmt))
+      )
+    }
+  }
+  out
+}
+
+.unhtml <- function(x) {
+  ent <- c("&aacute;" = "\u00e1", "&eacute;" = "\u00e9", "&iacute;" = "\u00ed", "&oacute;" = "\u00f3",
+           "&uacute;" = "\u00fa", "&ntilde;" = "\u00f1", "&Aacute;" = "\u00c1", "&Eacute;" = "\u00c9",
+           "&Iacute;" = "\u00cd", "&Oacute;" = "\u00d3", "&Uacute;" = "\u00da", "&Ntilde;" = "\u00d1",
+           "&iacute" = "\u00ed", "&nbsp;" = " ", "&lt;" = "<", "&gt;" = ">", "&amp;" = "&")
+  for (e in names(ent)) x <- gsub(e, ent[[e]], x, fixed = TRUE)
+  x
 }
 
 .escale_years <- function(listado) {
