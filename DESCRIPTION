@@ -1,6 +1,6 @@
 Package: faperu
 Title: Access to Peruvian Official Surveys and Censuses
-Version: 0.2.0
+Version: 0.3.0
 Authors@R: c(
     person("Richar Andre", "Vilca Solorzano", email = "andrevilcasolorzano@gmail.com",
            role = c("aut", "cre"), comment = c(ORCID = "0009-0003-2385-5263")),
@@ -20,13 +20,16 @@ Depends: R (>= 4.1)
 Imports:
     curl,
     digest,
+    foreign,
     haven,
     stats,
     survey,
+    tidyselect,
     tools,
     utils,
     yaml
 Suggests:
+    data.table,
     knitr,
     redatamx,
     rmarkdown,

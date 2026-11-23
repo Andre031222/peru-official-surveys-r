@@ -20,8 +20,9 @@ fa_download(
 
 \item{year}{One year.}
 
-\item{module}{Module codes as shown by \code{\link[=fa_catalog]{fa_catalog()}}. \code{NULL} means all
-modules of that year.}
+\item{module}{Module codes as shown by \code{\link[=fa_catalog]{fa_catalog()}}, or their names
+(e.g. \code{"00_Padron"} in the School Census). \code{NULL} means all modules of
+that year.}
 
 \item{format}{\code{"auto"} uses the format of the verified copy, or else the
 first of CSV, STATA, SPSS and DBF. You can also ask for one of those.}
@@ -37,14 +38,25 @@ shown by \code{\link[=fa_catalog]{fa_catalog()}}, e.g. \code{"Anual - (Ene-Dic)"
 regular expression.}
 }
 \value{
-Invisibly, a data frame with one row per module and a \code{status}
-column: \code{"cached"}, \code{"downloaded"} or \code{"changed"} (the source now
-serves a file that differs from the catalog).
+Invisibly, a data frame with one row per module, a \code{status}
+column (\code{"cached"}, \code{"downloaded"} or \code{"changed"}, when the source now
+serves a file that differs from the catalog), the size in \code{bytes} and
+the download time in \code{seconds} (0 for cached files).
 }
 \description{
 Fetches the requested modules into the cache. Before downloading anything
 it looks in the cache: a file that is already there and whose SHA-256
 matches the catalog is reused as is.
+}
+\details{
+The files that are missing are downloaded together, a few at a time
+(\code{options(faperu.connections = 4)}). A transfer that breaks is retried and
+resumed from where it stopped, up to \code{options(faperu.retries = 3)} times;
+an unfinished file is kept as \code{.part} so the next call picks it up. Every
+file is checked before it enters the cache: it must be a readable zip, not
+an error page. The INEI portal only serves whole modules, so there is no
+way to download single variables; download the module once and read the
+columns you need with \code{fa_read(cols = )}.
 }
 \examples{
 \dontrun{

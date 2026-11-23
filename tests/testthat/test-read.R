@@ -92,3 +92,109 @@ test_that("the real 2017 Census gives the official count", {
   r <- fa_redatam("freq PERSONA.C5P2", cache = local_root())
   expect_equal(sum(r$value), 29381884)
 })
+
+# One small table written in every format faperu reads.
+formats_dir <- function() {
+  dir <- tempfile()
+  dir.create(dir)
+  df <- data.frame(UBIGEO = c("010101", "150101"), FACTOR = c(1.5, 2.25), NOMBRE = c("Ama", "Lima"),
+                   stringsAsFactors = FALSE)
+  write.csv(df, file.path(dir, "t.csv"), row.names = FALSE)
+  writeLines(c("UBIGEO;FACTOR;NOMBRE", "010101;1,5;Ama", "150101;2,25;Lima"), file.path(dir, "s.csv"))
+  haven::write_sav(df, file.path(dir, "t.sav"))
+  haven::write_dta(df, file.path(dir, "t.dta"))
+  foreign::write.dbf(df, file.path(dir, "t.dbf"))
+  dir
+}
+
+test_that("cols reads only those variables, in any case, in every format", {
+  dir <- formats_dir()
+  for (f in c("t.csv", "s.csv", "t.sav", "t.dta", "t.dbf")) {
+    x <- faperu:::.read_file(file.path(dir, f), cols = c("factor", "UBIGEO"))
+    expect_equal(names(x), c("factor", "ubigeo"), info = f)
+    expect_equal(as.numeric(x$factor), c(1.5, 2.25), info = f)
+    expect_equal(as.character(x$ubigeo), c("010101", "150101"), info = f)
+    expect_error(faperu:::.read_file(file.path(dir, f), cols = c("factor", "nope")),
+                 "nope", class = "faperu_error_not_found")
+  }
+})
+
+test_that("both CSV engines give the same table", {
+  skip_if_not_installed("data.table")
+  dir <- tempfile()
+  dir.create(dir)
+  f <- file.path(dir, "l.csv")
+  con <- file(f, "w", encoding = "latin1")
+  writeLines(c("UBIGEO,A\u00d1O,NOMBRE,V", "010101,2024,Ca\u00f1ete,", "150101,2024,,3"), con)
+  close(con)
+  a <- withr::with_options(list(faperu.csv_engine = "data.table"), faperu:::.read_file(f))
+  b <- withr::with_options(list(faperu.csv_engine = "base"), faperu:::.read_file(f))
+  expect_equal(a, b)
+  expect_equal(a$nombre, c("Ca\u00f1ete", ""))
+  expect_equal(names(a)[2], "a\u00f1o")
+  s <- withr::with_options(list(faperu.csv_engine = "base"), faperu:::.read_file(f, cols = "nombre"))
+  expect_equal(s$nombre, a$nombre)
+})
+
+test_that("a byte order mark does not stick to the first name", {
+  f <- tempfile(fileext = ".csv")
+  writeBin(c(as.raw(c(0xef, 0xbb, 0xbf)), charToRaw("UBIGEO,x\n010101,1\n")), f)
+  expect_equal(faperu:::.read_file(f)$ubigeo, "010101")
+})
+
+test_that("a zip with the same table in several formats uses the one asked for", {
+  dir <- formats_dir()
+  zdir <- tempfile()
+  dir.create(file.path(zdir, "m"), recursive = TRUE)
+  file.copy(file.path(dir, c("t.csv", "t.sav", "t.dta")), file.path(zdir, "m"))
+  withr::with_dir(zdir, utils::zip("m.zip", c("m/t.csv", "m/t.sav", "m/t.dta"), flags = "-q"))
+  unlink(file.path(zdir, "m"), recursive = TRUE)
+  zip <- file.path(zdir, "m.zip")
+  expect_s3_class(faperu:::.read_zip(zip, format = "SPSS"), "tbl_df")
+  expect_type(faperu:::.read_zip(zip, format = "STATA")$factor, "double")
+  expect_error(faperu:::.read_zip(zip), class = "faperu_error_ambiguous")
+})
+
+test_that("only data files are unpacked, Latin-1 names included", {
+  skip_on_os("windows")
+  skip_if(!nzchar(Sys.which("zip")), "zip not available")
+  dir <- tempfile()
+  dir.create(dir)
+  bad <- rawToChar(as.raw(c(0x50, 0x65, 0x71, 0x75, 0x65, 0xf1, 0x61, 0x73)))  # "Pequeñas" in Latin-1
+  ok <- tryCatch({
+    writeLines("UBIGEO,x\n010101,1", file.path(dir, paste0(bad, ".csv")))
+    writeLines("pdf", file.path(dir, "doc.pdf"))
+    TRUE
+  }, error = function(e) FALSE, warning = function(w) FALSE)
+  skip_if_not(ok, "this file system does not take Latin-1 names")
+  system(paste("cd", shQuote(dir), "&& zip -q m.zip *"))
+  out <- tempfile()
+  faperu:::.unzip_data(file.path(dir, "m.zip"), out)
+  expect_equal(list.files(out), "Peque\u00f1as.csv")
+})
+
+test_that("fa_variables lists names and labels from the header", {
+  dir <- formats_dir()
+  zdir <- tempfile()
+  dir.create(file.path(zdir, "m"), recursive = TRUE)
+  df <- data.frame(FACTOR = 1)
+  attr(df$FACTOR, "label") <- "Factor de expansion"
+  haven::write_sav(df, file.path(zdir, "m", "a.sav"))
+  withr::with_dir(zdir, utils::zip("m.zip", "m/a.sav", flags = "-q"))
+  local_mocked_bindings(.one_module = function(...) data.frame(path = file.path(zdir, "m.zip"), format = "SPSS"))
+  v <- fa_variables("enut", 2024, "1849")
+  expect_equal(v$name, "FACTOR")
+  expect_equal(v$label, "Factor de expansion")
+  expect_equal(v$file, "a.sav")
+})
+
+test_that("reading selected columns of the real ENAHO equals the full read", {
+  skip_if_no_local()
+  no_network()
+  a <- fa_read("enaho", 2024, "34", series = "anual", file = "Sumaria-2024\\.", cache = local_root())
+  b <- fa_read("enaho", 2024, "34", series = "anual", file = "Sumaria-2024\\.", cache = local_root(),
+               cols = c("CONGLOME", "pobreza", "factor07"))
+  expect_equal(names(b), c("conglome", "pobreza", "factor07"))
+  expect_equal(b$factor07, a$factor07)
+  expect_equal(b$pobreza, a$pobreza)
+})

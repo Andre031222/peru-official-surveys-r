@@ -13,7 +13,8 @@ fa_read(
   series = NULL,
   cache = fa_cache(),
   lower = TRUE,
-  period = NULL
+  period = NULL,
+  cols = NULL
 )
 }
 \arguments{
@@ -39,6 +40,8 @@ look the same.}
 \item{period}{For sources with several files per year, the \code{period}
 shown by \code{\link[=fa_catalog]{fa_catalog()}}, e.g. \code{"Anual - (Ene-Dic)"} in EPEN. A
 regular expression.}
+
+\item{cols}{Variables to read, in any case. \code{NULL} reads them all.}
 }
 \value{
 A data frame (a tibble for SPSS and Stata files).
@@ -50,12 +53,22 @@ variable and value labels (through haven). CSV files from INEI come in
 Latin-1 and are converted to UTF-8; the separator (\verb{,}, or \verb{;} with decimal
 commas as in the ENAHO 2025) is detected, and code columns (\code{UBIGEO}, \code{CCDD}, \code{CCPP},
 \code{CCDI}, \code{IRUC}, \code{NSEGM}) are kept as text so no leading zero is lost.
+DBF files (ESCALE before 2017 and the INEI DBF format) are read with the
+foreign package.
 }
 \details{
+With \code{cols} only those variables are read. The module is still downloaded
+whole, because INEI serves nothing smaller, but reading a few columns of
+a wide file is several times faster and uses a fraction of the memory.
+\code{\link[=fa_variables]{fa_variables()}} lists the names. CSV files are read with data.table when
+it is installed and with base R otherwise; \code{options(faperu.csv_engine = "base")} forces base R.
+
 For the 2017 Census use \code{\link[=fa_redatam]{fa_redatam()}}.
 }
 \examples{
 \dontrun{
 s <- fa_read("enaho", 2024, "34", file = "Sumaria-2024\\\\.")
+s <- fa_read("enaho", 2024, "34", file = "Sumaria-2024\\\\.",
+             cols = c("conglome", "vivienda", "hogar", "pobreza", "factor07"))
 }
 }
