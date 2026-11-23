@@ -134,8 +134,7 @@ fa_download <- function(survey, year, module = NULL, format = "auto", series = N
 
 # Formats found inside a zip; "ZIP" (ESCALE) matches whatever is there.
 .zip_formats <- function(zip) {
-  ext <- tryCatch(tolower(tools::file_ext(utils::unzip(zip, list = TRUE)$Name)),
-                  error = function(e) character())
+  ext <- tryCatch(.ext(utils::unzip(zip, list = TRUE)$Name), error = function(e) character())
   c("ZIP", names(.fmt_ext)[.fmt_ext %in% ext])
 }
 
@@ -260,3 +259,11 @@ fa_download <- function(survey, year, module = NULL, format = "auto", series = N
 }
 
 .pause <- function(secs) Sys.sleep(secs)
+
+# File extension without tripping over Latin-1 names, which tools::file_ext()
+# cannot handle in a UTF-8 session.
+.ext <- function(x) {
+  x <- sub("^.*/", "", x, useBytes = TRUE)
+  has <- grepl(".", x, fixed = TRUE, useBytes = TRUE)
+  ifelse(has, tolower(sub("^.*[.]", "", x, useBytes = TRUE)), "")
+}

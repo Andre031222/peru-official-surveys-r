@@ -163,12 +163,13 @@ test_that("only data files are unpacked, Latin-1 names included", {
   bad <- rawToChar(as.raw(c(0x50, 0x65, 0x71, 0x75, 0x65, 0xf1, 0x61, 0x73)))  # "Pequeñas" in Latin-1
   ok <- tryCatch({
     writeLines("UBIGEO,x\n010101,1", file.path(dir, paste0(bad, ".csv")))
-    writeLines("pdf", file.path(dir, "doc.pdf"))
+    writeLines("pdf", file.path(dir, paste0(bad, ".pdf")))
     TRUE
   }, error = function(e) FALSE, warning = function(w) FALSE)
   skip_if_not(ok, "this file system does not take Latin-1 names")
   system(paste("cd", shQuote(dir), "&& zip -q m.zip *"))
   out <- tempfile()
+  expect_equal(faperu:::.zip_formats(file.path(dir, "m.zip")), c("ZIP", "CSV"))
   faperu:::.unzip_data(file.path(dir, "m.zip"), out)
   expect_equal(list.files(out), "Peque\u00f1as.csv")
 })

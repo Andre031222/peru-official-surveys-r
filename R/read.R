@@ -99,7 +99,7 @@ fa_variables <- function(survey, year, module, file = NULL, format = "auto", ser
   if (!is.null(file)) files <- files[grepl(file, basename(files), ignore.case = TRUE)]
   # Some zips bring the same table in several formats (EPEN Lima 2026 has a
   # csv, a dta and a sav); keep the one that was asked for.
-  ext <- tolower(tools::file_ext(files))
+  ext <- .ext(files)
   want <- unname(.fmt_ext[toupper(.or(format, ""))])
   if (length(want) == 1L && !is.na(want) && any(ext == want) && length(unique(ext)) > 1L) {
     files <- files[ext == want]
@@ -212,7 +212,7 @@ fa_variables <- function(survey, year, module, file = NULL, format = "auto", ser
 }
 
 .read_file <- function(path, lower = TRUE, cols = NULL) {
-  ext <- tolower(tools::file_ext(path))
+  ext <- .ext(path)
   x <- switch(ext,
     sav = .haven(haven::read_sav, path, cols),
     dta = .haven(haven::read_dta, path, cols),
@@ -224,7 +224,7 @@ fa_variables <- function(survey, year, module, file = NULL, format = "auto", ser
 }
 
 .header <- function(path) {
-  ext <- tolower(tools::file_ext(path))
+  ext <- .ext(path)
   x <- switch(ext,
     sav = haven::read_sav(path, n_max = 0L),
     dta = haven::read_dta(path, n_max = 0L),
