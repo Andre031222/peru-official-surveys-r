@@ -50,13 +50,20 @@ Weighting by persons gives INEI's official 27.6 %; see the vignette.*
 | ENAHO, Condiciones de Vida y Pobreza (y Panel) | INEI | 2004-2025, panel desde 2002 | sí |
 | ENDES | INEI | 2010-2025 | sí |
 | ENA, Encuesta Nacional Agropecuaria | INEI | 2014-2019, 2021-2025 | sí |
-| EPEN (y EPE Lima 2001-2022) | INEI | 2001-2026 | por verificar |
-| ENAPRES | INEI | 2010-2025 | por verificar |
-| ENUT | INEI | 2010, 2022, 2024 | por verificar |
-| ENARES | INEI | 2013, 2015, 2019, 2024 | por verificar |
-| Encuesta Económica Anual | INEI | 2001-2025 | por verificar |
+| EPEN (y EPE Lima 2001-2022) | INEI | 2001-2026 | sí |
+| ENAPRES | INEI | 2010-2025 | sí |
+| ENUT | INEI | 2010, 2022, 2024 | sí, sin estratos |
+| ENARES | INEI | 2013, 2015, 2019, 2024 | sí, sin estratos |
+| Encuesta Económica Anual | INEI | 2001-2025 | aproximado |
 | Censo Educativo (ESCALE) | MINEDU | 2004-2025 | censo |
 | Censos Nacionales 2017 | INEI | 2017 | censo |
+
+Los diseños se verificaron en las fichas técnicas y en las cabeceras de los archivos de 2024 y 2025.
+ENUT y ENARES no publican estratos; la EEA tampoco, y sus errores estándar son aproximados. Con
+faperu se reproducen las cifras oficiales de 2024: pobreza 27,6 % (ENAHO), desempleo 5,6 % e
+informalidad 70,9 % (EPEN) y mujeres productoras 31,5 % (ENA).
+*Designs checked against INEI's technical sheets and real file headers; four official 2024 figures
+are reproduced.*
 
 ENAHO, ENDES y ENA ya se bajaron una vez y cada archivo tiene su sha256 en el catálogo: si el INEI lo
 cambia, faperu avisa.
@@ -100,8 +107,8 @@ Cada error tiene clase `faperu_error` y una subclase (`faperu_error_download`,
 
 ## Estado / Status
 
-0.2.0, en desarrollo. Hecho: ubigeo armonizado entre 2004 y 2025. Falta: diseño muestral de EPEN, ENAPRES,
-ENUT, ENARES y EEA, módulos 2025 de ENAPRES y EEA, ENDES 1996-2009 y el adaptador REDATAM del
+0.2.0, en desarrollo. Hecho: ubigeo armonizado entre 2004 y 2025 y diseño muestral de las ocho encuestas.
+Falta: estratos de la EEA, módulos 2025 de ENAPRES y EEA, ENDES 1996-2009 y el adaptador REDATAM del
 censo. Cambios en [NEWS.md](NEWS.md); guía completa en [vignettes/faperu.Rmd](vignettes/faperu.Rmd).
 
 ## Estructura / Layout

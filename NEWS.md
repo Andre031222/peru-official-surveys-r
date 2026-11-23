@@ -8,6 +8,14 @@ In development.
   2017 census frame and, for the 18 districts created after 2017, MINEDU's 2025 school register
   (not yet checked against each law). `data-raw/` rebuilds them.
 - New `fa_districts()` lists the districts valid in a year.
+- `fa_design()` now covers EPEN, ENAPRES, ENUT, ENARES and the Annual Economic Survey, with names
+  checked in INEI's technical sheets and in real 2024-2025 file headers. Strata can cross two
+  columns (`"CCDD*AREA"`), weights can be matched by pattern (EPE Lima), EPEN rows without weight
+  are dropped, surveys without published strata or clusters warn instead of failing, and certainty
+  firms in the EEA get their own stratum. It warns when a stratum has a single cluster and
+  `survey.lonely.psu` is not set.
+- Tests reproduce four official 2024 figures from the local microdata: poverty 27.6 % (ENAHO),
+  unemployment 5.6 % and informality 70.9 % (EPEN), women producers 31.5 % (ENA).
 
 # faperu 0.1.0
 

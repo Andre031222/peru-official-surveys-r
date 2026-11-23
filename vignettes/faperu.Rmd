@@ -62,10 +62,27 @@ survey::svyby(~I(pobreza < 3), ~dominio, p, survey::svymean)
 The two numbers were computed with faperu 0.1.0 on the ENAHO 2024 files. The second one matches
 the official monetary poverty rate published by INEI for 2024.
 
+For the other surveys, as computed with faperu on the 2024 files:
+
+```{r}
+e <- read.csv("EPEN 2024 BD_Publicacion Dpto.csv", fileEncoding = "latin1")   # 935-Modulo76
+d <- fa_design(e, "epen")                       # drops people under 14, who have no weight
+survey::svymean(~I(OCUP300 == 2), subset(d, OCUP300 %in% 1:2))     # unemployment 5.6 %
+survey::svymean(~I(Informal_P == 1), subset(d, OCUP300 == 1), na.rm = TRUE)  # informality 70.9 %
+
+a <- fa_read("ena", 2024, "1911")               # chapter 1100
+a <- a[a$p1102 %in% 1 & a$estrato != "", ]
+survey::svymean(~I(p1103 == 2), fa_design(a, "ena"), na.rm = TRUE)  # women producers 31.5 %
+```
+
+ENDES and the ENA have strata with a single cluster, so set
+`options(survey.lonely.psu = "adjust")` first; `fa_design()` warns when it is needed. ENUT and
+ENARES publish no strata, and the Annual Economic Survey publishes none either: its firms included
+with certainty go in their own stratum and the standard errors are approximate. See `?fa_design`.
+
 `fa_design()` takes the weight, strata and cluster that the catalog declares. For ENAHO they are
 `FACTOR07`, `ESTRATO` and `CONGLOME`; for ENDES, `V005` or `HV005` (divided by one million),
-`V022` and `V001`. Where the catalog says the design is not verified yet, pass the variables
-yourself.
+`V022` and `V001`. Any of them can be overridden, and a stratum can cross two columns: `strata = "CCDD*AREA"`.
 
 ## 5. Places
 

@@ -12,12 +12,14 @@ anios: [2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 
 unidad: persona
 ubigeo: UBIGEO
 diseno:
-  peso: []
+  peso: [FAC300_ANUAL, FAC_T300, 're:^fa_[a-z]{3}[0-9]{2}$']
   escala: 1
-  estrato: []
-  conglomerado: []
-  verificado: false
-  nota: Los factores cambian según el trimestre móvil; leer la ficha técnica de cada periodo.
+  estrato: [CCDD*ESTRATO, ESTRATO]
+  conglomerado: [CONGLOMERADO, CONGLOME]
+  filtro: peso>0
+  verificado: true
+  nota: 'Verificado en las cabeceras de EPEN Departamentos 2025 (FAC300_ANUAL), Ciudades 2025 T1 (FAC_T300), Lima 2026 (fa_def26) y EPE Lima 2022 (fa_efm22, conglome, estrato). En Lima el factor se llama fa_ más el trimestre móvil y el año. El peso solo existe para personas de 14 años o más: las filas sin peso se quitan. El estrato del diseño es departamento por ESTRATO, porque la muestra es independiente en cada departamento; sin CCDD (Lima) se usa ESTRATO. UPM = conglomerado.'
+  documento: ['INEI, Ficha Técnica EPEN 2025 (Ciudades y Departamentos), portal de microdatos, documentación 2025-184 y 2025-156', 'INEI, Ficha Técnica EPEN Lima Metropolitana y Callao, documentación 2025-28']
 estado: Catálogo de mayo de 2026. Sin descargar todavía.
 modulos:
 - anio: 2022

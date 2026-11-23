@@ -21,7 +21,36 @@ A \code{survey.design2} object.
 Builds a \code{\link[survey:svydesign]{survey::svydesign()}} object with the weight, strata and cluster
 variables that the catalog declares for that source. The first declared
 name found in the data is used, so the same call works for ENDES women
-(\code{V005}) and households (\code{HV005}). Any of them can be overridden.
+(\code{V005}) and households (\code{HV005}). Any of them can be overridden, and a
+stratum can be the crossing of two columns, written \code{"CCDD*AREA"}.
+}
+\details{
+The names were checked in INEI's technical sheets (fichas tecnicas) and in
+the headers of 2024 and 2025 files; the \code{diseno} entry of each YAML in
+\verb{inst/catalog/} lists them with a note and the document behind them.
+\itemize{
+\item \strong{EPEN}: \code{FAC300_ANUAL} (or the quarterly and Lima weights),
+\code{CONGLOMERADO}, and department by \code{ESTRATO} as strata. Rows without
+weight (people under 14) are dropped with a message.
+\item \strong{ENAPRES}: \code{FACTOR}, \code{CONGLOMERADO}, department by area. Its
+\code{ESTRATO} column is socioeconomic, not a design stratum.
+\item \strong{ENUT} and \strong{ENARES}: INEI publishes no strata, so there are none
+and a warning says so. ENARES weights depend on the questionnaire, and
+in the school questionnaires the cluster is the school.
+\item \strong{Annual Economic Survey}: \code{FACTOR_EXP}, one stage. Firms included
+with certainty (\code{FACTOR_EXP == 1}) form their own stratum with no
+variance. The real strata are not published, so standard errors are
+approximate.
+}
+
+Where a stratum has a single cluster, as in ENDES, \code{survey} stops unless
+you set \code{options(survey.lonely.psu = "adjust")}; faperu warns but does not
+change the option for you.
+
+The ENA has thousands of fine strata, most with one cluster. Collapsing
+them is not official, but if you need it:
+\code{ena$estrato_c <- paste0(ena$CCDD, substr(ena$ESTRATO, 7, 9))} and
+\code{fa_design(ena, "ena", strata = "estrato_c")}.
 }
 \examples{
 \dontrun{
