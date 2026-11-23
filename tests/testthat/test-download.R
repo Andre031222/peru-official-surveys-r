@@ -127,3 +127,24 @@ test_that("modules can be named by their name and file names are encoded", {
   expect_equal(faperu:::.url(x, list(anio = 2015), "ZIP", "01 Tabgence.dbf"),
                "https://x/2015/01%20Tabgence.dbf.zip")
 })
+
+test_that("each format of a module has its own place in the cache", {
+  zip <- small_zip()   # holds a CSV
+  sav <- tempfile(fileext = ".zip")
+  d <- tempfile()
+  dir.create(file.path(d, "m"), recursive = TRUE)
+  haven::write_sav(data.frame(FACTORFINAL = 1), file.path(d, "m", "a.sav"))
+  withr::with_dir(d, utils::zip(sav, "m/a.sav", flags = "-q"))
+  tmp <- tempfile()
+  local_mocked_bindings(.multi = fake_multi(src = zip))
+  a <- suppressMessages(fa_download("enut", 2024, "1849", format = "CSV", cache = tmp))
+  local_mocked_bindings(.multi = fake_multi(src = sav))
+  b <- suppressMessages(fa_download("enut", 2024, "1849", format = "SPSS", cache = tmp))
+  expect_equal(b$status, "downloaded")
+  expect_false(a$path == b$path)
+  expect_match(b$path, "/SPSS/[^/]+\\.zip$")
+  local_mocked_bindings(.multi = function(...) stop("should not download"))
+  expect_equal(fa_download("enut", 2024, "1849", format = "CSV", cache = tmp)$path, a$path)
+  expect_equal(fa_download("enut", 2024, "1849", format = "SPSS", cache = tmp)$path, b$path)
+  expect_s3_class(fa_read("enut", 2024, "1849", format = "SPSS", cache = tmp), "tbl_df")
+})

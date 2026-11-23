@@ -98,7 +98,7 @@ fa_download <- function(survey, year, module = NULL, format = "auto", series = N
   fmt <- .pick_format(m, format)
   stem <- m$archivos[[fmt]]
   same <- !is.null(m$local) && identical(toupper(m$local$formato), fmt)
-  rel <- if (same) m$local$ruta else file.path(toupper(x$siglas), m$anio, paste0(stem, ".zip"))
+  rel <- if (same) m$local$ruta else .cache_rel(cache, x, m, fmt, stem)
   dest <- file.path(cache, rel)
   expected <- if (same) m$local$sha256 else NA_character_
   status <- "pending"
@@ -117,6 +117,26 @@ fa_download <- function(survey, year, module = NULL, format = "auto", series = N
              bytes = if (status == "cached") file.size(dest) else NA_real_, seconds = 0,
              url = .url(x, m, fmt, stem), expected = expected, why = NA_character_,
              stringsAsFactors = FALSE)
+}
+
+# INEI gives the same file name to the CSV, Stata and SPSS zips of a module.
+# The first one downloaded keeps the plain layout <SURVEY>/<year>/<file>.zip
+# (the one of an existing local copy); another format of the same module goes
+# into a <FORMAT>/ folder beside it, so asking for Stata never returns the CSV.
+.cache_rel <- function(cache, x, m, fmt, stem) {
+  base <- file.path(toupper(x$siglas), m$anio)
+  plain <- file.path(base, paste0(stem, ".zip"))
+  other <- file.path(base, fmt, paste0(stem, ".zip"))
+  if (file.exists(file.path(cache, other))) return(other)
+  p <- file.path(cache, plain)
+  if (!file.exists(p) || fmt %in% .zip_formats(p)) plain else other
+}
+
+# Formats found inside a zip; "ZIP" (ESCALE) matches whatever is there.
+.zip_formats <- function(zip) {
+  ext <- tryCatch(tolower(tools::file_ext(utils::unzip(zip, list = TRUE)$Name)),
+                  error = function(e) character())
+  c("ZIP", names(.fmt_ext)[.fmt_ext %in% ext])
 }
 
 # Download the pending rows in parallel, resuming broken transfers.
