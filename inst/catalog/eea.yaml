@@ -12,14 +12,14 @@ anios: [2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 
 unidad: empresa
 ubigeo: por verificar
 diseno:
-  peso: [FACTOR_EXP]
+  peso: [FACTOR_EXP, FAC_EXP, FACTOR]
   escala: 1
   estrato: []
   conglomerado: []
   unietapica: true
   forzosa: peso==1
   verificado: false
-  nota: FACTOR_EXP verificado en las cabeceras de EEA 2024 (módulos 2042 y 2068), con IRUC y CCDD/CCPP/CCDI. Las empresas de inclusión forzosa tienen FACTOR_EXP = 1 y van en un estrato propio sin varianza. El portal no publica los estratos del diseño (CIIU por tamaño por departamento, según fuentes secundarias), así que los errores estándar son aproximados. El módulo de un año trae los datos contables del año anterior.
+  nota: FACTOR_EXP verificado en las cabeceras de EEA 2024 (módulos 2042 y 2068), con IRUC y CCDD/CCPP/CCDI. Las empresas de inclusión forzosa tienen FACTOR_EXP = 1 y van en un estrato propio sin varianza. El portal no publica los estratos del diseño (CIIU por tamaño por departamento, según fuentes secundarias), así que los errores estándar son aproximados. El módulo de un año trae los datos contables del año anterior. El factor se llama FACTOR en 2012 y 2015 y FAC_EXP en 2020 (cabeceras del capítulo 01); los archivos de 2001 a 2011 no traen factor, así que esos años no tienen diseño.
   documento: [Cabeceras de EEA 2024; especificación técnica dentro de 1026-Modulo2042.zip]
 estado: Catálogo de mayo de 2026; el año 2025 se detectó en vivo y falta rastrear sus módulos. Sin descargar todavía.
 modulos:

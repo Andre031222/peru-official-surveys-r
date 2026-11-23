@@ -12,12 +12,12 @@ anios: [2010, 2022, 2024]
 unidad: persona de 12 años a más
 ubigeo: UBIGEO
 diseno:
-  peso: [FACTORFINAL]
+  peso: [FACTORFINAL, FACTOR_100]
   escala: 1
   estrato: []
-  conglomerado: [CONG]
+  conglomerado: [CONG, CONGLOMERADO]
   verificado: true
-  nota: 'Verificado en las cabeceras de ENUT 2024: CONG, CCDD, AREA y FACTORFINAL. No hay variable de estrato: la ficha dice que la muestra es estratificada implícitamente e independiente en cada departamento. faperu no inventa un estrato; para aproximarlo se puede pasar strata = "CCDD*AREA". Años anteriores por verificar.'
+  nota: 'Verificado en las cabeceras de ENUT 2024: CONG, CCDD, AREA y FACTORFINAL. No hay variable de estrato: la ficha dice que la muestra es estratificada implícitamente e independiente en cada departamento. faperu no inventa un estrato; para aproximarlo se puede pasar strata = "CCDD*AREA". Años anteriores por verificar. En 2010 el factor es Factor_100 y el conglomerado CONGLOMERADO (cabecera de 01_CAPITULO_100, 2010).'
   documento: ['INEI, Ficha Técnica ENUT 2024, portal de microdatos, documentación 2024-56 (03_FICHA_TECNICA_ENUT_2024)']
 estado: Catálogo de mayo de 2026; el año 2022 se detectó en vivo y falta rastrear sus módulos. No es anual. Sin descargar todavía.
 modulos:

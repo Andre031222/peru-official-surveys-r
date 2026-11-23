@@ -60,7 +60,8 @@ fa_design <- function(data, survey, weight = NULL, strata = NULL, cluster = NULL
   data <- as.data.frame(data)
   data$.fa_weight <- as.numeric(data[[w]]) * scale
   if (identical(dz$filtro, "peso>0")) {
-    # EPEN only weights people aged 14 and over; the rest are not in the sample.
+    # EPEN only weights people aged 14 and over, and the ENA only completed
+    # interviews; the other rows are not part of the sample.
     keep <- !is.na(data$.fa_weight) & data$.fa_weight > 0
     if (!all(keep)) {
       message(sprintf("Dropped %d rows without `%s` (outside the survey universe).", sum(!keep), w))

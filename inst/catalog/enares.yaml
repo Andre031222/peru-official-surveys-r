@@ -12,12 +12,12 @@ anios: [2013, 2015, 2019, 2024]
 unidad: hogar, mujer, niña, niño y adolescente
 ubigeo: UBIGEO
 diseno:
-  peso: [FACTOR_MUJ, FACTOR_POBLACION, FACTOR_VIV, FACTOR_ALUMNOS]
+  peso: [FACTOR_MUJ, FACTOR_POBLACION, FACTOR_VIV, FACTOR_ALUMNOS, 're:^FACEXP']
   escala: 1
   estrato: []
-  conglomerado: [CONGLOME, ID_MUESTRA_IE]
+  conglomerado: [CONGLOME, ID_MUESTRA_IE, 're:^C[0-9]+CONGLOME$']
   verificado: true
-  nota: 'Verificado en las cabeceras de ENARES 2024. El peso depende del cuestionario y del capítulo: FACTOR_VIV (CAP100), FACTOR_POBLACION (CAP200), FACTOR_MUJ (CAP500) y FACTOR_ALUMNOS en las encuestas a escolares (CRS03, CRS04), donde la UPM es el colegio (ID_MUESTRA_IE). La ficha no describe estratos y los archivos no traen variable de estrato: el diseño va sin estratos y avisa.'
+  nota: 'Verificado en las cabeceras de ENARES 2024. El peso depende del cuestionario y del capítulo: FACTOR_VIV (CAP100), FACTOR_POBLACION (CAP200), FACTOR_MUJ (CAP500) y FACTOR_ALUMNOS en las encuestas a escolares (CRS03, CRS04), donde la UPM es el colegio (ID_MUESTRA_IE). La ficha no describe estratos y los archivos no traen variable de estrato: el diseño va sin estratos y avisa. En 2013 los factores empiezan con FACEXP (FACEXPVIV en el cuestionario de hogar) y el conglomerado lleva el prefijo del capítulo (C1CONGLOME), según la cabecera de 01_CRS01_CAP100, 2013.'
   documento: ['INEI, Ficha Técnica ENARES 2024, portal de microdatos, documentación 2024-48 (01_FICHA_TECNICA_2024)']
 estado: Catálogo de mayo de 2026. No es anual (2013, 2015, 2019, 2024). Sin descargar todavía.
 modulos:

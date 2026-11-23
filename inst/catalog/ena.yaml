@@ -12,12 +12,13 @@ anios: [2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025]
 unidad: productor agropecuario
 ubigeo: CCDD + CCPP + CCDI
 diseno:
-  peso: [FACTOR_PRODUCTOR]
+  peso: [FACTOR_PRODUCTOR, FACTOR]
   escala: 1
   estrato: [ESTRATO]
-  conglomerado: [NSEGM]
+  conglomerado: [NSEGM, CONGLOMERADO]
+  filtro: peso>0
   verificado: true
-  nota: Verificado en la cabecera de 03_CAP200A de 2024. Que NSEGM sea la unidad primaria hay que confirmarlo en la ficha técnica. No hubo ronda 2020.
+  nota: 'Verificado en la cabecera de 03_CAP200A de 2024. Que NSEGM sea la unidad primaria hay que confirmarlo en la ficha técnica. No hubo ronda 2020. En 2014 el factor se llama FACTOR y el conglomerado CONGLOMERADO (cabecera de 01_Cap100_1, 2014). Las entrevistas incompletas (RESFIN 3, 4, 6 y 7) no tienen factor: el diseño las quita (986 filas en la carátula 2024).'
 estado: Descargada y verificada en la Arch.
 modulos:
 - anio: 2014
