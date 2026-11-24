@@ -173,3 +173,10 @@ test_that("a module INEI changed is downloaded once, not on every call", {
   local_mocked_bindings(.multi = function(...) stop("downloaded again"))
   expect_equal(fa_download("ena", 2014, m$module, cache = tmp)$status, "cached")
 })
+
+test_that("an ambiguous module stops before anything is downloaded", {
+  hit <- FALSE
+  local_mocked_bindings(.multi = function(...) { hit <<- TRUE; stop("no download expected") })
+  expect_error(fa_read("epen", 2025, "1780", cache = withr::local_tempdir()), class = "faperu_error_ambiguous")
+  expect_false(hit)
+})

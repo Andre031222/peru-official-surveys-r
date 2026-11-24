@@ -241,3 +241,33 @@ test_that("UTF-8 CSV files are not converted twice and codes keep their zeros", 
     expect_equal(names(y), c("provincia", "a\u00f1o"), info = eng)
   }
 })
+
+test_that("Stata text that is UTF-8 read as Latin-1 is put back", {
+  x <- data.frame(p = c("CA\u00c3\u0091ETE", "CA\u00d1ETE", NA, "LIMA"), stringsAsFactors = FALSE)
+  attr(x$p, "label") <- "N\u00c2\u00b0 DE ORDEN"
+  y <- faperu:::.unmix(x)
+  expect_identical(as.vector(y$p), c("CA\u00d1ETE", "CA\u00d1ETE", NA, "LIMA"))
+  expect_identical(attr(y$p, "label"), "N\u00b0 DE ORDEN")
+})
+
+test_that("a Stata file haven cannot decode is read again as Latin-1", {
+  calls <- character()
+  fun <- function(path, ..., encoding = NULL) {
+    calls <<- c(calls, if (is.null(encoding)) "default" else encoding)
+    if (is.null(encoding)) stop("Unable to convert string to the requested encoding (invalid byte sequence).")
+    data.frame(a = 1)
+  }
+  expect_identical(faperu:::.latin1_retry(fun, "x.dta")$a, 1)
+  expect_identical(calls, c("default", "latin1"))
+  other <- function(path, ...) stop("file is broken")
+  expect_error(faperu:::.latin1_retry(other, "x.dta"), "broken")
+})
+
+test_that("an escaped quote inside a CSV field reads as one quote with both engines", {
+  f <- withr::local_tempfile(fileext = ".csv")
+  writeLines(c("ID;T01;P01", '001;"CINTA 2"" TRANSP";3', '002;"FILM 18""";4', "003;PAPEL;5"), f)
+  for (e in c("data.table", "base")) {
+    x <- withr::with_options(list(faperu.csv_engine = e), faperu:::.read_file(f))
+    expect_identical(x$t01, c('CINTA 2" TRANSP', 'FILM 18"', "PAPEL"))
+  }
+})

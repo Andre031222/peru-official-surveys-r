@@ -68,6 +68,11 @@ fa_variables <- function(survey, year, module, file = NULL, format = "auto", ser
   if (identical(.load(survey)$fuente, "inei_censo")) {
     .abort("unsupported", "The 2017 Census has no module files; query it with fa_redatam().")
   }
+  # Check before downloading, so an ambiguous code does not fetch every match.
+  n <- nrow(.pick(fa_catalog(survey, year), module, series, period))
+  if (n > 1L) {
+    .abort("ambiguous", "Module %s matches %d entries; set `series` or `period`.", module, n)
+  }
   d <- fa_download(survey, year, module, format = format, series = series, cache = cache,
                    period = period)
   if (nrow(d) != 1L) {
@@ -204,6 +209,12 @@ fa_variables <- function(survey, year, module, file = NULL, format = "auto", ser
                          fill = fill)
   x <- x[seq_len(min(ncol(x), length(h$cols)))]
   names(x) <- h$cols[if (is.null(cols)) seq_len(ncol(x)) else idx]
+  # fread leaves an escaped quote doubled ("2"" TRANSP" comes back as 2"").
+  for (j in which(vapply(x, is.character, logical(1)))) {
+    v <- x[[j]]
+    k <- grepl('""', v, fixed = TRUE)
+    if (any(k)) x[[j]][k] <- gsub('""', '"', v[k], fixed = TRUE)
+  }
   .fix_cols(x)
 }
 
@@ -320,17 +331,59 @@ fa_variables <- function(survey, year, module, file = NULL, format = "auto", ser
 }
 
 .haven <- function(fun, path, cols) {
-  if (is.null(cols)) return(fun(path))
-  have <- names(fun(path, n_max = 0L))
+  if (is.null(cols)) return(.latin1_retry(fun, path))
+  have <- names(.latin1_retry(fun, path, n_max = 0L))
   keep <- have[.match_cols(cols, have, path)]
-  fun(path, col_select = tidyselect::all_of(keep))[keep]
+  .latin1_retry(fun, path, col_select = tidyselect::all_of(keep))[keep]
+}
+
+# Some INEI Stata files mix UTF-8 text with a few Latin-1 bytes (ENARES
+# 2019), and haven stops with "Unable to convert string". Then the file is
+# read byte for byte as Latin-1 and every value is put back together: the
+# ones that were UTF-8 are recovered, the Latin-1 ones are already right.
+.latin1_retry <- function(fun, path, ...) {
+  tryCatch(fun(path, ...), error = function(e) {
+    if (!grepl("encoding|convert string", conditionMessage(e), ignore.case = TRUE)) stop(e)
+    fun(path, ..., encoding = "latin1")
+  })
+}
+
+# Text that is UTF-8 read as Latin-1 ("Â¿" for "¿", "SELECCIÃ\u0093N") is put
+# back; text that is right stays as it is, because its Latin-1 bytes are not
+# valid UTF-8. Old Stata files need it even when haven does not fail, and
+# some SPSS files carry a few such values (EEA 2015, "CASTAÃ±A").
+.unmix <- function(x) {
+  fix <- function(v) {
+    if (!is.character(v) || length(v) == 0L) return(v)
+    b <- iconv(v, "UTF-8", "latin1")
+    Encoding(b) <- "UTF-8"
+    ok <- !is.na(b) & !is.na(v) & validUTF8(b) & b != v
+    v[ok] <- b[ok]
+    v
+  }
+  for (n in names(x)) {
+    v <- x[[n]]
+    a <- attributes(v)
+    if (is.character(v)) v <- fix(v)
+    attributes(v) <- a
+    if (!is.null(a$label)) attr(v, "label") <- fix(a$label)
+    if (!is.null(a$labels)) {
+      l <- a$labels
+      names(l) <- fix(names(l))
+      if (is.character(l)) l[] <- fix(unclass(l))
+      attr(v, "labels") <- l
+    }
+    x[[n]] <- v
+  }
+  names(x) <- fix(names(x))
+  x
 }
 
 .read_file <- function(path, lower = TRUE, cols = NULL) {
   ext <- .ext(path)
   x <- switch(ext,
-    sav = .haven(haven::read_sav, path, cols),
-    dta = .haven(haven::read_dta, path, cols),
+    sav = .unmix(.haven(haven::read_sav, path, cols)),
+    dta = .unmix(.haven(haven::read_dta, path, cols)),
     csv = .read_csv(path, cols),
     dbf = .read_dbf(path, cols)
   )
@@ -341,8 +394,8 @@ fa_variables <- function(survey, year, module, file = NULL, format = "auto", ser
 .header <- function(path) {
   ext <- .ext(path)
   x <- switch(ext,
-    sav = haven::read_sav(path, n_max = 0L),
-    dta = haven::read_dta(path, n_max = 0L),
+    sav = .unmix(.latin1_retry(haven::read_sav, path, n_max = 0L)),
+    dta = .unmix(.latin1_retry(haven::read_dta, path, n_max = 0L)),
     csv = NULL,
     dbf = foreign::read.dbf(path, as.is = TRUE)[0, , drop = FALSE]
   )

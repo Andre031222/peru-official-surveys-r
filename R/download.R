@@ -48,13 +48,7 @@ fa_download <- function(survey, year, module = NULL, format = "auto", series = N
   todo <- fa_catalog(survey, year)
   # fa_catalog() may have added the files of an ESCALE year read from its folder.
   x <- .load(survey)
-  if (!is.null(series)) todo <- todo[todo$series %in% series, , drop = FALSE]
-  # A module can be named by its code or by its name; ESCALE has two "00".
-  if (!is.null(module)) {
-    module <- as.character(module)
-    todo <- todo[todo$module %in% module | todo$name %in% module, , drop = FALSE]
-  }
-  if (!is.null(period)) todo <- todo[grepl(period, todo$period), , drop = FALSE]
+  todo <- .pick(todo, module, series, period)
   if (nrow(todo) == 0L) {
     if (year %in% fa_years(survey) && !year %in% fa_catalog(survey)$year) {
       .abort("not_found", "%s %s is published but its modules are not in the catalog yet.",
@@ -289,4 +283,16 @@ fa_download <- function(survey, year, module = NULL, format = "auto", series = N
   f <- paste0(path, ".sha256")
   v <- if (file.exists(f)) readLines(f, n = 2L, warn = FALSE) else character()
   c(v, NA_character_, NA_character_)[1:2]
+}
+
+# Rows of the catalog that match the filters. A module can be named by its
+# code or by its name; ESCALE has two "00".
+.pick <- function(todo, module = NULL, series = NULL, period = NULL) {
+  if (!is.null(series)) todo <- todo[todo$series %in% series, , drop = FALSE]
+  if (!is.null(module)) {
+    module <- as.character(module)
+    todo <- todo[todo$module %in% module | todo$name %in% module, , drop = FALSE]
+  }
+  if (!is.null(period)) todo <- todo[grepl(period, todo$period), , drop = FALSE]
+  todo
 }
