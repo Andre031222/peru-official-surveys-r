@@ -1,4 +1,4 @@
-url: https://andre031222.github.io/faperu/
+url: https://andre031222.github.io/peru-official-surveys-r/
 lang: es
 
 template:
@@ -23,7 +23,7 @@ navbar:
   components:
     github:
       icon: fa-github
-      href: https://github.com/Andre031222/faperu
+      href: https://github.com/Andre031222/peru-official-surveys-r
       aria-label: GitHub
 
 reference:
