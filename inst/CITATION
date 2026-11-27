@@ -1,13 +1,13 @@
 bibentry(
   bibtype = "Manual",
-  title = "{faperu}: Access and Design-Based Analysis of Peruvian Official Surveys and Censuses",
+  title = "{faperu}: Access and Analysis of Peruvian Survey and Census Data",
   author = c(person("Fred", "Torres Cruz"), person("Richar Andre", "Vilca Solorzano")),
   year = "2026",
   note = paste("R package version", meta$Version),
   url = "https://faperu.ftorres.org/",
   textVersion = paste0(
-    "Torres Cruz, F. and Vilca Solorzano, R. A. (2026). faperu: Access and Design-Based ",
-    "Analysis of Peruvian Official Surveys and Censuses. R package version ", meta$Version,
+    "Torres Cruz, F. and Vilca Solorzano, R. A. (2026). faperu: Access and Analysis of Peruvian ",
+    "Survey and Census Data. R package version ", meta$Version,
     ". https://faperu.ftorres.org/"
   )
 )

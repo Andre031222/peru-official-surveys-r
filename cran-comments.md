@@ -82,8 +82,9 @@ access.
 The offline test suite takes about 20 seconds on r-universe (17 to 22 s
 across platforms). It covers the catalog, the download logic (with mocked
 transfers and small fixture files written to `tempfile()` folders, including
-broken transfers, resumes and error pages), reading in every supported format, survey designs, district harmonisation,
-estimation, linkage, tables and maps. Two groups of tests are skipped on CRAN
+broken transfers, resumes and error pages), reading in every supported
+format, survey designs, district harmonisation, estimation, linkage, tables
+and maps. Two groups of tests are skipped on CRAN
 by design:
 
 * tests that contact the INEI portal and geoserver run only with
@@ -95,8 +96,8 @@ by design:
 
 The two vignettes (getting the data, and analysing it) are built with
 `eval = FALSE`, because running them would download several hundred MB of
-survey files. The results they quote were computed with this version of the
-package on the 2024 and 2025 files.
+survey files. The results they quote are real output of faperu on the 2024
+files; the test suite repeats those computations on the 2024 and 2025 files.
 
 ## Dependencies and bundled data
 

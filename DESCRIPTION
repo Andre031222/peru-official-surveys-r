@@ -1,5 +1,5 @@
 Package: faperu
-Title: Access and Design-Based Analysis of Peruvian Official Surveys and Censuses
+Title: Access and Analysis of Peruvian Survey and Census Data
 Version: 0.4.2
 Authors@R: c(
     person("Fred", "Torres Cruz", role = "aut",
