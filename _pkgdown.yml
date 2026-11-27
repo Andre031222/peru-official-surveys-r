@@ -1,9 +1,9 @@
 url: https://andre031222.github.io/peru-official-surveys-r/
 lang: es
 
-# The standard pkgdown layout (top bar, README-style home, sidebar on the
-# right) with faperu's own touch: a dark teal bar, a band of hexagons and
-# the colours of its logo. Extra styles in pkgdown/extra.css and extra.js.
+# The standard pkgdown layout with a modern finish: a home button, a single
+# theme button (automatic by default), quiet code blocks and a real footer.
+# Extra styles and the theme button live in pkgdown/extra.css and extra.js.
 template:
   bootstrap: 5
   light-switch: true
@@ -13,13 +13,11 @@ template:
     primary: "#0e7c86"
     secondary: "#14558f"
     link-color: "#0e7c86"
-    border-radius: 0.4rem
+    border-radius: 0.5rem
     base_font: {google: "Inter"}
     heading_font: {google: "Inter"}
     code_font: {google: "JetBrains Mono"}
-    font-size-base: 1rem
     headings-font-weight: 700
-    navbar-bg: "#0b2a3c"
 
 home:
   title: "faperu: encuestas y censos oficiales del Perú en R"
@@ -28,33 +26,35 @@ home:
     del Perú: ENAHO, ENDES, ENA, EPEN, ENAPRES, ENUT, ENARES, EEA, Censo
     Educativo y Censos 2017.
   sidebar:
-    structure: [install, links, license, citation, authors, dev]
+    structure: [links, license, citation, people]
     components:
-      install:
-        title: Instalar
+      people:
+        title: Autores
         text: >
-          `install.packages("remotes")`<br>
-          `remotes::install_github("Andre031222/peru-official-surveys-r")`<br><br>
-          ¿Primera vez con R? Mira [Instalar paso a paso](articles/instalar.html).
+          [Fred Torres Cruz](https://orcid.org/0000-0003-0834-6834)<br>
+          [Richar Andre Vilca Solorzano](https://orcid.org/0009-0003-2385-5263)
   links:
   - text: Explorar los módulos en línea
     href: http://127.0.0.1:8099/explore
-  - text: Sitio de faperu.analysis
+  - text: faperu.analysis, para analizar los datos
     href: https://andre031222.github.io/peru-survey-indicators-r/
 
 navbar:
   bg: dark
   structure:
-    left: [intro, reference, articles, news]
-    right: [search, explore, github, lightswitch]
+    left: [home, intro, reference, articles, news]
+    right: [search, explore, github, theme]
   components:
+    home:
+      icon: fa-house
+      text: Inicio
+      href: index.html
     intro:
       text: Empezar
       href: articles/faperu.html
-    explore:
-      text: Explorar
-      icon: fa-magnifying-glass
-      href: http://127.0.0.1:8099/explore
+    reference:
+      text: Funciones
+      href: reference/index.html
     articles:
       text: Artículos
       menu:
@@ -64,44 +64,63 @@ navbar:
         href: articles/fuentes.html
       - text: Guía completa
         href: articles/faperu.html
+    news:
+      text: Cambios
+      href: news/index.html
+    explore:
+      icon: fa-magnifying-glass-chart
+      text: Explorar
+      href: http://127.0.0.1:8099/explore
     github:
       icon: fa-github
       href: https://github.com/Andre031222/peru-official-surveys-r
       aria-label: GitHub
+    theme:
+      icon: fa-circle-half-stroke
+      href: "#theme"
+      aria-label: Cambiar tema
 
 reference:
-- title: "Qué hay / What is there"
+- title: "Qué hay"
   desc: "Las fuentes, sus años y sus módulos, sin descargar nada."
   contents:
   - fa_surveys
   - fa_years
   - fa_catalog
   - fa_check_updates
-- title: "Bajar y leer / Download and read"
+- title: "Bajar y leer"
   desc: "Descarga verificada con SHA-256 y lectura por columnas."
   contents:
   - fa_download
   - fa_read
   - fa_variables
   - fa_cache
-- title: "Diseño muestral / Survey design"
+- title: "Diseño muestral"
   contents:
   - fa_design
-- title: "Ubigeo y territorio / District codes"
+- title: "Ubigeo y territorio"
   contents:
   - fa_ubigeo
   - fa_districts
 - title: "Censo 2017"
   contents:
   - fa_redatam
-- title: "Impresión y resumen / Print and summary"
+- title: "Impresión y resumen"
   contents:
   - faperu-methods
-- title: "Paquete / Package"
+- title: "Paquete"
   contents:
   - faperu-package
 
 footer:
   structure:
-    left: [developed_by]
-    right: [built_with]
+    left: [about]
+    right: [made]
+  components:
+    about: >
+      **faperu** · Fred Torres Cruz y Richar Andre Vilca Solorzano · Licencia MIT<br>
+      Independiente del INEI y del MINEDU; nunca redistribuye microdatos.
+    made: >
+      [GitHub](https://github.com/Andre031222/peru-official-surveys-r) ·
+      [faperu.analysis](https://andre031222.github.io/peru-survey-indicators-r/) ·
+      Hecho con [pkgdown](https://pkgdown.r-lib.org/)

@@ -1,72 +1,110 @@
-/* faperu: the standard pkgdown page, livelier. Dark bar, quiet code blocks,
-   cards on the home page and drifting hexagons on wide screens. */
+/* faperu: the standard pkgdown page with a modern finish.
+   Pure white or real black page, a dark bar with pill links and one theme
+   button, quiet code boxes with an "R" header, smooth page changes and
+   drifting hexagons on very wide screens. */
 
-:root {
-  --fa-teal: #0e7c86;
-  --fa-blue: #14558f;
+:root, [data-bs-theme="light"] {
+  --bs-body-bg: #ffffff;
+  --bs-body-color: #1d1d1f;
+  --fa-accent: #0e7c86;
   --fa-bar: #0b2a3c;
+  --fa-soft: #f5f5f7;
+  --fa-line: #e5e5ea;
+  /* R syntax colours, light theme */
+  --tk-fn: #0e7c86; --tk-str: #15803d; --tk-num: #b45309; --tk-com: #8e8e93;
+  --tk-kw: #7c3aed; --tk-var: #1d1d1f; --tk-op: #6e6e73; --tk-arg: #2563eb;
 }
-/* Pure white page in light mode, real black in dark mode. */
-[data-bs-theme="light"], :root { --bs-body-bg: #ffffff; }
 [data-bs-theme="dark"] {
   --bs-body-bg: #000000;
+  --bs-body-color: #f5f5f7;
   --bs-tertiary-bg: #1c1c1e;
   --bs-border-color: #2c2c2e;
-  --fa-bar: #000000;
-  --bs-body-color: #f5f5f7;
   --bs-link-color: #2dd4bf;
   --bs-link-color-rgb: 45, 212, 191;
-  --fa-teal: #2dd4bf;
+  --fa-accent: #2dd4bf;
+  --fa-bar: #000000;
+  --fa-soft: #1c1c1e;
+  --fa-line: #2c2c2e;
+  --tk-fn: #2dd4bf; --tk-str: #86efac; --tk-num: #fbbf24; --tk-com: #8e8e93;
+  --tk-kw: #c4b5fd; --tk-var: #f5f5f7; --tk-op: #a1a1a6; --tk-arg: #93c5fd;
 }
+html { background: var(--bs-body-bg); }
 
-/* Top bar in a solid colour from the logo, no gradient. */
-.navbar { background: var(--fa-bar) !important; border: 0; }
-.navbar .navbar-brand { font-weight: 700; letter-spacing: -0.01em; }
-.navbar .nav-link { font-weight: 500; white-space: nowrap; }
+/* Moving between pages: a short cross-fade instead of a blink. */
+@view-transition { navigation: auto; }
+::view-transition-old(root), ::view-transition-new(root) { animation-duration: .18s; }
 
-main { margin-top: 1.8rem; }
+/* ---- Top bar --------------------------------------------------------- */
+.navbar { background: var(--fa-bar) !important; border: 0; padding-block: .55rem; }
+[data-bs-theme="dark"] .navbar { border-bottom: 1px solid var(--fa-line); }
+.navbar .navbar-brand { font-weight: 700; letter-spacing: -0.02em; }
+.navbar .nav-link { font-weight: 500; white-space: nowrap; border-radius: 999px; padding: .4rem .85rem !important; transition: background .15s; }
+.navbar .nav-link:hover { background: rgba(255,255,255,.10); }
+.navbar .nav-item.active .nav-link, .navbar .nav-link.active { background: rgba(255,255,255,.16); }
+.navbar .nav-link .fa, .navbar .nav-link .fas, .navbar .nav-link .fab { margin-right: .35rem; }
+/* The theme and GitHub buttons are round icons. */
+.navbar a[href="#theme"], .navbar a[aria-label="GitHub"] { width: 2.35rem; height: 2.35rem; display: grid; place-items: center; padding: 0 !important; }
+.navbar a[href="#theme"] .fa, .navbar a[href="#theme"] .fas, .navbar a[aria-label="GitHub"] .fab { margin: 0; }
+.navbar a[href="#theme"] { border: 1px solid rgba(255,255,255,.25); }
+.navbar a[href="#theme"] span { transition: transform .35s; }
+[data-bs-theme="dark"] .navbar a[href="#theme"] span { transform: rotate(180deg); }
+.navbar .form-control, .navbar input[type="search"] { border-radius: 999px; }
+/* The bar is always dark, so its text is always light. */
+.navbar, .navbar .navbar-brand, .navbar .nav-link, .navbar .dropdown-toggle { color: rgba(255,255,255,.88) !important; }
+.navbar .nav-link:hover, .navbar .navbar-brand:hover { color: #fff !important; }
+.navbar .nav-text, .navbar small, .navbar .text-muted, .navbar .version { color: rgba(255,255,255,.55) !important; }
+.navbar .navbar-toggler { border-color: rgba(255,255,255,.3); }
+.navbar .navbar-toggler-icon { filter: invert(1); }
+.navbar input[type="search"] { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.2); color: #fff; }
+.navbar input[type="search"]::placeholder { color: rgba(255,255,255,.6); }
+main { margin-top: 1.6rem; }
 
-/* Home: the hex logo sits on a soft disc; first heading larger. */
+/* ---- Home ---------------------------------------------------------- */
 .template-home h1 { font-size: 2.6rem; letter-spacing: -0.03em; }
-.template-home h2 { margin-top: 2.6rem; padding-bottom: .4rem;
-  border-bottom: 2px solid var(--fa-teal); }
+.template-home h2 { margin-top: 2.4rem; }
+.fa-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: .8rem; margin: 1.2rem 0; }
+.fa-card { background: var(--fa-soft); border-radius: .75rem; padding: 1rem 1.1rem; font-size: .95rem; transition: transform .2s; }
+.fa-card:hover { transform: translateY(-2px); }
+.fa-card b { display: block; margin-bottom: .2rem; }
+.fa-card .dot { display: inline-block; width: .55rem; height: .55rem; border-radius: 50%; margin-right: .4rem; }
 
-/* Code: quiet, rounded, no decoration. */
-pre { border-radius: .6rem; border: 1px solid var(--bs-border-color); background: var(--bs-tertiary-bg); padding: .9rem 1rem; }
-code { font-variant-ligatures: none; }
+/* ---- Code ------------------------------------------------------------ */
+/* A code box with a small header that says R, like a modern editor. */
+div.sourceCode { position: relative; background: var(--fa-soft); border: 1px solid var(--fa-line); border-radius: .75rem; margin: 1rem 0; overflow: hidden; }
+div.sourceCode::before { content: "R"; display: block; padding: .45rem .9rem; font: 600 .72rem/1 "JetBrains Mono", monospace; letter-spacing: .08em; color: var(--fa-accent); border-bottom: 1px solid var(--fa-line); }
+div.sourceCode pre { margin: 0; border: 0; background: transparent; padding: .85rem 1rem; }
+pre { border-radius: .75rem; border: 1px solid var(--fa-line); background: var(--fa-soft); }
+pre code, code { font-variant-ligatures: none; }
+:not(pre) > code { background: var(--fa-soft); padding: .1em .35em; border-radius: .3rem; }
+.btn-copy-ex { top: .2rem !important; right: .4rem !important; border-radius: .4rem; opacity: .6; }
+.btn-copy-ex:hover { opacity: 1; }
+pre .fu { color: var(--tk-fn); font-weight: 600; }
+pre .st { color: var(--tk-str); }
+pre .fl, pre .dv { color: var(--tk-num); }
+pre .co { color: var(--tk-com); font-style: italic; }
+pre .kw, pre .cf { color: var(--tk-kw); }
+pre .va, pre .ot { color: var(--tk-var); }
+pre .op { color: var(--tk-op); }
+pre .at { color: var(--tk-arg); }
 
-/* Sidebar boxes as cards. */
-aside .links, aside .license, aside .citation, aside .developers, aside .dev-status, aside .install, aside > div > div {
-  border: 1px solid var(--bs-border-color); border-radius: .6rem; padding: .9rem 1rem; margin-bottom: 1rem;
-}
-aside h2 { font-size: .8rem !important; text-transform: uppercase; letter-spacing: .1em; color: var(--fa-teal); }
+/* ---- Sidebar --------------------------------------------------------- */
+aside h2 { font-size: .75rem !important; text-transform: uppercase; letter-spacing: .1em; color: var(--fa-accent); margin-top: 1.4rem; }
+aside small.roles { display: none; }
 
-/* Reference index: a clean two-column list, function then description. */
+/* ---- Function index: a clean two-column list ------------------------- */
 .template-reference-index dl { display: grid; grid-template-columns: minmax(11rem, 16rem) 1fr; margin: 0; }
-.template-reference-index dt, .template-reference-index dd { margin: 0; padding: .55rem .25rem; border-bottom: 1px solid var(--bs-border-color); }
+.template-reference-index dt, .template-reference-index dd { margin: 0; padding: .55rem .25rem; border-bottom: 1px solid var(--fa-line); }
 .template-reference-index dd { color: var(--bs-secondary-color); }
-.template-reference-index dt code { font-weight: 600; }
 
-/* Tables from knitr. */
-table.table { border-radius: .6rem; overflow: hidden; }
-table.table thead th { background: var(--bs-tertiary-bg); font-weight: 600; }
+/* ---- Tables ---------------------------------------------------------- */
+table.table thead th { background: var(--fa-soft); font-weight: 600; }
 
-/* Feature cards on the home page (pkgdown/index.md). */
-.fa-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: .9rem; margin: 1.4rem 0; }
-.fa-card { border: 1px solid var(--bs-border-color); border-radius: .7rem; padding: 1rem 1.1rem; transition: transform .25s, border-color .25s; }
-.fa-card:hover { transform: translateY(-3px); border-color: var(--fa-teal); }
-.fa-card b { display: block; margin-bottom: .25rem; }
-.fa-card .dot { display: inline-block; width: .6rem; height: .6rem; border-radius: 50%; margin-right: .4rem; }
+/* ---- Footer ---------------------------------------------------------- */
+footer { margin-top: 4rem; padding: 2rem 0 2.5rem; border-top: 1px solid var(--fa-line); font-size: .9rem; color: var(--bs-secondary-color); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; }
+footer p { margin: 0; }
+footer strong { color: var(--bs-body-color); }
 
-/* Fade in as the reader scrolls (pkgdown/extra.js). */
-.fa-reveal { opacity: 0; transform: translateY(12px); transition: opacity .6s ease, transform .6s ease; }
-.fa-reveal.fa-in { opacity: 1; transform: none; }
-@media (prefers-reduced-motion: reduce) {
-  .fa-reveal { opacity: 1; transform: none; transition: none; }
-}
-
-/* Very wide screens: the page grows a little, and the empty sides carry
-   hexagons drifting slowly upwards (thin lines only, no blur). */
+/* ---- Very wide screens: hexagons drifting on the empty sides --------- */
 @media (min-width: 1600px) {
   .container, .container-xxl { max-width: 1480px; }
   body::before, body::after {
@@ -81,4 +119,37 @@ table.table thead th { background: var(--bs-tertiary-bg); font-weight: 600; }
   [data-bs-theme="dark"] body::before, [data-bs-theme="dark"] body::after { opacity: .4; }
 }
 @keyframes fa-side { to { background-position: 0 -1460px; } }
-@media (prefers-reduced-motion: reduce) { body::before, body::after { animation: none; } }
+
+@media (prefers-reduced-motion: reduce) {
+  body::before, body::after { animation: none; }
+  @view-transition { navigation: none; }
+}
+
+/* The bar is always dark, so its text is always light. */
+.navbar .navbar-brand, .navbar .nav-link, .navbar .dropdown-toggle { color: rgba(255,255,255,.88) !important; }
+.navbar .nav-link:hover, .navbar .navbar-brand:hover { color: #fff !important; }
+.navbar .nav-text, .navbar small, .navbar .text-muted { color: rgba(255,255,255,.55) !important; }
+.navbar .navbar-toggler { border-color: rgba(255,255,255,.3); }
+.navbar .navbar-toggler-icon { filter: invert(1); }
+.navbar input[type="search"] { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.2); color: #fff; }
+.navbar input[type="search"]::placeholder { color: rgba(255,255,255,.6); }
+
+/* ---- Top bar layout: aligned, compact, never cut at the edge ---------- */
+.navbar > .container, .navbar > .container-xxl { flex-wrap: nowrap; gap: .5rem; }
+.navbar-collapse { align-items: center; }
+.navbar-nav { align-items: center; gap: .1rem; }
+.navbar .nav-link { display: inline-flex; align-items: center; gap: .4rem; line-height: 1.2; }
+.navbar .nav-link .fa, .navbar .nav-link .fas, .navbar .nav-link .fab { margin-right: 0; }
+/* The brand carries the hex logo. */
+.navbar .navbar-brand { display: inline-flex; align-items: center; gap: .55rem; margin-right: .75rem; }
+.navbar .navbar-brand::before { content: ""; width: 28px; height: 32px; background: url("logo.png") center / contain no-repeat; }
+/* A compact search box. */
+.navbar form[role="search"], .navbar .form-inline { margin: 0 .25rem; }
+.navbar input[type="search"] { width: 11rem; height: 2.2rem; border-radius: 999px; padding: .3rem .9rem; font-size: .9rem; }
+/* Medium windows: text links get tighter and Explorar keeps only its icon. */
+@media (min-width: 992px) and (max-width: 1320px) {
+  .navbar .nav-link { padding: .35rem .6rem !important; }
+  .navbar input[type="search"] { width: 8.5rem; }
+  .navbar .nav-link[href*="explore"] { font-size: 0; gap: 0; width: 2.35rem; height: 2.35rem; justify-content: center; padding: 0 !important; }
+  .navbar .nav-link[href*="explore"] span { font-size: 1rem; }
+}

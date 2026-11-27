@@ -2,10 +2,10 @@ Package: faperu
 Title: Access to Peruvian Official Surveys and Censuses
 Version: 0.3.0
 Authors@R: c(
-    person("Richar Andre", "Vilca Solorzano", email = "andrevilcasolorzano@gmail.com",
-           role = c("aut", "cre"), comment = c(ORCID = "0009-0003-2385-5263")),
     person("Fred", "Torres Cruz", role = "aut",
-           comment = c(ORCID = "0000-0003-0834-6834"))
+           comment = c(ORCID = "0000-0003-0834-6834")),
+    person("Richar Andre", "Vilca Solorzano", email = "andrevilcasolorzano@gmail.com",
+           role = c("aut", "cre"), comment = c(ORCID = "0009-0003-2385-5263"))
   )
 Description: One catalog, one download function and a few helpers to read,
     weight and locate ten Peruvian official data sources: ENAHO, ENDES, ENA, EPEN, ENAPRES, ENUT, ENARES

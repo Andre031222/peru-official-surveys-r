@@ -44,11 +44,14 @@ researchers, public officials) and want correct numbers in three lines of R.
 ## Get started
 
 ```r
-remotes::install_github("Andre031222/peru-official-surveys-r")
+install.packages("remotes")
+library(remotes)
+install_github("Andre031222/peru-official-surveys-r")
 
 library(faperu)
+library(survey)
 s <- fa_read("enaho", 2024, "34", file = "Sumaria-2024\\.")
-survey::svymean(~I(pobreza < 3), fa_design(s, "enaho"))
+svymean(~I(pobreza < 3), fa_design(s, "enaho"))
 ```
 
 This downloads the ENAHO 2024 household summary, reads it and gives the share of poor households
@@ -219,10 +222,13 @@ formación (economistas, investigadores de salud y educación, funcionarios) y q
 correctas en tres líneas de R.
 
 ```r
-remotes::install_github("Andre031222/peru-official-surveys-r")
+install.packages("remotes")
+library(remotes)
+install_github("Andre031222/peru-official-surveys-r")
 library(faperu)
+library(survey)
 s <- fa_read("enaho", 2024, "34", file = "Sumaria-2024\\.")
-survey::svymean(~I(pobreza < 3), fa_design(s, "enaho"))
+svymean(~I(pobreza < 3), fa_design(s, "enaho"))
 ```
 
 - **Bajar:** `fa_download()` baja hasta cuatro archivos a la vez, reanuda los cortes y comprueba
