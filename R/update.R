@@ -12,7 +12,7 @@
 #'
 #' @param survey One or more short names. `NULL` checks all.
 #' @return A data frame with `survey`, `year`, `new` (not in the catalog)
-#'   and `status`.
+#'   and `status`, of class `fa_updates` (see [faperu-methods]).
 #' @examples
 #' \dontrun{
 #' fa_check_updates("ena")
@@ -42,7 +42,7 @@ fa_check_updates <- function(survey = NULL) {
   })
   res <- do.call(rbind, out)
   rownames(res) <- NULL
-  res
+  .as(res, "fa_updates")
 }
 
 .portal_handle <- function() {

@@ -12,7 +12,8 @@ fa_catalog(survey, years = NULL)
 \item{years}{Years to keep. \code{NULL} keeps all.}
 }
 \value{
-A data frame with one row per module.
+A data frame with one row per module, of class \code{fa_catalog};
+\code{summary()} counts the modules of each year (see \link{faperu-methods}).
 }
 \description{
 Lists year, module code, name and available formats. When a copy was

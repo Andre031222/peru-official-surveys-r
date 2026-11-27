@@ -11,7 +11,7 @@ fa_check_updates(survey = NULL)
 }
 \value{
 A data frame with \code{survey}, \code{year}, \code{new} (not in the catalog)
-and \code{status}.
+and \code{status}, of class \code{fa_updates} (see \link{faperu-methods}).
 }
 \description{
 Asks the source which years are published and compares them with the

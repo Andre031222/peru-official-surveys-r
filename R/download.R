@@ -32,7 +32,8 @@
 #' @return Invisibly, a data frame with one row per module, a `status`
 #'   column (`"cached"`, `"downloaded"` or `"changed"`, when the source now
 #'   serves a file that differs from the catalog), the size in `bytes` and
-#'   the download time in `seconds` (0 for cached files).
+#'   the download time in `seconds` (0 for cached files), of class
+#'   `fa_download` (see [faperu-methods]).
 #' @examples
 #' \dontrun{
 #' fa_download("ena", 2024, "1893")
@@ -86,7 +87,7 @@ fa_download <- function(survey, year, module = NULL, format = "auto", series = N
   plan$expected <- NULL
   plan$url <- NULL
   rownames(plan) <- NULL
-  invisible(plan)
+  invisible(.as(plan, "fa_download"))
 }
 
 # Decide, for one module, where it lives in the cache and whether it is

@@ -7,7 +7,8 @@
 fa_surveys()
 }
 \value{
-A data frame with one row per source.
+A data frame with one row per source, of class \code{fa_surveys}
+(see \link{faperu-methods}).
 }
 \description{
 The ten data sources covered by faperu

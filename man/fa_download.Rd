@@ -44,7 +44,8 @@ regular expression.}
 Invisibly, a data frame with one row per module, a \code{status}
 column (\code{"cached"}, \code{"downloaded"} or \code{"changed"}, when the source now
 serves a file that differs from the catalog), the size in \code{bytes} and
-the download time in \code{seconds} (0 for cached files).
+the download time in \code{seconds} (0 for cached files), of class
+\code{fa_download} (see \link{faperu-methods}).
 }
 \description{
 Fetches the requested modules into the cache. Before downloading anything

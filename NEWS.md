@@ -1,3 +1,10 @@
+# faperu (development version)
+
+- `fa_surveys()`, `fa_catalog()`, `fa_download()` and `fa_check_updates()` return data frames
+  with a class (`fa_surveys`, `fa_catalog`, `fa_download`, `fa_updates`) that prints a short
+  report; `summary()` of a catalog counts its modules by year. Nothing changes when they are
+  used as data frames.
+
 # faperu 0.3.0
 
 Probado de punta a punta con las 10 bases: descarga, caché, lectura por columnas, diseño y

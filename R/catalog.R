@@ -1,6 +1,7 @@
 #' The ten data sources covered by faperu
 #'
-#' @return A data frame with one row per source.
+#' @return A data frame with one row per source, of class `fa_surveys`
+#'   (see [faperu-methods]).
 #' @examples
 #' fa_surveys()
 #' @export
@@ -22,7 +23,7 @@ fa_surveys <- function() {
       stringsAsFactors = FALSE
     )
   })
-  do.call(rbind, rows)
+  .as(do.call(rbind, rows), "fa_surveys")
 }
 
 #' Published years of a source
@@ -52,7 +53,8 @@ fa_years <- function(survey) {
 #'
 #' @inheritParams fa_years
 #' @param years Years to keep. `NULL` keeps all.
-#' @return A data frame with one row per module.
+#' @return A data frame with one row per module, of class `fa_catalog`;
+#'   `summary()` counts the modules of each year (see [faperu-methods]).
 #' @examples
 #' head(fa_catalog("enaho", 2024))
 #' @export
@@ -80,7 +82,7 @@ fa_catalog <- function(survey, years = NULL) {
   df$.i <- seq_len(nrow(df))
   if (!is.null(years)) df <- df[df$year %in% years, , drop = FALSE]
   rownames(df) <- NULL
-  df
+  .as(df, "fa_catalog")
 }
 
 # Years missing from the catalog are looked up at the source, once per session.
