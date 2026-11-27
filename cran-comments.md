@@ -1,6 +1,6 @@
 ## Submission summary
 
-This is the first submission of faperu (version 0.4.2).
+This is the first submission of faperu (version 0.4.3).
 
 faperu gives R users one consistent way to obtain and analyse ten official
 statistical sources of Peru: eight household, labour, health, agricultural

@@ -120,3 +120,31 @@ test_that("a wrong territory fails clearly", {
   expect_error(fa_design(df, "enaho", territory = "15"), class = "faperu_error_territory")
   expect_error(fa_design(df[, 1:3], "enaho", territory = "21"), class = "faperu_error_no_domain")
 })
+
+test_that("ENA before 2023 uses DOMINIO and keeps firms in their own strata", {
+  df <- data.frame(FACTOR = c(rep(20, 8), 3, 5), CONGLOMERADO = c(1:8, 9, 10),
+                   ESTRATO = c(rep("", 8), "1", "2"), DOMINIO = c(rep(1:2, each = 4), 1, 1),
+                   CODIGO = c(rep(1, 8), 2, 2))
+  expect_warning(expect_message(d <- fa_design(df, "ena"), "separate sampling frame"),
+                 class = "faperu_warning_ena_strata")
+  expect_setequal(unique(d$variables$.fa_strata), c("dominio_1", "dominio_2", "firms_1", "firms_2"))
+  expect_null(d$fpc$popsize)
+})
+
+test_that("ENA from 2023 uses ESTRATO and firms surveyed in full add no variance", {
+  df <- data.frame(FACTOR_PRODUCTOR = c(rep(30, 8), 1, 1, 1), NSEGM = 1:11,
+                   ESTRATO = c(rep(c("a", "b"), each = 4), "", "", ""),
+                   CODIGO = c(rep(1, 8), 2, 2, 2), y = c(rep(0, 8), 1, 1, 1))
+  d <- suppressMessages(fa_design(df, "ena"))
+  expect_equal(sum(d$variables$.fa_strata == "firms"), 3)
+  t <- survey::svytotal(~y, d)
+  expect_equal(unname(coef(t)), 3)
+  expect_equal(unname(as.numeric(survey::SE(t))), 0)
+})
+
+test_that("ENA without a usable stratum fails clearly", {
+  df <- data.frame(FACTOR = 1:4, CONGLOMERADO = 1:4, ESTRATO = "", CODIGO = 1)
+  expect_error(fa_design(df, "ena"), class = "faperu_error_design")
+  df2 <- data.frame(FACTOR = 1:4, NSEGM = 1:4, ESTRATO = c("a", "a", "b", ""), CODIGO = 1)
+  expect_error(fa_design(df2, "ena"), "1 producers have no stratum")
+})

@@ -45,6 +45,11 @@ fa_read <- function(survey, year, module, file = NULL, format = "auto", series =
 #' the file has them (SPSS and Stata). Only the file headers are read, so it
 #' is quick even for large modules. Use it to choose `cols` in [fa_read()].
 #'
+#' Labels are the ones INEI wrote in the file. Stata limits them to 80
+#' characters, and some are cut (for example the ENA 2022-2025 genetic
+#' improvement items `P501A_16C` to `P501A_16E`); the full wording is in the
+#' data dictionary PDF that comes in the same zip.
+#'
 #' @inheritParams fa_read
 #' @return A data frame with `file`, `name`, `label` and `type`, one row per
 #'   variable and file.

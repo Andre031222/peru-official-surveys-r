@@ -142,6 +142,41 @@ with certainty go in their own stratum and the standard errors are approximate. 
 `FACTOR07`, `ESTRATO` and `CONGLOME`; for ENDES, `V005` or `HV005` (divided by one million),
 `V022` and `V001`. Any of them can be overridden, and a stratum can cross two columns: `strata = "CCDD*AREA"`.
 
+### The ENA across rounds
+
+The National Agricultural Survey changed several times between 2014 and 2025. What faperu does
+for you, and what you have to keep in mind:
+
+- **Stratum.** From 2023 the stratum is `ESTRATO`. From 2014 to 2022 `ESTRATO` is empty for
+  producers (it only classifies the agricultural firms) or does not exist, and the stratum is
+  `DOMINIO`. `fa_design()` picks the right one and warns (class `faperu_warning_ena_strata`) when
+  it uses `DOMINIO`. Read `ESTRATO`, `DOMINIO` and `CODIGO` with your columns.
+- **Two frames.** Agricultural firms (`CODIGO` 2) are a separate sampling frame. `fa_design()`
+  keeps them in their own strata; from 2024 they are surveyed in full and add no variance. To
+  study producers only, drop them before the design: removing a whole frame is safe.
+- **Identifiers.** The cluster is `CONGLOMERADO` up to 2022 and `NSEGM` from 2023; the producer
+  is `NSELUA` up to 2022 and `ID_PROD` from 2023. `fa_key(x, "ena")` builds the same key in every
+  round, and joins the chapters of one round in full.
+- **Not a panel.** The same key in two rounds is not the same farm: there are no common units
+  between 2024 and 2025. Compare rounds by area with `fa_link()`, never unit by unit.
+- **Questionnaire changes.** The livestock practices (`P501A_*`) had 22 items in 2014-2019, only
+  6 (pastures) in 2021, and 30 with their years of adoption from 2022, when genetic improvement
+  split into artificial insemination (`16C`), improved breeding stock (`16D`) and embryo
+  transfer (`16E`). A series that includes 2021 must say so.
+- **Labels.** The Stata labels of 2022-2025 are cut at 80 characters, so `16C` to `16E` look
+  alike in `fa_variables()`. The full wording is in the data dictionary PDF inside each zip
+  (`Diccionario_Datos_*.pdf`).
+- **Data entry.** INEI's files keep some unit errors (in 2017 a few sales are a thousand times
+  the production) and the 2019 production levels sit above the rest of the series. faperu does
+  not change the data; check ratios such as sales over production before using them, and the
+  reference period of 2019 in its technical sheet.
+
+```{r}
+ena <- fa_read("ena", 2017, "1315", file = "01_Cap100_1",
+               cols = c("CONGLOMERADO", "ESTRATO", "DOMINIO", "FACTOR", "CODIGO"))
+d <- fa_design(ena, "ena")    # DOMINIO as stratum, firms in their own strata
+```
+
 ## 6. The 2017 Census
 
 INEI does not publish the census microdata as a file. CELADE distributes the full database in

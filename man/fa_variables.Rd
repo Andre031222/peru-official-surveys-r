@@ -48,6 +48,12 @@ Lists the variables of the data files in a module, with their labels when
 the file has them (SPSS and Stata). Only the file headers are read, so it
 is quick even for large modules. Use it to choose \code{cols} in \code{\link[=fa_read]{fa_read()}}.
 }
+\details{
+Labels are the ones INEI wrote in the file. Stata limits them to 80
+characters, and some are cut (for example the ENA 2022-2025 genetic
+improvement items \code{P501A_16C} to \code{P501A_16E}); the full wording is in the
+data dictionary PDF that comes in the same zip.
+}
 \examples{
 \dontrun{
 fa_variables("enaho", 2024, "34")

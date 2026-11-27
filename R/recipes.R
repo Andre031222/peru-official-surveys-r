@@ -57,9 +57,12 @@
 
 .recipe_ena_women <- function(year, cache) {
   a <- as.data.frame(fa_read("ena", year, "1911", cache = cache))
-  est <- trimws(as.character(unclass(a$estrato)))
-  # Producers who answered (P1102 == 1), in the area frame (with a stratum).
-  a <- a[.num(a$p1102) %in% 1 & !is.na(est) & est != "", , drop = FALSE]
+  # Producers who answered (P1102 == 1). Agricultural firms (CODIGO 2) are
+  # another frame and have no sex; older files mark them only by an empty
+  # stratum.
+  firm <- if (!is.null(a$codigo)) .num(a$codigo) %in% 2 else
+    trimws(as.character(unclass(a$estrato))) %in% c("", NA)
+  a <- a[.num(a$p1102) %in% 1 & !firm, , drop = FALSE]
   a <- a[!is.na(a$p1103), , drop = FALSE]
   a$fa_y <- as.numeric(.num(a$p1103) == 2)
   .design(a, "ena")

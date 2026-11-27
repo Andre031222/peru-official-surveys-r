@@ -27,6 +27,14 @@
 #' you set `options(survey.lonely.psu = "adjust")`; faperu warns but does not
 #' change the option for you.
 #'
+#' * **ENA**: the stratum depends on the round. From 2023 it is `ESTRATO`;
+#'   from 2014 to 2022 `ESTRATO` is empty for producers (or absent), and
+#'   `DOMINIO` is used, with a warning of class `faperu_warning_ena_strata`.
+#'   Agricultural firms (`CODIGO` 2) are a separate frame and keep their own
+#'   strata; from 2024 they are surveyed in full and add no variance. The
+#'   cluster is `CONGLOMERADO` up to 2022 and `NSEGM` from 2023. Read
+#'   `ESTRATO`, `DOMINIO` and `CODIGO` with the other columns.
+#'
 #' The ENA has thousands of fine strata, most with one cluster. Collapsing
 #' them is not official, but if you need it:
 #' `ena$estrato_c <- paste0(ena$CCDD, substr(ena$ESTRATO, 7, 9))` and
@@ -68,9 +76,12 @@ fa_design <- function(data, survey, weight = NULL, strata = NULL, cluster = NULL
   }
   dz <- x$diseno
   certainty <- identical(dz$forzosa, "peso==1") && is.null(strata)
+  # The ENA changes its stratum across rounds and mixes two sampling frames
+  # (producers and firms); its strata are worked out from the data below.
+  ena <- identical(x$id, "ena") && is.null(strata)
   one_stage <- isTRUE(dz$unietapica) && is.null(cluster)
   w <- .find_var(data, .or(weight, unlist(dz$peso)), "weight", x)
-  s <- if (certainty) NULL else .find_var(data, .or(strata, unlist(dz$estrato)), "strata", x, optional = TRUE)
+  s <- if (certainty || ena) NULL else .find_var(data, .or(strata, unlist(dz$estrato)), "strata", x, optional = TRUE)
   k <- if (one_stage) NULL else .find_var(data, .or(cluster, unlist(dz$conglomerado)), "cluster", x, optional = TRUE)
   scale <- if (is.null(weight)) as.numeric(.or(dz$escala, 1)) else 1
 
@@ -91,7 +102,15 @@ fa_design <- function(data, survey, weight = NULL, strata = NULL, cluster = NULL
   }
 
   fpc <- NULL
-  if (!is.null(s)) {
+  if (ena) {
+    st <- .ena_strata(data)
+    data$.fa_strata <- st$strata
+    if (any(st$certain)) {
+      # Firms surveyed in full are their whole stratum: no sampling variance.
+      data$.fa_fpc <- as.numeric(st$certain)
+      fpc <- ~.fa_fpc
+    }
+  } else if (!is.null(s)) {
     parts <- strsplit(s, "*", fixed = TRUE)[[1]]
     data$.fa_strata <- do.call(paste, c(lapply(parts, function(p) as.character(data[[p]])), sep = "_"))
   } else if (certainty) {
@@ -155,6 +174,54 @@ fa_design <- function(data, survey, weight = NULL, strata = NULL, cluster = NULL
   keep <- Reduce(`|`, lapply(t, function(x) startsWith(ub, x)))
   if (!any(keep)) .abort("territory", "No rows in territory %s.", paste(territory, collapse = ", "))
   keep
+}
+
+# ENA strata, round by round. Producers (people, CODIGO 1) and agricultural
+# firms (CODIGO 2) are two sampling frames, so each keeps its own strata.
+# * 2023 onwards: ESTRATO for producers (thousands of fine strata); firms
+#   carry no stratum and weight 1, i.e. they are surveyed in full.
+# * 2014-2022: ESTRATO is empty for producers (it only classifies firms, and
+#   2021-2022 do not have it), so the producers' stratum is DOMINIO.
+.ena_strata <- function(data) {
+  blank <- function(v) is.na(v) | trimws(as.character(v)) %in% c("", "NA")
+  est <- .col(data, "estrato")
+  dom <- .col(data, "dominio")
+  cod <- .col(data, "codigo")
+  firm <- if (is.null(cod)) rep(FALSE, nrow(data)) else .num(data[[cod]]) %in% 2
+  people <- !firm
+  use_est <- !is.null(est) && any(people) && mean(!blank(data[[est]][people])) > 0.5
+  if (use_est) {
+    s <- as.character(data[[est]])
+  } else if (!is.null(dom)) {
+    s <- paste0("dominio_", as.character(data[[dom]]))
+    .warn("ena_strata", paste(
+      "ENA before 2023: ESTRATO is empty for producers, so DOMINIO is used as their stratum",
+      "(the frame INEI used in those rounds)."))
+  } else {
+    .abort("design", paste(
+      "ENA: no stratum for the producers. Read ESTRATO (2023 onwards) or DOMINIO (2014-2022)",
+      "with the other columns, or give `strata`."))
+  }
+  if (any(people & blank(s))) {
+    .abort("design", "ENA: %d producers have no stratum; check the module or give `strata`.",
+           sum(people & blank(s)))
+  }
+  certain <- rep(FALSE, nrow(data))
+  if (any(firm)) {
+    w <- data$.fa_weight[firm]
+    if (all(w == 1)) {
+      s[firm] <- "firms"
+      certain <- firm
+    } else {
+      fs <- if (is.null(est)) rep("", sum(firm)) else as.character(data[[est]][firm])
+      s[firm] <- paste0("firms_", ifelse(blank(fs), "none", fs))
+    }
+    message(sprintf(paste(
+      "ENA: %d agricultural firms (CODIGO 2) are a separate sampling frame and keep their own",
+      "strata%s. Drop them first to study producers only."),
+      sum(firm), if (any(certain)) ", surveyed in full (no sampling variance)" else ""))
+  }
+  list(strata = s, certain = certain)
 }
 
 .lonely <- function(strata, cluster, x) {

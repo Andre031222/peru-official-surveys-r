@@ -2,7 +2,7 @@
 
 **One catalog and one way of asking for ten official data sources of Peru: download, verify, read, weight and estimate**
 
-[![Version](https://img.shields.io/badge/Version-0.4.2-17A4AE?style=flat-square)](NEWS.md)
+[![Version](https://img.shields.io/badge/Version-0.4.3-17A4AE?style=flat-square)](NEWS.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-337AB7?style=flat-square)](LICENSE.md)
 [![R >= 4.1](https://img.shields.io/badge/R-%E2%89%A5_4.1-276DC3?style=flat-square&logo=r&logoColor=white)](https://www.r-project.org/)
 [![R CMD check](https://img.shields.io/badge/R_CMD_check-OK-2E7D32?style=flat-square)](#tests-and-performance)

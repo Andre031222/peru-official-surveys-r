@@ -58,6 +58,15 @@ approximate.
 Where a stratum has a single cluster, as in ENDES, \code{survey} stops unless
 you set \code{options(survey.lonely.psu = "adjust")}; faperu warns but does not
 change the option for you.
+\itemize{
+\item \strong{ENA}: the stratum depends on the round. From 2023 it is \code{ESTRATO};
+from 2014 to 2022 \code{ESTRATO} is empty for producers (or absent), and
+\code{DOMINIO} is used, with a warning of class \code{faperu_warning_ena_strata}.
+Agricultural firms (\code{CODIGO} 2) are a separate frame and keep their own
+strata; from 2024 they are surveyed in full and add no variance. The
+cluster is \code{CONGLOMERADO} up to 2022 and \code{NSEGM} from 2023. Read
+\code{ESTRATO}, \code{DOMINIO} and \code{CODIGO} with the other columns.
+}
 
 The ENA has thousands of fine strata, most with one cluster. Collapsing
 them is not official, but if you need it:

@@ -106,6 +106,7 @@ reference:
   - fa_download
   - fa_read
   - fa_variables
+  - fa_key
   - fa_cache
 - title: "Ubigeo y territorio"
   desc: "Primero el territorio: el ubigeo armonizado al marco del Censo 2017."

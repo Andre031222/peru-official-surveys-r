@@ -1,3 +1,19 @@
+# faperu 0.4.3
+
+Corrections found by using faperu on the eleven ENA rounds (2014-2025).
+
+- `fa_design()` for the ENA picks the stratum of each round: `ESTRATO` from 2023, and `DOMINIO`
+  from 2014 to 2022, when `ESTRATO` is empty for producers or absent. Before, the older rounds
+  failed or put every producer in one empty stratum. Using `DOMINIO` raises a warning of class
+  `faperu_warning_ena_strata`.
+- Agricultural firms (`CODIGO` 2), a separate sampling frame, keep their own strata; from 2024
+  they are surveyed in full and add no variance.
+- New `fa_key()`: the ENA agricultural-unit key (district, cluster, producer, unit) is the same
+  in every round although INEI renamed the identifiers, and joins chapters of one round in full;
+  it also builds ENAHO household and person keys.
+- The guide documents the ENA across rounds: not a panel, the 2021 questionnaire, labels cut at
+  80 characters and data-entry errors to check.
+
 # faperu 0.4.2
 
 - The seven ready indicators carry INEI's official figures for 2025 as well as 2024, each year
