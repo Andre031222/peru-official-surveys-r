@@ -46,7 +46,7 @@ test_that("bad tables are refused", {
   expect_error(fa_link(a, a), class = "faperu_error_bad_input")
   expect_error(fa_link(a = a, b = data.frame(x = 1)), class = "faperu_error_bad_input")
   expect_error(fa_link(a = a, b = a, level = "district"), class = "faperu_error_bad_input")
-  expect_error(fa_link(a = a, b = a[, -8]), class = "faperu_error_bad_input")
+  expect_error(fa_link(a = a, b = a[, -8], by_year = TRUE), class = "faperu_error_bad_input")
 })
 
 test_that("poverty and women producers link by department with real data", {
@@ -56,4 +56,13 @@ test_that("poverty and women producers link by department with real data", {
   r <- suppressWarnings(fa_link(poverty = p, women = w))
   expect_gte(nrow(r), 24)
   expect_true(all(c("estimate_poverty", "estimate_women", "quality_women") %in% names(r)))
+})
+
+test_that("estimates without a year are joined by area alone", {
+  a <- data.frame(by = "department", domain = c("01", "02"), estimate = c(.3, .4),
+                  se = .01, cv = c(3, 2.5), n = 100, quality = "muy buena")
+  b <- transform(a, estimate = c(.5, .6))
+  l <- fa_link(x = a, y = b)
+  expect_equal(nrow(l), 2L)
+  expect_false("year" %in% names(l))
 })

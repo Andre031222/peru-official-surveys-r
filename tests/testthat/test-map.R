@@ -42,3 +42,29 @@ test_that("missing packages give a clear error", {
   expect_error(faperu:::.need("surely.not.a.package", "for maps"),
                "install.packages", class = "faperu_error_missing_package")
 })
+
+test_that("classes, reference-only areas and context are drawn", {
+  skip_if_not_installed("sf")
+  skip_if_not_installed("ggplot2")
+  g <- squares(c("01", "02", "03", "04"))
+  sf::st_geometry(g) <- sf::st_geometry(g) * 0.5 + c(-76, -10)   # inside Peru
+  sf::st_crs(g) <- 4326
+  x <- data.frame(domain = c("01", "02", "03", "04"), estimate = c(.1, .2, .3, .4),
+                  quality = c("buena", "buena", "referencial", "buena"))
+  p <- fa_map(x, geometry = g, breaks = c(0, .25, .5), legend = "Share")
+  expect_s3_class(p, "ggplot")
+  expect_equal(nlevels(p$data$fa_class), 2L)
+  expect_equal(p$data$fa_ref, c(FALSE, FALSE, TRUE, FALSE))
+  expect_match(p$labels$caption, "referencial")
+  q <- fa_map(x, geometry = g, breaks = "continuous", context = FALSE, labels = "none", quality = NULL)
+  expect_null(q$labels$caption)
+  expect_true(all(is.na(q$data$fa_class) | TRUE))
+  png(tempfile(fileext = ".png")); on.exit(dev.off())
+  expect_silent(print(p))
+})
+
+test_that("class limits and labels are tidy", {
+  expect_equal(faperu:::.map_breaks(c(1, 2, 3, 4), c(2, 3), 5), c(1, 2, 3, 4))
+  expect_length(faperu:::.map_breaks(1:100, "quantile", 4), 5)
+  expect_equal(faperu:::.title_case(c("MADRE DE DIOS", "LA LIBERTAD")), c("Madre de Dios", "La Libertad"))
+})

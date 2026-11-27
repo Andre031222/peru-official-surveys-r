@@ -28,7 +28,7 @@ fa_table <- function(x, digits = 1, percent = TRUE, format = c("data.frame", "ma
   }
   k <- if (percent) 100 else 1
   f <- function(v) formatC(k * v, format = "f", digits = digits, big.mark = ",")
-  low <- x$cv > 15 & !is.na(x$cv)
+  low <- (x$cv > 15 & !is.na(x$cv)) | (if (is.null(x$quality)) FALSE else x$quality %in% "referencial")
   area <- x$name %||% x$domain %||% seq_len(nrow(x))
   out <- data.frame(
     Area = as.character(area),
@@ -43,7 +43,7 @@ fa_table <- function(x, digits = 1, percent = TRUE, format = c("data.frame", "ma
   if ("official" %in% names(x) && any(!is.na(x$official))) {
     out$INEI <- ifelse(is.na(x$official), "", f(x$official))
   }
-  note <- if (any(low)) "* CV above 15%: INEI rates the estimate as a reference only (referencial)." else NULL
+  note <- if (any(low)) "* CV above 15% or fewer than 30 cases: a reference only (INEI 'referencial')." else NULL
   if (format == "data.frame") {
     attr(out, "note") <- note
     return(out)

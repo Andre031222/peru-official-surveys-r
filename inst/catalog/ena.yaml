@@ -3546,7 +3546,7 @@ modulos:
   serie: anual
   encuesta_inei: '1036'
   codigo: '1893'
-  nombre: "CARATERÃ\x8DSTICAS DE LA UNIDAD AGROPECUARIA AL DÃ\x8DA DE LA ENTREVISTA"
+  nombre: 'CARATERÍSTICAS DE LA UNIDAD AGROPECUARIA AL DÍA DE LA ENTREVISTA'
   archivos:
     CSV: 1036-Modulo1893
     STATA: 1036-Modulo1893
@@ -3561,7 +3561,7 @@ modulos:
   serie: anual
   encuesta_inei: '1036'
   codigo: '1894'
-  nombre: "CARATERÃ\x8DSTICAS DE LA UNIDAD AGROPECUARIA EN LOS Ã\x9ALTIMOS 12 MESES"
+  nombre: 'CARATERÍSTICAS DE LA UNIDAD AGROPECUARIA EN LOS ÚLTIMOS 12 MESES'
   archivos:
     CSV: 1036-Modulo1894
     STATA: 1036-Modulo1894
@@ -3576,7 +3576,7 @@ modulos:
   serie: anual
   encuesta_inei: '1036'
   codigo: '1895'
-  nombre: "SUPERFICIE COSECHADA, SEMBRADA, PRODUCCIÃ\x93N Y DESTINO DE LOS CULTIVOS COSECHADOS"
+  nombre: 'SUPERFICIE COSECHADA, SEMBRADA, PRODUCCIÓN Y DESTINO DE LOS CULTIVOS COSECHADOS'
   archivos:
     CSV: 1036-Modulo1895
     STATA: 1036-Modulo1895
@@ -3591,7 +3591,7 @@ modulos:
   serie: anual
   encuesta_inei: '1036'
   codigo: '1896'
-  nombre: "PÃ\x89RDIDA TOTAL DE PRODUCCIÃ\x93N O SUPERFICIE SEMBRADA"
+  nombre: 'PÉRDIDA TOTAL DE PRODUCCIÓN O SUPERFICIE SEMBRADA'
   archivos:
     CSV: 1036-Modulo1896
     STATA: 1036-Modulo1896
@@ -3606,7 +3606,7 @@ modulos:
   serie: anual
   encuesta_inei: '1036'
   codigo: '1897'
-  nombre: "DERIVADOS AGRÃ\x8DCOLAS DE LOS CULTIVOS COSECHADOS"
+  nombre: 'DERIVADOS AGRÍCOLAS DE LOS CULTIVOS COSECHADOS'
   archivos:
     CSV: 1036-Modulo1897
     STATA: 1036-Modulo1897
@@ -3621,7 +3621,7 @@ modulos:
   serie: anual
   encuesta_inei: '1036'
   codigo: '1898'
-  nombre: "SUBPRODUCTOS AGRÃ\x8DCOLAS DE LOS CULTIVOS COSECHADOS"
+  nombre: 'SUBPRODUCTOS AGRÍCOLAS DE LOS CULTIVOS COSECHADOS'
   archivos:
     CSV: 1036-Modulo1898
     STATA: 1036-Modulo1898
@@ -3636,7 +3636,7 @@ modulos:
   serie: anual
   encuesta_inei: '1036'
   codigo: '1899'
-  nombre: "COSTOS DE PRODUCCIÃ\x93N DE LOS CULTIVOS COSECHADOS"
+  nombre: 'COSTOS DE PRODUCCIÓN DE LOS CULTIVOS COSECHADOS'
   archivos:
     CSV: 1036-Modulo1899
     STATA: 1036-Modulo1899
@@ -3651,7 +3651,7 @@ modulos:
   serie: anual
   encuesta_inei: '1036'
   codigo: '1900'
-  nombre: "BUENAS PRÃ\x81CTICAS AGRÃ\x8DCOLAS (PARA LOS CULTIVOS COSECHADOS Y NO COSECHADOS)"
+  nombre: 'BUENAS PRÁCTICAS AGRÍCOLAS (PARA LOS CULTIVOS COSECHADOS Y NO COSECHADOS)'
   archivos:
     CSV: 1036-Modulo1900
     STATA: 1036-Modulo1900
@@ -3666,7 +3666,7 @@ modulos:
   serie: anual
   encuesta_inei: '1036'
   codigo: '1901'
-  nombre: "ACTIVIDAD PECUARIA AL DÃ\x8DA DE LA ENTREVISTA"
+  nombre: 'ACTIVIDAD PECUARIA AL DÍA DE LA ENTREVISTA'
   archivos:
     CSV: 1036-Modulo1901
     STATA: 1036-Modulo1901
@@ -3681,7 +3681,7 @@ modulos:
   serie: anual
   encuesta_inei: '1036'
   codigo: '1902'
-  nombre: "ACTIVIDAD PECUARIA EN LOS Ã\x9ALTIMOS 12 MESES"
+  nombre: 'ACTIVIDAD PECUARIA EN LOS ÚLTIMOS 12 MESES'
   archivos:
     CSV: 1036-Modulo1902
     STATA: 1036-Modulo1902
@@ -3726,7 +3726,7 @@ modulos:
   serie: anual
   encuesta_inei: '1036'
   codigo: '1905'
-  nombre: "BUENAS PRÃ\x81CTICAS PECUARIAS"
+  nombre: 'BUENAS PRÁCTICAS PECUARIAS'
   archivos:
     CSV: 1036-Modulo1905
     STATA: 1036-Modulo1905
@@ -3756,7 +3756,7 @@ modulos:
   serie: anual
   encuesta_inei: '1036'
   codigo: '1907'
-  nombre: "SERVICIOS DE EXTENSIÃ\x93N AGRARÃ\x8DA"
+  nombre: 'SERVICIOS DE EXTENSIÓN AGRARÍA'
   archivos:
     CSV: 1036-Modulo1907
     STATA: 1036-Modulo1907
@@ -3801,7 +3801,7 @@ modulos:
   serie: anual
   encuesta_inei: '1036'
   codigo: '1910'
-  nombre: "COSTOS DE PRODUCCIÃ\x93N DE LA ACTIVIDAD AGROPECUARIA"
+  nombre: 'COSTOS DE PRODUCCIÓN DE LA ACTIVIDAD AGROPECUARIA'
   archivos:
     CSV: 1036-Modulo1910
     STATA: 1036-Modulo1910
@@ -3816,7 +3816,7 @@ modulos:
   serie: anual
   encuesta_inei: '1036'
   codigo: '1911'
-  nombre: "CARACTERÃ\x8DSTICAS DEL PRODUCTOR/A AGROPECUARIO/A Y SU FAMILIA"
+  nombre: 'CARACTERÍSTICAS DEL PRODUCTOR/A AGROPECUARIO/A Y SU FAMILIA'
   archivos:
     CSV: 1036-Modulo1911
     STATA: 1036-Modulo1911
@@ -3831,7 +3831,7 @@ modulos:
   serie: anual
   encuesta_inei: '1036'
   codigo: '1912'
-  nombre: "INTENCIÃ\x93N DE SIEMBRA"
+  nombre: 'INTENCIÓN DE SIEMBRA'
   archivos:
     CSV: 1036-Modulo1912
     STATA: 1036-Modulo1912

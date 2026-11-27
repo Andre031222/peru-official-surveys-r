@@ -10,7 +10,8 @@ fa_estimate(
   type = c("mean", "prop", "total"),
   by = "national",
   level = 0.95,
-  na.rm = TRUE
+  na.rm = TRUE,
+  min_n = 30
 )
 }
 \arguments{
@@ -30,6 +31,11 @@ area from an \code{area} column (1 urban, 2 rural) or ENDES \code{hv025}.}
 \item{level}{Confidence level.}
 
 \item{na.rm}{Drop missing values of \code{var}.}
+
+\item{min_n}{Fewest unweighted cases for a figure to be rated by its CV.
+Below it the quality is \code{"referencial"} whatever the CV, because a
+standard error from a handful of cases is itself unreliable.
+Set to 0 to rate by the CV alone.}
 }
 \value{
 A data frame with one row per domain: \code{by}, \code{domain}, \code{name}
@@ -46,7 +52,9 @@ variation and the INEI quality band (\code{\link[=fa_quality]{fa_quality()}}).
 }
 \details{
 Intervals are normal (Wald) intervals; for proportions they
-are cut at 0 and 1. If the option \code{survey.lonely.psu} is left at its
+are cut at 0 and 1. Rows without a domain (for example the ENA's
+agricultural firms, which carry no location) count in national
+figures but are left out of a breakdown, with a message. If the option \code{survey.lonely.psu} is left at its
 default (\code{"fail"}), strata with a single primary unit are handled with
 \code{"adjust"} during the call.
 }

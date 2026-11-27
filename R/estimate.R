@@ -16,13 +16,19 @@
 #'   area from an `area` column (1 urban, 2 rural) or ENDES `hv025`.
 #' @param level Confidence level.
 #' @param na.rm Drop missing values of `var`.
+#' @param min_n Fewest unweighted cases for a figure to be rated by its CV.
+#'   Below it the quality is `"referencial"` whatever the CV, because a
+#'   standard error from a handful of cases is itself unreliable.
+#'   Set to 0 to rate by the CV alone.
 #' @return A data frame with one row per domain: `by`, `domain`, `name`
 #'   (department name when `by = "department"`), `var`, `type`,
 #'   `estimate`, `se`, `ci_low`, `ci_high`, `cv` (percent), `n`
 #'   (unweighted cases) and `quality`, of class `fa_estimate` (see
 #'   [estimate-methods]).
 #' @details Intervals are normal (Wald) intervals; for proportions they
-#'   are cut at 0 and 1. If the option `survey.lonely.psu` is left at its
+#'   are cut at 0 and 1. Rows without a domain (for example the ENA's
+#'   agricultural firms, which carry no location) count in national
+#'   figures but are left out of a breakdown, with a message. If the option `survey.lonely.psu` is left at its
 #'   default (`"fail"`), strata with a single primary unit are handled with
 #'   `"adjust"` during the call.
 #' @export
@@ -33,7 +39,7 @@
 #' d$variables$high <- d$variables$api00 > 700
 #' fa_estimate(d, "high", type = "prop", by = "stype")
 fa_estimate <- function(design, var, type = c("mean", "prop", "total"),
-                         by = "national", level = 0.95, na.rm = TRUE) {
+                         by = "national", level = 0.95, na.rm = TRUE, min_n = 30) {
   if (!inherits(design, "survey.design") && !inherits(design, "svyrep.design")) {
     .abort("bad_input", "`design` must be a survey design, e.g. from fa_design().")
   }
@@ -41,6 +47,7 @@ fa_estimate <- function(design, var, type = c("mean", "prop", "total"),
   if (!is.character(var) || length(var) != 1L) .abort("bad_input", "`var` must be one column name.")
   if (!is.character(by) || length(by) != 1L) .abort("bad_input", "`by` must be one domain name.")
   if (!is.numeric(level) || level <= 0 || level >= 1) .abort("bad_input", "`level` must be between 0 and 1.")
+  if (!is.numeric(min_n) || length(min_n) != 1L || min_n < 0) .abort("bad_input", "`min_n` must be a number, 0 or more.")
   data <- design$variables
   col <- .col(data, var)
   if (is.null(col)) .abort("not_found", "Variable `%s` not found in the design.", var)
@@ -60,6 +67,11 @@ fa_estimate <- function(design, var, type = c("mean", "prop", "total"),
   design$variables$.fa_y <- y
   design$variables$.fa_dom <- dom_all
   # Subsetting a design keeps the full sample for the variance, as domains should.
+  if (by != "national" && any(nodom <- is.na(dom_all) | dom_all %in% c("", "NA"))) {
+    message(sprintf("%d rows have no %s and are left out of this breakdown (they still count in national figures).",
+                    sum(nodom), by))
+    dom_all[nodom] <- NA
+  }
   keep <- !is.na(dom_all) & (!na.rm | !is.na(y))
   if (!any(keep)) .abort("empty", "No cases left to estimate `%s`.", var)
   if (!all(keep)) design <- design[keep, ]
@@ -84,6 +96,7 @@ fa_estimate <- function(design, var, type = c("mean", "prop", "total"),
   out <- data.frame(by = by, domain = dom, name = name, var = var, type = type,
                     estimate = value, se = se, ci_low = low, ci_high = high,
                     cv = cv, n = n, quality = fa_quality(cv), stringsAsFactors = FALSE)
+  out$quality[!is.na(out$n) & out$n < min_n] <- "referencial"
   rownames(out) <- NULL
   attr(out, "level") <- level
   .as(out, "fa_estimate")

@@ -8,7 +8,7 @@ fa_link(
   ...,
   level = c("department", "district"),
   base = 2017,
-  by_year = TRUE,
+  by_year = NULL,
   all = FALSE
 )
 }
@@ -21,9 +21,10 @@ estimated at that level.}
 
 \item{base}{Census year of the district frame (2017).}
 
-\item{by_year}{Join on year as well. Needs a \code{year} column in every
-table (fa_indicator() adds it). Set to \code{FALSE} to cross different
-years on purpose.}
+\item{by_year}{Join on year as well. By default, only when every table
+has a \code{year} column (fa_indicator() adds it); tables from
+fa_estimate() are joined by area alone. Set to \code{FALSE} to cross
+different years on purpose.}
 
 \item{all}{Keep areas that are missing in some tables (\code{TRUE}) or only
 those present in all (\code{FALSE}).}

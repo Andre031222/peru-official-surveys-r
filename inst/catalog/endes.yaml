@@ -3060,7 +3060,7 @@ modulos:
   serie: anual
   encuesta_inei: '1038'
   codigo: '1634'
-  nombre: InmunizaciÃ³n y Salud
+  nombre: Inmunización y Salud
   archivos:
     CSV: 1038-Modulo1634
     STATA: 1038-Modulo1634
@@ -3075,7 +3075,7 @@ modulos:
   serie: anual
   encuesta_inei: '1038'
   codigo: '1635'
-  nombre: Nupcialidad - Fecundidad - CÃ³nyugue y Mujer
+  nombre: Nupcialidad - Fecundidad - Cónyugue y Mujer
   archivos:
     CSV: 1038-Modulo1635
     STATA: 1038-Modulo1635
@@ -3090,7 +3090,7 @@ modulos:
   serie: anual
   encuesta_inei: '1038'
   codigo: '1636'
-  nombre: Conocimiento de Sida y uso del condÃ³n
+  nombre: Conocimiento de Sida y uso del condón
   archivos:
     CSV: 1038-Modulo1636
     STATA: 1038-Modulo1636

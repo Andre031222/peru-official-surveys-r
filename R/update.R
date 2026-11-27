@@ -58,7 +58,31 @@ fa_check_updates <- function(survey = NULL) {
   on.exit(curl::handle_setopt(h, httpget = TRUE), add = TRUE)
   r <- curl::curl_fetch_memory(paste0(.portal, page), handle = h)
   if (r$status_code != 200) stop(sprintf("HTTP %s from %s", r$status_code, page), call. = FALSE)
-  iconv(rawToChar(r$content), "WINDOWS-1252", "UTF-8")
+  .portal_text(r$content)
+}
+
+# The portal answers in Windows-1252, but some pages (the 2025 ENA ones) come
+# in UTF-8. Converting UTF-8 again garbles every accent ("Ã\u008d" for "Í"),
+# so the encoding is checked first and any leftover garbling is repaired.
+.portal_text <- function(raw) {
+  txt <- rawToChar(raw)
+  utf8 <- validUTF8(txt) && grepl("[\xC2-\xF4][\x80-\xBF]", txt, useBytes = TRUE)
+  txt <- if (utf8) enc2utf8(`Encoding<-`(txt, "UTF-8")) else iconv(txt, "WINDOWS-1252", "UTF-8")
+  .unmangle(txt)
+}
+
+# Text read as Latin-1 when it was UTF-8 shows "Ã" or "Â" before a second
+# character; reading it back the other way recovers it. Text that is fine,
+# or that does not come back as valid UTF-8, is left alone.
+.unmangle <- function(x) {
+  bad <- !is.na(x) & grepl("[\u00c2\u00c3][\u0080-\u00bf]", x)
+  if (!any(bad)) return(x)
+  back <- iconv(x[bad], "UTF-8", "latin1")
+  ok <- !is.na(back)
+  back[ok] <- `Encoding<-`(back[ok], "UTF-8")
+  ok <- ok & validUTF8(back)
+  x[bad][ok] <- back[ok]
+  x
 }
 
 .portal_years <- function(value, h) {
@@ -111,7 +135,7 @@ fa_check_updates <- function(survey = NULL) {
       stem <- sub("\\.zip$", "", basename(links))
       out[[length(out) + 1L]] <- list(
         anio = year, periodo = lab[k], serie = serie, encuesta_inei = td[4],
-        codigo = td[6], nombre = td[7], archivos = as.list(stats::setNames(stem, fmt))
+        codigo = td[6], nombre = .unmangle(td[7]), archivos = as.list(stats::setNames(stem, fmt))
       )
     }
   }

@@ -13,7 +13,14 @@ fa_map(
   percent = TRUE,
   title = NULL,
   geometry = NULL,
-  cache = fa_cache()
+  cache = fa_cache(),
+  breaks = "quantile",
+  n = 5,
+  palette = "YlOrRd",
+  labels = "name",
+  context = TRUE,
+  legend = NULL,
+  quality = "quality"
 )
 }
 \arguments{
@@ -32,7 +39,7 @@ fa_map(
 merged into the districts of that year; districts that split from
 several of them stay grey.}
 
-\item{percent}{Show the legend in percent.}
+\item{percent}{Show the values in percent.}
 
 \item{title}{Map title.}
 
@@ -40,17 +47,45 @@ several of them stay grey.}
 object with \code{code} and \code{name} as returned by \code{\link[=fa_geometry]{fa_geometry()}}.}
 
 \item{cache}{Cache folder for the boundaries.}
+
+\item{breaks}{How to group the values into classes: \code{"quantile"} (each
+class with about the same number of areas), \code{"pretty"} (round
+limits), a numeric vector of limits, or \code{"continuous"} for a colour
+gradient without classes.}
+
+\item{n}{Number of classes.}
+
+\item{palette}{A sequential palette from \code{\link[grDevices:hcl.colors]{grDevices::hcl.colors()}}, such
+as \code{"YlOrRd"}, \code{"Teal"}, \code{"Purples"} or \code{"Viridis"}, light for low
+values and dark for high ones.}
+
+\item{labels}{\code{"name"} (department names), \code{"code"} (INEI codes) or
+\code{"none"}. Districts are never labelled.}
+
+\item{context}{Draw the ocean, the neighbouring countries, the locator
+inset, the north arrow and the scale bar.}
+
+\item{legend}{Legend title.}
+
+\item{quality}{Column with the INEI quality band (\code{quality} in
+\code{\link[=fa_estimate]{fa_estimate()}}); \code{NULL} to ignore it.}
 }
 \value{
 A \code{ggplot} object.
 }
 \description{
 Draws estimates by department or district on the INEI boundaries
-(\code{\link[=fa_geometry]{fa_geometry()}}). Areas without an estimate are drawn in grey.
+(\code{\link[=fa_geometry]{fa_geometry()}}), ready for a paper: UTM zone 18S projection, a legend
+by classes, department names, a north arrow, a scale bar in kilometres
+and, around Peru, the Pacific Ocean, the neighbouring countries and a
+locator inset of South America. Areas without an estimate are grey;
+estimates that are only a reference (INEI "referencial": CV above 15\% or
+few cases) get an asterisk and a dashed outline.
 }
 \examples{
 \dontrun{
 p <- fa_indicator("pobreza_monetaria", 2024, by = "department")
-fa_map(p, title = "Monetary poverty 2024")
+fa_map(p, title = "Monetary poverty 2024", legend = "Poor people")
+fa_map(p, breaks = c(0, .1, .2, .3, .4, .5), palette = "Purples")
 }
 }

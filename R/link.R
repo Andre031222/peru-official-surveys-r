@@ -11,9 +11,10 @@
 #' @param level `"department"` or `"district"`. Each table must have been
 #'   estimated at that level.
 #' @param base Census year of the district frame (2017).
-#' @param by_year Join on year as well. Needs a `year` column in every
-#'   table (fa_indicator() adds it). Set to `FALSE` to cross different
-#'   years on purpose.
+#' @param by_year Join on year as well. By default, only when every table
+#'   has a `year` column (fa_indicator() adds it); tables from
+#'   fa_estimate() are joined by area alone. Set to `FALSE` to cross
+#'   different years on purpose.
 #' @param all Keep areas that are missing in some tables (`TRUE`) or only
 #'   those present in all (`FALSE`).
 #' @return A data frame with the key (`department` or `ubigeo_base`), its
@@ -34,7 +35,7 @@
 #' b <- transform(a, estimate = c(.5, .6))
 #' fa_link(poverty = a, other = b)
 fa_link <- function(..., level = c("department", "district"), base = 2017,
-                     by_year = TRUE, all = FALSE) {
+                     by_year = NULL, all = FALSE) {
   tabs <- list(...)
   level <- match.arg(level)
   if (length(tabs) < 2L) .abort("bad_input", "Give at least two estimate tables.")
@@ -42,6 +43,7 @@ fa_link <- function(..., level = c("department", "district"), base = 2017,
   if (is.null(nm) || any(nm == "") || anyDuplicated(nm)) {
     .abort("bad_input", "Name every table, e.g. fa_link(poverty = p, women = w).")
   }
+  if (is.null(by_year)) by_year <- all(vapply(tabs, function(x) "year" %in% names(x), logical(1)))
   key <- if (level == "department") "department" else "ubigeo_base"
   prepared <- Map(function(x, name) .link_one(x, name, level, base, by_year), tabs, nm)
   by <- c(key, if (by_year) "year")
@@ -66,9 +68,9 @@ fa_link <- function(..., level = c("department", "district"), base = 2017,
     .abort("bad_input", "Table '%s' needs a `year` column.", name)
   }
   quality <- x$quality %||% fa_quality(x$cv)
-  low <- sum(!is.na(x$cv) & x$cv > 15)
+  low <- sum((!is.na(x$cv) & x$cv > 15) | quality %in% "referencial")
   if (low > 0) {
-    .warn("low_precision", "Table '%s': %d of %d estimates have CV above 15%% (INEI 'referencial').",
+    .warn("low_precision", "Table '%s': %d of %d estimates are only a reference (CV above 15%% or few cases).",
           name, low, nrow(x))
   }
   out <- data.frame(estimate = x$estimate, se = x$se, cv = x$cv, quality = quality,

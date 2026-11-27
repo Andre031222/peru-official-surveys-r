@@ -1,3 +1,20 @@
+# faperu 0.4.1
+
+Tested end to end with the latest data published (ENA and ENAHO 2025).
+
+- `fa_map()` draws maps ready for a paper: UTM 18S projection, a legend by classes (`breaks`,
+  `n`, `palette`), department names, north arrow, scale bar, the ocean, the neighbouring
+  countries and a locator inset (`context`). Reference-only figures get an asterisk and a dashed
+  outline. Country outlines come from Natural Earth (public domain), in `inst/geo/`.
+- `fa_estimate()` rates a figure "referencial" when it rests on fewer than `min_n = 30` cases,
+  and leaves out of a breakdown the rows without an area (the ENA's agricultural firms), with a
+  message.
+- `fa_link()` joins by year only when every table has one, so tables from `fa_estimate()` link
+  directly.
+- Module names read from the INEI portal no longer come out garbled when a page is in UTF-8
+  (ENA 2025); the ENA and ENDES catalogs are repaired.
+- Tests of the REDATAM file links pass on disks that ignore case (Windows, macOS).
+
 # faperu 0.4.0
 
 faperu and faperu.analysis are now one package. Everything that was in faperu.analysis lives here

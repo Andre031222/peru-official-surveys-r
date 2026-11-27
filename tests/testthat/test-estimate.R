@@ -49,3 +49,17 @@ test_that("departments get their names", {
   r <- fa_estimate(d, "api00", by = "department")
   expect_setequal(r$name, c("Lima", "Amazonas"))
 })
+
+test_that("few cases make a figure a reference only, and rows without area are left out", {
+  set.seed(3)
+  df <- data.frame(FACTOR07 = runif(200, 50, 150), ESTRATO = rep(1:4, each = 50),
+                   CONGLOME = rep(1:100, each = 2), y = rbinom(200, 1, 0.4),
+                   ubigeo = c(rep("150101", 180), rep("070101", 10), rep(NA, 10)))
+  d <- fa_design(df, "enaho")
+  expect_message(e <- fa_estimate(d, "y", type = "prop", by = "department"), "10 rows have no department")
+  expect_equal(e$domain, c("07", "15"))
+  expect_equal(e$quality[e$domain == "07"], "referencial")
+  e0 <- suppressMessages(fa_estimate(d, "y", type = "prop", by = "department", min_n = 0))
+  expect_equal(e0$quality[e0$domain == "07"], fa_quality(e0$cv[e0$domain == "07"]))
+  expect_error(fa_estimate(d, "y", min_n = -1), class = "faperu_error_bad_input")
+})
