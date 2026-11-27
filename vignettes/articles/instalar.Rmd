@@ -26,15 +26,33 @@ con R. Ábrelo después de instalar R.
 
 ## 3. Instalar faperu
 
-Copia estas tres líneas en la consola de RStudio y presiona Enter:
+faperu tiene su propio repositorio de R, en `https://faperu.ftorres.org/r`. No necesitas GitHub
+ni herramientas de desarrollo. Elige una de estas dos formas.
+
+**Con una línea.** Cópiala en la consola de RStudio y presiona Enter:
+
+```{r}
+install.packages("faperu", repos = c("https://faperu.ftorres.org/r",
+                                    "https://cloud.r-project.org"))
+```
+
+La segunda dirección es CRAN, de donde salen los paquetes que faperu necesita (survey, haven, ...).
+
+**Desde los menús de RStudio**, para buscarlo como cualquier otro paquete:
+
+1. *Tools* → *Global Options…* → *Packages*.
+2. En *Secondary repositories* pulsa *Add…*, escribe el nombre `faperu` y la dirección
+   `https://faperu.ftorres.org/r`. Acepta con *OK* y luego *Apply*.
+3. En el panel *Packages* pulsa *Install*, escribe `faperu` y pulsa *Install*.
+
+Desde entonces `install.packages("faperu")` y `update.packages()` funcionan solos.
+
+Si prefieres la versión en desarrollo, desde GitHub:
 
 ```{r}
 install.packages("remotes")
-library(remotes)
-install_github("Andre031222/peru-official-surveys-r")
+remotes::install_github("Andre031222/peru-official-surveys-r")
 ```
-
-Cuando faperu esté en CRAN será una sola línea: `install.packages("faperu")`.
 
 ## 4. Probar que funciona
 
@@ -50,10 +68,11 @@ Si ves la lista de las diez fuentes, ya está. Para bajar tu primer módulo, sig
 
 | Mensaje | Qué hacer |
 |---|---|
-| `there is no package called 'remotes'` | Ejecuta primero `install.packages("remotes")`. |
+| `package 'faperu' is not available` | Revisa que escribiste bien la dirección `https://faperu.ftorres.org/r`. |
+| `there is no package called 'remotes'` | Solo para la vía GitHub: ejecuta primero `install.packages("remotes")`. |
 | Error al compilar en Linux | Instala las bibliotecas del sistema: `libcurl4-openssl-dev` y `libssl-dev`. |
 | `HTTP 404` o la descarga se corta | El portal del INEI puede estar lento; vuelve a ejecutar, faperu continúa donde quedó. |
-| No sabes qué módulo usar | Búscalo en el [explorador en línea](http://127.0.0.1:8099/explore) y copia el código. |
+| No sabes qué módulo usar | Búscalo en el [explorador en línea](https://faperu.ftorres.org/explore) y copia el código. |
 
 Las descargas se guardan en una carpeta de caché (`fa_cache()`), así que cada archivo se baja una
 sola vez.

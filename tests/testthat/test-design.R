@@ -91,3 +91,32 @@ test_that("official figures are reproduced", {
   i <- survey::svymean(~I(Informal_P == 1), subset(d, OCUP300 == 1), na.rm = TRUE)
   expect_equal(unname(coef(i)[2]), 0.709, tolerance = 0.001 / 0.709)
 })
+
+test_that("a territory keeps the whole sample for the standard errors", {
+  set.seed(2)
+  df <- data.frame(FACTOR07 = runif(120, 50, 150), ESTRATO = rep(1:6, each = 20),
+                   CONGLOME = rep(1:60, each = 2), y = rbinom(120, 1, 0.3),
+                   ubigeo = rep(c("210101", "210102", "150101", "080101"), 30))
+  full <- fa_design(df, "enaho")
+  expect_message(puno <- fa_design(df, "enaho", territory = "Puno"), "whole sample")
+  # Same as a domain estimate on the full design, not as filtering first.
+  dom <- survey::svyby(~y, ~I(substr(ubigeo, 1, 2) == "21"), full, survey::svymean)
+  est <- survey::svymean(~y, puno)
+  expect_equal(unname(coef(est)), unname(dom$y[2]))
+  expect_equal(as.numeric(survey::SE(est)), unname(dom$se[2]))
+  expect_equal(nrow(puno), 60L)
+  # Codes of 2, 4 or 6 digits, names without accents, several at once.
+  n <- function(t) nrow(suppressMessages(fa_design(df, "enaho", territory = t)))
+  expect_equal(n("21"), 60L)
+  expect_equal(n("210101"), 30L)
+  expect_equal(n(c("15", "8")), 60L)
+  expect_equal(n("LIMA"), 30L)
+})
+
+test_that("a wrong territory fails clearly", {
+  df <- data.frame(FACTOR07 = 1:4, ESTRATO = 1, CONGLOME = 1:4, ubigeo = "210101")
+  expect_error(fa_design(df, "enaho", territory = "Narnia"), class = "faperu_error_territory")
+  expect_error(fa_design(df, "enaho", territory = "123"), class = "faperu_error_territory")
+  expect_error(fa_design(df, "enaho", territory = "15"), class = "faperu_error_territory")
+  expect_error(fa_design(df[, 1:3], "enaho", territory = "21"), class = "faperu_error_no_domain")
+})

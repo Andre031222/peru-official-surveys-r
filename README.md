@@ -34,8 +34,8 @@ faperu does that work once, in a text catalog, and gives every source the same v
 | Find | `fa_surveys()`, `fa_years()`, `fa_catalog()` | The ten sources, their years and modules |
 | Download | `fa_download()` | Parallel, resumable, SHA-256 checked, cached |
 | Read | `fa_read()`, `fa_variables()` | Stata, SPSS, CSV or DBF; only the columns you ask for |
-| Weight | `fa_design()` | A `survey` design with the verified weight, strata and clusters |
 | Locate | `fa_ubigeo()`, `fa_districts()` | District codes harmonised to the 2017 Census frame |
+| Weight | `fa_design()` | A `survey` design with the verified weight, strata and clusters; `territory =` keeps one department, province or district with correct standard errors |
 | Estimate | `fa_estimate()`, `fa_indicator()` | Figures by domain with SE, CI, CV and the INEI quality band |
 | Show | `fa_link()`, `fa_table()`, `fa_map()` | Joins across surveys, tables for a paper, maps |
 
@@ -44,10 +44,13 @@ researchers, public officials) and want correct numbers in three lines of R.
 
 ## Get started
 
+faperu has its own R repository, so it installs like any CRAN package, with no GitHub or
+developer tools. In RStudio it can also be added once under *Tools → Global Options → Packages →
+Secondary repositories* (`https://faperu.ftorres.org/r`) and then found in the *Install* dialog.
+
 ```r
-install.packages("remotes")
-library(remotes)
-install_github("Andre031222/peru-official-surveys-r")
+install.packages("faperu", repos = c("https://faperu.ftorres.org/r",
+                                    "https://cloud.r-project.org"))
 
 library(faperu)
 library(survey)
@@ -138,9 +141,9 @@ or district and year.
 | `fa_download("ena", 2024, "1893")` | Downloads to the cache or reuses it |
 | `fa_read("ena", 2024, "1893", cols = c("CCDD", "P104"))` | Reads Stata, SPSS, CSV or DBF with labels; `cols` reads only those variables |
 | `fa_variables("ena", 2024, "1893")` | Names, labels and types from the file header |
-| `fa_design(data, "enaho")` | Survey design for the `survey` package |
 | `fa_ubigeo(data, year = 2024, base = 2017)` | Six-digit ubigeo, province, department and the base-year code |
 | `fa_districts(2017)` | Districts valid in a year |
+| `fa_design(data, "enaho", territory = "Puno")` | Survey design for the `survey` package, optionally for one territory |
 | `fa_redatam("freq PERSONA.C5P2")` | Queries the 2017 Census in REDATAM |
 | `fa_check_updates()` | New years published at the source |
 | `fa_cache()` | Cache folder |
@@ -254,9 +257,8 @@ formación (economistas, investigadores de salud y educación, funcionarios) y q
 correctas en tres líneas de R.
 
 ```r
-install.packages("remotes")
-library(remotes)
-install_github("Andre031222/peru-official-surveys-r")
+install.packages("faperu", repos = c("https://faperu.ftorres.org/r",
+                                    "https://cloud.r-project.org"))
 library(faperu)
 library(survey)
 s <- fa_read("enaho", 2024, "34", file = "Sumaria-2024\\.")
@@ -268,8 +270,10 @@ svymean(~I(pobreza < 3), fa_design(s, "enaho"))
 - **Leer:** `fa_read(cols = )` lee solo las variables que necesitas; `fa_variables()` muestra los
   nombres y etiquetas sin leer los datos. Los códigos con cero a la izquierda y las tildes quedan
   bien.
-- **Ponderar:** `fa_design()` arma el diseño muestral verificado en las fichas técnicas del INEI.
 - **Ubicar:** `fa_ubigeo(year =, base = 2017)` lleva el ubigeo al marco del Censo 2017.
+- **Ponderar:** `fa_design()` arma el diseño muestral verificado en las fichas técnicas del INEI.
+  Para un territorio usa `fa_design(datos, "enaho", territory = "Puno")`: el territorio se fija en
+  el diseño, no filtrando las filas antes, y así el error estándar sale correcto.
 - **Estimar:** `fa_estimate()` y `fa_indicator()` dan la cifra con error estándar, intervalo, CV
   y la banda de calidad del INEI; `fa_map()` y `fa_table()` la llevan a un mapa o a una tabla.
 

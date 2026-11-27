@@ -38,8 +38,9 @@ Errors have class \code{faperu_error} plus a specific class such as
 \seealso{
 Useful links:
 \itemize{
+  \item \url{https://faperu.ftorres.org/}
+  \item \url{https://faperu.ftorres.org/docs/}
   \item \url{https://github.com/Andre031222/peru-official-surveys-r}
-  \item \url{https://andre031222.github.io/peru-official-surveys-r/}
   \item Report bugs at \url{https://github.com/Andre031222/peru-official-surveys-r/issues}
 }
 

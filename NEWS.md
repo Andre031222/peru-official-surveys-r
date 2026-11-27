@@ -13,6 +13,11 @@ with the same `fa_` prefix, so one `library(faperu)` gets the data and analyses 
 - Renamed from faperu.analysis: `fpa_*` functions are now `fa_*`; error classes `fpa_error*`
   are now `faperu_error*`; the environment variable `FPA_ONLINE` is now `FAPERU_ONLINE`.
 - New vignette "Analysis: estimates, indicators and maps" and the article "Galería".
+- `fa_design()` gains `territory`: departments, provinces or districts by INEI code or department
+  name. The design is built on the whole sample and then restricted to the territory, so standard
+  errors are correct; filtering rows before the design understates them. The guides now place the
+  territory (ubigeo) before the design.
+- Without data.table, a CSV line with more fields than the header no longer shifts the columns.
 - ggplot2 and sf are suggested, only needed for `fa_map()` and `fa_geometry()`.
 
 - `fa_surveys()`, `fa_catalog()`, `fa_download()` and `fa_check_updates()` return data frames

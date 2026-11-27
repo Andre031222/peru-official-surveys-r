@@ -57,7 +57,35 @@ s8 <- fa_read("enaho", 2024, "34", file = "Sumaria-2024\\.",
 For a wide module this is much faster: 8 of the 1425 columns of the 2024 employment module take
 about 0.6 s in Stata, against 10 s for the whole file.
 
-## 4. Sampling design
+## 4. Places, before the design
+
+```{r}
+s <- fa_ubigeo(s)
+table(s$department_name)
+```
+
+Locate the data before weighting them: the territory decides which part of the sample you study,
+and the design has to know it from the start.
+
+District codes change: new provinces moved some districts to new codes, and new districts appear
+every year. To compare years, translate the codes to one base year. The natural base is 2017, the
+1874 districts of the 2017 Census, which every INEI survey since 2018 uses as its frame:
+
+```{r}
+s <- fa_ubigeo(s, year = 2024, base = 2017)
+table(s$ubigeo_status)          # same, recoded, to_parent, multi_parent, ...
+fa_districts(2017)              # the 1874 districts of the census frame
+```
+
+Codes are INEI's, always as six-digit text; RENIEC numbers districts differently from department 07
+on. The equivalences come from INEI's municipal registry (RENAMU 2004-2025), its 2025 national
+directory, the 2017 census frame and, for the 18 districts created after 2017, the 2017 district
+that holds their schools in MINEDU's 2025 register, not yet checked law by law. Districts with two
+parents (Lambras, Santa Lucia) and districts created between 2005 and 2017 get `NA`: faperu does
+not guess. The sources and the method are in `system.file("ubigeo", "README.md", package =
+"faperu")`.
+
+## 5. Sampling design
 
 ```{r}
 library(survey)
@@ -87,6 +115,24 @@ a <- a[a$p1102 %in% 1 & a$estrato != "", ]
 svymean(~I(p1103 == 2), fa_design(a, "ena"), na.rm = TRUE)  # women producers 31.5 %
 ```
 
+### One territory
+
+To study one department, province or district, give it to `fa_design()` as `territory`. Do not
+filter the rows first: that drops the strata and clusters of the rest of the country and the
+standard errors come out wrong.
+
+```{r}
+puno <- fa_design(s, "enaho", weight = "facpob", territory = "Puno")   # or "21"
+svymean(~I(pobreza < 3), puno)        # 0.399 (SE 0.0237), correct
+
+# Wrong: filtering first gives the same estimate but SE 0.0230
+# fa_design(s[substr(s$ubigeo, 1, 2) == "21", ], "enaho", weight = "facpob")
+```
+
+`territory` takes INEI codes of 2, 4 or 6 digits (`"21"`, `"2101"`, `"210101"`) or department
+names, several at once. faperu builds the design on the whole sample and keeps only the territory
+with `subset()`, which is how the survey package estimates a domain.
+
 ENDES and the ENA have strata with a single cluster, so set
 `options(survey.lonely.psu = "adjust")` first; `fa_design()` warns when it is needed. ENUT and
 ENARES publish no strata, and the Annual Economic Survey publishes none either: its firms included
@@ -95,31 +141,6 @@ with certainty go in their own stratum and the standard errors are approximate. 
 `fa_design()` takes the weight, strata and cluster that the catalog declares. For ENAHO they are
 `FACTOR07`, `ESTRATO` and `CONGLOME`; for ENDES, `V005` or `HV005` (divided by one million),
 `V022` and `V001`. Any of them can be overridden, and a stratum can cross two columns: `strata = "CCDD*AREA"`.
-
-## 5. Places
-
-```{r}
-s <- fa_ubigeo(s)
-table(s$department_name)
-```
-
-District codes change: new provinces moved some districts to new codes, and new districts appear
-every year. To compare years, translate the codes to one base year. The natural base is 2017, the
-1874 districts of the 2017 Census, which every INEI survey since 2018 uses as its frame:
-
-```{r}
-s <- fa_ubigeo(s, year = 2024, base = 2017)
-table(s$ubigeo_status)          # same, recoded, to_parent, multi_parent, ...
-fa_districts(2017)              # the 1874 districts of the census frame
-```
-
-Codes are INEI's, always as six-digit text; RENIEC numbers districts differently from department 07
-on. The equivalences come from INEI's municipal registry (RENAMU 2004-2025), its 2025 national
-directory, the 2017 census frame and, for the 18 districts created after 2017, the 2017 district
-that holds their schools in MINEDU's 2025 register, not yet checked law by law. Districts with two
-parents (Lambras, Santa Lucia) and districts created between 2005 and 2017 get `NA`: faperu does
-not guess. The sources and the method are in `system.file("ubigeo", "README.md", package =
-"faperu")`.
 
 ## 6. The 2017 Census
 

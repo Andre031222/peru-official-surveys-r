@@ -9,13 +9,12 @@ obtenga cifras correctas sin pelear con los archivos.
 ## Instalar
 
 ```r
-install.packages("remotes")
-library(remotes)
-install_github("Andre031222/peru-official-surveys-r")
+install.packages("faperu", repos = c("https://faperu.ftorres.org/r",
+                                    "https://cloud.r-project.org"))
 ```
 
-Pronto en CRAN, con `install.packages("faperu")`. Si es tu primera vez con R, sigue
-[Instalar paso a paso](articles/instalar.html).
+Desde su propio repositorio, sin GitHub ni herramientas de desarrollo. También se puede buscar
+desde el menú de RStudio: [Instalar paso a paso](articles/instalar.html) lo explica.
 
 ## Un ejemplo
 
@@ -36,8 +35,8 @@ estándar, usando el diseño muestral del INEI.
 <div class="fa-card"><b>Encontrar</b>Las diez fuentes, sus años y sus 3092 módulos, sin descargar nada.</div>
 <div class="fa-card"><b>Bajar</b>Cuatro archivos a la vez, reanuda los cortes y comprueba cada uno.</div>
 <div class="fa-card"><b>Leer</b>Stata, SPSS, CSV o DBF, solo las columnas que pides.</div>
-<div class="fa-card"><b>Ponderar</b>El diseño muestral de cada encuesta, verificado en las fichas técnicas.</div>
 <div class="fa-card"><b>Ubicar</b>El ubigeo de 2004 a 2025, llevado al marco del Censo 2017.</div>
+<div class="fa-card"><b>Ponderar</b>El diseño muestral verificado de cada encuesta, para todo el país o para un territorio.</div>
 <div class="fa-card"><b>Estimar</b>Cada cifra con error estándar, intervalo, CV y la banda de calidad del INEI.</div>
 <div class="fa-card"><b>Comprobar</b>Siete indicadores que reproducen las cifras oficiales del INEI 2024.</div>
 <div class="fa-card"><b>Mostrar</b>Tablas listas para un artículo y mapas sobre los límites del INEI.</div>

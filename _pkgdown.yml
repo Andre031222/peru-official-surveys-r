@@ -1,4 +1,4 @@
-url: https://andre031222.github.io/peru-official-surveys-r/
+url: https://faperu.ftorres.org/docs
 lang: es
 
 # One site for the whole package. The standard pkgdown layout with a modern finish: a home button, a single
@@ -34,10 +34,12 @@ home:
           [Fred Torres Cruz](https://orcid.org/0000-0003-0834-6834)<br>
           [Richar Andre Vilca Solorzano](https://orcid.org/0009-0003-2385-5263)
   links:
+  - text: Sitio de faperu
+    href: https://faperu.ftorres.org/
   - text: Explorar los módulos en línea
-    href: http://127.0.0.1:8099/explore
-  - text: Tablero de indicadores
-    href: http://127.0.0.1:8098/
+    href: https://faperu.ftorres.org/explore
+  - text: Tablero de indicadores 2024
+    href: https://faperu.ftorres.org/dashboard
 
 navbar:
   bg: dark
@@ -80,7 +82,7 @@ navbar:
     explore:
       icon: fa-magnifying-glass-chart
       text: Explorar
-      href: http://127.0.0.1:8099/explore
+      href: https://faperu.ftorres.org/explore
     github:
       icon: fa-github
       href: https://github.com/Andre031222/peru-official-surveys-r
@@ -105,13 +107,15 @@ reference:
   - fa_read
   - fa_variables
   - fa_cache
-- title: "Diseño muestral"
-  contents:
-  - fa_design
 - title: "Ubigeo y territorio"
+  desc: "Primero el territorio: el ubigeo armonizado al marco del Censo 2017."
   contents:
   - fa_ubigeo
   - fa_districts
+- title: "Diseño muestral"
+  desc: "El diseño verificado de cada encuesta, para todo el país o para un territorio."
+  contents:
+  - fa_design
 - title: "Censo 2017"
   contents:
   - fa_redatam

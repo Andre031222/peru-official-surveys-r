@@ -32,19 +32,36 @@
 #' `ena$estrato_c <- paste0(ena$CCDD, substr(ena$ESTRATO, 7, 9))` and
 #' `fa_design(ena, "ena", strata = "estrato_c")`.
 #'
+#' **Territory first, the right way.** To study one department, province or
+#' district, pass it as `territory` instead of filtering the rows yourself.
+#' Filtering the data before the design drops the strata and clusters of the
+#' rest of the country and gives wrong standard errors. With `territory`,
+#' faperu builds the design on the whole sample and then keeps only that
+#' territory with [survey::subset()][survey::subset.survey.design], so the
+#' estimates are those of the territory and their precision is correct.
+#'
 #' @param data A data frame, usually from [fa_read()].
 #' @inheritParams fa_years
 #' @param weight,strata,cluster Variable names to use instead of the
 #'   catalog defaults.
+#' @param territory Optional. Departments, provinces or districts to keep:
+#'   INEI codes of 2, 4 or 6 digits (`"21"`, `"2101"`, `"210101"`) or
+#'   department names (`"Puno"`, `"Lima"`), several at once if needed. The
+#'   data need a `ubigeo` column or `ccdd`, `ccpp` and `ccdi`.
 #' @return A `survey.design2` object.
 #' @examples
 #' \dontrun{
 #' s <- fa_read("enaho", 2024, "34", file = "Sumaria-2024\\.")
 #' d <- fa_design(s, "enaho")
 #' survey::svymean(~I(pobreza < 3), d)
+#'
+#' # Only Puno, with correct standard errors
+#' puno <- fa_design(s, "enaho", territory = "Puno")
+#' survey::svymean(~I(pobreza < 3), puno)
 #' }
 #' @export
-fa_design <- function(data, survey, weight = NULL, strata = NULL, cluster = NULL) {
+fa_design <- function(data, survey, weight = NULL, strata = NULL, cluster = NULL,
+                      territory = NULL) {
   x <- .load(survey)
   if (identical(x$tipo, "censo")) {
     .abort("unsupported", "%s is a census: it has no sampling design.", x$siglas)
@@ -87,7 +104,8 @@ fa_design <- function(data, survey, weight = NULL, strata = NULL, cluster = NULL
   has_strata <- !is.null(data$.fa_strata)
   if (has_strata && !is.null(k)) .lonely(data$.fa_strata, data[[k]], x)
 
-  survey::svydesign(
+  inside <- if (!is.null(territory)) .in_territory(data, territory)
+  d <- survey::svydesign(
     ids = if (is.null(k)) ~1 else stats::as.formula(paste0("~`", k, "`")),
     strata = if (has_strata) ~.fa_strata else NULL,
     fpc = fpc,
@@ -95,6 +113,48 @@ fa_design <- function(data, survey, weight = NULL, strata = NULL, cluster = NULL
     data = data,
     nest = has_strata
   )
+  if (is.null(territory)) return(d)
+  # The whole sample stays in the design; only the territory is estimated.
+  message(sprintf("Territory %s: %d of %d rows; the design keeps the whole sample for the standard errors.",
+                  paste(territory, collapse = ", "), sum(inside), nrow(data)))
+  # Indexing a survey design keeps every row for the variance (the others get
+  # zero weight), exactly as subset() does.
+  d[inside, ]
+}
+
+# TRUE for the rows inside the territory: INEI codes of 2, 4 or 6 digits,
+# or department names.
+.in_territory <- function(data, territory) {
+  ub <- .ubigeo(data)
+  if (is.null(ub)) {
+    dd <- .col(data, "ccdd")
+    if (is.null(dd)) {
+      .abort("no_domain", "To keep a territory the data need a `ubigeo` column or ccdd, ccpp and ccdi.")
+    }
+    ub <- .pad(data[[dd]], 2)
+  }
+  plain <- function(x) toupper(iconv(trimws(x), "UTF-8", "ASCII//TRANSLIT"))
+  names <- .department_names()
+  t <- as.character(territory)
+  named <- !grepl("^[0-9]+$", t)
+  if (any(named)) {
+    code <- names(names)[match(plain(t[named]), plain(names))]
+    if (anyNA(code)) {
+      .abort("territory", "Unknown department: %s. Use a department name or an INEI code.",
+             paste(t[named][is.na(code)], collapse = ", "))
+    }
+    t[named] <- code
+  }
+  t <- vapply(t, function(x) if (nchar(x) %% 2 == 1) paste0("0", x) else x, "")
+  if (any(!nchar(t) %in% c(2L, 4L, 6L))) {
+    .abort("territory", "Territory codes have 2 (department), 4 (province) or 6 (district) digits.")
+  }
+  if (any(nchar(t) > nchar(ub[1]))) {
+    .abort("territory", "The data only identify departments; use 2-digit codes or names.")
+  }
+  keep <- Reduce(`|`, lapply(t, function(x) startsWith(ub, x)))
+  if (!any(keep)) .abort("territory", "No rows in territory %s.", paste(territory, collapse = ", "))
+  keep
 }
 
 .lonely <- function(strata, cluster, x) {

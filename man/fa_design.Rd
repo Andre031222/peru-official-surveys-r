@@ -4,7 +4,14 @@
 \alias{fa_design}
 \title{Survey design}
 \usage{
-fa_design(data, survey, weight = NULL, strata = NULL, cluster = NULL)
+fa_design(
+  data,
+  survey,
+  weight = NULL,
+  strata = NULL,
+  cluster = NULL,
+  territory = NULL
+)
 }
 \arguments{
 \item{data}{A data frame, usually from \code{\link[=fa_read]{fa_read()}}.}
@@ -13,6 +20,11 @@ fa_design(data, survey, weight = NULL, strata = NULL, cluster = NULL)
 
 \item{weight, strata, cluster}{Variable names to use instead of the
 catalog defaults.}
+
+\item{territory}{Optional. Departments, provinces or districts to keep:
+INEI codes of 2, 4 or 6 digits (\code{"21"}, \code{"2101"}, \code{"210101"}) or
+department names (\code{"Puno"}, \code{"Lima"}), several at once if needed. The
+data need a \code{ubigeo} column or \code{ccdd}, \code{ccpp} and \code{ccdi}.}
 }
 \value{
 A \code{survey.design2} object.
@@ -51,11 +63,23 @@ The ENA has thousands of fine strata, most with one cluster. Collapsing
 them is not official, but if you need it:
 \code{ena$estrato_c <- paste0(ena$CCDD, substr(ena$ESTRATO, 7, 9))} and
 \code{fa_design(ena, "ena", strata = "estrato_c")}.
+
+\strong{Territory first, the right way.} To study one department, province or
+district, pass it as \code{territory} instead of filtering the rows yourself.
+Filtering the data before the design drops the strata and clusters of the
+rest of the country and gives wrong standard errors. With \code{territory},
+faperu builds the design on the whole sample and then keeps only that
+territory with \link[survey:subset.survey.design]{survey::subset()}, so the
+estimates are those of the territory and their precision is correct.
 }
 \examples{
 \dontrun{
 s <- fa_read("enaho", 2024, "34", file = "Sumaria-2024\\\\.")
 d <- fa_design(s, "enaho")
 survey::svymean(~I(pobreza < 3), d)
+
+# Only Puno, with correct standard errors
+puno <- fa_design(s, "enaho", territory = "Puno")
+survey::svymean(~I(pobreza < 3), puno)
 }
 }

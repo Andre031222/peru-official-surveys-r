@@ -46,7 +46,8 @@ Suggests:
     withr
 VignetteBuilder: knitr
 Config/testthat/edition: 3
-URL: https://github.com/Andre031222/peru-official-surveys-r, https://andre031222.github.io/peru-official-surveys-r/
+URL: https://faperu.ftorres.org/, https://faperu.ftorres.org/docs/,
+    https://github.com/Andre031222/peru-official-surveys-r
 BugReports: https://github.com/Andre031222/peru-official-surveys-r/issues
 Roxygen: list(markdown = TRUE)
 Config/roxygen2/version: 8.0.0
