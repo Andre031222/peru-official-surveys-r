@@ -9,3 +9,4 @@
 ^RENDIMIENTO\.md$
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^vignettes/articles$

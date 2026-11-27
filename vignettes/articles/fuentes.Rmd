@@ -1,0 +1,55 @@
+---
+title: "Las diez fuentes, en cifras"
+description: "Qué fuentes hay, cuántos años y módulos tiene cada una, en una tabla y un gráfico."
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>", fig.width = 8, fig.height = 4.6, dpi = 150)
+```
+
+Todo lo de esta página sale del catálogo de faperu: no hace falta descargar microdatos.
+
+```{r}
+library(faperu)
+s <- fa_surveys()
+```
+
+```{r, echo = FALSE}
+tab <- as.data.frame(s)[, c("acronym", "name", "agency", "from", "to", "years", "modules", "design")]
+tab$design <- ifelse(tab$design, "verificado", ifelse(s$type == "censo", "censo", "aproximado"))
+names(tab) <- c("Fuente", "Nombre", "Organismo", "Desde", "Hasta", "Años", "Módulos", "Diseño")
+knitr::kable(tab, row.names = FALSE)
+```
+
+## Módulos por año
+
+```{r, echo = FALSE, message = FALSE}
+library(ggplot2)
+ids <- c("enaho", "endes", "ena", "epen", "enapres", "enut", "enares", "eea")
+cat_all <- do.call(rbind, lapply(ids, function(id) {
+  x <- as.data.frame(fa_catalog(id))
+  data.frame(source = toupper(id), year = x$year)
+}))
+counts <- as.data.frame(table(cat_all$source, cat_all$year))
+names(counts) <- c("source", "year", "modules")
+counts <- counts[counts$modules > 0, ]
+counts$year <- as.integer(as.character(counts$year))
+pal <- c(ENAHO = "#0d9488", ENDES = "#e11d48", ENA = "#d97706", EPEN = "#2563eb",
+         ENAPRES = "#7c3aed", ENUT = "#14b8a6", ENARES = "#f43f5e", EEA = "#f59e0b")
+ggplot(counts, aes(year, modules, fill = source)) +
+  geom_col(width = 0.8) +
+  scale_fill_manual(values = pal, name = NULL) +
+  labs(x = NULL, y = "Módulos en el catálogo") +
+  theme_minimal(base_size = 12) +
+  theme(legend.position = "bottom", panel.grid.minor = element_blank(),
+        panel.grid.major.x = element_blank())
+```
+
+## Una fuente por dentro
+
+```{r}
+summary(fa_catalog("enaho", 2020:2025))
+```
+
+Cada fila es un año; `formats` dice en qué formatos publica el INEI sus módulos. Para ver los
+módulos de un año, `fa_catalog("enaho", 2024)`.

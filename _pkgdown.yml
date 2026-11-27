@@ -1,26 +1,69 @@
 url: https://andre031222.github.io/peru-official-surveys-r/
 lang: es
 
+# The standard pkgdown layout (top bar, README-style home, sidebar on the
+# right) with faperu's own touch: a dark teal bar, a band of hexagons and
+# the colours of its logo. Extra styles in pkgdown/extra.css and extra.js.
 template:
   bootstrap: 5
+  light-switch: true
   bslib:
-    primary: "#14558F"
-    base_font: {google: "Source Sans 3"}
-    heading_font: {google: "Source Serif 4"}
+    bg: "#ffffff"
+    fg: "#1d1d1f"
+    primary: "#0e7c86"
+    secondary: "#14558f"
+    link-color: "#0e7c86"
+    border-radius: 0.4rem
+    base_font: {google: "Inter"}
+    heading_font: {google: "Inter"}
     code_font: {google: "JetBrains Mono"}
+    font-size-base: 1rem
+    headings-font-weight: 700
+    navbar-bg: "#0b2a3c"
 
 home:
   title: "faperu: encuestas y censos oficiales del Perú en R"
   description: >
-    Descarga, caché verificada con SHA-256, lectura y diseño muestral de diez
-    fuentes oficiales del Perú: ENAHO, ENDES, ENA, EPEN, ENAPRES, ENUT, ENARES,
-    EEA, Censo Educativo y Censos 2017.
+    Descarga verificada, lectura y diseño muestral de diez fuentes oficiales
+    del Perú: ENAHO, ENDES, ENA, EPEN, ENAPRES, ENUT, ENARES, EEA, Censo
+    Educativo y Censos 2017.
+  sidebar:
+    structure: [install, links, license, citation, authors, dev]
+    components:
+      install:
+        title: Instalar
+        text: >
+          `install.packages("remotes")`<br>
+          `remotes::install_github("Andre031222/peru-official-surveys-r")`<br><br>
+          ¿Primera vez con R? Mira [Instalar paso a paso](articles/instalar.html).
+  links:
+  - text: Explorar los módulos en línea
+    href: http://127.0.0.1:8099/explore
+  - text: Sitio de faperu.analysis
+    href: https://andre031222.github.io/peru-survey-indicators-r/
 
 navbar:
+  bg: dark
   structure:
     left: [intro, reference, articles, news]
-    right: [search, github]
+    right: [search, explore, github, lightswitch]
   components:
+    intro:
+      text: Empezar
+      href: articles/faperu.html
+    explore:
+      text: Explorar
+      icon: fa-magnifying-glass
+      href: http://127.0.0.1:8099/explore
+    articles:
+      text: Artículos
+      menu:
+      - text: Instalar paso a paso
+        href: articles/instalar.html
+      - text: Las diez fuentes, en cifras
+        href: articles/fuentes.html
+      - text: Guía completa
+        href: articles/faperu.html
     github:
       icon: fa-github
       href: https://github.com/Andre031222/peru-official-surveys-r
@@ -28,12 +71,14 @@ navbar:
 
 reference:
 - title: "Qué hay / What is there"
+  desc: "Las fuentes, sus años y sus módulos, sin descargar nada."
   contents:
   - fa_surveys
   - fa_years
   - fa_catalog
   - fa_check_updates
 - title: "Bajar y leer / Download and read"
+  desc: "Descarga verificada con SHA-256 y lectura por columnas."
   contents:
   - fa_download
   - fa_read
@@ -49,6 +94,9 @@ reference:
 - title: "Censo 2017"
   contents:
   - fa_redatam
+- title: "Impresión y resumen / Print and summary"
+  contents:
+  - faperu-methods
 - title: "Paquete / Package"
   contents:
   - faperu-package

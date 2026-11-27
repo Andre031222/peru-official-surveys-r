@@ -1,0 +1,84 @@
+/* faperu: the standard pkgdown page, livelier. Dark bar, quiet code blocks,
+   cards on the home page and drifting hexagons on wide screens. */
+
+:root {
+  --fa-teal: #0e7c86;
+  --fa-blue: #14558f;
+  --fa-bar: #0b2a3c;
+}
+/* Pure white page in light mode, real black in dark mode. */
+[data-bs-theme="light"], :root { --bs-body-bg: #ffffff; }
+[data-bs-theme="dark"] {
+  --bs-body-bg: #000000;
+  --bs-tertiary-bg: #1c1c1e;
+  --bs-border-color: #2c2c2e;
+  --fa-bar: #000000;
+  --bs-body-color: #f5f5f7;
+  --bs-link-color: #2dd4bf;
+  --bs-link-color-rgb: 45, 212, 191;
+  --fa-teal: #2dd4bf;
+}
+
+/* Top bar in a solid colour from the logo, no gradient. */
+.navbar { background: var(--fa-bar) !important; border: 0; }
+.navbar .navbar-brand { font-weight: 700; letter-spacing: -0.01em; }
+.navbar .nav-link { font-weight: 500; white-space: nowrap; }
+
+main { margin-top: 1.8rem; }
+
+/* Home: the hex logo sits on a soft disc; first heading larger. */
+.template-home h1 { font-size: 2.6rem; letter-spacing: -0.03em; }
+.template-home h2 { margin-top: 2.6rem; padding-bottom: .4rem;
+  border-bottom: 2px solid var(--fa-teal); }
+
+/* Code: quiet, rounded, no decoration. */
+pre { border-radius: .6rem; border: 1px solid var(--bs-border-color); background: var(--bs-tertiary-bg); padding: .9rem 1rem; }
+code { font-variant-ligatures: none; }
+
+/* Sidebar boxes as cards. */
+aside .links, aside .license, aside .citation, aside .developers, aside .dev-status, aside .install, aside > div > div {
+  border: 1px solid var(--bs-border-color); border-radius: .6rem; padding: .9rem 1rem; margin-bottom: 1rem;
+}
+aside h2 { font-size: .8rem !important; text-transform: uppercase; letter-spacing: .1em; color: var(--fa-teal); }
+
+/* Reference index: a clean two-column list, function then description. */
+.template-reference-index dl { display: grid; grid-template-columns: minmax(11rem, 16rem) 1fr; margin: 0; }
+.template-reference-index dt, .template-reference-index dd { margin: 0; padding: .55rem .25rem; border-bottom: 1px solid var(--bs-border-color); }
+.template-reference-index dd { color: var(--bs-secondary-color); }
+.template-reference-index dt code { font-weight: 600; }
+
+/* Tables from knitr. */
+table.table { border-radius: .6rem; overflow: hidden; }
+table.table thead th { background: var(--bs-tertiary-bg); font-weight: 600; }
+
+/* Feature cards on the home page (pkgdown/index.md). */
+.fa-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: .9rem; margin: 1.4rem 0; }
+.fa-card { border: 1px solid var(--bs-border-color); border-radius: .7rem; padding: 1rem 1.1rem; transition: transform .25s, border-color .25s; }
+.fa-card:hover { transform: translateY(-3px); border-color: var(--fa-teal); }
+.fa-card b { display: block; margin-bottom: .25rem; }
+.fa-card .dot { display: inline-block; width: .6rem; height: .6rem; border-radius: 50%; margin-right: .4rem; }
+
+/* Fade in as the reader scrolls (pkgdown/extra.js). */
+.fa-reveal { opacity: 0; transform: translateY(12px); transition: opacity .6s ease, transform .6s ease; }
+.fa-reveal.fa-in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .fa-reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* Very wide screens: the page grows a little, and the empty sides carry
+   hexagons drifting slowly upwards (thin lines only, no blur). */
+@media (min-width: 1600px) {
+  .container, .container-xxl { max-width: 1480px; }
+  body::before, body::after {
+    content: ""; position: fixed; top: 0; bottom: 0; width: calc((100vw - 1480px) / 2 - 2rem);
+    pointer-events: none; z-index: 0; opacity: .55;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='84' height='146' viewBox='0 0 84 146'%3E%3Cg fill='none' stroke='%230e7c86' stroke-width='1.3' stroke-opacity='.5'%3E%3Cpath d='M21 3 41 15v24L21 51 1 39V15z'/%3E%3Cpath d='M63 76 83 88v24l-20 12-20-12V88z'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 84px 146px;
+    animation: fa-side 70s linear infinite;
+  }
+  body::before { left: 1rem; }
+  body::after { right: 1rem; animation-direction: reverse; }
+  [data-bs-theme="dark"] body::before, [data-bs-theme="dark"] body::after { opacity: .4; }
+}
+@keyframes fa-side { to { background-position: 0 -1460px; } }
+@media (prefers-reduced-motion: reduce) { body::before, body::after { animation: none; } }
