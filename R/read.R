@@ -212,8 +212,9 @@ fa_variables <- function(survey, year, module, file = NULL, format = "auto", ser
   # fread leaves an escaped quote doubled ("2"" TRANSP" comes back as 2"").
   for (j in which(vapply(x, is.character, logical(1)))) {
     v <- x[[j]]
-    k <- grepl('""', v, fixed = TRUE)
-    if (any(k)) x[[j]][k] <- gsub('""', '"', v[k], fixed = TRUE)
+    # Byte-wise: the text may still be Latin-1 here, before .fix_cols().
+    k <- grepl('""', v, fixed = TRUE, useBytes = TRUE)
+    if (any(k)) x[[j]][k] <- gsub('""', '"', v[k], fixed = TRUE, useBytes = TRUE)
   }
   .fix_cols(x)
 }
