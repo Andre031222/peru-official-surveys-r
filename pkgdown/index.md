@@ -41,17 +41,17 @@ estándar, usando el diseño muestral del INEI.
 
 ## Las diez fuentes
 
-<div class="fa-cards">
-<div class="fa-card"><b><span class="dot" style="background:#0d9488"></span>ENAHO</b>Hogares, pobreza e ingresos</div>
-<div class="fa-card"><b><span class="dot" style="background:#e11d48"></span>ENDES</b>Salud materna e infantil</div>
-<div class="fa-card"><b><span class="dot" style="background:#d97706"></span>ENA</b>Producción agropecuaria</div>
-<div class="fa-card"><b><span class="dot" style="background:#2563eb"></span>EPEN</b>Empleo e informalidad</div>
-<div class="fa-card"><b><span class="dot" style="background:#7c3aed"></span>ENAPRES</b>Programas y servicios públicos</div>
-<div class="fa-card"><b><span class="dot" style="background:#0d9488"></span>ENUT</b>Uso del tiempo</div>
-<div class="fa-card"><b><span class="dot" style="background:#e11d48"></span>ENARES</b>Violencia y relaciones sociales</div>
-<div class="fa-card"><b><span class="dot" style="background:#d97706"></span>EEA</b>Empresas y producción</div>
-<div class="fa-card"><b><span class="dot" style="background:#2563eb"></span>Censo Educativo</b>Escuelas y matrícula</div>
-<div class="fa-card"><b><span class="dot" style="background:#7c3aed"></span>Censos 2017</b>Población y vivienda</div>
-</div>
+<div class="table-wrap"><table class="table-modern"><thead><tr><th>Fuente</th><th class="hide-sm">Tema</th><th class="num">Años</th><th class="num">Módulos</th><th>Diseño</th></tr></thead><tbody>
+<tr><td><div class="src"><span class="chip" style="background:#0d9488"></span><span><b>ENAHO</b><small>Encuesta Nacional de Hogares</small></span></div></td><td class="hide-sm">Hogares, pobreza e ingresos</td><td class="num">2002–2025</td><td class="num" style="color:#0d9488">722<span class="bar" style="width:3.03rem"></span></td><td><span class="badge-soft ok">verificado</span></td></tr>
+<tr><td><div class="src"><span class="chip" style="background:#e11d48"></span><span><b>ENDES</b><small>Encuesta Demográfica y de Salud Familiar</small></span></div></td><td class="hide-sm">Salud materna e infantil</td><td class="num">2010–2025</td><td class="num" style="color:#e11d48">198<span class="bar" style="width:0.83rem"></span></td><td><span class="badge-soft ok">verificado</span></td></tr>
+<tr><td><div class="src"><span class="chip" style="background:#d97706"></span><span><b>ENA</b><small>Encuesta Nacional Agropecuaria</small></span></div></td><td class="hide-sm">Producción agropecuaria</td><td class="num">2014–2025</td><td class="num" style="color:#d97706">241<span class="bar" style="width:1.01rem"></span></td><td><span class="badge-soft ok">verificado</span></td></tr>
+<tr><td><div class="src"><span class="chip" style="background:#2563eb"></span><span><b>EPEN</b><small>Encuesta Permanente de Empleo Nacional</small></span></div></td><td class="hide-sm">Empleo e informalidad</td><td class="num">2001–2026</td><td class="num" style="color:#2563eb">953<span class="bar" style="width:4.00rem"></span></td><td><span class="badge-soft ok">verificado</span></td></tr>
+<tr><td><div class="src"><span class="chip" style="background:#7c3aed"></span><span><b>ENAPRES</b><small>Encuesta Nacional de Programas Presupuestales</small></span></div></td><td class="hide-sm">Programas y servicios públicos</td><td class="num">2010–2025</td><td class="num" style="color:#7c3aed">204<span class="bar" style="width:0.85rem"></span></td><td><span class="badge-soft ok">verificado</span></td></tr>
+<tr><td><div class="src"><span class="chip" style="background:#0d9488"></span><span><b>ENUT</b><small>Encuesta Nacional de Uso del Tiempo</small></span></div></td><td class="hide-sm">Uso del tiempo</td><td class="num">2010–2024</td><td class="num" style="color:#0d9488">13<span class="bar" style="width:0.25rem"></span></td><td><span class="badge-soft ok">verificado</span></td></tr>
+<tr><td><div class="src"><span class="chip" style="background:#e11d48"></span><span><b>ENARES</b><small>Encuesta Nacional sobre Relaciones Sociales</small></span></div></td><td class="hide-sm">Violencia y relaciones sociales</td><td class="num">2013–2024</td><td class="num" style="color:#e11d48">77<span class="bar" style="width:0.32rem"></span></td><td><span class="badge-soft ok">verificado</span></td></tr>
+<tr><td><div class="src"><span class="chip" style="background:#d97706"></span><span><b>EEA</b><small>Encuesta Económica Anual</small></span></div></td><td class="hide-sm">Empresas y producción</td><td class="num">2001–2025</td><td class="num" style="color:#d97706">604<span class="bar" style="width:2.53rem"></span></td><td><span class="badge-soft mid">aproximado</span></td></tr>
+<tr><td><div class="src"><span class="chip" style="background:#2563eb"></span><span><b>CE</b><small>Censo Educativo (MINEDU)</small></span></div></td><td class="hide-sm">Escuelas y matrícula</td><td class="num">2004–2025</td><td class="num" style="color:#2563eb">75<span class="bar" style="width:0.31rem"></span></td><td><span class="badge-soft info">censo</span></td></tr>
+<tr><td><div class="src"><span class="chip" style="background:#7c3aed"></span><span><b>CPV</b><small>Censos Nacionales 2017</small></span></div></td><td class="hide-sm">Población y vivienda</td><td class="num">2017</td><td class="num" style="color:#7c3aed">5<span class="bar" style="width:0.25rem"></span></td><td><span class="badge-soft info">censo</span></td></tr>
+</tbody></table></div>
 
 Años, módulos y formatos de cada una, en [Las diez fuentes, en cifras](articles/fuentes.html).
