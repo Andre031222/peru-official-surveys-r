@@ -219,10 +219,20 @@ test_that("a CSV with line breaks inside answers is repaired", {
 test_that("lines that cannot be repaired are reported", {
   f <- tempfile(fileext = ".csv")
   writeLines(c("A,B", "1,2", "3,4,5", "6,7"), f)
-  expect_warning(x <- faperu:::.read_file(f), class = "faperu_warning_csv")
-  # The rest of the file is still there.
-  expect_equal(nrow(x), 3L)
-  expect_equal(x$a, c(1L, 3L, 6L))
+  for (eng in c("data.table", "base")) {
+    if (eng == "data.table" && !requireNamespace("data.table", quietly = TRUE)) next
+    withr::local_options(faperu.csv_engine = eng)
+    expect_warning(x <- faperu:::.read_file(f), class = "faperu_warning_csv")
+    # The rest of the file is still there, and no column is shifted.
+    expect_equal(nrow(x), 3L, info = eng)
+    expect_equal(x$a, c(1L, 3L, 6L), info = eng)
+    expect_equal(x$b, c(2L, 4L, 7L), info = eng)
+  }
+})
+
+test_that("a long line keeps its first fields, quoted where needed", {
+  expect_equal(faperu:::.cut_fields("1;\"x;y\";2;9", ";", 3), "1;\"x;y\";2")
+  expect_equal(faperu:::.cut_fields("a,,c,d", ",", 3), "a,,c")
 })
 
 test_that("UTF-8 CSV files are not converted twice and codes keep their zeros", {

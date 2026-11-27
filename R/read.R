@@ -291,6 +291,9 @@ fa_variables <- function(survey, year, module, file = NULL, format = "auto", ser
     } else {
       left <- left + 1L
       k <- i
+      # Keep the first N fields of a line that is too long, as fread does;
+      # otherwise read.csv shifts every column of the file.
+      if (n[i] > N) lines[i] <- .cut_fields(lines[i], h$sep, N)
     }
     j <- j + sum(bad[j:length(bad)] <= k)
   }
@@ -301,6 +304,16 @@ fa_variables <- function(survey, year, module, file = NULL, format = "auto", ser
   out <- tempfile(fileext = ".csv")
   writeLines(lines[keep], out, useBytes = TRUE)
   structure(out, left = left)
+}
+
+# The first n fields of one CSV line, quoted again where needed.
+.cut_fields <- function(line, sep, n) {
+  f <- scan(text = line, what = "character", sep = sep, quote = "\"", quiet = TRUE,
+            na.strings = character(), strip.white = FALSE, blank.lines.skip = FALSE)[seq_len(n)]
+  f[is.na(f)] <- ""
+  q <- grepl(sep, f, fixed = TRUE) | grepl("\"", f, fixed = TRUE)
+  f[q] <- paste0("\"", gsub("\"", "\"\"", f[q], fixed = TRUE), "\"")
+  paste(f, collapse = sep)
 }
 
 # Match requested names without caring about case; stop on the ones missing.

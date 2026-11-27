@@ -54,7 +54,10 @@ fa_geometry <- function(level = c("department", "district"), cache = fa_cache(),
   # The geoserver answers errors as XML with status 200, so check the content too.
   head <- if (ok && file.exists(tmp)) readChar(tmp, 40, useBytes = TRUE) else ""
   if (!ok || !grepl("FeatureCollection", head, fixed = TRUE)) {
-    .abort("download", "Could not download the INEI layer %s from %s.", layer, .geo_url(layer))
+    .abort("download", paste0(
+      "Could not download the INEI layer %s from %s. The INEI geoserver may be ",
+      "temporarily down; try again later. Once downloaded, the layer is kept in the cache."),
+      layer, .geo_url(layer))
   }
   file.rename(tmp, file)
   invisible(file)
