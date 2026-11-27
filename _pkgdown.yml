@@ -1,0 +1,59 @@
+url: https://andre031222.github.io/faperu/
+lang: es
+
+template:
+  bootstrap: 5
+  bslib:
+    primary: "#8C1D18"
+    base_font: {google: "Source Sans 3"}
+    heading_font: {google: "Source Serif 4"}
+    code_font: {google: "JetBrains Mono"}
+
+home:
+  title: "faperu: encuestas y censos oficiales del Perú en R"
+  description: >
+    Descarga, caché verificada con SHA-256, lectura y diseño muestral de diez
+    fuentes oficiales del Perú: ENAHO, ENDES, ENA, EPEN, ENAPRES, ENUT, ENARES,
+    EEA, Censo Educativo y Censos 2017.
+
+navbar:
+  structure:
+    left: [intro, reference, articles, news]
+    right: [search, github]
+  components:
+    github:
+      icon: fa-github
+      href: https://github.com/Andre031222/faperu
+      aria-label: GitHub
+
+reference:
+- title: "Qué hay / What is there"
+  contents:
+  - fa_surveys
+  - fa_years
+  - fa_catalog
+  - fa_check_updates
+- title: "Bajar y leer / Download and read"
+  contents:
+  - fa_download
+  - fa_read
+  - fa_variables
+  - fa_cache
+- title: "Diseño muestral / Survey design"
+  contents:
+  - fa_design
+- title: "Ubigeo y territorio / District codes"
+  contents:
+  - fa_ubigeo
+  - fa_districts
+- title: "Censo 2017"
+  contents:
+  - fa_redatam
+- title: "Paquete / Package"
+  contents:
+  - faperu-package
+
+footer:
+  structure:
+    left: [developed_by]
+    right: [built_with]

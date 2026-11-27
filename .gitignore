@@ -25,3 +25,6 @@ src/*.dll
 .env
 *.pem
 *.key
+
+# Sitio pkgdown: se genera, no se versiona
+docs/

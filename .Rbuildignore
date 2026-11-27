@@ -1,7 +1,11 @@
-^LICENSE\.md$
-^README\.md$
+^data-raw$
+^docs$
 ^\.git$
 ^\.gitignore$
+^LICENSE\.md$
+^pkgdown$
+^_pkgdown\.yml$
+^README\.md$
+^RENDIMIENTO\.md$
 ^.*\.Rproj$
 ^\.Rproj\.user$
-^data-raw$
