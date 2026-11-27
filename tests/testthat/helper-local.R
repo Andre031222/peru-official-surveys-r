@@ -1,9 +1,11 @@
+# A local copy of the microdata (<SURVEY>/<year>/<file>.zip). The tests that
+# need it run only when FAPERU_LOCAL points to one.
 local_root <- function() {
-  Sys.getenv("FAPERU_LOCAL", "/mnt/discoD/Research-Dev/AUP_Papers/datos/inei_microdatos")
+  Sys.getenv("FAPERU_LOCAL", "")
 }
 
 skip_if_no_local <- function() {
-  skip_if_not(dir.exists(local_root()), "Local microdata copy not available")
+  skip_if_not(nzchar(local_root()) && dir.exists(local_root()), "Set FAPERU_LOCAL to a local microdata copy")
 }
 
 skip_if_offline_tests <- function() {

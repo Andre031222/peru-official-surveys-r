@@ -18,13 +18,13 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 Depends: R (>= 4.1)
 Imports:
-    curl,
+    curl (>= 5.0.0),
     digest,
     foreign,
-    haven,
+    haven (>= 2.4.0),
     stats,
     survey,
-    tidyselect,
+    tidyselect (>= 1.1.0),
     tools,
     utils,
     yaml
@@ -37,7 +37,7 @@ Suggests:
     withr
 VignetteBuilder: knitr
 Config/testthat/edition: 3
-URL: https://github.com/Andre031222/faperu
+URL: https://github.com/Andre031222/faperu, https://andre031222.github.io/faperu/
 BugReports: https://github.com/Andre031222/faperu/issues
 Roxygen: list(markdown = TRUE)
 Config/roxygen2/version: 8.0.0

@@ -3,8 +3,8 @@
 **Las encuestas y censos oficiales del Perú en R, con una sola forma de pedirlos.**
 *Peru's official surveys and censuses in R, asked for one way.*
 
-Once funciones, cinco dependencias externas (`curl`, `digest`, `haven`, `survey`, `yaml`) y un catálogo en
-texto. Cada archivo se guarda en caché y se comprueba con sha256. Los años nuevos se detectan solos.
+Doce funciones, siete dependencias externas (`curl`, `digest`, `foreign`, `haven`, `survey`,
+`tidyselect`, `yaml`) y un catálogo en texto. Cada archivo se guarda en caché y se comprueba con sha256. Los años nuevos se detectan solos.
 
 > [!NOTE]
 > **English** — faperu downloads, caches (SHA-256 checked), reads and weights ten official Peruvian
@@ -36,7 +36,8 @@ Weighting by persons gives INEI's official 27.6 %; see the vignette.*
 | `fa_years("ena")` | Años publicados | Published years |
 | `fa_catalog("enaho", 2024)` | Módulos, formatos y sha256 | Modules, formats and SHA-256 |
 | `fa_download("ena", 2024, "1893")` | Baja a la caché o reutiliza | Downloads or reuses the cache |
-| `fa_read("ena", 2024, "1893")` | Lee SPSS, Stata o CSV con etiquetas | Reads SPSS, Stata or CSV with labels |
+| `fa_read("ena", 2024, "1893", cols = c("CCDD", "P104"))` | Lee Stata, SPSS, CSV o DBF con etiquetas; `cols` lee solo esas variables | Reads Stata, SPSS, CSV or DBF with labels; `cols` reads only those variables |
+| `fa_variables("ena", 2024, "1893")` | Nombres, etiquetas y tipo, leyendo solo la cabecera | Names, labels and type from the header only |
 | `fa_design(datos, "enaho")` | Diseño muestral para `survey` | Survey design for `survey` |
 | `fa_ubigeo(datos, year = 2024, base = 2017)` | Ubigeo, provincia, departamento y código en el año base | Ubigeo, province, department and the base-year code |
 | `fa_districts(2017)` | Distritos vigentes ese año | Districts valid that year |
@@ -72,7 +73,7 @@ cambia, faperu avisa.
 ## Si ya tienes los datos / If you already have the data
 
 ```r
-fa_cache("/mnt/discoD/Research-Dev/AUP_Papers/datos/inei_microdatos")
+fa_cache("~/datos/inei_microdatos")   # donde ya tienes los zips
 fa_download("ena", 2014, "947")   # status "cached": no baja nada
 ```
 
@@ -117,16 +118,32 @@ Cada error tiene clase `faperu_error` y una subclase (`faperu_error_download`,
 
 ## Principios / Principles
 
-- **Pocas dependencias.** Solo HTTP, sha256, lectura de SPSS/Stata, diseño muestral y YAML.
+- **Pocas dependencias.** Solo HTTP, sha256, lectura de Stata/SPSS/DBF, diseño muestral y YAML.
+  data.table es opcional y solo acelera los CSV.
 - **El catálogo es texto.** Un YAML por base en [`inst/catalog/`](inst/catalog/).
 - **Comprobado, no supuesto.** Lo verificado lleva sha256; lo pendiente dice "por verificar".
 - **Sin microdatos en el repositorio.** Siempre se bajan de la fuente.
 
+## Rendimiento y pruebas / Performance and tests
+
+`fa_download()` baja hasta cuatro archivos a la vez, reintenta y reanuda los cortes y no guarda
+nada que no sea un zip legible. El formato por defecto es Stata: es exacto, trae etiquetas y con
+`cols` lee 8 de 1425 columnas de la ENAHO en menos de un segundo. Los números, la comparación de
+formatos y cómo repetir las pruebas están en [RENDIMIENTO.md](RENDIMIENTO.md).
+*Downloads run four at a time with retries and resume; Stata is the default format. Benchmarks,
+the cross-format check and how to rerun them are in RENDIMIENTO.md.*
+
+```r
+# Prueba rápida de las 10 bases, con tabla de tiempos
+source(system.file("scripts", "prueba_faperu.R", package = "faperu"))
+```
+
 ## Estado / Status
 
-0.2.0, en desarrollo. Hecho: ubigeo armonizado entre 2004 y 2025 y diseño muestral de las ocho encuestas.
-Hecho también: Censo 2017 vía REDATAM. Falta: estratos de la EEA, módulos 2025 de ENAPRES y EEA y
-ENDES 1996-2009. Cambios en [NEWS.md](NEWS.md); guía completa en [vignettes/faperu.Rmd](vignettes/faperu.Rmd).
+0.3.0. Probado de punta a punta con las 10 bases, en su año más reciente y en uno antiguo. Hecho:
+ubigeo armonizado entre 2004 y 2025, diseño muestral de las ocho encuestas, Censo 2017 vía REDATAM y
+años fuera del catálogo buscados en la fuente. Falta: estratos de la EEA y factor de la EEA
+2001-2011 (no viene en los archivos). Cambios en [NEWS.md](NEWS.md); guía completa en [vignettes/faperu.Rmd](vignettes/faperu.Rmd).
 
 ## Estructura / Layout
 
