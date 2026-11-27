@@ -253,7 +253,7 @@ fa_ubigeo <- function(data, var = NULL, year = NULL, base = NULL) {
 }
 
 .pad <- function(x, n) {
-  x <- trimws(as.character(x))
+  x <- trimws(as.character(unclass(x)))
   x[x == ""] <- NA_character_
   num <- !is.na(x) & grepl("^[0-9]+$", x)
   x[num] <- formatC(as.integer(x[num]), width = n, flag = "0")

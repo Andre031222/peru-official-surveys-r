@@ -1,7 +1,7 @@
 url: https://andre031222.github.io/peru-official-surveys-r/
 lang: es
 
-# The standard pkgdown layout with a modern finish: a home button, a single
+# One site for the whole package. The standard pkgdown layout with a modern finish: a home button, a single
 # theme button (automatic by default), quiet code blocks and a real footer.
 # Extra styles and the theme button live in pkgdown/extra.css and extra.js.
 template:
@@ -22,9 +22,9 @@ template:
 home:
   title: "faperu: encuestas y censos oficiales del Perú en R"
   description: >
-    Descarga verificada, lectura y diseño muestral de diez fuentes oficiales
-    del Perú: ENAHO, ENDES, ENA, EPEN, ENAPRES, ENUT, ENARES, EEA, Censo
-    Educativo y Censos 2017.
+    Descarga verificada, lectura, diseño muestral, estimaciones con banda de
+    calidad del INEI, indicadores oficiales, tablas y mapas para diez fuentes
+    oficiales del Perú.
   sidebar:
     structure: [links, license, citation, people]
     components:
@@ -36,13 +36,13 @@ home:
   links:
   - text: Explorar los módulos en línea
     href: http://127.0.0.1:8099/explore
-  - text: faperu.analysis, para analizar los datos
-    href: https://andre031222.github.io/peru-survey-indicators-r/
+  - text: Tablero de indicadores
+    href: http://127.0.0.1:8098/
 
 navbar:
   bg: dark
   structure:
-    left: [home, intro, reference, articles, news]
+    left: [home, intro, analysis, gallery, reference, articles, news]
     right: [search, explore, github, theme]
   components:
     home:
@@ -52,6 +52,12 @@ navbar:
     intro:
       text: Empezar
       href: articles/faperu.html
+    analysis:
+      text: Analizar
+      href: articles/analysis.html
+    gallery:
+      text: Galería
+      href: articles/galeria.html
     reference:
       text: Funciones
       href: reference/index.html
@@ -62,8 +68,12 @@ navbar:
         href: articles/instalar.html
       - text: Las diez fuentes, en cifras
         href: articles/fuentes.html
-      - text: Guía completa
+      - text: "Obtener los datos: guía completa"
         href: articles/faperu.html
+      - text: "Analizar: estimaciones, indicadores y mapas"
+        href: articles/analysis.html
+      - text: Galería de indicadores 2024
+        href: articles/galeria.html
     news:
       text: Cambios
       href: news/index.html
@@ -105,9 +115,28 @@ reference:
 - title: "Censo 2017"
   contents:
   - fa_redatam
-- title: "Impresión y resumen"
+- title: "Estimar"
+  desc: "Media, proporción o total por dominio, con error estándar, intervalo, CV y banda de calidad del INEI."
+  contents:
+  - fa_estimate
+  - fa_quality
+- title: "Indicadores listos"
+  desc: "Siete indicadores que reproducen las cifras oficiales del INEI."
+  contents:
+  - fa_indicators
+  - fa_indicator
+- title: "Cruzar encuestas"
+  contents:
+  - fa_link
+- title: "Mapas y tablas"
+  contents:
+  - fa_geometry
+  - fa_map
+  - fa_table
+- title: "Impresión, resumen y gráfico"
   contents:
   - faperu-methods
+  - estimate-methods
 - title: "Paquete"
   contents:
   - faperu-package
@@ -122,5 +151,4 @@ footer:
       Independiente del INEI y del MINEDU; nunca redistribuye microdatos.
     made: >
       [GitHub](https://github.com/Andre031222/peru-official-surveys-r) ·
-      [faperu.analysis](https://andre031222.github.io/peru-survey-indicators-r/) ·
       Hecho con [pkgdown](https://pkgdown.r-lib.org/)

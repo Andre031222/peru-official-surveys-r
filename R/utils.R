@@ -7,14 +7,14 @@
 .abort <- function(kind, msg, ...) {
   stop(structure(
     class = c(paste0("faperu_error_", kind), "faperu_error", "error", "condition"),
-    list(message = sprintf(msg, ...), call = NULL)
+    list(message = if (...length()) sprintf(msg, ...) else msg, call = NULL)
   ))
 }
 
 .warn <- function(kind, msg, ...) {
   warning(structure(
     class = c(paste0("faperu_warning_", kind), "faperu_warning", "warning", "condition"),
-    list(message = sprintf(msg, ...), call = NULL)
+    list(message = if (...length()) sprintf(msg, ...) else msg, call = NULL)
   ))
 }
 
@@ -83,4 +83,23 @@ fa_cache <- function(path = NULL) {
 .fa_reset <- function(survey = NULL) {
   rm(list = intersect(.or(survey, ls(.fa)), ls(.fa)), envir = .fa)
   invisible(NULL)
+}
+
+`%||%` <- function(a, b) if (is.null(a)) b else a
+
+# Stata and SPSS columns come as labelled vectors; the code is what we need.
+.num <- function(x) as.numeric(unclass(x))
+
+.need <- function(pkg, why) {
+  if (!requireNamespace(pkg, quietly = TRUE)) {
+    .abort("missing_package", "Package '%s' is needed %s. Install it with install.packages(\"%s\").",
+           pkg, why, pkg)
+  }
+}
+
+# Column lookup that ignores case, since INEI files mix both.
+.col <- function(data, names) {
+  hit <- match(tolower(names), tolower(colnames(data)))
+  hit <- hit[!is.na(hit)]
+  if (length(hit)) colnames(data)[hit[1]] else NULL
 }

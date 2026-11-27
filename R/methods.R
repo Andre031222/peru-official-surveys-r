@@ -10,7 +10,7 @@
 .has <- function(x, cols) all(cols %in% names(x))
 
 .plain <- function(x) {
-  class(x) <- setdiff(class(x), c("fa_surveys", "fa_catalog", "fa_download", "fa_updates"))
+  class(x) <- setdiff(class(x), c("fa_surveys", "fa_catalog", "fa_download", "fa_updates", "fa_estimate", "fa_link"))
   x
 }
 

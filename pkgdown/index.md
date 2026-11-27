@@ -2,8 +2,9 @@
 
 **Las encuestas y censos oficiales del Perú en R, con una sola forma de pedirlos.**
 
-faperu baja, verifica, lee y pondera diez fuentes del INEI y del MINEDU, para que cualquier
-persona que investiga obtenga cifras correctas sin pelear con los archivos.
+faperu baja, verifica, lee y pondera diez fuentes del INEI y del MINEDU, y las convierte en
+cifras con su error, su banda de calidad, tablas y mapas, para que cualquier persona que investiga
+obtenga cifras correctas sin pelear con los archivos.
 
 ## Instalar
 
@@ -37,7 +38,23 @@ estándar, usando el diseño muestral del INEI.
 <div class="fa-card"><b>Leer</b>Stata, SPSS, CSV o DBF, solo las columnas que pides.</div>
 <div class="fa-card"><b>Ponderar</b>El diseño muestral de cada encuesta, verificado en las fichas técnicas.</div>
 <div class="fa-card"><b>Ubicar</b>El ubigeo de 2004 a 2025, llevado al marco del Censo 2017.</div>
+<div class="fa-card"><b>Estimar</b>Cada cifra con error estándar, intervalo, CV y la banda de calidad del INEI.</div>
+<div class="fa-card"><b>Comprobar</b>Siete indicadores que reproducen las cifras oficiales del INEI 2024.</div>
+<div class="fa-card"><b>Mostrar</b>Tablas listas para un artículo y mapas sobre los límites del INEI.</div>
 </div>
+
+## Del dato a la cifra oficial
+
+```r
+p <- fa_indicator("pobreza_monetaria", 2024, by = "department")
+summary(p)
+fa_map(p)
+```
+
+<img src="img/map_poverty.png" alt="Pobreza monetaria 2024 por departamento" style="max-width:560px;width:100%;display:block;margin:1rem auto" />
+
+Más indicadores, tablas y mapas en la [Galería](articles/galeria.html) y en
+[Analizar](articles/analysis.html).
 
 ## Las diez fuentes
 

@@ -1,20 +1,19 @@
 # faperu: Peruvian Official Surveys and Censuses in R <img src="man/figures/logo.png" align="right" height="139" alt="faperu logo" />
 
-**One catalog and one way of asking for ten official data sources of Peru: download, verify, read and weight**
+**One catalog and one way of asking for ten official data sources of Peru: download, verify, read, weight and estimate**
 
-[![Version](https://img.shields.io/badge/Version-0.3.0-17A4AE?style=flat-square)](NEWS.md)
+[![Version](https://img.shields.io/badge/Version-0.4.0-17A4AE?style=flat-square)](NEWS.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-337AB7?style=flat-square)](LICENSE.md)
 [![R >= 4.1](https://img.shields.io/badge/R-%E2%89%A5_4.1-276DC3?style=flat-square&logo=r&logoColor=white)](https://www.r-project.org/)
 [![R CMD check](https://img.shields.io/badge/R_CMD_check-OK-2E7D32?style=flat-square)](#tests-and-performance)
-[![Tests](https://img.shields.io/badge/Tests-236_passing-2E7D32?style=flat-square)](tests/testthat/)
+[![Tests](https://img.shields.io/badge/Tests-344_passing-2E7D32?style=flat-square)](tests/testthat/)
 [![Sources](https://img.shields.io/badge/Sources-10-C0392B?style=flat-square)](#the-ten-sources)
-[![Official figures](https://img.shields.io/badge/INEI_2024_figures-7_reproduced-7B1FA2?style=flat-square)](https://github.com/Andre031222/peru-survey-indicators-r)
+[![Official figures](https://img.shields.io/badge/INEI_2024_figures-7_reproduced-7B1FA2?style=flat-square)](#analyse-the-data)
 
 faperu downloads, caches, checks (SHA-256), reads and weights ten official Peruvian data sources:
 ENAHO, ENDES, ENA, EPEN, ENAPRES, ENUT, ENARES and the Annual Economic Survey from INEI, the School
-Census from MINEDU (ESCALE) and the 2017 National Censuses. Its companion,
-[faperu.analysis](https://github.com/Andre031222/peru-survey-indicators-r), turns the data into
-design-based estimates, INEI quality bands, tables and maps.
+Census from MINEDU (ESCALE) and the 2017 National Censuses. Then it turns them into design-based
+estimates with INEI quality bands, indicators checked against official figures, tables and maps.
 
 faperu is independent and is not affiliated with INEI or MINEDU. It never redistributes microdata:
 every file is downloaded from the official source.
@@ -28,7 +27,7 @@ has its own portal path, module codes, file formats and encoding; codes such as 
 leading zero in CSV files; district codes change between years; and the sampling design (weight,
 strata, clusters) has to be dug out of each technical sheet. Most users stop at an unweighted mean.
 
-faperu does that work once, in a text catalog, and gives every source the same five verbs:
+faperu does that work once, in a text catalog, and gives every source the same verbs:
 
 | Step | Function | What it does |
 |---|---|---|
@@ -37,6 +36,8 @@ faperu does that work once, in a text catalog, and gives every source the same f
 | Read | `fa_read()`, `fa_variables()` | Stata, SPSS, CSV or DBF; only the columns you ask for |
 | Weight | `fa_design()` | A `survey` design with the verified weight, strata and clusters |
 | Locate | `fa_ubigeo()`, `fa_districts()` | District codes harmonised to the 2017 Census frame |
+| Estimate | `fa_estimate()`, `fa_indicator()` | Figures by domain with SE, CI, CV and the INEI quality band |
+| Show | `fa_link()`, `fa_table()`, `fa_map()` | Joins across surveys, tables for a paper, maps |
 
 It is written for people who are not statisticians by training (economists, health and education
 researchers, public officials) and want correct numbers in three lines of R.
@@ -81,7 +82,7 @@ e <- fa_read("enaho", 2024, "5", file = "500",
 | Official INEI 2024 figures reproduced | 7 |
 | Cross-format check (CSV = Stata = SPSS) | Same values |
 | `R CMD check` (vignette, local and online tests) | Status OK |
-| Tests | 236 passing, 0 failing |
+| Tests | 344 passing, 0 failing |
 | 2017 Census population via REDATAM | 29 381 884 (official) |
 
 </td><td valign="top" width="50%">
@@ -102,6 +103,31 @@ Peak memory for 8 columns in Stata: 93 MB, against 1.9 GB for the whole file.
 
 Details, download times and how to rerun every benchmark are in [RENDIMIENTO.md](RENDIMIENTO.md).
 
+## Analyse the data
+
+```r
+p <- fa_indicator("pobreza_monetaria", 2024, by = "department")
+p                       # estimate, interval, CV and INEI quality band per department
+summary(p)              # how many figures fall in each quality band
+plot(p)
+fa_map(p)               # needs sf and ggplot2
+fa_table(p, format = "markdown")
+```
+
+`fa_estimate()` does the same for any variable of any design:
+
+```r
+s$pobre  <- as.numeric(s$pobreza < 3)
+s$facpob <- s$factor07 * s$mieperho        # weight by persons
+fa_estimate(fa_design(s, "enaho", weight = "facpob"), "pobre", type = "prop", by = "area")
+```
+
+Seven indicators reproduce INEI's published 2024 figures (monetary and extreme poverty,
+unemployment, informality, child anaemia under two definitions and women among agricultural
+producers); `fa_indicators()`
+lists them with their sources. `fa_link()` joins estimates from different surveys by department
+or district and year.
+
 ## Functions
 
 | Function | What it does |
@@ -118,6 +144,12 @@ Details, download times and how to rerun every benchmark are in [RENDIMIENTO.md]
 | `fa_redatam("freq PERSONA.C5P2")` | Queries the 2017 Census in REDATAM |
 | `fa_check_updates()` | New years published at the source |
 | `fa_cache()` | Cache folder |
+| `fa_estimate(design, ~x, by = "department")` | Mean, proportion or total by domain with SE, CI, CV and quality band |
+| `fa_quality(cv)` | INEI quality band of a coefficient of variation |
+| `fa_indicators()`, `fa_indicator(id, year)` | Ready indicators checked against INEI figures |
+| `fa_link(a, b)` | Joins estimates from two surveys by territory and year |
+| `fa_geometry("department")`, `fa_map(est)` | INEI boundaries and choropleth maps |
+| `fa_table(est, format = "markdown")` | A table ready for a paper |
 
 ## The ten sources
 
@@ -203,12 +235,12 @@ Every error has class `faperu_error` plus a subclass (`faperu_error_download`,
 ## Layout
 
 ```text
-R/              One file per idea: catalog, download, read, design, ubigeo, update, utils
+R/              One file per idea: catalog, download, read, design, ubigeo, estimate, indicator, map, ...
 inst/catalog/   One YAML per source
 inst/ubigeo/    District tables and crosswalk to the 2017 Census frame
 inst/scripts/   End-to-end test, cross-format check and benchmarks
 tests/          One test file per R file
-vignettes/      The guide
+vignettes/      Two guides: getting the data, and analysing it
 ```
 
 ---
@@ -238,13 +270,15 @@ svymean(~I(pobreza < 3), fa_design(s, "enaho"))
   bien.
 - **Ponderar:** `fa_design()` arma el diseño muestral verificado en las fichas técnicas del INEI.
 - **Ubicar:** `fa_ubigeo(year =, base = 2017)` lleva el ubigeo al marco del Censo 2017.
+- **Estimar:** `fa_estimate()` y `fa_indicator()` dan la cifra con error estándar, intervalo, CV
+  y la banda de calidad del INEI; `fa_map()` y `fa_table()` la llevan a un mapa o a una tabla.
 
 Los cambios están en [NEWS.md](NEWS.md), el rendimiento en [RENDIMIENTO.md](RENDIMIENTO.md) y la
-guía completa en [vignettes/faperu.Rmd](vignettes/faperu.Rmd).
+guías en [vignettes/faperu.Rmd](vignettes/faperu.Rmd) y [vignettes/analysis.Rmd](vignettes/analysis.Rmd).
 
 ## License and authors
 
 Code under the MIT license, see [LICENSE.md](LICENSE.md).
 
-Richar Andre Vilca Solorzano ([ORCID 0009-0003-2385-5263](https://orcid.org/0009-0003-2385-5263))
-and Fred Torres Cruz ([ORCID 0000-0003-0834-6834](https://orcid.org/0000-0003-0834-6834)).
+Fred Torres Cruz ([ORCID 0000-0003-0834-6834](https://orcid.org/0000-0003-0834-6834))
+and Richar Andre Vilca Solorzano ([ORCID 0009-0003-2385-5263](https://orcid.org/0009-0003-2385-5263)).

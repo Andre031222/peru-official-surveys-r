@@ -1,4 +1,19 @@
-# faperu (development version)
+# faperu 0.4.0
+
+faperu and faperu.analysis are now one package. Everything that was in faperu.analysis lives here
+with the same `fa_` prefix, so one `library(faperu)` gets the data and analyses it.
+
+- New: `fa_estimate()` (means, proportions and totals by domain with standard error, confidence
+  interval, coefficient of variation and the INEI quality band), `fa_quality()`,
+  `fa_indicator()` and `fa_indicators()` (seven indicators checked against INEI's 2024
+  figures), `fa_link()` (joins estimates from different surveys by department or district and
+  year), `fa_geometry()`, `fa_map()` and `fa_table()`.
+- `fa_estimate` results have `print()`, `summary()` and `plot()` methods; `fa_link` results
+  print a short report.
+- Renamed from faperu.analysis: `fpa_*` functions are now `fa_*`; error classes `fpa_error*`
+  are now `faperu_error*`; the environment variable `FPA_ONLINE` is now `FAPERU_ONLINE`.
+- New vignette "Analysis: estimates, indicators and maps" and the article "Galería".
+- ggplot2 and sf are suggested, only needed for `fa_map()` and `fa_geometry()`.
 
 - `fa_surveys()`, `fa_catalog()`, `fa_download()` and `fa_check_updates()` return data frames
   with a class (`fa_surveys`, `fa_catalog`, `fa_download`, `fa_updates`) that prints a short

@@ -7,9 +7,31 @@
 \title{faperu: Peruvian official surveys and censuses in R}
 \description{
 One catalog, one download function and a few helpers for ten official
-sources. Start with \code{\link[=fa_surveys]{fa_surveys()}}, then \code{\link[=fa_read]{fa_read()}} and \code{\link[=fa_design]{fa_design()}}.
+sources, and the tools to turn them into official-style figures.
 }
 \details{
+Getting the data:
+\itemize{
+\item \code{\link[=fa_surveys]{fa_surveys()}}, \code{\link[=fa_catalog]{fa_catalog()}}: what there is, without downloading.
+\item \code{\link[=fa_read]{fa_read()}}, \code{\link[=fa_variables]{fa_variables()}}: download once, read only the columns
+you need.
+\item \code{\link[=fa_design]{fa_design()}}: the verified survey design, ready for the survey package.
+\item \code{\link[=fa_ubigeo]{fa_ubigeo()}}: district codes on the 2017 Census frame.
+}
+
+Analysing it:
+\itemize{
+\item \code{\link[=fa_estimate]{fa_estimate()}}: means, proportions and totals by domain, with
+standard error, confidence interval, coefficient of variation and the
+INEI quality band (\code{\link[=fa_quality]{fa_quality()}}).
+\item \code{\link[=fa_indicator]{fa_indicator()}}: ready indicators checked against INEI's published
+figures; \code{\link[=fa_indicators]{fa_indicators()}} lists them.
+\item \code{\link[=fa_link]{fa_link()}}: joins estimates from different surveys by department or
+district and year.
+\item \code{\link[=fa_map]{fa_map()}}, \code{\link[=fa_geometry]{fa_geometry()}}, \code{\link[=fa_table]{fa_table()}}: maps on INEI boundaries and
+tables for a paper.
+}
+
 Errors have class \code{faperu_error} plus a specific class such as
 \code{faperu_error_download}, so they can be caught with \code{\link[=tryCatch]{tryCatch()}}.
 }

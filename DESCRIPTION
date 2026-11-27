@@ -1,6 +1,6 @@
 Package: faperu
-Title: Access to Peruvian Official Surveys and Censuses
-Version: 0.3.0
+Title: Access and Design-Based Analysis of Peruvian Official Surveys and Censuses
+Version: 0.4.0
 Authors@R: c(
     person("Fred", "Torres Cruz", role = "aut",
            comment = c(ORCID = "0000-0003-0834-6834")),
@@ -8,12 +8,17 @@ Authors@R: c(
            role = c("aut", "cre"), comment = c(ORCID = "0009-0003-2385-5263"))
   )
 Description: One catalog, one download function and a few helpers to read,
-    weight and locate ten Peruvian official data sources: ENAHO, ENDES, ENA, EPEN, ENAPRES, ENUT, ENARES
-    and the Annual Economic Survey from INEI, the School Census from
-    MINEDU (ESCALE) and the 2017 National Censuses. Files are cached and
-    checked with SHA-256, and new survey years are detected from the INEI
-    microdata portal. This package is independent and is not affiliated
-    with INEI or MINEDU.
+    weight, locate and analyse ten Peruvian official data sources: ENAHO,
+    ENDES, ENA, EPEN, ENAPRES, ENUT, ENARES and the Annual Economic Survey
+    from INEI, the School Census from MINEDU (ESCALE) and the 2017 National
+    Censuses. Files are cached and checked with SHA-256, and new survey years
+    are detected from the INEI microdata portal. Design-based estimates of
+    means, proportions and totals come with standard errors, confidence
+    intervals and the coefficient-of-variation quality bands used by INEI;
+    seven ready indicators reproduce INEI's published figures; estimates from
+    several surveys can be linked by district and year and drawn as maps and
+    tables. This package is independent and is not affiliated with INEI or
+    MINEDU.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Depends: R (>= 4.1)
@@ -21,6 +26,7 @@ Imports:
     curl (>= 5.0.0),
     digest,
     foreign,
+    graphics,
     haven (>= 2.4.0),
     stats,
     survey,
@@ -30,9 +36,12 @@ Imports:
     yaml
 Suggests:
     data.table,
+    ggplot2,
+    grDevices,
     knitr,
     redatamx,
     rmarkdown,
+    sf,
     testthat (>= 3.0.0),
     withr
 VignetteBuilder: knitr
