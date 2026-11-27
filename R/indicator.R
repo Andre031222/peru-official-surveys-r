@@ -4,44 +4,58 @@
   pobreza_monetaria = list(
     survey = "enaho", label = "Monetary poverty (share of people)",
     recipe = function(year, cache) .recipe_enaho_poverty(year, cache),
-    official = list(`2024` = c(national = 0.276, urban = 0.248, rural = 0.393)),
-    source = "INEI, press release of 8 May 2025, https://www.gob.pe/institucion/inei/noticias/1164173"
+    official = list(`2024` = c(national = 0.276, urban = 0.248, rural = 0.393),
+                    `2025` = c(national = 0.257, urban = 0.234, rural = 0.355)),
+    source = c(`2024` = "INEI, press release of 8 May 2025, https://www.gob.pe/institucion/inei/noticias/1164173",
+               `2025` = "INEI, press release of 5 May 2026 (poverty 2025), https://www.gob.pe/institucion/inei/noticias/1387366")
   ),
   pobreza_extrema = list(
     survey = "enaho", label = "Extreme monetary poverty (share of people)",
     recipe = function(year, cache) .recipe_enaho_poverty(year, cache, extreme = TRUE),
-    official = list(`2024` = c(national = 0.055)),
-    source = "INEI, press release of 8 May 2025, https://www.gob.pe/institucion/inei/noticias/1164173"
+    official = list(`2024` = c(national = 0.055),
+                    `2025` = c(national = 0.047, rural = 0.114)),
+    source = c(`2024` = "INEI, press release of 8 May 2025, https://www.gob.pe/institucion/inei/noticias/1164173",
+               `2025` = "INEI, press release of 5 May 2026 (poverty 2025), https://www.gob.pe/institucion/inei/noticias/1387366")
   ),
   desempleo = list(
     survey = "epen", label = "Open unemployment rate (labour force, 14 years and over)",
     recipe = function(year, cache) .recipe_epen(year, cache, "unemployment"),
-    official = list(`2024` = c(national = 0.056)),
-    source = "INEI, Informe tecnico Empleo Nacional (EPEN), annual 2024, https://www.inei.gob.pe/media/MenuRecursivo/boletines/informe-tecnico_empleonacional.pdf"
+    official = list(`2024` = c(national = 0.056),
+                    `2025` = c(national = 0.049)),
+    source = c(`2024` = "INEI, Informe tecnico Empleo Nacional (EPEN), annual 2024, https://www.inei.gob.pe/media/MenuRecursivo/boletines/informe-tecnico_empleonacional.pdf",
+               `2025` = "INEI, EPEN 2025, as reported by El Peruano, https://elperuano.pe/noticia/289261-inei-poblacion-ocupada-aumento-15-en-el-ano-2025-a-nivel-nacional")
   ),
   informalidad = list(
     survey = "epen", label = "Informal employment rate (employed, 14 years and over)",
     recipe = function(year, cache) .recipe_epen(year, cache, "informality"),
-    official = list(`2024` = c(national = 0.709)),
-    source = "INEI, Informe tecnico Empleo Nacional (EPEN), annual 2024, https://www.inei.gob.pe/media/MenuRecursivo/boletines/informe-tecnico_empleonacional.pdf"
+    official = list(`2024` = c(national = 0.709),
+                    `2025` = c(national = 0.702, urban = 0.645, rural = 0.948)),
+    source = c(`2024` = "INEI, Informe tecnico Empleo Nacional (EPEN), annual 2024, https://www.inei.gob.pe/media/MenuRecursivo/boletines/informe-tecnico_empleonacional.pdf",
+               `2025` = "INEI, EPEN January-December 2025, as reported by Infobae on 1 April 2026, https://www.infobae.com/peru/2026/04/01/inei-confirma-que-7-de-cada-10-trabajadores-en-peru-son-informales-pierden-acceso-a-cts-seguro-y-pension/")
   ),
   anemia_6_35 = list(
     survey = "endes", label = "Anaemia in children 6-35 months (WHO 2024, RM 251-2024-MINSA)",
     recipe = function(year, cache) .recipe_endes_anaemia(year, cache, "who2024"),
-    official = list(`2024` = c(national = 0.353, urban = 0.312, rural = 0.447)),
-    source = "INEI, Indicadores de Resultados de los Programas Presupuestales ENDES 2024, https://proyectos.inei.gob.pe/endes/2024/ppr2/Indicadores_de_Resultados_de_los_Programas_Presupuestales_ENDES_2024.pdf"
+    official = list(`2024` = c(national = 0.353, urban = 0.312, rural = 0.447),
+                    `2025` = c(national = 0.349, urban = 0.315, rural = 0.432)),
+    source = c(`2024` = "INEI, Indicadores de Resultados de los Programas Presupuestales ENDES 2024, https://proyectos.inei.gob.pe/endes/2024/ppr2/Indicadores_de_Resultados_de_los_Programas_Presupuestales_ENDES_2024.pdf",
+               `2025` = "INEI, press release on ENDES 2025 (Programas Presupuestales), https://www.gob.pe/institucion/inei/noticias/1392685")
   ),
   anemia_6_35_rm363 = list(
     survey = "endes", label = "Anaemia in children 6-35 months (RM 363-2022-MINSA)",
     recipe = function(year, cache) .recipe_endes_anaemia(year, cache, "rm363"),
-    official = list(`2024` = c(national = 0.437, urban = 0.402, rural = 0.519)),
-    source = "INEI, Indicadores de Resultados de los Programas Presupuestales ENDES 2024, https://proyectos.inei.gob.pe/endes/2024/ppr2/Indicadores_de_Resultados_de_los_Programas_Presupuestales_ENDES_2024.pdf"
+    official = list(`2024` = c(national = 0.437, urban = 0.402, rural = 0.519),
+                    `2025` = c(national = 0.434)),
+    source = c(`2024` = "INEI, Indicadores de Resultados de los Programas Presupuestales ENDES 2024, https://proyectos.inei.gob.pe/endes/2024/ppr2/Indicadores_de_Resultados_de_los_Programas_Presupuestales_ENDES_2024.pdf",
+               `2025` = "INEI, ENDES 2025, as reported by Infobae on 18 May 2026, https://www.infobae.com/peru/2026/05/18/desnutricion-cronica-y-anemia-infantil-en-peru-cifras-estancadas-y-avances-minimos-segun-la-endes-2025/")
   ),
   mujeres_productoras = list(
     survey = "ena", label = "Women among agricultural producers",
     recipe = function(year, cache) .recipe_ena_women(year, cache),
-    official = list(`2024` = c(national = 0.315)),
-    source = "INEI, Productores agropecuarios: principales resultados de la ENA 2018-2019 y 2022-2024, https://www.gob.pe/institucion/inei/informes-publicaciones/6879473"
+    official = list(`2024` = c(national = 0.315),
+                    `2025` = c(national = 0.312)),
+    source = c(`2024` = "INEI, Productores agropecuarios: principales resultados de la ENA 2018-2019 y 2022-2024, https://www.gob.pe/institucion/inei/informes-publicaciones/6879473",
+               `2025` = "INEI, ENA 2025 results, as reported by Infobae on 19 June 2026, https://www.infobae.com/peru/2026/06/19/participacion-femenina-en-el-agro-peruano-baja-a-312-segun-el-inei/")
   )
 )
 
@@ -62,7 +76,8 @@ fa_indicators <- function() {
     survey = vapply(.indicators, `[[`, "", "survey"),
     label = vapply(.indicators, `[[`, "", "label"),
     checked_years = vapply(.indicators, function(x) paste(names(x$official), collapse = ", "), ""),
-    source = vapply(.indicators, `[[`, "", "source"),
+    # The source of the latest official figure.
+    source = vapply(.indicators, function(x) unname(x$source[length(x$source)]), ""),
     row.names = NULL, stringsAsFactors = FALSE
   )
 }
@@ -104,7 +119,7 @@ fa_indicator <- function(id, year, by = "national", cache = fa_cache(), level = 
   out$indicator <- id
   out$survey <- ind$survey
   out$year <- as.integer(year)
-  out$source <- ind$source
+  out$source <- if (is.na(ind$source[as.character(year)])) NA_character_ else unname(ind$source[as.character(year)])
   first <- c("indicator", "survey", "year")
   out[, c(first, setdiff(names(out), first))]
 }

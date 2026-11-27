@@ -1,3 +1,11 @@
+# faperu 0.4.2
+
+- The seven ready indicators carry INEI's official figures for 2025 as well as 2024, each year
+  with its own source, and reproduce all of them: monetary poverty 25.7%, extreme poverty 4.7%,
+  unemployment 4.9%, informal employment 70.2%, child anaemia 34.9% (WHO 2024) and 43.4%
+  (RM 363-2022), and women producers 31.2%. `fa_indicators()` lists the checked years.
+- Checked on r-universe: Linux, Windows and macOS, current and previous R.
+
 # faperu 0.4.1
 
 Tested end to end with the latest data published (ENA and ENAHO 2025).

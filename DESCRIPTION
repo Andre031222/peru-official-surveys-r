@@ -1,6 +1,6 @@
 Package: faperu
 Title: Access and Design-Based Analysis of Peruvian Official Surveys and Censuses
-Version: 0.4.1
+Version: 0.4.2
 Authors@R: c(
     person("Fred", "Torres Cruz", role = "aut",
            comment = c(ORCID = "0000-0003-0834-6834")),
@@ -12,7 +12,8 @@ Description: One catalog, one download function and a few helpers to read,
     ENDES, ENA, EPEN, ENAPRES, ENUT, ENARES and the Annual Economic Survey
     from INEI, the School Census from MINEDU (ESCALE) and the 2017 National
     Censuses. Files are cached and checked with SHA-256, and new survey years
-    are detected from the INEI microdata portal. Design-based estimates of
+    are detected from the INEI microdata portal
+    <https://proyectos.inei.gob.pe/microdatos/>. Design-based estimates of
     means, proportions and totals come with standard errors, confidence
     intervals and the coefficient-of-variation quality bands used by INEI;
     seven ready indicators reproduce INEI's published figures; estimates from

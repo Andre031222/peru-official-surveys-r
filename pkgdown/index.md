@@ -38,19 +38,19 @@ estándar, usando el diseño muestral del INEI.
 <div class="fa-card"><b>Ubicar</b>El ubigeo de 2004 a 2025, llevado al marco del Censo 2017.</div>
 <div class="fa-card"><b>Ponderar</b>El diseño muestral verificado de cada encuesta, para todo el país o para un territorio.</div>
 <div class="fa-card"><b>Estimar</b>Cada cifra con error estándar, intervalo, CV y la banda de calidad del INEI.</div>
-<div class="fa-card"><b>Comprobar</b>Siete indicadores que reproducen las cifras oficiales del INEI 2024.</div>
+<div class="fa-card"><b>Comprobar</b>Siete indicadores que reproducen las cifras oficiales del INEI de 2024 y 2025.</div>
 <div class="fa-card"><b>Mostrar</b>Tablas listas para un artículo y mapas sobre los límites del INEI.</div>
 </div>
 
 ## Del dato a la cifra oficial
 
 ```r
-p <- fa_indicator("pobreza_monetaria", 2024, by = "department")
+p <- fa_indicator("pobreza_monetaria", 2025, by = "department")
 summary(p)
 fa_map(p)
 ```
 
-<img src="img/map_poverty.png" alt="Pobreza monetaria 2024 por departamento" style="max-width:560px;width:100%;display:block;margin:1rem auto" />
+<img src="img/map_poverty.png" alt="Pobreza monetaria 2025 por departamento" style="max-width:560px;width:100%;display:block;margin:1rem auto" />
 
 Más indicadores, tablas y mapas en la [Galería](articles/galeria.html) y en
 [Analizar](articles/analysis.html).

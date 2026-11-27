@@ -7,10 +7,13 @@ test_that("the list of indicators is complete", {
   expect_error(fa_indicator("desempleo", "2024"), class = "faperu_error_bad_input")
 })
 
-# Official INEI figures for 2024, rounded to one decimal as published.
-check_official <- function(id, by = "national") {
-  r <- fa_indicator(id, 2024, by = by, cache = local_root())
-  expect_equal(round(100 * r$estimate, 1), round(100 * r$official, 1), label = paste(id, by))
+# Official INEI figures, rounded to one decimal as published. Only the
+# domains INEI published are compared.
+check_official <- function(id, by = "national", year = 2024) {
+  r <- suppressMessages(fa_indicator(id, year, by = by, cache = local_root()))
+  k <- !is.na(r$official)
+  expect_true(any(k), label = paste(id, by, year, "has an official figure"))
+  expect_equal(round(100 * r$estimate[k], 1), round(100 * r$official[k], 1), label = paste(id, by, year))
   r
 }
 
@@ -42,4 +45,17 @@ test_that("ENA women producers match INEI 2024", {
   d <- fa_indicator("mujeres_productoras", 2024, by = "department", cache = local_root())
   expect_gte(nrow(d), 24)
   expect_true(all(is.na(d$official)))
+})
+
+test_that("all seven indicators match INEI 2025, the latest year", {
+  skip_if_no_local()
+  skip_if_not(dir.exists(file.path(local_root(), "ENAHO", "2025")), "No 2025 microdata in the local copy")
+  for (id in c("pobreza_monetaria", "pobreza_extrema", "desempleo", "informalidad",
+               "anemia_6_35", "anemia_6_35_rm363", "mujeres_productoras")) {
+    check_official(id, year = 2025)
+  }
+  for (id in c("pobreza_monetaria", "pobreza_extrema", "informalidad", "anemia_6_35")) {
+    check_official(id, by = "area", year = 2025)
+  }
+  expect_match(fa_indicator("pobreza_monetaria", 2025, cache = local_root())$source, "1387366")
 })

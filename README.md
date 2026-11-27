@@ -2,13 +2,13 @@
 
 **One catalog and one way of asking for ten official data sources of Peru: download, verify, read, weight and estimate**
 
-[![Version](https://img.shields.io/badge/Version-0.4.1-17A4AE?style=flat-square)](NEWS.md)
+[![Version](https://img.shields.io/badge/Version-0.4.2-17A4AE?style=flat-square)](NEWS.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-337AB7?style=flat-square)](LICENSE.md)
 [![R >= 4.1](https://img.shields.io/badge/R-%E2%89%A5_4.1-276DC3?style=flat-square&logo=r&logoColor=white)](https://www.r-project.org/)
 [![R CMD check](https://img.shields.io/badge/R_CMD_check-OK-2E7D32?style=flat-square)](#tests-and-performance)
-[![Tests](https://img.shields.io/badge/Tests-344_passing-2E7D32?style=flat-square)](tests/testthat/)
+[![Tests](https://img.shields.io/badge/Tests-379_passing-2E7D32?style=flat-square)](tests/testthat/)
 [![Sources](https://img.shields.io/badge/Sources-10-C0392B?style=flat-square)](#the-ten-sources)
-[![Official figures](https://img.shields.io/badge/INEI_2024_figures-7_reproduced-7B1FA2?style=flat-square)](#analyse-the-data)
+[![Official figures](https://img.shields.io/badge/INEI_2024_and_2025_figures-7_reproduced-7B1FA2?style=flat-square)](#analyse-the-data)
 
 faperu downloads, caches, checks (SHA-256), reads and weights ten official Peruvian data sources:
 ENAHO, ENDES, ENA, EPEN, ENAPRES, ENUT, ENARES and the Annual Economic Survey from INEI, the School
@@ -82,10 +82,10 @@ e <- fa_read("enaho", 2024, "5", file = "500",
 | Check | Result |
 |---|---|
 | Surveys with a verified design | 8 of 8 (plus 2 censuses) |
-| Official INEI 2024 figures reproduced | 7 |
+| Official INEI figures reproduced | 7 of 7, in 2024 and in 2025 |
 | Cross-format check (CSV = Stata = SPSS) | Same values |
 | `R CMD check` (vignette, local and online tests) | Status OK |
-| Tests | 344 passing, 0 failing |
+| Tests | 379 passing, 0 failing |
 | 2017 Census population via REDATAM | 29 381 884 (official) |
 
 </td><td valign="top" width="50%">
@@ -109,7 +109,7 @@ Details, download times and how to rerun every benchmark are in [RENDIMIENTO.md]
 ## Analyse the data
 
 ```r
-p <- fa_indicator("pobreza_monetaria", 2024, by = "department")
+p <- fa_indicator("pobreza_monetaria", 2025, by = "department")
 p                       # estimate, interval, CV and INEI quality band per department
 summary(p)              # how many figures fall in each quality band
 plot(p)
@@ -125,7 +125,7 @@ s$facpob <- s$factor07 * s$mieperho        # weight by persons
 fa_estimate(fa_design(s, "enaho", weight = "facpob"), "pobre", type = "prop", by = "area")
 ```
 
-Seven indicators reproduce INEI's published 2024 figures (monetary and extreme poverty,
+Seven indicators reproduce INEI's published figures for 2024 and 2025 (monetary and extreme poverty,
 unemployment, informality, child anaemia under two definitions and women among agricultural
 producers); `fa_indicators()`
 lists them with their sources. `fa_link()` joins estimates from different surveys by department
