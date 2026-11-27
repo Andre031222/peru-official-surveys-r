@@ -79,7 +79,10 @@ test_that("upper-case REDATAM files get lower-case links", {
   dir <- tempfile()
   dir.create(dir)
   file.create(file.path(dir, c("CPV-0001.PTR", "ok.rbf")))
-  expect_equal(faperu:::.lowercase_links(dir), 1)
+  # Windows and macOS disks ignore case: the file is already found under its
+  # lower-case name and nothing has to be linked.
+  ignores_case <- file.exists(file.path(dir, "cpv-0001.ptr"))
+  expect_equal(faperu:::.lowercase_links(dir), if (ignores_case) 0 else 1)
   expect_true(file.exists(file.path(dir, "cpv-0001.ptr")))
   expect_equal(faperu:::.lowercase_links(dir), 0)
 })
