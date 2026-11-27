@@ -90,7 +90,64 @@ Las columnas de `cols` de cada módulo, leídas en CSV, Stata y SPSS y comparada
 | EPEN 2024 anual | Sí | Sí | Sí |
 | ENAHO 2024 empleo | Sí | Sí | Sí |
 
-<!-- VERIFY_FORMATS -->
+## Verificación de filas, columnas y valores / Row, column and value check
+
+`inst/scripts/verify_formats.R` baja cada formato de una muestra de módulos de las 8 encuestas del
+INEI (año reciente y uno antiguo), lee cada archivo de datos y compara filas, columnas y, columna
+por columna, los valores ordenados. Corrida del 26 de noviembre de 2026:
+
+| Encuesta | Archivos | Filas iguales y columnas iguales | Difieren | En un solo formato |
+|---|---|---|---|---|
+| ENAHO | 18 | 18 | 0 | 0 |
+| ENDES | 9 | 9 | 0 | 0 |
+| ENA | 34 | 32 | 1 | 1 |
+| EPEN | 31 | 30 | 1 | 0 |
+| ENAPRES | 13 | 13 | 0 | 0 |
+| ENUT | 13 | 7 | 0 | 6 |
+| ENARES | 44 | 44 | 0 | 0 |
+| EEA | 595 | 594 | 1 | 0 |
+| Total | 757 | 747 | 3 | 7 |
+
+Sobre unos 12,7 millones de filas leídas, ningún formato perdió ni partió filas: todas las filas
+coinciden entre Stata, SPSS y CSV en los 747 archivos que se pueden comparar. Los 7 archivos de un
+solo formato son tablas que el INEI publica en uno solo.
+
+Las 3 diferencias son de los propios archivos del INEI, no de faperu:
+
+| Archivo | Qué pasa |
+|---|---|
+| ENA 2016, módulo 1122, `01_cap100_1` | El SPSS trae dos columnas más (`CCCP` y `NOMBRECP`) que el Stata. Mismas filas. |
+| EPEN 2025, módulo 1780 (Piura, trimestre 1) | Al SPSS le falta `CODCIUDAD`, que sí traen Stata y CSV. Mismas filas. |
+| EEA 2024, módulo 2048, `a2023_s08_fF2_c03_1` | El CSV del INEI es un archivo de 25 bytes con una línea de encabezado y otra de texto; el SPSS trae 8352 filas. faperu lo lee tal cual. |
+
+Valores: de los 750 archivos con al menos dos formatos, 683 son idénticos y 67 muestran alguna
+diferencia en alguna columna. Todas tienen una causa conocida (un archivo puede tener varias):
+
+| Causa | Archivos | Qué es |
+|---|---|---|
+| Precisión de coma flotante | 39 | Stata guarda coordenadas y factores como flotante de 4 bytes y el CSV trae más decimales. |
+| Código de "no sabe" en el CSV | 25 | El CSV conserva 9, 99, 999999, 99999,9 y similares; Stata y SPSS los marcan como perdidos. |
+| Texto cortado por ancho | 2 | Stata mide el ancho en bytes y corta textos con tilde antes que el SPSS. |
+| Saltos de línea dentro del texto | 1 | ENUT 2024 (observaciones): en el CSV sin comillas la línea partida se une con un espacio. |
+| Diferencias propias del INEI | 3 | ENAHO 2024 tabla CIUO-88 (el texto de 4 de 5195 filas difiere entre Stata y SPSS), y los nombres `DATO1` a `DATO4` del SPSS que el CSV de la EEA 2024 (módulo 2053, `c15B_1`) llama `DATO2` a `DATO5`, con los mismos valores por posición. |
+
+Verificación del Censo Educativo (ESCALE): 31 archivos DBF de 2015 y 2025 (sin los padrones de
+escuelas, que traen datos personales y nunca se descargan en estas pruebas); en todos el número de
+filas leído es igual al que dice la cabecera del DBF. El Censo 2017 por REDATAM da 29 381 884
+personas, la cifra oficial.
+
+## Errores que encontró esta verificación (corregidos en 0.3.0)
+
+- ENUT 2024 en CSV: fread se detenía en silencio en la fila 9768 de 18 468 y read.csv partía filas
+  con saltos de línea; ahora se reparan las filas partidas y lo que no se pueda reparar se avisa.
+- CSV en UTF-8 convertido dos veces (FERREÑAFE salía FERREÃ‘AFE) y ceros a la izquierda perdidos
+  (CONGLOME 07060 salía 7060).
+- Stata del INEI con texto UTF-8 mezclado con bytes Latin-1 (ENARES 2019, 9 archivos) detenía haven;
+  los valores y las etiquetas salían como `CAÃ‘ETE`.
+- Comillas escapadas dentro de un campo CSV (`2"" TRANSP`) quedaban dobles.
+- Un zip con el mismo nombre en CSV, Stata y SPSS devolvía el formato equivocado desde la caché.
+- Un código de módulo ambiguo (EPEN 2025 "1780" son cinco) descargaba todos antes de fallar.
+
 
 ## Cómo repetirlo / How to rerun
 
