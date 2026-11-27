@@ -4,7 +4,7 @@ lang: es
 template:
   bootstrap: 5
   bslib:
-    primary: "#8C1D18"
+    primary: "#14558F"
     base_font: {google: "Source Sans 3"}
     heading_font: {google: "Source Serif 4"}
     code_font: {google: "JetBrains Mono"}
