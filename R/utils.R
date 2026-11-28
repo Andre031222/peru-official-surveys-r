@@ -48,7 +48,10 @@
   survey <- .check_survey(survey)
   if (is.null(.fa[[survey]])) {
     path <- system.file("catalog", paste0(survey, ".yaml"), package = "faperu", mustWork = TRUE)
-    .fa[[survey]] <- yaml::read_yaml(path)
+    # Read as UTF-8 whatever the locale: under LC_ALL=C (Rscript on a Mac
+    # without LANG) read_yaml() stops at the first accent and the catalog
+    # comes back incomplete without an error.
+    .fa[[survey]] <- yaml::yaml.load(readLines(path, encoding = "UTF-8", warn = FALSE))
   }
   .fa[[survey]]
 }
@@ -97,9 +100,29 @@ fa_cache <- function(path = NULL) {
   }
 }
 
+# tolower() follows the locale: under LC_ALL=C it leaves accented capitals
+# alone, so "A\u00d1O" became "a\u00d1o" and no longer matched "a\u00f1o".
+# Accented capitals in INEI names are lowered here byte by byte.
+.up_chars <- c("\u00c1", "\u00c9", "\u00cd", "\u00d3", "\u00da", "\u00d1", "\u00dc",
+               "\u00c0", "\u00c8", "\u00cc", "\u00d2", "\u00d9")
+.lo_chars <- c("\u00e1", "\u00e9", "\u00ed", "\u00f3", "\u00fa", "\u00f1", "\u00fc",
+               "\u00e0", "\u00e8", "\u00ec", "\u00f2", "\u00f9")
+.lower <- function(x) {
+  x <- tolower(x)
+  if (isTRUE(l10n_info()[["UTF-8"]])) return(x)
+  na <- is.na(x)
+  x <- enc2utf8(x)
+  for (i in seq_along(.up_chars)) {
+    x <- gsub(enc2utf8(.up_chars[i]), enc2utf8(.lo_chars[i]), x, fixed = TRUE, useBytes = TRUE)
+  }
+  Encoding(x) <- "UTF-8"
+  x[na] <- NA_character_
+  x
+}
+
 # Column lookup that ignores case, since INEI files mix both.
 .col <- function(data, names) {
-  hit <- match(tolower(names), tolower(colnames(data)))
+  hit <- match(.lower(names), .lower(colnames(data)))
   hit <- hit[!is.na(hit)]
   if (length(hit)) colnames(data)[hit[1]] else NULL
 }

@@ -16,3 +16,9 @@ test_that("a factor domain is named by its levels, not its codes", {
   lab <- structure(c(1, 2), labels = c(urbano = 1, rural = 2), class = c("haven_labelled", "double"))
   expect_identical(.domain(data.frame(x = 1:2, z = I(lab))[, "z", drop = FALSE], "z"), c("1", "2"))
 })
+
+test_that("ENDES departments come from hv024", {
+  df <- data.frame(hv024 = c(1, 15, 25))
+  expect_equal(faperu:::.domain(df, "department"), c("01", "15", "25"))
+  expect_error(faperu:::.domain(data.frame(x = 1), "department"), "hv024", class = "faperu_error_no_domain")
+})

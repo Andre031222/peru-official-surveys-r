@@ -26,3 +26,10 @@ no_network <- function(env = parent.frame()) {
   local_mocked_bindings(curl_download = function(...) stop("no network in tests"),
                         .package = "curl", .env = env)
 }
+
+# Writes text files byte by byte, so fixtures in Latin-1 or UTF-8 come out the
+# same whatever the locale of the session (a C locale cannot convert them).
+write_enc <- function(lines, path, encoding = "UTF-8") {
+  txt <- paste0(paste(enc2utf8(lines), collapse = "\n"), "\n")
+  writeBin(iconv(txt, "UTF-8", encoding, toRaw = TRUE)[[1]], path)
+}

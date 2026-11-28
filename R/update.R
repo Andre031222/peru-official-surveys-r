@@ -66,7 +66,10 @@ fa_check_updates <- function(survey = NULL) {
 # so the encoding is checked first and any leftover garbling is repaired.
 .portal_text <- function(raw) {
   txt <- rawToChar(raw)
-  utf8 <- validUTF8(txt) && grepl("[\xC2-\xF4][\x80-\xBF]", txt, useBytes = TRUE)
+  # Valid UTF-8 with bytes above 127 is UTF-8: accented Windows-1252 text is
+  # practically never valid UTF-8. Checked on the bytes, so a session in the C
+  # locale does not warn about the pattern.
+  utf8 <- validUTF8(txt) && any(raw > as.raw(0x7f))
   txt <- if (utf8) enc2utf8(`Encoding<-`(txt, "UTF-8")) else iconv(txt, "WINDOWS-1252", "UTF-8")
   .unmangle(txt)
 }

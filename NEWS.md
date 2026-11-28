@@ -1,3 +1,25 @@
+# faperu 0.4.4
+
+Corrections from an independent test on macOS (R 4.6.1) with 42 functional checks, and from
+use in a thesis on ENDES 2025 data.
+
+- The catalogs are read as UTF-8 whatever the locale. Under `LC_ALL=C` (for example `Rscript`
+  on a Mac without `LANG`), `yaml::read_yaml()` stopped at the first accent, so
+  `fa_years("endes")` came back empty without an error.
+- Column names are lowered without depending on the locale: under `LC_ALL=C`, `tolower()` left
+  `"AÑO"` as `"aÑo"`. Data files with non-ASCII names unpack in any locale.
+- Identifier columns (`HHID`, `CASEID`, `CONGLOME`, ...) are trimmed when read. INEI's SPSS and
+  Stata files pad `HHID` with blanks and the CSV files do not, so joining modules read in
+  different formats found no household; `fa_indicator("anemia_6_35", 2025)` failed for that
+  reason when a module had fallen back to another format.
+- `fa_design()` finds the ENDES health questionnaire weights (`PESO15_AMAS`, `PESOMEN12`), and
+  when strata or clusters are missing it says they are in RECH0, to be merged by `HHID`.
+- `fa_estimate(by = "department")` reads the ENDES department from `HV024`.
+- `fa_key()` builds ENDES household and person keys (`HHID`, plus `HVIDX`, `HC0`, `QSNUMERO` or
+  the line in `CASEID`), so women, households and the health questionnaire join on one key.
+- `fa_variables()` says that CSV files carry no labels and suggests SPSS or Stata.
+- The portal pages are decoded without encoding warnings in a C locale.
+
 # faperu 0.4.3
 
 Corrections found by using faperu on the eleven ENA rounds (2014-2025).

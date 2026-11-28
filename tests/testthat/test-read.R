@@ -2,9 +2,7 @@ test_that("CSV in Latin-1 is read as UTF-8 with lower-case names", {
   dir <- tempfile()
   dir.create(file.path(dir, "m"), recursive = TRUE)
   csv <- file.path(dir, "m", "data.csv")
-  con <- file(csv, "w", encoding = "latin1")
-  writeLines(c("A\u00d1O,UBIGEO", "2024,210101"), con)
-  close(con)
+  write_enc(c("A\u00d1O,UBIGEO", "2024,210101"), csv, "latin1")
   zip <- file.path(dir, "m.zip")
   withr::with_dir(dir, utils::zip("m.zip", "m/data.csv", flags = "-q"))
   unlink(file.path(dir, "m"), recursive = TRUE)
@@ -127,9 +125,7 @@ test_that("both CSV engines give the same table", {
   dir <- tempfile()
   dir.create(dir)
   f <- file.path(dir, "l.csv")
-  con <- file(f, "w", encoding = "latin1")
-  writeLines(c("UBIGEO,A\u00d1O,NOMBRE,V", "010101,2024,Ca\u00f1ete,", "150101,2024,,3"), con)
-  close(con)
+  write_enc(c("UBIGEO,A\u00d1O,NOMBRE,V", "010101,2024,Ca\u00f1ete,", "150101,2024,,3"), f, "latin1")
   a <- withr::with_options(list(faperu.csv_engine = "data.table"), faperu:::.read_file(f))
   b <- withr::with_options(list(faperu.csv_engine = "base"), faperu:::.read_file(f))
   expect_equal(a, b)
@@ -174,7 +170,8 @@ test_that("only data files are unpacked, Latin-1 names included", {
   out <- tempfile()
   expect_equal(faperu:::.zip_formats(file.path(dir, "m.zip")), c("ZIP", "CSV"))
   faperu:::.unzip_data(file.path(dir, "m.zip"), out)
-  expect_equal(list.files(out), "Peque\u00f1as.csv")
+  expect_equal(list.files(out),
+               if (isTRUE(l10n_info()[["UTF-8"]])) "Peque\u00f1as.csv" else "Peque__as.csv")
 })
 
 test_that("fa_variables lists names and labels from the header", {
@@ -240,9 +237,7 @@ test_that("a long line keeps its first fields, quoted where needed", {
 
 test_that("UTF-8 CSV files are not converted twice and codes keep their zeros", {
   f <- tempfile(fileext = ".csv")
-  con <- file(f, "w", encoding = "UTF-8")
-  writeLines(c("CONGLOME,A\u00d1O,PROVINCIA,FACTOR", "07060,2024,FERRE\u00d1AFE,1.5", "12001,2024,JARD\u00cdN,2"), con)
-  close(con)
+  write_enc(c("CONGLOME,A\u00d1O,PROVINCIA,FACTOR", "07060,2024,FERRE\u00d1AFE,1.5", "12001,2024,JARD\u00cdN,2"), f)
   for (eng in c("data.table", "base")) {
     if (eng == "data.table" && !requireNamespace("data.table", quietly = TRUE)) next
     x <- withr::with_options(list(faperu.csv_engine = eng), faperu:::.read_file(f))
@@ -283,4 +278,27 @@ test_that("an escaped quote inside a CSV field reads as one quote with both engi
     x <- withr::with_options(list(faperu.csv_engine = e), faperu:::.read_file(f))
     expect_identical(x$t01, c('CINTA 2" TRANSP', 'FILM 18"', "PAPEL"))
   }
+})
+
+test_that("keys match across formats: SPSS pads HHID, CSV does not", {
+  skip_if_not_installed("haven")
+  dir <- tempfile()
+  dir.create(dir)
+  sav <- file.path(dir, "rech0.sav")
+  haven::write_sav(data.frame(HHID = c("      434400501", "      434401201"), HV022 = 1:2), sav)
+  csv <- file.path(dir, "rech6.csv")
+  write_enc(c("HHID,HC57", "434400501,3", "434401201,4"), csv)
+  a <- faperu:::.read_file(sav)
+  b <- faperu:::.read_file(csv)
+  expect_equal(nrow(merge(a, b, by = "hhid")), 2L)
+})
+
+test_that("the catalogs are read whole whatever the locale", {
+  skip_on_cran()
+  # Under LC_ALL=C, yaml::read_yaml() used to stop at the first accent.
+  out <- system2(file.path(R.home("bin"), "Rscript"),
+                 c("-e", shQuote("cat(length(faperu::fa_years('endes')), nrow(faperu::fa_catalog('cpv2017')))")),
+                 env = c("LC_ALL=C", "LANG=C"), stdout = TRUE, stderr = FALSE)
+  got <- as.integer(strsplit(tail(out, 1), " ")[[1]])
+  expect_equal(got, c(length(fa_years("endes")), nrow(fa_catalog("cpv2017"))))
 })

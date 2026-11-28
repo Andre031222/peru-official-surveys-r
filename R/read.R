@@ -48,7 +48,8 @@ fa_read <- function(survey, year, module, file = NULL, format = "auto", series =
 #' Labels are the ones INEI wrote in the file. Stata limits them to 80
 #' characters, and some are cut (for example the ENA 2022-2025 genetic
 #' improvement items `P501A_16C` to `P501A_16E`); the full wording is in the
-#' data dictionary PDF that comes in the same zip.
+#' data dictionary PDF that comes in the same zip. CSV files have no labels;
+#' a message then suggests `format = "spss"` or `"stata"`.
 #'
 #' @inheritParams fa_read
 #' @return A data frame with `file`, `name`, `label` and `type`, one row per
@@ -65,6 +66,9 @@ fa_variables <- function(survey, year, module, file = NULL, format = "auto", ser
   out <- lapply(files, function(f) cbind(file = basename(f), .header(f), stringsAsFactors = FALSE))
   out <- do.call(rbind, out)
   rownames(out) <- NULL
+  if (identical(d$format, "CSV") && all(is.na(out$label))) {
+    message("CSV files carry no variable labels; use format = \"spss\" or \"stata\" to see them.")
+  }
   out
 }
 
@@ -131,8 +135,12 @@ fa_variables <- function(survey, year, module, file = NULL, format = "auto", ser
   keep <- grepl(.data_ext, name, ignore.case = TRUE, useBytes = TRUE)
   ok <- validUTF8(name)
   if (any(keep & ok)) utils::unzip(zip, files = name[keep & ok], exdir = dir)
+  # A session that is not UTF-8 (LC_ALL=C) cannot write "\u00f1" in a file
+  # name at all; there the name is spelt in plain ASCII.
+  native <- if (isTRUE(l10n_info()[["UTF-8"]])) identity else
+    function(n) iconv(n, "UTF-8", "ASCII", sub = "_")
   for (i in which(keep & !ok)) {
-    to <- file.path(dir, iconv(name[i], "latin1", "UTF-8"))
+    to <- file.path(dir, native(iconv(name[i], "latin1", "UTF-8")))
     dir.create(dirname(to), recursive = TRUE, showWarnings = FALSE)
     con <- unz(zip, name[i], open = "rb")
     writeBin(readBin(con, "raw", lst$Length[i]), to)
@@ -205,7 +213,7 @@ fa_variables <- function(survey, year, module, file = NULL, format = "auto", ser
   # Columns go by position: the names in the file may still be Latin-1 bytes,
   # while `h$cols` is already UTF-8.
   idx <- sort(match(keep, h$cols))
-  text <- which(tolower(h$cols) %in% .code_cols)
+  text <- which(.lower(h$cols) %in% .code_cols)
   # With ";" as separator INEI writes decimals with a comma (ENAHO 2025).
   x <- data.table::fread(path, sep = h$sep, dec = .csv_dec(h), select = if (!is.null(cols)) idx,
                          colClasses = if (length(text)) list(character = text),
@@ -242,7 +250,7 @@ fa_variables <- function(survey, year, module, file = NULL, format = "auto", ser
 }
 
 .base_csv <- function(path, h, keep, cols) {
-  text <- keep[tolower(keep) %in% .code_cols]
+  text <- keep[.lower(keep) %in% .code_cols]
   # Everything as text first, so codes such as CONGLOME "07060" keep their
   # leading zero, as they do in the Stata and SPSS files.
   classes <- rep("character", length(h$cols))
@@ -323,7 +331,7 @@ fa_variables <- function(survey, year, module, file = NULL, format = "auto", ser
 
 # Match requested names without caring about case; stop on the ones missing.
 .match_cols <- function(cols, have, path) {
-  i <- match(tolower(cols), tolower(have))
+  i <- match(.lower(cols), .lower(have))
   if (anyNA(i)) {
     .abort("not_found", "Not in %s: %s. See fa_variables().", basename(path),
            paste(cols[is.na(i)], collapse = ", "))
@@ -406,7 +414,19 @@ fa_variables <- function(survey, year, module, file = NULL, format = "auto", ser
     csv = .read_csv(path, cols),
     dbf = .read_dbf(path, cols)
   )
-  if (lower) names(x) <- tolower(names(x))
+  if (lower) names(x) <- .lower(names(x))
+  .trim_keys(x)
+}
+
+# Identifiers must match whatever format each module was read in: INEI's SPSS
+# and Stata files pad HHID and CASEID with leading blanks, the CSV files do
+# not, so a join between them found no household (ENDES 2025).
+.key_cols <- c("hhid", "caseid", "hvidx", "conglome", "vivienda", "hogar", "codperso",
+               "nsegm", "conglomerado", "id_prod", "nselua", "ua", "ubigeo")
+.trim_keys <- function(x) {
+  for (k in names(x)[.lower(names(x)) %in% .key_cols]) {
+    if (is.character(x[[k]])) x[[k]] <- trimws(x[[k]])
+  }
   x
 }
 

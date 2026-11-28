@@ -41,6 +41,11 @@ The names were checked in INEI's technical sheets (fichas tecnicas) and in
 the headers of 2024 and 2025 files; the \code{diseno} entry of each YAML in
 \verb{inst/catalog/} lists them with a note and the document behind them.
 \itemize{
+\item \strong{ENDES}: \code{V005} (women), \code{HV005} (households), \code{PESO15_AMAS}
+(health questionnaire, people aged 15 and over) or \code{PESOMEN12}
+(children under 12), divided by 1,000,000; strata \code{HV022} and clusters
+\code{HV001}. The health module (CSALUD01) has neither: merge it with RECH0
+by \code{HHID} first, and the error says so if you forget.
 \item \strong{EPEN}: \code{FAC300_ANUAL} (or the quarterly and Lima weights),
 \code{CONGLOMERADO}, and department by \code{ESTRATO} as strata. Rows without
 weight (people under 14) are dropped with a message.

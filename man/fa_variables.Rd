@@ -52,7 +52,8 @@ is quick even for large modules. Use it to choose \code{cols} in \code{\link[=fa
 Labels are the ones INEI wrote in the file. Stata limits them to 80
 characters, and some are cut (for example the ENA 2022-2025 genetic
 improvement items \code{P501A_16C} to \code{P501A_16E}); the full wording is in the
-data dictionary PDF that comes in the same zip.
+data dictionary PDF that comes in the same zip. CSV files have no labels;
+a message then suggests \code{format = "spss"} or \code{"stata"}.
 }
 \examples{
 \dontrun{

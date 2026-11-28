@@ -11,6 +11,12 @@
 #'   round from 2014 to 2025.
 #' * **ENAHO**: the household (`CONGLOME`, `VIVIENDA`, `HOGAR`), or the
 #'   person with `level = "person"` (adds `CODPERSO`).
+#' * **ENDES**: the household (`HHID`), or the person with
+#'   `level = "person"`: `HHID` and the line number, which is `HVIDX` in the
+#'   household roster, `HC0` for children, `QSNUMERO` in the health
+#'   questionnaire and the last three characters of `CASEID` in the women's
+#'   files. A woman, her household and her answers to the health
+#'   questionnaire then share one key.
 #'
 #' Keys identify units within one round only. The ENA is a repeated cross
 #' section, not a panel: the same key in two years is not the same farm.
@@ -18,8 +24,8 @@
 #'
 #' @param data A data frame from [fa_read()] with the identifier columns.
 #' @inheritParams fa_years
-#' @param level `"unit"` (ENA agricultural unit, ENAHO household) or
-#'   `"person"` (ENAHO only).
+#' @param level `"unit"` (ENA agricultural unit, ENAHO or ENDES household)
+#'   or `"person"` (ENAHO and ENDES).
 #' @return A character vector with one key per row.
 #' @export
 #' @examples
@@ -28,6 +34,8 @@
 #' fa_key(ena, "ena")
 #' hog <- data.frame(conglome = "015009", vivienda = "013", hogar = "11", codperso = "01")
 #' fa_key(hog, "enaho", level = "person")
+#' mef <- data.frame(caseid = "      434400501  2")
+#' fa_key(mef, "endes", level = "person")
 fa_key <- function(data, survey, level = c("unit", "person")) {
   if (!is.data.frame(data)) .abort("bad_input", "`data` must be a data frame.")
   level <- match.arg(level)
@@ -49,8 +57,26 @@ fa_key <- function(data, survey, level = c("unit", "person")) {
   } else if (survey == "enaho") {
     parts <- list(need("conglome", "cluster"), need("vivienda", "dwelling"), need("hogar", "household"))
     if (level == "person") parts <- c(parts, list(need("codperso", "person")))
+  } else if (survey == "endes") {
+    parts <- .endes_key(data, level, need)
   } else {
-    .abort("unsupported", "fa_key() knows the ENA and the ENAHO keys, not those of `%s`.", survey)
+    .abort("unsupported", "fa_key() knows the ENA, ENAHO and ENDES keys, not those of `%s`.", survey)
   }
   do.call(paste, c(parts, sep = "-"))
+}
+
+# ENDES: CASEID is HHID followed by the line number in three characters.
+.endes_key <- function(data, level, need) {
+  case <- .col(data, "caseid")
+  if (!is.null(case)) {
+    id <- trimws(as.character(unclass(data[[case]])))
+    n <- nchar(id)
+    hh <- trimws(substr(id, 1L, n - 3L))
+    line <- trimws(substr(id, n - 2L, n))
+  } else {
+    hh <- need("hhid", "household")
+    line <- if (level == "person") need(c("hvidx", "hc0", "qsnumero", "v003"), "line number")
+  }
+  if (level == "unit") return(list(hh))
+  list(hh, sub("^0+(?=[0-9])", "", line, perl = TRUE))
 }

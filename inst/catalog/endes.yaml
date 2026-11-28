@@ -12,12 +12,14 @@ anios: [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 
 unidad: hogar, mujer de 15 a 49 años y niño menor de 5 años
 ubigeo: UBIGEO
 diseno:
-  peso: [V005, HV005]
+  peso: [V005, HV005, PESO15_AMAS, PESOMEN12]
   escala: 1.0e-06
   estrato: [V022, HV022]
   conglomerado: [V001, HV001]
+  departamento: [HV024, V024]
   verificado: true
-  nota: 'Nombres verificados en REC0111_2024. Se usa el primer nombre que exista en los datos: V para mujeres, HV para hogares (RECH). El peso se divide entre 1 000 000.'
+  pista: 'The strata (HV022) and clusters (HV001) are in RECH0, module "Caracteristicas del Hogar": read it and merge() it with your data by HHID before fa_design().'
+  nota: 'Nombres verificados en REC0111_2024 y CSALUD01_2025. Se usa el primer nombre que exista en los datos: V para mujeres, HV para hogares (RECH), PESO15_AMAS para el cuestionario de salud (15 años y más) y PESOMEN12 para menores de 12. El peso se divide entre 1 000 000.'
 estado: Años 2010-2025 descargados y verificados con sha256 en la Arch. 1996, 2000 y 2004-2009 están en el portal y faltan en el catálogo.
 modulos:
 - anio: 2010

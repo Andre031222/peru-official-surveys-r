@@ -25,7 +25,8 @@ be logical or coded 0/1.}
 
 \item{by}{Domain: \code{"national"}, \code{"department"}, \code{"area"}, \code{"district"},
 or the name of any column in the design. Departments and districts
-are read from a \code{ubigeo} column or from \code{ccdd}, \code{ccpp} and \code{ccdi};
+are read from a \code{ubigeo} column or from \code{ccdd}, \code{ccpp} and \code{ccdi}
+(departments also from ENDES \code{hv024});
 area from an \code{area} column (1 urban, 2 rural) or ENDES \code{hv025}.}
 
 \item{level}{Confidence level.}

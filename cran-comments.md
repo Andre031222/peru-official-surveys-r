@@ -1,6 +1,24 @@
+## Resubmission
+
+This is a resubmission of a new package. In response to the review of
+version 0.4.3 (Uwe Ligges, 28 November 2026):
+
+* The invalid file URI `RENDIMIENTO.md` in `NEWS.md` is now a full URL to
+  the file in the GitHub repository.
+
+Version 0.4.4 also fixes two defects found by an independent test on macOS
+since the first submission:
+
+* Under a C locale (`LC_ALL=C`), the YAML catalogs were read incomplete
+  without an error, and accented capitals in column names were not lowered.
+  Both are now independent of the locale, and `R CMD check --as-cran` was
+  run under `LC_ALL=C` as well (Status: OK).
+* Identifier columns are trimmed when read, so that modules read from SPSS
+  (which pads them with blanks) and from CSV join correctly.
+
 ## Submission summary
 
-This is the first submission of faperu (version 0.4.3).
+This is the first submission of faperu.
 
 faperu gives R users one consistent way to obtain and analyse ten official
 statistical sources of Peru: eight household, labour, health, agricultural
@@ -40,6 +58,7 @@ misspellings. The text is written in British English (`Language: en-GB`).
 | Platform | R version | Result |
 |---|---|---|
 | Arch Linux, x86_64 (local) | 4.6.2 | `--as-cran`: 1 NOTE (new submission) |
+| Arch Linux, x86_64 (local), `LC_ALL=C` | 4.6.2 | OK |
 | Arch Linux, x86_64 (local), `_R_CHECK_DEPENDS_ONLY_=true` | 4.6.2 | OK |
 | Linux, x86_64 (r-universe) | 4.6.2 and R-devel (2026-11-26 r90998) | OK |
 | Windows, x86_64 (r-universe) | 4.6.2, 4.5.3 and R-devel (2026-11-17 r90926 ucrt) | OK |

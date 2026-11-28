@@ -1,14 +1,20 @@
 # Builds the domain column for fa_estimate() from the design variables.
 # Departments and districts come from a district code (ubigeo) or from the
-# ccdd/ccpp/ccdi columns; area from `area` (1 urban, 2 rural) or ENDES hv025.
+# ccdd/ccpp/ccdi columns (departments also from ENDES hv024); area from `area` (1 urban, 2 rural) or ENDES hv025.
 .domain <- function(data, by) {
   n <- nrow(data)
   if (by == "national") return(rep("PE", n))
   if (by %in% c("department", "district")) {
     ub <- .ubigeo(data)
     if (is.null(ub)) {
-      if (by == "department" && !is.null(dd <- .col(data, "ccdd"))) return(.pad(data[[dd]], 2))
-      .abort("no_domain", "No district code in the data: need a `ubigeo` column or ccdd, ccpp and ccdi.")
+      # ENDES names the department HV024 (households) or V024 (women), with
+      # INEI's codes 1 to 25.
+      if (by == "department" && !is.null(dd <- .col(data, c("ccdd", "hv024", "v024")))) {
+        return(.pad(as.character(unclass(data[[dd]])), 2))
+      }
+      .abort("no_domain", if (by == "department")
+        "No department in the data: need a `ubigeo` column, ccdd, or ENDES hv024." else
+        "No district code in the data: need a `ubigeo` column or ccdd, ccpp and ccdi.")
     }
     return(if (by == "department") substr(ub, 1, 2) else ub)
   }

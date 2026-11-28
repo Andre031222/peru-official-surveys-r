@@ -10,6 +10,11 @@
 #' the headers of 2024 and 2025 files; the `diseno` entry of each YAML in
 #' `inst/catalog/` lists them with a note and the document behind them.
 #'
+#' * **ENDES**: `V005` (women), `HV005` (households), `PESO15_AMAS`
+#'   (health questionnaire, people aged 15 and over) or `PESOMEN12`
+#'   (children under 12), divided by 1,000,000; strata `HV022` and clusters
+#'   `HV001`. The health module (CSALUD01) has neither: merge it with RECH0
+#'   by `HHID` first, and the error says so if you forget.
 #' * **EPEN**: `FAC300_ANUAL` (or the quarterly and Lima weights),
 #'   `CONGLOMERADO`, and department by `ESTRATO` as strata. Rows without
 #'   weight (people under 14) are dropped with a message.
@@ -245,7 +250,7 @@ fa_design <- function(data, survey, weight = NULL, strata = NULL, cluster = NULL
           role, x$siglas, role)
     return(NULL)
   }
-  low <- tolower(names(data))
+  low <- .lower(names(data))
   for (cand in candidates) {
     if (startsWith(cand, "re:")) {
       hit <- grep(substring(cand, 4), names(data), ignore.case = TRUE)
@@ -253,9 +258,10 @@ fa_design <- function(data, survey, weight = NULL, strata = NULL, cluster = NULL
       next
     }
     parts <- strsplit(cand, "*", fixed = TRUE)[[1]]
-    hit <- match(tolower(parts), low)
+    hit <- match(.lower(parts), low)
     if (!anyNA(hit)) return(paste(names(data)[hit], collapse = "*"))
   }
-  .abort("design", "None of the %s variables (%s) is in the data.",
-         role, paste(candidates, collapse = ", "))
+  hint <- if (role %in% c("strata", "cluster") && !is.null(x$diseno$pista)) paste0(" ", x$diseno$pista) else ""
+  .abort("design", "None of the %s variables (%s) is in the data.%s",
+         role, paste(candidates, collapse = ", "), hint)
 }

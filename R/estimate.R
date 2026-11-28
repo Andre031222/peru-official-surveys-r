@@ -12,7 +12,8 @@
 #'   0 and 1) or `"total"`.
 #' @param by Domain: `"national"`, `"department"`, `"area"`, `"district"`,
 #'   or the name of any column in the design. Departments and districts
-#'   are read from a `ubigeo` column or from `ccdd`, `ccpp` and `ccdi`;
+#'   are read from a `ubigeo` column or from `ccdd`, `ccpp` and `ccdi`
+#'   (departments also from ENDES `hv024`);
 #'   area from an `area` column (1 urban, 2 rural) or ENDES `hv025`.
 #' @param level Confidence level.
 #' @param na.rm Drop missing values of `var`.

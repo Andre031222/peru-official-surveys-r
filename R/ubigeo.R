@@ -134,7 +134,7 @@ fa_districts <- function(year) {
 #' fa_ubigeo(data.frame(ubigeo = c("130112", "160109")), year = 2024, base = 2017)
 #' @export
 fa_ubigeo <- function(data, var = NULL, year = NULL, base = NULL) {
-  low <- tolower(names(data))
+  low <- .lower(names(data))
   col <- function(n) data[[match(n, low)]]
   if (!is.null(var)) {
     if (!var %in% names(data)) .abort("input", "Column `%s` is not in the data.", var)

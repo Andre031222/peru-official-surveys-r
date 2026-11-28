@@ -1,6 +1,6 @@
 Package: faperu
 Title: Access and Analysis of Peruvian Survey and Census Data
-Version: 0.4.3
+Version: 0.4.4
 Authors@R: c(
     person("Fred", "Torres Cruz", role = "aut",
            comment = c(ORCID = "0000-0003-0834-6834")),

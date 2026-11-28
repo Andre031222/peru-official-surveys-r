@@ -13,6 +13,12 @@ test_that("ENDES weights are scaled and lower-case names work", {
   expect_equal(sum(weights(d)), 16)
 })
 
+test_that("the ENDES health questionnaire weight is found, and a missing stratum says where it is", {
+  df <- data.frame(peso15_amas = rep(1e6, 8), hv022 = rep(1:2, each = 4), hv001 = rep(1:4, each = 2))
+  expect_equal(sum(weights(fa_design(df, "endes"))), 8)
+  expect_error(fa_design(df[, "peso15_amas", drop = FALSE], "endes"), "RECH0", class = "faperu_error_design")
+})
+
 test_that("strata with one cluster warn unless lonely.psu is set", {
   df <- data.frame(V005 = 1e6, V022 = c(1, 1, 2, 2, 2), V001 = c(1, 1, 2, 3, 3))
   withr::local_options(survey.lonely.psu = NULL)
@@ -122,6 +128,7 @@ test_that("a wrong territory fails clearly", {
 })
 
 test_that("ENA before 2023 uses DOMINIO and keeps firms in their own strata", {
+  withr::local_options(survey.lonely.psu = "adjust")
   df <- data.frame(FACTOR = c(rep(20, 8), 3, 5), CONGLOMERADO = c(1:8, 9, 10),
                    ESTRATO = c(rep("", 8), "1", "2"), DOMINIO = c(rep(1:2, each = 4), 1, 1),
                    CODIGO = c(rep(1, 8), 2, 2))

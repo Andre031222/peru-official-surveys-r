@@ -11,8 +11,8 @@ fa_key(data, survey, level = c("unit", "person"))
 
 \item{survey}{Short name, for example \code{"enaho"}. See \code{\link[=fa_surveys]{fa_surveys()}}.}
 
-\item{level}{\code{"unit"} (ENA agricultural unit, ENAHO household) or
-\code{"person"} (ENAHO only).}
+\item{level}{\code{"unit"} (ENA agricultural unit, ENAHO or ENDES household)
+or \code{"person"} (ENAHO and ENDES).}
 }
 \value{
 A character vector with one key per row.
@@ -31,6 +31,12 @@ With this key, chapters such as 400B and 500AB join in full in every
 round from 2014 to 2025.
 \item \strong{ENAHO}: the household (\code{CONGLOME}, \code{VIVIENDA}, \code{HOGAR}), or the
 person with \code{level = "person"} (adds \code{CODPERSO}).
+\item \strong{ENDES}: the household (\code{HHID}), or the person with
+\code{level = "person"}: \code{HHID} and the line number, which is \code{HVIDX} in the
+household roster, \code{HC0} for children, \code{QSNUMERO} in the health
+questionnaire and the last three characters of \code{CASEID} in the women's
+files. A woman, her household and her answers to the health
+questionnaire then share one key.
 }
 
 Keys identify units within one round only. The ENA is a repeated cross
@@ -43,4 +49,6 @@ ena <- data.frame(CCDD = "01", CCPP = "01", CCDI = "02", NSEGM = "7003",
 fa_key(ena, "ena")
 hog <- data.frame(conglome = "015009", vivienda = "013", hogar = "11", codperso = "01")
 fa_key(hog, "enaho", level = "person")
+mef <- data.frame(caseid = "      434400501  2")
+fa_key(mef, "endes", level = "person")
 }
