@@ -1,6 +1,6 @@
 # faperu 0.4.4
 
-Corrections from an independent test on macOS (R 4.6.1) with 42 functional checks, and from
+Corrections from our own tests on macOS (R 4.6.1), with 42 functional checks, and from
 use in a thesis on ENDES 2025 data.
 
 - The catalogs are read as UTF-8 whatever the locale. Under `LC_ALL=C` (for example `Rscript`
