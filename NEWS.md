@@ -70,7 +70,7 @@ with the same `fa_` prefix, so one `library(faperu)` gets the data and analyses 
 
 Probado de punta a punta con las 10 bases: descarga, caché, lectura por columnas, diseño y
 REDATAM, en el año más reciente y en uno antiguo de cada una. Detalle y cifras en
-[RENDIMIENTO.md](RENDIMIENTO.md).
+[RENDIMIENTO.md](https://github.com/Andre031222/peru-official-surveys-r/blob/main/RENDIMIENTO.md).
 
 ## Descarga
 
